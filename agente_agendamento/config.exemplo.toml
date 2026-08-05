@@ -3,9 +3,19 @@
 # O config.toml não é versionado (está no .gitignore).
 
 [fonte]
-# Hoje o LiveClin não publica API, então o agente lê a planilha exportada.
-# No LiveClin: exporte a lista de pacientes em CSV (ou XLSX) e aponte aqui.
-tipo = "liveclin_csv"
+# O LiveClin não publica API, então o agente lê a planilha. Duas origens:
+#
+#   tipo = "arquivo"        -> CSV/XLSX salvo na sua máquina
+#   tipo = "google_sheets"  -> lê direto da planilha no seu Drive
+#
+# Para o Sheets, spreadsheet_id é o trecho da URL entre /d/ e /edit:
+#   docs.google.com/spreadsheets/d/ESTE_PEDACO_AQUI/edit
+#
+# tipo = "google_sheets"
+# spreadsheet_id = "147iQO95aYNytsVdo3j7EFO0oHbGQv4ZSxkdrt9m7Dxw"
+# aba = "Pacientes - Daniel"
+
+tipo = "arquivo"
 caminho = "exemplos/pacientes_liveclin.csv"
 
 # O agente reconhece sozinho os cabeçalhos mais comuns (Nome, Plano,
@@ -18,8 +28,16 @@ caminho = "exemplos/pacientes_liveclin.csv"
 # ultima_consulta = "Último atendimento"
 
 [webdiet]
-# Exportação das AVALIAÇÕES FÍSICAS do WebDiet. Cada avaliação conta como
-# uma consulta realizada. Sem isso o relatório sai sem a contagem.
+# Avaliações ANTROPOMÉTRICAS do WebDiet. Cada avaliação conta como uma
+# consulta realizada, e a mais recente vira a data da última consulta —
+# que é o que define o limite de 30 dias. Sem isso o relatório sai sem a
+# contagem e o limite passa a ser contado do início do plano.
+#
+# Aceita as mesmas duas origens da seção [fonte]:
+# tipo = "google_sheets"
+# spreadsheet_id = "..."
+
+tipo = "arquivo"
 caminho = "exemplos/avaliacoes_webdiet.csv"
 
 # Cabeçalhos reconhecidos sozinho: Paciente/Nome e Data da avaliação.

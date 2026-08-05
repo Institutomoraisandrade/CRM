@@ -12,8 +12,9 @@ from .agenda.base import Agenda
 from .agendador import Agendador, JanelaDeAtendimento
 from .entrega.email import EnviadorEmail, ErroDeEnvio
 from .fontes.base import FontePacientes
-from .fontes.liveclin_csv import FonteLiveClinCSV
-from .fontes.webdiet_csv import FonteWebDietCSV
+from .fontes.liveclin_csv import FonteLiveClin
+from .fontes.planilha import Planilha, PlanilhaArquivo, PlanilhaGoogleSheets
+from .fontes.webdiet_csv import FonteWebDiet
 from .modelos import Plano
 from .planos import catalogo_de_config
 
@@ -40,19 +41,42 @@ class Config:
         caminho = Path(valor).expanduser()
         return caminho if caminho.is_absolute() else (self.raiz / caminho)
 
+    def _planilha(self, secao: dict[str, Any], rotulo: str) -> Planilha:
+        """Monta a origem da planilha: arquivo em disco ou Google Sheets."""
+        tipo = secao.get("tipo", "arquivo")
+        if tipo in ("arquivo", "liveclin_csv", "webdiet_csv", "csv"):
+            caminho = secao.get("caminho")
+            if not caminho:
+                raise ErroDeConfig(
+                    f"defina {rotulo}.caminho apontando para a planilha, "
+                    f"ou use {rotulo}.tipo = \"google_sheets\"."
+                )
+            return PlanilhaArquivo(self.caminho_relativo(caminho))
+
+        if tipo == "google_sheets":
+            google = secao.get("google", {})
+            identificador = secao.get("spreadsheet_id") or google.get("spreadsheet_id")
+            if not identificador:
+                raise ErroDeConfig(
+                    f"defina {rotulo}.spreadsheet_id — é o trecho da URL da planilha "
+                    "entre /d/ e /edit."
+                )
+            return PlanilhaGoogleSheets(
+                spreadsheet_id=identificador,
+                aba=secao.get("aba") or google.get("aba"),
+                credenciais=self.caminho_relativo(
+                    google.get("credenciais", "credentials.json")
+                ),
+                token=self.caminho_relativo(google.get("token", "token_sheets.json")),
+            )
+
+        raise ErroDeConfig(
+            f"{rotulo}.tipo {tipo!r} desconhecido. Use \"arquivo\" ou \"google_sheets\"."
+        )
+
     def construir_fonte(self) -> FontePacientes:
-        tipo = self.fonte.get("tipo", "liveclin_csv")
-        if tipo != "liveclin_csv":
-            raise ErroDeConfig(
-                f"fonte.tipo {tipo!r} não é suportada. Hoje existe apenas 'liveclin_csv'."
-            )
-        caminho = self.fonte.get("caminho")
-        if not caminho:
-            raise ErroDeConfig(
-                "defina fonte.caminho apontando para a planilha exportada do LiveClin."
-            )
-        return FonteLiveClinCSV(
-            caminho=self.caminho_relativo(caminho),
+        return FonteLiveClin(
+            planilha=self._planilha(self.fonte, "fonte"),
             colunas=self.fonte.get("colunas"),
             catalogo=self.planos,
         )
@@ -86,13 +110,12 @@ class Config:
         except (ValueError, KeyError) as erro:
             raise ErroDeConfig(str(erro)) from erro
 
-    def construir_fonte_webdiet(self) -> FonteWebDietCSV | None:
+    def construir_fonte_webdiet(self) -> FonteWebDiet | None:
         """Fonte das avaliações físicas; ``None`` quando não configurada."""
-        caminho = self.webdiet.get("caminho")
-        if not caminho:
+        if not self.webdiet.get("caminho") and not self.webdiet.get("spreadsheet_id"):
             return None
-        return FonteWebDietCSV(
-            caminho=self.caminho_relativo(caminho),
+        return FonteWebDiet(
+            planilha=self._planilha(self.webdiet, "webdiet"),
             colunas=self.webdiet.get("colunas"),
         )
 

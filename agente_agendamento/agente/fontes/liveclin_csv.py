@@ -1,14 +1,14 @@
-"""Leitura da planilha de pacientes exportada do LiveClin.
+"""Leitura da planilha de pacientes do LiveClin.
 
-O LiveClin não oferece API pública, então o caminho suportado é a
-exportação em CSV/XLSX. Os nomes de coluna variam entre exportações, por
-isso cada campo aceita vários apelidos e pode ser sobrescrito na
-configuração (seção ``[fonte.colunas]``).
+O LiveClin não oferece API pública, então a origem é a planilha: um
+arquivo CSV/XLSX exportado, ou uma aba do Google Sheets lida por OAuth.
+Os nomes de coluna variam entre exportações, por isso cada campo aceita
+vários apelidos e pode ser sobrescrito na configuração (seção
+``[fonte.colunas]``).
 """
 
 from __future__ import annotations
 
-import csv
 from datetime import date, timedelta
 from pathlib import Path
 from typing import Any, Iterable
@@ -17,6 +17,7 @@ from ..modelos import Paciente, StatusPaciente
 from ..planos import CATALOGO_PADRAO, Plano, plano_por_duracao, resolver_plano
 from ..util import chave, ler_data, so_digitos
 from .base import ErroDeFonte, FontePacientes
+from .planilha import Planilha, PlanilhaArquivo
 
 APELIDOS_COLUNA: dict[str, tuple[str, ...]] = {
     "nome": ("nome", "paciente", "nome do paciente", "nome completo"),
@@ -72,51 +73,16 @@ APELIDOS_STATUS: dict[str, StatusPaciente] = {
 }
 
 
-def _ler_linhas(caminho: Path) -> list[dict[str, Any]]:
-    if caminho.suffix.lower() in (".xlsx", ".xlsm"):
-        return _ler_xlsx(caminho)
-    return _ler_csv(caminho)
+class FonteLiveClin(FontePacientes):
+    """Lê pacientes de qualquer planilha do LiveClin — arquivo ou Sheets."""
 
-
-def _ler_csv(caminho: Path) -> list[dict[str, Any]]:
-    with caminho.open("r", encoding="utf-8-sig", newline="") as arquivo:
-        amostra = arquivo.read(8192)
-        arquivo.seek(0)
-        try:
-            dialeto = csv.Sniffer().sniff(amostra, delimiters=",;\t")
-        except csv.Error:
-            # Exportação brasileira costuma usar ponto e vírgula.
-            dialeto = csv.excel
-            dialeto.delimiter = ";" if amostra.count(";") > amostra.count(",") else ","
-        return list(csv.DictReader(arquivo, dialect=dialeto))
-
-
-def _ler_xlsx(caminho: Path) -> list[dict[str, Any]]:
-    try:
-        from openpyxl import load_workbook
-    except ImportError as erro:  # pragma: no cover - depende do ambiente
-        raise ErroDeFonte(
-            "Para ler .xlsx instale o openpyxl (pip install openpyxl) ou "
-            "exporte a planilha do LiveClin como CSV."
-        ) from erro
-
-    planilha = load_workbook(caminho, read_only=True, data_only=True).active
-    linhas = planilha.iter_rows(values_only=True)
-    try:
-        cabecalho = [str(c) if c is not None else "" for c in next(linhas)]
-    except StopIteration:
-        return []
-    return [dict(zip(cabecalho, linha)) for linha in linhas]
-
-
-class FonteLiveClinCSV(FontePacientes):
     def __init__(
         self,
-        caminho: str | Path,
+        planilha: Planilha,
         colunas: dict[str, str] | None = None,
         catalogo: dict[str, Plano] | None = None,
     ) -> None:
-        self.caminho = Path(caminho).expanduser()
+        self.planilha = planilha
         self.colunas_config = {campo: chave(col) for campo, col in (colunas or {}).items()}
         self.catalogo = catalogo if catalogo is not None else dict(CATALOGO_PADRAO)
         self._avisos: list[str] = []
@@ -140,15 +106,9 @@ class FonteLiveClinCSV(FontePacientes):
         return mapa
 
     def carregar(self) -> list[Paciente]:
-        if not self.caminho.exists():
-            raise ErroDeFonte(
-                f"planilha do LiveClin não encontrada em {self.caminho}. "
-                "Exporte os pacientes no LiveClin e aponte 'fonte.caminho' para o arquivo."
-            )
-
-        linhas = _ler_linhas(self.caminho)
+        linhas = self.planilha.linhas()
         if not linhas:
-            raise ErroDeFonte(f"a planilha {self.caminho} está vazia.")
+            raise ErroDeFonte(f"a planilha {self.planilha.descricao} está vazia.")
 
         mapa = self._mapear_cabecalho(linhas[0].keys())
         faltando = [c for c in ("nome", "plano") if c not in mapa]
@@ -156,7 +116,7 @@ class FonteLiveClinCSV(FontePacientes):
             raise ErroDeFonte(
                 "não encontrei as colunas obrigatórias "
                 + ", ".join(faltando)
-                + f" na planilha {self.caminho}. Colunas lidas: "
+                + f" em {self.planilha.descricao}. Colunas lidas: "
                 + ", ".join(str(c) for c in linhas[0].keys())
                 + ". Configure os nomes reais em [fonte.colunas]."
             )
@@ -278,3 +238,12 @@ class FonteLiveClinCSV(FontePacientes):
             etiquetas=etiquetas,
             id_externo=self._valor(linha, mapa, "id_externo"),
         )
+
+
+def FonteLiveClinCSV(
+    caminho: str | Path,
+    colunas: dict[str, str] | None = None,
+    catalogo: dict[str, Plano] | None = None,
+) -> FonteLiveClin:
+    """Atalho para ler o LiveClin de um arquivo em disco."""
+    return FonteLiveClin(PlanilhaArquivo(caminho), colunas, catalogo)

@@ -20,3 +20,4 @@ __pycache__/
 relatorio.html
 etiquetas_botconversa.csv
 .env
+token_sheets.json

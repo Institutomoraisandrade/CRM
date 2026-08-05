@@ -13,10 +13,15 @@ dias de antecedência.
 ## Antes de começar: duas limitações honestas
 
 **1. O LiveClin não tem API pública.** Não existe hoje um jeito oficial de
-o agente entrar na sua conta e ler os pacientes sozinho. O caminho que
-funciona é a exportação: você baixa a lista de pacientes do LiveClin em
-CSV e o agente lê esse arquivo. É um clique a mais por rodada, e é o único
-caminho que não depende de guardar a sua senha em lugar nenhum.
+o agente entrar na sua conta do LiveClin e ler os pacientes sozinho. A
+origem é sempre a planilha — mas ela pode vir de dois lugares:
+
+- **Google Sheets**, lido direto do seu Drive por OAuth. Você mantém a
+  planilha lá e o agente lê sozinho a cada rodada.
+- **Arquivo CSV/XLSX** exportado para a sua máquina.
+
+O Sheets é o caminho recomendado: sem exportação manual a cada rodada. Em
+nenhum dos dois o agente pede a sua senha.
 
 Se o LiveClin abrir uma API no futuro, só a pasta `agente/fontes/` precisa
 mudar — o resto do agente continua igual.
@@ -65,10 +70,37 @@ Abra o `config.toml` e ajuste:
 
 O arquivo tem comentários explicando cada campo.
 
+### Ler direto do Google Sheets
+
+Se a planilha já vive no seu Drive, o agente lê de lá — sem exportar nada
+a cada rodada:
+
+```toml
+[fonte]
+tipo = "google_sheets"
+spreadsheet_id = "147iQO95aYNytsVdo3j7EFO0oHbGQv4ZSxkdrt9m7Dxw"
+aba = "Pacientes - Daniel"
+```
+
+O `spreadsheet_id` é o trecho da URL entre `/d/` e `/edit`:
+
+```
+docs.google.com/spreadsheets/d/ESTE_PEDACO_AQUI/edit
+```
+
+Usa o mesmo `credentials.json` do Google Calendar, com permissão apenas
+de **leitura**. Na primeira execução o navegador abre para você
+autorizar; o token fica em `token_sheets.json`, na sua máquina.
+
+A mesma configuração vale para a seção `[webdiet]`.
+
+**O agente nunca pede a senha da sua conta Google.** Se algum dia
+precisar dela para alguma coisa, é sinal de que algo está errado.
+
 ### A planilha do LiveClin
 
-Exporte os pacientes no LiveClin e salve o arquivo. O agente reconhece
-sozinho os cabeçalhos mais comuns:
+Exportando para arquivo, o agente reconhece sozinho os cabeçalhos mais
+comuns:
 
 | Campo | Cabeçalhos aceitos |
 |---|---|

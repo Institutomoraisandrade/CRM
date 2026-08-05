@@ -13,7 +13,7 @@ from pathlib import Path
 
 from ..util import chave, ler_data
 from .base import ErroDeFonte
-from .liveclin_csv import _ler_linhas
+from .planilha import Planilha, PlanilhaArquivo
 
 APELIDOS_COLUNA: dict[str, tuple[str, ...]] = {
     "paciente": (
@@ -43,11 +43,13 @@ class Avaliacao:
     data: date
 
 
-class FonteWebDietCSV:
+class FonteWebDiet:
+    """Lê avaliações de qualquer planilha do WebDiet — arquivo ou Sheets."""
+
     def __init__(
-        self, caminho: str | Path, colunas: dict[str, str] | None = None
+        self, planilha: Planilha, colunas: dict[str, str] | None = None
     ) -> None:
-        self.caminho = Path(caminho).expanduser()
+        self.planilha = planilha
         self.colunas_config = {campo: chave(col) for campo, col in (colunas or {}).items()}
         self._avisos: list[str] = []
 
@@ -70,15 +72,9 @@ class FonteWebDietCSV:
         return mapa
 
     def carregar(self) -> list[Avaliacao]:
-        if not self.caminho.exists():
-            raise ErroDeFonte(
-                f"exportação do WebDiet não encontrada em {self.caminho}. "
-                "Exporte as avaliações físicas e aponte 'webdiet.caminho' para o arquivo."
-            )
-
-        linhas = _ler_linhas(self.caminho)
+        linhas = self.planilha.linhas()
         if not linhas:
-            raise ErroDeFonte(f"a exportação {self.caminho} está vazia.")
+            raise ErroDeFonte(f"a exportação {self.planilha.descricao} está vazia.")
 
         mapa = self._mapear_cabecalho(linhas[0].keys())
         faltando = [c for c in ("paciente", "data") if c not in mapa]
@@ -86,7 +82,7 @@ class FonteWebDietCSV:
             raise ErroDeFonte(
                 "não encontrei as colunas "
                 + ", ".join(faltando)
-                + f" na exportação {self.caminho}. Colunas lidas: "
+                + f" em {self.planilha.descricao}. Colunas lidas: "
                 + ", ".join(str(c) for c in linhas[0].keys())
                 + ". Configure os nomes reais em [webdiet.colunas]."
             )
@@ -118,3 +114,10 @@ class FonteWebDietCSV:
             avaliacoes.append(Avaliacao(paciente=nome, data=quando))
 
         return sorted(avaliacoes, key=lambda a: (a.paciente, a.data))
+
+
+def FonteWebDietCSV(
+    caminho: str | Path, colunas: dict[str, str] | None = None
+) -> FonteWebDiet:
+    """Atalho para ler o WebDiet de um arquivo em disco."""
+    return FonteWebDiet(PlanilhaArquivo(caminho), colunas)
