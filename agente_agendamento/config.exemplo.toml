@@ -44,19 +44,24 @@ esporte = "perf"
 
 [filtro]
 # Só entram no relatório os pacientes com esta etiqueta.
+# No LiveClin a convenção usada é "Ativos - <Profissional>".
 # Deixe vazio ("") para trazer todos.
-etiqueta = "Daniel"
+etiqueta = "Ativos - Daniel"
 
 # Por padrão só pacientes ativos entram. Mude para true para incluir
 # pausados e inativos.
 incluir_inativos = false
 
 # Duração de cada tipo de plano, em dias.
+# O agente também entende o formato completo da exportação, como
+# "Dieta (3 Meses) - Presencial" ou "Treino (1 Mes) - Online". E quando a
+# planilha traz uma coluna "Duração (dias)", é ela que manda.
 [planos]
 mensal = 30
 trimestral = 90
 semestral = 180
 anual = 360
+parceria = 90
 
 [agenda]
 # "arquivo" guarda os compromissos num JSON local — funciona sem

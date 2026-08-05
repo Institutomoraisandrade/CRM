@@ -87,6 +87,34 @@ preencher a seção `[fonte.colunas]` do `config.toml`.
 
 Tem um exemplo pronto em `exemplos/pacientes_liveclin.csv`.
 
+### Formatos de plano reconhecidos
+
+O LiveClin escreve o plano de mais de um jeito. Todos estes funcionam:
+
+| Na planilha | Vira |
+|---|---|
+| `Trimestral` | trimestral, 90 dias |
+| `Dieta (3 Meses) - Presencial` | trimestral, 90 dias |
+| `Treino (1 Mes) - Online` | mensal, 30 dias |
+| `Parceria` | parceria, 90 dias |
+
+Quando existe uma coluna **Duração (dias)**, é ela que manda — o texto do
+plano vira só o rótulo. Se os dois discordarem (plano "Trimestral" com
+duração 45), o agente usa a duração e avisa da divergência.
+
+Duração fora do catálogo vira um plano sob medida em vez de a linha ser
+descartada.
+
+### Cuidado com a coluna de status
+
+Nem toda coluna chamada "Status" fala do paciente. Em planilhas de
+cadastro, "Status LiveClin" costuma dizer se o paciente já existe no
+sistema (`EXISTENTE (Inativo)`, `Verificar`) — não se o plano está ativo.
+
+Quando o agente não reconhece o valor, ele trata como ativo **e avisa**,
+em vez de assumir em silêncio. Assumir "ativo" calado colocaria na fila
+de agendamento alguém que já encerrou.
+
 ## Como usar
 
 Os quatro comandos, na ordem em que fazem sentido:

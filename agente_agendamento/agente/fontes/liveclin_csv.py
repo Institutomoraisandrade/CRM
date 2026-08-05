@@ -14,7 +14,7 @@ from pathlib import Path
 from typing import Any, Iterable
 
 from ..modelos import Paciente, StatusPaciente
-from ..planos import CATALOGO_PADRAO, Plano, resolver_plano
+from ..planos import CATALOGO_PADRAO, Plano, plano_por_duracao, resolver_plano
 from ..util import chave, ler_data, so_digitos
 from .base import ErroDeFonte, FontePacientes
 
@@ -28,6 +28,10 @@ APELIDOS_COLUNA: dict[str, tuple[str, ...]] = {
         "inicio",
         "inicio do acompanhamento",
         "data de contratacao",
+        # Na exportação de serviços, a transação é o início da vigência.
+        "data da transacao",
+        "data da transacao",
+        "data pagamento",
     ),
     "plano_fim": (
         "fim do plano",
@@ -39,7 +43,8 @@ APELIDOS_COLUNA: dict[str, tuple[str, ...]] = {
         "vigencia",
         "termino",
     ),
-    "status": ("status", "situacao", "tipo de cliente"),
+    "duracao": ("duracao (dias)", "duracao dias", "duracao", "dias"),
+    "status": ("status", "situacao", "tipo de cliente", "status liveclin"),
     "whatsapp": ("whatsapp", "telefone", "celular", "whatsapp do paciente"),
     "email": ("email", "e-mail"),
     "ultima_consulta": (
@@ -48,7 +53,7 @@ APELIDOS_COLUNA: dict[str, tuple[str, ...]] = {
         "ultimo atendimento",
         "ultima avaliacao",
     ),
-    "etiquetas": ("etiquetas", "tags", "marcadores"),
+    "etiquetas": ("etiquetas", "etiqueta", "tags", "marcadores"),
     "id_externo": ("id", "codigo", "id do paciente"),
 }
 
@@ -177,6 +182,17 @@ class FonteLiveClinCSV(FontePacientes):
         texto = str(bruto).strip()
         return texto or None
 
+    def _duracao(self, linha: dict[str, Any], mapa: dict[str, str]) -> int | None:
+        """Lê a coluna de duração em dias, quando existir."""
+        bruto = self._valor(linha, mapa, "duracao")
+        if not bruto:
+            return None
+        try:
+            dias = int(float(bruto.replace(".", "").replace(",", ".")))
+        except ValueError:
+            return None
+        return dias if dias > 0 else None
+
     def _montar_paciente(
         self, linha: dict[str, Any], mapa: dict[str, str]
     ) -> Paciente | None:
@@ -185,13 +201,30 @@ class FonteLiveClinCSV(FontePacientes):
             return None
 
         plano_bruto = self._valor(linha, mapa, "plano")
-        if not plano_bruto:
-            raise ValueError(f"{nome} está sem plano preenchido")
-        plano = resolver_plano(plano_bruto, self.catalogo)
+        pelo_nome = resolver_plano(plano_bruto, self.catalogo) if plano_bruto else None
+
+        dias = self._duracao(linha, mapa)
+        if dias:
+            if pelo_nome is not None and pelo_nome.duracao_dias == dias:
+                # Nome e duração concordam: mantém o rótulo do plano.
+                plano = pelo_nome
+            else:
+                if pelo_nome is not None:
+                    self._avisos.append(
+                        f"{nome}: plano {plano_bruto!r} vale "
+                        f"{pelo_nome.duracao_dias} dias, mas a planilha diz {dias}; "
+                        "usei a duração da planilha"
+                    )
+                plano = plano_por_duracao(dias, self.catalogo)
+        else:
+            plano = pelo_nome
+
         if plano is None:
+            if not plano_bruto:
+                raise ValueError(f"{nome} está sem plano preenchido")
             raise ValueError(
-                f"plano {plano_bruto!r} de {nome} não está no catálogo "
-                "(configure-o em [planos])"
+                f"não consegui deduzir a duração do plano {plano_bruto!r} de {nome} "
+                "(configure-o em [planos] ou preencha a coluna de duração)"
             )
 
         inicio = ler_data(self._valor(linha, mapa, "plano_inicio"))
@@ -213,7 +246,16 @@ class FonteLiveClinCSV(FontePacientes):
         status_bruto = self._valor(linha, mapa, "status")
         status = StatusPaciente.ATIVO
         if status_bruto:
-            status = APELIDOS_STATUS.get(chave(status_bruto), StatusPaciente.ATIVO)
+            reconhecido = APELIDOS_STATUS.get(chave(status_bruto))
+            if reconhecido is None:
+                # Assumir "ativo" em silêncio colocaria na fila de
+                # agendamento alguém que talvez já tenha encerrado.
+                self._avisos.append(
+                    f"status {status_bruto!r} de {nome} não é reconhecido; "
+                    "tratei como ativo — confira se a coluna de status é a certa"
+                )
+            else:
+                status = reconhecido
 
         ultima = ler_data(self._valor(linha, mapa, "ultima_consulta"))
         if ultima is not None and ultima > date.today():

@@ -142,6 +142,71 @@ class TestLinhasProblematicas(BaseCSV):
         self.assertEqual([p.nome for p in fonte.carregar()], ["Otavio"])
 
 
+class TestFormatosReais(BaseCSV):
+    """Formatos que aparecem de fato nas exportações do LiveClin."""
+
+    def test_plano_com_servico_e_modalidade(self):
+        caminho = self.escrever(
+            "NOME,WHATSAPP,PLANO SELECIONADO,DATA DA TRANSAÇÃO\n"
+            "Isabela Paiva,5581999250440,Dieta (6 meses) - Presencial,02/11/2025\n"
+            "Kalil Ferraz,5581992368140,Dieta (3 Meses) - Presencial,07/01/2026\n"
+            "Breno Rodrigues,5581996409967,Treino (1 Mes) - Online,07/02/2026\n"
+        )
+        pacientes = FonteLiveClinCSV(caminho).carregar()
+        self.assertEqual(
+            [p.plano.nome for p in pacientes], ["semestral", "trimestral", "mensal"]
+        )
+        self.assertEqual(pacientes[0].plano_inicio, date(2025, 11, 2))
+
+    def test_coluna_de_duracao_define_o_plano(self):
+        caminho = self.escrever(
+            "Nome,Plano,Data Início,Duração (dias)\nLaura Helena,Anual,22/09/2025,360\n"
+        )
+        p = FonteLiveClinCSV(caminho).carregar()[0]
+        self.assertEqual(p.plano.duracao_dias, 360)
+        self.assertEqual(p.plano_fim, date(2026, 9, 17))
+
+    def test_parceria_mantem_o_rotulo(self):
+        caminho = self.escrever(
+            "Nome,Plano,Data Início,Duração (dias)\nAndreina,Parceria,14/04/2026,90\n"
+        )
+        self.assertEqual(FonteLiveClinCSV(caminho).carregar()[0].plano.nome, "parceria")
+
+    def test_duracao_divergente_do_nome_gera_aviso(self):
+        caminho = self.escrever(
+            "Nome,Plano,Data Início,Duração (dias)\nJoao,Trimestral,01/03/2026,45\n"
+        )
+        fonte = FonteLiveClinCSV(caminho)
+        p = fonte.carregar()[0]
+        self.assertEqual(p.plano.duracao_dias, 45)
+        self.assertTrue(any("mas a planilha diz 45" in a for a in fonte.avisos))
+
+    def test_status_desconhecido_avisa_em_vez_de_assumir(self):
+        caminho = self.escrever(
+            "Nome,Status LiveClin,Plano,Data Início\n"
+            "Maria Santos,EXISTENTE (Inativo),Trimestral,10/04/2026\n"
+        )
+        fonte = FonteLiveClinCSV(caminho)
+        pacientes = fonte.carregar()
+        self.assertEqual(pacientes[0].status, StatusPaciente.ATIVO)
+        self.assertTrue(any("não é reconhecido" in a for a in fonte.avisos))
+
+    def test_etiqueta_no_singular(self):
+        caminho = self.escrever(
+            "Nome,Plano,Data Início,Etiqueta\nDara,Mensal,27/03/2026,Ativos - Juliana\n"
+        )
+        self.assertEqual(
+            FonteLiveClinCSV(caminho).carregar()[0].etiquetas, ["Ativos - Juliana"]
+        )
+
+    def test_duracao_fora_do_catalogo_vira_plano_sob_medida(self):
+        caminho = self.escrever(
+            "Nome,Plano,Data Início,Duração (dias)\nTeste,Especial,01/03/2026,45\n"
+        )
+        p = FonteLiveClinCSV(caminho).carregar()[0]
+        self.assertEqual(p.plano.duracao_dias, 45)
+
+
 class TestErrosFatais(BaseCSV):
     def test_arquivo_inexistente(self):
         with self.assertRaises(ErroDeFonte):
