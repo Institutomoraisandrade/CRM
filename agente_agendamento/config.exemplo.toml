@@ -60,3 +60,24 @@ dias_recuperacao = 7
 # As mensagens de WhatsApp são montadas e gravadas aqui, prontas para
 # envio. Nenhuma mensagem sai da máquina: falta plugar a API.
 arquivo = "notificacoes.json"
+
+[email]
+# Para onde vai o relatório diário.
+destinatarios = ["suportejdteam@gmail.com"]
+
+# De qual conta o agente envia. Pode ser a mesma do destinatário.
+remetente = "suportejdteam@gmail.com"
+
+servidor = "smtp.gmail.com"
+porta = 587
+
+# Padrão: o mesmo endereço do remetente.
+# usuario = ""
+
+nome_remetente = "Agente de agendamento"
+
+# A SENHA NÃO FICA AQUI. O agente lê desta variável de ambiente.
+# No Gmail com verificação em duas etapas é preciso uma "Senha de app":
+#   https://myaccount.google.com/apppasswords
+#   export AGENTE_EMAIL_SENHA="suasenhadeapp"
+variavel_senha = "AGENTE_EMAIL_SENHA"

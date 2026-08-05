@@ -9,10 +9,12 @@ from datetime import date, datetime
 
 from .agenda.base import ErroDeAgenda
 from .config import Config, ErroDeConfig, carregar_config
+from .entrega.email import ErroDeEnvio
 from .fontes.base import ErroDeFonte
 from .modelos import Agendamento, Paciente, SituacaoAgendamento, StatusPaciente
-from .notificacoes import gravar, montar_notificacoes
+from .notificacoes import alertas_pendentes, gravar, montar_notificacoes
 from .regras import INTERVALO_MAXIMO_DIAS, data_limite_retorno, etiqueta_vigencia
+from .relatorio import montar
 
 CONFIG_PADRAO = "config.toml"
 
@@ -208,6 +210,30 @@ def comando_alertas(args: argparse.Namespace) -> int:
     return 0
 
 
+def comando_relatorio(args: argparse.Namespace) -> int:
+    config, pacientes, agendamentos = _planejar(args)
+    _validar_invariante(agendamentos)
+
+    hoje = date.today()
+    relatorio = montar(pacientes, agendamentos, alertas_pendentes(pacientes, hoje), hoje)
+
+    print(relatorio.texto())
+
+    destino = config.caminho_relativo(args.saida)
+    destino.parent.mkdir(parents=True, exist_ok=True)
+    destino.write_text(relatorio.html(), encoding="utf-8")
+    print(f"\nPrévia gravada em {destino}")
+
+    if not args.enviar:
+        print("Para enviar por e-mail: python -m agente relatorio --enviar")
+        return 0
+
+    enviador = config.construir_enviador()
+    entregues = enviador.enviar(relatorio.assunto, relatorio.texto(), relatorio.html())
+    print(f"E-mail enviado para {', '.join(entregues)}.")
+    return 0
+
+
 def construir_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="agente",
@@ -243,6 +269,15 @@ def construir_parser() -> argparse.ArgumentParser:
     )
     alertas.set_defaults(func=comando_alertas)
 
+    relatorio = subcomandos.add_parser(
+        "relatorio", help="monta o resumo do dia e envia para o seu e-mail"
+    )
+    relatorio.add_argument(
+        "--enviar", action="store_true", help="envia o e-mail de verdade"
+    )
+    relatorio.add_argument("--saida", default="relatorio.html")
+    relatorio.set_defaults(func=comando_relatorio)
+
     return parser
 
 
@@ -251,7 +286,7 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     try:
         return args.func(args)
-    except (ErroDeConfig, ErroDeFonte, ErroDeAgenda) as erro:
+    except (ErroDeConfig, ErroDeFonte, ErroDeAgenda, ErroDeEnvio) as erro:
         print(f"erro: {erro}", file=sys.stderr)
         return 1
 

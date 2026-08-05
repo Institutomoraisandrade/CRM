@@ -21,10 +21,13 @@ caminho que não depende de guardar a sua senha em lugar nenhum.
 Se o LiveClin abrir uma API no futuro, só a pasta `agente/fontes/` precisa
 mudar — o resto do agente continua igual.
 
-**2. Nenhuma mensagem é enviada automaticamente.** Os textos de WhatsApp
-são montados e gravados em `notificacoes.json`, prontos para envio, mas o
-disparo não acontece: falta plugar uma API de WhatsApp. O sistema fica
-"engatilhado", como combinado.
+**2. Os pacientes não recebem nada automaticamente.** Os textos de
+WhatsApp são montados e gravados em `notificacoes.json`, prontos para
+envio, mas o disparo não acontece: falta plugar uma API de WhatsApp. O
+sistema fica "engatilhado", como combinado.
+
+O **relatório para você** é diferente: esse sai por e-mail e funciona
+hoje (veja "Relatório por e-mail" abaixo).
 
 ---
 
@@ -93,6 +96,7 @@ python3 -m agente verificar    # confere a planilha e mostra os planos
 python3 -m agente planejar     # calcula os retornos, sem tocar na agenda
 python3 -m agente aplicar --confirmar   # cria as consultas de verdade
 python3 -m agente alertas      # lista os avisos do dia
+python3 -m agente relatorio --enviar    # manda o resumo do dia no seu e-mail
 ```
 
 O `planejar` nunca escreve na agenda — use à vontade. O `aplicar` só
@@ -142,6 +146,47 @@ está marcado.
 O limite de 30 dias é um teto rígido: o comando `planejar` confere cada
 proposta antes de mostrar e falha se alguma passar da data.
 
+## Relatório por e-mail
+
+O comando `relatorio` monta o resumo do dia e manda para o seu e-mail:
+quantos pacientes ativos, os retornos marcados dentro dos 30 dias, os
+alertas de check-in e de fim de plano, e o que precisa da sua decisão.
+
+```bash
+python3 -m agente relatorio            # só monta e grava relatorio.html
+python3 -m agente relatorio --enviar   # monta e envia
+```
+
+Sem a flag `--enviar` nada sai — dá para abrir o `relatorio.html` no
+navegador e ver como vai chegar.
+
+### Configurar o Gmail
+
+No `config.toml`, a seção `[email]` já vem com o destinatário preenchido.
+Confira o `remetente` (a conta que envia) e depois gere uma **Senha de
+app**:
+
+1. A verificação em duas etapas precisa estar ativa na conta Google.
+2. Gere a senha em https://myaccount.google.com/apppasswords — são 16
+   letras.
+3. Exporte na variável de ambiente:
+
+```bash
+export AGENTE_EMAIL_SENHA="assenhade16letras"
+```
+
+**A senha não vai no `config.toml`.** O agente lê só da variável de
+ambiente, para que ela não acabe versionada por acidente. Para não
+digitar toda vez, coloque a linha do `export` no seu `~/.bashrc` (Linux),
+`~/.zshrc` (macOS) ou nas variáveis de ambiente do usuário no Windows.
+
+A senha da sua conta Google **não funciona** aqui: o Gmail bloqueia SMTP
+com senha comum quando a verificação em duas etapas está ligada. Se o
+login for recusado, o agente mostra exatamente esse aviso.
+
+Se preferir outro provedor, mude `servidor` e `porta` (587 para STARTTLS,
+465 para SSL direto).
+
 ## Google Calendar (opcional)
 
 Por padrão as consultas vão para um arquivo local (`agenda_local.json`),
@@ -164,15 +209,20 @@ nesta pasta, na sua máquina.
 **Linux/macOS** — `crontab -e`, e acrescente (todo dia às 8h):
 
 ```
-0 8 * * * cd /caminho/para/agente_agendamento && python3 -m agente alertas
+0 8 * * * cd /caminho/para/agente_agendamento && AGENTE_EMAIL_SENHA="assenhade16letras" python3 -m agente relatorio --enviar
 ```
 
 **Windows** — Agendador de Tarefas, ação "Iniciar um programa":
-programa `python`, argumentos `-m agente alertas`, iniciar em
-`C:\caminho\para\agente_agendamento`.
+programa `python`, argumentos `-m agente relatorio --enviar`, iniciar em
+`C:\caminho\para\agente_agendamento`. A senha precisa estar nas variáveis
+de ambiente do usuário.
 
-Vale deixar o `alertas` no automático e rodar o `aplicar` na mão, para
-você conferir os horários antes de eles entrarem na agenda.
+Vale deixar o `relatorio` no automático e rodar o `aplicar` na mão, para
+você conferir os horários antes de eles entrarem na agenda. Assim você
+recebe o resumo todo dia e decide o que marcar.
+
+Se algo falhar (planilha faltando, senha errada), o agente termina com
+erro e o cron registra a falha em vez de fingir sucesso.
 
 ## Testes
 
@@ -190,5 +240,7 @@ agente/
   fontes/         leitura da planilha do LiveClin
   agenda/         arquivo local e Google Calendar
   notificacoes.py fila de mensagens (WhatsApp engatilhado)
+  relatorio.py    resumo do dia em HTML e texto
+  entrega/        envio por e-mail (SMTP)
   cli.py          comandos de linha
 ```

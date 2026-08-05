@@ -10,6 +10,7 @@ from typing import Any
 from .agenda.arquivo import AgendaArquivo
 from .agenda.base import Agenda
 from .agendador import Agendador, JanelaDeAtendimento
+from .entrega.email import EnviadorEmail, ErroDeEnvio
 from .fontes.base import FontePacientes
 from .fontes.liveclin_csv import FonteLiveClinCSV
 from .modelos import Plano
@@ -29,6 +30,7 @@ class Config:
     agenda: dict[str, Any]
     planos: dict[str, Plano]
     notificacoes: dict[str, Any] = field(default_factory=dict)
+    email: dict[str, Any] = field(default_factory=dict)
 
     def caminho_relativo(self, valor: str) -> Path:
         caminho = Path(valor).expanduser()
@@ -80,6 +82,28 @@ class Config:
         except (ValueError, KeyError) as erro:
             raise ErroDeConfig(str(erro)) from erro
 
+    def construir_enviador(self) -> EnviadorEmail:
+        if not self.email:
+            raise ErroDeConfig(
+                "não há seção [email] no config.toml. Copie a do config.exemplo.toml "
+                "e preencha remetente e destinatarios."
+            )
+        destinatarios = self.email.get("destinatarios") or []
+        if isinstance(destinatarios, str):
+            destinatarios = [destinatarios]
+        try:
+            return EnviadorEmail(
+                remetente=self.email.get("remetente", ""),
+                destinatarios=list(destinatarios),
+                servidor=self.email.get("servidor", "smtp.gmail.com"),
+                porta=int(self.email.get("porta", 587)),
+                usuario=self.email.get("usuario") or None,
+                variavel_senha=self.email.get("variavel_senha", "AGENTE_EMAIL_SENHA"),
+                nome_remetente=self.email.get("nome_remetente", "Agente de agendamento"),
+            )
+        except ErroDeEnvio as erro:
+            raise ErroDeConfig(str(erro)) from erro
+
     def construir_agendador(self) -> Agendador:
         try:
             return Agendador(
@@ -112,4 +136,5 @@ def carregar_config(caminho: str | Path) -> Config:
         agenda=dados.get("agenda", {}),
         planos=catalogo_de_config(dados.get("planos")),
         notificacoes=dados.get("notificacoes", {}),
+        email=dados.get("email", {}),
     )
