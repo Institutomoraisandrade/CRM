@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import csv
 import json
 import sys
 from datetime import date, datetime
@@ -12,6 +13,7 @@ from .agenda.base import ErroDeAgenda
 from .config import Config, ErroDeConfig, carregar_config
 from .consultas import cruzar
 from .entrega.email import ErroDeEnvio
+from .etiquetas import para_todos
 from .fontes.base import ErroDeFonte
 from .modelos import Agendamento, Paciente, SituacaoAgendamento, StatusPaciente
 from .notificacoes import alertas_pendentes, gravar, montar_notificacoes
@@ -278,6 +280,59 @@ def comando_relatorio(args: argparse.Namespace) -> int:
     return 0
 
 
+def comando_etiquetas(args: argparse.Namespace) -> int:
+    config, todos = _carregar(args.config)
+    hoje = date.today()
+
+    etiqueta = args.etiqueta if args.etiqueta is not None else config.filtro.get("etiqueta")
+    pacientes = filtros.aplicar(todos, etiqueta=etiqueta, somente_ativos=False)
+    if not pacientes:
+        print("Nenhum paciente selecionado.", file=sys.stderr)
+        return 1
+
+    mapa = config.botconversa.get("nichos") or None
+    planos = para_todos(pacientes, hoje, mapa)
+
+    larguras = [28, 12, 38]
+    print(_linha(["PACIENTE", "PLANO", "ETIQUETAS NO BOTCONVERSA"], larguras))
+    sem_sequencia = []
+    for plano in sorted(planos, key=lambda p: p.paciente.nome):
+        marcadas = ", ".join(plano.etiquetas) if plano.etiquetas else "—"
+        print(_linha([plano.paciente.nome, plano.paciente.plano.nome, marcadas], larguras))
+        for observacao in plano.observacoes:
+            print(f"      {observacao}")
+        if not plano.receberia_mensagem:
+            sem_sequencia.append(plano)
+
+    destino = config.caminho_relativo(
+        args.saida or config.botconversa.get("arquivo", "etiquetas_botconversa.csv")
+    )
+    destino.parent.mkdir(parents=True, exist_ok=True)
+    with destino.open("w", encoding="utf-8", newline="") as arquivo:
+        escritor = csv.writer(arquivo)
+        escritor.writerow(["telefone", "nome", "etiquetas", "plano", "status", "observacoes"])
+        for plano in sorted(planos, key=lambda p: p.paciente.nome):
+            escritor.writerow(
+                [
+                    plano.paciente.whatsapp or "",
+                    plano.paciente.nome,
+                    ";".join(plano.etiquetas),
+                    plano.paciente.plano.nome,
+                    plano.paciente.status.value,
+                    " | ".join(plano.observacoes),
+                ]
+            )
+
+    print(f"\n{len(planos)} paciente(s) processados. Arquivo: {destino}")
+    if sem_sequencia:
+        print(
+            f"{len(sem_sequencia)} ficaram sem etiqueta de sequência e não "
+            "receberiam disparo — veja as observações acima."
+        )
+    print("Nada foi enviado ao BotConversa: este comando só monta as etiquetas.")
+    return 0
+
+
 def construir_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="agente",
@@ -331,6 +386,14 @@ def construir_parser() -> argparse.ArgumentParser:
     )
     relatorio.add_argument("--saida", default="relatorio.html")
     relatorio.set_defaults(func=comando_relatorio)
+
+    etiquetas = subcomandos.add_parser(
+        "etiquetas",
+        help="monta as etiquetas de cada paciente para o BotConversa",
+    )
+    etiquetas.add_argument("--etiqueta", default=None, help="filtra por etiqueta do LiveClin")
+    etiquetas.add_argument("--saida", default=None)
+    etiquetas.set_defaults(func=comando_etiquetas)
 
     return parser
 

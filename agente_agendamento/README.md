@@ -246,6 +246,57 @@ login for recusado, o agente mostra exatamente esse aviso.
 Se preferir outro provedor, mude `servidor` e `porta` (587 para STARTTLS,
 465 para SSL direto).
 
+## Etiquetas do BotConversa
+
+No BotConversa a **etiqueta é o gatilho**: `ativo-emagrec` dispara a
+sequência de emagrecimento, `finalizado-*` dispara a de reativação. O
+agente não escreve nem envia mensagem — ele só mantém a etiqueta
+contando a verdade, a partir do plano no LiveClin.
+
+```bash
+python3 -m agente etiquetas
+```
+
+O comando mostra e grava um CSV com a etiqueta que cada paciente deveria
+ter hoje:
+
+```
+Ana Souza        mensal       ativo-emagrec, mes-1
+Eva Ramos        mensal       ativo-emagrec, mes-1, vence-7dias
+Gisele Prado     mensal       finalizado-emagrec
+      plano venceu em 20/07/2026, mas o LiveClin ainda marca como ativo
+```
+
+As regras:
+
+- O nicho vem da etiqueta do LiveClin (emagrecimento, hipertrofia,
+  performance/esporte). Configure em `[botconversa.nichos]`.
+- `mes-N` avança a cada 30 dias de plano, até `mes-12`.
+- `vence-7dias` entra quando faltam 7 dias ou menos.
+- Plano vencido ou paciente inativo viram `finalizado-<nicho>`.
+- **Paciente pausado fica sem etiqueta de sequência**, para não receber
+  disparo. Sem etiqueta de nicho, idem — o agente avisa em vez de
+  chutar uma sequência.
+
+Um paciente nunca recebe `ativo-*` e `finalizado-*` ao mesmo tempo.
+
+### Por que só etiqueta, e não envio
+
+Suas sequências do BotConversa já disparam segunda, quarta e quinta. Se
+o agente também mandasse mensagem, o paciente receberia em dobro. Um
+cérebro decide o conteúdo (BotConversa), o outro mantém o cadastro
+correto (o agente).
+
+### Integração direta com a API
+
+Ainda não existe: falta confirmar os endpoints contra o Swagger oficial
+(`backend.botconversa.com.br/swagger/`). Por enquanto o caminho é
+importar o CSV no BotConversa.
+
+Quando existir, a chave da API virá de variável de ambiente
+(`BOTCONVERSA_API_KEY`), nunca do `config.toml` — mesma regra da senha
+do e-mail.
+
 ## Google Calendar (opcional)
 
 Por padrão as consultas vão para um arquivo local (`agenda_local.json`),

@@ -18,3 +18,5 @@ __pycache__/
 *.py[cod]
 .venv/
 relatorio.html
+etiquetas_botconversa.csv
+.env
