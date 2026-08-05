@@ -61,10 +61,11 @@ esporte = "perf"
 #   export BOTCONVERSA_API_KEY="..."
 
 [filtro]
-# Só entram no relatório os pacientes com esta etiqueta.
-# No LiveClin a convenção usada é "Ativos - <Profissional>".
-# Deixe vazio ("") para trazer todos.
-etiqueta = "Ativos - Daniel"
+# Só entram no relatório os pacientes com uma destas etiquetas.
+# No LiveClin a convenção é "Ativos - <Profissional>", e o relatório
+# separa os pacientes por profissional a partir daí.
+# Deixe a lista vazia ([]) para trazer todos.
+etiquetas = ["Ativos - Daniel", "Ativos - Juliana"]
 
 # Por padrão só pacientes ativos entram. Mude para true para incluir
 # pausados e inativos.

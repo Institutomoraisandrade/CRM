@@ -235,19 +235,50 @@ paciente pode ter mais de um:
 | sem horário livre antes do limite | A agenda está cheia. Abra mais horários. |
 | plano vencido | Precisa renovar antes de marcar. |
 
-### Filtrar por etiqueta
+### O alarme dos 30 dias
 
-Para trazer só os seus pacientes, use a etiqueta que você já usa no
-LiveClin:
+O prazo entre consultas é para ser cumprido, não esticado. Sempre que um
+paciente **chega ou passa** dos 30 dias desde a última consulta, o
+e-mail abre com um bloco vermelho, antes de qualquer outra coisa:
 
-```bash
-python3 -m agente relatorio --etiqueta Daniel
+```
+🚨 3 PACIENTES NO LIMITE DE 30 DIAS
+O prazo entre consultas não pode ser esticado. Agendar hoje.
+
+  [+11 dias]        Carla Nunes (Daniel · semestral)
+  [+1 dia]          Isabela Paiva (Daniel · semestral)
+  [HOJE É O LIMITE] Laura Helena (Juliana · anual)
 ```
 
-Ou deixe fixo na seção `[filtro]` do `config.toml`. A comparação ignora
-acento e maiúscula, então `Daniel`, `daniel` e `DANIEL` são a mesma
-coisa. Por padrão só entram pacientes **ativos**; `--incluir-inativos`
-traz também pausados e inativos.
+O assunto do e-mail também muda: vira
+`🚨 3 pacientes NO LIMITE DE 30 DIAS — agenda 05/08`, para dar de cara
+na caixa de entrada sem precisar abrir.
+
+Plano vencido **não** entra nesse alarme: é outro problema (renovação),
+e misturar os dois faz o alarme perder força.
+
+### Filtrar por etiqueta
+
+O relatório considera as etiquetas do LiveClin, no padrão
+`Ativos - <Profissional>`:
+
+```toml
+[filtro]
+etiquetas = ["Ativos - Daniel", "Ativos - Juliana"]
+```
+
+Ou na linha de comando, repetindo a flag:
+
+```bash
+python3 -m agente relatorio --etiqueta "Ativos - Daniel" --etiqueta "Ativos - Juliana"
+```
+
+Quando há mais de um profissional, o e-mail **identifica de quem é cada
+paciente** — no alarme, na fila de prioridade e no quadro de consultas —
+e traz um resumo com a contagem de cada um.
+
+A comparação ignora acento e maiúscula. Por padrão só entram pacientes
+**ativos**; `--incluir-inativos` traz também pausados e inativos.
 
 ## Contagem de consultas (WebDiet)
 

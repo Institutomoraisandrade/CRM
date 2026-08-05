@@ -7,7 +7,7 @@ from agente.consultas import (
     previstas_ate,
     previstas_no_plano,
 )
-from agente.filtros import aplicar, tem_etiqueta
+from agente.filtros import SEM_PROFISSIONAL, aplicar, profissional_de, tem_etiqueta
 from agente.fontes.webdiet_csv import Avaliacao
 from agente.modelos import Paciente, StatusPaciente
 from agente.planos import CATALOGO_PADRAO
@@ -236,19 +236,49 @@ class TestFiltros(unittest.TestCase):
         self.assertTrue(tem_etiqueta(paciente(etiquetas=[]), ""))
 
     def test_filtra_por_etiqueta_e_status(self):
-        ativo = paciente("Ativo Daniel", etiquetas=["Daniel"])
-        outro = paciente("Outro Prof", etiquetas=["Roberta"])
-        pausado = paciente("Pausado", etiquetas=["Daniel"], status=StatusPaciente.PAUSADO)
-        selecionados = aplicar([ativo, outro, pausado], etiqueta="Daniel")
+        ativo = paciente("Ativo Daniel", etiquetas=["Ativos - Daniel"])
+        outro = paciente("Outro Prof", etiquetas=["Ativos - Roberta"])
+        pausado = paciente(
+            "Pausado", etiquetas=["Ativos - Daniel"], status=StatusPaciente.PAUSADO
+        )
+        selecionados = aplicar([ativo, outro, pausado], etiquetas=["Ativos - Daniel"])
         self.assertEqual([p.nome for p in selecionados], ["Ativo Daniel"])
 
-    def test_incluir_inativos(self):
-        ativo = paciente("Ativo", etiquetas=["Daniel"])
-        pausado = paciente("Pausado", etiquetas=["Daniel"], status=StatusPaciente.PAUSADO)
+    def test_aceita_varias_etiquetas(self):
+        dani = paciente("Do Daniel", etiquetas=["Ativos - Daniel"])
+        ju = paciente("Da Juliana", etiquetas=["Ativos - Juliana"])
+        outro = paciente("De Outro", etiquetas=["Ativos - Roberta"])
         selecionados = aplicar(
-            [ativo, pausado], etiqueta="Daniel", somente_ativos=False
+            [dani, ju, outro], etiquetas=["Ativos - Daniel", "Ativos - Juliana"]
+        )
+        self.assertEqual([p.nome for p in selecionados], ["Do Daniel", "Da Juliana"])
+
+    def test_etiqueta_como_texto_simples_ainda_funciona(self):
+        dani = paciente("Do Daniel", etiquetas=["Ativos - Daniel"])
+        selecionados = aplicar([dani], etiquetas="Ativos - Daniel")
+        self.assertEqual(len(selecionados), 1)
+
+    def test_incluir_inativos(self):
+        ativo = paciente("Ativo", etiquetas=["Ativos - Daniel"])
+        pausado = paciente(
+            "Pausado", etiquetas=["Ativos - Daniel"], status=StatusPaciente.PAUSADO
+        )
+        selecionados = aplicar(
+            [ativo, pausado], etiquetas=["Ativos - Daniel"], somente_ativos=False
         )
         self.assertEqual(len(selecionados), 2)
+
+    def test_profissional_sai_da_etiqueta(self):
+        self.assertEqual(
+            profissional_de(paciente(etiquetas=["Ativos - Daniel", "emagrecimento"])),
+            "Daniel",
+        )
+        self.assertEqual(
+            profissional_de(paciente(etiquetas=["ativos - juliana"])), "juliana"
+        )
+
+    def test_sem_etiqueta_de_profissional(self):
+        self.assertEqual(profissional_de(paciente(etiquetas=["vip"])), SEM_PROFISSIONAL)
 
 
 if __name__ == "__main__":

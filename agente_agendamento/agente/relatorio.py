@@ -6,6 +6,7 @@ from datetime import date
 from html import escape
 
 from .consultas import Cruzamento
+from .filtros import profissional_de
 from .modelos import (
     Agendamento,
     Alerta,
@@ -89,6 +90,28 @@ class Relatorio:
         ]
 
     @property
+    def urgentes_30_dias(self) -> list[ItemPrioridade]:
+        """Quem já chegou ou passou dos 30 dias desde a última consulta.
+
+        É o alarme do relatório: o prazo é para ser cumprido, não
+        esticado, então esses casos aparecem antes de qualquer outra coisa.
+        """
+        return [
+            item
+            for item in self.fila
+            if item.agendamento.limite is not None
+            and item.agendamento.limite <= self.hoje
+            and item.agendamento.situacao is not SituacaoAgendamento.PLANO_VENCIDO
+        ]
+
+    @property
+    def por_profissional(self) -> dict[str, list[Paciente]]:
+        agrupados: dict[str, list[Paciente]] = {}
+        for paciente in self.ativos:
+            agrupados.setdefault(profissional_de(paciente), []).append(paciente)
+        return dict(sorted(agrupados.items()))
+
+    @property
     def programados(self) -> list[Agendamento]:
         """Consultas com data definida, urgentes ou não."""
         return sorted(
@@ -116,13 +139,19 @@ class Relatorio:
 
     @property
     def assunto(self) -> str:
-        alvo = f" — {self.titulo_filtro}" if self.titulo_filtro else ""
+        urgentes = self.urgentes_30_dias
+        if urgentes:
+            plural = "paciente" if len(urgentes) == 1 else "pacientes"
+            return (
+                f"🚨 {len(urgentes)} {plural} NO LIMITE DE {INTERVALO_MAXIMO_DIAS} DIAS "
+                f"— agenda {self.hoje:%d/%m}"
+            )
         if self.fila:
             return (
-                f"Agenda {self.hoje:%d/%m}{alvo} — "
+                f"Agenda {self.hoje:%d/%m} — "
                 f"{len(self.fila)} paciente(s) para agendar"
             )
-        return f"Agenda {self.hoje:%d/%m}{alvo} — nada pendente"
+        return f"Agenda {self.hoje:%d/%m} — nada pendente"
 
     # -- versão em texto puro --------------------------------------------
 
@@ -130,6 +159,40 @@ class Relatorio:
         linhas = [f"Relatório de agendamento — {self.hoje:%d/%m/%Y}"]
         if self.titulo_filtro:
             linhas.append(self.titulo_filtro)
+
+        urgentes = self.urgentes_30_dias
+        if urgentes:
+            plural = "PACIENTE" if len(urgentes) == 1 else "PACIENTES"
+            linhas += [
+                "",
+                "!" * 52,
+                f"🚨 {len(urgentes)} {plural} NO LIMITE DE "
+                f"{INTERVALO_MAXIMO_DIAS} DIAS",
+                "O prazo entre consultas não pode ser esticado. Agendar hoje.",
+                "!" * 52,
+            ]
+            for item in urgentes:
+                atraso = (self.hoje - item.agendamento.limite).days
+                if atraso == 0:
+                    selo = "HOJE É O LIMITE"
+                else:
+                    selo = f"+{atraso} dia" + ("s" if atraso > 1 else "")
+                linhas.append(
+                    f"  [{selo}] {item.paciente.nome} "
+                    f"({profissional_de(item.paciente)} · {item.paciente.plano.nome})"
+                )
+                if item.paciente.ultima_consulta:
+                    linhas.append(
+                        f"        última consulta "
+                        f"{item.paciente.ultima_consulta:%d/%m/%Y}, "
+                        f"limite era {item.agendamento.limite:%d/%m/%Y}"
+                    )
+                if item.agendamento.inicio:
+                    linhas.append(
+                        f"        encaixe sugerido: "
+                        f"{item.agendamento.inicio:%d/%m/%Y às %H:%M}"
+                    )
+
         linhas += [
             "",
             f"Pacientes ativos: {len(self.ativos)}",
@@ -137,6 +200,13 @@ class Relatorio:
             f"Com consultas em atraso: {self.em_atraso_de_consulta}",
             f"Pendências: {len(self.pendencias)}",
         ]
+
+        grupos = self.por_profissional
+        if len(grupos) > 1:
+            linhas.append("")
+            linhas.append("Por profissional: " + ", ".join(
+                f"{nome} ({len(pacientes)})" for nome, pacientes in grupos.items()
+            ))
 
         if self.fila:
             linhas += ["", "=" * 52, "AGENDAR AGORA (prioridade)", "=" * 52]
@@ -211,7 +281,8 @@ class Relatorio:
             else:
                 estado = "em dia"
             linhas.append(
-                f"{paciente.nome:<26} {paciente.plano.nome:<12} "
+                f"{paciente.nome:<26} {profissional_de(paciente):<10} "
+                f"{paciente.plano.nome:<12} "
                 f"feitas {resumo.realizadas:>2} de {resumo.previstas_total:<3} "
                 f"(previstas até hoje: {resumo.previstas_ate_hoje})  {estado}"
             )
@@ -232,7 +303,9 @@ class Relatorio:
     def html(self) -> str:
         blocos = [
             self._cabecalho(),
+            self._bloco_alarme(),
             self._resumo(),
+            self._bloco_equipe(),
             self._bloco_prioridade(),
             self._bloco_programados(),
             self._bloco_quadro_consultas(),
@@ -284,11 +357,84 @@ class Relatorio:
             f'width:100%;margin-bottom:24px;"><tr>{celulas}</tr></table>'
         )
 
+    def _bloco_equipe(self) -> str:
+        """Quantos pacientes de cada profissional entraram no relatório."""
+        grupos = self.por_profissional
+        if len(grupos) < 2:
+            return ""
+        celulas = "".join(
+            '<td style="padding:8px 12px;border:1px solid #e0e0e0;border-radius:6px;">'
+            f'<div style="font-size:13px;color:{CINZA};">{escape(nome)}</div>'
+            f'<div style="font-size:18px;font-weight:600;">{len(pacientes)}'
+            f'<span style="font-size:12px;font-weight:400;color:{CINZA};">'
+            " pacientes</span></div></td>"
+            for nome, pacientes in grupos.items()
+        )
+        return (
+            self._titulo_secao("Pacientes por profissional")
+            + '<table role="presentation" style="border-collapse:separate;'
+            f'border-spacing:6px;"><tr>{celulas}</tr></table>'
+        )
+
     @staticmethod
     def _titulo_secao(texto: str) -> str:
         return (
             '<h2 style="font-size:15px;margin:26px 0 8px;padding-bottom:6px;'
             f'border-bottom:1px solid #e0e0e0;">{escape(texto)}</h2>'
+        )
+
+    def _bloco_alarme(self) -> str:
+        """Alarme dos 30 dias: o primeiro bloco, impossível de ignorar."""
+        urgentes = self.urgentes_30_dias
+        if not urgentes:
+            return ""
+
+        linhas = []
+        for item in urgentes:
+            limite = item.agendamento.limite
+            atraso = (self.hoje - limite).days
+            if atraso == 0:
+                selo, cor_selo = "HOJE É O LIMITE", "#8a1109"
+            else:
+                selo, cor_selo = f"+{atraso} DIA{'S' if atraso > 1 else ''}", "#6b0d07"
+            detalhes = [f"limite era {limite:%d/%m/%Y}"]
+            if item.paciente.ultima_consulta:
+                detalhes.insert(
+                    0, f"última consulta {item.paciente.ultima_consulta:%d/%m/%Y}"
+                )
+            if item.agendamento.inicio:
+                detalhes.append(
+                    f"encaixe sugerido {item.agendamento.inicio:%d/%m/%Y às %H:%M}"
+                )
+
+            linhas.append(
+                '<div style="background:#ffffff;border-radius:6px;padding:10px 12px;'
+                'margin-bottom:8px;">'
+                '<table role="presentation" style="width:100%;border-collapse:collapse;">'
+                '<tr><td style="font-size:16px;font-weight:700;color:#8a1109;">'
+                f"{escape(item.paciente.nome)}"
+                '<span style="font-weight:400;font-size:13px;color:#7a4b46;"> · '
+                f"{escape(profissional_de(item.paciente))} · "
+                f"{escape(item.paciente.plano.nome)}</span></td>"
+                '<td align="right" style="white-space:nowrap;"><span style="display:'
+                f"inline-block;background:{cor_selo};color:#ffffff;font-size:12px;"
+                'font-weight:700;border-radius:4px;padding:3px 8px;">'
+                f"{escape(selo)}</span></td></tr></table>"
+                '<div style="font-size:13px;color:#5c1a14;margin-top:4px;">'
+                f"{escape(' · '.join(detalhes))}</div></div>"
+            )
+
+        plural = "PACIENTE" if len(urgentes) == 1 else "PACIENTES"
+        return (
+            '<div style="background:#b3261e;border-radius:10px;padding:16px;'
+            'margin-bottom:20px;">'
+            '<div style="font-size:22px;font-weight:800;color:#ffffff;'
+            'letter-spacing:0.3px;margin-bottom:4px;">'
+            f"🚨 {len(urgentes)} {plural} NO LIMITE DE {INTERVALO_MAXIMO_DIAS} DIAS</div>"
+            '<div style="font-size:13px;color:#ffe0dc;margin-bottom:12px;">'
+            "O prazo entre consultas não pode ser esticado. Agendar hoje.</div>"
+            + "".join(linhas)
+            + "</div>"
         )
 
     def _bloco_prioridade(self) -> str:
@@ -328,6 +474,7 @@ class Relatorio:
                 f'<div style="font-size:15px;font-weight:600;">{posicao}. '
                 f"{escape(item.paciente.nome)}"
                 f'<span style="font-weight:400;color:{CINZA};font-size:13px;"> · '
+                f"{escape(profissional_de(item.paciente))} · "
                 f"{escape(item.paciente.plano.nome)}</span>{consultas}</div>"
                 f'<ul style="margin:6px 0 0;padding-left:18px;font-size:13px;'
                 f'color:{cor};">{motivos}</ul>{sugestao}</div>'
@@ -398,6 +545,9 @@ class Relatorio:
                 '<tr><td style="padding:8px 6px;border-bottom:1px solid #eee;'
                 f'font-size:14px;">{escape(paciente.nome)}</td>'
                 '<td style="padding:8px 6px;border-bottom:1px solid #eee;'
+                f'font-size:13px;color:{CINZA};">'
+                f"{escape(profissional_de(paciente))}</td>"
+                '<td style="padding:8px 6px;border-bottom:1px solid #eee;'
                 f'font-size:13px;color:{CINZA};">{escape(paciente.plano.nome)}</td>'
                 '<td style="padding:8px 6px;border-bottom:1px solid #eee;'
                 f'font-size:14px;white-space:nowrap;">{resumo.realizadas} de '
@@ -412,6 +562,7 @@ class Relatorio:
             return ""
         cabecalhos = (
             "Paciente",
+            "Profissional",
             "Plano",
             "Feitas",
             "Previstas até hoje",

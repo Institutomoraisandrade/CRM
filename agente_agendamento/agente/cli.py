@@ -228,6 +228,16 @@ def comando_alertas(args: argparse.Namespace) -> int:
     return 0
 
 
+def _etiquetas(args: argparse.Namespace, config: Config) -> list[str]:
+    """Etiquetas a considerar: da linha de comando ou do config.toml."""
+    if args.etiqueta:
+        return list(args.etiqueta)
+    configuradas = config.filtro.get("etiquetas") or config.filtro.get("etiqueta")
+    if isinstance(configuradas, str):
+        configuradas = [configuradas]
+    return [e for e in (configuradas or []) if e and e.strip()]
+
+
 def _cruzar_webdiet(config: Config, pacientes: list[Paciente], hoje: date):
     """Cruza com as avaliações do WebDiet, se a fonte estiver configurada."""
     fonte = config.construir_fonte_webdiet()
@@ -252,14 +262,14 @@ def comando_relatorio(args: argparse.Namespace) -> int:
     _validar_invariante(agendamentos_todos)
 
     hoje = date.today()
-    etiqueta = args.etiqueta if args.etiqueta is not None else config.filtro.get("etiqueta")
+    etiquetas = _etiquetas(args, config)
     incluir_inativos = args.incluir_inativos or bool(config.filtro.get("incluir_inativos"))
 
     pacientes = filtros.aplicar(
-        todos, etiqueta=etiqueta, somente_ativos=not incluir_inativos
+        todos, etiquetas=etiquetas, somente_ativos=not incluir_inativos
     )
     if not pacientes:
-        alvo = f" com a etiqueta {etiqueta!r}" if etiqueta else ""
+        alvo = f" com as etiquetas {', '.join(etiquetas)}" if etiquetas else ""
         print(f"Nenhum paciente ativo{alvo} na planilha.", file=sys.stderr)
         return 1
 
@@ -272,7 +282,7 @@ def comando_relatorio(args: argparse.Namespace) -> int:
         alertas_pendentes(pacientes, hoje),
         hoje,
         cruzamento=cruzamento,
-        titulo_filtro=filtros.descrever(etiqueta, not incluir_inativos),
+        titulo_filtro=filtros.descrever(etiquetas, not incluir_inativos),
     )
 
     print(relatorio.texto())
@@ -296,8 +306,8 @@ def comando_etiquetas(args: argparse.Namespace) -> int:
     config, todos = _carregar(args.config)
     hoje = date.today()
 
-    etiqueta = args.etiqueta if args.etiqueta is not None else config.filtro.get("etiqueta")
-    pacientes = filtros.aplicar(todos, etiqueta=etiqueta, somente_ativos=False)
+    etiquetas = _etiquetas(args, config)
+    pacientes = filtros.aplicar(todos, etiquetas=etiquetas, somente_ativos=False)
     if not pacientes:
         print("Nenhum paciente selecionado.", file=sys.stderr)
         return 1
@@ -388,8 +398,13 @@ def construir_parser() -> argparse.ArgumentParser:
     )
     relatorio.add_argument(
         "--etiqueta",
+        action="append",
         default=None,
-        help="considera apenas pacientes com esta etiqueta (ex.: Daniel)",
+        help=(
+            "considera apenas pacientes com esta etiqueta; repita para incluir "
+            "mais de uma (ex.: --etiqueta \"Ativos - Daniel\" "
+            "--etiqueta \"Ativos - Juliana\")"
+        ),
     )
     relatorio.add_argument(
         "--incluir-inativos",
@@ -403,7 +418,12 @@ def construir_parser() -> argparse.ArgumentParser:
         "etiquetas",
         help="monta as etiquetas de cada paciente para o BotConversa",
     )
-    etiquetas.add_argument("--etiqueta", default=None, help="filtra por etiqueta do LiveClin")
+    etiquetas.add_argument(
+        "--etiqueta",
+        action="append",
+        default=None,
+        help="filtra por etiqueta do LiveClin; repita para incluir mais de uma",
+    )
     etiquetas.add_argument("--saida", default=None)
     etiquetas.set_defaults(func=comando_etiquetas)
 
