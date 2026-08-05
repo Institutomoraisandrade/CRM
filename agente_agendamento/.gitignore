@@ -1,0 +1,19 @@
+# Configuração e dados reais do profissional — nunca versionar.
+config.toml
+agenda_local.json
+notificacoes.json
+plano_de_agendamento.json
+
+# Credenciais do Google.
+credentials.json
+token.json
+
+# Planilhas exportadas do LiveClin (dados de paciente).
+*.csv
+*.xlsx
+*.xlsm
+!exemplos/*.csv
+
+__pycache__/
+*.py[cod]
+.venv/
