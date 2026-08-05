@@ -98,11 +98,11 @@ class TestConteudo(unittest.TestCase):
         rel = montar([vencendo, atrasado], [], alertas, HOJE)
         self.assertEqual(rel.alertas[0].paciente.nome, "Carla Nunes")
 
-    def test_assunto_resume_o_dia(self):
+    def test_assunto_conta_quem_precisa_ser_agendado(self):
         p = paciente()
-        rel = montar([p], [agendamento(p)], [], HOJE)
+        rel = montar([p], [agendamento(p, SituacaoAgendamento.ATRASADO, dia=6)], [], HOJE)
         self.assertIn("05/08", rel.assunto)
-        self.assertIn("1 retorno", rel.assunto)
+        self.assertIn("1 paciente(s) para agendar", rel.assunto)
 
     def test_assunto_quando_nao_ha_nada(self):
         rel = montar([], [], [], HOJE)
@@ -110,11 +110,12 @@ class TestConteudo(unittest.TestCase):
 
 
 class TestTexto(unittest.TestCase):
-    def test_texto_lista_retornos(self):
+    def test_texto_lista_retornos_programados(self):
         p = paciente()
         texto = montar([p], [agendamento(p)], [], HOJE).texto()
         self.assertIn("Ana Souza", texto)
         self.assertIn("14/08/2026 17:00", texto)
+        self.assertIn("AGENDA — RETORNOS", texto)
 
     def test_texto_avisa_que_nada_foi_ao_paciente(self):
         rel = montar([], [], [], HOJE)
@@ -147,9 +148,13 @@ class TestHTML(unittest.TestCase):
 
     def test_html_traz_as_secoes(self):
         html = self._html()
+        self.assertIn("Agendar agora", html)
+        self.assertIn("Agenda de retornos", html)
         self.assertIn("Alertas de hoje", html)
-        self.assertIn("Retornos dentro do limite de 30 dias", html)
-        self.assertIn("Precisam de decisão sua", html)
+
+    def test_html_sem_pendencia_mostra_tudo_em_dia(self):
+        html = montar([paciente()], [], [], HOJE).html()
+        self.assertIn("Ninguém precisa ser agendado hoje", html)
 
     def test_html_vazio_ainda_e_valido(self):
         checador = ChecadorHTML()

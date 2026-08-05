@@ -7,8 +7,10 @@ import json
 import sys
 from datetime import date, datetime
 
+from . import filtros
 from .agenda.base import ErroDeAgenda
 from .config import Config, ErroDeConfig, carregar_config
+from .consultas import cruzar
 from .entrega.email import ErroDeEnvio
 from .fontes.base import ErroDeFonte
 from .modelos import Agendamento, Paciente, SituacaoAgendamento, StatusPaciente
@@ -210,12 +212,54 @@ def comando_alertas(args: argparse.Namespace) -> int:
     return 0
 
 
+def _cruzar_webdiet(config: Config, pacientes: list[Paciente], hoje: date):
+    """Cruza com as avaliações do WebDiet, se a fonte estiver configurada."""
+    fonte = config.construir_fonte_webdiet()
+    if fonte is None:
+        print(
+            "  aviso: [webdiet] não configurado — o relatório sai sem a contagem "
+            "de consultas.",
+            file=sys.stderr,
+        )
+        return None
+    avaliacoes = fonte.carregar()
+    for aviso in fonte.avisos:
+        print(f"  aviso: {aviso}", file=sys.stderr)
+    resultado = cruzar(pacientes, avaliacoes, hoje)
+    for aviso in resultado.avisos:
+        print(f"  nomes: {aviso}", file=sys.stderr)
+    return resultado
+
+
 def comando_relatorio(args: argparse.Namespace) -> int:
-    config, pacientes, agendamentos = _planejar(args)
-    _validar_invariante(agendamentos)
+    config, todos, agendamentos_todos = _planejar(args)
+    _validar_invariante(agendamentos_todos)
 
     hoje = date.today()
-    relatorio = montar(pacientes, agendamentos, alertas_pendentes(pacientes, hoje), hoje)
+    etiqueta = args.etiqueta if args.etiqueta is not None else config.filtro.get("etiqueta")
+    incluir_inativos = args.incluir_inativos or bool(config.filtro.get("incluir_inativos"))
+
+    pacientes = filtros.aplicar(
+        todos, etiqueta=etiqueta, somente_ativos=not incluir_inativos
+    )
+    if not pacientes:
+        alvo = f" com a etiqueta {etiqueta!r}" if etiqueta else ""
+        print(f"Nenhum paciente ativo{alvo} na planilha.", file=sys.stderr)
+        return 1
+
+    selecionados = {p.nome for p in pacientes}
+    agendamentos = [a for a in agendamentos_todos if a.paciente.nome in selecionados]
+
+    cruzamento = _cruzar_webdiet(config, pacientes, hoje)
+
+    relatorio = montar(
+        pacientes,
+        agendamentos,
+        alertas_pendentes(pacientes, hoje),
+        hoje,
+        cruzamento=cruzamento,
+        titulo_filtro=filtros.descrever(etiqueta, not incluir_inativos),
+    )
 
     print(relatorio.texto())
 
@@ -274,6 +318,16 @@ def construir_parser() -> argparse.ArgumentParser:
     )
     relatorio.add_argument(
         "--enviar", action="store_true", help="envia o e-mail de verdade"
+    )
+    relatorio.add_argument(
+        "--etiqueta",
+        default=None,
+        help="considera apenas pacientes com esta etiqueta (ex.: Daniel)",
+    )
+    relatorio.add_argument(
+        "--incluir-inativos",
+        action="store_true",
+        help="inclui pausados e inativos (por padrão só entram os ativos)",
     )
     relatorio.add_argument("--saida", default="relatorio.html")
     relatorio.set_defaults(func=comando_relatorio)

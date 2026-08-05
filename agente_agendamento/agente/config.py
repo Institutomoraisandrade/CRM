@@ -13,6 +13,7 @@ from .agendador import Agendador, JanelaDeAtendimento
 from .entrega.email import EnviadorEmail, ErroDeEnvio
 from .fontes.base import FontePacientes
 from .fontes.liveclin_csv import FonteLiveClinCSV
+from .fontes.webdiet_csv import FonteWebDietCSV
 from .modelos import Plano
 from .planos import catalogo_de_config
 
@@ -31,6 +32,8 @@ class Config:
     planos: dict[str, Plano]
     notificacoes: dict[str, Any] = field(default_factory=dict)
     email: dict[str, Any] = field(default_factory=dict)
+    webdiet: dict[str, Any] = field(default_factory=dict)
+    filtro: dict[str, Any] = field(default_factory=dict)
 
     def caminho_relativo(self, valor: str) -> Path:
         caminho = Path(valor).expanduser()
@@ -81,6 +84,16 @@ class Config:
             )
         except (ValueError, KeyError) as erro:
             raise ErroDeConfig(str(erro)) from erro
+
+    def construir_fonte_webdiet(self) -> FonteWebDietCSV | None:
+        """Fonte das avaliações físicas; ``None`` quando não configurada."""
+        caminho = self.webdiet.get("caminho")
+        if not caminho:
+            return None
+        return FonteWebDietCSV(
+            caminho=self.caminho_relativo(caminho),
+            colunas=self.webdiet.get("colunas"),
+        )
 
     def construir_enviador(self) -> EnviadorEmail:
         if not self.email:
@@ -137,4 +150,6 @@ def carregar_config(caminho: str | Path) -> Config:
         planos=catalogo_de_config(dados.get("planos")),
         notificacoes=dados.get("notificacoes", {}),
         email=dados.get("email", {}),
+        webdiet=dados.get("webdiet", {}),
+        filtro=dados.get("filtro", {}),
     )

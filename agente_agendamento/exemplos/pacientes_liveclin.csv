@@ -1,8 +1,10 @@
 Nome,Plano,Data início,Vencimento,Última consulta,WhatsApp,E-mail,Status,Etiquetas
-Ana Souza,mensal,15/07/2026,14/08/2026,15/07/2026,(11) 99999-1111,ana@exemplo.com,Ativo,emagrecimento
-Bruno Lima,trimestral,01/06/2026,30/08/2026,20/07/2026,(11) 99999-2222,bruno@exemplo.com,Ativo,hipertrofia
-Carla Nunes,semestral,10/03/2026,06/09/2026,25/06/2026,(11) 99999-3333,carla@exemplo.com,Ativo,performance
-Diego Alves,anual,05/01/2026,31/12/2026,01/08/2026,(11) 99999-4444,diego@exemplo.com,Ativo,"esporte, vip"
-Eva Ramos,mensal,10/07/2026,09/08/2026,10/07/2026,(11) 99999-5555,eva@exemplo.com,Ativo,emagrecimento
-Fabio Costa,trimestral,01/05/2026,30/07/2026,15/06/2026,(11) 99999-6666,fabio@exemplo.com,Pausado,
-Gisele Prado,mensal,20/06/2026,20/07/2026,20/06/2026,(11) 99999-7777,gisele@exemplo.com,Ativo,emagrecimento
+Ana Souza,mensal,15/07/2026,14/08/2026,15/07/2026,(11) 99999-1111,ana@exemplo.com,Ativo,"Daniel, emagrecimento"
+Bruno Lima,trimestral,01/06/2026,30/08/2026,20/07/2026,(11) 99999-2222,bruno@exemplo.com,Ativo,"Daniel, hipertrofia"
+Carla Nunes,semestral,10/03/2026,06/09/2026,25/06/2026,(11) 99999-3333,carla@exemplo.com,Ativo,"Daniel, performance"
+Diego Alves,anual,05/01/2026,31/12/2026,01/08/2026,(11) 99999-4444,diego@exemplo.com,Ativo,"Daniel, esporte, vip"
+Eva Ramos,mensal,10/07/2026,09/08/2026,10/07/2026,(11) 99999-5555,eva@exemplo.com,Ativo,"Daniel, emagrecimento"
+Fabio Costa,trimestral,01/05/2026,30/07/2026,15/06/2026,(11) 99999-6666,fabio@exemplo.com,Pausado,Daniel
+Gisele Prado,mensal,20/06/2026,20/07/2026,20/06/2026,(11) 99999-7777,gisele@exemplo.com,Ativo,"Daniel, emagrecimento"
+Isabela Paiva,semestral,01/04/2026,28/09/2026,05/07/2026,(11) 99999-8888,isabela@exemplo.com,Ativo,"Daniel, emagrecimento"
+Marcos Antonio Silva,anual,10/02/2026,05/02/2027,10/07/2026,(11) 99999-9999,marcos@exemplo.com,Ativo,"Roberta, hipertrofia"

@@ -5,6 +5,7 @@ from __future__ import annotations
 from datetime import date
 from html import escape
 
+from .consultas import Cruzamento
 from .modelos import (
     Agendamento,
     Alerta,
@@ -13,7 +14,8 @@ from .modelos import (
     StatusPaciente,
     TipoAlerta,
 )
-from .regras import INTERVALO_MAXIMO_DIAS, data_limite_retorno, etiqueta_vigencia
+from .prioridade import ItemPrioridade, montar_fila
+from .regras import INTERVALO_MAXIMO_DIAS, etiqueta_vigencia
 
 # Ordem de exibição: o que exige ação primeiro.
 PRIORIDADE_ALERTA = {
@@ -48,6 +50,11 @@ COR_SITUACAO = {
     SituacaoAgendamento.PLANO_VENCIDO: "#b3261e",
 }
 
+VERMELHO = "#b3261e"
+AMBAR = "#a15c00"
+VERDE = "#1a7f4b"
+CINZA = "#5f6368"
+
 
 class Relatorio:
     def __init__(
@@ -56,15 +63,20 @@ class Relatorio:
         agendamentos: list[Agendamento],
         alertas: list[Alerta],
         hoje: date | None = None,
+        cruzamento: Cruzamento | None = None,
+        titulo_filtro: str = "",
     ) -> None:
         self.hoje = hoje or date.today()
         self.pacientes = pacientes
         self.agendamentos = agendamentos
+        self.cruzamento = cruzamento
+        self.titulo_filtro = titulo_filtro
         self.alertas = sorted(
             alertas,
             key=lambda a: (PRIORIDADE_ALERTA.get(a.tipo, 9), a.paciente.nome),
         )
         self.ativos = [p for p in pacientes if p.status is StatusPaciente.ATIVO]
+        self.fila = montar_fila(agendamentos, cruzamento, self.hoje)
 
     # -- números do topo -------------------------------------------------
 
@@ -77,6 +89,14 @@ class Relatorio:
         ]
 
     @property
+    def programados(self) -> list[Agendamento]:
+        """Consultas com data definida, urgentes ou não."""
+        return sorted(
+            (a for a in self.agendamentos if a.inicio is not None),
+            key=lambda a: a.inicio,
+        )
+
+    @property
     def pendencias(self) -> list[Agendamento]:
         return [
             a
@@ -85,56 +105,125 @@ class Relatorio:
         ]
 
     @property
+    def em_atraso_de_consulta(self) -> int:
+        if not self.cruzamento:
+            return 0
+        return sum(
+            1
+            for p in self.ativos
+            if (r := self.cruzamento.de(p)) and r.deficit > 0
+        )
+
+    @property
     def assunto(self) -> str:
-        partes = [f"Agenda {self.hoje:%d/%m}"]
-        if self.marcados:
-            partes.append(f"{len(self.marcados)} retorno(s)")
-        if self.alertas:
-            partes.append(f"{len(self.alertas)} alerta(s)")
-        if self.pendencias:
-            partes.append(f"{len(self.pendencias)} pendência(s)")
-        if len(partes) == 1:
-            partes.append("nada pendente")
-        return " — ".join([partes[0], ", ".join(partes[1:])])
+        alvo = f" — {self.titulo_filtro}" if self.titulo_filtro else ""
+        if self.fila:
+            return (
+                f"Agenda {self.hoje:%d/%m}{alvo} — "
+                f"{len(self.fila)} paciente(s) para agendar"
+            )
+        return f"Agenda {self.hoje:%d/%m}{alvo} — nada pendente"
 
     # -- versão em texto puro --------------------------------------------
 
     def texto(self) -> str:
-        linhas = [
-            f"Relatório de agendamento — {self.hoje:%d/%m/%Y}",
+        linhas = [f"Relatório de agendamento — {self.hoje:%d/%m/%Y}"]
+        if self.titulo_filtro:
+            linhas.append(self.titulo_filtro)
+        linhas += [
             "",
             f"Pacientes ativos: {len(self.ativos)}",
-            f"Retornos a marcar: {len(self.marcados)}",
-            f"Alertas: {len(self.alertas)}",
+            f"Para agendar agora: {len(self.fila)}",
+            f"Com consultas em atraso: {self.em_atraso_de_consulta}",
             f"Pendências: {len(self.pendencias)}",
         ]
 
+        if self.fila:
+            linhas += ["", "=" * 52, "AGENDAR AGORA (prioridade)", "=" * 52]
+            for posicao, item in enumerate(self.fila, start=1):
+                linhas.append(
+                    f"{posicao}. {item.paciente.nome} "
+                    f"[{item.paciente.plano.nome}]{self._consultas_texto(item)}"
+                )
+                for motivo in item.motivos:
+                    linhas.append(f"     - {motivo}")
+                if item.agendamento.inicio:
+                    linhas.append(
+                        f"     sugestão: {item.agendamento.inicio:%d/%m/%Y às %H:%M}"
+                    )
+
+        if self.programados:
+            linhas += [
+                "",
+                f"AGENDA — RETORNOS (limite de {INTERVALO_MAXIMO_DIAS} dias)",
+                "-" * 52,
+            ]
+            for item in self.programados:
+                rotulo = ROTULO_SITUACAO.get(item.situacao, item.situacao.value)
+                limite = f"{item.limite:%d/%m}" if item.limite else "—"
+                linhas.append(
+                    f"{item.inicio:%d/%m/%Y %H:%M}  {item.paciente.nome:<26} "
+                    f"limite {limite}  [{rotulo}]"
+                )
+
+        quadro = self._quadro_consultas()
+        if quadro:
+            linhas += ["", "CONSULTAS POR PACIENTE", "-" * 52] + quadro
+
         if self.alertas:
-            linhas += ["", "ALERTAS", "-" * 40]
+            linhas += ["", "ALERTAS", "-" * 52]
             for alerta in self.alertas:
                 rotulo = ROTULO_ALERTA.get(alerta.tipo, alerta.tipo.value)
                 linhas.append(f"[{rotulo}] {alerta.mensagem}")
 
-        if self.marcados:
-            linhas += ["", f"RETORNOS (limite de {INTERVALO_MAXIMO_DIAS} dias)", "-" * 40]
-            for item in sorted(self.marcados, key=lambda a: a.inicio):
-                linhas.append(
-                    f"{item.inicio:%d/%m/%Y %H:%M}  {item.paciente.nome}"
-                    f"  (limite {item.limite:%d/%m/%Y}) — {item.motivo}"
-                )
-
-        if self.pendencias:
-            linhas += ["", "PRECISAM DE DECISÃO SUA", "-" * 40]
-            for item in self.pendencias:
-                rotulo = ROTULO_SITUACAO.get(item.situacao, item.situacao.value)
-                linhas.append(f"[{rotulo}] {item.paciente.nome} — {item.motivo}")
+        conferir = self._conferir()
+        if conferir:
+            linhas += ["", "CONFERIR MANUALMENTE", "-" * 52] + [
+                f"- {c}" for c in conferir
+            ]
 
         linhas += [
             "",
-            "-" * 40,
+            "-" * 52,
             "Enviado pelo agente de agendamento. Nada foi enviado aos pacientes.",
         ]
         return "\n".join(linhas)
+
+    def _consultas_texto(self, item: ItemPrioridade) -> str:
+        if item.resumo is None or item.resumo.sem_dados:
+            return ""
+        return f" — {item.resumo.realizadas} de {item.resumo.previstas_total} consultas"
+
+    def _quadro_consultas(self) -> list[str]:
+        if not self.cruzamento:
+            return []
+        linhas = []
+        for paciente in sorted(self.ativos, key=lambda p: p.nome):
+            resumo = self.cruzamento.de(paciente)
+            if resumo is None:
+                continue
+            if resumo.sem_dados:
+                estado = "sem registro no WebDiet"
+            elif resumo.deficit > 0:
+                estado = f"faltam {resumo.deficit}"
+            else:
+                estado = "em dia"
+            linhas.append(
+                f"{paciente.nome:<26} {paciente.plano.nome:<12} "
+                f"feitas {resumo.realizadas:>2} de {resumo.previstas_total:<3} "
+                f"(previstas até hoje: {resumo.previstas_ate_hoje})  {estado}"
+            )
+        return linhas
+
+    def _conferir(self) -> list[str]:
+        if not self.cruzamento:
+            return []
+        itens = [c.explicar() for c in self.cruzamento.ambiguidades]
+        itens += [
+            f"{c.consultado!r} está no WebDiet mas não bateu com nenhum paciente ativo"
+            for c in self.cruzamento.sem_paciente
+        ]
+        return itens
 
     # -- versão HTML ------------------------------------------------------
 
@@ -142,37 +231,49 @@ class Relatorio:
         blocos = [
             self._cabecalho(),
             self._resumo(),
+            self._bloco_prioridade(),
+            self._bloco_programados(),
+            self._bloco_quadro_consultas(),
             self._bloco_alertas(),
-            self._bloco_retornos(),
-            self._bloco_pendencias(),
+            self._bloco_conferir(),
             self._bloco_vigencias(),
             self._rodape(),
         ]
         corpo = "\n".join(b for b in blocos if b)
         return (
             '<div style="font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,'
-            'sans-serif;max-width:640px;margin:0 auto;padding:16px;color:#1f1f1f;'
+            'sans-serif;max-width:680px;margin:0 auto;padding:16px;color:#1f1f1f;'
             'line-height:1.5;">' + corpo + "</div>"
         )
 
     def _cabecalho(self) -> str:
+        filtro = (
+            f'<span style="color:{CINZA};"> · {escape(self.titulo_filtro)}</span>'
+            if self.titulo_filtro
+            else ""
+        )
         return (
             '<h1 style="font-size:20px;margin:0 0 4px;">Relatório de agendamento</h1>'
-            f'<p style="margin:0 0 20px;color:#5f6368;font-size:14px;">'
-            f"{self.hoje:%d/%m/%Y}</p>"
+            f'<p style="margin:0 0 20px;color:{CINZA};font-size:14px;">'
+            f"{self.hoje:%d/%m/%Y}{filtro}</p>"
         )
 
     def _resumo(self) -> str:
         cartoes = [
             ("Pacientes ativos", len(self.ativos), "#1f1f1f"),
-            ("Retornos a marcar", len(self.marcados), "#1a7f4b"),
-            ("Alertas", len(self.alertas), "#a15c00" if self.alertas else "#5f6368"),
-            ("Pendências", len(self.pendencias), "#b3261e" if self.pendencias else "#5f6368"),
+            ("Agendar agora", len(self.fila), VERMELHO if self.fila else CINZA),
+            (
+                "Consultas em atraso",
+                self.em_atraso_de_consulta,
+                AMBAR if self.em_atraso_de_consulta else CINZA,
+            ),
+            ("Pendências", len(self.pendencias), AMBAR if self.pendencias else CINZA),
         ]
         celulas = "".join(
-            '<td style="padding:10px 12px;border:1px solid #e0e0e0;border-radius:6px;">'
-            f'<div style="font-size:22px;font-weight:600;color:{cor};">{valor}</div>'
-            f'<div style="font-size:12px;color:#5f6368;">{escape(titulo)}</div>'
+            '<td style="padding:10px 12px;border:1px solid #e0e0e0;border-radius:6px;'
+            'text-align:center;">'
+            f'<div style="font-size:24px;font-weight:600;color:{cor};">{valor}</div>'
+            f'<div style="font-size:12px;color:{CINZA};">{escape(titulo)}</div>'
             "</td>"
             for titulo, valor, cor in cartoes
         )
@@ -184,8 +285,159 @@ class Relatorio:
     @staticmethod
     def _titulo_secao(texto: str) -> str:
         return (
-            '<h2 style="font-size:15px;margin:24px 0 8px;padding-bottom:6px;'
+            '<h2 style="font-size:15px;margin:26px 0 8px;padding-bottom:6px;'
             f'border-bottom:1px solid #e0e0e0;">{escape(texto)}</h2>'
+        )
+
+    def _bloco_prioridade(self) -> str:
+        """O destaque do e-mail: quem precisa ser agendado agora."""
+        if not self.fila:
+            return (
+                f'<div style="border:1px solid #cde8d8;background:#f2fbf6;'
+                f'border-radius:8px;padding:14px 16px;margin-bottom:8px;">'
+                f'<strong style="color:{VERDE};">Ninguém precisa ser agendado hoje.</strong>'
+                f'<div style="font-size:13px;color:{CINZA};margin-top:4px;">'
+                "Todos os pacientes ativos estão dentro do limite de "
+                f"{INTERVALO_MAXIMO_DIAS} dias.</div></div>"
+            )
+
+        cartoes = []
+        for posicao, item in enumerate(self.fila, start=1):
+            cor = VERMELHO if item.peso <= 2 else AMBAR
+            consultas = ""
+            if item.resumo is not None and not item.resumo.sem_dados:
+                consultas = (
+                    f'<span style="color:{CINZA};font-size:13px;"> · '
+                    f"{item.resumo.realizadas} de {item.resumo.previstas_total} consultas"
+                    "</span>"
+                )
+            motivos = "".join(
+                f'<li style="margin-bottom:2px;">{escape(m)}</li>' for m in item.motivos
+            )
+            sugestao = ""
+            if item.agendamento.inicio:
+                sugestao = (
+                    f'<div style="font-size:13px;color:{VERDE};margin-top:6px;">'
+                    f"Sugestão: {item.agendamento.inicio:%d/%m/%Y às %H:%M}</div>"
+                )
+            cartoes.append(
+                f'<div style="border-left:4px solid {cor};background:#fbfbfb;'
+                'padding:12px 14px;margin-bottom:8px;border-radius:0 6px 6px 0;">'
+                f'<div style="font-size:15px;font-weight:600;">{posicao}. '
+                f"{escape(item.paciente.nome)}"
+                f'<span style="font-weight:400;color:{CINZA};font-size:13px;"> · '
+                f"{escape(item.paciente.plano.nome)}</span>{consultas}</div>"
+                f'<ul style="margin:6px 0 0;padding-left:18px;font-size:13px;'
+                f'color:{cor};">{motivos}</ul>{sugestao}</div>'
+            )
+
+        return (
+            '<div style="background:#fff4f2;border:1px solid #f3d3cd;border-radius:8px;'
+            'padding:14px 16px;margin-bottom:8px;">'
+            f'<div style="font-size:16px;font-weight:700;color:{VERMELHO};'
+            'margin-bottom:10px;">'
+            f"Agendar agora — {len(self.fila)} paciente(s)</div>"
+            + "".join(cartoes)
+            + "</div>"
+        )
+
+    def _bloco_programados(self) -> str:
+        if not self.programados:
+            return ""
+        linhas = []
+        for item in self.programados:
+            cor = COR_SITUACAO.get(item.situacao, "#1f1f1f")
+            rotulo = ROTULO_SITUACAO.get(item.situacao, item.situacao.value)
+            limite = f"{item.limite:%d/%m}" if item.limite else "—"
+            linhas.append(
+                '<tr><td style="padding:8px 6px;border-bottom:1px solid #eee;'
+                'font-size:14px;white-space:nowrap;">'
+                f"{item.inicio:%d/%m %H:%M}</td>"
+                '<td style="padding:8px 6px;border-bottom:1px solid #eee;'
+                f'font-size:14px;">{escape(item.paciente.nome)}</td>'
+                '<td style="padding:8px 6px;border-bottom:1px solid #eee;'
+                f'font-size:13px;color:{CINZA};white-space:nowrap;">{limite}</td>'
+                '<td style="padding:8px 6px;border-bottom:1px solid #eee;'
+                f'font-size:13px;color:{cor};white-space:nowrap;">{escape(rotulo)}</td></tr>'
+            )
+        cabecalho = "".join(
+            f'<th align="left" style="padding:6px;font-size:11px;color:{CINZA};'
+            f'text-transform:uppercase;">{escape(c)}</th>'
+            for c in ("Retorno", "Paciente", "Limite", "Situação")
+        )
+        return (
+            self._titulo_secao(
+                f"Agenda de retornos (limite de {INTERVALO_MAXIMO_DIAS} dias)"
+            )
+            + '<table role="presentation" style="border-collapse:collapse;width:100%;">'
+            + f"<tr>{cabecalho}</tr>"
+            + "".join(linhas)
+            + "</table>"
+        )
+
+    def _bloco_quadro_consultas(self) -> str:
+        if not self.cruzamento:
+            return ""
+        linhas = []
+        for paciente in sorted(self.ativos, key=lambda p: p.nome):
+            resumo = self.cruzamento.de(paciente)
+            if resumo is None:
+                continue
+            if resumo.sem_dados:
+                estado, cor = "sem registro", CINZA
+            elif resumo.deficit > 0:
+                estado, cor = f"faltam {resumo.deficit}", VERMELHO
+            else:
+                estado, cor = "em dia", VERDE
+            barra = self._barra(resumo.realizadas, resumo.previstas_total)
+            linhas.append(
+                '<tr><td style="padding:8px 6px;border-bottom:1px solid #eee;'
+                f'font-size:14px;">{escape(paciente.nome)}</td>'
+                '<td style="padding:8px 6px;border-bottom:1px solid #eee;'
+                f'font-size:13px;color:{CINZA};">{escape(paciente.plano.nome)}</td>'
+                '<td style="padding:8px 6px;border-bottom:1px solid #eee;'
+                f'font-size:14px;white-space:nowrap;">{resumo.realizadas} de '
+                f"{resumo.previstas_total}{barra}</td>"
+                '<td style="padding:8px 6px;border-bottom:1px solid #eee;'
+                f'font-size:13px;color:{CINZA};white-space:nowrap;">'
+                f"{resumo.previstas_ate_hoje}</td>"
+                '<td style="padding:8px 6px;border-bottom:1px solid #eee;'
+                f'font-size:13px;color:{cor};white-space:nowrap;">{escape(estado)}</td></tr>'
+            )
+        if not linhas:
+            return ""
+        cabecalhos = (
+            "Paciente",
+            "Plano",
+            "Feitas",
+            "Previstas até hoje",
+            "Situação",
+        )
+        cabecalho = "".join(
+            f'<th align="left" style="padding:6px;font-size:11px;color:{CINZA};'
+            f'text-transform:uppercase;">{escape(c)}</th>'
+            for c in cabecalhos
+        )
+        return (
+            self._titulo_secao("Consultas por paciente")
+            + '<table role="presentation" style="border-collapse:collapse;width:100%;">'
+            + f"<tr>{cabecalho}</tr>"
+            + "".join(linhas)
+            + "</table>"
+        )
+
+    @staticmethod
+    def _barra(feitas: int, total: int) -> str:
+        """Barrinha de progresso em texto, que sobrevive a qualquer cliente."""
+        if total <= 0 or total > 12:
+            return ""
+        cheias = min(feitas, total)
+        return (
+            f'<span style="color:{VERDE};letter-spacing:1px;"> '
+            + "•" * cheias
+            + f'</span><span style="color:#d0d0d0;letter-spacing:1px;">'
+            + "•" * (total - cheias)
+            + "</span>"
         )
 
     def _bloco_alertas(self) -> str:
@@ -198,7 +450,7 @@ class Relatorio:
                 TipoAlerta.CONSULTA_ATRASADA,
                 TipoAlerta.PLANO_VENCIDO,
             )
-            cor = "#b3261e" if urgente else "#a15c00"
+            cor = VERMELHO if urgente else AMBAR
             itens.append(
                 f'<li style="margin-bottom:10px;"><span style="display:inline-block;'
                 f"font-size:11px;font-weight:600;color:{cor};border:1px solid {cor};"
@@ -212,65 +464,28 @@ class Relatorio:
             + "</ul>"
         )
 
-    def _bloco_retornos(self) -> str:
-        if not self.marcados:
+    def _bloco_conferir(self) -> str:
+        itens = self._conferir()
+        if not itens:
             return ""
-        linhas = []
-        for item in sorted(self.marcados, key=lambda a: a.inicio):
-            cor = COR_SITUACAO.get(item.situacao, "#1f1f1f")
-            rotulo = ROTULO_SITUACAO.get(item.situacao, item.situacao.value)
-            linhas.append(
-                '<tr><td style="padding:8px 6px;border-bottom:1px solid #eee;font-size:14px;">'
-                f"<strong>{escape(item.paciente.nome)}</strong><br>"
-                f'<span style="color:#5f6368;font-size:12px;">{escape(item.motivo)}</span></td>'
-                '<td style="padding:8px 6px;border-bottom:1px solid #eee;font-size:14px;'
-                'white-space:nowrap;">'
-                f"{item.inicio:%d/%m %H:%M}</td>"
-                '<td style="padding:8px 6px;border-bottom:1px solid #eee;font-size:12px;'
-                'white-space:nowrap;">'
-                f"{item.limite:%d/%m}</td>"
-                '<td style="padding:8px 6px;border-bottom:1px solid #eee;font-size:12px;'
-                f'color:{cor};white-space:nowrap;">{escape(rotulo)}</td></tr>'
-            )
-        return (
-            self._titulo_secao(f"Retornos dentro do limite de {INTERVALO_MAXIMO_DIAS} dias")
-            + '<table role="presentation" style="border-collapse:collapse;width:100%;">'
-            '<tr><th align="left" style="padding:6px;font-size:11px;color:#5f6368;'
-            'text-transform:uppercase;">Paciente</th>'
-            '<th align="left" style="padding:6px;font-size:11px;color:#5f6368;'
-            'text-transform:uppercase;">Retorno</th>'
-            '<th align="left" style="padding:6px;font-size:11px;color:#5f6368;'
-            'text-transform:uppercase;">Limite</th>'
-            '<th align="left" style="padding:6px;font-size:11px;color:#5f6368;'
-            'text-transform:uppercase;">Situação</th></tr>'
-            + "".join(linhas)
-            + "</table>"
-        )
-
-    def _bloco_pendencias(self) -> str:
-        if not self.pendencias:
-            return ""
-        itens = "".join(
-            f'<li style="margin-bottom:8px;"><strong>{escape(item.paciente.nome)}</strong> — '
-            f"{escape(item.motivo)}</li>"
-            for item in self.pendencias
+        lista = "".join(
+            f'<li style="margin-bottom:6px;">{escape(i)}</li>' for i in itens
         )
         return (
-            self._titulo_secao("Precisam de decisão sua")
-            + f'<ul style="margin:0;padding-left:18px;font-size:14px;">{itens}</ul>'
+            self._titulo_secao("Conferir manualmente")
+            + f'<p style="font-size:13px;color:{CINZA};margin:0 0 8px;">'
+            "O agente não associou estes nomes sozinho para não arriscar contar "
+            "consulta na pessoa errada.</p>"
+            f'<ul style="margin:0;padding-left:18px;font-size:14px;">{lista}</ul>'
         )
 
     def _bloco_vigencias(self) -> str:
-        proximos = [
-            p
-            for p in self.ativos
-            if 0 <= p.dias_para_vencer_em(self.hoje) <= 15
-        ]
+        proximos = [p for p in self.ativos if 0 <= p.dias_para_vencer_em(self.hoje) <= 15]
         if not proximos:
             return ""
         itens = "".join(
             f'<li style="margin-bottom:6px;"><strong>{escape(p.nome)}</strong> '
-            f'<span style="color:#5f6368;">({escape(p.plano.nome)})</span> — '
+            f'<span style="color:{CINZA};">({escape(p.plano.nome)})</span> — '
             f"{escape(etiqueta_vigencia(p, self.hoje))}, até {p.plano_fim:%d/%m/%Y}</li>"
             for p in sorted(proximos, key=lambda p: p.plano_fim)
         )
@@ -282,7 +497,7 @@ class Relatorio:
     def _rodape(self) -> str:
         return (
             '<p style="margin-top:28px;padding-top:12px;border-top:1px solid #e0e0e0;'
-            'font-size:12px;color:#5f6368;">'
+            f'font-size:12px;color:{CINZA};">'
             "Enviado pelo agente de agendamento, da sua máquina. "
             "Nenhuma mensagem foi enviada aos pacientes.</p>"
         )
@@ -293,5 +508,7 @@ def montar(
     agendamentos: list[Agendamento],
     alertas: list[Alerta],
     hoje: date | None = None,
+    cruzamento: Cruzamento | None = None,
+    titulo_filtro: str = "",
 ) -> Relatorio:
-    return Relatorio(pacientes, agendamentos, alertas, hoje)
+    return Relatorio(pacientes, agendamentos, alertas, hoje, cruzamento, titulo_filtro)

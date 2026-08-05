@@ -148,17 +148,76 @@ proposta antes de mostrar e falha se alguma passar da data.
 
 ## Relatório por e-mail
 
-O comando `relatorio` monta o resumo do dia e manda para o seu e-mail:
-quantos pacientes ativos, os retornos marcados dentro dos 30 dias, os
-alertas de check-in e de fim de plano, e o que precisa da sua decisão.
+O comando `relatorio` monta o resumo do dia e manda para o seu e-mail.
 
 ```bash
-python3 -m agente relatorio            # só monta e grava relatorio.html
-python3 -m agente relatorio --enviar   # monta e envia
+python3 -m agente relatorio                      # só monta e grava relatorio.html
+python3 -m agente relatorio --enviar             # monta e envia
+python3 -m agente relatorio --etiqueta Daniel --enviar   # só os seus pacientes
 ```
 
 Sem a flag `--enviar` nada sai — dá para abrir o `relatorio.html` no
 navegador e ver como vai chegar.
+
+O e-mail abre com o bloco **Agendar agora**, em destaque, com os
+pacientes na ordem de urgência. Depois vêm a agenda de retornos, o
+quadro de consultas por paciente, os alertas do dia e os planos
+terminando.
+
+Cada paciente do bloco de prioridade vem com o motivo explícito. Um
+paciente pode ter mais de um:
+
+| Motivo | Quando aparece |
+|---|---|
+| passou N dias do limite | O retorno furou os 30 dias. |
+| N consulta(s) a menos | Fez menos avaliações do que o plano previa até hoje. |
+| limite vence em N dias | O prazo termina dentro de 7 dias. |
+| sem horário livre antes do limite | A agenda está cheia. Abra mais horários. |
+| plano vencido | Precisa renovar antes de marcar. |
+
+### Filtrar por etiqueta
+
+Para trazer só os seus pacientes, use a etiqueta que você já usa no
+LiveClin:
+
+```bash
+python3 -m agente relatorio --etiqueta Daniel
+```
+
+Ou deixe fixo na seção `[filtro]` do `config.toml`. A comparação ignora
+acento e maiúscula, então `Daniel`, `daniel` e `DANIEL` são a mesma
+coisa. Por padrão só entram pacientes **ativos**; `--incluir-inativos`
+traz também pausados e inativos.
+
+## Contagem de consultas (WebDiet)
+
+Cada avaliação física registrada no WebDiet conta como uma consulta
+realizada. Exporte as avaliações e aponte `webdiet.caminho` para o
+arquivo — bastam as colunas de **paciente** e **data**.
+
+Com isso o relatório passa a mostrar, para cada paciente, quantas
+consultas foram feitas, quantas o plano prevê no total e quantas já
+deveriam ter acontecido até hoje.
+
+A conta das previstas é uma a cada 30 dias: mensal 1, trimestral 3,
+semestral 6, anual 12. As previstas até hoje crescem conforme o plano
+corre, então "4 de 6, previstas até hoje 5" quer dizer que falta uma.
+
+Só contam as avaliações dentro da vigência do plano atual — avaliações
+de um plano anterior não inflam a contagem.
+
+### Nomes escritos diferente nos dois sistemas
+
+O mesmo paciente costuma aparecer escrito de formas diferentes no
+LiveClin e no WebDiet. O agente reconhece acento faltando, sobrenome
+fora de ordem, nome do meio abreviado e erro de digitação — "Isabel
+Oaiva" no WebDiet casa com "Isabela Paiva" do LiveClin.
+
+**Quando dois pacientes ficam igualmente parecidos, o agente não
+escolhe.** O nome vai para a seção "Conferir manualmente" do e-mail, com
+os candidatos e a porcentagem de cada um. Contar a consulta na pessoa
+errada é pior do que não contar, então a dúvida sobe para você em vez de
+virar um palpite.
 
 ### Configurar o Gmail
 
@@ -240,6 +299,10 @@ agente/
   fontes/         leitura da planilha do LiveClin
   agenda/         arquivo local e Google Calendar
   notificacoes.py fila de mensagens (WhatsApp engatilhado)
+  consultas.py    cruzamento LiveClin x WebDiet (feitas x previstas)
+  nomes.py        casamento de nomes com erro de digitação
+  prioridade.py   fila de quem precisa ser agendado, e por quê
+  filtros.py      seleção por etiqueta e status
   relatorio.py    resumo do dia em HTML e texto
   entrega/        envio por e-mail (SMTP)
   cli.py          comandos de linha

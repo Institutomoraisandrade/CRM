@@ -17,6 +17,25 @@ caminho = "exemplos/pacientes_liveclin.csv"
 # plano_inicio = "Começou em"
 # ultima_consulta = "Último atendimento"
 
+[webdiet]
+# Exportação das AVALIAÇÕES FÍSICAS do WebDiet. Cada avaliação conta como
+# uma consulta realizada. Sem isso o relatório sai sem a contagem.
+caminho = "exemplos/avaliacoes_webdiet.csv"
+
+# Cabeçalhos reconhecidos sozinho: Paciente/Nome e Data da avaliação.
+# [webdiet.colunas]
+# paciente = "Nome do cliente"
+# data = "Realizada em"
+
+[filtro]
+# Só entram no relatório os pacientes com esta etiqueta.
+# Deixe vazio ("") para trazer todos.
+etiqueta = "Daniel"
+
+# Por padrão só pacientes ativos entram. Mude para true para incluir
+# pausados e inativos.
+incluir_inativos = false
+
 # Duração de cada tipo de plano, em dias.
 [planos]
 mensal = 30
