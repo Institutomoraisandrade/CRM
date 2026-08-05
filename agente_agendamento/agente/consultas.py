@@ -10,27 +10,30 @@ from __future__ import annotations
 from collections import defaultdict
 from dataclasses import dataclass, field
 from datetime import date
-from math import ceil
 
 from .fontes.webdiet_csv import Avaliacao
-from .modelos import Paciente
+from .modelos import Paciente, Plano
 from .nomes import Correspondencia, casar
-from .regras import INTERVALO_MAXIMO_DIAS
 
 
-def previstas_no_plano(duracao_dias: int) -> int:
-    """Quantas consultas o plano inteiro prevê, uma a cada 30 dias."""
-    return max(1, ceil(duracao_dias / INTERVALO_MAXIMO_DIAS))
+def previstas_no_plano(plano: Plano) -> int:
+    """Quantas consultas o plano dá direito, conforme o LiveClin."""
+    return max(1, plano.consultas)
 
 
 def previstas_ate(paciente: Paciente, hoje: date) -> int:
-    """Quantas consultas já deveriam ter acontecido até hoje."""
-    total = previstas_no_plano(paciente.plano.duracao_dias)
+    """Quantas consultas já deveriam ter acontecido até hoje.
+
+    As consultas do plano são distribuídas ao longo da vigência, então um
+    anual (360 dias, 10 consultas) espaça uma a cada 36 dias.
+    """
+    total = previstas_no_plano(paciente.plano)
     if hoje < paciente.plano_inicio:
         return 0
     fim = min(hoje, paciente.plano_fim)
     decorridos = (fim - paciente.plano_inicio).days
-    return max(1, min(total, decorridos // INTERVALO_MAXIMO_DIAS + 1))
+    intervalo = paciente.plano.intervalo_medio
+    return max(1, min(total, int(decorridos // intervalo) + 1))
 
 
 @dataclass
@@ -56,6 +59,27 @@ class ResumoConsultas:
     @property
     def restantes_no_plano(self) -> int:
         return max(0, self.previstas_total - self.realizadas)
+
+    @property
+    def esgotadas(self) -> bool:
+        """Já usou todas as consultas a que o plano dá direito."""
+        return not self.sem_dados and self.realizadas >= self.previstas_total
+
+    def esgotadas_cedo(self, hoje: date) -> bool:
+        """Esgotou as consultas com plano suficiente sobrando para mais uma.
+
+        Num plano mensal, usar a única consulta é o curso normal — só vira
+        problema quando ainda cabe outro ciclo de atendimento na vigência.
+        """
+        if not self.esgotadas:
+            return False
+        restantes = (self.paciente.plano_fim - hoje).days
+        return restantes > self.paciente.plano.intervalo_medio
+
+    @property
+    def adiantadas(self) -> int:
+        """Consultas feitas além do que o plano previa para esta altura."""
+        return max(0, self.realizadas - self.previstas_ate_hoje)
 
     @property
     def sem_dados(self) -> bool:
@@ -93,7 +117,7 @@ def cruzar(
     resumos = {
         p.nome: ResumoConsultas(
             paciente=p,
-            previstas_total=previstas_no_plano(p.plano.duracao_dias),
+            previstas_total=previstas_no_plano(p.plano),
             previstas_ate_hoje=previstas_ate(p, hoje),
         )
         for p in pacientes
@@ -143,3 +167,32 @@ def cruzar(
                 resumo.ultima = mais_recente
 
     return cruzamento
+
+
+def aplicar_ultima_consulta(cruzamento: Cruzamento) -> list[str]:
+    """Adota a última avaliação antropométrica do WebDiet como última consulta.
+
+    O LiveClin guarda plano e prazo; quem sabe a data real do último
+    atendimento é o WebDiet. Sem isso o limite de 30 dias seria contado a
+    partir do início do plano, que é sempre cedo demais.
+    """
+    ajustes: list[str] = []
+    for resumo in cruzamento.resumos.values():
+        if resumo.ultima is None:
+            continue
+        paciente = resumo.paciente
+        anterior = paciente.ultima_consulta
+        if anterior == resumo.ultima:
+            continue
+        paciente.ultima_consulta = resumo.ultima
+        if anterior is None:
+            ajustes.append(
+                f"{paciente.nome}: última consulta {resumo.ultima:%d/%m/%Y} "
+                "(do WebDiet)"
+            )
+        else:
+            ajustes.append(
+                f"{paciente.nome}: última consulta corrigida de "
+                f"{anterior:%d/%m/%Y} para {resumo.ultima:%d/%m/%Y} (do WebDiet)"
+            )
+    return ajustes

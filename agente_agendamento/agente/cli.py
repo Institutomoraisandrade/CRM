@@ -11,7 +11,7 @@ from datetime import date, datetime
 from . import filtros
 from .agenda.base import ErroDeAgenda
 from .config import Config, ErroDeConfig, carregar_config
-from .consultas import cruzar
+from .consultas import aplicar_ultima_consulta, cruzar
 from .entrega.email import ErroDeEnvio
 from .etiquetas import para_todos
 from .fontes.base import ErroDeFonte
@@ -88,11 +88,25 @@ def _imprimir_plano(agendamentos: list[Agendamento]) -> None:
             print(f"      {item.motivo}")
 
 
-def _planejar(args: argparse.Namespace) -> tuple[Config, list[Paciente], list[Agendamento]]:
+def _planejar(
+    args: argparse.Namespace,
+) -> tuple[Config, list[Paciente], list[Agendamento], object | None]:
+    """Pipeline completo: LiveClin, WebDiet e então o agendamento.
+
+    O WebDiet vem antes do agendador de propósito: é dele que sai a data
+    da última consulta, e é ela que define o limite de 30 dias.
+    """
     config, pacientes = _carregar(args.config)
+    hoje = date.today()
+
+    cruzamento = _cruzar_webdiet(config, pacientes, hoje)
+    if cruzamento is not None:
+        for ajuste in aplicar_ultima_consulta(cruzamento):
+            print(f"  webdiet: {ajuste}", file=sys.stderr)
+
     agendador = config.construir_agendador()
     agendamentos = agendador.planejar(pacientes)
-    return config, pacientes, agendamentos
+    return config, pacientes, agendamentos, cruzamento
 
 
 def _validar_invariante(agendamentos: list[Agendamento]) -> None:
@@ -114,7 +128,7 @@ def _validar_invariante(agendamentos: list[Agendamento]) -> None:
 
 
 def comando_planejar(args: argparse.Namespace) -> int:
-    config, pacientes, agendamentos = _planejar(args)
+    config, pacientes, agendamentos, _ = _planejar(args)
     _validar_invariante(agendamentos)
     _imprimir_plano(agendamentos)
 
@@ -150,7 +164,7 @@ def comando_planejar(args: argparse.Namespace) -> int:
 
 
 def comando_aplicar(args: argparse.Namespace) -> int:
-    config, pacientes, agendamentos = _planejar(args)
+    config, pacientes, agendamentos, _ = _planejar(args)
     _validar_invariante(agendamentos)
     _imprimir_plano(agendamentos)
 
@@ -192,7 +206,7 @@ def comando_aplicar(args: argparse.Namespace) -> int:
 
 
 def comando_alertas(args: argparse.Namespace) -> int:
-    config, pacientes, agendamentos = _planejar(args)
+    config, pacientes, agendamentos, _ = _planejar(args)
     fila = montar_notificacoes(pacientes, agendamentos)
 
     if not fila:
@@ -234,7 +248,7 @@ def _cruzar_webdiet(config: Config, pacientes: list[Paciente], hoje: date):
 
 
 def comando_relatorio(args: argparse.Namespace) -> int:
-    config, todos, agendamentos_todos = _planejar(args)
+    config, todos, agendamentos_todos, cruzamento = _planejar(args)
     _validar_invariante(agendamentos_todos)
 
     hoje = date.today()
@@ -251,8 +265,6 @@ def comando_relatorio(args: argparse.Namespace) -> int:
 
     selecionados = {p.nome for p in pacientes}
     agendamentos = [a for a in agendamentos_todos if a.paciente.nome in selecionados]
-
-    cruzamento = _cruzar_webdiet(config, pacientes, hoje)
 
     relatorio = montar(
         pacientes,

@@ -15,13 +15,24 @@ class StatusPaciente(str, Enum):
 
 @dataclass(frozen=True)
 class Plano:
-    """Tipo de plano de acompanhamento contratado pelo paciente."""
+    """Tipo de plano de acompanhamento contratado pelo paciente.
+
+    ``consultas`` é quantas consultas o plano dá direito — um número
+    definido comercialmente no LiveClin, não deduzido da duração. Um
+    semestral tem 180 dias e 5 consultas, não 6.
+    """
 
     nome: str
     duracao_dias: int
+    consultas: int = 1
 
     def data_fim(self, inicio: date) -> date:
         return inicio + timedelta(days=self.duracao_dias)
+
+    @property
+    def intervalo_medio(self) -> float:
+        """Espaçamento médio entre consultas, em dias."""
+        return self.duracao_dias / max(1, self.consultas)
 
 
 @dataclass

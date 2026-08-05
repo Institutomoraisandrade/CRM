@@ -206,6 +206,8 @@ class Relatorio:
                 estado = "sem registro no WebDiet"
             elif resumo.deficit > 0:
                 estado = f"faltam {resumo.deficit}"
+            elif resumo.esgotadas:
+                estado = "consultas esgotadas"
             else:
                 estado = "em dia"
             linhas.append(
@@ -387,6 +389,8 @@ class Relatorio:
                 estado, cor = "sem registro", CINZA
             elif resumo.deficit > 0:
                 estado, cor = f"faltam {resumo.deficit}", VERMELHO
+            elif resumo.esgotadas:
+                estado, cor = "esgotadas", AMBAR
             else:
                 estado, cor = "em dia", VERDE
             barra = self._barra(resumo.realizadas, resumo.previstas_total)

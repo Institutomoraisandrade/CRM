@@ -227,12 +227,52 @@ Com isso o relatório passa a mostrar, para cada paciente, quantas
 consultas foram feitas, quantas o plano prevê no total e quantas já
 deveriam ter acontecido até hoje.
 
-A conta das previstas é uma a cada 30 dias: mensal 1, trimestral 3,
-semestral 6, anual 12. As previstas até hoje crescem conforme o plano
-corre, então "4 de 6, previstas até hoje 5" quer dizer que falta uma.
+### Quem informa o quê
+
+| Dado | Origem |
+|---|---|
+| Plano, prazo, vigência | LiveClin |
+| Etiquetas | LiveClin |
+| Número de consultas a que o plano dá direito | LiveClin |
+| Consultas realizadas | WebDiet (avaliações antropométricas) |
+| Data da última consulta | WebDiet (última avaliação) |
+
+A data da última consulta vem do WebDiet, não do LiveClin — é ela que
+define o limite de 30 dias, então o agente lê o WebDiet **antes** de
+montar a agenda. Quando as duas fontes discordam, o agente adota a data
+do WebDiet e reporta a correção.
+
+### Consultas por plano
+
+O número de consultas é comercial, definido no LiveClin. **Não** sai de
+dividir a duração por 30:
+
+| Plano | Vigência | Consultas | Espaçamento médio |
+|---|---|---|---|
+| Mensal | 30 dias | 1 | 30 dias |
+| Trimestral | 90 dias | 3 | 30 dias |
+| Semestral | 180 dias | 5 | 36 dias |
+| Anual | 360 dias | 10 | 36 dias |
+
+Configure em `[planos]`, na forma
+`semestral = { dias = 180, consultas = 5 }`.
+
+As previstas até hoje crescem conforme o plano corre, então "4 de 5,
+previstas até hoje 5" quer dizer que falta uma agora.
 
 Só contam as avaliações dentro da vigência do plano atual — avaliações
 de um plano anterior não inflam a contagem.
+
+### Atenção: as duas regras não fecham nos planos longos
+
+O limite de agendamento é 30 dias, mas semestral e anual espaçam as
+consultas a cada 36. Marcando de 30 em 30 dias, um paciente anual usa as
+10 consultas em 300 dias e fica **60 dias com plano vigente e sem
+consulta disponível**. No semestral sobram 30 dias.
+
+O agente sinaliza quem esgotou as consultas com plano ainda válido, para
+você decidir entre renovar antes ou liberar uma avulsa. Ele não resolve
+sozinho porque é decisão comercial, não técnica.
 
 ### Nomes escritos diferente nos dois sistemas
 

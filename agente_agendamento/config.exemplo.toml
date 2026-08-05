@@ -56,12 +56,14 @@ incluir_inativos = false
 # O agente também entende o formato completo da exportação, como
 # "Dieta (3 Meses) - Presencial" ou "Treino (1 Mes) - Online". E quando a
 # planilha traz uma coluna "Duração (dias)", é ela que manda.
+# "dias" é a vigência; "consultas" é quantas consultas o plano dá direito.
+# O número de consultas é comercial — não sai de dividir a duração por 30.
 [planos]
-mensal = 30
-trimestral = 90
-semestral = 180
-anual = 360
-parceria = 90
+mensal = { dias = 30, consultas = 1 }
+trimestral = { dias = 90, consultas = 3 }
+semestral = { dias = 180, consultas = 5 }
+anual = { dias = 360, consultas = 10 }
+parceria = { dias = 90, consultas = 3 }
 
 [agenda]
 # "arquivo" guarda os compromissos num JSON local — funciona sem

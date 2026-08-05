@@ -1,7 +1,12 @@
 import unittest
-from datetime import date
+from datetime import date, timedelta
 
-from agente.consultas import cruzar, previstas_ate, previstas_no_plano
+from agente.consultas import (
+    aplicar_ultima_consulta,
+    cruzar,
+    previstas_ate,
+    previstas_no_plano,
+)
 from agente.filtros import aplicar, tem_etiqueta
 from agente.fontes.webdiet_csv import Avaliacao
 from agente.modelos import Paciente, StatusPaciente
@@ -25,11 +30,12 @@ def paciente(nome="Ana Souza", plano="mensal", inicio=date(2026, 7, 15), **kwarg
 
 
 class TestPrevistas(unittest.TestCase):
-    def test_total_por_plano(self):
-        self.assertEqual(previstas_no_plano(30), 1)
-        self.assertEqual(previstas_no_plano(90), 3)
-        self.assertEqual(previstas_no_plano(180), 6)
-        self.assertEqual(previstas_no_plano(360), 12)
+    def test_total_vem_do_plano_do_liveclin(self):
+        # Números comerciais: não saem de dividir a duração por 30.
+        self.assertEqual(previstas_no_plano(CATALOGO_PADRAO["mensal"]), 1)
+        self.assertEqual(previstas_no_plano(CATALOGO_PADRAO["trimestral"]), 3)
+        self.assertEqual(previstas_no_plano(CATALOGO_PADRAO["semestral"]), 5)
+        self.assertEqual(previstas_no_plano(CATALOGO_PADRAO["anual"]), 10)
 
     def test_mensal_preve_uma_desde_o_primeiro_dia(self):
         p = paciente(inicio=date(2026, 8, 5))
@@ -41,9 +47,25 @@ class TestPrevistas(unittest.TestCase):
         self.assertEqual(previstas_ate(p, date(2026, 7, 1)), 2)
         self.assertEqual(previstas_ate(p, date(2026, 8, 5)), 3)
 
+    def test_anual_espaca_em_36_dias(self):
+        # 360 dias divididos em 10 consultas.
+        p = paciente(plano="anual", inicio=date(2026, 1, 1))
+        self.assertEqual(previstas_ate(p, date(2026, 1, 1)), 1)
+        self.assertEqual(previstas_ate(p, date(2026, 2, 6)), 2)
+        self.assertEqual(previstas_ate(p, date(2026, 12, 31)), 10)
+
+    def test_semestral_espaca_em_36_dias(self):
+        p = paciente(plano="semestral", inicio=date(2026, 1, 1))
+        self.assertEqual(previstas_ate(p, date(2026, 2, 6)), 2)
+        self.assertEqual(previstas_ate(p, date(2026, 6, 30)), 5)
+
     def test_nao_passa_do_total_do_plano(self):
         p = paciente(plano="trimestral", inicio=date(2026, 1, 1))
         self.assertEqual(previstas_ate(p, date(2026, 12, 1)), 3)
+
+    def test_anual_nunca_passa_de_dez(self):
+        p = paciente(plano="anual", inicio=date(2020, 1, 1))
+        self.assertEqual(previstas_ate(p, HOJE), 10)
 
     def test_antes_do_inicio_nao_preve_nada(self):
         p = paciente(inicio=date(2026, 9, 1))
@@ -117,6 +139,88 @@ class TestCruzamento(unittest.TestCase):
         ]
         resumo = cruzar([p], avaliacoes, HOJE).de(p)
         self.assertEqual(resumo.ultima, date(2026, 6, 25))
+
+
+class TestEsgotamento(unittest.TestCase):
+    def _resumo(self, p, datas):
+        return cruzar([p], [Avaliacao(p.nome, d) for d in datas], HOJE).de(p)
+
+    def test_mensal_usar_a_unica_consulta_e_normal(self):
+        # 1 de 1 num plano que acaba em poucos dias não é anomalia.
+        p = paciente("Ana Souza", "mensal", date(2026, 7, 15))
+        resumo = self._resumo(p, [date(2026, 7, 15)])
+        self.assertTrue(resumo.esgotadas)
+        self.assertFalse(resumo.esgotadas_cedo(HOJE))
+
+    def test_anual_que_esgotou_cedo_e_sinalizado(self):
+        # 10 consultas usadas com meses de plano sobrando.
+        inicio = date(2026, 1, 1)
+        datas = [inicio + timedelta(days=25 * i) for i in range(10)]
+        p = paciente("Diego Alves", "anual", inicio)
+        resumo = self._resumo(p, datas)
+        self.assertEqual(resumo.realizadas, 10)
+        self.assertTrue(resumo.esgotadas_cedo(HOJE))
+
+    def test_quem_ainda_tem_consulta_nao_e_sinalizado(self):
+        p = paciente("Bruno Lima", "trimestral", date(2026, 6, 1))
+        resumo = self._resumo(p, [date(2026, 6, 1)])
+        self.assertFalse(resumo.esgotadas)
+        self.assertFalse(resumo.esgotadas_cedo(HOJE))
+
+    def test_sem_dados_nunca_conta_como_esgotado(self):
+        p = paciente("Sem Registro", "anual", date(2026, 1, 1))
+        resumo = cruzar([p], [], HOJE).de(p)
+        self.assertFalse(resumo.esgotadas)
+
+    def test_adiantadas_conta_o_excedente(self):
+        inicio = date(2026, 1, 1)
+        datas = [inicio + timedelta(days=25 * i) for i in range(8)]
+        p = paciente("Diego Alves", "anual", inicio)
+        resumo = self._resumo(p, datas)
+        self.assertGreater(resumo.adiantadas, 0)
+
+
+class TestUltimaConsultaDoWebDiet(unittest.TestCase):
+    def test_preenche_quando_o_liveclin_nao_tem(self):
+        p = paciente("Carla Nunes", "semestral", date(2026, 3, 10))
+        self.assertIsNone(p.ultima_consulta)
+        cruzamento = cruzar(
+            [p],
+            [
+                Avaliacao("Carla Nunes", date(2026, 3, 10)),
+                Avaliacao("Carla Nunes", date(2026, 6, 25)),
+            ],
+            HOJE,
+        )
+        ajustes = aplicar_ultima_consulta(cruzamento)
+        self.assertEqual(p.ultima_consulta, date(2026, 6, 25))
+        self.assertEqual(len(ajustes), 1)
+
+    def test_corrige_data_divergente(self):
+        p = paciente("Ana Souza", ultima_consulta=date(2026, 7, 1))
+        cruzamento = cruzar([p], [Avaliacao("Ana Souza", date(2026, 7, 20))], HOJE)
+        ajustes = aplicar_ultima_consulta(cruzamento)
+        self.assertEqual(p.ultima_consulta, date(2026, 7, 20))
+        self.assertIn("corrigida", ajustes[0])
+
+    def test_datas_iguais_nao_geram_ajuste(self):
+        p = paciente("Ana Souza", ultima_consulta=date(2026, 7, 20))
+        cruzamento = cruzar([p], [Avaliacao("Ana Souza", date(2026, 7, 20))], HOJE)
+        self.assertEqual(aplicar_ultima_consulta(cruzamento), [])
+
+    def test_sem_avaliacao_mantem_o_que_havia(self):
+        p = paciente("Ana Souza", ultima_consulta=date(2026, 7, 1))
+        cruzamento = cruzar([p], [], HOJE)
+        aplicar_ultima_consulta(cruzamento)
+        self.assertEqual(p.ultima_consulta, date(2026, 7, 1))
+
+    def test_nome_ambiguo_nao_altera_data(self):
+        a = paciente("Marcio Souza")
+        b = paciente("Marcia Sousa")
+        cruzamento = cruzar([a, b], [Avaliacao("Marcia Souza", date(2026, 7, 20))], HOJE)
+        aplicar_ultima_consulta(cruzamento)
+        self.assertIsNone(a.ultima_consulta)
+        self.assertIsNone(b.ultima_consulta)
 
 
 class TestFiltros(unittest.TestCase):

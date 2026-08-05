@@ -70,6 +70,15 @@ def montar_fila(
             motivos.append("sem horário livre antes do limite")
             peso = min(peso, 1)
 
+        if resumo is not None and resumo.esgotadas_cedo(hoje):
+            total = resumo.previstas_total
+            plural = "consulta" if total == 1 else "consultas"
+            motivos.append(
+                f"já usou as {total} {plural} do plano, que ainda vale até "
+                f"{agendamento.paciente.plano_fim:%d/%m/%Y} — renovar ou liberar avulsa"
+            )
+            peso = min(peso, 3)
+
         if resumo is not None and resumo.deficit > 0:
             motivos.append(
                 f"{resumo.deficit} consulta(s) a menos do que o plano previa "

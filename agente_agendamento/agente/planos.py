@@ -11,13 +11,15 @@ import re
 from .modelos import Plano
 from .util import sem_acento
 
+# Duração e número de consultas de cada plano, conforme o LiveClin.
+# O número de consultas é comercial: não sai de dividir a duração por 30.
 CATALOGO_PADRAO: dict[str, Plano] = {
-    "mensal": Plano("mensal", 30),
-    "trimestral": Plano("trimestral", 90),
-    "semestral": Plano("semestral", 180),
-    "anual": Plano("anual", 360),
-    # Plano de parceria: mesma duração do trimestral, valor zerado.
-    "parceria": Plano("parceria", 90),
+    "mensal": Plano("mensal", 30, consultas=1),
+    "trimestral": Plano("trimestral", 90, consultas=3),
+    "semestral": Plano("semestral", 180, consultas=5),
+    "anual": Plano("anual", 360, consultas=10),
+    # Plano de parceria: mesma duração e cadência do trimestral.
+    "parceria": Plano("parceria", 90, consultas=3),
 }
 
 # Formas alternativas de escrever o mesmo plano numa planilha exportada.
@@ -64,8 +66,9 @@ def _plano_por_meses(meses: int, catalogo: dict[str, Plano]) -> Plano | None:
     if meses <= 0:
         return None
     # Duração fora do catálogo: monta um plano sob medida em vez de
-    # descartar a linha.
-    return Plano(f"{meses} meses", meses * 30)
+    # descartar a linha. Sem número de consultas definido, cai na cadência
+    # mensal, que é o teto do agendamento.
+    return Plano(f"{meses} meses", meses * 30, consultas=meses)
 
 
 def resolver_plano(bruto: str, catalogo: dict[str, Plano] | None = None) -> Plano | None:
@@ -108,14 +111,32 @@ def plano_por_duracao(dias: int, catalogo: dict[str, Plano] | None = None) -> Pl
     for plano in catalogo.values():
         if plano.duracao_dias == dias:
             return plano
-    return Plano(f"{dias} dias", dias)
+    return Plano(f"{dias} dias", dias, consultas=max(1, round(dias / 30)))
 
 
-def catalogo_de_config(planos_config: dict[str, int] | None) -> dict[str, Plano]:
-    """Monta o catálogo a partir da configuração do usuário."""
+def catalogo_de_config(planos_config: dict | None) -> dict[str, Plano]:
+    """Monta o catálogo a partir da configuração do usuário.
+
+    Cada plano aceita duas formas no TOML::
+
+        trimestral = 90                          # só a duração
+        semestral = { dias = 180, consultas = 5 }
+
+    Na forma curta o número de consultas cai na cadência mensal.
+    """
     if not planos_config:
         return dict(CATALOGO_PADRAO)
-    return {
-        normalizar_nome(nome): Plano(normalizar_nome(nome), int(dias))
-        for nome, dias in planos_config.items()
-    }
+
+    catalogo: dict[str, Plano] = {}
+    for bruto, valor in planos_config.items():
+        nome = normalizar_nome(bruto)
+        if isinstance(valor, dict):
+            dias = int(valor.get("dias", 0))
+            consultas = int(valor.get("consultas", 0)) or max(1, round(dias / 30))
+        else:
+            dias = int(valor)
+            consultas = max(1, round(dias / 30))
+        if dias <= 0:
+            raise ValueError(f"plano {bruto!r} precisa de uma duração maior que zero")
+        catalogo[nome] = Plano(nome, dias, consultas=consultas)
+    return catalogo
