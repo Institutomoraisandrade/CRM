@@ -45,21 +45,6 @@ caminho = "exemplos/avaliacoes_webdiet.csv"
 # paciente = "Nome do cliente"
 # data = "Realizada em"
 
-[botconversa]
-# Onde o comando "etiquetas" grava o arquivo de importação.
-arquivo = "etiquetas_botconversa.csv"
-
-# Etiqueta do LiveClin -> nicho usado nos seus fluxos do BotConversa.
-[botconversa.nichos]
-emagrecimento = "emagrec"
-hipertrofia = "hiper"
-performance = "perf"
-esporte = "perf"
-
-# A CHAVE DA API NÃO FICA AQUI, nem em nenhum arquivo do projeto.
-# Quando a integração direta existir, ela virá de variável de ambiente:
-#   export BOTCONVERSA_API_KEY="..."
-
 [filtro]
 # Só entram no relatório os pacientes com uma destas etiquetas.
 # No LiveClin a convenção é "Ativos - <Profissional>", e o relatório

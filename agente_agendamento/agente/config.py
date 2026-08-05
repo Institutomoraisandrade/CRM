@@ -35,7 +35,6 @@ class Config:
     email: dict[str, Any] = field(default_factory=dict)
     webdiet: dict[str, Any] = field(default_factory=dict)
     filtro: dict[str, Any] = field(default_factory=dict)
-    botconversa: dict[str, Any] = field(default_factory=dict)
 
     def caminho_relativo(self, valor: str) -> Path:
         caminho = Path(valor).expanduser()
@@ -176,5 +175,4 @@ def carregar_config(caminho: str | Path) -> Config:
         email=dados.get("email", {}),
         webdiet=dados.get("webdiet", {}),
         filtro=dados.get("filtro", {}),
-        botconversa=dados.get("botconversa", {}),
     )

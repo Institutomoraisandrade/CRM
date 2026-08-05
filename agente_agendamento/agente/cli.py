@@ -13,8 +13,8 @@ from .agenda.base import ErroDeAgenda
 from .config import Config, ErroDeConfig, carregar_config
 from .consultas import aplicar_ultima_consulta, cruzar
 from .entrega.email import ErroDeEnvio
-from .etiquetas import para_todos
 from .fontes.base import ErroDeFonte
+from .inativos import RelatorioInativos, levantar
 from .modelos import Agendamento, Paciente, SituacaoAgendamento, StatusPaciente
 from .notificacoes import alertas_pendentes, gravar, montar_notificacoes
 from .regras import INTERVALO_MAXIMO_DIAS, data_limite_retorno, etiqueta_vigencia
@@ -302,56 +302,31 @@ def comando_relatorio(args: argparse.Namespace) -> int:
     return 0
 
 
-def comando_etiquetas(args: argparse.Namespace) -> int:
-    config, todos = _carregar(args.config)
+def comando_inativos(args: argparse.Namespace) -> int:
+    config, todos, _, cruzamento = _planejar(args)
     hoje = date.today()
 
     etiquetas = _etiquetas(args, config)
-    pacientes = filtros.aplicar(todos, etiquetas=etiquetas, somente_ativos=False)
-    if not pacientes:
-        print("Nenhum paciente selecionado.", file=sys.stderr)
-        return 1
+    # Aqui o filtro de status não se aplica: o alvo são justamente os que
+    # não estão ativos.
+    candidatos = filtros.aplicar(todos, etiquetas=etiquetas, somente_ativos=False)
+    parados = levantar(candidatos, hoje, cruzamento)
 
-    mapa = config.botconversa.get("nichos") or None
-    planos = para_todos(pacientes, hoje, mapa)
+    relatorio = RelatorioInativos(parados, hoje)
+    print(relatorio.texto())
 
-    larguras = [28, 12, 38]
-    print(_linha(["PACIENTE", "PLANO", "ETIQUETAS NO BOTCONVERSA"], larguras))
-    sem_sequencia = []
-    for plano in sorted(planos, key=lambda p: p.paciente.nome):
-        marcadas = ", ".join(plano.etiquetas) if plano.etiquetas else "—"
-        print(_linha([plano.paciente.nome, plano.paciente.plano.nome, marcadas], larguras))
-        for observacao in plano.observacoes:
-            print(f"      {observacao}")
-        if not plano.receberia_mensagem:
-            sem_sequencia.append(plano)
-
-    destino = config.caminho_relativo(
-        args.saida or config.botconversa.get("arquivo", "etiquetas_botconversa.csv")
-    )
+    destino = config.caminho_relativo(args.saida)
     destino.parent.mkdir(parents=True, exist_ok=True)
-    with destino.open("w", encoding="utf-8", newline="") as arquivo:
-        escritor = csv.writer(arquivo)
-        escritor.writerow(["telefone", "nome", "etiquetas", "plano", "status", "observacoes"])
-        for plano in sorted(planos, key=lambda p: p.paciente.nome):
-            escritor.writerow(
-                [
-                    plano.paciente.whatsapp or "",
-                    plano.paciente.nome,
-                    ";".join(plano.etiquetas),
-                    plano.paciente.plano.nome,
-                    plano.paciente.status.value,
-                    " | ".join(plano.observacoes),
-                ]
-            )
+    destino.write_text(relatorio.html(), encoding="utf-8")
+    print(f"\nPrévia gravada em {destino}")
 
-    print(f"\n{len(planos)} paciente(s) processados. Arquivo: {destino}")
-    if sem_sequencia:
-        print(
-            f"{len(sem_sequencia)} ficaram sem etiqueta de sequência e não "
-            "receberiam disparo — veja as observações acima."
-        )
-    print("Nada foi enviado ao BotConversa: este comando só monta as etiquetas.")
+    if not args.enviar:
+        print("Para enviar por e-mail: python -m agente inativos --enviar")
+        return 0
+
+    enviador = config.construir_enviador()
+    entregues = enviador.enviar(relatorio.assunto, relatorio.texto(), relatorio.html())
+    print(f"E-mail enviado para {', '.join(entregues)}.")
     return 0
 
 
@@ -414,18 +389,18 @@ def construir_parser() -> argparse.ArgumentParser:
     relatorio.add_argument("--saida", default="relatorio.html")
     relatorio.set_defaults(func=comando_relatorio)
 
-    etiquetas = subcomandos.add_parser(
-        "etiquetas",
-        help="monta as etiquetas de cada paciente para o BotConversa",
+    inativos = subcomandos.add_parser(
+        "inativos",
+        help="lista quem parou e há quanto tempo, e envia por e-mail",
     )
-    etiquetas.add_argument(
-        "--etiqueta",
-        action="append",
-        default=None,
-        help="filtra por etiqueta do LiveClin; repita para incluir mais de uma",
+    inativos.add_argument(
+        "--enviar", action="store_true", help="envia o e-mail de verdade"
     )
-    etiquetas.add_argument("--saida", default=None)
-    etiquetas.set_defaults(func=comando_etiquetas)
+    inativos.add_argument(
+        "--etiqueta", action="append", default=None, help="filtra por etiqueta"
+    )
+    inativos.add_argument("--saida", default="inativos.html")
+    inativos.set_defaults(func=comando_inativos)
 
     return parser
 
