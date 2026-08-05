@@ -377,56 +377,50 @@ login for recusado, o agente mostra exatamente esse aviso.
 Se preferir outro provedor, mude `servidor` e `porta` (587 para STARTTLS,
 465 para SSL direto).
 
-## Etiquetas do BotConversa
+## Ler o LiveClin ao vivo, sem planilha
 
-No BotConversa a **etiqueta é o gatilho**: `ativo-emagrec` dispara a
-sequência de emagrecimento, `finalizado-*` dispara a de reativação. O
-agente não escreve nem envia mensagem — ele só mantém a etiqueta
-contando a verdade, a partir do plano no LiveClin.
+A planilha é a origem provisória. O certo é o agente consultar o LiveClin
+a cada rodada — assim ninguém precisa exportar nada, e o dado nunca fica
+velho.
+
+O LiveClin não publica API, mas o `v2.liveclin.com` é uma aplicação web:
+por baixo ela chama endpoints internos que devolvem JSON. Descobrir esses
+endpoints é o que falta para escrever o leitor definitivo.
 
 ```bash
-python3 -m agente etiquetas
+pip install playwright && playwright install chromium
+python3 ferramentas/capturar_liveclin.py
 ```
 
-O comando mostra e grava um CSV com a etiqueta que cada paciente deveria
-ter hoje:
+O script abre um navegador comum. Você faz login normalmente, navega até
+a lista de pacientes, aplica os filtros de etiqueta e abre uma ficha. Ele
+anota quais chamadas o site fez e grava em `captura_liveclin.json`.
 
+**O que o arquivo contém e o que não contém.** Só o *formato* das
+respostas: nomes de campos e tipos. Nome, e-mail, telefone, CPF e token
+viram `<oculto>`; textos viram `<str N chars>`.
+
+Duas exceções deliberadas: **etiqueta e nome de plano são preservados**,
+porque são categorias — é justamente `"Ativos - Daniel"` e `"Semestral"`
+que precisam ser mapeados, e nenhum dos dois identifica uma pessoa.
+
+```json
+{
+  "nome": "<oculto>",
+  "cpf": "<oculto>",
+  "plano": { "nome": "Semestral", "duracao_dias": "int" },
+  "etiquetas": ["Ativos - Daniel", "...(2 itens)"],
+  "status": "ativo"
+}
 ```
-Ana Souza        mensal       ativo-emagrec, mes-1
-Eva Ramos        mensal       ativo-emagrec, mes-1, vence-7dias
-Gisele Prado     mensal       finalizado-emagrec
-      plano venceu em 20/07/2026, mas o LiveClin ainda marca como ativo
-```
 
-As regras:
+**A senha não passa pelo script.** O login acontece na janela do
+navegador; o Playwright guarda só o cookie de sessão, na pasta
+`.perfil_liveclin` da sua máquina. Rodando de novo, você já entra logado.
 
-- O nicho vem da etiqueta do LiveClin (emagrecimento, hipertrofia,
-  performance/esporte). Configure em `[botconversa.nichos]`.
-- `mes-N` avança a cada 30 dias de plano, até `mes-12`.
-- `vence-7dias` entra quando faltam 7 dias ou menos.
-- Plano vencido ou paciente inativo viram `finalizado-<nicho>`.
-- **Paciente pausado fica sem etiqueta de sequência**, para não receber
-  disparo. Sem etiqueta de nicho, idem — o agente avisa em vez de
-  chutar uma sequência.
-
-Um paciente nunca recebe `ativo-*` e `finalizado-*` ao mesmo tempo.
-
-### Por que só etiqueta, e não envio
-
-Suas sequências do BotConversa já disparam segunda, quarta e quinta. Se
-o agente também mandasse mensagem, o paciente receberia em dobro. Um
-cérebro decide o conteúdo (BotConversa), o outro mantém o cadastro
-correto (o agente).
-
-### Integração direta com a API
-
-Ainda não existe: falta confirmar os endpoints contra o Swagger oficial
-(`backend.botconversa.com.br/swagger/`). Por enquanto o caminho é
-importar o CSV no BotConversa.
-
-Quando existir, a chave da API virá de variável de ambiente
-(`BOTCONVERSA_API_KEY`), nunca do `config.toml` — mesma regra da senha
-do e-mail.
+Confira o arquivo antes de enviar a alguém. Com ele em mãos, o leitor
+direto entra em `agente/fontes/` e a planilha sai de cena — o resto do
+agente não muda em nada.
 
 ## Google Calendar (opcional)
 

@@ -22,3 +22,5 @@ etiquetas_botconversa.csv
 .env
 token_sheets.json
 inativos.html
+.perfil_liveclin/
+captura_liveclin.json
