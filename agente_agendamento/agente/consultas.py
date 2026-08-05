@@ -24,8 +24,10 @@ def previstas_no_plano(plano: Plano) -> int:
 def previstas_ate(paciente: Paciente, hoje: date) -> int:
     """Quantas consultas já deveriam ter acontecido até hoje.
 
-    As consultas do plano são distribuídas ao longo da vigência, então um
-    anual (360 dias, 10 consultas) espaça uma a cada 36 dias.
+    As consultas do plano se distribuem pela vigência, e cada uma vence ao
+    fim do seu período. Um trimestral dá 3 consultas em 90 dias, uma a
+    cada 30: aos 70 dias de plano, duas já deveriam ter acontecido — a
+    terceira só vence no dia 90.
     """
     total = previstas_no_plano(paciente.plano)
     if hoje < paciente.plano_inicio:
@@ -33,7 +35,7 @@ def previstas_ate(paciente: Paciente, hoje: date) -> int:
     fim = min(hoje, paciente.plano_fim)
     decorridos = (fim - paciente.plano_inicio).days
     intervalo = paciente.plano.intervalo_medio
-    return max(1, min(total, int(decorridos // intervalo) + 1))
+    return min(total, int(decorridos // intervalo))
 
 
 @dataclass

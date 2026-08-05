@@ -37,26 +37,38 @@ class TestPrevistas(unittest.TestCase):
         self.assertEqual(previstas_no_plano(CATALOGO_PADRAO["semestral"]), 5)
         self.assertEqual(previstas_no_plano(CATALOGO_PADRAO["anual"]), 10)
 
-    def test_mensal_preve_uma_desde_o_primeiro_dia(self):
+    def test_nada_vence_no_primeiro_dia(self):
+        # A consulta vence ao fim do período, não no começo.
         p = paciente(inicio=date(2026, 8, 5))
-        self.assertEqual(previstas_ate(p, HOJE), 1)
+        self.assertEqual(previstas_ate(p, HOJE), 0)
+
+    def test_mensal_vence_no_dia_30(self):
+        p = paciente(inicio=date(2026, 7, 6))
+        self.assertEqual(previstas_ate(p, date(2026, 8, 4)), 0)
+        self.assertEqual(previstas_ate(p, date(2026, 8, 5)), 1)
+
+    def test_trimestral_aos_70_dias_preve_duas(self):
+        # O caso do enunciado: 90 dias e 3 consultas, uma a cada 30.
+        p = paciente(plano="trimestral", inicio=date(2026, 1, 1))
+        self.assertEqual(previstas_ate(p, date(2026, 3, 12)), 2)  # dia 70
 
     def test_trimestral_cresce_a_cada_30_dias(self):
         p = paciente(plano="trimestral", inicio=date(2026, 6, 1))
-        self.assertEqual(previstas_ate(p, date(2026, 6, 15)), 1)
-        self.assertEqual(previstas_ate(p, date(2026, 7, 1)), 2)
-        self.assertEqual(previstas_ate(p, date(2026, 8, 5)), 3)
+        self.assertEqual(previstas_ate(p, date(2026, 6, 15)), 0)
+        self.assertEqual(previstas_ate(p, date(2026, 7, 1)), 1)
+        self.assertEqual(previstas_ate(p, date(2026, 8, 5)), 2)
+        self.assertEqual(previstas_ate(p, date(2026, 8, 30)), 3)
 
     def test_anual_espaca_em_36_dias(self):
         # 360 dias divididos em 10 consultas.
         p = paciente(plano="anual", inicio=date(2026, 1, 1))
-        self.assertEqual(previstas_ate(p, date(2026, 1, 1)), 1)
-        self.assertEqual(previstas_ate(p, date(2026, 2, 6)), 2)
-        self.assertEqual(previstas_ate(p, date(2026, 12, 31)), 10)
+        self.assertEqual(previstas_ate(p, date(2026, 1, 1)), 0)
+        self.assertEqual(previstas_ate(p, date(2026, 2, 6)), 1)
+        self.assertEqual(previstas_ate(p, date(2026, 12, 27)), 10)
 
     def test_semestral_espaca_em_36_dias(self):
         p = paciente(plano="semestral", inicio=date(2026, 1, 1))
-        self.assertEqual(previstas_ate(p, date(2026, 2, 6)), 2)
+        self.assertEqual(previstas_ate(p, date(2026, 2, 6)), 1)
         self.assertEqual(previstas_ate(p, date(2026, 6, 30)), 5)
 
     def test_nao_passa_do_total_do_plano(self):
@@ -74,6 +86,7 @@ class TestPrevistas(unittest.TestCase):
 
 class TestCruzamento(unittest.TestCase):
     def test_conta_avaliacoes_do_paciente(self):
+        # 65 dias de trimestral: duas consultas já deveriam ter acontecido.
         p = paciente("Bruno Lima", "trimestral", date(2026, 6, 1))
         avaliacoes = [
             Avaliacao("Bruno Lima", date(2026, 6, 1)),
@@ -82,7 +95,15 @@ class TestCruzamento(unittest.TestCase):
         resumo = cruzar([p], avaliacoes, HOJE).de(p)
         self.assertEqual(resumo.realizadas, 2)
         self.assertEqual(resumo.previstas_total, 3)
-        self.assertEqual(resumo.previstas_ate_hoje, 3)
+        self.assertEqual(resumo.previstas_ate_hoje, 2)
+        self.assertEqual(resumo.deficit, 0)
+        self.assertTrue(resumo.em_dia)
+
+    def test_quem_fez_menos_que_o_previsto_fica_devendo(self):
+        p = paciente("Bruna Lins", "trimestral", date(2026, 6, 1))
+        resumo = cruzar([p], [Avaliacao("Bruna Lins", date(2026, 6, 1))], HOJE).de(p)
+        self.assertEqual(resumo.realizadas, 1)
+        self.assertEqual(resumo.previstas_ate_hoje, 2)
         self.assertEqual(resumo.deficit, 1)
         self.assertFalse(resumo.em_dia)
 
