@@ -11,6 +11,7 @@ from datetime import date, datetime
 from . import filtros
 from .agenda.base import ErroDeAgenda
 from .config import Config, ErroDeConfig, carregar_config
+from .briefing import gravar_json, montar_contatos, montar_html, montar_json
 from .consultas import aplicar_ultima_consulta, cruzar
 from .entrega.email import ErroDeEnvio
 from .entrega.pdf import ErroDePDF, html_para_pdf
@@ -367,6 +368,41 @@ def comando_inativos(args: argparse.Namespace) -> int:
     return 0
 
 
+def comando_briefing(args: argparse.Namespace) -> int:
+    """Instruções de contato para um agente de IA marcar as consultas."""
+    config, todos, agendamentos_todos, _ = _planejar(args)
+    _validar_invariante(agendamentos_todos)
+    hoje = date.today()
+
+    etiquetas = _etiquetas(args, config)
+    selecionados = filtros.aplicar(todos, etiquetas=etiquetas, somente_ativos=True)
+    selecionados, removidos = filtros.separar_excluidos(
+        selecionados, config.filtro.get("excluir")
+    )
+    for paciente, alvo in removidos:
+        print(f"  excluído: {paciente.nome} (regra: {alvo!r})", file=sys.stderr)
+
+    nomes = {p.nome for p in selecionados}
+    agendamentos = [a for a in agendamentos_todos if a.paciente.nome in nomes]
+
+    contatar, conferir = montar_contatos(agendamentos, hoje)
+    dados = montar_json(contatar, conferir, hoje)
+    html = montar_html(contatar, conferir, hoje)
+
+    destino_json = gravar_json(dados, config.caminho_relativo(args.json))
+    print(f"{len(contatar)} paciente(s) para contatar, {len(conferir)} para conferir.")
+    print(f"JSON gravado em {destino_json}")
+
+    caminho_pdf = config.caminho_relativo(args.pdf)
+    try:
+        gerado = html_para_pdf(html, caminho_pdf, "Instruções de contato")
+        print(f"PDF gravado em {gerado}")
+    except ErroDePDF as erro:
+        print(f"  aviso: PDF não gerado — {erro}", file=sys.stderr)
+        caminho_pdf.with_suffix(".html").write_text(html, encoding="utf-8")
+    return 0
+
+
 def construir_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="agente",
@@ -444,6 +480,15 @@ def construir_parser() -> argparse.ArgumentParser:
     inativos.add_argument("--pdf", default=None)
     inativos.add_argument("--sem-pdf", action="store_true")
     inativos.set_defaults(func=comando_inativos)
+
+    briefing = subcomandos.add_parser(
+        "briefing",
+        help="instruções de contato para um agente de IA marcar as consultas",
+    )
+    briefing.add_argument("--etiqueta", action="append", default=None)
+    briefing.add_argument("--pdf", default="briefing_agente.pdf")
+    briefing.add_argument("--json", default="briefing_agente.json")
+    briefing.set_defaults(func=comando_briefing)
 
     return parser
 
