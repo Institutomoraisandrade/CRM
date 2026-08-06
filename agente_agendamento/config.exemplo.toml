@@ -56,6 +56,12 @@ etiquetas = ["Ativos - Daniel", "Ativos - Juliana"]
 # pausados e inativos.
 incluir_inativos = false
 
+# Pacientes a tirar do relatório pelo nome. Serve enquanto a exportação
+# do LiveClin não traz a etiqueta do profissional: liste aqui quem é de
+# outro profissional. O agente casa nomes com tolerância ("Maria Santos"
+# alcança "Maria S.") e reporta cada exclusão, para você conferir.
+excluir = []
+
 # Duração de cada tipo de plano, em dias.
 # O agente também entende o formato completo da exportação, como
 # "Dieta (3 Meses) - Presencial" ou "Treino (1 Mes) - Online". E quando a

@@ -273,9 +273,13 @@ def comando_relatorio(args: argparse.Namespace) -> int:
     etiquetas = _etiquetas(args, config)
     incluir_inativos = args.incluir_inativos or bool(config.filtro.get("incluir_inativos"))
 
+    excluir = config.filtro.get("excluir") or []
     pacientes = filtros.aplicar(
         todos, etiquetas=etiquetas, somente_ativos=not incluir_inativos
     )
+    pacientes, removidos = filtros.separar_excluidos(pacientes, excluir)
+    for paciente, alvo in removidos:
+        print(f"  excluído: {paciente.nome} (regra: {alvo!r})", file=sys.stderr)
     if not pacientes:
         alvo = f" com as etiquetas {', '.join(etiquetas)}" if etiquetas else ""
         print(f"Nenhum paciente ativo{alvo} na planilha.", file=sys.stderr)
