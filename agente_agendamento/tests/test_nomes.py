@@ -1,6 +1,6 @@
 import unittest
 
-from agente.nomes import casar, normalizar, semelhanca, tokens
+from agente.nomes import casar, distancia, normalizar, semelhanca, tokens
 
 BASE = [
     "Isabela Paiva",
@@ -41,6 +41,38 @@ class TestSemelhanca(unittest.TestCase):
 
     def test_vazio_nao_quebra(self):
         self.assertEqual(semelhanca("", "Bruno Lima"), 0.0)
+
+
+class TestSobrenomeDiferente(unittest.TestCase):
+    """Nome igual no começo não pode carregar sobrenome de outra pessoa."""
+
+    def test_alves_nao_casa_com_sales(self):
+        # Caso real: os dois existem na base e são pessoas diferentes.
+        self.assertLess(semelhanca("Andre Alves", "Andre Sales"), 0.86)
+
+    def test_silva_nao_casa_com_costa(self):
+        self.assertLess(semelhanca("Joao Silva", "Joao Costa"), 0.86)
+
+    def test_erro_de_digitacao_no_sobrenome_ainda_casa(self):
+        # Uma tecla trocada continua sendo a mesma pessoa.
+        self.assertGreaterEqual(semelhanca("Isabel Oaiva", "Isabela Paiva"), 0.86)
+        self.assertGreaterEqual(semelhanca("Matheus Meneses", "Matheus Menezes"), 0.86)
+
+    def test_abreviacao_de_primeiro_nome_casa(self):
+        self.assertGreaterEqual(
+            semelhanca("Nathaniel Benedicto", "Nathan benedicto"), 0.86
+        )
+
+    def test_distancia_separa_digitacao_de_nome_diferente(self):
+        self.assertEqual(distancia("oaiva", "paiva"), 1)
+        self.assertEqual(distancia("alves", "sales"), 2)
+        self.assertEqual(distancia("", "abc"), 3)
+        self.assertEqual(distancia("igual", "igual"), 0)
+
+    def test_sobrenome_longo_tolera_dois_erros(self):
+        self.assertGreaterEqual(
+            semelhanca("Ana Albuquerque", "Ana Alburquerque"), 0.86
+        )
 
 
 class TestCasamento(unittest.TestCase):

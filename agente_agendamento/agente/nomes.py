@@ -49,6 +49,52 @@ def _iniciais_compativeis(a: list[str], b: list[str]) -> bool:
     return True
 
 
+# Teto aplicado quando um pedaço do nome não confere. Fica abaixo do
+# limiar de aceite, então o par é recusado.
+TETO_INCOMPATIVEL = 0.70
+
+# A partir deste tamanho, o pedaço tolera dois erros de digitação.
+TAMANHO_TOLERANTE = 8
+
+
+def distancia(a: str, b: str) -> int:
+    """Quantas edições transformam um texto no outro (Levenshtein).
+
+    Distingue erro de digitação de nome diferente melhor que proporção de
+    caracteres: "Oaiva"/"Paiva" custa 1 edição, "Alves"/"Sales" custa 2
+    apesar de as duas duplas parecerem igualmente semelhantes.
+    """
+    if a == b:
+        return 0
+    if not a or not b:
+        return max(len(a), len(b))
+    anterior = list(range(len(b) + 1))
+    for i, ca in enumerate(a, 1):
+        atual = [i]
+        for j, cb in enumerate(b, 1):
+            atual.append(
+                min(anterior[j] + 1, atual[j - 1] + 1, anterior[j - 1] + (ca != cb))
+            )
+        anterior = atual
+    return anterior[-1]
+
+
+def _abreviacao(a: str, b: str) -> bool:
+    """Um é começo do outro: Nathan/Nathaniel, Bea/Beatriz."""
+    curto, longo = sorted((a, b), key=len)
+    return len(curto) >= 4 and longo.startswith(curto)
+
+
+def _pedacos_conferem(a: str, b: str) -> bool:
+    """Decide se dois pedaços de nome são a mesma coisa escrita diferente."""
+    if a == b or _abreviacao(a, b):
+        return True
+    dist = distancia(a, b)
+    if dist <= 1:
+        return True
+    return dist <= 2 and min(len(a), len(b)) >= TAMANHO_TOLERANTE
+
+
 def semelhanca(a: str, b: str) -> float:
     """Nota de 0 a 1 entre dois nomes."""
     na, nb = normalizar(a), normalizar(b)
@@ -71,6 +117,10 @@ def semelhanca(a: str, b: str) -> float:
     # Compara também token a token, para que um erro concentrado num
     # sobrenome não afunde o nome inteiro.
     if ta and tb and len(ta) == len(tb):
+        if not all(_pedacos_conferem(x, y) for x, y in zip(ta, tb)):
+            # Um dos pedaços é outro nome, não uma variação do mesmo.
+            # Nome igual no começo não pode carregar sobrenome diferente.
+            return min(direta, TETO_INCOMPATIVEL)
         notas = [SequenceMatcher(None, x, y).ratio() for x, y in zip(ta, tb)]
         por_token = sum(notas) / len(notas)
         return max(direta, por_token)

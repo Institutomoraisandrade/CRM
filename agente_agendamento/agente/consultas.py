@@ -48,10 +48,15 @@ class ResumoConsultas:
     ultima: date | None = None
     correspondencia: Correspondencia | None = None
     datas: list[date] = field(default_factory=list)
+    # Quando a fonte só traz a última data, não dá para contar quantas
+    # consultas aconteceram — só quando aconteceu a última.
+    contagem_confiavel: bool = True
 
     @property
     def deficit(self) -> int:
         """Quantas consultas faltam para ficar em dia com o plano."""
+        if not self.contagem_confiavel:
+            return 0
         return max(0, self.previstas_ate_hoje - self.realizadas)
 
     @property
@@ -65,6 +70,8 @@ class ResumoConsultas:
     @property
     def esgotadas(self) -> bool:
         """Já usou todas as consultas a que o plano dá direito."""
+        if not self.contagem_confiavel:
+            return False
         return not self.sem_dados and self.realizadas >= self.previstas_total
 
     def esgotadas_cedo(self, hoje: date) -> bool:
@@ -98,6 +105,9 @@ class Cruzamento:
     avisos: list[str] = field(default_factory=list)
     ambiguidades: list[Correspondencia] = field(default_factory=list)
     sem_paciente: list[Correspondencia] = field(default_factory=list)
+    # Falso quando a exportação traz só a última data de cada paciente,
+    # em vez do histórico de avaliações.
+    historico_completo: bool = True
 
     def de(self, paciente: Paciente) -> ResumoConsultas | None:
         return self.resumos.get(paciente.nome)
@@ -107,6 +117,7 @@ def cruzar(
     pacientes: list[Paciente],
     avaliacoes: list[Avaliacao],
     hoje: date | None = None,
+    historico: bool = True,
 ) -> Cruzamento:
     """Associa as avaliações do WebDiet aos pacientes do LiveClin.
 
@@ -130,7 +141,9 @@ def cruzar(
         por_nome[avaliacao.paciente].append(avaliacao.data)
 
     nomes_pacientes = [p.nome for p in pacientes]
-    cruzamento = Cruzamento(resumos=resumos)
+    for resumo in resumos.values():
+        resumo.contagem_confiavel = historico
+    cruzamento = Cruzamento(resumos=resumos, historico_completo=historico)
 
     for nome_webdiet, datas in sorted(por_nome.items()):
         correspondencia = casar(nome_webdiet, nomes_pacientes)

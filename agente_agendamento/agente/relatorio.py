@@ -285,7 +285,7 @@ class Relatorio:
         return f" — {item.resumo.realizadas} de {item.resumo.previstas_total} consultas"
 
     def _quadro_consultas(self) -> list[str]:
-        if not self.cruzamento:
+        if not self.cruzamento or not self.cruzamento.historico_completo:
             return []
         linhas = []
         for paciente in sorted(self.ativos, key=lambda p: p.nome):
@@ -546,7 +546,7 @@ class Relatorio:
         )
 
     def _bloco_quadro_consultas(self) -> str:
-        if not self.cruzamento:
+        if not self.cruzamento or not self.cruzamento.historico_completo:
             return ""
         linhas = []
         for paciente in sorted(self.ativos, key=lambda p: p.nome):

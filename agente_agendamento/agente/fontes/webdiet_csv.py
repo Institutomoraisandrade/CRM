@@ -15,6 +15,13 @@ from ..util import chave, ler_data
 from .base import ErroDeFonte
 from .planilha import Planilha, PlanilhaArquivo
 
+# Colunas que trazem UMA data por paciente (a mais recente), e não o
+# histórico de avaliações. Com elas dá para saber quando foi o último
+# contato, mas não quantas consultas aconteceram.
+COLUNAS_DE_SNAPSHOT = {
+    "modificado em", "modificada em", "ultima modificacao", "criado em",
+}
+
 APELIDOS_COLUNA: dict[str, tuple[str, ...]] = {
     "paciente": (
         "paciente",
@@ -30,6 +37,10 @@ APELIDOS_COLUNA: dict[str, tuple[str, ...]] = {
         "data de avaliacao",
         "realizada em",
         "data da consulta",
+        # Exportação de pacientes do WebDiet: última alteração da dieta.
+        "modificado em",
+        "modificada em",
+        "ultima modificacao",
         "criado em",
     ),
 }
@@ -52,6 +63,8 @@ class FonteWebDiet:
         self.planilha = planilha
         self.colunas_config = {campo: chave(col) for campo, col in (colunas or {}).items()}
         self._avisos: list[str] = []
+        self.historico = True
+        self.coluna_de_data: str | None = None
 
     @property
     def avisos(self) -> list[str]:
@@ -86,6 +99,9 @@ class FonteWebDiet:
                 + ", ".join(str(c) for c in linhas[0].keys())
                 + ". Configure os nomes reais em [webdiet.colunas]."
             )
+
+        self.coluna_de_data = mapa["data"]
+        self.historico = chave(self.coluna_de_data) not in COLUNAS_DE_SNAPSHOT
 
         hoje = date.today()
         avaliacoes: list[Avaliacao] = []

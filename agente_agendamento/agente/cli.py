@@ -252,7 +252,14 @@ def _cruzar_webdiet(config: Config, pacientes: list[Paciente], hoje: date):
     avaliacoes = fonte.carregar()
     for aviso in fonte.avisos:
         print(f"  aviso: {aviso}", file=sys.stderr)
-    resultado = cruzar(pacientes, avaliacoes, hoje)
+    resultado = cruzar(pacientes, avaliacoes, hoje, historico=fonte.historico)
+    if not fonte.historico:
+        print(
+            f"  aviso: a coluna {fonte.coluna_de_data!r} traz uma data por "
+            "paciente, não o histórico — dá para saber a data do último "
+            "contato, mas não quantas consultas aconteceram.",
+            file=sys.stderr,
+        )
     for aviso in resultado.avisos:
         print(f"  nomes: {aviso}", file=sys.stderr)
     return resultado

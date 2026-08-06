@@ -45,9 +45,54 @@ class PlanilhaArquivo(Planilha):
     def linhas(self) -> list[dict[str, Any]]:
         if not self.caminho.exists():
             raise ErroDeFonte(f"planilha não encontrada em {self.caminho}")
-        if self.caminho.suffix.lower() in (".xlsx", ".xlsm"):
+        sufixo = self.caminho.suffix.lower()
+        if sufixo in (".xlsx", ".xlsm"):
             return self._do_xlsx()
+        if sufixo == ".numbers":
+            return self._do_numbers()
         return self._do_csv()
+
+    def _do_numbers(self) -> list[dict[str, Any]]:
+        """Lê o formato do Numbers, da Apple.
+
+        Cabeçalhos repetidos (o WebDiet exporta três colunas chamadas
+        "Telefone") ganham sufixo, senão uma sobrescreveria a outra.
+        """
+        try:
+            from numbers_parser import Document
+        except ImportError as erro:  # pragma: no cover - depende do ambiente
+            raise ErroDeFonte(
+                "Para ler .numbers instale o leitor:\n"
+                "  pip install numbers-parser\n"
+                "Ou exporte a planilha como CSV pelo próprio Numbers."
+            ) from erro
+
+        documento = Document(self.caminho)
+        if not documento.sheets or not documento.sheets[0].tables:
+            return []
+        tabela = documento.sheets[0].tables[0]
+        bruto = tabela.rows(values_only=True)
+        if not bruto:
+            return []
+
+        cabecalho: list[str] = []
+        vistos: dict[str, int] = {}
+        for celula in bruto[0]:
+            nome = str(celula).strip() if celula is not None else ""
+            if nome in vistos:
+                vistos[nome] += 1
+                nome = f"{nome} {vistos[nome]}"
+            else:
+                vistos[nome] = 1
+            cabecalho.append(nome)
+
+        return [
+            {
+                coluna: ("" if valor is None else valor)
+                for coluna, valor in zip(cabecalho, linha)
+            }
+            for linha in bruto[1:]
+        ]
 
     def _do_csv(self) -> list[dict[str, Any]]:
         with self.caminho.open("r", encoding="utf-8-sig", newline="") as arquivo:
