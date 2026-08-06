@@ -115,6 +115,13 @@ def alertas_do_paciente(paciente: Paciente, hoje: date) -> list[Alerta]:
         )
 
     limite = data_limite_retorno(paciente)
+
+    if paciente.ultima_consulta is None:
+        # Sem a data da última consulta o limite é contado do início do
+        # plano. Serve para agendar, mas não para afirmar atraso: um
+        # paciente antigo apareceria com meses de atraso não confirmável.
+        return alertas
+
     if limite == hoje:
         alertas.append(
             Alerta(

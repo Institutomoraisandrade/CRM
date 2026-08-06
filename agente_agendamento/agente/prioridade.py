@@ -53,18 +53,31 @@ def montar_fila(
         ):
             continue
 
-        resumo = cruzamento.de(agendamento.paciente) if cruzamento else None
+        paciente = agendamento.paciente
+        resumo = cruzamento.de(paciente) if cruzamento else None
         motivos: list[str] = []
         peso = 9
 
         if agendamento.situacao is SituacaoAgendamento.ATRASADO:
             atraso = (hoje - agendamento.limite).days if agendamento.limite else 0
-            motivos.append(
-                f"passou {_texto_dias(atraso)} do limite de {INTERVALO_MAXIMO_DIAS} dias"
-                if atraso > 0
-                else f"retorno fora do limite de {INTERVALO_MAXIMO_DIAS} dias"
-            )
-            peso = min(peso, 0)
+            if paciente.ultima_consulta is None:
+                # Sem última consulta o limite sai do início do plano, e
+                # afirmar "passou N dias" seria inventar um atraso que
+                # ninguém pode confirmar.
+                desde = (hoje - paciente.plano_inicio).days
+                motivos.append(
+                    f"sem consulta registrada desde o início do plano, há "
+                    f"{_texto_dias(desde)} — confirmar no WebDiet"
+                )
+                peso = min(peso, 5)
+            else:
+                motivos.append(
+                    f"passou {_texto_dias(atraso)} do limite de "
+                    f"{INTERVALO_MAXIMO_DIAS} dias"
+                    if atraso > 0
+                    else f"retorno fora do limite de {INTERVALO_MAXIMO_DIAS} dias"
+                )
+                peso = min(peso, 0)
 
         if agendamento.situacao is SituacaoAgendamento.SEM_VAGA:
             motivos.append("sem horário livre antes do limite")

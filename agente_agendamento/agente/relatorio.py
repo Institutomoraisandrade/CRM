@@ -95,14 +95,25 @@ class Relatorio:
 
         É o alarme do relatório: o prazo é para ser cumprido, não
         esticado, então esses casos aparecem antes de qualquer outra coisa.
+
+        Só entra quem tem data de última consulta registrada. Sem ela o
+        limite seria contado do início do plano, e um paciente antigo
+        apareceria com centenas de dias de atraso que ninguém pode
+        confirmar — alarme falso gasta a atenção que o alarme real precisa.
         """
         return [
             item
             for item in self.fila
-            if item.agendamento.limite is not None
+            if item.paciente.ultima_consulta is not None
+            and item.agendamento.limite is not None
             and item.agendamento.limite <= self.hoje
             and item.agendamento.situacao is not SituacaoAgendamento.PLANO_VENCIDO
         ]
+
+    @property
+    def sem_data_de_consulta(self) -> list[Paciente]:
+        """Ativos cujo prazo de 30 dias não dá para aferir."""
+        return [p for p in self.ativos if p.ultima_consulta is None]
 
     @property
     def por_profissional(self) -> dict[str, list[Paciente]]:
@@ -246,6 +257,15 @@ class Relatorio:
                 rotulo = ROTULO_ALERTA.get(alerta.tipo, alerta.tipo.value)
                 linhas.append(f"[{rotulo}] {alerta.mensagem}")
 
+        faltantes = self.sem_data_de_consulta
+        if faltantes:
+            linhas += [
+                "",
+                f"{len(faltantes)} paciente(s) SEM DATA DA ÚLTIMA CONSULTA — o limite",
+                f"de {INTERVALO_MAXIMO_DIAS} dias não pode ser aferido para eles, então",
+                "ficam fora do alarme. A data vem do WebDiet.",
+            ]
+
         conferir = self._conferir()
         if conferir:
             linhas += ["", "CONFERIR MANUALMENTE", "-" * 52] + [
@@ -310,6 +330,7 @@ class Relatorio:
             self._bloco_programados(),
             self._bloco_quadro_consultas(),
             self._bloco_alertas(),
+            self._bloco_sem_data(),
             self._bloco_conferir(),
             self._bloco_vigencias(),
             self._rodape(),
@@ -617,6 +638,20 @@ class Relatorio:
             + '<ul style="margin:0;padding-left:18px;font-size:14px;">'
             + "".join(itens)
             + "</ul>"
+        )
+
+    def _bloco_sem_data(self) -> str:
+        faltantes = self.sem_data_de_consulta
+        if not faltantes:
+            return ""
+        return (
+            '<div style="background:#eef4ff;border:1px solid #c7d8f5;border-radius:8px;'
+            'padding:12px 14px;margin:20px 0;font-size:13px;">'
+            f'<b>{len(faltantes)} paciente(s) sem data da última consulta.</b><br>'
+            f"Para esses, o limite de {INTERVALO_MAXIMO_DIAS} dias não pode ser "
+            "aferido — eles ficam fora do alarme para não gerar atraso falso. "
+            "A data vem da última avaliação antropométrica do WebDiet; com essa "
+            "exportação, o alarme passa a cobrir todo mundo.</div>"
         )
 
     def _bloco_conferir(self) -> str:

@@ -12,7 +12,8 @@ SP = ZoneInfo("America/Sao_Paulo")
 HOJE = date(2026, 8, 5)
 
 
-def paciente(nome="Ana Souza", plano="mensal", inicio=date(2026, 7, 15)):
+def paciente(nome="Ana Souza", plano="mensal", inicio=date(2026, 7, 15),
+             ultima=date(2026, 7, 15)):
     p = CATALOGO_PADRAO[plano]
     return Paciente(
         nome=nome,
@@ -20,6 +21,7 @@ def paciente(nome="Ana Souza", plano="mensal", inicio=date(2026, 7, 15)):
         plano_inicio=inicio,
         plano_fim=p.data_fim(inicio),
         status=StatusPaciente.ATIVO,
+        ultima_consulta=ultima,
         etiquetas=["Daniel"],
     )
 
@@ -58,6 +60,32 @@ class TestFila(unittest.TestCase):
             HOJE,
         )
         self.assertIn("passou 11 dias", fila[0].motivo_principal)
+
+    def test_sem_ultima_consulta_nao_afirma_atraso(self):
+        # Sem a data, o limite sai do início do plano — dizer "passou N
+        # dias" seria inventar um atraso que ninguém pode confirmar.
+        p = paciente("Sem Registro", ultima=None)
+        fila = montar_fila(
+            [agendamento(p, SituacaoAgendamento.ATRASADO, date(2026, 7, 25), 6)],
+            None,
+            HOJE,
+        )
+        self.assertNotIn("passou", fila[0].motivo_principal)
+        self.assertIn("sem consulta registrada", fila[0].motivo_principal)
+        self.assertIn("WebDiet", fila[0].motivo_principal)
+
+    def test_sem_ultima_consulta_perde_prioridade_para_atraso_real(self):
+        real = paciente("Atraso Real", ultima=date(2026, 6, 20))
+        incerto = paciente("Sem Registro", ultima=None)
+        fila = montar_fila(
+            [
+                agendamento(incerto, SituacaoAgendamento.ATRASADO, date(2026, 7, 1), 6),
+                agendamento(real, SituacaoAgendamento.ATRASADO, date(2026, 7, 20), 7),
+            ],
+            None,
+            HOJE,
+        )
+        self.assertEqual(fila[0].paciente.nome, "Atraso Real")
 
     def test_deficit_de_consulta_entra_na_fila(self):
         p = paciente("Bruno Lima", "trimestral", date(2026, 6, 1))

@@ -121,6 +121,22 @@ class TestAlertas(unittest.TestCase):
         p = paciente(plano_fim=date(2026, 3, 1))
         self.assertIn(TipoAlerta.PLANO_VENCIDO, self._tipos(p, date(2026, 3, 5)))
 
+    def test_sem_ultima_consulta_nao_acusa_atraso(self):
+        # O limite cairia no início do plano; acusar atraso a partir dele
+        # inventaria meses de atraso que ninguém pode confirmar.
+        p = paciente(ultima_consulta=None, plano_inicio=date(2025, 1, 1))
+        tipos = self._tipos(p, date(2026, 3, 5))
+        self.assertNotIn(TipoAlerta.CONSULTA_ATRASADA, tipos)
+        self.assertNotIn(TipoAlerta.RETORNO_30_DIAS, tipos)
+
+    def test_sem_ultima_consulta_ainda_avisa_do_plano(self):
+        # O aviso de vencimento não depende da última consulta.
+        p = paciente(
+            ultima_consulta=None, plano=MENSAL,
+            plano_inicio=date(2026, 3, 1), plano_fim=date(2026, 3, 31),
+        )
+        self.assertIn(TipoAlerta.PLANO_VENCENDO, self._tipos(p, date(2026, 3, 25)))
+
     def test_paciente_inativo_nao_gera_alerta(self):
         p = paciente(status=StatusPaciente.INATIVO, plano_fim=date(2026, 3, 1))
         self.assertEqual(alertas_do_paciente(p, date(2026, 3, 5)), [])

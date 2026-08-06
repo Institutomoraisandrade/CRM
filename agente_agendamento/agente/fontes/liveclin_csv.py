@@ -20,8 +20,15 @@ from .base import ErroDeFonte, FontePacientes
 from .planilha import Planilha, PlanilhaArquivo
 
 APELIDOS_COLUNA: dict[str, tuple[str, ...]] = {
-    "nome": ("nome", "paciente", "nome do paciente", "nome completo"),
-    "plano": ("plano", "plano selecionado", "tipo de plano", "plano contratado"),
+    "nome": (
+        "nome", "paciente", "nome do paciente", "nome completo",
+        # Relatório de pacientes do LiveClin (cabeçalhos técnicos).
+        "patientreport.headers.full_name",
+    ),
+    "plano": (
+        "plano", "plano selecionado", "tipo de plano", "plano contratado",
+        "patientreport.headers.last_service_provided",
+    ),
     "plano_inicio": (
         "inicio do plano",
         "data de inicio",
@@ -43,11 +50,21 @@ APELIDOS_COLUNA: dict[str, tuple[str, ...]] = {
         "validade",
         "vigencia",
         "termino",
+        "patientreport.headers.service_end_date",
     ),
-    "duracao": ("duracao (dias)", "duracao dias", "duracao", "dias"),
-    "status": ("status", "situacao", "tipo de cliente", "status liveclin"),
-    "whatsapp": ("whatsapp", "telefone", "celular", "whatsapp do paciente"),
-    "email": ("email", "e-mail"),
+    "duracao": (
+        "duracao (dias)", "duracao dias", "duracao", "dias",
+        "patientreport.headers.service_duration_days",
+    ),
+    "status": (
+        "status", "situacao", "tipo de cliente", "status liveclin",
+        "patientreport.headers.customer_status",
+    ),
+    "whatsapp": (
+        "whatsapp", "telefone", "celular", "whatsapp do paciente",
+        "patientreport.headers.phone_number",
+    ),
+    "email": ("email", "e-mail", "patientreport.headers.email"),
     "ultima_consulta": (
         "ultima consulta",
         "data da ultima consulta",
@@ -55,7 +72,7 @@ APELIDOS_COLUNA: dict[str, tuple[str, ...]] = {
         "ultima avaliacao",
     ),
     "etiquetas": ("etiquetas", "etiqueta", "tags", "marcadores"),
-    "id_externo": ("id", "codigo", "id do paciente"),
+    "id_externo": ("id", "codigo", "id do paciente", "patientreport.headers.id"),
 }
 
 APELIDOS_STATUS: dict[str, StatusPaciente] = {
@@ -70,6 +87,11 @@ APELIDOS_STATUS: dict[str, StatusPaciente] = {
     "finalizado": StatusPaciente.INATIVO,
     "encerrado": StatusPaciente.INATIVO,
     "cancelado": StatusPaciente.INATIVO,
+    # O relatório do LiveClin exporta os status em inglês.
+    "active": StatusPaciente.ATIVO,
+    "inactive": StatusPaciente.INATIVO,
+    "finished": StatusPaciente.INATIVO,
+    "paused": StatusPaciente.PAUSADO,
 }
 
 
@@ -161,21 +183,32 @@ class FonteLiveClin(FontePacientes):
             return None
 
         plano_bruto = self._valor(linha, mapa, "plano")
-        pelo_nome = resolver_plano(plano_bruto, self.catalogo) if plano_bruto else None
-
         dias = self._duracao(linha, mapa)
+        tem_data = self._valor(linha, mapa, "plano_inicio") or self._valor(
+            linha, mapa, "plano_fim"
+        )
+        if not plano_bruto and not dias and not tem_data:
+            # Cadastro sem nenhum serviço contratado: é lead, não paciente
+            # em acompanhamento. Sai da lista sem virar aviso.
+            return None
+
+        pelo_nome = resolver_plano(plano_bruto, self.catalogo) if plano_bruto else None
         if dias:
-            if pelo_nome is not None and pelo_nome.duracao_dias == dias:
-                # Nome e duração concordam: mantém o rótulo do plano.
+            if pelo_nome is None:
+                plano = plano_por_duracao(dias, self.catalogo)
+            elif pelo_nome.duracao_dias == dias:
                 plano = pelo_nome
             else:
-                if pelo_nome is not None:
+                # A duração da planilha manda nas datas, mas o número de
+                # consultas é do tipo de plano: um "Anual" de 365 dias dá
+                # as 10 consultas do anual, não 12 por divisão.
+                plano = Plano(pelo_nome.nome, dias, consultas=pelo_nome.consultas)
+                if abs(dias - pelo_nome.duracao_dias) > 15:
                     self._avisos.append(
-                        f"{nome}: plano {plano_bruto!r} vale "
+                        f"{nome}: plano {plano_bruto!r} costuma valer "
                         f"{pelo_nome.duracao_dias} dias, mas a planilha diz {dias}; "
                         "usei a duração da planilha"
                     )
-                plano = plano_por_duracao(dias, self.catalogo)
         else:
             plano = pelo_nome
 

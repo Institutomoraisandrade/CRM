@@ -8,11 +8,21 @@ para SMTP quando a verificação em duas etapas está ativa.
 
 from __future__ import annotations
 
+import mimetypes
 import os
 import smtplib
 import ssl
 from email.message import EmailMessage
 from email.utils import formataddr, formatdate
+from pathlib import Path
+
+
+def _tipo_do_arquivo(arquivo: Path) -> tuple[str, str]:
+    palpite, _ = mimetypes.guess_type(arquivo.name)
+    if not palpite:
+        return "application", "octet-stream"
+    tipo, _, subtipo = palpite.partition("/")
+    return tipo, subtipo or "octet-stream"
 
 
 class ErroDeEnvio(Exception):
@@ -61,7 +71,13 @@ class EnviadorEmail:
             )
         return senha
 
-    def montar(self, assunto: str, texto: str, html: str) -> EmailMessage:
+    def montar(
+        self,
+        assunto: str,
+        texto: str,
+        html: str,
+        anexos: list[str | Path] | None = None,
+    ) -> EmailMessage:
         mensagem = EmailMessage()
         mensagem["Subject"] = assunto
         mensagem["From"] = formataddr((self.nome_remetente, self.remetente))
@@ -69,11 +85,29 @@ class EnviadorEmail:
         mensagem["Date"] = formatdate(localtime=True)
         mensagem.set_content(texto)
         mensagem.add_alternative(html, subtype="html")
+
+        for caminho in anexos or []:
+            arquivo = Path(caminho).expanduser()
+            if not arquivo.exists():
+                raise ErroDeEnvio(f"anexo não encontrado: {arquivo}")
+            tipo, subtipo = _tipo_do_arquivo(arquivo)
+            mensagem.add_attachment(
+                arquivo.read_bytes(),
+                maintype=tipo,
+                subtype=subtipo,
+                filename=arquivo.name,
+            )
         return mensagem
 
-    def enviar(self, assunto: str, texto: str, html: str) -> list[str]:
+    def enviar(
+        self,
+        assunto: str,
+        texto: str,
+        html: str,
+        anexos: list[str | Path] | None = None,
+    ) -> list[str]:
         senha = self._senha()
-        mensagem = self.montar(assunto, texto, html)
+        mensagem = self.montar(assunto, texto, html, anexos)
         contexto = ssl.create_default_context()
 
         try:

@@ -13,6 +13,7 @@ from .agenda.base import ErroDeAgenda
 from .config import Config, ErroDeConfig, carregar_config
 from .consultas import aplicar_ultima_consulta, cruzar
 from .entrega.email import ErroDeEnvio
+from .entrega.pdf import ErroDePDF, html_para_pdf
 from .fontes.base import ErroDeFonte
 from .inativos import RelatorioInativos, levantar
 from .modelos import Agendamento, Paciente, SituacaoAgendamento, StatusPaciente
@@ -292,14 +293,35 @@ def comando_relatorio(args: argparse.Namespace) -> int:
     destino.write_text(relatorio.html(), encoding="utf-8")
     print(f"\nPrévia gravada em {destino}")
 
+    anexos = _gerar_pdf(config, relatorio, args, destino)
+
     if not args.enviar:
         print("Para enviar por e-mail: python -m agente relatorio --enviar")
         return 0
 
     enviador = config.construir_enviador()
-    entregues = enviador.enviar(relatorio.assunto, relatorio.texto(), relatorio.html())
-    print(f"E-mail enviado para {', '.join(entregues)}.")
+    entregues = enviador.enviar(
+        relatorio.assunto, relatorio.texto(), relatorio.html(), anexos
+    )
+    extra = f" com {len(anexos)} anexo(s)" if anexos else ""
+    print(f"E-mail enviado para {', '.join(entregues)}{extra}.")
     return 0
+
+
+def _gerar_pdf(config: Config, relatorio, args, origem_html) -> list:
+    """Gera o PDF quando pedido; a falta do Chrome não derruba o relatório."""
+    if getattr(args, "sem_pdf", False):
+        return []
+    caminho = config.caminho_relativo(
+        getattr(args, "pdf", None) or origem_html.with_suffix(".pdf").name
+    )
+    try:
+        gerado = html_para_pdf(relatorio.html(), caminho, relatorio.assunto)
+    except ErroDePDF as erro:
+        print(f"  aviso: PDF não gerado — {erro}", file=sys.stderr)
+        return []
+    print(f"PDF gravado em {gerado}")
+    return [gerado]
 
 
 def comando_inativos(args: argparse.Namespace) -> int:
@@ -320,12 +342,16 @@ def comando_inativos(args: argparse.Namespace) -> int:
     destino.write_text(relatorio.html(), encoding="utf-8")
     print(f"\nPrévia gravada em {destino}")
 
+    anexos = _gerar_pdf(config, relatorio, args, destino)
+
     if not args.enviar:
         print("Para enviar por e-mail: python -m agente inativos --enviar")
         return 0
 
     enviador = config.construir_enviador()
-    entregues = enviador.enviar(relatorio.assunto, relatorio.texto(), relatorio.html())
+    entregues = enviador.enviar(
+        relatorio.assunto, relatorio.texto(), relatorio.html(), anexos
+    )
     print(f"E-mail enviado para {', '.join(entregues)}.")
     return 0
 
@@ -387,6 +413,10 @@ def construir_parser() -> argparse.ArgumentParser:
         help="inclui pausados e inativos (por padrão só entram os ativos)",
     )
     relatorio.add_argument("--saida", default="relatorio.html")
+    relatorio.add_argument("--pdf", default=None, help="caminho do PDF gerado")
+    relatorio.add_argument(
+        "--sem-pdf", action="store_true", help="não gera o PDF"
+    )
     relatorio.set_defaults(func=comando_relatorio)
 
     inativos = subcomandos.add_parser(
@@ -400,6 +430,8 @@ def construir_parser() -> argparse.ArgumentParser:
         "--etiqueta", action="append", default=None, help="filtra por etiqueta"
     )
     inativos.add_argument("--saida", default="inativos.html")
+    inativos.add_argument("--pdf", default=None)
+    inativos.add_argument("--sem-pdf", action="store_true")
     inativos.set_defaults(func=comando_inativos)
 
     return parser
@@ -410,7 +442,7 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     try:
         return args.func(args)
-    except (ErroDeConfig, ErroDeFonte, ErroDeAgenda, ErroDeEnvio) as erro:
+    except (ErroDeConfig, ErroDeFonte, ErroDeAgenda, ErroDeEnvio, ErroDePDF) as erro:
         print(f"erro: {erro}", file=sys.stderr)
         return 1
 
