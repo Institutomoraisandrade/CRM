@@ -1,0 +1,134 @@
+# Configuração do agente de agendamento.
+# Copie este arquivo para config.toml e ajuste com os seus dados.
+# O config.toml não é versionado (está no .gitignore).
+
+[fonte]
+# O LiveClin não publica API, então o agente lê a planilha. Duas origens:
+#
+#   tipo = "arquivo"        -> CSV/XLSX salvo na sua máquina
+#   tipo = "google_sheets"  -> lê direto da planilha no seu Drive
+#
+# Para o Sheets, spreadsheet_id é o trecho da URL entre /d/ e /edit:
+#   docs.google.com/spreadsheets/d/ESTE_PEDACO_AQUI/edit
+#
+# tipo = "google_sheets"
+# spreadsheet_id = "147iQO95aYNytsVdo3j7EFO0oHbGQv4ZSxkdrt9m7Dxw"
+# aba = "Pacientes - Daniel"
+
+tipo = "arquivo"
+caminho = "exemplos/pacientes_liveclin.csv"
+
+# O agente reconhece sozinho os cabeçalhos mais comuns (Nome, Plano,
+# Data início, Vencimento, Última consulta, Status, WhatsApp, Etiquetas).
+# Só preencha esta seção se a sua exportação usar outros nomes.
+# [fonte.colunas]
+# nome = "Paciente"
+# plano = "Pacote contratado"
+# plano_inicio = "Começou em"
+# ultima_consulta = "Último atendimento"
+
+[webdiet]
+# Avaliações ANTROPOMÉTRICAS do WebDiet. Cada avaliação conta como uma
+# consulta realizada, e a mais recente vira a data da última consulta —
+# que é o que define o limite de 30 dias. Sem isso o relatório sai sem a
+# contagem e o limite passa a ser contado do início do plano.
+#
+# Aceita as mesmas duas origens da seção [fonte]:
+# tipo = "google_sheets"
+# spreadsheet_id = "..."
+
+tipo = "arquivo"
+caminho = "exemplos/avaliacoes_webdiet.csv"
+
+# Cabeçalhos reconhecidos sozinho: Paciente/Nome e Data da avaliação.
+# [webdiet.colunas]
+# paciente = "Nome do cliente"
+# data = "Realizada em"
+
+[filtro]
+# Só entram no relatório os pacientes com uma destas etiquetas.
+# No LiveClin a convenção é "Ativos - <Profissional>", e o relatório
+# separa os pacientes por profissional a partir daí.
+# Deixe a lista vazia ([]) para trazer todos.
+etiquetas = ["Ativos - Daniel", "Ativos - Juliana"]
+
+# Por padrão só pacientes ativos entram. Mude para true para incluir
+# pausados e inativos.
+incluir_inativos = false
+
+# Pacientes a tirar do relatório pelo nome. Serve enquanto a exportação
+# do LiveClin não traz a etiqueta do profissional: liste aqui quem é de
+# outro profissional. O agente casa nomes com tolerância ("Maria Santos"
+# alcança "Maria S.") e reporta cada exclusão, para você conferir.
+excluir = []
+
+# Duração de cada tipo de plano, em dias.
+# O agente também entende o formato completo da exportação, como
+# "Dieta (3 Meses) - Presencial" ou "Treino (1 Mes) - Online". E quando a
+# planilha traz uma coluna "Duração (dias)", é ela que manda.
+# "dias" é a vigência; "consultas" é quantas consultas o plano dá direito.
+# O número de consultas é comercial — não sai de dividir a duração por 30.
+[planos]
+mensal = { dias = 30, consultas = 1 }
+trimestral = { dias = 90, consultas = 3 }
+semestral = { dias = 180, consultas = 5 }
+anual = { dias = 360, consultas = 10 }
+parceria = { dias = 90, consultas = 3 }
+
+[agenda]
+# "arquivo" guarda os compromissos num JSON local — funciona sem
+# nenhuma credencial. Troque para "google_calendar" quando quiser
+# escrever direto na sua agenda do Google.
+tipo = "arquivo"
+caminho = "agenda_local.json"
+
+fuso = "America/Sao_Paulo"
+
+# 1 = segunda ... 7 = domingo
+dias_semana = [1, 2, 3, 4, 5]
+horarios = ["08:00", "09:00", "10:00", "11:00", "14:00", "15:00", "16:00", "17:00"]
+duracao_min = 50
+
+# Quantos dias antes do limite de 30 dias o agente começa a procurar vaga.
+dias_de_busca = 7
+
+# Não marca nada com menos de X horas de antecedência.
+antecedencia_horas = 24
+
+# "proximo_do_limite" mantém o intervalo mensal cheio (recomendado).
+# "mais_cedo" antecipa o retorno sempre que houver vaga.
+preferencia = "proximo_do_limite"
+
+# Prazo para reencaixar quem já passou dos 30 dias.
+dias_recuperacao = 7
+
+# [agenda.google]
+# calendar_id = "primary"
+# credenciais = "credentials.json"
+# token = "token.json"
+
+[notificacoes]
+# As mensagens de WhatsApp são montadas e gravadas aqui, prontas para
+# envio. Nenhuma mensagem sai da máquina: falta plugar a API.
+arquivo = "notificacoes.json"
+
+[email]
+# Para onde vai o relatório diário.
+destinatarios = ["suportejdteam@gmail.com"]
+
+# De qual conta o agente envia. Pode ser a mesma do destinatário.
+remetente = "suportejdteam@gmail.com"
+
+servidor = "smtp.gmail.com"
+porta = 587
+
+# Padrão: o mesmo endereço do remetente.
+# usuario = ""
+
+nome_remetente = "Agente de agendamento"
+
+# A SENHA NÃO FICA AQUI. O agente lê desta variável de ambiente.
+# No Gmail com verificação em duas etapas é preciso uma "Senha de app":
+#   https://myaccount.google.com/apppasswords
+#   export AGENTE_EMAIL_SENHA="suasenhadeapp"
+variavel_senha = "AGENTE_EMAIL_SENHA"
