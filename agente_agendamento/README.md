@@ -459,6 +459,43 @@ recebe o resumo todo dia e decide o que marcar.
 Se algo falhar (planilha faltando, senha errada), o agente termina com
 erro e o cron registra a falha em vez de fingir sucesso.
 
+## Quem ainda não está na agenda
+
+Cruza a exportação de pacientes com os eventos do Google Calendar e
+monta o PDF de quem está ativo e ainda não tem consulta marcada.
+
+```bash
+python3 ferramentas/lista_nao_agendados.py \
+    --pacientes exportacao.csv \
+    --agenda agenda.json \
+    --outra-agenda agenda_do_colega.json \
+    --saida nao_agendados.pdf
+```
+
+O JSON da agenda é a resposta do Google Calendar (`{"events": [...]}`
+ou só a lista). O PDF sai em quatro seções: **agendar**, **conferir
+antes de chamar**, **já têm consulta** e **aparecem na agenda de outro
+profissional**.
+
+**Um lembrete não é um agendamento.** A agenda usa `🔷 AGENDAR — Fulano`
+para anotar que alguém *precisa* ser chamado. Isso continua na fila —
+tratar como consulta marcada esconderia justamente quem está esperando.
+O mesmo vale para standby e para consulta que já aconteceu: atendimento
+da semana passada não impede o próximo.
+
+**Nome parcial vira dúvida, não chute.** "Roberto Santos Miranda" no
+cadastro é o "Roberto Santos" da agenda — dois sobrenomes em comum
+bastam. Já "Gabriel" sozinho contra "Gabriel Bezerra" e "Gabriel
+Pimentel" não dá para decidir, então o paciente vai para *conferir* com
+o motivo escrito ao lado.
+
+### A etiqueta do profissional não vem na exportação
+
+O relatório de pacientes do LiveClin não traz a coluna de etiqueta, então
+não dá para filtrar por `ATIVOS - DANIEL` a partir dele. `--outra-agenda`
+é o contorno: quem aparece na agenda do colega sai desta fila. A divisão
+fica registrada na última seção do PDF, para conferência.
+
 ## Testes
 
 ```bash
@@ -479,6 +516,7 @@ agente/
   nomes.py        casamento de nomes com erro de digitação
   prioridade.py   fila de quem precisa ser agendado, e por quê
   filtros.py      seleção por etiqueta e status
+  nao_agendados.py cruzamento com a agenda: quem ainda não foi marcado
   relatorio.py    resumo do dia em HTML e texto
   entrega/        envio por e-mail (SMTP)
   cli.py          comandos de linha
