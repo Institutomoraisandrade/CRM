@@ -1,0 +1,16 @@
+# Banco de dados local — contém dados pessoais de pacientes, nunca versionar
+data/crm.db
+data/*.db
+
+# Segredos / credenciais — nunca versionar
+.env
+.env.*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node (Playwright, ferramentas)
+node_modules/
