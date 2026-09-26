@@ -1,3 +1,4 @@
+import sys
 from dataclasses import dataclass
 from datetime import date
 
@@ -23,6 +24,9 @@ def get_renewal_candidates(
     1. All contracted sessions have been used (used_sessions >= contracted_sessions)
     2. Plan end_date is within the renewal window (days <= window_days)
 
+    Plans whose end_date is missing or not an ISO date (YYYY-MM-DD) are
+    skipped with an error on stderr; the remaining plans are still processed.
+
     Results are sorted by end_date in ascending order.
     """
     candidates = []
@@ -34,8 +38,16 @@ def get_renewal_candidates(
         contracted_sessions = plan["contracted_sessions"]
         used_sessions = plan["used_sessions"]
 
-        # Parse end_date
-        end_date_obj = date.fromisoformat(end_date_str)
+        # Parse end_date; a missing or malformed date skips only this plan
+        try:
+            end_date_obj = date.fromisoformat(end_date_str)
+        except (TypeError, ValueError):
+            print(
+                f"[erro] plano de {patient_name} ignorado: end_date inválido "
+                f"({end_date_str!r}), esperado AAAA-MM-DD",
+                file=sys.stderr,
+            )
+            continue
         days_until_due = (end_date_obj - today).days
 
         # Check if plan qualifies for renewal

@@ -54,3 +54,28 @@ def test_candidates_sorted_by_end_date_ascending():
     assert [c.patient_name for c in result] == [
         "Arthur Fonseca", "Gabriel Tondello", "Joao Minosso",
     ]
+
+
+# --- fix wave (findings 4 and 7) ---
+
+def test_invalid_or_missing_end_date_is_skipped_without_aborting(capsys):
+    today = date(2026, 9, 26)
+    plans = [
+        _plan("Sem Data", None),
+        _plan("Data BR", "27/09/2026"),
+        _plan("Arthur Fonseca", "2026-09-27"),
+    ]
+    result = get_renewal_candidates(plans, today)  # must not raise
+    assert [c.patient_name for c in result] == ["Arthur Fonseca"]
+    err = capsys.readouterr().err
+    assert "Sem Data" in err
+    assert "Data BR" in err
+
+
+def test_already_expired_plan_is_a_candidate():
+    today = date(2026, 9, 26)
+    plans = [_plan("Lais Sales", "2026-09-10", contracted=3, used=1)]
+    result = get_renewal_candidates(plans, today)
+    assert len(result) == 1
+    assert result[0].patient_name == "Lais Sales"
+    assert result[0].days_until_due == -16
