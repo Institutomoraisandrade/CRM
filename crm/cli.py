@@ -84,18 +84,32 @@ def main() -> None:
     webdiet_user = os.environ["WEBDIET_USER"]
     webdiet_password = os.environ["WEBDIET_PASSWORD"]
 
+    # Each system is isolated: a login/extraction failure in one of them is
+    # reported on stderr and that system contributes an empty list, while the
+    # other system still runs.
+    liveclin_raw: list[dict] = []
+    webdiet_raw: list[dict] = []
+
     with sync_playwright() as p:
         browser = p.chromium.launch()
         try:
             context = browser.new_context()
 
-            liveclin_page = context.new_page()
-            liveclin.login(liveclin_page, liveclin_user, liveclin_password)
-            liveclin_raw = liveclin.extract_patients(liveclin_page)
+            try:
+                liveclin_page = context.new_page()
+                liveclin.login(liveclin_page, liveclin_user, liveclin_password)
+                liveclin_raw = liveclin.extract_patients(liveclin_page)
+            except Exception as exc:
+                liveclin_raw = []
+                print(f"[erro] LiveClin falhou (login/extração): {exc}", file=sys.stderr)
 
-            webdiet_page = context.new_page()
-            webdiet.login(webdiet_page, webdiet_user, webdiet_password)
-            webdiet_raw = webdiet.extract_patients(webdiet_page)
+            try:
+                webdiet_page = context.new_page()
+                webdiet.login(webdiet_page, webdiet_user, webdiet_password)
+                webdiet_raw = webdiet.extract_patients(webdiet_page)
+            except Exception as exc:
+                webdiet_raw = []
+                print(f"[erro] WebDiet falhou (login/extração): {exc}", file=sys.stderr)
         finally:
             browser.close()
 

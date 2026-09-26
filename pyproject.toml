@@ -12,7 +12,7 @@ dependencies = ["playwright>=1.40"]
 dev = ["pytest>=8.0"]
 
 [tool.setuptools]
-packages = ["crm"]
+packages = ["crm", "crm.scraping"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
