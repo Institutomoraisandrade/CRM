@@ -14,3 +14,6 @@ venv/
 
 # Node (Playwright, ferramentas)
 node_modules/
+
+# Workspace de execução do Superpowers (subagent-driven-development)
+.superpowers/
