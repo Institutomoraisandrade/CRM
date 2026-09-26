@@ -747,20 +747,29 @@ git commit -m "feat: add webdiet parsing layer (browser layer stubbed for manual
   - `crm.db.init_db/insert_patient/insert_plan/insert_snapshot/get_all_plans` (Task 2)
   - `crm.renewal.get_renewal_candidates(...)` (Task 4)
 - Produces:
-  - `run_update(liveclin_raw_patients: list[dict], webdiet_raw_patients: list[dict], conn: sqlite3.Connection, today: date) -> list[RenewalCandidate]`
+  - `@dataclass UpdateResult: candidates: list[RenewalCandidate]; unmatched_liveclin: list[SourceRecord]; unmatched_webdiet: list[SourceRecord]`
+  - `run_update(liveclin_raw_patients: list[dict], webdiet_raw_patients: list[dict], conn: sqlite3.Connection, today: date) -> UpdateResult`
     — pure orchestration function (no I/O besides the given `conn`), used by
     both the CLI entrypoint and tests. Parses both raw lists with the
     respective `parse_patient` (catching and logging — via
     `print(f"[erro] ...", file=sys.stderr)` — any exception per-record and
     skipping that record rather than aborting), matches them, writes
-    patients/plans/snapshots to `conn`, and returns
-    `renewal.get_renewal_candidates(db.get_all_plans(conn), today)`.
+    patients/plans/snapshots to `conn` for each `MatchResult` (the plan dict
+    passed to `insert_plan` is `{**match.liveclin.raw, "source":
+    "liveclin"}` — `SourceRecord.raw` never carries `"source"` itself, so
+    this key is always added explicitly here), and returns an `UpdateResult`
+    with `candidates=renewal.get_renewal_candidates(db.get_all_plans(conn),
+    today)` plus the `unmatched_liveclin`/`unmatched_webdiet` lists returned
+    by `match_patients` unchanged — per the spec, unmatched patients are
+    never dropped, only surfaced separately from the renewal list.
   - `main() -> None` — real entrypoint: reads env vars, drives Playwright
     (`login` + `extract_patients` for both systems), calls `run_update`,
     prints each `RenewalCandidate` one per line as `f"{c.patient_name} —
-    {c.plan_type} — vence {c.end_date} ({c.used_sessions}/{c.contracted_sessions} consultas)"`.
-    Not unit-tested (depends on live browser + env vars); manual smoke test
-    only.
+    {c.plan_type} — vence {c.end_date} ({c.used_sessions}/{c.contracted_sessions} consultas)"`,
+    then, if `unmatched_liveclin` or `unmatched_webdiet` is non-empty, prints
+    a `"Não cruzados:"` heading followed by each unmatched record's `.name`
+    (one per line, LiveClin ones then WebDiet ones). Not unit-tested
+    (depends on live browser + env vars); manual smoke test only.
 
 - [ ] **Step 1: Write the failing test for `run_update` happy path**
 
@@ -782,9 +791,11 @@ def test_run_update_matches_persists_and_returns_candidates(tmp_path):
         "name": "Arthur Fonseca", "phone": "11911110000", "birthdate": "1980-01-01",
         "email": None, "modality": "presencial", "diet_status": "ativo",
     }]
-    candidates = run_update(liveclin_raw, webdiet_raw, conn, today=date(2026, 9, 26))
-    assert len(candidates) == 1
-    assert candidates[0].patient_name == "Arthur Fonseca"
+    result = run_update(liveclin_raw, webdiet_raw, conn, today=date(2026, 9, 26))
+    assert len(result.candidates) == 1
+    assert result.candidates[0].patient_name == "Arthur Fonseca"
+    assert result.unmatched_liveclin == []
+    assert result.unmatched_webdiet == []
 ```
 
 - [ ] **Step 2: Run test to verify it fails**
@@ -792,16 +803,20 @@ def test_run_update_matches_persists_and_returns_candidates(tmp_path):
 Run: `pytest tests/test_cli.py::test_run_update_matches_persists_and_returns_candidates -v`
 Expected: FAIL with `ModuleNotFoundError`
 
-- [ ] **Step 3: Implement `run_update` in `crm/cli.py`**
+- [ ] **Step 3: Implement `UpdateResult` and `run_update` in `crm/cli.py`**
 
 Wire the steps described in Interfaces above: `parse_patient` both lists
 (wrap each record's parse in `try/except Exception`, print to stderr, skip
-on failure) → `match_patients` → for each `MatchResult`, `insert_patient`
-using the matched pair's fields (`phone_liveclin` from `.liveclin.phone`,
-`phone_webdiet` from `.webdiet.phone`, etc.) then `insert_plan` from the
-LiveClin side's `raw` (source of plan/session data) and `insert_snapshot`
-with `json.dumps({"liveclin": m.liveclin.raw, "webdiet": m.webdiet.raw})` →
-finally `renewal.get_renewal_candidates(db.get_all_plans(conn), today)`.
+on failure) → `match_patients` → for each `MatchResult` in `matches`,
+`insert_patient` using the matched pair's fields (`name` from
+`.liveclin.name`, `phone_liveclin` from `.liveclin.phone`, `phone_webdiet`
+from `.webdiet.phone`, `birthdate`/`email` from whichever side has them,
+`match_field` from `.matched_field`) then `insert_plan` with plan dict
+`{**m.liveclin.raw, "source": "liveclin"}` and `insert_snapshot` with
+`json.dumps({"liveclin": m.liveclin.raw, "webdiet": m.webdiet.raw})` →
+build `UpdateResult(candidates=renewal.get_renewal_candidates(db.get_all_plans(conn), today),
+unmatched_liveclin=unmatched_lc, unmatched_webdiet=unmatched_wd)` using the
+`unmatched_lc`/`unmatched_wd` lists `match_patients` returned.
 
 - [ ] **Step 4: Run test to verify it passes**
 
@@ -826,9 +841,9 @@ def test_run_update_skips_a_bad_record_without_aborting(tmp_path, capsys):
         "name": "Beto Guerra", "phone": "11922223333", "birthdate": "1988-03-10",
         "email": None, "modality": "presencial", "diet_status": "ativo",
     }]
-    candidates = run_update(liveclin_raw, webdiet_raw, conn, today=date(2026, 9, 26))
-    assert len(candidates) == 1
-    assert candidates[0].patient_name == "Beto Guerra"
+    result = run_update(liveclin_raw, webdiet_raw, conn, today=date(2026, 9, 26))
+    assert len(result.candidates) == 1
+    assert result.candidates[0].patient_name == "Beto Guerra"
     assert "erro" in capsys.readouterr().err.lower()
 ```
 
