@@ -44,7 +44,9 @@ def run_update(
     )
 
     for m in matches:
-        patient_id = db.insert_patient(
+        # Idempotent per patient identity: reuse and update an existing patient
+        # instead of inserting a duplicate on every run.
+        patient_id = db.upsert_patient(
             conn,
             {
                 "name": m.liveclin.name,
@@ -55,6 +57,8 @@ def run_update(
                 "match_field": m.matched_field,
             },
         )
+        # Keep only the latest plan per patient+source; history stays in snapshots.
+        db.delete_plans(conn, patient_id, "liveclin")
         db.insert_plan(conn, patient_id, {**m.liveclin.raw, "source": "liveclin"})
         db.insert_snapshot(
             conn,
