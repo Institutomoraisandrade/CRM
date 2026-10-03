@@ -14,7 +14,8 @@
    "link": null,
    "fibra_g": 0,
    "papel": "proteina",
-   "fonte": "ranking/rotulo (conferir)"
+   "fonte": "ranking/rotulo (conferir)",
+   "preparo": "minimo"
   },
   {
    "nome": "Whey Isolado",
@@ -29,7 +30,8 @@
    "link": null,
    "fibra_g": 0,
    "papel": "proteina",
-   "fonte": "ranking/rotulo (conferir)"
+   "fonte": "ranking/rotulo (conferir)",
+   "preparo": "minimo"
   },
   {
    "nome": "Isofort",
@@ -44,7 +46,8 @@
    "link": null,
    "fibra_g": 0,
    "papel": "proteina",
-   "fonte": "ranking/rotulo (conferir)"
+   "fonte": "ranking/rotulo (conferir)",
+   "preparo": "minimo"
   },
   {
    "nome": "Isolate Prime Whey",
@@ -59,7 +62,8 @@
    "link": null,
    "fibra_g": 0,
    "papel": "proteina",
-   "fonte": "ranking/rotulo (conferir)"
+   "fonte": "ranking/rotulo (conferir)",
+   "preparo": "minimo"
   },
   {
    "nome": "Tasty Iso",
@@ -74,7 +78,8 @@
    "link": null,
    "fibra_g": 0,
    "papel": "proteina",
-   "fonte": "ranking/rotulo (conferir)"
+   "fonte": "ranking/rotulo (conferir)",
+   "preparo": "minimo"
   },
   {
    "nome": "Albumina (pó)",
@@ -89,7 +94,8 @@
    "link": null,
    "fibra_g": 0,
    "papel": "proteina",
-   "fonte": "estimado"
+   "fonte": "estimado",
+   "preparo": "minimo"
   },
   {
    "nome": "Atum em água (lata)",
@@ -104,7 +110,8 @@
    "link": null,
    "fibra_g": 0,
    "papel": "proteina",
-   "fonte": "estimado"
+   "fonte": "estimado",
+   "preparo": "pronto"
   },
   {
    "nome": "Peito de frango grelhado",
@@ -119,7 +126,8 @@
    "link": null,
    "fibra_g": 0,
    "papel": "proteina",
-   "fonte": "estimado"
+   "fonte": "estimado",
+   "preparo": "minimo"
   },
   {
    "nome": "Ovo cozido (2 un.)",
@@ -134,7 +142,8 @@
    "link": null,
    "fibra_g": 0,
    "papel": "proteina",
-   "fonte": "estimado"
+   "fonte": "estimado",
+   "preparo": "minimo"
   },
   {
    "nome": "Iogurte grego zero gordura",
@@ -149,7 +158,8 @@
    "link": null,
    "fibra_g": 0,
    "papel": "proteina",
-   "fonte": "estimado"
+   "fonte": "estimado",
+   "preparo": "pronto"
   },
   {
    "nome": "Aveia em flocos",
@@ -164,7 +174,8 @@
    "link": null,
    "fibra_g": 3,
    "papel": "base",
-   "fonte": "estimado"
+   "fonte": "estimado",
+   "preparo": "minimo"
   },
   {
    "nome": "Pasta de amendoim integral",
@@ -179,7 +190,8 @@
    "link": null,
    "fibra_g": 1.5,
    "papel": "gordura",
-   "fonte": "estimado"
+   "fonte": "estimado",
+   "preparo": "pronto"
   },
   {
    "nome": "Biscoito de Arroz Original",
@@ -195,7 +207,8 @@
    "fonte": "varejista/rotulo (conferir)",
    "obs": "Substitui bolacha recheada/salgadinho; sem glúten. Combinar com proteína (queijo cottage, peito de peru, pasta de amendoim).",
    "preco_brl": null,
-   "link": "https://www.cafezale.com.br/delicatessen/biscoito-de-arroz-tailandes-kalassi-original-pacote-100g"
+   "link": "https://www.cafezale.com.br/delicatessen/biscoito-de-arroz-tailandes-kalassi-original-pacote-100g",
+   "preparo": "pronto"
   },
   {
    "nome": "Biscoito de Arroz Veggie",
@@ -211,7 +224,8 @@
    "fonte": "varejista/rotulo (conferir)",
    "obs": "Menos calórico da linha Kalassi.",
    "preco_brl": null,
-   "link": "https://www.cafezale.com.br/delicatessen/biscoito-de-arroz-kalassi-veggie-3-pacotes-de-84g"
+   "link": "https://www.cafezale.com.br/delicatessen/biscoito-de-arroz-kalassi-veggie-3-pacotes-de-84g",
+   "preparo": "pronto"
   },
   {
    "nome": "Biscoito de Arroz Paprika",
@@ -227,7 +241,8 @@
    "fonte": "varejista/rotulo (conferir)",
    "obs": "Sabor sem precisar de molho.",
    "preco_brl": null,
-   "link": "https://www.cafezale.com.br/delicatessen/biscoito-de-arroz-tailandes-kalassi-paprika-pacote-100g"
+   "link": "https://www.cafezale.com.br/delicatessen/biscoito-de-arroz-tailandes-kalassi-paprika-pacote-100g",
+   "preparo": "pronto"
   },
   {
    "nome": "Veggie Chips Grão de Bico",
@@ -243,7 +258,8 @@
    "fonte": "varejista/rotulo (conferir)",
    "obs": "Assado, vegano, sem glúten; troca batata chips.",
    "preco_brl": null,
-   "link": "https://celeiromicah.com.br/produtos/veggie-chips-grao-de-bico-cebola-e-salsa-40g-fit-food/"
+   "link": "https://celeiromicah.com.br/produtos/veggie-chips-grao-de-bico-cebola-e-salsa-40g-fit-food/",
+   "preparo": "pronto"
   },
   {
    "nome": "Snack Grão de Bico",
@@ -259,7 +275,8 @@
    "fonte": "varejista/rotulo (conferir)",
    "obs": "Mais proteína e fibra que chips comuns: ótimo para saciedade.",
    "preco_brl": null,
-   "link": null
+   "link": null,
+   "preparo": "pronto"
   },
   {
    "nome": "Macarrão Konjac (shirataki)",
@@ -275,7 +292,8 @@
    "fonte": "varejista/rotulo (conferir)",
    "obs": "Quase zero kcal (fibra glucomanana). Base para strogonoff, molho, yakisoba. Enxaguar bem.",
    "preco_brl": null,
-   "link": "https://www.raiznativa.com.br/macarrao-konjac-espaguete-270g-konjac-massa-mf"
+   "link": "https://www.raiznativa.com.br/macarrao-konjac-espaguete-270g-konjac-massa-mf",
+   "preparo": "minimo"
   },
   {
    "nome": "Bold Bar (Berries & Crispies)",
@@ -291,7 +309,8 @@
    "fonte": "varejista/rotulo (conferir)",
    "obs": "20 g de proteína, 0% açúcar adicionado; outros sabores ~235 kcal.",
    "preco_brl": null,
-   "link": "https://www.drogasil.com.br/bold-bar-barra-20g-proteina-barrinha-bombom-crocante-12un-645696.html"
+   "link": "https://www.drogasil.com.br/bold-bar-barra-20g-proteina-barrinha-bombom-crocante-12un-645696.html",
+   "preparo": "pronto"
   },
   {
    "nome": "Protein Crisp Bar",
@@ -307,7 +326,8 @@
    "fonte": "varejista/rotulo (conferir)",
    "obs": "Menos proteica por kcal que a Bold; boa para emergência.",
    "preco_brl": null,
-   "link": "https://www.integralmedica.com.br/crisp-bar/p"
+   "link": "https://www.integralmedica.com.br/crisp-bar/p",
+   "preparo": "pronto"
   },
   {
    "nome": "Pão de Forma +Proteína Integral",
@@ -323,7 +343,8 @@
    "fonte": "varejista/rotulo (conferir)",
    "obs": "2 fatias com 12 g de proteína: dobra a proteína do pão comum (~6 g).",
    "preco_brl": null,
-   "link": null
+   "link": null,
+   "preparo": "pronto"
   },
   {
    "nome": "Pão de Forma 100% Integral",
@@ -339,7 +360,8 @@
    "fonte": "varejista/rotulo (conferir)",
    "obs": "Referência de comparação com o pão proteico.",
    "preco_brl": null,
-   "link": null
+   "link": null,
+   "preparo": "pronto"
   },
   {
    "nome": "Pipoca estourada no ar (sem óleo)",
@@ -355,7 +377,8 @@
    "fonte": "estimado",
    "obs": "Volume alto por kcal; evitar manteiga e açúcar.",
    "preco_brl": null,
-   "link": null
+   "link": null,
+   "preparo": "pronto"
   },
   {
    "nome": "Gelatina diet pronta",
@@ -371,7 +394,8 @@
    "fonte": "estimado",
    "obs": "Misturar com whey/iogurte vira sobremesa proteica.",
    "preco_brl": null,
-   "link": null
+   "link": null,
+   "preparo": "pronto"
   },
   {
    "nome": "Cottage light",
@@ -387,7 +411,8 @@
    "fonte": "estimado",
    "obs": "Combina com biscoito de arroz.",
    "preco_brl": null,
-   "link": null
+   "link": null,
+   "preparo": "pronto"
   },
   {
    "nome": "Sardinha em conserva",
@@ -403,7 +428,8 @@
    "fonte": "TACO/guiadacaloria (genérico, conferir rótulo)",
    "obs": "Ômega-3 e cálcio; prefira versão em água/azeite escorrido.",
    "preco_brl": null,
-   "link": null
+   "link": null,
+   "preparo": "pronto"
   },
   {
    "nome": "Atum em conserva (óleo escorrido)",
@@ -419,7 +445,8 @@
    "fonte": "TACO/guiadacaloria (genérico, conferir rótulo)",
    "obs": "Versão em água tem menos kcal (ver 'Atum em água').",
    "preco_brl": null,
-   "link": null
+   "link": null,
+   "preparo": "pronto"
   },
   {
    "nome": "Palmito em conserva",
@@ -435,7 +462,8 @@
    "fonte": "TACO/guiadacaloria (genérico, conferir rótulo)",
    "obs": "Alto volume, ~28 kcal/100 g; atenção ao sódio da salmoura.",
    "preco_brl": null,
-   "link": null
+   "link": null,
+   "preparo": "pronto"
   },
   {
    "nome": "Cogumelo em conserva",
@@ -451,7 +479,8 @@
    "fonte": "TACO/guiadacaloria (genérico, conferir rótulo)",
    "obs": "Umami para temperar sem gordura.",
    "preco_brl": null,
-   "link": null
+   "link": null,
+   "preparo": "pronto"
   },
   {
    "nome": "Grão-de-bico em conserva",
@@ -467,7 +496,8 @@
    "fonte": "estimado (conferir rótulo)",
    "obs": "Escorrer e lavar reduz sódio; vira snack assado ou base de salada.",
    "preco_brl": null,
-   "link": null
+   "link": null,
+   "preparo": "pronto"
   },
   {
    "nome": "Palmito pupunha (massa/fettuccine)",
@@ -483,7 +513,8 @@
    "fonte": "TACO/varejo (conferir)",
    "obs": "Alternativa ao konjac com mais textura e mais proteína por kcal.",
    "preco_brl": null,
-   "link": null
+   "link": null,
+   "preparo": "minimo"
   },
   {
    "nome": "Chips de Batata Doce",
@@ -499,7 +530,8 @@
    "fonte": "fatsecret (conferir)",
    "obs": "Mais calórico: bom exemplo do que NÃO é leve; compare no ranking.",
    "preco_brl": null,
-   "link": null
+   "link": null,
+   "preparo": "pronto"
   },
   {
    "nome": "Torrada integral industrial (4 un.)",
@@ -515,7 +547,8 @@
    "fonte": "fatsecret (conferir)",
    "obs": "Base para patês de atum/cottage.",
    "preco_brl": null,
-   "link": null
+   "link": null,
+   "preparo": "pronto"
   },
   {
    "nome": "Alga Nori (snack/folha)",
@@ -531,7 +564,8 @@
    "fonte": "fatsecret (conferir)",
    "obs": "~10 kcal por folha; ótimo para crocância.",
    "preco_brl": null,
-   "link": null
+   "link": null,
+   "preparo": "pronto"
   },
   {
    "nome": "Ketchup Zero",
@@ -547,7 +581,8 @@
    "fonte": "fatsecret (44 kcal/100 g; conferir)",
    "obs": "Sem açúcar adicionado; troca ketchup comum.",
    "preco_brl": null,
-   "link": null
+   "link": null,
+   "preparo": "minimo"
   },
   {
    "nome": "Maionese Zero",
@@ -562,6 +597,143 @@
    "papel": "base",
    "fonte": "varejista (conferir)",
    "obs": "0 kcal por porção declarada.",
+   "preco_brl": null,
+   "link": null,
+   "preparo": "minimo"
+  },
+  {
+   "nome": "Skyr Natural",
+   "marca": "Danone",
+   "categoria": "iogurte proteico",
+   "porcao_g": 100,
+   "kcal": 52,
+   "proteina_g": 10,
+   "carbo_g": 3.1,
+   "gordura_g": 0,
+   "fibra_g": 0,
+   "papel": "proteina",
+   "fonte": "fatsecret/varejista (conferir)",
+   "obs": "Mais proteína por kcal entre os iogurtes de pote; zero gordura.",
+   "preparo": "pronto",
+   "preco_brl": null,
+   "link": null
+  },
+  {
+   "nome": "YoPRO 15g (bebida)",
+   "marca": "Danone",
+   "categoria": "iogurte proteico",
+   "porcao_g": 250,
+   "kcal": 125,
+   "proteina_g": 15,
+   "carbo_g": 12,
+   "gordura_g": 1.8,
+   "fibra_g": 0,
+   "papel": "proteina",
+   "fonte": "fatsecret (6 g prot/100 g; kcal derivada, conferir)",
+   "obs": "Garrafa para beber: lanche na estrada/trabalho sem colher.",
+   "preparo": "pronto",
+   "preco_brl": null,
+   "link": null
+  },
+  {
+   "nome": "Cookie Proteico 20g",
+   "marca": "genérico (varejo)",
+   "categoria": "cookie proteico",
+   "porcao_g": 45,
+   "kcal": 178,
+   "proteina_g": 20,
+   "carbo_g": null,
+   "gordura_g": null,
+   "fibra_g": null,
+   "papel": "lanche",
+   "fonte": "varejista Pague Menos (conferir marca/sabor)",
+   "obs": "Doce que cabe na bolsa; ~20 g de proteína.",
+   "preparo": "pronto",
+   "preco_brl": null,
+   "link": null
+  },
+  {
+   "nome": "Chips de Queijo Parmesão",
+   "marca": "genérica",
+   "categoria": "snack proteico",
+   "porcao_g": 20,
+   "kcal": 118,
+   "proteina_g": 9,
+   "carbo_g": 0.4,
+   "gordura_g": 7.1,
+   "fibra_g": 0,
+   "papel": "lanche",
+   "fonte": "fatsecret/varejista (conferir)",
+   "obs": "Zero carbo, crocante; atenção ao sódio (~282 mg).",
+   "preparo": "pronto",
+   "preco_brl": null,
+   "link": null
+  },
+  {
+   "nome": "Mix de Castanhas e Frutas Secas",
+   "marca": "genérica",
+   "categoria": "gordura boa",
+   "porcao_g": 15,
+   "kcal": 81,
+   "proteina_g": 2.1,
+   "carbo_g": 5.1,
+   "gordura_g": 6.5,
+   "fibra_g": null,
+   "papel": "lanche",
+   "fonte": "fatsecret (conferir)",
+   "obs": "Porção pequena (1 colher); densa em kcal: meça antes de levar.",
+   "preparo": "pronto",
+   "preco_brl": null,
+   "link": null
+  },
+  {
+   "nome": "Barra de Cereal sem açúcar",
+   "marca": "Monama",
+   "categoria": "barra de cereal",
+   "porcao_g": 25,
+   "kcal": 89,
+   "proteina_g": 1.5,
+   "carbo_g": null,
+   "gordura_g": null,
+   "fibra_g": 3.4,
+   "papel": "lanche",
+   "fonte": "varejista (conferir)",
+   "obs": "Sem açúcar, glúten e lácteos; baixa proteína: combine com iogurte/queijo.",
+   "preparo": "pronto",
+   "preco_brl": null,
+   "link": null
+  },
+  {
+   "nome": "Peito de Peru fatiado (3 fatias)",
+   "marca": "Casa do Queijo",
+   "categoria": "frios magros",
+   "porcao_g": 40,
+   "kcal": 42,
+   "proteina_g": 8,
+   "carbo_g": 0.8,
+   "gordura_g": 0.7,
+   "fibra_g": 0,
+   "papel": "proteina",
+   "fonte": "fatsecret/varejista (conferir)",
+   "obs": "Enrolar no queijo minas ou usar com pão proteico.",
+   "preparo": "pronto",
+   "preco_brl": null,
+   "link": null
+  },
+  {
+   "nome": "Queijo Minas Frescal Light (1 fatia)",
+   "marca": "Quatá",
+   "categoria": "laticínio",
+   "porcao_g": 30,
+   "kcal": 53,
+   "proteina_g": 6,
+   "carbo_g": null,
+   "gordura_g": null,
+   "fibra_g": 0,
+   "papel": "proteina",
+   "fonte": "fatsecret/varejista (conferir)",
+   "obs": "Fatiado e pronto; combina com biscoito de arroz.",
+   "preparo": "pronto",
    "preco_brl": null,
    "link": null
   }

@@ -10,6 +10,7 @@ python buscar.py                          # proteína por 100 kcal
 python buscar.py --por saciedade          # menor kcal/g + mais fibra
 python buscar.py --papel lanche --por lanche
 python buscar.py --categoria "snack crocante" --max-kcal 120
+python buscar.py --preparo pronto --markdown   # tabela "abrir e comer" (TABELA-CORRIDA.md)
 ```
 
 `papel`: `proteina`, `lanche`, `base`, `gordura`. Cada item tem `fonte`
