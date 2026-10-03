@@ -92,37 +92,38 @@
    "viagem_aviao": "ok"
   },
   {
-   "nome": "Albumina (pó)",
-   "marca": "genérica",
+   "nome": "Albumina",
+   "marca": "Naturovos",
    "categoria": "proteína",
-   "porcao_g": 30,
-   "kcal": 115,
-   "proteina_g": 24,
-   "carbo_g": 1,
-   "gordura_g": 0.3,
+   "porcao_g": 28,
+   "kcal": 97,
+   "proteina_g": 22,
+   "carbo_g": 2.3,
+   "gordura_g": 0,
    "preco_brl": null,
-   "link": null,
+   "link": "https://www.naturovos.com.br/produto/albumina-naturovos-natural-1kg-28",
    "fibra_g": 0,
    "papel": "proteina",
-   "fonte": "estimado",
+   "fonte": "rótulo Naturovos via fatsecret/openfoodfacts (conferir)",
    "preparo": "minimo",
    "viagem_carro": "sem geladeira",
-   "viagem_aviao": "ok"
+   "viagem_aviao": "ok",
+   "rendimento_porcoes": 35.7
   },
   {
-   "nome": "Atum em água (lata)",
-   "marca": "genérica",
+   "nome": "Atum Sólido ao Natural",
+   "marca": "Gomes da Costa",
    "categoria": "alimento",
-   "porcao_g": 120,
-   "kcal": 120,
-   "proteina_g": 27,
+   "porcao_g": 60,
+   "kcal": 81,
+   "proteina_g": 17,
    "carbo_g": 0,
    "gordura_g": 1,
    "preco_brl": null,
    "link": null,
    "fibra_g": 0,
    "papel": "proteina",
-   "fonte": "estimado",
+   "fonte": "varejista (porção 60 g, conferir)",
    "preparo": "pronto",
    "viagem_carro": "sem geladeira",
    "viagem_aviao": "restrito (líquido/pasta ≤100 ml em voo internacional)"
@@ -132,15 +133,15 @@
    "marca": "genérica",
    "categoria": "alimento",
    "porcao_g": 100,
-   "kcal": 160,
-   "proteina_g": 31,
+   "kcal": 159,
+   "proteina_g": 32,
    "carbo_g": 0,
-   "gordura_g": 3.5,
+   "gordura_g": 2.5,
    "preco_brl": null,
    "link": null,
    "fibra_g": 0,
    "papel": "proteina",
-   "fonte": "estimado",
+   "fonte": "TACO 4ª ed. (referência)",
    "preparo": "minimo",
    "viagem_carro": "com gelo",
    "viagem_aviao": "ok só em viagem curta (perecível)"
@@ -150,72 +151,74 @@
    "marca": "genérica",
    "categoria": "alimento",
    "porcao_g": 100,
-   "kcal": 155,
-   "proteina_g": 13,
-   "carbo_g": 1,
-   "gordura_g": 11,
+   "kcal": 146,
+   "proteina_g": 13.3,
+   "carbo_g": 0.6,
+   "gordura_g": 9.5,
    "preco_brl": null,
    "link": null,
    "fibra_g": 0,
    "papel": "proteina",
-   "fonte": "estimado",
+   "fonte": "TACO 4ª ed. (referência)",
    "preparo": "minimo",
    "viagem_carro": "com gelo",
    "viagem_aviao": "ok só em viagem curta (perecível)"
   },
   {
    "nome": "Iogurte grego zero gordura",
-   "marca": "genérica",
+   "marca": "Vigor Grego Zero",
    "categoria": "alimento",
-   "porcao_g": 170,
-   "kcal": 100,
-   "proteina_g": 17,
-   "carbo_g": 6,
+   "porcao_g": 100,
+   "kcal": 55,
+   "proteina_g": 8.2,
+   "carbo_g": 5.5,
    "gordura_g": 0,
    "preco_brl": null,
    "link": null,
    "fibra_g": 0,
    "papel": "proteina",
-   "fonte": "estimado",
+   "fonte": "fatsecret/openfoodfacts (conferir)",
    "preparo": "pronto",
    "viagem_carro": "com gelo",
    "viagem_aviao": "restrito (líquido/pasta ≤100 ml em voo internacional)"
   },
   {
-   "nome": "Aveia em flocos",
-   "marca": "genérica",
+   "nome": "Aveia flocos finos",
+   "marca": "Quaker",
    "categoria": "carboidrato/fibra",
    "porcao_g": 30,
-   "kcal": 115,
-   "proteina_g": 4,
-   "carbo_g": 20,
-   "gordura_g": 2,
+   "kcal": 102,
+   "proteina_g": 4.8,
+   "carbo_g": 17,
+   "gordura_g": 1.8,
    "preco_brl": null,
-   "link": null,
+   "link": "https://www.comper.com.br/aveia-quaker-flocos-finos-165g/p",
    "fibra_g": 3,
    "papel": "base",
-   "fonte": "estimado",
+   "fonte": "fatsecret (conferir)",
    "preparo": "minimo",
    "viagem_carro": "sem geladeira",
-   "viagem_aviao": "ok"
+   "viagem_aviao": "ok",
+   "rendimento_porcoes": 5.5
   },
   {
    "nome": "Pasta de amendoim integral",
-   "marca": "genérica",
+   "marca": "Dr. Peanut (Original)",
    "categoria": "gordura boa",
    "porcao_g": 15,
-   "kcal": 90,
-   "proteina_g": 4,
-   "carbo_g": 2,
-   "gordura_g": 7.5,
+   "kcal": 89,
+   "proteina_g": 4.5,
+   "carbo_g": 1.9,
+   "gordura_g": 7,
    "preco_brl": null,
-   "link": null,
-   "fibra_g": 1.5,
+   "link": "https://www.lojakmr.com.br/produto/pasta-de-amendoim-600g/2463145",
+   "fibra_g": null,
    "papel": "gordura",
-   "fonte": "estimado",
+   "fonte": "fatsecret (conferir)",
    "preparo": "pronto",
    "viagem_carro": "sem geladeira",
-   "viagem_aviao": "restrito (líquido/pasta ≤100 ml em voo internacional)"
+   "viagem_aviao": "restrito (líquido/pasta ≤100 ml em voo internacional)",
+   "rendimento_porcoes": 40
   },
   {
    "nome": "Biscoito de Arroz Original",
@@ -234,7 +237,8 @@
    "link": "https://www.cafezale.com.br/delicatessen/biscoito-de-arroz-tailandes-kalassi-original-pacote-100g",
    "preparo": "pronto",
    "viagem_carro": "sem geladeira",
-   "viagem_aviao": "ok"
+   "viagem_aviao": "ok",
+   "rendimento_porcoes": 4
   },
   {
    "nome": "Biscoito de Arroz Veggie",
@@ -253,7 +257,8 @@
    "link": "https://www.cafezale.com.br/delicatessen/biscoito-de-arroz-kalassi-veggie-3-pacotes-de-84g",
    "preparo": "pronto",
    "viagem_carro": "sem geladeira",
-   "viagem_aviao": "ok"
+   "viagem_aviao": "ok",
+   "rendimento_porcoes": 10
   },
   {
    "nome": "Biscoito de Arroz Paprika",
@@ -272,7 +277,8 @@
    "link": "https://www.cafezale.com.br/delicatessen/biscoito-de-arroz-tailandes-kalassi-paprika-pacote-100g",
    "preparo": "pronto",
    "viagem_carro": "sem geladeira",
-   "viagem_aviao": "ok"
+   "viagem_aviao": "ok",
+   "rendimento_porcoes": 4
   },
   {
    "nome": "Veggie Chips Grão de Bico",
@@ -291,7 +297,8 @@
    "link": "https://celeiromicah.com.br/produtos/veggie-chips-grao-de-bico-cebola-e-salsa-40g-fit-food/",
    "preparo": "pronto",
    "viagem_carro": "sem geladeira",
-   "viagem_aviao": "ok"
+   "viagem_aviao": "ok",
+   "rendimento_porcoes": 1.6
   },
   {
    "nome": "Snack Grão de Bico",
@@ -329,7 +336,8 @@
    "link": "https://www.raiznativa.com.br/macarrao-konjac-espaguete-270g-konjac-massa-mf",
    "preparo": "minimo",
    "viagem_carro": "sem geladeira",
-   "viagem_aviao": "ok (embalagem fechada)"
+   "viagem_aviao": "ok (embalagem fechada)",
+   "rendimento_porcoes": 2.7
   },
   {
    "nome": "Bold Bar (Berries & Crispies)",
@@ -348,7 +356,8 @@
    "link": "https://www.drogasil.com.br/bold-bar-barra-20g-proteina-barrinha-bombom-crocante-12un-645696.html",
    "preparo": "pronto",
    "viagem_carro": "sem geladeira",
-   "viagem_aviao": "ok"
+   "viagem_aviao": "ok",
+   "rendimento_porcoes": 12
   },
   {
    "nome": "Protein Crisp Bar",
@@ -367,7 +376,8 @@
    "link": "https://www.integralmedica.com.br/crisp-bar/p",
    "preparo": "pronto",
    "viagem_carro": "sem geladeira",
-   "viagem_aviao": "ok"
+   "viagem_aviao": "ok",
+   "rendimento_porcoes": 1
   },
   {
    "nome": "Pão de Forma +Proteína Integral",
@@ -446,23 +456,24 @@
    "viagem_aviao": "restrito (líquido/pasta ≤100 ml em voo internacional)"
   },
   {
-   "nome": "Cottage light",
-   "marca": "genérica",
+   "nome": "Queijo Cottage",
+   "marca": "Tirolez",
    "categoria": "laticínio",
    "porcao_g": 100,
-   "kcal": 75,
-   "proteina_g": 11,
-   "carbo_g": 3.5,
-   "gordura_g": 1.5,
+   "kcal": 92,
+   "proteina_g": 12,
+   "carbo_g": null,
+   "gordura_g": 4,
    "fibra_g": 0,
    "papel": "proteina",
-   "fonte": "estimado",
-   "obs": "Combina com biscoito de arroz.",
+   "fonte": "Tirolez/varejista (conferir)",
+   "obs": "Versão tradicional (não é light): 92 kcal/100 g. Combina com biscoito de arroz.",
    "preco_brl": null,
-   "link": null,
+   "link": "https://www.paodeacucar.com/produto/399463/queijo-cottage-tirolez-pote-200g",
    "preparo": "pronto",
    "viagem_carro": "com gelo",
-   "viagem_aviao": "restrito (líquido/pasta ≤100 ml em voo internacional)"
+   "viagem_aviao": "restrito (líquido/pasta ≤100 ml em voo internacional)",
+   "rendimento_porcoes": 2
   },
   {
    "nome": "Sardinha em conserva",
@@ -726,9 +737,10 @@
    "obs": "Doce que cabe na bolsa; ~20 g de proteína.",
    "preparo": "pronto",
    "preco_brl": null,
-   "link": null,
+   "link": "https://www.paguemenos.com.br/cookie-proteico-20g-proteinas-sabor-baunilha-com-gotas-de-chocolate-45g/p",
    "viagem_carro": "sem geladeira",
-   "viagem_aviao": "ok"
+   "viagem_aviao": "ok",
+   "rendimento_porcoes": 1
   },
   {
    "nome": "Chips de Queijo Parmesão",
@@ -840,9 +852,10 @@
    "obs": "Carne desidratada: 13 g de proteína, não precisa de geladeira; ótimo para avião/carro. Atenção ao sódio.",
    "preparo": "pronto",
    "preco_brl": null,
-   "link": null,
+   "link": "https://meumundofit.com.br/loja/kit-6-beef-jerky-protein-snacks-36g-jack-links/",
    "viagem_carro": "sem geladeira",
-   "viagem_aviao": "ok"
+   "viagem_aviao": "ok",
+   "rendimento_porcoes": 6
   },
   {
    "nome": "Beef Jerky Original (55 g)",
@@ -859,9 +872,10 @@
    "obs": "22 g de proteína em 138 kcal: um dos melhores 'proteína por kcal' sem geladeira.",
    "preparo": "pronto",
    "preco_brl": null,
-   "link": null,
+   "link": "https://puracarne.com.br/products/beef-jerky-original",
    "viagem_carro": "sem geladeira",
-   "viagem_aviao": "ok"
+   "viagem_aviao": "ok",
+   "rendimento_porcoes": 1
   },
   {
    "nome": "Atum sólido ao natural (60 g)",
@@ -976,6 +990,26 @@
    "link": null,
    "viagem_carro": "sem geladeira",
    "viagem_aviao": "ok"
+  },
+  {
+   "nome": "Atum Sólido ao Natural",
+   "marca": "Coqueiro",
+   "categoria": "conserva",
+   "porcao_g": 60,
+   "kcal": 50,
+   "proteina_g": 12,
+   "carbo_g": 0,
+   "gordura_g": 0.5,
+   "fibra_g": 0,
+   "papel": "proteina",
+   "fonte": "varejista (porção 60 g, conferir)",
+   "obs": "50 kcal e 12 g de proteína por 60 g.",
+   "preparo": "pronto",
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "restrito (líquido/pasta ≤100 ml em voo internacional)",
+   "preco_brl": null,
+   "link": "https://www.zaffari.com.br/atum-solido-ao-natural-coqueiro-170g-1014697/p",
+   "rendimento_porcoes": 2.8
   }
  ]
 }

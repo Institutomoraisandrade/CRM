@@ -57,6 +57,10 @@ def ultimo_preco(csv_path):
     return ultimo
 
 
+def _aviso():
+    return json.loads((AQUI / "produtos.json").read_text(encoding="utf-8")).get("_aviso", "")
+
+
 def main():
     produtos = json.loads((AQUI / "produtos.json").read_text(encoding="utf-8"))["produtos"]
     hist = AQUI / "historico.csv"
@@ -64,6 +68,7 @@ def main():
     novo = not hist.exists()
     agora = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%MZ")
     alertas = []
+    mudou = False
     with hist.open("a", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         if novo:
@@ -77,10 +82,15 @@ def main():
                 status = "ok" if preco is not None else "sem_preco"
             except Exception as e:
                 preco, status = None, f"erro:{type(e).__name__}"
+            if preco is not None and p.get("preco_brl") != preco:
+                p["preco_brl"], mudou = preco, True
             w.writerow([agora, nome, "" if preco is None else preco, status, p["link"]])
             if preco is not None and nome in antes and abs(preco - antes[nome]) > 0.009:
                 alertas.append(f"- **{nome}**: R$ {antes[nome]:.2f} → R$ {preco:.2f} ([link]({p['link']}))")
             print(f"{status:<14}{preco if preco is not None else '-':<8}{nome}")
+    if mudou:
+        (AQUI / "produtos.json").write_text(
+            json.dumps({"_aviso": _aviso(), "produtos": produtos}, ensure_ascii=False, indent=1), encoding="utf-8")
     if alertas:
         (AQUI / "alertas.md").write_text(f"# Mudanças de preço ({agora})\n\n" + "\n".join(alertas) + "\n", encoding="utf-8")
 

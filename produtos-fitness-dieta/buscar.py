@@ -5,6 +5,7 @@ Modos de ordenação (--por):
   proteina   proteína por 100 kcal (padrão)
   saciedade  menor densidade calórica (kcal/g) e mais fibra
   lanche     menos kcal por porção, desempate por proteína
+  custo      menor R$ por grama de proteína (precisa de preco_brl e rendimento_porcoes)
 
 Exemplos:
   python buscar.py
@@ -30,8 +31,9 @@ def enriquecer(p):
 
 
 CHAVES = {
-    "proteina": lambda p: (-p["prot_100kcal"], p["gordura_g"]),
+    "proteina": lambda p: (-p["prot_100kcal"], p["gordura_g"] or 0),
     "saciedade": lambda p: (p["kcal_por_g"], -(p["fibra_g"] or 0)),
+    "custo": lambda p: (p.get("rs_por_g_proteina") is None, p.get("rs_por_g_proteina") or 0),
     "lanche": lambda p: (p["kcal"], -p["proteina_g"]),
 }
 

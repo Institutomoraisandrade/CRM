@@ -14,6 +14,7 @@ python buscar.py --preparo pronto --markdown   # tabela "abrir e comer" (TABELA-
 python buscar.py --baixa-kcal --por saciedade   # até 100 kcal/porção
 python buscar.py --max-kcal 250 --min-proteina 10
 python buscar.py --viagem aviao                 # livre na bagagem de mão
+python buscar.py --por custo                    # R$ por g de proteína (após o monitor ler preços)
 python buscar.py --viagem carro                 # sem geladeira
 ```
 
@@ -25,6 +26,10 @@ python buscar.py --viagem carro                 # sem geladeira
 Para ver localmente: `python -m http.server` e abra http://localhost:8000.
 Publicação: o workflow `validar-e-publicar.yml` valida os dados e publica no GitHub Pages quando houver push na `main`
 (ative em *Settings > Pages > Source: GitHub Actions*). `python validar.py` checa campos, duplicatas e coerência calórica.
+
+## Montar lanche (no site)
+O painel "Montar um lanche" sugere combinações de 2 ou 3 itens "abrir e comer" dentro de um limite de kcal
+e proteína mínima, por lugar (qualquer, avião, carro). A lógica está em `combos.js` (testável com Node).
 
 ## Monitoramento contínuo
 `monitor.py` lê o preço dos produtos que têm `link` e grava em `historico.csv`;
