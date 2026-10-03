@@ -22,7 +22,7 @@ def carregar():
 
 
 def enriquecer(p):
-    p["prot_100kcal"] = round(p["proteina_g"] / p["kcal"] * 100, 1)
+    p["prot_100kcal"] = round(p["proteina_g"] / max(p["kcal"], 1) * 100, 1)
     p["kcal_por_g"] = round(p["kcal"] / p["porcao_g"], 2)
     if p.get("preco_brl") and p.get("rendimento_porcoes"):
         p["rs_por_g_proteina"] = round(p["preco_brl"] / p["rendimento_porcoes"] / p["proteina_g"], 2)

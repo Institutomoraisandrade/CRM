@@ -2,7 +2,8 @@
 
 Catálogo + ranking de produtos para emagrecimento/definição, indo além do whey:
 snacks crocantes (biscoito de arroz Kalassi, chips de grão-de-bico), macarrão konjac,
-barras de proteína, pão proteico, pipoca, gelatina zero, laticínios e proteínas básicas.
+barras de proteína, pão proteico, pipoca, gelatina zero, laticínios e proteínas básicas, além de conservas (sardinha, atum, palmito, cogumelo, grão-de-bico),
+massa de palmito pupunha e molhos zero.
 
 ```bash
 python buscar.py                          # proteína por 100 kcal
@@ -13,6 +14,13 @@ python buscar.py --categoria "snack crocante" --max-kcal 120
 
 `papel`: `proteina`, `lanche`, `base`, `gordura`. Cada item tem `fonte`
 (`estimado` ou `varejista/rotulo (conferir)`) e `obs` com dica de uso.
+
+## Monitoramento contínuo
+`monitor.py` lê o preço dos produtos que têm `link` e grava em `historico.csv`;
+se o preço mudar, cria `alertas.md`. O workflow `.github/workflows/monitor-precos.yml`
+roda **a cada 6 horas** (e manualmente em *Actions > Run workflow*) e faz commit do histórico.
+Limites: lojas que bloqueiam robôs ou carregam o preço via JavaScript aparecem como `sem_preco`/`erro`
+no CSV; nesses casos troque o link por outra loja. Para novos produtos, basta adicionar `link` no JSON.
 
 ## Como evoluir
 - Preencha `preco_brl`, `link` e `rendimento_porcoes` para calcular R$ por g de proteína.

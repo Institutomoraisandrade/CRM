@@ -195,7 +195,7 @@
    "fonte": "varejista/rotulo (conferir)",
    "obs": "Substitui bolacha recheada/salgadinho; sem glúten. Combinar com proteína (queijo cottage, peito de peru, pasta de amendoim).",
    "preco_brl": null,
-   "link": null
+   "link": "https://www.cafezale.com.br/delicatessen/biscoito-de-arroz-tailandes-kalassi-original-pacote-100g"
   },
   {
    "nome": "Biscoito de Arroz Veggie",
@@ -211,7 +211,7 @@
    "fonte": "varejista/rotulo (conferir)",
    "obs": "Menos calórico da linha Kalassi.",
    "preco_brl": null,
-   "link": null
+   "link": "https://www.cafezale.com.br/delicatessen/biscoito-de-arroz-kalassi-veggie-3-pacotes-de-84g"
   },
   {
    "nome": "Biscoito de Arroz Paprika",
@@ -227,7 +227,7 @@
    "fonte": "varejista/rotulo (conferir)",
    "obs": "Sabor sem precisar de molho.",
    "preco_brl": null,
-   "link": null
+   "link": "https://www.cafezale.com.br/delicatessen/biscoito-de-arroz-tailandes-kalassi-paprika-pacote-100g"
   },
   {
    "nome": "Veggie Chips Grão de Bico",
@@ -243,7 +243,7 @@
    "fonte": "varejista/rotulo (conferir)",
    "obs": "Assado, vegano, sem glúten; troca batata chips.",
    "preco_brl": null,
-   "link": null
+   "link": "https://celeiromicah.com.br/produtos/veggie-chips-grao-de-bico-cebola-e-salsa-40g-fit-food/"
   },
   {
    "nome": "Snack Grão de Bico",
@@ -275,7 +275,7 @@
    "fonte": "varejista/rotulo (conferir)",
    "obs": "Quase zero kcal (fibra glucomanana). Base para strogonoff, molho, yakisoba. Enxaguar bem.",
    "preco_brl": null,
-   "link": null
+   "link": "https://www.raiznativa.com.br/macarrao-konjac-espaguete-270g-konjac-massa-mf"
   },
   {
    "nome": "Bold Bar (Berries & Crispies)",
@@ -291,7 +291,7 @@
    "fonte": "varejista/rotulo (conferir)",
    "obs": "20 g de proteína, 0% açúcar adicionado; outros sabores ~235 kcal.",
    "preco_brl": null,
-   "link": null
+   "link": "https://www.drogasil.com.br/bold-bar-barra-20g-proteina-barrinha-bombom-crocante-12un-645696.html"
   },
   {
    "nome": "Protein Crisp Bar",
@@ -307,7 +307,7 @@
    "fonte": "varejista/rotulo (conferir)",
    "obs": "Menos proteica por kcal que a Bold; boa para emergência.",
    "preco_brl": null,
-   "link": null
+   "link": "https://www.integralmedica.com.br/crisp-bar/p"
   },
   {
    "nome": "Pão de Forma +Proteína Integral",
@@ -386,6 +386,182 @@
    "papel": "proteina",
    "fonte": "estimado",
    "obs": "Combina com biscoito de arroz.",
+   "preco_brl": null,
+   "link": null
+  },
+  {
+   "nome": "Sardinha em conserva",
+   "marca": "genérica",
+   "categoria": "conserva",
+   "porcao_g": 100,
+   "kcal": 208,
+   "proteina_g": 24.6,
+   "carbo_g": 0,
+   "gordura_g": 11.5,
+   "fibra_g": 0,
+   "papel": "proteina",
+   "fonte": "TACO/guiadacaloria (genérico, conferir rótulo)",
+   "obs": "Ômega-3 e cálcio; prefira versão em água/azeite escorrido.",
+   "preco_brl": null,
+   "link": null
+  },
+  {
+   "nome": "Atum em conserva (óleo escorrido)",
+   "marca": "genérica",
+   "categoria": "conserva",
+   "porcao_g": 100,
+   "kcal": 198,
+   "proteina_g": 29.1,
+   "carbo_g": 0,
+   "gordura_g": 8.2,
+   "fibra_g": 0,
+   "papel": "proteina",
+   "fonte": "TACO/guiadacaloria (genérico, conferir rótulo)",
+   "obs": "Versão em água tem menos kcal (ver 'Atum em água').",
+   "preco_brl": null,
+   "link": null
+  },
+  {
+   "nome": "Palmito em conserva",
+   "marca": "genérica",
+   "categoria": "conserva",
+   "porcao_g": 100,
+   "kcal": 28,
+   "proteina_g": 2.5,
+   "carbo_g": 4.6,
+   "gordura_g": 0.6,
+   "fibra_g": 2.6,
+   "papel": "base",
+   "fonte": "TACO/guiadacaloria (genérico, conferir rótulo)",
+   "obs": "Alto volume, ~28 kcal/100 g; atenção ao sódio da salmoura.",
+   "preco_brl": null,
+   "link": null
+  },
+  {
+   "nome": "Cogumelo em conserva",
+   "marca": "genérica",
+   "categoria": "conserva",
+   "porcao_g": 100,
+   "kcal": 51,
+   "proteina_g": 1.9,
+   "carbo_g": 5.1,
+   "gordura_g": 3.2,
+   "fibra_g": 0,
+   "papel": "base",
+   "fonte": "TACO/guiadacaloria (genérico, conferir rótulo)",
+   "obs": "Umami para temperar sem gordura.",
+   "preco_brl": null,
+   "link": null
+  },
+  {
+   "nome": "Grão-de-bico em conserva",
+   "marca": "genérica",
+   "categoria": "conserva",
+   "porcao_g": 100,
+   "kcal": 82,
+   "proteina_g": 4.5,
+   "carbo_g": 13,
+   "gordura_g": 1.5,
+   "fibra_g": 3.5,
+   "papel": "base",
+   "fonte": "estimado (conferir rótulo)",
+   "obs": "Escorrer e lavar reduz sódio; vira snack assado ou base de salada.",
+   "preco_brl": null,
+   "link": null
+  },
+  {
+   "nome": "Palmito pupunha (massa/fettuccine)",
+   "marca": "genérica",
+   "categoria": "massa alternativa",
+   "porcao_g": 100,
+   "kcal": 29,
+   "proteina_g": 2.5,
+   "carbo_g": 5.5,
+   "gordura_g": 0.5,
+   "fibra_g": 2.6,
+   "papel": "base",
+   "fonte": "TACO/varejo (conferir)",
+   "obs": "Alternativa ao konjac com mais textura e mais proteína por kcal.",
+   "preco_brl": null,
+   "link": null
+  },
+  {
+   "nome": "Chips de Batata Doce",
+   "marca": "Boali",
+   "categoria": "snack crocante",
+   "porcao_g": 25,
+   "kcal": 140,
+   "proteina_g": 1,
+   "carbo_g": 17,
+   "gordura_g": 7,
+   "fibra_g": 0,
+   "papel": "lanche",
+   "fonte": "fatsecret (conferir)",
+   "obs": "Mais calórico: bom exemplo do que NÃO é leve; compare no ranking.",
+   "preco_brl": null,
+   "link": null
+  },
+  {
+   "nome": "Torrada integral industrial (4 un.)",
+   "marca": "genérica",
+   "categoria": "snack crocante",
+   "porcao_g": 30,
+   "kcal": 170,
+   "proteina_g": 3,
+   "carbo_g": 30,
+   "gordura_g": 4.5,
+   "fibra_g": 1,
+   "papel": "lanche",
+   "fonte": "fatsecret (conferir)",
+   "obs": "Base para patês de atum/cottage.",
+   "preco_brl": null,
+   "link": null
+  },
+  {
+   "nome": "Alga Nori (snack/folha)",
+   "marca": "genérica",
+   "categoria": "snack crocante",
+   "porcao_g": 3,
+   "kcal": 10,
+   "proteina_g": 1,
+   "carbo_g": 1,
+   "gordura_g": 0,
+   "fibra_g": 0,
+   "papel": "lanche",
+   "fonte": "fatsecret (conferir)",
+   "obs": "~10 kcal por folha; ótimo para crocância.",
+   "preco_brl": null,
+   "link": null
+  },
+  {
+   "nome": "Ketchup Zero",
+   "marca": "Heinz",
+   "categoria": "molho zero",
+   "porcao_g": 15,
+   "kcal": 7,
+   "proteina_g": 0,
+   "carbo_g": 1.5,
+   "gordura_g": 0,
+   "fibra_g": 0,
+   "papel": "base",
+   "fonte": "fatsecret (44 kcal/100 g; conferir)",
+   "obs": "Sem açúcar adicionado; troca ketchup comum.",
+   "preco_brl": null,
+   "link": null
+  },
+  {
+   "nome": "Maionese Zero",
+   "marca": "Mrs Taste",
+   "categoria": "molho zero",
+   "porcao_g": 15,
+   "kcal": 0,
+   "proteina_g": 0,
+   "carbo_g": 0,
+   "gordura_g": 0,
+   "fibra_g": 0,
+   "papel": "base",
+   "fonte": "varejista (conferir)",
+   "obs": "0 kcal por porção declarada.",
    "preco_brl": null,
    "link": null
   }
