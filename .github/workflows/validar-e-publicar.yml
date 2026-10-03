@@ -1,0 +1,39 @@
+name: Validar dados e publicar site
+
+on:
+  push:
+    branches: [main]
+    paths: ["produtos-fitness-dieta/**"]
+  pull_request:
+    paths: ["produtos-fitness-dieta/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python produtos-fitness-dieta/validar.py
+
+  publicar:
+    if: github.ref == 'refs/heads/main'
+    needs: validar
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - run: mkdir _site && cp produtos-fitness-dieta/index.html produtos-fitness-dieta/produtos.json produtos-fitness-dieta/TABELA-*.md _site/
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - uses: actions/deploy-pages@v4

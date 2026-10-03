@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fitness para Dieta Brasil</title>
+<style>
+:root{--bg:#fafaf7;--fg:#1c1c1a;--mut:#6b6b66;--card:#fff;--bd:#e3e3dc;--ac:#1d6b4f;--warn:#a85a00}
+@media (prefers-color-scheme:dark){:root{--bg:#141413;--fg:#ece8e6;--mut:#a0a09a;--card:#1d1d1b;--bd:#33332f;--ac:#5fc79b;--warn:#e0a35c}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.45 system-ui,sans-serif}
+main{max-width:1000px;margin:0 auto;padding:20px 16px 48px}
+h1{font-size:1.5rem;margin:0 0 4px}p.sub{color:var(--mut);margin:0 0 16px}
+.filtros{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin-bottom:12px}
+input,select{width:100%;padding:9px;border:1px solid var(--bd);border-radius:8px;background:var(--card);color:var(--fg);font:inherit}
+.n{color:var(--mut);margin:8px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:10px}
+.c{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:12px}
+.c h3{margin:0;font-size:1rem}.c small{color:var(--mut)}
+.m{display:flex;gap:14px;margin:8px 0;flex-wrap:wrap}.m b{display:block;font-size:1.15rem;color:var(--ac)}.m span{font-size:.75rem;color:var(--mut)}
+.t{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0}.t i{font-style:normal;font-size:.72rem;border:1px solid var(--bd);border-radius:99px;padding:1px 8px;color:var(--mut)}
+.t i.w{color:var(--warn);border-color:var(--warn)}.o{font-size:.85rem;color:var(--mut)}
+.mont{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:12px;margin-bottom:16px}.mont h2{font-size:1.05rem;margin:0 0 8px}.res{margin:10px 0 0;padding:0;list-style:none}.res li{padding:8px 0;border-top:1px solid var(--bd)}.res b{color:var(--ac)}
+a{color:var(--ac)}footer{margin-top:28px;font-size:.8rem;color:var(--mut)}
+</style>
+</head>
+<body><main>
+<h1>Produtos fitness para dieta (Brasil)</h1>
+<p class="sub">Filtre por proteína, calorias, praticidade e viagem. Valores aproximados: confira sempre o rótulo.</p>
+<section class="mont"><h2>Montar um lanche</h2>
+<div class="filtros">
+<input id="cK" type="number" min="50" value="250" aria-label="Máx. kcal do lanche" placeholder="Máx. kcal">
+<input id="cP" type="number" min="0" value="15" aria-label="Mín. proteína (g)" placeholder="Mín. proteína (g)">
+<select id="cT"><option value="2">2 itens</option><option value="3">3 itens</option></select>
+<select id="cL"><option value="">Qualquer lugar</option><option value="aviao">Avião</option><option value="carro">Carro (sem geladeira)</option></select>
+</div><ul class="res" id="res"></ul></section>
+<div class="filtros">
+<input id="q" placeholder="Buscar (ex.: kalassi, atum)">
+<select id="papel"><option value="">Todos os papéis</option><option>proteina</option><option>lanche</option><option>base</option><option>gordura</option></select>
+<select id="prep"><option value="">Qualquer preparo</option><option value="pronto">Abrir e comer</option></select>
+<select id="viag"><option value="">Qualquer viagem</option><option value="aviao">Avião (bagagem de mão)</option><option value="carro">Carro (sem geladeira)</option></select>
+<input id="kcal" type="number" min="0" placeholder="Máx. kcal/porção">
+<input id="prot" type="number" min="0" placeholder="Mín. proteína (g)">
+<select id="ord"><option value="p">Proteína por 100 kcal</option><option value="s">Saciedade (kcal/g)</option><option value="k">Menos kcal/porção</option><option value="g">Mais proteína (g)</option></select>
+</div>
+<div class="n" id="n"></div><div class="grid" id="g"></div>
+<footer>Não substitui orientação de nutricionista. Fonte dos dados: <a href="produtos.json">produtos.json</a> (campo <code>fonte</code> indica o que é estimado).</footer>
+</main>
+<script src="combos.js"></script>
+<script>
+const $=id=>document.getElementById(id);let D=[];
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+fetch('produtos.json').then(r=>r.json()).then(j=>{D=j.produtos.map(p=>({...p,p100:p.proteina_g/Math.max(p.kcal,1)*100,kg:p.kcal/p.porcao_g,
+  rsg:(p.preco_brl&&p.rendimento_porcoes)?p.preco_brl/p.rendimento_porcoes/p.proteina_g:null}));render();combos()})
+.catch(()=>{$('n').textContent='Não foi possível carregar produtos.json (abra via servidor/GitHub Pages).'});
+['q','papel','prep','viag','kcal','prot','ord'].forEach(i=>$(i).addEventListener('input',render));
+['cK','cP','cT','cL'].forEach(i=>$(i).addEventListener('input',()=>combos()));
+function combos(){
+ const r=sugerirCombos(D,{kcalMax:+$('cK').value||250,protMin:+$('cP').value||0,tamanho:+$('cT').value,local:$('cL').value,topo:5});
+ $('res').innerHTML=r.length?r.map(x=>`<li>${x.itens.map(p=>esc(p.nome+' ('+p.marca+')')).join(' + ')}<br><b>${x.kcal} kcal · ${x.prot.toFixed(1)} g de proteína</b></li>`).join(''):'<li>Nenhuma combinação nesses limites. Aumente as kcal ou reduza a proteína mínima.</li>';}
+function render(){
+ const q=$('q').value.toLowerCase().trim(),k=parseFloat($('kcal').value),pr=parseFloat($('prot').value),v=$('viag').value;
+ let L=D.filter(p=>(!q||(p.nome+' '+p.marca+' '+p.categoria).toLowerCase().includes(q))
+  &&(!$('papel').value||p.papel===$('papel').value)&&(!$('prep').value||p.preparo===$('prep').value)
+  &&(isNaN(k)||p.kcal<=k)&&(isNaN(pr)||p.proteina_g>=pr)
+  &&(v!=='aviao'||p.viagem_aviao==='ok')&&(v!=='carro'||p.viagem_carro==='sem geladeira'));
+ const o=$('ord').value;L.sort((a,b)=>o==='p'?b.p100-a.p100:o==='s'?a.kg-b.kg:o==='k'?a.kcal-b.kcal:b.proteina_g-a.proteina_g);
+ $('n').textContent=L.length+' produto(s)';
+ $('g').innerHTML=L.map(p=>`<div class="c"><h3>${esc(p.nome)}</h3><small>${esc(p.marca)} · ${esc(p.categoria)} · ${p.porcao_g} g</small>
+ <div class="m"><div><b>${p.kcal}</b><span>kcal</span></div><div><b>${p.proteina_g}</b><span>proteína (g)</span></div><div><b>${p.p100.toFixed(1)}</b><span>prot/100 kcal</span></div></div>
+ <div class="t"><i>${p.preparo==='pronto'?'abrir e comer':'preparo mínimo'}</i><i>avião: ${esc(p.viagem_aviao.split(' (')[0])}</i><i>carro: ${esc(p.viagem_carro)}</i>${p.rsg!=null?`<i>R$ ${p.rsg.toFixed(2)}/g prot</i>`:''}${p.fonte.startsWith('estimado')?'<i class="w">estimado</i>':''}</div>
+ <div class="o">${esc(p.obs||'')}${p.link?` <a href="${esc(p.link)}" rel="noopener">ver loja</a>`:''}</div></div>`).join('');}
+</script>
+</body></html>
