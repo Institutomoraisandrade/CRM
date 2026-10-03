@@ -20,6 +20,12 @@ python buscar.py --viagem carro                 # sem geladeira
 `papel`: `proteina`, `lanche`, `base`, `gordura`. Cada item tem `fonte`
 (`estimado` ou `varejista/rotulo (conferir)`) e `obs` com dica de uso.
 
+## Site com filtros
+`index.html` lista os produtos com busca e filtros (papel, abrir e comer, avião, carro, kcal, proteína) e ordenação.
+Para ver localmente: `python -m http.server` e abra http://localhost:8000.
+Publicação: o workflow `validar-e-publicar.yml` valida os dados e publica no GitHub Pages quando houver push na `main`
+(ative em *Settings > Pages > Source: GitHub Actions*). `python validar.py` checa campos, duplicatas e coerência calórica.
+
 ## Monitoramento contínuo
 `monitor.py` lê o preço dos produtos que têm `link` e grava em `historico.csv`;
 se o preço mudar, cria `alertas.md`. O workflow `.github/workflows/monitor-precos.yml`
