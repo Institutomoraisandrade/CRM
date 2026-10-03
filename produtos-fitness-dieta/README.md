@@ -1,17 +1,24 @@
 # Produtos fitness para dieta (Brasil)
 
-Catálogo + ranking de produtos úteis para emagrecimento/definição, ordenados por **proteína por 100 kcal**.
+Catálogo + ranking de produtos para emagrecimento/definição, indo além do whey:
+snacks crocantes (biscoito de arroz Kalassi, chips de grão-de-bico), macarrão konjac,
+barras de proteína, pão proteico, pipoca, gelatina zero, laticínios e proteínas básicas.
 
 ```bash
-python buscar.py
-python buscar.py --categoria "whey isolado"
-python buscar.py --max-kcal 120 --min-proteina 20
+python buscar.py                          # proteína por 100 kcal
+python buscar.py --por saciedade          # menor kcal/g + mais fibra
+python buscar.py --papel lanche --por lanche
+python buscar.py --categoria "snack crocante" --max-kcal 120
 ```
 
-## Como evoluir
-- Edite `produtos.json`: preencha `preco_brl`, `link` e `rendimento_porcoes` (porções por embalagem) para calcular **R$ por grama de proteína**.
-- Adicione novos produtos seguindo o mesmo formato.
-- Valores são aproximados; sempre confira o rótulo atual.
+`papel`: `proteina`, `lanche`, `base`, `gordura`. Cada item tem `fonte`
+(`estimado` ou `varejista/rotulo (conferir)`) e `obs` com dica de uso.
 
-## Fontes iniciais
-Rankings de whey isolado: produtosanalisados.com.br, projetoacerto.com.br, melhoresmarcasdewhey.com.br.
+## Como evoluir
+- Preencha `preco_brl`, `link` e `rendimento_porcoes` para calcular R$ por g de proteína.
+- Valores são aproximados; sempre confira o rótulo atual. Não substitui nutricionista.
+
+## Fontes
+Whey: produtosanalisados.com.br, projetoacerto.com.br. Kalassi: casaplaza.com.br, cafezale.com.br.
+Fit Food: fatsecret.com.br, celeiromicah.com.br. Konjac Massa MF: fatsecret.com.br.
+Bold / Protein Crisp: drogasil.com.br, integralmedica.com.br. Wickbold: fatsecret.com.br.
