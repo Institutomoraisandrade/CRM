@@ -11,6 +11,10 @@ python buscar.py --por saciedade          # menor kcal/g + mais fibra
 python buscar.py --papel lanche --por lanche
 python buscar.py --categoria "snack crocante" --max-kcal 120
 python buscar.py --preparo pronto --markdown   # tabela "abrir e comer" (TABELA-CORRIDA.md)
+python buscar.py --baixa-kcal --por saciedade   # até 100 kcal/porção
+python buscar.py --max-kcal 250 --min-proteina 10
+python buscar.py --viagem aviao                 # livre na bagagem de mão
+python buscar.py --viagem carro                 # sem geladeira
 ```
 
 `papel`: `proteina`, `lanche`, `base`, `gordura`. Cada item tem `fonte`
@@ -31,3 +35,12 @@ no CSV; nesses casos troque o link por outra loja. Para novos produtos, basta ad
 Whey: produtosanalisados.com.br, projetoacerto.com.br. Kalassi: casaplaza.com.br, cafezale.com.br.
 Fit Food: fatsecret.com.br, celeiromicah.com.br. Konjac Massa MF: fatsecret.com.br.
 Bold / Protein Crisp: drogasil.com.br, integralmedica.com.br. Wickbold: fatsecret.com.br.
+
+## Tabelas prontas
+`TABELA-BAIXA-KCAL.md`, `TABELA-PROTEINA-ATE-250KCAL.md`, `TABELA-VIAGEM-AVIAO.md`,
+`TABELA-VIAGEM-CARRO.md`, `TABELA-CORRIDA.md`. Regenere com `--markdown`.
+
+## Viagem de avião
+"ok" = sólido, embalado, sem refrigeração. "restrito" = líquido, pasta ou gel: em voo
+internacional cada embalagem tem limite de 100 ml (regra de bagagem de mão); em voo doméstico
+as regras costumam ser mais folgadas, mas confira a companhia aérea. Proteína em pó é permitida.

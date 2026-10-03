@@ -15,7 +15,9 @@
    "fibra_g": 0,
    "papel": "proteina",
    "fonte": "ranking/rotulo (conferir)",
-   "preparo": "minimo"
+   "preparo": "minimo",
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "ok"
   },
   {
    "nome": "Whey Isolado",
@@ -31,7 +33,9 @@
    "fibra_g": 0,
    "papel": "proteina",
    "fonte": "ranking/rotulo (conferir)",
-   "preparo": "minimo"
+   "preparo": "minimo",
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "ok"
   },
   {
    "nome": "Isofort",
@@ -47,7 +51,9 @@
    "fibra_g": 0,
    "papel": "proteina",
    "fonte": "ranking/rotulo (conferir)",
-   "preparo": "minimo"
+   "preparo": "minimo",
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "ok"
   },
   {
    "nome": "Isolate Prime Whey",
@@ -63,7 +69,9 @@
    "fibra_g": 0,
    "papel": "proteina",
    "fonte": "ranking/rotulo (conferir)",
-   "preparo": "minimo"
+   "preparo": "minimo",
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "ok"
   },
   {
    "nome": "Tasty Iso",
@@ -79,7 +87,9 @@
    "fibra_g": 0,
    "papel": "proteina",
    "fonte": "ranking/rotulo (conferir)",
-   "preparo": "minimo"
+   "preparo": "minimo",
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "ok"
   },
   {
    "nome": "Albumina (pó)",
@@ -95,7 +105,9 @@
    "fibra_g": 0,
    "papel": "proteina",
    "fonte": "estimado",
-   "preparo": "minimo"
+   "preparo": "minimo",
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "ok"
   },
   {
    "nome": "Atum em água (lata)",
@@ -111,7 +123,9 @@
    "fibra_g": 0,
    "papel": "proteina",
    "fonte": "estimado",
-   "preparo": "pronto"
+   "preparo": "pronto",
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "restrito (líquido/pasta ≤100 ml em voo internacional)"
   },
   {
    "nome": "Peito de frango grelhado",
@@ -127,7 +141,9 @@
    "fibra_g": 0,
    "papel": "proteina",
    "fonte": "estimado",
-   "preparo": "minimo"
+   "preparo": "minimo",
+   "viagem_carro": "com gelo",
+   "viagem_aviao": "ok só em viagem curta (perecível)"
   },
   {
    "nome": "Ovo cozido (2 un.)",
@@ -143,7 +159,9 @@
    "fibra_g": 0,
    "papel": "proteina",
    "fonte": "estimado",
-   "preparo": "minimo"
+   "preparo": "minimo",
+   "viagem_carro": "com gelo",
+   "viagem_aviao": "ok só em viagem curta (perecível)"
   },
   {
    "nome": "Iogurte grego zero gordura",
@@ -159,7 +177,9 @@
    "fibra_g": 0,
    "papel": "proteina",
    "fonte": "estimado",
-   "preparo": "pronto"
+   "preparo": "pronto",
+   "viagem_carro": "com gelo",
+   "viagem_aviao": "restrito (líquido/pasta ≤100 ml em voo internacional)"
   },
   {
    "nome": "Aveia em flocos",
@@ -175,7 +195,9 @@
    "fibra_g": 3,
    "papel": "base",
    "fonte": "estimado",
-   "preparo": "minimo"
+   "preparo": "minimo",
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "ok"
   },
   {
    "nome": "Pasta de amendoim integral",
@@ -191,7 +213,9 @@
    "fibra_g": 1.5,
    "papel": "gordura",
    "fonte": "estimado",
-   "preparo": "pronto"
+   "preparo": "pronto",
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "restrito (líquido/pasta ≤100 ml em voo internacional)"
   },
   {
    "nome": "Biscoito de Arroz Original",
@@ -208,7 +232,9 @@
    "obs": "Substitui bolacha recheada/salgadinho; sem glúten. Combinar com proteína (queijo cottage, peito de peru, pasta de amendoim).",
    "preco_brl": null,
    "link": "https://www.cafezale.com.br/delicatessen/biscoito-de-arroz-tailandes-kalassi-original-pacote-100g",
-   "preparo": "pronto"
+   "preparo": "pronto",
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "ok"
   },
   {
    "nome": "Biscoito de Arroz Veggie",
@@ -225,7 +251,9 @@
    "obs": "Menos calórico da linha Kalassi.",
    "preco_brl": null,
    "link": "https://www.cafezale.com.br/delicatessen/biscoito-de-arroz-kalassi-veggie-3-pacotes-de-84g",
-   "preparo": "pronto"
+   "preparo": "pronto",
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "ok"
   },
   {
    "nome": "Biscoito de Arroz Paprika",
@@ -242,7 +270,9 @@
    "obs": "Sabor sem precisar de molho.",
    "preco_brl": null,
    "link": "https://www.cafezale.com.br/delicatessen/biscoito-de-arroz-tailandes-kalassi-paprika-pacote-100g",
-   "preparo": "pronto"
+   "preparo": "pronto",
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "ok"
   },
   {
    "nome": "Veggie Chips Grão de Bico",
@@ -259,7 +289,9 @@
    "obs": "Assado, vegano, sem glúten; troca batata chips.",
    "preco_brl": null,
    "link": "https://celeiromicah.com.br/produtos/veggie-chips-grao-de-bico-cebola-e-salsa-40g-fit-food/",
-   "preparo": "pronto"
+   "preparo": "pronto",
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "ok"
   },
   {
    "nome": "Snack Grão de Bico",
@@ -276,7 +308,9 @@
    "obs": "Mais proteína e fibra que chips comuns: ótimo para saciedade.",
    "preco_brl": null,
    "link": null,
-   "preparo": "pronto"
+   "preparo": "pronto",
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "ok"
   },
   {
    "nome": "Macarrão Konjac (shirataki)",
@@ -293,7 +327,9 @@
    "obs": "Quase zero kcal (fibra glucomanana). Base para strogonoff, molho, yakisoba. Enxaguar bem.",
    "preco_brl": null,
    "link": "https://www.raiznativa.com.br/macarrao-konjac-espaguete-270g-konjac-massa-mf",
-   "preparo": "minimo"
+   "preparo": "minimo",
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "ok (embalagem fechada)"
   },
   {
    "nome": "Bold Bar (Berries & Crispies)",
@@ -310,7 +346,9 @@
    "obs": "20 g de proteína, 0% açúcar adicionado; outros sabores ~235 kcal.",
    "preco_brl": null,
    "link": "https://www.drogasil.com.br/bold-bar-barra-20g-proteina-barrinha-bombom-crocante-12un-645696.html",
-   "preparo": "pronto"
+   "preparo": "pronto",
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "ok"
   },
   {
    "nome": "Protein Crisp Bar",
@@ -327,7 +365,9 @@
    "obs": "Menos proteica por kcal que a Bold; boa para emergência.",
    "preco_brl": null,
    "link": "https://www.integralmedica.com.br/crisp-bar/p",
-   "preparo": "pronto"
+   "preparo": "pronto",
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "ok"
   },
   {
    "nome": "Pão de Forma +Proteína Integral",
@@ -344,7 +384,9 @@
    "obs": "2 fatias com 12 g de proteína: dobra a proteína do pão comum (~6 g).",
    "preco_brl": null,
    "link": null,
-   "preparo": "pronto"
+   "preparo": "pronto",
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "ok"
   },
   {
    "nome": "Pão de Forma 100% Integral",
@@ -361,7 +403,9 @@
    "obs": "Referência de comparação com o pão proteico.",
    "preco_brl": null,
    "link": null,
-   "preparo": "pronto"
+   "preparo": "pronto",
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "ok"
   },
   {
    "nome": "Pipoca estourada no ar (sem óleo)",
@@ -378,7 +422,9 @@
    "obs": "Volume alto por kcal; evitar manteiga e açúcar.",
    "preco_brl": null,
    "link": null,
-   "preparo": "pronto"
+   "preparo": "pronto",
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "ok"
   },
   {
    "nome": "Gelatina diet pronta",
@@ -395,7 +441,9 @@
    "obs": "Misturar com whey/iogurte vira sobremesa proteica.",
    "preco_brl": null,
    "link": null,
-   "preparo": "pronto"
+   "preparo": "pronto",
+   "viagem_carro": "com gelo",
+   "viagem_aviao": "restrito (líquido/pasta ≤100 ml em voo internacional)"
   },
   {
    "nome": "Cottage light",
@@ -412,7 +460,9 @@
    "obs": "Combina com biscoito de arroz.",
    "preco_brl": null,
    "link": null,
-   "preparo": "pronto"
+   "preparo": "pronto",
+   "viagem_carro": "com gelo",
+   "viagem_aviao": "restrito (líquido/pasta ≤100 ml em voo internacional)"
   },
   {
    "nome": "Sardinha em conserva",
@@ -429,7 +479,9 @@
    "obs": "Ômega-3 e cálcio; prefira versão em água/azeite escorrido.",
    "preco_brl": null,
    "link": null,
-   "preparo": "pronto"
+   "preparo": "pronto",
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "restrito (líquido/pasta ≤100 ml em voo internacional)"
   },
   {
    "nome": "Atum em conserva (óleo escorrido)",
@@ -446,7 +498,9 @@
    "obs": "Versão em água tem menos kcal (ver 'Atum em água').",
    "preco_brl": null,
    "link": null,
-   "preparo": "pronto"
+   "preparo": "pronto",
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "restrito (líquido/pasta ≤100 ml em voo internacional)"
   },
   {
    "nome": "Palmito em conserva",
@@ -463,7 +517,9 @@
    "obs": "Alto volume, ~28 kcal/100 g; atenção ao sódio da salmoura.",
    "preco_brl": null,
    "link": null,
-   "preparo": "pronto"
+   "preparo": "pronto",
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "restrito (líquido/pasta ≤100 ml em voo internacional)"
   },
   {
    "nome": "Cogumelo em conserva",
@@ -480,7 +536,9 @@
    "obs": "Umami para temperar sem gordura.",
    "preco_brl": null,
    "link": null,
-   "preparo": "pronto"
+   "preparo": "pronto",
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "restrito (líquido/pasta ≤100 ml em voo internacional)"
   },
   {
    "nome": "Grão-de-bico em conserva",
@@ -497,7 +555,9 @@
    "obs": "Escorrer e lavar reduz sódio; vira snack assado ou base de salada.",
    "preco_brl": null,
    "link": null,
-   "preparo": "pronto"
+   "preparo": "pronto",
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "restrito (líquido/pasta ≤100 ml em voo internacional)"
   },
   {
    "nome": "Palmito pupunha (massa/fettuccine)",
@@ -514,7 +574,9 @@
    "obs": "Alternativa ao konjac com mais textura e mais proteína por kcal.",
    "preco_brl": null,
    "link": null,
-   "preparo": "minimo"
+   "preparo": "minimo",
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "ok (embalagem fechada)"
   },
   {
    "nome": "Chips de Batata Doce",
@@ -531,7 +593,9 @@
    "obs": "Mais calórico: bom exemplo do que NÃO é leve; compare no ranking.",
    "preco_brl": null,
    "link": null,
-   "preparo": "pronto"
+   "preparo": "pronto",
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "ok"
   },
   {
    "nome": "Torrada integral industrial (4 un.)",
@@ -548,7 +612,9 @@
    "obs": "Base para patês de atum/cottage.",
    "preco_brl": null,
    "link": null,
-   "preparo": "pronto"
+   "preparo": "pronto",
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "ok"
   },
   {
    "nome": "Alga Nori (snack/folha)",
@@ -565,7 +631,9 @@
    "obs": "~10 kcal por folha; ótimo para crocância.",
    "preco_brl": null,
    "link": null,
-   "preparo": "pronto"
+   "preparo": "pronto",
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "ok"
   },
   {
    "nome": "Ketchup Zero",
@@ -582,7 +650,9 @@
    "obs": "Sem açúcar adicionado; troca ketchup comum.",
    "preco_brl": null,
    "link": null,
-   "preparo": "minimo"
+   "preparo": "minimo",
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "restrito (líquido/pasta ≤100 ml em voo internacional)"
   },
   {
    "nome": "Maionese Zero",
@@ -599,7 +669,9 @@
    "obs": "0 kcal por porção declarada.",
    "preco_brl": null,
    "link": null,
-   "preparo": "minimo"
+   "preparo": "minimo",
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "restrito (líquido/pasta ≤100 ml em voo internacional)"
   },
   {
    "nome": "Skyr Natural",
@@ -616,7 +688,9 @@
    "obs": "Mais proteína por kcal entre os iogurtes de pote; zero gordura.",
    "preparo": "pronto",
    "preco_brl": null,
-   "link": null
+   "link": null,
+   "viagem_carro": "com gelo",
+   "viagem_aviao": "restrito (líquido/pasta ≤100 ml em voo internacional)"
   },
   {
    "nome": "YoPRO 15g (bebida)",
@@ -633,7 +707,9 @@
    "obs": "Garrafa para beber: lanche na estrada/trabalho sem colher.",
    "preparo": "pronto",
    "preco_brl": null,
-   "link": null
+   "link": null,
+   "viagem_carro": "com gelo",
+   "viagem_aviao": "restrito (líquido/pasta ≤100 ml em voo internacional)"
   },
   {
    "nome": "Cookie Proteico 20g",
@@ -650,7 +726,9 @@
    "obs": "Doce que cabe na bolsa; ~20 g de proteína.",
    "preparo": "pronto",
    "preco_brl": null,
-   "link": null
+   "link": null,
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "ok"
   },
   {
    "nome": "Chips de Queijo Parmesão",
@@ -667,7 +745,9 @@
    "obs": "Zero carbo, crocante; atenção ao sódio (~282 mg).",
    "preparo": "pronto",
    "preco_brl": null,
-   "link": null
+   "link": null,
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "ok"
   },
   {
    "nome": "Mix de Castanhas e Frutas Secas",
@@ -684,7 +764,9 @@
    "obs": "Porção pequena (1 colher); densa em kcal: meça antes de levar.",
    "preparo": "pronto",
    "preco_brl": null,
-   "link": null
+   "link": null,
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "ok"
   },
   {
    "nome": "Barra de Cereal sem açúcar",
@@ -701,7 +783,9 @@
    "obs": "Sem açúcar, glúten e lácteos; baixa proteína: combine com iogurte/queijo.",
    "preparo": "pronto",
    "preco_brl": null,
-   "link": null
+   "link": null,
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "ok"
   },
   {
    "nome": "Peito de Peru fatiado (3 fatias)",
@@ -718,7 +802,9 @@
    "obs": "Enrolar no queijo minas ou usar com pão proteico.",
    "preparo": "pronto",
    "preco_brl": null,
-   "link": null
+   "link": null,
+   "viagem_carro": "com gelo",
+   "viagem_aviao": "ok só em viagem curta (perecível)"
   },
   {
    "nome": "Queijo Minas Frescal Light (1 fatia)",
@@ -735,7 +821,161 @@
    "obs": "Fatiado e pronto; combina com biscoito de arroz.",
    "preparo": "pronto",
    "preco_brl": null,
-   "link": null
+   "link": null,
+   "viagem_carro": "com gelo",
+   "viagem_aviao": "restrito (líquido/pasta ≤100 ml em voo internacional)"
+  },
+  {
+   "nome": "Beef Jerky Protein Snacks (36 g)",
+   "marca": "Jack Link's",
+   "categoria": "carne seca snack",
+   "porcao_g": 36,
+   "kcal": 81,
+   "proteina_g": 13,
+   "carbo_g": null,
+   "gordura_g": null,
+   "fibra_g": 0,
+   "papel": "proteina",
+   "fonte": "varejista (conferir)",
+   "obs": "Carne desidratada: 13 g de proteína, não precisa de geladeira; ótimo para avião/carro. Atenção ao sódio.",
+   "preparo": "pronto",
+   "preco_brl": null,
+   "link": null,
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "ok"
+  },
+  {
+   "nome": "Beef Jerky Original (55 g)",
+   "marca": "Pura Carne",
+   "categoria": "carne seca snack",
+   "porcao_g": 55,
+   "kcal": 138,
+   "proteina_g": 22,
+   "carbo_g": null,
+   "gordura_g": null,
+   "fibra_g": 0,
+   "papel": "proteina",
+   "fonte": "varejista (conferir)",
+   "obs": "22 g de proteína em 138 kcal: um dos melhores 'proteína por kcal' sem geladeira.",
+   "preparo": "pronto",
+   "preco_brl": null,
+   "link": null,
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "ok"
+  },
+  {
+   "nome": "Atum sólido ao natural (60 g)",
+   "marca": "Tours",
+   "categoria": "conserva",
+   "porcao_g": 60,
+   "kcal": 66,
+   "proteina_g": 15,
+   "carbo_g": 0,
+   "gordura_g": null,
+   "fibra_g": 0,
+   "papel": "proteina",
+   "fonte": "varejista (conferir)",
+   "obs": "Porção pequena de lata; leve e sem geladeira.",
+   "preparo": "pronto",
+   "preco_brl": null,
+   "link": null,
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "restrito (líquido/pasta ≤100 ml em voo internacional)"
+  },
+  {
+   "nome": "Peito de Frango Desfiado",
+   "marca": "Seara",
+   "categoria": "refrigerado pronto",
+   "porcao_g": 100,
+   "kcal": 103,
+   "proteina_g": 19,
+   "carbo_g": null,
+   "gordura_g": null,
+   "fibra_g": 0,
+   "papel": "proteina",
+   "fonte": "Seara/varejista (conferir)",
+   "obs": "Refrigerado; só viagem curta com gelo.",
+   "preparo": "minimo",
+   "preco_brl": null,
+   "link": null,
+   "viagem_carro": "com gelo",
+   "viagem_aviao": "ok só em viagem curta (perecível)"
+  },
+  {
+   "nome": "Ovo de codorna em conserva (5 un.)",
+   "marca": "genérica",
+   "categoria": "conserva",
+   "porcao_g": 50,
+   "kcal": 70,
+   "proteina_g": 6,
+   "carbo_g": 0.5,
+   "gordura_g": 5,
+   "fibra_g": 0,
+   "papel": "proteina",
+   "fonte": "fatsecret (1 ovo ≈14 kcal, 1,2 g; conferir)",
+   "obs": "Petisco proteico sem preparo; salmoura: escorrer.",
+   "preparo": "pronto",
+   "preco_brl": null,
+   "link": null,
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "restrito (líquido/pasta ≤100 ml em voo internacional)"
+  },
+  {
+   "nome": "Pudim Zero Açúcar Chocolate",
+   "marca": "Lowçucar",
+   "categoria": "sobremesa zero",
+   "porcao_g": 120,
+   "kcal": 60,
+   "proteina_g": 4,
+   "carbo_g": 10,
+   "gordura_g": 0,
+   "fibra_g": 0,
+   "papel": "lanche",
+   "fonte": "fatsecret (conferir)",
+   "obs": "Sobremesa de 60 kcal; pronto para consumir (pote).",
+   "preparo": "pronto",
+   "preco_brl": null,
+   "link": null,
+   "viagem_carro": "com gelo",
+   "viagem_aviao": "restrito (líquido/pasta ≤100 ml em voo internacional)"
+  },
+  {
+   "nome": "Sorvete de Creme Zero Açúcar/Gordura",
+   "marca": "Sorvelândia",
+   "categoria": "sobremesa zero",
+   "porcao_g": 60,
+   "kcal": 53,
+   "proteina_g": 2.3,
+   "carbo_g": 10,
+   "gordura_g": 0,
+   "fibra_g": 0,
+   "papel": "lanche",
+   "fonte": "openfoodfacts (conferir)",
+   "obs": "Congelado: só em casa; boa 'válvula de escape' doce.",
+   "preparo": "pronto",
+   "preco_brl": null,
+   "link": null,
+   "viagem_carro": "não viaja",
+   "viagem_aviao": "não"
+  },
+  {
+   "nome": "Proteína vegetal em pó (30 g)",
+   "marca": "genérica",
+   "categoria": "proteína em pó",
+   "porcao_g": 30,
+   "kcal": 130,
+   "proteina_g": 20,
+   "carbo_g": 7,
+   "gordura_g": 3,
+   "fibra_g": null,
+   "papel": "proteina",
+   "fonte": "estimado (conferir rótulo)",
+   "obs": "Em sachê individual cabe em qualquer bolsa; pó é liberado em bagagem de mão.",
+   "preparo": "minimo",
+   "preco_brl": null,
+   "link": null,
+   "viagem_carro": "sem geladeira",
+   "viagem_aviao": "ok"
   }
  ]
 }

@@ -31,7 +31,7 @@ def enriquecer(p):
 
 CHAVES = {
     "proteina": lambda p: (-p["prot_100kcal"], p["gordura_g"]),
-    "saciedade": lambda p: (p["kcal_por_g"], -p["fibra_g"]),
+    "saciedade": lambda p: (p["kcal_por_g"], -(p["fibra_g"] or 0)),
     "lanche": lambda p: (p["kcal"], -p["proteina_g"]),
 }
 
@@ -42,6 +42,8 @@ def main():
     ap.add_argument("--papel", help="proteina | lanche | base | gordura")
     ap.add_argument("--categoria")
     ap.add_argument("--preparo", choices=["pronto", "minimo"], help="pronto = abrir e comer")
+    ap.add_argument("--viagem", choices=["aviao", "carro"], help="aviao = livre na bagagem de mão; carro = sem geladeira")
+    ap.add_argument("--baixa-kcal", action="store_true", help="até 100 kcal por porção")
     ap.add_argument("--markdown", action="store_true", help="saída em tabela Markdown")
     ap.add_argument("--max-kcal", type=float)
     ap.add_argument("--min-proteina", type=float)
@@ -50,6 +52,12 @@ def main():
     itens = [enriquecer(p) for p in carregar()]
     if a.papel:
         itens = [p for p in itens if p["papel"] == a.papel]
+    if a.baixa_kcal:
+        itens = [p for p in itens if p["kcal"] <= 100]
+    if a.viagem == "aviao":
+        itens = [p for p in itens if p["viagem_aviao"] == "ok"]
+    if a.viagem == "carro":
+        itens = [p for p in itens if p["viagem_carro"] == "sem geladeira"]
     if a.preparo:
         itens = [p for p in itens if p["preparo"] == a.preparo]
     if a.categoria:
@@ -61,11 +69,11 @@ def main():
     itens.sort(key=CHAVES[a.por])
 
     if a.markdown:
-        print("| # | Produto | Categoria | Porção | kcal | Prot (g) | Fibra (g) | Prot/100kcal | Como usar |")
-        print("|--:|---|---|--:|--:|--:|--:|--:|---|")
+        print("| # | Produto | Categoria | Porção | kcal | Prot (g) | Fibra (g) | Prot/100kcal | Avião | Carro | Como usar |")
+        print("|--:|---|---|--:|--:|--:|--:|--:|---|---|---|")
         for i, p in enumerate(itens, 1):
             fib = "-" if p["fibra_g"] is None else p["fibra_g"]
-            print(f"| {i} | {p['nome']} ({p['marca']}) | {p['categoria']} | {p['porcao_g']} g | {p['kcal']} | {p['proteina_g']} | {fib} | {p['prot_100kcal']} | {p.get('obs', '')} |")
+            print(f"| {i} | {p['nome']} ({p['marca']}) | {p['categoria']} | {p['porcao_g']} g | {p['kcal']} | {p['proteina_g']} | {fib} | {p['prot_100kcal']} | {p['viagem_aviao']} | {p['viagem_carro']} | {p.get('obs', '')} |")
         return
     print(f"{'#':<3}{'Produto':<44}{'Porção':>7}{'kcal':>6}{'Prot':>6}{'Fibra':>6}{'P/100kcal':>10}{'kcal/g':>8}")
     for i, p in enumerate(itens, 1):
