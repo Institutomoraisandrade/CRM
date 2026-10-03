@@ -1,0 +1,17 @@
+{
+  "_aviso": "Valores aproximados por porção (fontes: páginas de ranking e rótulos públicos). SEMPRE confira o rótulo atual do fabricante. 'preco_brl' e 'link' ficam nulos para você preencher: preços mudam toda semana.",
+  "produtos": [
+    {"nome": "Iso Triple Zero", "marca": "Integralmédica", "categoria": "whey isolado", "porcao_g": 30, "kcal": 110, "proteina_g": 26, "carbo_g": 0, "gordura_g": 0, "preco_brl": null, "link": null},
+    {"nome": "Whey Isolado", "marca": "Dux Nutrition", "categoria": "whey isolado", "porcao_g": 30, "kcal": 105, "proteina_g": 24, "carbo_g": 1, "gordura_g": 0.5, "preco_brl": null, "link": null},
+    {"nome": "Isofort", "marca": "Vitafor", "categoria": "whey isolado", "porcao_g": 30, "kcal": 110, "proteina_g": 24, "carbo_g": 1, "gordura_g": 1, "preco_brl": null, "link": null},
+    {"nome": "Isolate Prime Whey", "marca": "Body Action", "categoria": "whey isolado", "porcao_g": 30, "kcal": 115, "proteina_g": 25, "carbo_g": 1.5, "gordura_g": 1, "preco_brl": null, "link": null},
+    {"nome": "Tasty Iso", "marca": "Adaptogen", "categoria": "whey isolado", "porcao_g": 30, "kcal": 110, "proteina_g": 24, "carbo_g": 1.5, "gordura_g": 0.8, "preco_brl": null, "link": null},
+    {"nome": "Albumina (pó)", "marca": "genérica", "categoria": "proteína", "porcao_g": 30, "kcal": 115, "proteina_g": 24, "carbo_g": 1, "gordura_g": 0.3, "preco_brl": null, "link": null},
+    {"nome": "Atum em água (lata)", "marca": "genérica", "categoria": "alimento", "porcao_g": 120, "kcal": 120, "proteina_g": 27, "carbo_g": 0, "gordura_g": 1, "preco_brl": null, "link": null},
+    {"nome": "Peito de frango grelhado", "marca": "genérica", "categoria": "alimento", "porcao_g": 100, "kcal": 160, "proteina_g": 31, "carbo_g": 0, "gordura_g": 3.5, "preco_brl": null, "link": null},
+    {"nome": "Ovo cozido (2 un.)", "marca": "genérica", "categoria": "alimento", "porcao_g": 100, "kcal": 155, "proteina_g": 13, "carbo_g": 1, "gordura_g": 11, "preco_brl": null, "link": null},
+    {"nome": "Iogurte grego zero gordura", "marca": "genérica", "categoria": "alimento", "porcao_g": 170, "kcal": 100, "proteina_g": 17, "carbo_g": 6, "gordura_g": 0, "preco_brl": null, "link": null},
+    {"nome": "Aveia em flocos", "marca": "genérica", "categoria": "carboidrato/fibra", "porcao_g": 30, "kcal": 115, "proteina_g": 4, "carbo_g": 20, "gordura_g": 2, "preco_brl": null, "link": null},
+    {"nome": "Pasta de amendoim integral", "marca": "genérica", "categoria": "gordura boa", "porcao_g": 15, "kcal": 90, "proteina_g": 4, "carbo_g": 2, "gordura_g": 7.5, "preco_brl": null, "link": null}
+  ]
+}
