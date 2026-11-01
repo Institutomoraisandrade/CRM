@@ -24,7 +24,7 @@ export function Hero() {
       utils.set(pal, { y: '110%' }); utils.set(ent, { opacity: 0, y: 24 });
       const cont = { n: 0 };
       const tl = createTimeline({ defaults: { ease: 'outQuint' } });
-      if (est) tl.add(est, { truckZ: 0, duration: 2600, ease: 'outExpo' }, 0).add(est, { farol: [0.35, 1, 0.35], duration: 900, ease: 'inOutQuad' }, 1700);
+      if (est) tl.add(est, { truckZ: 0, duration: 2600, ease: 'outExpo' }, 0).add(est, { intro: 1, duration: 2200, ease: 'inOutCubic' }, 1400).add(est, { farol: [0.35, 1, 0.35], duration: 900, ease: 'inOutQuad' }, 1700);
       tl.add(ent[0], { opacity: 1, y: 0, duration: 700 }, 300)
         .add(pal, { y: '0%', duration: 900, delay: stagger(70) }, 450)
         .add([...ent].slice(1), { opacity: 1, y: 0, duration: 800, delay: stagger(110) }, 1000)

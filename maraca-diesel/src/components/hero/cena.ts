@@ -3,12 +3,12 @@
 import * as T from 'three';
 import { animate, createAnimatable, utils } from 'animejs';
 
-export type Estado = { truckZ: number; vel: number; camX: number; camY: number; farol: number; scroll: number; pausado: boolean; mobile?: boolean };
+export type Estado = { intro: number; truckZ: number; vel: number; camX: number; camY: number; farol: number; scroll: number; pausado: boolean; mobile?: boolean };
 
 export function montaCena(canvas: HTMLCanvasElement, reduz: boolean) {
   let renderer: T.WebGLRenderer;
   try { renderer = new T.WebGLRenderer({ canvas, antialias: true, alpha: false }); } catch { return null; }
-  const estado: Estado = { truckZ: reduz ? 0 : -46, vel: reduz ? 0 : 1, camX: 0, camY: 0, farol: 0.35, scroll: 0, pausado: reduz };
+  const estado: Estado = { intro: reduz ? 1 : 0, truckZ: reduz ? 0 : -46, vel: reduz ? 0 : 1, camX: 0, camY: 0, farol: 0.35, scroll: 0, pausado: reduz };
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
   renderer.shadowMap.enabled = true;
   renderer.shadowMap.type = T.PCFSoftShadowMap;
@@ -86,25 +86,31 @@ function roda(x: number, z: number, dupla: boolean) {
   g.position.set(x, 0.52, z); caminhao.add(g); rodas.push(g);
 }
 
-/* cabine (cab-over) */
+/* cabine cab-over estilo europeu (referência visual: frente de Volvo FH — grade alta, faróis em "V",
+   para-sol e teto alto). Sem logotipo ou elementos de marca registrada. */
 const zFrente = 4.6;
-caixa(2.5, 2.35, 2.25, azul, 0, 2.3, zFrente - 1.12);            /* corpo */
-caixa(2.46, 0.7, 2.0, azul, 0, 3.82, zFrente - 1.25);            /* teto alto */
-caixa(2.3, 0.08, 0.9, marinho, 0, 4.2, zFrente - 1.55);          /* defletor */
-caixa(2.3, 1.05, 0.06, vidro, 0, 2.95, zFrente + 0.005, false);  /* para-brisa */
-caixa(0.06, 0.8, 1.0, vidro, -1.255, 2.95, zFrente - 0.6, false);/* janela esq */
-caixa(0.06, 0.8, 1.0, vidro, 1.255, 2.95, zFrente - 0.6, false); /* janela dir */
-caixa(2.52, 0.14, 2.27, amarelo, 0, 2.28, zFrente - 1.12);        /* faixa amarela */
-caixa(2.52, 0.06, 2.27, branco, 0, 2.12, zFrente - 1.12);         /* filete branco */
-caixa(1.7, 0.78, 0.08, grafite, 0, 1.72, zFrente + 0.02);         /* grade */
-for (let i = 0; i < 5; i++) caixa(1.62, 0.05, 0.04, metal, 0, 1.42 + i * 0.15, zFrente + 0.07, false);
-caixa(2.56, 0.42, 0.34, grafite, 0, 1.0, zFrente - 0.02);          /* para-choque */
-const farolE = caixa(0.42, 0.2, 0.06, farolMat, -0.98, 1.22, zFrente + 0.17, false);
-const farolD = caixa(0.42, 0.2, 0.06, farolMat, 0.98, 1.22, zFrente + 0.17, false);
-caixa(2.0, 0.1, 0.1, farolMat, 0, 4.17, zFrente - 0.62, false);  /* barra de luz no teto */
+caixa(2.5, 2.5, 2.25, azul, 0, 2.38, zFrente - 1.12);             /* corpo */
+caixa(2.46, 0.95, 2.05, azul, 0, 4.05, zFrente - 1.22);           /* teto alto (Globetrotter) */
+caixa(2.5, 0.12, 0.5, marinho, 0, 3.52, zFrente + 0.12);          /* para-sol */
+caixa(2.34, 1.0, 0.06, vidro, 0, 2.98, zFrente + 0.005, false);   /* para-brisa */
+caixa(0.06, 0.85, 1.0, vidro, -1.255, 2.98, zFrente - 0.6, false);
+caixa(0.06, 0.85, 1.0, vidro, 1.255, 2.98, zFrente - 0.6, false);
+caixa(2.52, 0.12, 2.27, amarelo, 0, 2.36, zFrente - 1.12);         /* faixa amarela */
+/* grade alta trapezoidal: lâminas horizontais que alargam para baixo */
+caixa(1.9, 1.15, 0.06, grafite, 0, 1.78, zFrente + 0.02);
+for (let i = 0; i < 7; i++) caixa(1.5 + i * 0.06, 0.06, 0.05, metal, 0, 1.3 + i * 0.15, zFrente + 0.07, false);
+caixa(1.98, 0.08, 0.08, metal, 0, 2.38, zFrente + 0.06, false);    /* moldura cromada superior */
+caixa(2.58, 0.48, 0.4, grafite, 0, 0.98, zFrente);                  /* para-choque */
+caixa(2.0, 0.08, 0.06, metal, 0, 0.82, zFrente + 0.21, false);
+/* faróis em "V": bloco inclinado + DRL em linha */
+const farolE = caixa(0.6, 0.2, 0.08, farolMat, -1.0, 1.28, zFrente + 0.15, false); farolE.rotation.z = -0.32;
+const farolD = caixa(0.6, 0.2, 0.08, farolMat, 1.0, 1.28, zFrente + 0.15, false); farolD.rotation.z = 0.32;
+const drlE = caixa(0.42, 0.04, 0.06, farolMat, -1.02, 1.5, zFrente + 0.15, false); drlE.rotation.z = 0.55;
+const drlD = caixa(0.42, 0.04, 0.06, farolMat, 1.02, 1.5, zFrente + 0.15, false); drlD.rotation.z = -0.55;
+caixa(2.0, 0.1, 0.1, farolMat, 0, 4.55, zFrente - 0.3, false);    /* barra de luz no teto */
 [-1.42, 1.42].forEach(x => {                                       /* retrovisores */
-  caixa(0.06, 0.06, 0.5, grafite, x * 0.94, 3.05, zFrente - 0.25, false);
-  caixa(0.12, 0.62, 0.22, marinho, x, 2.95, zFrente - 0.02);
+  caixa(0.06, 0.06, 0.5, grafite, x * 0.94, 3.1, zFrente - 0.25, false);
+  caixa(0.12, 0.7, 0.22, marinho, x, 3.0, zFrente - 0.02);
 });
 caixa(0.5, 0.06, 0.6, grafite, -1.1, 1.0, zFrente - 1.6);          /* degrau */
 /* chassi e tanque */
@@ -198,9 +204,9 @@ cena.add(pontos);
     farolMat.emissiveIntensity = 0.6 + estado.farol * 2.4;
     fachos.forEach(s => s.intensity = estado.farol * 60);
     const m = estado.mobile;
-    const ox = m ? 0.2 : -8.4;
+    const ox = (m ? 0.2 : -8.4) * estado.intro;
     const raio = m ? 21 : 25;
-    const ang = (m ? 0.72 : 0.86) + estado.camX * 0.1;
+    const ang = ((m ? 0.72 : 0.86) * estado.intro) + estado.camX * 0.1;
     cam.position.set(Math.sin(ang) * raio + ox * 0.2, (m ? 5.2 : 4.6) + estado.camY * -0.5 - estado.scroll * 1.6, Math.cos(ang) * raio + (m ? 0 : 1));
     alvo.set(ox, m ? 2.2 : 2.4, (m ? -3.5 : -2.5) + estado.scroll * 6);
     cam.lookAt(alvo);
