@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-marinho: #0a2350; --color-azul: #1746a2; --color-azul-hover: #0f3580;
+  --color-amarelo: #ffc20e; --color-amarelo-hover: #f0b000; --color-tinta: #0e1a2b;
+  --color-suave: #b9c6de; --color-superficie: #f2f5f9; --color-tinta-suave: #4a566b; --color-linha: #d6dce6;
+  --font-display: var(--fonte-display), "Arial Narrow", system-ui, sans-serif;
+  --font-sans: var(--fonte-sans), system-ui, sans-serif;
+}
+body { @apply bg-white font-sans text-tinta antialiased; }
+:focus-visible { outline: 3px solid var(--color-amarelo); outline-offset: 2px; }
+@layer components {
+.btn { @apply inline-flex min-h-12 items-center justify-center gap-2.5 rounded px-6 font-bold transition-colors duration-200 border-2 border-transparent cursor-pointer disabled:opacity-60; }
+.btn-sinal { @apply bg-amarelo text-tinta hover:bg-amarelo-hover; }
+.btn-azul { @apply bg-azul text-white hover:bg-azul-hover; }
+.btn-contorno { @apply border-white/85 text-white hover:bg-white/10; }
+.btn-lg { @apply min-h-[58px] px-8 text-lg; }
+.nav-link { @apply border-b-[3px] border-transparent py-1.5 hover:border-amarelo; }
+.campo { @apply w-full rounded border border-linha bg-white px-4 py-3 text-base outline-none focus:border-azul focus:ring-2 focus:ring-azul/20; }
+.rotulo { @apply mb-1.5 block text-sm font-semibold text-tinta-suave; }
+.over { @apply font-display text-sm font-bold tracking-[.22em] text-azul; }
+.titulo { @apply font-display text-4xl font-extrabold uppercase leading-[.95] md:text-6xl; }
+}
+.js-rev { opacity: 0; }
+@media (prefers-reduced-motion: reduce) { .js-rev { opacity: 1; } }

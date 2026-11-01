@@ -1,0 +1,13 @@
+{
+  "name": "maraca-diesel-videos",
+  "private": true,
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render:reveal": "remotion render src/index.ts Reveal out/reveal-9x16.mp4",
+    "render:oferta": "remotion render src/index.ts Oferta out/oferta-9x16.mp4 --props=./oferta.json"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.370", "@remotion/three": "4.0.370", "@remotion/google-fonts": "4.0.370", "remotion": "4.0.370",
+    "@react-three/fiber": "^9.0.0", "react": "^19.0.0", "react-dom": "^19.0.0", "three": "^0.180.0"
+  }
+}
