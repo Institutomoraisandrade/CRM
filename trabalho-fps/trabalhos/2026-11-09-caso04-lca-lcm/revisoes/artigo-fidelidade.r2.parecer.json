@@ -1,0 +1,40 @@
+{
+  "etapa": "artigo-fidelidade",
+  "rodada": 2,
+  "revisor": "fps-lider-ciencia",
+  "modelo_revisor": "opus",
+  "executor": "fps-4-redator-abnt",
+  "modo": "revisor; rodada restrita aos achados da r1 (corrigidos pelo revisor por instrução do orquestrador) e a regressões",
+  "arquivos_revisados": ["artigo.json", "artigo.docx", "04-prescricao.json", "04-prescricao.md", "revisoes/artigo-fidelidade.r1.parecer.json"],
+  "criterios": {
+    "fidelidade_das_citacoes": 8.5,
+    "precisao_numerica": 8.5,
+    "ausencia_de_extrapolacao": 8.5,
+    "coerencia_com_as_etapas": 9.0
+  },
+  "achados": [],
+  "decisoes_sobre_r1": [
+    {"id": "A1", "status": "resolvido", "detalhe": "3.1: rotação interna acoplada ao valgo nos primeiros 40 ms e rotação externa posterior atribuída à ruptura, como no resumo do PMID 20595545; coerente com 3.1, 7.3 e 02-analise-critica.md."},
+    {"id": "A2", "status": "resolvido", "detalhe": "5.3: 5 anos [@pedersen2021] separado de 10 anos [@urhausen2025], com ACLR tardia pior em KOOS Esporte/QV e saltos (p ≤ 0,03); nenhuma outra seção afirmava equivalência aos 10 anos (7.2 e 8 conferidas)."},
+    {"id": "A3", "status": "resolvido", "detalhe": "−2,0 (−8,5 a 4,5) coerente com Monk 2016 (−2,0; −8,27 a 4,27)."},
+    {"id": "A4", "status": "resolvido", "detalhe": "17 de 41 (41,5%)."},
+    {"id": "A5", "status": "resolvido", "detalhe": "lesões ligamentares associadas."},
+    {"id": "A6", "status": "resolvido", "detalhe": "Exclusões de Eitzen corrigidas no artigo (6.1, 7.1) e em 04-prescricao.json/.md (premissas e justificativa da Fase 2); nenhuma ocorrência restante de 'LCM sintomático'."},
+    {"id": "A7", "status": "resolvido", "detalhe": "04-prescricao.json/.md e Quadro 8/3.5/6.9 do artigo: '~10 sessões supervisionadas (≈ 15 no total)'; 60% no futebol com a população de origem (coorte NACOX, tratamentos mistos, 66% operados)."}
+  ],
+  "regressoes_verificadas": [
+    "artigo.json e 04-prescricao.json válidos (json.load).",
+    "Todas as chaves citadas existem em referencias.json; gerar_docx_abnt.py: 109 citadas = 109 listadas, 0 ids inexistentes.",
+    "validar_trabalho.py: 0 erros.",
+    "Edições pontuais não tocaram blocos editados em paralelo pelo líder de produção (Edit por trecho único)."
+  ],
+  "correcoes_aplicadas": [
+    "04-prescricao.md l.151: última ocorrência de 'LCM sintomático' substituída por 'lesão meniscal sintomática e lesão de ligamento colateral grau III/IV'."
+  ],
+  "pontos_fortes": [
+    "Com as correções, os números e as atribuições das seções 3, 5 e 7 conferidos em 65 das 109 fontes (60%) batem com o PubMed; Eitzen 2010 conferido em texto completo (10 sessões em ~5 semanas, supervisão ≥ 2×/semana, 6–8 RM em 3–4 séries, '+2', até 75 min, 4/98 com dor e derrame após pliometria).",
+    "Força dos verbos compatível com o GRADE em todo o texto; considerações finais idênticas em conteúdo a 03-evidencias.md §7."
+  ],
+  "escalonado": false,
+  "resumo": "artigo-fidelidade r2: os 7 achados da r1 estão resolvidos, sem regressões; 04-prescricao.json/.md alinhados. docx regenerado e validador sem erros."
+}

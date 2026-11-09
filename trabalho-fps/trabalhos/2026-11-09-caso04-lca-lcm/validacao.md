@@ -1,8 +1,8 @@
-# Validação — 
+# Validação — 2026-11-09-caso04-lca-lcm
 
-Gerado em 09/11/2026 22:07.
+Gerado em 09/11/2026 22:08.
 
-**Resultado:** ✅ APROVADO (0 erro(s), 4 aviso(s))
+**Resultado:** ✅ APROVADO (0 erro(s), 3 aviso(s))
 
 ## Erros (corrigir antes de entregar)
 - nenhum
@@ -10,7 +10,6 @@ Gerado em 09/11/2026 22:07.
 ## Avisos (revisar)
 - 6 referência(s) não citada(s) no artigo (serão omitidas da lista): dellavilla2021, gasparin2024, laprade2007, ohori2017, hamrinsenorski2025, hurd2008determinants
 - etapa 'artigo-forma' não aprovada no portão (REVISAR, rodada 1)
-- etapa 'artigo-fidelidade' sem parecer de revisão
 - etapa 'banca' sem parecer de revisão
 
 ## Indicadores
@@ -21,4 +20,4 @@ Gerado em 09/11/2026 22:07.
 - 17 slide(s) definidos
 - tempo planejado: 13:40
 - tipo de trabalho: caso_clinico
-- portões: 01-investigacao: APROVADO (r2, média 8.2) · 03a-busca: APROVADO (r2, média 8.0) · 03-evidencias: APROVADO (r2, média 8.0) · 02-analise: APROVADO (r2, média 8.6) · 04-prescricao: APROVADO (r1, média 8.7) · artigo-forma: REVISAR (r1, média 7.3) · slides: APROVADO (r1, média 8.4)
+- portões: 01-investigacao: APROVADO (r2, média 8.2) · 03a-busca: APROVADO (r2, média 8.0) · 03-evidencias: APROVADO (r2, média 8.0) · 02-analise: APROVADO (r2, média 8.6) · 04-prescricao: APROVADO (r1, média 8.7) · artigo-forma: REVISAR (r1, média 7.3) · artigo-fidelidade: APROVADO (r2, média 8.6) · slides: APROVADO (r1, média 8.4)
