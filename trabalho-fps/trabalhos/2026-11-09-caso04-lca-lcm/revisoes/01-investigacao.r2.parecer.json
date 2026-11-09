@@ -1,0 +1,73 @@
+{
+  "etapa": "01-investigacao",
+  "rodada": 2,
+  "revisor": "fps-lider-pesquisa",
+  "modelo_revisor": "opus",
+  "executor": "fps-1-investigador",
+  "arquivos_revisados": [
+    "01-investigacao.md",
+    "01-picos.json",
+    "01-referencias.json",
+    "revisoes/01-investigacao.r1.resposta.json"
+  ],
+  "criterios": {
+    "delimitacao": 8.5,
+    "epidemiologia_com_fontes": 7.5,
+    "pergunta_estruturada": 8.5,
+    "desfechos_relevantes": 8.5,
+    "estrategia_de_busca": 8.0
+  },
+  "decisoes_contestacoes": "Nenhuma contestação na resposta r1 (6 corrigidos; A7 já aplicado pelo revisor).",
+  "verificacao_dos_achados_r1": {
+    "A1": "Resolvido. O bullet do Nicolini agora segue o texto completo PMC4108693 (167 jogadores de futebol, LCA em ≈54%, 34,7% com lesão meniscal associada e 6,2% com LCM); conferi contra a Tabela 5 e a Discussão.",
+    "A2": "Resolvido. Rodei a string principal: 229 resultados sem filtro de data e 165 com 2010–2026 (pdat), o que confere com o declarado. String LCM: 10 (confere). D1: 38 (confere). D2: 7 (confere; inclui 36731908, 30001501, 27539507 e 22898912). Diretrizes: 115 (confere). Todas as strings estão por extenso e dentro do limite de 20 operadores.",
+    "A3": "Resolvido. Os 165 resultados incluem 20660401, 23349407, 30790527 e 42233492; a string de diretrizes (115) inclui 31431274 (Filbay 2019).",
+    "A4": "Resolvido. A afirmação agora é atribuída a Abdul 2026 e Shultz 2024; 'esportes de pivô' foi retirado.",
+    "A5": "Resolvido. Está explícito que todos os braços de Shultz tiveram ACLR (evidência indireta), com ligação a van der List; a implicação para o caso está marcada como inferência.",
+    "A6": "Resolvido. Subtema essencial de dose FITT-VP criado no §3 e no 01-picos.json, com as strings D1/D2. As 2 refs novas foram conferidas por get_article_metadata (augustsson2013: KSSTA 21(8):1849-1855, DOI 10.1007/s00167-012-2167-3; petushek2019: AJSM 47(7):1744-1753, DOI 10.1177/0363546518782460), e o ano do fascículo foi confirmado por [ppdat]. Os números citados (6 estudos, 4 sem documentação completa; 18 estudos, 27.231 participantes, 18,17 h, 24,1 min/sessão, 2,51×/semana) conferem com os resumos."
+  },
+  "achados": [
+    {
+      "id": "B1",
+      "gravidade": "menor",
+      "local": "01-investigacao.md > §6 'Pertinência'; string de diretrizes",
+      "problema": "A string de diretrizes não recupera a CPG da JOSPT sobre entorse ligamentar do joelho (Logerstedt 2017), a diretriz mais específica para LCA+LCM, porque o registro não tem o termo LCA no título/resumo nem o MeSH de lesão do LCA.",
+      "evidencia": "PubMed 09/11/2026: a lista completa dos 115 PMIDs da string de diretrizes (2010–2026) não contém 29089004; o registro 29089004 tem MeSH Knee Injuries/Joint Instability/Sprains and Strains.",
+      "correcao": "APLICADA pelo revisor: nota no §6 orientando o buscador a incluí-la por busca dirigida (\"knee ligament sprain\"[ti]).",
+      "responsavel": "fps-1-investigador",
+      "licao": "Confira se a string de diretrizes recupera as diretrizes-chave já conhecidas do tema; CPGs indexadas por termos genéricos (ex.: entorse do joelho) exigem busca dirigida."
+    },
+    {
+      "id": "B2",
+      "gravidade": "menor",
+      "local": "01-referencias.json > petushek2019",
+      "problema": "Os 5 autores estavam listados com et_al false; o PROTOCOLO §3 manda listar até 4 autores e marcar et_al true quando houver mais.",
+      "evidencia": "PubMed PMID 30001501: 5 autores (Petushek, Sugimoto, Stoolmiller, Smith, Myer).",
+      "correcao": "APLICADA pelo revisor: mantidos os 4 primeiros autores, com et_al true.",
+      "responsavel": "fps-1-investigador"
+    },
+    {
+      "id": "B3",
+      "gravidade": "menor",
+      "local": "01-investigacao.md > §4 'Reabilitação por exercício' (regressão da correção A6)",
+      "problema": "A inserção do parágrafo de dose deixou 'Esse número (30%)' longe do dado a que se refere (Ghezzi), logo depois dos números de Petushek, o que torna a frase ambígua.",
+      "evidencia": "Leitura do §4 na rodada 2.",
+      "correcao": "APLICADA pelo revisor: 'O retorno ao esporte de apenas 30% na revisão de escopo [@ghezzi2026] deve ser dito ao professor'.",
+      "responsavel": "fps-1-investigador"
+    }
+  ],
+  "correcoes_aplicadas": [
+    "B1: nota no §6 sobre a CPG Logerstedt 2017, que a string de diretrizes não recupera.",
+    "B2: petushek2019 reduzido a 4 autores, com et_al true.",
+    "B3: referência ambígua 'Esse número (30%)' reescrita com a citação a Ghezzi 2026.",
+    "Fontes consultadas: registrado que o WebSearch foi usado pelo revisor (DeCS do LCM; código SIH); Pendência 2 complementada com a pista SIH/SUS 04.08.05.016-0 (TabNet inacessível nesta sessão)."
+  ],
+  "pontos_fortes": [
+    "Todas as correções da rodada 1 foram feitas sem regressão de conteúdo; as contagens foram reproduzidas pelo revisor (229/165, 10, 38, 7, 115).",
+    "A estratégia agora tem uma lista de controle explícita e strings separadas para LCM, diretrizes e dose; o limite de operadores do MCP está documentado para o buscador.",
+    "A evidência indireta (pós-ACLR, prevenção feminina, ACSM) está rotulada de forma consistente, e a ausência de evidência de dose-resposta para o LCA insuficiente foi declarada como lacuna."
+  ],
+  "escalonado": false,
+  "veredito_revisor": "APROVADO",
+  "resumo": "Etapa 01-investigacao, rodada 2: os 6 achados da r1 foram resolvidos e conferidos (contagens reproduzidas, 2 refs novas verificadas por PMID e [ppdat]). Ficaram 3 menores, corrigidos pelo revisor (diretriz da JOSPT fora da string de diretrizes, et_al de Petushek, frase ambígua do §4). Pendências que não bloqueiam e seguem para as etapas seguintes: dados SUS/DATASUS (lacuna declarada), ACSM a verificar pelo prescritor, DeCS do LCM e strings BVS/Cochrane não testadas (BVS bloqueada na rede), fontes primárias de mecanismo para o Agente 2."
+}

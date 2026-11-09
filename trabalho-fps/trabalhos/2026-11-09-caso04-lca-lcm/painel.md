@@ -2,11 +2,11 @@
 
 Tipo de trabalho: `caso_clinico`.
 
-Atualizado em 09/11/2026 20:49.
+Atualizado em 09/11/2026 20:54.
 
 | Etapa | Executor | Revisor (modelo) | Rodadas | Decisão | Crít. | Maior | Menor | Média |
 |---|---|---|---|---|---|---|---|---|
-| 01-investigacao | fps-1-investigador | fps-lider-pesquisa (opus) | 1 | **REVISAR** | 1 | 5 | 1 | 7.2 |
+| 01-investigacao | fps-1-investigador | fps-lider-pesquisa (opus) | 2 | **APROVADO** | 0 | 0 | 3 | 8.2 |
 | 03a-busca | — | — | 0 | pendente | | | | |
 | 03-evidencias | — | — | 0 | pendente | | | | |
 | 02-analise | — | — | 0 | pendente | | | | |

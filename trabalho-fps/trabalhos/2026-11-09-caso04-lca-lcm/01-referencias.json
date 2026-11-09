@@ -650,10 +650,9 @@
       "Petushek, Erich J.",
       "Sugimoto, Dai",
       "Stoolmiller, Michael",
-      "Smith, Grace",
-      "Myer, Gregory D."
+      "Smith, Grace"
     ],
-    "et_al": false,
+    "et_al": true,
     "titulo": "Evidence-based best-practice guidelines for preventing anterior cruciate ligament injuries in young female athletes: a systematic review and meta-analysis",
     "subtitulo": null,
     "periodico": "Am J Sports Med",
