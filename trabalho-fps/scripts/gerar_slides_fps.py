@@ -13,7 +13,8 @@ Layouts disponíveis (campo "layout" de cada slide):
 Visual: "imagem" (+ "credito", "foco": [x, y] de 0 a 1) em capa, secao, topicos e
 encerramento — a foto é recortada, recebe véu na cor da marca (fundos) ou cantos
 arredondados (painel lateral). "kicker" põe um rótulo de seção acima do título
-(herdado do último slide "secao"). Barra de progresso automática no rodapé.
+(herdado do último slide "secao"). "banner" põe uma faixa de foto atrás do título
+("banner_foco": [x, y]). Barra de progresso automática no rodapé.
 
 Apresentação em equipe: cada slide pode ter "apresentador" e "tempo_seg". O gerador
 soma o tempo por integrante, avisa sobre desequilíbrio e estouro do tempo
@@ -296,13 +297,20 @@ class Construtor:
             self.avisos.append(f"slide {self.n}: título longo ({n} caracteres) — reduza para uma frase direta")
         tam = 30 if n <= 55 else 26 if n <= 85 else 22
         kicker = getattr(self, "_kicker", None)
+        banner = getattr(self, "_banner", None)
+        if banner:
+            arq = self._foto(banner["imagem"], W, 1.74, overlay=(0.95, 0.5), foco=tuple(banner.get("foco", (0.5, 0.5))))
+            slide.shapes.add_picture(str(arq), 0, 0, Inches(W), Inches(1.74))
+            self.forma(slide, 0, 1.74, W, 0.05, self.m.c["destaque"])
+        cor_t = self.m.c["texto_sobre_primaria"] if banner else self.m.c["primaria"]
         if kicker:
             self.forma(slide, MX, 0.3, 0.07, 0.24, self.m.c["destaque"])
             self.texto(slide, MX + 0.17, 0.28, 9, 0.28, self.t(kicker).upper(), tamanho=11,
-                       cor=self.m.c["secundaria"], negrito=True, ancora="meio")
-        self.texto(slide, MX, 0.42, W - 2 * MX, 1.05, txt, tamanho=tam, cor=self.m.c["primaria"],
+                       cor=self.m.c["destaque"] if banner else self.m.c["secundaria"], negrito=True, ancora="meio")
+        self.texto(slide, MX, 0.42, W - 2 * MX, 1.05, txt, tamanho=tam, cor=cor_t,
                    negrito=True, ancora="base", fonte=self.m.fonte_titulo, entre=0.95)
-        self.forma(slide, MX, 1.6, 0.9, 0.07, self.m.c["secundaria"])
+        if not banner:
+            self.forma(slide, MX, 1.6, 0.9, 0.07, self.m.c["secundaria"])
         self._registrar(txt)
 
     def rodape(self, slide, fonte=None):
@@ -1064,6 +1072,7 @@ class Construtor:
         self._total = sum(1 for x in slides if x.get("layout") != "referencias")
         for s in slides:
             self._kicker = s.get("kicker", self._kicker_secao)
+            self._banner = {"imagem": s["banner"], "foco": s.get("banner_foco", (0.5, 0.5))} if s.get("banner") else None
             layout = s.get("layout", "topicos")
             fn = getattr(self, layout, None)
             if fn is None or layout.startswith("_") or layout in ("gerar", "roteiro", "cronometragem"):
