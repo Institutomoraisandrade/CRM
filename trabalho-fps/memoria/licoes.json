@@ -16,6 +16,62 @@
         "origens": [
           "semente"
         ]
+      },
+      {
+        "texto": "Quando um percentual do resumo for ambíguo, confirme no texto completo qual é o denominador (percentual de quê) antes de reportá-lo.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:01-investigacao.r1.parecer.json:A1"
+        ]
+      },
+      {
+        "texto": "Declare cada contagem de busca junto do filtro exato usado (datas e tipo de data) e escreva toda string secundária por extenso e executável; contagens sem filtro e com filtro são números diferentes.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:01-investigacao.r1.parecer.json:A2"
+        ]
+      },
+      {
+        "texto": "Teste a string principal contra uma lista de artigos-chave conhecidos (incluindo o ECR pivotal do comparador) e amplie os blocos que os excluírem antes de declarar a calibragem.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:01-investigacao.r1.parecer.json:A3"
+        ]
+      },
+      {
+        "texto": "Atribua cada afirmação à fonte que efetivamente a contém e não acrescente qualificadores (população, contexto) que a fonte não traz.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:01-investigacao.r1.parecer.json:A4"
+        ]
+      },
+      {
+        "texto": "Ao citar estudo cuja população ou tratamento difere do caso (ex.: pós-cirúrgico), explicite a diferença na mesma frase e rotule como evidência indireta.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:01-investigacao.r1.parecer.json:A5"
+        ]
+      },
+      {
+        "texto": "Em caso clínico com prescrição de exercício, a dose (FITT-VP) é subtema essencial, com estratégia de busca própria.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:01-investigacao.r1.parecer.json:A6"
+        ]
+      },
+      {
+        "texto": "Confira se a string de diretrizes recupera as diretrizes-chave já conhecidas do tema; CPGs indexadas por termos genéricos (ex.: entorse do joelho) exigem busca dirigida.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:01-investigacao.r2.parecer.json:B1"
+        ]
       }
     ],
     "fps-op-verificador": [
@@ -50,6 +106,14 @@
         "origens": [
           "semente"
         ]
+      },
+      {
+        "texto": "Na referência, o ano é o do fascículo impresso (PubMed [ppdat]/DP), não o da publicação eletrônica antecipada; se o ano do PubMed divergir em 1, confirme com [ppdat] antes de 'corrigir'.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:01-investigacao.r1.parecer.json:A7"
+        ]
       }
     ],
     "fps-op-buscador": [
@@ -76,6 +140,46 @@
         "origens": [
           "semente"
         ]
+      },
+      {
+        "texto": "Nunca trunque uma string pela ordem de data: trie todos os registros que ela retornar e, se precisar cortar, corte depois da triagem, pelo desenho do estudo.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:03a-busca.r1.parecer.json:A1"
+        ]
+      },
+      {
+        "texto": "O corte por volume obedece à hierarquia de desenho e preserva a cobertura de cada subtema essencial; nunca exclua por volume um item que está listado como diretriz.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:03a-busca.r1.parecer.json:A2"
+        ]
+      },
+      {
+        "texto": "Itens recuperados pelas strings de um subtema essencial não são 'fora do tema'; evidência indireta aceita pelos critérios fica como 'talvez'.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:03a-busca.r1.parecer.json:A3"
+        ]
+      },
+      {
+        "texto": "No PRISMA, 'identificados' é o total que as bases retornaram; registros não triados e cortes por volume aparecem em linhas próprias.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:03a-busca.r1.parecer.json:A5"
+        ]
+      },
+      {
+        "texto": "No corte por volume, a pertinência ao PICOS e aos subtemas essenciais vem antes do rótulo incluir/talvez; item fora da população ou da intervenção é exclusão na triagem, não seleção.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:03a-busca.r2.parecer.json:B1"
+        ]
       }
     ],
     "fps-3-avaliador-evidencias": [
@@ -94,6 +198,30 @@
         "origens": [
           "semente"
         ]
+      },
+      {
+        "texto": "Certeza GRADE 'moderada' com dois problemas de risco de viés declarados, desfecho autorrelatado sem cegamento e IC que inclui efeito trivial não se sustenta; aplique cada rebaixamento declarado e trate como condição, não como fato, a correspondência entre o paciente do caso e a população do ensaio.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:03-evidencias.r1.parecer.json:A1"
+        ]
+      },
+      {
+        "texto": "Ao extrair a dose de uma metanálise com vários desfechos, confira a qual análise o resumo atribui a dose; não a transfira para o desfecho de maior certeza.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:03-evidencias.r1.parecer.json:A2"
+        ]
+      },
+      {
+        "texto": "Antes de citar uma CPG, busque no PubMed pelo primeiro autor, o periódico e os anos seguintes uma revisão que a atualize ('update on the … guideline').",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:03-evidencias.r1.parecer.json:A3"
+        ]
       }
     ],
     "fps-2-analista-critico": [
@@ -103,6 +231,38 @@
         "ultimo": "2026-11-09",
         "origens": [
           "semente"
+        ]
+      },
+      {
+        "texto": "Toda 'leitura' que aplica um estudo ao caso precisa decorrer dos dados citados; se o estudo não analisou a variável (ex.: rotação tibial), diga isso em vez de classificar o caso.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:02-analise.r1.parecer.json:A1"
+        ]
+      },
+      {
+        "texto": "Ao citar duas fontes juntas, confira se cada uma sustenta a frase sozinha; extraia o número do braço que corresponde ao cenário do caso.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:02-analise.r1.parecer.json:A2"
+        ]
+      },
+      {
+        "texto": "Verbos categóricos ('incompatível', 'exclui', 'prova') só com fonte que demonstre isso; inferência clínica fica rotulada e com verbo proporcional.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:02-analise.r1.parecer.json:A3"
+        ]
+      },
+      {
+        "texto": "O fluxo para slides não pode ter certeza maior que a classificação dada no corpo da análise; cada etapa herda o rótulo de certeza da afirmação que resume.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:02-analise.r1.parecer.json:A4"
         ]
       }
     ],
@@ -122,6 +282,54 @@
         "origens": [
           "semente"
         ]
+      },
+      {
+        "texto": "Ao condensar um achado com duas fases (antes e depois de um evento), mantenha a ordem e a interpretação que os autores dão a cada fase; não desloque a ressalva de uma fase para a outra.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:artigo-fidelidade.r1.parecer.json:A1"
+        ]
+      },
+      {
+        "texto": "Ao juntar dois seguimentos da mesma coorte numa frase, confira se a conclusão vale para os dois; diferenças de subgrupo registradas nas etapas anteriores não podem desaparecer na síntese.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:artigo-fidelidade.r1.parecer.json:A2"
+        ]
+      },
+      {
+        "texto": "Cada número de efeito aparece em um único lugar (seção de evidências ou quadro); proposta e discussão remetem à seção, sem repetir estimativas.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:artigo-forma.r1.parecer.json:A1"
+        ]
+      },
+      {
+        "texto": "Critérios de saída da última fase e critérios de retorno não se duplicam: uma lista completa, a outra remete a ela e acrescenta só o que é próprio.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:artigo-forma.r1.parecer.json:A2"
+        ]
+      },
+      {
+        "texto": "A Discussão interpreta e confronta; não reapresenta resultados já descritos — remete à seção e diz o que aquilo muda na conduta.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:artigo-forma.r1.parecer.json:A3"
+        ]
+      },
+      {
+        "texto": "Ao condensar o texto das etapas, não troque o desenho do estudo (revisão narrativa não é consenso) nem estenda um dado de confiabilidade a um teste que o estudo não avaliou.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:banca.r1.parecer.json:A3"
+        ]
       }
     ],
     "fps-5-designer-slides": [
@@ -131,6 +339,140 @@
         "ultimo": "2026-11-09",
         "origens": [
           "semente"
+        ]
+      },
+      {
+        "texto": "Em apresentação de prescrição de exercício, reserve no slides.json espaços de imagem (layout 'imagem' ou marcador) para as fotos que o estudante vai inserir, e avise no relatório quais faltam.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:banca.r1.parecer.json:A9"
+        ]
+      },
+      {
+        "texto": "Toda faixa numérica do título precisa ter, nas notas ou no corpo, a origem de cada extremo e o horizonte de tempo; o corpo não repete o número do título.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:slides.r1.parecer.json:A1"
+        ]
+      },
+      {
+        "texto": "Ao resumir um número, mantenha a população de origem (com ou sem cirurgia, tratamentos mistos); ela faz parte do dado.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:slides.r1.parecer.json:A2"
+        ]
+      },
+      {
+        "texto": "A mesma sigla não pode ter dois sentidos na apresentação (RM = ressonância × repetição máxima).",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:slides.r1.parecer.json:A4"
+        ]
+      }
+    ],
+    "fps-prescritor-exercicio": [
+      {
+        "texto": "Não chame de 'validado' um limiar que só foi testado em estudo piloto ou em outra condição; diga onde ele foi descrito e onde foi testado.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:04-prescricao.r1.parecer.json:A5"
+        ]
+      },
+      {
+        "texto": "Quando um ponto de corte vem de um estudo citado dentro de uma revisão, nomeie o estudo de origem e a população dele, para não esconder a extrapolação.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:04-prescricao.r1.parecer.json:A6"
+        ]
+      },
+      {
+        "texto": "As regras de regressão de cada fase devem repetir, palavra por palavra, os gatilhos da tabela de ajuste por sintomas.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:04-prescricao.r1.parecer.json:A7"
+        ]
+      }
+    ],
+    "fps-lider-ciencia": [
+      {
+        "texto": "Na revisão de fidelidade, confira o Resumo e o Abstract frase a frase contra o corpo: cada número deve aparecer com a população e o horizonte do estudo de origem.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:banca.r1.parecer.json:A1"
+        ]
+      },
+      {
+        "texto": "Ao conferir critérios de elegibilidade de um estudo de referência no texto completo, compare a lista inteira com cada déficit do caso: a exclusão que coincide com um achado do paciente é a que mais importa.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:banca.r1.parecer.json:A4"
+        ]
+      },
+      {
+        "texto": "Some os componentes de cada linha de frequência e de volume antes de aprovar uma prescrição: total declarado e parcelas têm de coincidir.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:banca.r1.parecer.json:A5"
+        ]
+      },
+      {
+        "texto": "Correção de achado crítico feita pelo revisor precisa de um segundo par de olhos: registre 'escalonado' e peça verificação a outro agente em vez de aprovar a própria edição.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:banca.r1.parecer.json:A8"
+        ]
+      },
+      {
+        "texto": "Resultado negativo ('não se associou a X') só entra no texto se a fonte acessada o declarar; quando o resumo cala, escreva 'única diferença relatada' ou leia o texto completo.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:banca.r1.parecer.json:A10"
+        ]
+      }
+    ],
+    "fps-lider-producao": [
+      {
+        "texto": "Antes de aprovar a forma, busque no texto final os nomes de papéis do pipeline (líder, avaliador, prescritor, executor, etapa, agente): o documento do estudante só pode falar em 'os autores' ou 'o grupo'.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:banca.r1.parecer.json:A2"
+        ]
+      },
+      {
+        "texto": "No slide, leia cada tópico isolado, como a plateia lê: frase encurtada que muda o sentido do dado (percentual, população, horizonte) é erro de conteúdo, não de estilo.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:banca.r1.parecer.json:A6"
+        ]
+      },
+      {
+        "texto": "Classifique o achado pela definição do protocolo, não pelo esforço de corrigir: número com população ou horizonte errado e afirmação mais forte que a fonte são críticos mesmo quando a correção cabe em uma linha, e sempre levam lição para o executor.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:banca.r1.parecer.json:A7"
+        ]
+      },
+      {
+        "texto": "Releia os títulos dos slides em sequência: palavra absoluta ('nunca', 'sempre') num título não pode ser desmentida por um critério do slide seguinte.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "2026-11-09-caso04-lca-lcm:banca.r1.parecer.json:A11"
         ]
       }
     ]

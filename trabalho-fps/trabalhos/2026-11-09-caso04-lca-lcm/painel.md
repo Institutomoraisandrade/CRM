@@ -2,7 +2,7 @@
 
 Tipo de trabalho: `caso_clinico`.
 
-Atualizado em 09/11/2026 22:13.
+Atualizado em 09/11/2026 22:33.
 
 | Etapa | Executor | Revisor (modelo) | Rodadas | Decisão | Crít. | Maior | Menor | Média |
 |---|---|---|---|---|---|---|---|---|
@@ -14,6 +14,8 @@ Atualizado em 09/11/2026 22:13.
 | artigo-forma | fps-4-redator-abnt | fps-lider-producao (opus) | 2 | **APROVADO** | 0 | 0 | 0 | 8.3 |
 | artigo-fidelidade | fps-4-redator-abnt | fps-lider-ciencia (opus) | 2 | **APROVADO** | 0 | 0 | 0 | 8.6 |
 | slides | fps-5-designer-slides | fps-lider-producao (opus) | 1 | **APROVADO** | 0 | 0 | 6 | 8.4 |
-| banca | — | — | 0 | pendente | | | | |
+| banca | pipeline (fps-4-redator-abnt, fps-5-designer-slides, fps-prescritor-exercicio; líderes fps-lider-pesquisa, fps-lider-ciencia, fps-lider-producao) | fps-banca (fable) | 1 | **APROVADO** | 0 | 0 | 11 | 8.0 |
+
+**Nota estimada pela banca (rubrica do professor): 8.7 / 10**
 
 Portão: aprova com 0 críticos, 0 maiores, média ≥ 7,5 e nenhuma nota < 6. 3ª rodada sem aprovação → ESCALAR (o revisor corrige diretamente).

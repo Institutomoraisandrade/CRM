@@ -31,7 +31,7 @@ Os testes de estresse ligamentar são atos de diagnóstico da medicina e da fisi
 
 **[3:25–4:15] Slide 5 — Quadril, tornozelo e membro oposto compensam o joelho e mascaram o déficit**
 
-Obrigada, Rômulo. Estas compensações são associações observadas, não causas comprovadas. No joelho, os non-copers mostram cocontração generalizada, com mais isquiotibiais; o dado é de amostra pequena, e corrige a ideia de evitação do quadríceps. No quadril e no tronco, o padrão é adução e rotação interna do fêmur, que aparece como valgo no step down. Mas o valgo é multifatorial: em mulheres saudáveis, a pior qualidade do movimento se associou à menor dorsiflexão, e não à força do quadril. Por isso medimos o tornozelo antes de culpar o glúteo. Por fim, a simetria na distância do salto pode esconder déficit de trabalho do joelho, com compensação do quadril, então registramos também a qualidade do movimento.
+Obrigada, Rômulo. Estas compensações são associações observadas, não causas comprovadas. No joelho, os non-copers mostram cocontração generalizada, com mais isquiotibiais; o dado é de amostra pequena, e corrige a ideia de evitação do quadríceps. No quadril e no tronco, o padrão é adução e rotação interna do fêmur, que aparece como valgo no step down. Mas o valgo é multifatorial: em mulheres saudáveis, a pior qualidade do movimento se associou à menor dorsiflexão, única diferença relatada num estudo que também mediu a força do quadril. Por isso medimos o tornozelo antes de culpar o glúteo. Por fim, a simetria na distância do salto pode esconder déficit de trabalho do joelho, com compensação do quadril, então registramos também a qualidade do movimento.
 
 **[4:15–5:20] Slide 6 — Reabilitar primeiro é defensável, mas 41% a 51% dos pacientes acabam operados**
 
@@ -47,7 +47,7 @@ Esta é a nota breve sobre o cenário alternativo. Se Bruno tivesse sido operado
 
 ## 🎤 Gabriel
 
-**[6:50–7:35] Slide 9 — Quatro fases, liberadas por critérios e nunca por calendário**
+**[6:50–7:35] Slide 9 — Quatro fases liberadas por critérios; o tempo é só o piso biológico**
 
 Obrigado, Júlia. Prescrevemos exercício, que é o escopo da Educação Física; eletroestimulação, crioterapia e terapia manual ficam com a equipe multiprofissional. A Fase 1 trata derrame, extensão e inibição do quadríceps. A Fase 2 é o bloco de força, de cerca de cinco semanas e dez sessões supervisionadas, e termina na reclassificação. A Fase 3 devolve potência, corrida e agilidade. A Fase 4 reintroduz o futebol. Cada passagem exige critérios, porque o retorno não pode depender só do tempo. Uma ressalva: não há ensaio de dose no LCA insuficiente; a estrutura vem de Eitzen, da ACSM e de estudos pós-reconstrução, e os números sem fonte são convenção nossa.
 
