@@ -116,7 +116,7 @@
         [
           "Step down e hop tests",
           "Valgo dinâmico",
-          "Controle de quadril, tronco e tornozelo; LSI abaixo de 7–13% pode ser ruído",
+          "Controle de quadril, tronco e tornozelo; diferença de LSI menor que 7–13% pode ser ruído",
           "EF"
         ]
       ],
@@ -167,7 +167,7 @@
       "layout": "dois_colunas",
       "apresentador": "Júlia",
       "tempo_seg": 65,
-      "titulo": "Reabilitar primeiro é defensável, mas 41% a 51% dos jovens ativos acabam operados",
+      "titulo": "Reabilitar primeiro é defensável, mas 41% a 51% dos pacientes acabam operados",
       "esquerda": {
         "titulo": "Reabilitação ± cirurgia tardia",
         "itens": [
@@ -178,7 +178,7 @@
         ]
       },
       "direita": {
-        "titulo": "Reconstrução precoce do LCA",
+        "titulo": "Reconstrução do LCA",
         "itens": [
           "IKDC +5,3 (IC 95% 0,6–9,9) em 24 meses; relevância incerta",
           "Lesão não aguda com instabilidade: KOOS4 +7,9 (IC 95% 2,5–13,2)",
@@ -284,7 +284,7 @@
       "layout": "fitt",
       "apresentador": "Gabriel",
       "tempo_seg": 95,
-      "titulo": "Fase 2: cinco semanas de força de alta carga e controle do valgo",
+      "titulo": "Fase 2: cinco semanas de força progressiva e controle do valgo",
       "itens": {
         "F": "3 sessões por semana (≥ 2 supervisionadas), com ≥ 48 h entre as do mesmo grupo",
         "I": "Semanas 1–2: 8–12 RM; semanas 3–5: 6–8 RM; dor ≤ 3/10; regra do ‘+2’",
@@ -304,7 +304,7 @@
         "Ortopedista: valgo a 30° estável"
       ],
       "fonte": "[@eitzen2010program; @acsm2009; @moksnes2008; @crossley2011]",
-      "notas": "A Fase 2 é o coração do programa, e é aqui que defendemos a dose. Frequência: três sessões por semana, ao menos duas supervisionadas, com 48 horas entre sessões do mesmo grupo. Intensidade: nas semanas 1 e 2, 8 a 12 repetições máximas, faixa de iniciante da ACSM, porque o membro está atrofiado; nas semanas 3 a 5, 6 a 8 repetições máximas, como no programa de Eitzen, com a regra do mais dois: completou duas repetições a mais na última série, sobe a carga. Tempo: até 75 minutos, com aquecimento. Tipo: cadeia aberta e fechada se equivalem para força do quadríceps, com certeza moderada; incluímos isquiotibiais, abdutores e rotadores do quadril, tronco e dorsiflexão, que respondem ao valgo. Sem pliometria nesta fase. Volume: 3 a 4 séries; step down de 3 por 8, degrau de 10 centímetros. Progressão: a carga sobe pela regra do mais dois, e o degrau, 5 centímetros, quando sai sem valgo. Ao fim, reclassificamos: salto cronometrado de 6 metros e escala funcional com pelo menos 80%, avaliação global de 60 e no máximo um falseio desde a lesão. Potential coper segue para a Fase 3; non-coper persistente vai ao ortopedista antes de saltos e cortes. Daniel continua."
+      "notas": "A Fase 2 é o coração do programa, e é aqui que defendemos a dose. Frequência: três sessões por semana, ao menos duas supervisionadas, com 48 horas entre sessões do mesmo grupo. Intensidade: nas semanas 1 e 2, 8 a 12 repetições máximas, faixa de iniciante da ACSM, porque o membro está atrofiado; nas semanas 3 a 5, 6 a 8 repetições máximas, como no programa de Eitzen, com a regra do mais dois: completou duas repetições a mais na última série, sobe a carga. Tempo: até 75 minutos, com aquecimento. Tipo: cadeia aberta e fechada se equivalem para força do quadríceps, com certeza moderada; incluímos isquiotibiais, abdutores e rotadores do quadril, tronco e dorsiflexão, ligados à qualidade do step down. Sem pliometria nesta fase. Volume: 3 a 4 séries; step down de 3 por 8, degrau de 10 centímetros. Progressão: a carga sobe pela regra do mais dois, e o degrau, 5 centímetros, quando sai sem valgo. Ao fim, reclassificamos: salto cronometrado de 6 metros e escala funcional com pelo menos 80%, avaliação global de 60 e no máximo um falseio desde a lesão. Potential coper segue para a Fase 3; non-coper persistente vai ao ortopedista antes de saltos e cortes. Daniel continua."
     },
     {
       "layout": "fitt",
@@ -338,7 +338,7 @@
       "tempo_seg": 55,
       "titulo": "Fase 4: retorno gradual ao futebol society, decidido por critérios e não por tempo",
       "itens": {
-        "F": "4 sessões por semana: 2 de força e prevenção, 2–3 específicas de futebol",
+        "F": "4–5 sessões por semana: 2 de força e prevenção, 2–3 específicas de futebol",
         "I": "Técnico 4–6/10; coletivo 6–7/10; jogo 7–9/10 de esforço; dor ≤ 5/10",
         "T": "60–90 min; jogo por tempo limitado: 15–20, 30, 45 e 60 min",
         "Tipo": "Gestos sem oposição, jogos reduzidos, contato e amistoso; FIFA 11+ no aquecimento",

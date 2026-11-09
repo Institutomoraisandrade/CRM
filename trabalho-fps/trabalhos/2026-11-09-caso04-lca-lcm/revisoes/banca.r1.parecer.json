@@ -1,0 +1,274 @@
+{
+  "etapa": "banca",
+  "rodada": 1,
+  "revisor": "fps-banca",
+  "modelo_revisor": "fable",
+  "executor": "pipeline (fps-4-redator-abnt, fps-5-designer-slides, fps-prescritor-exercicio; líderes fps-lider-pesquisa, fps-lider-ciencia, fps-lider-producao)",
+  "arquivos_revisados": [
+    "PROTOCOLO.md",
+    "00-briefing.md",
+    "rubrica.json",
+    "painel.md",
+    "validacao.md",
+    "01-picos.json",
+    "02-analise-critica.md (por busca dirigida)",
+    "03-evidencias.md (por busca dirigida)",
+    "03-quadro-evidencias.json",
+    "04-prescricao.json",
+    "04-prescricao.md",
+    "artigo.json",
+    "artigo.docx (prévia)",
+    "slides.json",
+    "apresentacao.pptx (prévia, 21 páginas)",
+    "roteiro.md",
+    "referencias.json",
+    "revisoes/*.parecer.json e *.resposta.json (19 arquivos)"
+  ],
+  "criterios": {
+    "rigor_cientifico": 8.5,
+    "qualidade_da_evidencia": 7.5,
+    "redacao_e_abnt": 8.0,
+    "apresentacao": 8.0,
+    "coerencia_global": 8.5,
+    "rigor_das_revisoes": 8.0
+  },
+  "justificativas_criterios": {
+    "rigor_cientifico": "Amostra independente de 16 fontes e cerca de 45 números/afirmações: nenhuma divergência numérica; 3 imprecisões de atribuição (corrigidas). Extrapolações pós-reconstrução e convenções do grupo estão declaradas em cada ponto.",
+    "qualidade_da_evidencia": "Núcleo correto (KANON, COMPARE, ACL SNNAP, Delaware-Oslo, Aspetar), mas GRADE/RoB estimados por resumo, 154 registros cortados por volume, recomendações de 4 diretrizes não extraídas e Cochrane/BVS não consultadas. Tudo declarado, o que limita mas não invalida.",
+    "redacao_e_abnt": "Estrutura e citações ABNT corretas, 109 referências citadas = listadas. Pontos fracos: 52 páginas para um 'artigo', quadros muito densos, autores só com prenome e jargão interno do pipeline no Método (corrigido).",
+    "apresentacao": "Títulos-afirmação, FITT-VP completo, semáforo claro, 13:40 de 15:00. Pontos fracos: nenhum slide tem figura ou foto de exercício, a fala carrega muitos percentuais e o logo oficial da FPS não está no arquivo.",
+    "coerencia_global": "Pergunta PICOS, Método, Evidências, Discussão, Considerações finais, slides e prescrição contam a mesma história, com os mesmos números e a mesma força de conclusão ('tentativa com prazo e reavaliação'). Uma exceção no Resumo (41% atribuído à lesão aguda) foi corrigida.",
+    "rigor_das_revisoes": "Os líderes pegaram erros reais e graves (Nicolini, Koga invertido, GRADE do SNNAP, dose de Bullock, triagem truncada) e conferiram texto completo. Falhas: gravidade subestimada na revisão dos slides, achados crítico e maior do artigo corrigidos e reverificados pelo próprio revisor, e 6 itens menores que passaram."
+  },
+  "rubrica": [
+    {
+      "id": "C1",
+      "peso": 2.5,
+      "nota": 2.2,
+      "justificativa": "Biomecânica em cadeia de 5 etapas com dados de cadáver e vídeo, testes com acurácia e escopo, quatro compensações. Perde por não haver figura do joelho/mecanismo, por três testes aparecerem como 'não informado' e porque a fala tem muitos números para sustentar de memória."
+    },
+    {
+      "id": "C2",
+      "peso": 2.5,
+      "nota": 2.2,
+      "justificativa": "Quatro fases com F, I, T, Tipo, V e P, exercícios e critérios de saída medidos; a dose da Fase 2 é rastreável a Eitzen e ACSM. Perde porque várias doses são 'convenção nossa', não há linha do tempo estimada e a Fase 2 concentra 95 s de fala densa."
+    },
+    {
+      "id": "C3",
+      "peso": 1.0,
+      "nota": 0.85,
+      "justificativa": "Semáforo com conduta na sessão e na sessão seguinte para dor, dor no dia seguinte, derrame, falseio, bloqueio e dor medial; limiares declarados como convenção. A nota real depende da segurança de cada integrante na arguição."
+    },
+    {
+      "id": "C4",
+      "peso": 1.5,
+      "nota": 1.2,
+      "justificativa": "Slides limpos, uma ideia por slide, fonte em todos. Sem nenhuma imagem (anatomia, exercício, step down), tabela do slide 4 com letra pequena e logo oficial ausente."
+    },
+    {
+      "id": "C5",
+      "peso": 1.5,
+      "nota": 1.3,
+      "justificativa": "13:40 planejados, 124 a 152 palavras/min por slide, transições escritas. Risco: a fala é densa; sem ensaio cronometrado, a folga de 1:20 some."
+    },
+    {
+      "id": "C6",
+      "peso": 1.0,
+      "nota": 0.95,
+      "justificativa": "3:25, 3:25, 3:20 e 3:30; blocos contínuos, cada integrante com conteúdo técnico próprio."
+    }
+  ],
+  "auditoria_independente": [
+    {
+      "afirmacao": "Artigo, Introdução: 52 lesões de LCA, 0,414/1.000 h, afastamento de 244,5 ± 31,6 dias",
+      "fonte": "PMID 33795969 (resumo) · DOI 10.1590/1413-785220212901235225",
+      "resultado": "confere"
+    },
+    {
+      "afirmacao": "Artigo, Introdução: 35.139 reconstruções; LCM concomitante sem aumento global de revisão; KOOS Esporte/Recreação −2 pontos",
+      "fonte": "PMID 42367014 (resumo) · DOI 10.1177/03635465261457327",
+      "resultado": "confere"
+    },
+    {
+      "afirmacao": "Artigo, Tabela 1: Lachman 85/94 e pivot-shift 24/98 (28 estudos); gaveta anterior 64/87 (18 estudos); Lachman LR+ 10,2 e LR− 0,2",
+      "fonte": "PMID 16715828, 35945782, 27693100 (resumos) · DOI 10.2519/jospt.2006.2011; 10.1097/MD.0000000000029263; 10.1016/j.ptsp.2016.08.002",
+      "resultado": "confere"
+    },
+    {
+      "afirmacao": "Artigo 3.1: deformação do LCA 0,105 com valgo + rotação interna, contra menos de 0,077 isolados",
+      "fonte": "PMID 21266934 (resumo) · DOI 10.1249/MSS.0b013e31820f8395",
+      "resultado": "confere"
+    },
+    {
+      "afirmacao": "Artigo 3.2 e Quadro 3: IKDC-Brasil com CCI 0,988; triple hop com 51% e 66% de simetria de trabalho do joelho",
+      "fonte": "PMID 20472755 e 34889652 (resumos) · DOI 10.1177/0363546510365314; 10.1177/03635465211063192",
+      "resultado": "confere"
+    },
+    {
+      "afirmacao": "Slide 4: Lachman com sensibilidade de 81%, 68% em rupturas completas; pivot-shift 55%",
+      "fonte": "PMID 35150292 (resumo) · DOI 10.1007/s00167-022-06898-4",
+      "resultado": "confere (68% [54–79] em rupturas completas é o que o resumo traz)"
+    },
+    {
+      "afirmacao": "Slide 5 (fala): em mulheres saudáveis, pior qualidade no step down associou-se a menor dorsiflexão, não à força do quadril",
+      "fonte": "PMID 20972344 (resumo) · DOI 10.2519/jospt.2010.3424",
+      "resultado": "confere; o resumo só relata diferença de dorsiflexão (29 mulheres), 'não à força do quadril' é leitura do silêncio do resumo"
+    },
+    {
+      "afirmacao": "Slide 8: retorno a pivô só após 9 meses ou mais; enxerto pode levar mais de 12 meses",
+      "fonte": "Texto completo PMC6723618 (PMID 31431274) · DOI 10.1016/j.berh.2019.01.018",
+      "resultado": "confere ('at least 9 months'; ligamentização 'may last more than 12 months')"
+    },
+    {
+      "afirmacao": "Slide 12 e prescrição: critérios mínimos de corrida da diretriz Aspetar (derrame nenhum/traço, flexão 95%, extensão completa, quadríceps LSI > 80%, saltitos sem dor); retorno com 100% isocinético em pivô de alta demanda, CMJ e drop jump > 90%; concordância média ≥ 75,7%; 8 semanas de pliometria",
+      "fonte": "Texto completo PMC11785408 (PMID 36731908) · DOI 10.1136/bjsports-2022-106158",
+      "resultado": "confere; a diretriz lista mais dois critérios de corrida não usados (LSI > 80% de impulso excêntrico no CMJ; corrida em piscina/Alter-G sem dor) e declara que são critérios para atleta profissional"
+    },
+    {
+      "afirmacao": "Prescrição/artigo: 4 de 98 (3,9%) com dor e derrame após pliometria, todos com reparo meniscal; 6–8 repetições, 3–4 séries, '+2', ≤ 75 min, 10 sessões",
+      "fonte": "Texto completo PMC3158986 (PMID 20710097) · DOI 10.2519/jospt.2010.3345",
+      "resultado": "confere com o texto (o próprio artigo escreve 4/98 = 3,9%, embora a conta dê 4,1%); a coorte também excluiu índice de força do quadríceps ≤ 70%, omitido pelo trabalho (A4)"
+    },
+    {
+      "afirmacao": "Artigo 5.4: 'consenso de especialistas' sobre LCM grau III",
+      "fonte": "PMID 20439679 (resumo) · DOI 10.2106/JBJS.I.01229",
+      "resultado": "impreciso: é revisão narrativa que relata haver consenso (A3)"
+    },
+    {
+      "afirmacao": "Artigo 3.2: κ 0,60–0,80 para agachamento unipodal 'e step down'",
+      "fonte": "PMID 21335344 (resumo) · DOI 10.1177/0363546510395456",
+      "resultado": "impreciso: o estudo avaliou só o agachamento unipodal (A3)"
+    },
+    {
+      "afirmacao": "Artigo 3.4: 71 saudáveis (38 homens), prancha como melhor preditor do step down",
+      "fonte": "PMID 27592407 (resumo) · DOI 10.1016/j.ptsp.2016.05.007",
+      "resultado": "confere (desfecho = repetições em 60 s; o valgo só 'tendeu' a se correlacionar)"
+    },
+    {
+      "afirmacao": "Artigo 3.1 e 5.3 (trechos corrigidos pelo líder de ciência após achado crítico e maior): cinemática de Koga 2010 e seguimento de 10 anos de Delaware-Oslo",
+      "fonte": "PMID 20595545 e 39919167 (resumos) · DOI 10.1177/0363546510373570; 10.2106/JBJS.24.00243",
+      "resultado": "confere"
+    }
+  ],
+  "achados": [
+    {
+      "id": "A1",
+      "gravidade": "menor",
+      "local": "artigo.json > resumo e abstract",
+      "problema": "O Resumo dizia que, 'em adultos jovens ativos com lesão aguda', 41% foram operados em 18 meses. Os 41% são do ACL SNNAP, que incluiu lesão não aguda com instabilidade persistente; nos ensaios de lesão aguda os valores são 50% em 2 anos (COMPARE) e 51% em 5 anos (KANON). O corpo do texto (5.2 e Quadro 5) estava correto.",
+      "evidencia": "artigo.json 5.2: '316 pacientes com LCA não agudo e instabilidade persistente... 41% (65/160)'; '50% (41/82)' no COMPARE; '30 (51%) em 5 anos' no KANON. artigo-fidelidade.r1 registrou as Considerações finais como coerentes e não conferiu o Resumo.",
+      "correcao": "Resumo e abstract reescritos: cerca de metade dos alocados à reabilitação foi operada (50% em 2 anos e 51% em 5 anos) na lesão aguda; 41% em 18 meses na lesão não aguda com instabilidade persistente. Aplicado pela banca (237 palavras).",
+      "responsavel": "fps-lider-ciencia",
+      "licao": "Na revisão de fidelidade, confira o Resumo e o Abstract frase a frase contra o corpo: cada número deve aparecer com a população e o horizonte do estudo de origem."
+    },
+    {
+      "id": "A2",
+      "gravidade": "menor",
+      "local": "artigo.json > 4 Método (fluxo), 5.6 (Quadro 5, frase de abertura), 6.1, Quadros 7 e 10, 6.9",
+      "problema": "Termos internos do pipeline chegaram ao artigo assinado por quatro estudantes: 'corte autorizado pelo líder da fase', 'julgamento do avaliador', 'convenção do prescritor' (3 vezes) e 'sem fonte específica nesta etapa'. Um professor perguntaria quem é o líder, o avaliador e o prescritor.",
+      "evidencia": "grep em artigo.json (linhas 377, 478, 646 antes da correção); a revisão de forma (artigo-forma.r1/r2) não registrou.",
+      "correcao": "Trocado por 'limite de volume de leitura, priorizados os desenhos de maior hierarquia e a pertinência à pergunta', 'julgamento do grupo', 'convenção do grupo' e 'sem fonte específica localizada'. Aplicado pela banca.",
+      "responsavel": "fps-lider-producao",
+      "licao": "Antes de aprovar a forma, busque no texto final os nomes de papéis do pipeline (líder, avaliador, prescritor, executor, etapa, agente): o documento do estudante só pode falar em 'os autores' ou 'o grupo'."
+    },
+    {
+      "id": "A3",
+      "gravidade": "menor",
+      "local": "artigo.json > 5.4 (LCM) e 3.2 (testes funcionais)",
+      "problema": "Duas atribuições mais fortes que a fonte, introduzidas na redação (02-analise-critica.md está correto): (1) Wijdicks 2010 citado como 'consenso de especialistas', mas é revisão narrativa que relata haver consenso; (2) κ 0,60–0,80 atribuído a 'agachamento unipodal e step down', mas Crossley 2011 avaliou apenas o agachamento unipodal.",
+      "evidencia": "PubMed PMID 20439679 (resumo: 'there is a consensus that it should be the first step'; tipo Review) e PMID 21335344 (resumo: 'single-leg squat task', κ 0,600–0,800). referencias.json classifica wijdicks2010 como 'Revisão narrativa'.",
+      "correcao": "5.4: 'Uma revisão narrativa relata haver consenso de que...'. 3.2: κ restrito ao agachamento unipodal; step down por analogia, com a escala de 6 pontos de Rabin 2010. Aplicado pela banca. Na arguição, não dizer que o κ é do step down.",
+      "responsavel": "fps-4-redator-abnt",
+      "licao": "Ao condensar o texto das etapas, não troque o desenho do estudo (revisão narrativa não é consenso) nem estenda um dado de confiabilidade a um teste que o estudo não avaliou."
+    },
+    {
+      "id": "A4",
+      "gravidade": "menor",
+      "local": "04-prescricao.json/.md > premissas (evidência de dose); artigo.json > 6.1",
+      "problema": "As exclusões do programa de referência (Eitzen 2010) foram transcritas incompletas: além de menisco sintomático e colateral grau III/IV, o estudo excluiu índice de força do quadríceps ≤ 70%. O caso tem 'atrofia pronunciada do quadríceps', de modo que Bruno provavelmente ficaria fora da coorte por três motivos (derrame não resolvido, LCM, quadríceps). A omissão escondia justamente o argumento que sustenta as semanas 1–2 com 8–12 RM.",
+      "evidencia": "Texto completo PMC3158986, Métodos: 'Patients were excluded if they had symptomatic meniscal injuries, ROM deficits..., a quadriceps muscle strength index less than or equal to 70%, grade III or IV injury to collateral ligaments'. 04-prescricao.r1 leu o texto completo e listou só duas exclusões.",
+      "correcao": "Exclusão acrescentada em 04-prescricao.json, 04-prescricao.md e artigo 6.1. Aplicado pela banca. Usar na arguição (pergunta 5 do banca.md).",
+      "responsavel": "fps-lider-ciencia",
+      "licao": "Ao conferir critérios de elegibilidade de um estudo de referência no texto completo, compare a lista inteira com cada déficit do caso: a exclusão que coincide com um achado do paciente é a que mais importa."
+    },
+    {
+      "id": "A5",
+      "gravidade": "menor",
+      "local": "04-prescricao.json/.md > Fase 4 > F; artigo.json > Quadro 10; slides.json > slide 13",
+      "problema": "Conta que não fecha: 'Frequência: 4 sessões por semana: 2 de força e prevenção + 2 a 3 específicas de futebol' (2 + 2–3 = 4 a 5). É o tipo de detalhe que a banca cobra em C2.",
+      "evidencia": "Leitura cruzada de 04-prescricao.json (fases[3].fitt_vp.F), Quadro 10 do artigo e slide 13.",
+      "correcao": "Corrigido para '4 a 5 sessões/semana' nos quatro arquivos; pptx e docx regenerados. Aplicado pela banca.",
+      "responsavel": "fps-lider-ciencia",
+      "licao": "Some os componentes de cada linha de frequência e de volume antes de aprovar uma prescrição: total declarado e parcelas têm de coincidir."
+    },
+    {
+      "id": "A6",
+      "gravidade": "menor",
+      "local": "slides.json > slides 4, 6 e 11",
+      "problema": "Três formulações imprecisas em slide projetado: (1) slide 4, 'LSI abaixo de 7–13% pode ser ruído' (o correto é diferença de LSI menor que 7–13%); (2) slide 6, título com '41% a 51% dos jovens ativos' e coluna 'Reconstrução precoce do LCA' que inclui o ACL SNNAP, de lesão não aguda (média de idade acima dos 30 anos); (3) slide 11, 'cinco semanas de força de alta carga', mas as semanas 1–2 usam 8–12 RM. Na fala do slide 11, 'tronco e dorsiflexão, que respondem ao valgo' afirmava mais que as associações das fontes.",
+      "evidencia": "artigo.json 3.2 (mudança mínima detectável do LSI de 7,05% a 12,96%); 5.2 (SNNAP: LCA não agudo); slide 11, campo I ('Semanas 1–2: 8–12 RM'); PMID 27592407 (valgo apenas 'tendeu' a se correlacionar com a prancha).",
+      "correcao": "Slide 4: 'diferença de LSI menor que 7–13% pode ser ruído'. Slide 6: '41% a 51% dos pacientes' e coluna 'Reconstrução do LCA'. Slide 11: 'força progressiva'; fala: 'ligados à qualidade do step down'. pptx, roteiro e prévia regenerados (13:40 mantidos). Aplicado pela banca.",
+      "responsavel": "fps-lider-producao",
+      "licao": "No slide, leia cada tópico isolado, como a plateia lê: frase encurtada que muda o sentido do dado (percentual, população, horizonte) é erro de conteúdo, não de estilo."
+    },
+    {
+      "id": "A7",
+      "gravidade": "menor",
+      "local": "revisoes/slides.r1.parecer.json > A1 e A2",
+      "problema": "Gravidade subestimada. O parecer registrou como 'menor' um rótulo de horizonte errado para um número ('(2 anos)' para 41% a 51%), uma afirmação mais forte que a fonte ('falseio recorrente indica cirurgia') e um dado de coorte mista atribuído ao tratamento sem cirurgia (60% no futebol). Pelo PROTOCOLO §8, número divergente da fonte e extrapolação indevida são 'critica'. Como 'menor', o líder corrigiu sozinho, a etapa foi aprovada em 1 rodada e nenhuma lição ficou para o designer.",
+      "evidencia": "slides.r1.parecer.json (6 achados, todos 'menor', campo licao vazio); PROTOCOLO §8, definição de 'critica'; painel.md (slides: 1 rodada).",
+      "correcao": "Sem efeito no produto (as correções estão no slides.json e foram conferidas pela banca). Registrar as lições no fechamento (parecer.py licoes).",
+      "responsavel": "fps-lider-producao",
+      "licao": "Classifique o achado pela definição do protocolo, não pelo esforço de corrigir: número com população ou horizonte errado e afirmação mais forte que a fonte são críticos mesmo quando a correção cabe em uma linha, e sempre levam lição para o executor."
+    },
+    {
+      "id": "A8",
+      "gravidade": "menor",
+      "local": "revisoes/artigo-fidelidade.r1.parecer.json e r2",
+      "problema": "Um achado crítico (rotação interna/externa de Koga invertida) e um maior (ACLR tardia pior aos 10 anos omitida) foram corrigidos pelo próprio revisor na rodada 1 e verificados por ele mesmo na rodada 2. O parecer declara que foi 'por instrução do orquestrador', mas o efeito é o mesmo: quem errou não corrigiu, e a correção de um erro crítico não teve conferência independente.",
+      "evidencia": "artigo-fidelidade.r1.parecer.json, campo 'modo'; r2, campo 'decisoes_sobre_r1'. A banca fez a conferência independente que faltava: artigo.json 3.1 confere com o resumo do PMID 20595545 (rotação interna de 8° nos primeiros 40 ms, depois externa de 17°, 'possibly after the ACL had torn'; DOI 10.1177/0363546510373570) e 5.3 confere com o resumo do PMID 39919167 (ACLR tardia com KOOS Esporte, KOOS Qualidade de vida e saltos piores, p ≤ 0,03; quadríceps simétrico em 72%; osteoartrite sintomática em 1%; DOI 10.2106/JBJS.24.00243).",
+      "correcao": "Nenhuma no produto: as duas correções estão certas. No próximo trabalho, achado crítico volta ao executor, ou, se o prazo impedir, a verificação da correção é feita por outro agente.",
+      "responsavel": "fps-lider-ciencia",
+      "licao": "Correção de achado crítico feita pelo revisor precisa de um segundo par de olhos: registre 'escalonado' e peça verificação a outro agente em vez de aprovar a própria edição."
+    },
+    {
+      "id": "A9",
+      "gravidade": "menor",
+      "local": "apresentacao.pptx (17 slides); artigo.docx (página de título)",
+      "problema": "Pendências que só o grupo resolve: (1) nenhum slide tem figura, e o critério C4 fala em recursos visuais, o que pesa numa prescrição de exercício; (2) o gerador avisa 'logo da FPS não encontrado', e a paleta é provisória; (3) os autores aparecem só com prenome e 'Graduando(a)', o que não atende à NBR 6022.",
+      "evidencia": "previa-apresentacao/folha-de-contato.png (só texto, tabelas e diagramas); saída do gerar_slides_fps.py; previa-artigo/pagina-02.png.",
+      "correcao": "Não corrigível pela banca. O grupo insere 3 ou 4 fotos próprias (step down com e sem valgo, isometria a 60°, leg press unilateral, teste do derrame) e uma figura anatômica com crédito; coloca o logo oficial em trabalho-fps/marca/ e regenera; preenche nomes completos em 00-briefing.md/artigo.json.",
+      "responsavel": "fps-5-designer-slides",
+      "licao": "Em apresentação de prescrição de exercício, reserve no slides.json espaços de imagem (layout 'imagem' ou marcador) para as fotos que o estudante vai inserir, e avise no relatório quais faltam."
+    }
+  ],
+  "correcoes_aplicadas": [
+    "A1: artigo.json, resumo e abstract (população e horizonte dos 41%/50%/51%).",
+    "A2: artigo.json, 6 trocas de termos internos do pipeline.",
+    "A3: artigo.json, 5.4 (Wijdicks como revisão narrativa) e 3.2 (κ só do agachamento unipodal; step down por analogia, com Rabin 2010).",
+    "A4: 04-prescricao.json, 04-prescricao.md e artigo.json 6.1 (exclusão de índice de força do quadríceps ≤ 70% em Eitzen 2010).",
+    "A5: '4 a 5 sessões/semana' na Fase 4 em 04-prescricao.json/.md, artigo.json (Quadro 10) e slides.json (slide 13).",
+    "A6: slides.json, slides 4, 6 (título e coluna) e 11 (título e uma frase da fala).",
+    "artigo.docx, apresentacao.pptx, roteiro.md, previa-artigo/ (52 páginas) e previa-apresentacao/ (21 páginas) regenerados; validar_trabalho.py: 0 erros; tempo mantido em 13:40. Cópias dos arquivos anteriores no scratchpad da sessão (bak/)."
+  ],
+  "pontos_fortes": [
+    "Honestidade de certeza: cada número tem fonte ou é declarado convenção, e cada critério pós-reconstrução é declarado extrapolação. Na amostra independente (16 fontes, 3 em texto completo) não houve número divergente.",
+    "Decisão clínica bem montada para a arguição: non-coper provisório, bloco de cerca de 10 sessões supervisionadas, reclassificação e gatilhos de encaminhamento (segundo falseio, valgo a 30°, derrame que não resolve).",
+    "C3 é o ponto mais forte: semáforo com conduta na sessão e na sessão seguinte, coerente entre prescrição, artigo e slide 14.",
+    "Tempo e participação: 13:40, 3:20 a 3:30 por integrante, 124 a 152 palavras por minuto em cada slide."
+  ],
+  "tempo_e_fala": {
+    "total": "13:40 de 15:00",
+    "por_integrante": {
+      "Rômulo": "3:25 (455 palavras, 133 ppm)",
+      "Júlia": "3:25 (469 palavras, 137 ppm)",
+      "Gabriel": "3:20 (452 palavras, 136 ppm)",
+      "Daniel": "3:30 (487 palavras, 139 ppm)"
+    },
+    "slides_no_limite": "slides 1 (152 ppm), 2 (148), 6 (144), 13 (145) e 14 (145): dentro de 130–150, mas com muitos números; ensaiar com cronômetro"
+  },
+  "limitacoes_da_auditoria": "WebFetch para pmc.ncbi.nlm.nih.gov está fora da rede permitida; os textos completos foram lidos pelo conector PubMed (PMC3158986, PMC6723618, PMC11785408). 02-analise-critica.md e 03-evidencias.md foram conferidos por busca dirigida e pelos pareceres, não relidos linha a linha.",
+  "escalonado": false,
+  "veredito_revisor": "APROVADO",
+  "resumo": "Pronto para entrega com ressalvas. Nenhum achado crítico ou maior: 9 menores, 6 corrigidos pela banca nos produtos (Resumo, jargão do pipeline, duas atribuições, exclusão de Eitzen, conta da Fase 4, três formulações de slide), 2 de processo dos líderes e 1 pendência do grupo (imagens, logo, nomes completos). Nota estimada pela rubrica: 8,7/10. O que separa essa nota de 9,5 é ensaio e recurso visual, não conteúdo."
+}
