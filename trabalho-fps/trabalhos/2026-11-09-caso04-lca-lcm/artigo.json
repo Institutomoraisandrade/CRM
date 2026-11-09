@@ -1,0 +1,1157 @@
+{
+ "config": {
+  "fonte": "Arial",
+  "estilo_citacao": "2023",
+  "autores_referencia": "et_al",
+  "capa": true,
+  "abstract": true,
+  "cidade": "Recife",
+  "ano": 2026
+ },
+ "instituicao": "Faculdade Pernambucana de Saúde",
+ "curso": "Curso de Graduação em Educação Física",
+ "titulo": "Reabilitação conservadora da lesão do LCA e do LCM",
+ "subtitulo": "estudo de caso e proposta de intervenção em atleta de futebol society",
+ "titulo_en": "Conservative rehabilitation of combined ACL and MCL injury: case study and intervention proposal for a society football player",
+ "autores": [
+  {
+   "nome": "Rômulo",
+   "nota": "Graduando(a) em Educação Física pela Faculdade Pernambucana de Saúde (FPS)."
+  },
+  {
+   "nome": "Júlia",
+   "nota": "Graduando(a) em Educação Física pela Faculdade Pernambucana de Saúde (FPS)."
+  },
+  {
+   "nome": "Gabriel",
+   "nota": "Graduando(a) em Educação Física pela Faculdade Pernambucana de Saúde (FPS)."
+  },
+  {
+   "nome": "Daniel",
+   "nota": "Graduando(a) em Educação Física pela Faculdade Pernambucana de Saúde (FPS)."
+  }
+ ],
+ "resumo": "**Objetivo:** apresentar o raciocínio clínico e uma proposta de intervenção por exercício para um atleta amador de futebol society, de 22 anos, com insuficiência do ligamento cruzado anterior (LCA) e estiramento do ligamento colateral medial (LCM), em tratamento conservador. **Método:** estudo de caso apoiado em revisão narrativa estruturada pela estratégia PICOS, com buscas no PubMed, no Consensus e na web em 9 de novembro de 2026 (486 registros identificados, 378 triados e 47 documentos no quadro de evidências) e certeza avaliada pelo sistema GRADE a partir dos resumos. **Resultados:** não há diretriz brasileira de reabilitação do LCA. Em adultos jovens ativos com lesão aguda, a reabilitação com reconstrução tardia opcional teve função semelhante à da reconstrução precoce (certeza baixa), mas 41% a 51% dos pacientes foram operados, sobretudo por instabilidade. Critérios de progressão, dose do exercício e proteção do LCM derivam de populações pós-reconstrução, de adultos saudáveis ou de consenso, com certeza muito baixa para o tratamento conservador. A proposta organiza quatro fases com frequência, intensidade, tempo, tipo, volume e progressão, critérios de saída medidos, um semáforo de ajuste por dor, derrame e falseio e critérios de encaminhamento. **Conclusão:** a reabilitação por critérios é defensável como tentativa com prazo e reavaliação, e o falseio recorrente ou a instabilidade em valgo exigem encaminhamento ortopédico.",
+ "palavras_chave": [
+  "lesões do ligamento cruzado anterior",
+  "tratamento conservador",
+  "terapia por exercício",
+  "volta ao esporte",
+  "futebol"
+ ],
+ "abstract": "**Objective:** to present the clinical reasoning and an exercise-based intervention proposal for a 22-year-old amateur society football player with anterior cruciate ligament (ACL) insufficiency and a medial collateral ligament (MCL) sprain managed conservatively. **Method:** case study supported by a narrative review structured by the PICOS strategy, searching PubMed, Consensus and the web on 9 November 2026 (486 records identified, 378 screened and 47 documents in the evidence table), with certainty rated by GRADE from abstracts. **Results:** no Brazilian guideline for ACL rehabilitation was found. In active young adults with acute injury, rehabilitation with optional delayed reconstruction produced function similar to early reconstruction (low certainty), but 41% to 51% of patients underwent surgery, mainly because of instability. Progression criteria, exercise dose and MCL protection derive from post-reconstruction populations, healthy adults or consensus, with very low certainty for conservative management. The proposal sets out four phases with frequency, intensity, time, type, volume and progression, measured exit criteria, a traffic-light system for pain, effusion and giving way, and referral criteria. **Conclusion:** criteria-based rehabilitation is defensible as a time-limited trial with reassessment, and recurrent giving way or valgus instability require orthopaedic referral.",
+ "keywords": [
+  "anterior cruciate ligament injuries",
+  "conservative treatment",
+  "exercise therapy",
+  "return to sport",
+  "soccer"
+ ],
+ "secoes": [
+  {
+   "titulo": "Introdução",
+   "blocos": [
+    "A ruptura do ligamento cruzado anterior (LCA) ocorre sobretudo em pessoas jovens e ativas e tem repercussões físicas e psicológicas de longo prazo. O manejo admite três vias: reabilitação como primeira linha, com reconstrução do LCA (ACLR, do inglês *anterior cruciate ligament reconstruction*) se houver instabilidade funcional; ACLR seguida de reabilitação; ou reabilitação pré-operatória seguida de ACLR [@filbay2019]. No futebol, modalidade de desacelerações e mudanças de direção, a lesão é frequente: em cinco temporadas (2015–2019) das séries A e B do Campeonato Brasileiro foram detectadas 52 lesões de LCA, com incidência de 0,414 por 1.000 horas de jogo e afastamento médio de 244,5 ± 31,6 dias, mas a partir de dados de uma plataforma pública, e não de registro médico [@nitta2021]. Em um ambulatório especializado de joelho em São Paulo, o futebol foi o esporte mais frequente entre 440 atletas (167 pacientes) [@nicolini2014].",
+    "O ligamento colateral medial (LCM) frequentemente acompanha o LCA: a lesão combinada é a lesão ligamentar combinada mais comum do joelho [@abdul2026] e responde por cerca de 20% das lesões ligamentares do joelho [@shultz2024]. Em 51 equipes profissionais de futebol da UEFA, o LCM foi a lesão traumática de joelho mais comum, com 130 casos entre 4.364 lesões registradas (3%), 75% deles por contato [@lundblad2019]. Em registro norueguês de 35.139 reconstruções, o LCM concomitante não aumentou o risco global de revisão, mas associou-se a um escore *Knee injury and Osteoarthritis Outcome Score* (KOOS) de Esporte/Recreação 2 pontos menor aos 2 anos [@birkenes2026]. Não foram localizados, nas fontes consultadas, dados de incidência de lesão do LCA ou do LCM em futebol society ou amador no Brasil, nem de custo para o Sistema Único de Saúde (SUS); os números nacionais citados vêm de atletas profissionais e de um serviço terciário, sem denominador populacional.",
+    "Para o profissional de Educação Física, o interesse recai sobre a fase em que o joelho deixa de ser tratado como lesão aguda e passa a ser treinado: força, controle neuromuscular, pliometria, agilidade, retorno ao esporte e prevenção de nova lesão. É também a fase de menor sustentação científica. Um *overview* de 22 revisões sistemáticas (142 ensaios, em sua maioria com homens) concluiu que o nível geral de evidência da reabilitação do LCA é baixo, e a maior parte das intervenções foi avaliada no período perioperatório [@culvenor2022]. A diretriz Aspetar, voltada ao pós-operatório, aponta pouca evidência de dose-resposta e nenhuma sobre quais critérios de progressão ou alta adotar [@kotsifaki2023].",
+    "Este estudo de caso tem como objetivo apresentar o raciocínio clínico e uma proposta de intervenção por exercício, em quatro fases com critérios de progressão, para um atleta amador de futebol society com insuficiência do LCA e estiramento do LCM em tratamento conservador, apoiados na melhor evidência disponível e com a certeza dessa evidência declarada."
+   ]
+  },
+  {
+   "titulo": "Apresentação do caso",
+   "blocos": [
+    "O caso foi fornecido pelo professor da disciplina e é tratado como dado, sem citação. O Quadro 1 reproduz o enunciado.",
+    {
+     "tipo": "quadro",
+     "titulo": "Dados do caso clínico conforme o enunciado",
+     "colunas": [
+      "Item",
+      "Descrição"
+     ],
+     "linhas": [
+      [
+       "Paciente",
+       "Bruno, 22 anos, atleta amador de futebol society."
+      ],
+      [
+       "Queixa principal",
+       "Dor no joelho esquerdo e sensação de “instabilidade/falseio” ao tentar mudar de direção."
+      ],
+      [
+       "Histórico da lesão",
+       "Mecanismo de trauma em valgo dinâmico associado à rotação externa da tíbia e flexão de joelho enquanto o pé estava preso ao gramado."
+      ],
+      [
+       "Achados da avaliação",
+       "Edema/derrame articular leve e dor na linha articular medial. Testes de gaveta anterior e de Lachman positivos para frouxidão e ausência de parada firme. Atrofia pronunciada do quadríceps (especialmente do vasto medial) e déficit de controle neuromuscular no quadril (valgo dinâmico pronunciado no *step down*)."
+      ],
+      [
+       "Hipótese diagnóstica",
+       "Pós-operatório tardio/conservador de lesão do LCA e estiramento do LCM."
+      ]
+     ],
+     "larguras_cm": [
+      3.5,
+      12.5
+     ],
+     "fonte": "Enunciado do Caso Clínico 04, fornecido pelo professor."
+    },
+    "O enunciado não informa o tempo desde a lesão, a existência de cirurgia prévia, o resultado de ressonância magnética, a frouxidão medida por artrômetro, o grau do estiramento do LCM nem o número de episódios de falseio. Esses dados mudariam a conduta e permanecem como pendências de avaliação ao longo do texto. A hipótese do professor une “pós-operatório tardio” e “conservador”, situações distintas; a incoerência com o exame físico é discutida na seção 3.5. O grupo adotou o cenário conservador como foco, e o pós-operatório tardio entra apenas como nota breve (seção 7)."
+   ]
+  },
+  {
+   "titulo": "Raciocínio clínico",
+   "blocos": [
+    "Cada afirmação desta seção recebe uma classe de certeza: consenso (acordo explícito de especialistas), evidência clínica (estudos em pacientes), evidência mecanística (cadáver, modelo computacional, voluntário saudável com derrame experimental ou análise de vídeo) ou hipótese (plausível, sem demonstração). Quando a conclusão é do grupo e não da fonte, o texto indica tratar-se de inferência."
+   ],
+   "subsecoes": [
+    {
+     "titulo": "Mecanismo da lesão e cadeia biomecânica",
+     "blocos": [
+      "Nos relatos de lesão sem contato no futebol, a situação típica é a desaceleração ou a mudança de direção com o pé plantado e o peso do corpo sobre o membro lesionado [@alentorngeli2009] (revisão narrativa, com dados majoritariamente de mulheres); o pé preso ao gramado, como no caso, faz o joelho absorver a energia da rotação (inferência). Em vídeo de 10 lesões sem contato de handebol e basquete femininos, o valgo passou de neutro a 12° em 40 ms, com cerca de 23° de flexão, e a ruptura do LCA ocorreu provavelmente cerca de 40 ms após o contato [@koga2010]. Em 39 rupturas do LCA de jogadores profissionais homens de futebol, 25 foram sem contato, 8 por contato indireto e 6 por contato direto; o valgo foi frequente nas lesões sem contato e de contato indireto (n = 11), mas o colapso dinâmico em valgo foi infrequente (n = 3) [@walden2015]. Esse estudo não analisou a rotação da tíbia e o enunciado não informa se houve contato, de modo que essas séries não classificam o mecanismo de Bruno, cuja combinação de valgo e rotação externa é a descrição clássica da lesão do complexo medial [@braaten2022].",
+      "O ligamento colateral medial superficial (sLCM) é a primeira barreira ao valgo: foi o principal estabilizador em 24 joelhos de cadáver [@griffith2009], respondeu por 40% a 54% da restrição ao valgo entre 0° e 90° em 12 joelhos testados com robô, contra 12% do LCM profundo (dLCM) e 16% do complexo oblíquo posterior e cápsula posteromedial em extensão [@ball2020], e foi a restrição mais importante de 0° a 120° em 8 joelhos [@herbst2023]. A rotação externa da tíbia sobrecarrega as mesmas estruturas: dLCM (23% a 13%) e sLCM (13% a 22%) a restringem, e o LCA contribui com apenas 6% a 9% [@ball2020]. A instabilidade resultante, com rotação externa e subluxação anterior do platô tibial medial, é a instabilidade rotatória anteromedial (AMRI, do inglês *anteromedial rotatory instability*) [@dambrosi2021].",
+      "Sem o freio medial, a translação anterior recai sobre o LCA, principal restrição a esse movimento (63% a 77% da força de gaveta entre 0° e 90°, contra 4% a 7% do sLCM) [@ball2020]; com rotação externa associada, o LCA é a principal restrição entre 0° e 60° de flexão (50,2% a 30°) [@herbst2023]. Os autores do estudo robótico concluem que a deficiência do LCM aumenta o risco de falha do enxerto do LCA [@ball2020], o que sustenta, em cadáver, a direção “freio medial perdido, LCA sobrecarregado” (evidência mecanística). Há uma tensão: o enunciado descreve rotação externa, enquanto simulações mostram que valgo e rotação interna combinados elevam a deformação do LCA mais do que cada movimento isolado (pico de 0,105 contra menos de 0,077) [@shin2011], e no vídeo de handebol e basquete a tíbia girou internamente cerca de 8° nos primeiros 40 ms, achado que os autores atribuem à ruptura já ocorrida [@koga2010]. As descrições não se excluem (lesão mista ou sequência medial seguida do LCA), mas não foi localizado estudo que demonstre a sequência de falha em lesão combinada real, e ela permanece como hipótese biomecânica plausível.",
+      "Perdido o LCA, o LCM trabalha mais: em 8 joelhos de cadáver, a força *in situ* no LCM, menor que 20 N no joelho íntegro, chegou a cerca de 2 vezes esse valor sob carga anterior de 134 N após a secção do LCA [@kanamori2000], e, em modelo de marcha, o LCM foi a principal restrição passiva à translação anterior no joelho sem LCA [@shelburne2005]. Infere-se que um LCM em cicatrização recebe carga adicional enquanto o LCA estiver insuficiente, o que fundamenta limitar o valgo carregado nas fases iniciais e monitorar a estabilidade em valgo (seção 6). Quanto às estruturas associadas, a “tríade de O’Donoghue” (LCA, LCM e menisco) é citada após valgo com rotação externa, mas a literatura localizada se limita a relatos de caso [@dacombe2013]; no ambulatório brasileiro já citado, 34,7% das lesões de LCA tinham lesão meniscal e 6,2%, lesão do LCM [@nicolini2014]. Não foi localizada fonte verificada para o padrão de contusão óssea nem para o menisco medial como restrição secundária à translação anterior (lacunas)."
+     ]
+    },
+    {
+     "titulo": "Interpretação dos achados e dos testes clínicos",
+     "blocos": [
+      "O Quadro 2 interpreta cada achado do enunciado e indica como confirmá-lo. Os testes de estresse ligamentar, de gaveta, de Lachman e meniscais são atos de diagnóstico da medicina e da fisioterapia; ao profissional de Educação Física cabe interpretar o laudo, aplicar testes funcionais e questionários e monitorar derrame e dor (delimitação de escopo do grupo, sem fonte).",
+      {
+       "tipo": "quadro",
+       "titulo": "Achados do caso, interpretação mecânica e forma de confirmação",
+       "colunas": [
+        "Achado",
+        "Interpretação",
+        "Como confirmar ou graduar",
+        "Certeza"
+       ],
+       "linhas": [
+        [
+         "Derrame leve",
+         "Reação intra-articular que dispara a inibição muscular artrogênica (seção 3.3); a natureza (hemartrose ou sinovite) não consta do enunciado.",
+         "Teste de varredura modificado, escala de 5 pontos, κ = 0,75 [@sturgill2009]. O consenso exige derrame no máximo leve para considerar sucesso [@lynch2015].",
+         "Evidência clínica"
+        ],
+        [
+         "Dor na linha articular medial",
+         "Três candidatos: sLCM ou dLCM, ligamento oblíquo posterior e menisco medial.",
+         "Valgo em extensão (oblíquo posterior) e a 20°–30° (sLCM) [@wijdicks2010; @runer2026classification]; ressonância define a estrutura. Testes meniscais pouco acurados (Tabela 1) [@hegedus2007].",
+         "Evidência clínica (testes)"
+        ],
+        [
+         "Lachman e gaveta anterior positivos, sem parada firme",
+         "Sugere perda da restrição anterior, isto é, LCA sem função (inferência). “Sem parada firme” é sinal qualitativo, sem dado de acurácia localizado.",
+         "Artrômetro, com diferença entre os lados ≥ 3 mm usada para confirmar ruptura unilateral [@moksnes2008]; ressonância.",
+         "Evidência clínica"
+        ],
+        [
+         "Atrofia do quadríceps (vasto medial)",
+         "Inibição muscular artrogênica somada ao desuso (seção 3.3).",
+         "Perimetria, dinamometria e índice de simetria entre os membros (LSI, do inglês *limb symmetry index*).",
+         "Evidência clínica (atrofia global); hipótese (seletividade do vasto medial)"
+        ],
+        [
+         "Valgo dinâmico no *step down*",
+         "Controle insuficiente de quadril, tronco, tornozelo e quadríceps; pode ser causa, consequência ou compensação (seção 3.4).",
+         "Escala visual de qualidade do movimento; agachamento unipodal, κ de 0,60 a 0,80 [@crossley2011].",
+         "Evidência clínica (confiabilidade); causalidade é hipótese"
+        ],
+        [
+         "Falseio na mudança de direção",
+         "Instabilidade dinâmica: o freio passivo (LCA) falhou e o freio ativo (neuromuscular) não compensa.",
+         "Contar episódios (subluxação percebida com dor e derrame subsequente) e rastrear *coper*/*non-coper* (seção 3.5) [@moksnes2008].",
+         "Consenso (critério de sucesso e fracasso) [@lynch2015]"
+        ]
+       ],
+       "larguras_cm": [
+        2.9,
+        4.6,
+        5.6,
+        2.9
+       ],
+       "fonte": "Elaborado pelos autores com base no enunciado e em @sturgill2009, @lynch2015, @wijdicks2010, @runer2026classification, @hegedus2007, @moksnes2008 e @crossley2011."
+      },
+      "A acurácia dos testes varia com o contexto (Tabela 1). O Lachman é o único com validade individual em revisão de revisões (razão de verossimilhança positiva de 10,2 e negativa de 0,2) [@decary2017], mas foi superestimado por modelos antigos e perde sensibilidade em rupturas completas e pós-agudas [@sokal2022]. O *pivot-shift* negativo não afasta ruptura do LCA, pois a sensibilidade no exame acordado é baixa: o teste serve para confirmar, não para excluir; a gaveta anterior também subestima a ruptura aguda no exame acordado, com sensibilidade que passa de 38% para 63% sob anestesia [@vaneck2013]. As metanálises antigas misturam lesões associadas, e a de Sokal as excluiu, de modo que nenhuma estimativa vem de uma lesão combinada como a de Bruno [@sokal2022].",
+      {
+       "tipo": "tabela",
+       "titulo": "Sensibilidade e especificidade de testes clínicos para lesão do LCA e do menisco",
+       "colunas": [
+        "Teste",
+        "Contexto",
+        "Sensibilidade (%)",
+        "Especificidade (%)",
+        "Fonte"
+       ],
+       "linhas": [
+        [
+         "Lachman",
+         "Metanálise clássica (28 estudos)",
+         "85",
+         "94",
+         "[@benjaminse2006]"
+        ],
+        [
+         "Lachman",
+         "Metanálise recente, geral",
+         "81",
+         "85",
+         "[@sokal2022]"
+        ],
+        [
+         "Lachman",
+         "Rupturas completas",
+         "68",
+         "79",
+         "[@sokal2022]"
+        ],
+        [
+         "Lachman",
+         "Pós-agudas",
+         "70",
+         "77",
+         "[@sokal2022]"
+        ],
+        [
+         "Gaveta anterior",
+         "Metanálise (18 estudos)",
+         "64",
+         "87",
+         "[@huang2022]"
+        ],
+        [
+         "Gaveta anterior",
+         "Metanálise recente, geral",
+         "83",
+         "85",
+         "[@sokal2022]"
+        ],
+        [
+         "Gaveta anterior",
+         "Consultório, lesão aguda",
+         "38",
+         "81",
+         "[@vaneck2013]"
+        ],
+        [
+         "Pivot-shift",
+         "Metanálise clássica",
+         "24",
+         "98",
+         "[@benjaminse2006]"
+        ],
+        [
+         "Pivot-shift",
+         "Metanálise recente, geral",
+         "55",
+         "94",
+         "[@sokal2022]"
+        ],
+        [
+         "Pivot-shift",
+         "Consultório, lesão aguda",
+         "28",
+         "81",
+         "[@vaneck2013]"
+        ],
+        [
+         "Pivot-shift",
+         "Sob anestesia, lesão aguda",
+         "73",
+         "98",
+         "[@vaneck2013]"
+        ],
+        [
+         "McMurray",
+         "Menisco",
+         "70",
+         "71",
+         "[@hegedus2007]"
+        ],
+        [
+         "Apley",
+         "Menisco",
+         "60",
+         "70",
+         "[@hegedus2007]"
+        ],
+        [
+         "Dor na interlinha articular",
+         "Menisco",
+         "63",
+         "77",
+         "[@hegedus2007]"
+        ]
+       ],
+       "larguras_cm": [
+        3.6,
+        5.2,
+        2.4,
+        2.4,
+        2.4
+       ],
+       "fonte": "Elaborado pelos autores com base em @benjaminse2006, @vaneck2013, @huang2022, @sokal2022 e @hegedus2007."
+      },
+      "O estresse em valgo é aplicado a 0° e entre 20° e 30° de flexão [@wijdicks2010], e a avaliação da AMRI inclui valgo a 20°, gaveta anteromedial a 20° e translação anterior a 90° com a tíbia em neutro e em rotação externa [@runer2026]. Em radiografia sob estresse, a abertura medial aumentou 3,2 mm no sLCM grau III isolado e passou de 9,8 mm na lesão medial completa [@braaten2022]; a graduação clássica de I a III em milímetros não foi verificada em fonte primária (lacuna).",
+      "Entre os testes funcionais, o agachamento unipodal e o *step down* têm confiabilidade com κ de 0,60 a 0,80 em assintomáticos, sem ponto de corte para o LCA [@crossley2011]. Nos *hop tests* após ACLR, a mudança mínima detectável (90%) do LSI foi de 7,05% a 12,96% [@reid2007], de modo que diferenças menores podem ser ruído. O LSI também superestima a função: aos 6 meses após ACLR (70 pacientes), 57,1% atingiram LSI ≥ 90%, contra 28,6% quando o referencial era o nível pré-lesão estimado, que identificou mais risco (sensibilidade de 0,818 contra 0,273) [@wellsandt2017]. Os *hop tests* só devem ser indicados com derrame resolvido e salto sem dor [@moksnes2008]. Como critério de sucesso do manejo, operado ou não, um consenso de especialistas (1.779 respostas) definiu força de quadríceps e de isquiotibiais acima de 90% do lado sadio, derrame no máximo leve, ausência de falseio e escore de função entre 85 e 90 pontos [@lynch2015], consenso não validado contra desfecho. Entre os questionários, o KOOS tem cinco subescalas, incluindo Esporte/Recreação [@roos2003]; o *International Knee Documentation Committee* (IKDC) subjetivo [@irrgang2001] tem versão brasileira validada (coeficiente de correlação intraclasse de 0,988) [@metsavaht2010]; e a *Anterior Cruciate Ligament-Return to Sport after Injury scale* (ACL-RSI) [@webster2008] foi validada em reconstruídos, sendo seu uso no conservador uma extrapolação."
+     ]
+    },
+    {
+     "titulo": "Inibição muscular artrogênica e atrofia do vasto medial",
+     "blocos": [
+      "A inibição muscular artrogênica (IMA) decorre da mudança na descarga dos receptores sensoriais articulares causada por inchaço, inflamação, frouxidão e lesão de aferentes, por vias que incluem a inibição não recíproca do grupo Ib, o reflexo de flexão e o *gamma-loop* (revisão narrativa) [@rice2010]. Em voluntários saudáveis, 60 mL de solução salina intra-articular reduziram a excitabilidade do reflexo H do vasto medial do lado com derrame, sem alteração no lado contralateral [@palmieri2003; @hopkins2002]; o mecanismo é, ao menos em parte, pré-sináptico [@palmieri2005], e com pressão intra-articular de 50 mmHg caem o torque de pico do quadríceps e o sinal eletromiográfico [@rice2009]. O componente supra-espinhal é incerto: no modelo de derrame, a excitabilidade corticomotora aumentou [@rice2014], e a reorganização corticoespinhal proposta para a IMA crônica [@nolan2026] é hipótese (evidência mecanística).",
+      "Menos ativação implica menos carga mecânica e perda de volume. Em metanálise (49 artigos), o quadríceps de membros com LCA insuficiente foi menor que o do lado sadio (*d* de −0,35 a −0,40), efeito pequeno [@dutaillis2021]. Não há, nas fontes recuperadas, demonstração de atrofia seletiva do vasto medial no LCA insuficiente: o enunciado (“especialmente vasto medial”) é plausível, mas é achado do caso, e não regra. Em 300 pacientes com LCA agudo, 56,7% tinham IMA; derrame, lesões associadas e dor intensa aumentaram o risco, a IMA associou-se a piores escores de Lysholm, IKDC e KOOS, e em 79% dos casos a inibição se resolveu na própria consulta com exercícios simples [@sonnerycottet2024] (nível 3). Derrame somado a lesão associada, como no caso, é perfil de risco.",
+      "No modelo de derrame, a crioterapia e a estimulação elétrica nervosa transcutânea desinibiram o vasto medial [@hopkins2002; @rice2009], e a eletroestimulação neuromuscular aumentou a força do quadríceps com certeza moderada em *overview* de revisões [@rice2010; @culvenor2022]. Esses recursos são conduta da equipe multiprofissional, e não do profissional de Educação Física, cujo papel é reduzir o derrame e ativar o músculo antes de carregá-lo. Os estudos de mecanismo usam derrame experimental em saudáveis (algumas dezenas de voluntários, observados por minutos a uma hora), e a IMA clínica depende do tempo desde a lesão, do dano articular e do ângulo do joelho [@rice2010]; o tempo de evolução de Bruno é desconhecido."
+     ]
+    },
+    {
+     "titulo": "Valgo dinâmico e compensações articulares",
+     "blocos": [
+      "Valgo dinâmico é o padrão de adução e rotação interna do fêmur que conduz ao alinhamento em valgo do joelho e se associa a risco de lesão ligamentar e de dor patelofemoral [@rabin2010]; o controle deficiente de quadril, pelve e tronco altera a cinemática do joelho em vários planos (revisão biomecânica, nível 5) [@powers2010]. Em coorte prospectiva de 205 atletas mulheres, 9 romperam o LCA, com abdução do joelho 8° maior na aterrissagem e momento de abdução 2,5 vezes maior, e o momento de abdução previu a ruptura com sensibilidade de 78% e especificidade de 73% [@hewett2005], sem teste equivalente em homens. Para o valgo de Bruno no *step down*, três hipóteses concorrentes e não excludentes se apresentam:",
+      {
+       "tipo": "lista",
+       "estilo": "alineas",
+       "itens": [
+        "causa: controle proximal deficiente anterior à lesão, compatível com o mecanismo do trauma;",
+        "consequência: a fraqueza e a inibição do quadríceps, e o medo de carga, deslocam a demanda para outras articulações e para o membro contralateral;",
+        "fator local: limitação de dorsiflexão do tornozelo, pois em 29 mulheres saudáveis a pior qualidade do movimento no *step down* associou-se a menor dorsiflexão, e não a diferenças de força do quadril [@rabin2010]; em 71 saudáveis (38 homens), a resistência de tronco na prancha foi o melhor preditor do desempenho no *step down* unipodal [@burnham2016], e o desempenho no agachamento unipodal refletiu a função do glúteo médio, com início mais precoce da ativação e maior torque de abdução nos melhores executores [@crossley2011]."
+       ]
+      },
+      "O *step down* é um substituto de desfecho, executado em tarefa lenta e controlada. No futebol masculino, o colapso em valgo em velocidade é raro nas lesões sem contato [@walden2015]; corrigir o valgo é, portanto, boa prática de controle motor, mas não está demonstrado que reduza o falseio ou a nova lesão em joelho com LCA insuficiente, e os dados de prevenção vêm de mulheres saudáveis (seção 5.5). O Quadro 3 reúne as compensações esperadas e o que se sabe sobre cada uma.",
+      {
+       "tipo": "quadro",
+       "titulo": "Compensações articulares esperadas e observações para o caso",
+       "colunas": [
+        "Compensação",
+        "Evidência",
+        "Observação para o caso"
+       ],
+       "linhas": [
+        [
+         "Cocontração rígida (joelho “travado”)",
+         "Em 11 *copers*, 10 *non-copers* e 10 controles, os *non-copers* reduziram a excursão do joelho e o momento flexor externo (correlacionado com a força do quadríceps), com cocontração generalizada e maior contribuição dos isquiotibiais; não se tratava de evitação do quadríceps [@rudolph2001].",
+         "Evidência mecanística, amostra pequena. Em modelo de marcha, facilitar os isquiotibiais reduz a translação anterior mais do que evitar o quadríceps [@shelburne2005]."
+        ],
+        [
+         "Quadril e tronco",
+         "Deslocamento lateral do tronco, adução e rotação interna do quadril com maior momento de abdução do joelho, rotação externa da tíbia com ou sem pronação do pé, pouca flexão de tronco, quadril e joelho e muita dorsiflexão são fatores de risco descritos no futebol [@alentorngeli2009].",
+         "Dados sobretudo de mulheres; usar como roteiro de observação, não como diagnóstico."
+        ],
+        [
+         "Tornozelo e pé",
+         "Menor dorsiflexão acompanha pior qualidade de movimento [@rabin2010].",
+         "Medir a dorsiflexão antes de atribuir o valgo ao glúteo."
+        ],
+        [
+         "Membro contralateral e mascaramento pelo LSI",
+         "A simetria na distância do *triple hop* pode esconder déficit de trabalho do joelho (51% a 66% de simetria) com compensação do quadril [@kotsifaki2022triple]; o lado “sadio” também pode estar destreinado [@wellsandt2017].",
+         "Evidência pós-ACLR (indireta). Registrar a qualidade do movimento, e não só a distância."
+        ]
+       ],
+       "larguras_cm": [
+        3.4,
+        8.2,
+        4.4
+       ],
+       "fonte": "Elaborado pelos autores com base em @rudolph2001, @shelburne2005, @alentorngeli2009, @rabin2010, @kotsifaki2022triple e @wellsandt2017."
+      }
+     ]
+    },
+    {
+     "titulo": "Diagnóstico funcional e decisão entre conservar e operar",
+     "blocos": [
+      "A classificação *coper*/*non-coper* organiza o raciocínio funcional. Fitzgerald propôs um rastreio com testes de salto unipodal, número de falseios, questionário funcional e avaliação global; entre 93 pacientes com LCA agudo, 39 (42%) foram candidatos à reabilitação, e 22 dos 28 que optaram por não operar (79%) voltaram ao nível prévio sem falseio [@fitzgerald2000]. Os critérios numéricos de Moksnes foram índice do salto cronometrado de 6 m ≥ 80%, escala funcional KOS-ADLS ≥ 80%, avaliação global ≥ 60 e no máximo 1 episódio de falseio, com os pré-requisitos de derrame resolvido, marcha normal, amplitude completa e salto sem dor [@moksnes2008] (texto completo). O rastreio original foi feito, em média, 6 semanas após a lesão [@hurd2008outcomes].",
+      "O rastreio tem limites que importam ao caso. No maior estudo (832 pacientes muito ativos), 315 tinham lesão associada e 87 déficits não resolvidos, e só 345 entraram no rastreio (146 *potential copers* e 199 *non-copers*) [@hurd2008outcomes]; o resumo não esclarece se um estiramento de baixo grau do LCM excluiria. O poder prognóstico é fraco: em 125 pacientes rastreados, com valores preditivos calculados nos 52 tratados sem cirurgia, o valor preditivo positivo foi de 60% (IC 95% 41–78) e o negativo de 30% (16–49), 60% dos *potential copers* e 70% dos *potential non-copers* eram *copers* verdadeiros após 1 ano, e os autores concluíram que nenhuma estatística prognóstica foi clinicamente útil [@moksnes2008]. O rastreio explica melhor a decisão cirúrgica após 10 sessões de exercício progressivo, e a força do quadríceps foi a variável de maior peso [@eitzen2010]. Os *non-copers* têm déficit de força, falha de ativação, padrões de movimento alterados e maior cocontração, mas a proporção de retorno ao esporte é semelhante à dos *copers* [@kaplan2011].",
+      "Aplicado a Bruno, o algoritmo não o classifica: há derrame (pré-requisito não cumprido), lesão associada do LCM (provavelmente fora da população classificável, com grau não informado) e falseio recorrente (reprova o critério de no máximo 1 episódio). Como o rótulo de *non-coper* não contraindica o tratamento conservador, Bruno é tratado como *non-coper* provisório (hipótese de trabalho), com carga progressiva e reclassificação após cerca de 10 sessões [@eitzen2010; @thoma2019], e com decisão cirúrgica pelo ortopedista se o falseio persistir [@filbay2019].",
+      "O enunciado traz ainda duas informações em conflito: a hipótese diz “pós-operatório tardio/conservador”, e o exame mostra Lachman e gaveta positivos com ausência de parada firme. Em coorte de reconstruídos com seguimento mínimo de 2 anos, o Lachman foi normal em 35 de 40 (88%) no grupo controle e em 17 de 20 (85%) no grupo com fratura de Segond [@melugin2018]: o enxerto funcionante tende a produzir teste normal na maioria, mas não em todos. Frouxidão evidente com ponto final mole ou ausente é pouco compatível com enxerto funcionante e sugere LCA sem função (ruptura não tratada ou, se houve cirurgia, falha do enxerto); é inferência clínica, pois nenhuma fonte demonstra a incompatibilidade, e um exame isolado não define o diagnóstico [@sokal2022]. O grupo adotou o cenário conservador porque o histórico descreve apenas o trauma, sem cirurgia; se houvesse cirurgia prévia, a conduta seria tratar o quadro como suspeita de falha de enxerto e reencaminhar ao ortopedista antes de qualquer carga."
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "Método",
+   "blocos": [
+    "Trata-se de estudo de caso com proposta de intervenção, apoiado em revisão narrativa estruturada pela estratégia PICOS; não é revisão sistemática. A pergunta foi: em atletas jovens de esportes com pivô, com LCA insuficiente e estiramento do LCM tratados de forma conservadora (P), a reabilitação baseada em critérios, com força, controle neuromuscular, pliometria e agilidade (I), comparada à reabilitação baseada apenas em tempo, ao cuidado usual ou à reconstrução precoce (C), melhora a estabilidade funcional (falseio), a função (KOOS e IKDC) e o retorno ao esporte e reduz a nova lesão (O)? Aceitaram-se como desenho (S) diretrizes, revisões sistemáticas e ensaios clínicos randomizados, além de coortes prospectivas na falta de ensaio. A hierarquia adotada foi: diretrizes atuais, revisões sistemáticas, ensaios, estudos observacionais e, por fim, séries de casos e opinião.",
+    "As buscas foram realizadas em 9 de novembro de 2026, no PubMed, no Consensus (modo médico, restrito a revisões sistemáticas e metanálises) e por pesquisa web de diretrizes, com publicação de 2010 a 2026 (mantidos clássicos pivotais, como Frobell 2010 e 2013 e Hewett 2005) e idiomas português, inglês e espanhol. Usaram-se descritores MeSH (entre eles *Anterior Cruciate Ligament Injuries*, *Medial Collateral Ligament, Knee*, *Conservative Treatment*, *Exercise Therapy*, *Return to Sport* e *Soccer*) e DeCS equivalentes, além de termos livres; a forma DeCS do LCM não pôde ser confirmada no portal. No PubMed foram executadas oito strings (principal, variante com filtro de desenho, ensaios, diretrizes com e sem filtro de tipo de publicação, dose do exercício no conservador, dose em revisões e LCM), mais uma busca dirigida da diretriz da *Orthopaedic Section* da *American Physical Therapy Association* sobre entorse ligamentar do joelho, somando 433 registros; o Consensus retornou 50 registros, e a busca web, 3 documentos. Foram incluídos adultos jovens e atletas (14 anos ou mais) com ruptura ou insuficiência do LCA, com ou sem lesão do LCM, em tratamento conservador com intervenção por exercício e desfechos clínicos (falseio, KOOS e IKDC, retorno ao esporte, nova lesão), aceitando-se força e LSI como substitutos sinalizados; a evidência pós-reconstrução entrou apenas como indireta. Foram excluídos esqueleto imaturo isolado, estudos apenas cirúrgicos, lesões multiligamentares com ligamento cruzado posterior ou canto posterolateral, estudos animais e *in vitro*, relatos de caso isolados e o pós-operatório tardio como foco.",
+    "O fluxo foi: 486 registros identificados (PubMed 433, Consensus 50, web 3), 108 duplicatas removidas, 378 triados por título e resumo, 144 excluídos na triagem, 154 excluídos por volume em corte autorizado pelo líder da fase, sem corte de diretrizes, e 80 encaminhados à avaliação. Desses, 45 foram lidos com resumo completo (37 incluídos e 8 excluídos) e 35 foram decididos apenas pelo registro de triagem, todos excluídos; somaram-se 10 estudos de fora dos 80 (5 da investigação inicial e 5 de buscas complementares sobre dor e derrame, restrição de fluxo sanguíneo, prevenção no futebol e versão da diretriz da *Orthopaedic Section*), o que resultou em 47 documentos no quadro de evidências. Três buscas complementares devolveram apenas identificadores (PMIDs), que não foram triados individualmente. As evidências mecanísticas e de acurácia da seção 3 vieram de consultas dirigidas ao PubMed na mesma data.",
+    "A qualidade foi avaliada com *A MeaSurement Tool to Assess systematic Reviews 2* (AMSTAR 2) para revisões, *Risk of Bias 2* (RoB 2) para ensaios, *Risk Of Bias In Non-randomized Studies of Interventions* (ROBINS-I) para estudos observacionais, *Appraisal of Guidelines for Research and Evaluation II* (AGREE II) para diretrizes e *Grading of Recommendations Assessment, Development and Evaluation* (GRADE) para a certeza por desfecho, com a evidência indireta rebaixando um nível. Os números provêm de resumos no PubMed; apenas a revisão de @filbay2019 e a diretriz de @kotsifaki2023, além de estudos pontuais da seção 3, foram lidas em texto completo. Por isso, AMSTAR 2, RoB 2 e ROBINS-I são estimativas a partir do resumo, o AGREE II não pôde ser aplicado às diretrizes sem conteúdo acessado, e conflitos de interesse não foram avaliados. Não foram consultadas diretamente a Cochrane Library, a Biblioteca Virtual em Saúde (BVS/LILACS), as páginas de órgãos como Ministério da Saúde, Conitec, NICE e Sociedade Brasileira de Ortopedia e Traumatologia, nem as bases oficiais de epidemiologia (DATASUS, IBGE, *Global Burden of Disease*); os números epidemiológicos da introdução vêm, portanto, de artigos indexados no PubMed."
+   ]
+  },
+  {
+   "titulo": "Evidências",
+   "subsecoes": [
+    {
+     "titulo": "Diretrizes e consensos",
+     "blocos": [
+      "Nenhuma diretriz brasileira de reabilitação do LCA ou do LCM foi localizada: não há protocolo clínico e diretriz terapêutica do Ministério da Saúde nem relatório da Conitec sobre o tema, e o único documento nacional encontrado foi o Projeto Diretrizes de 2007, restrito a diagnóstico e escolha do enxerto (ausência declarada a partir de busca web, sem abertura dos portais oficiais). A conduta no SUS depende de protocolos locais, e a evidência disponível é internacional. O Quadro 4 reúne os documentos que orientam o caso.",
+      {
+       "tipo": "quadro",
+       "titulo": "Diretrizes e consensos relevantes para o caso",
+       "colunas": [
+        "Documento",
+        "Tipo e população",
+        "Recomendação relevante ao caso",
+        "Certeza"
+       ],
+       "linhas": [
+        [
+         "@diermeier2020",
+         "Consenso Delphi (Panther), 66 especialistas de 18 países; 11 de 13 declarações com ≥ 80% de acordo",
+         "Esportes de pivô e saltos de alta demanda: ACLR anatômica precoce, após reabilitação progressiva; esporte em plano reto: tratamento não operatório estruturado é aceitável; falseio ou instabilidade funcional persistente: ACLR indicada.",
+         "Baixa (opinião, sem graus)"
+        ],
+        [
+         "@meredith2020",
+         "Consenso Delphi (Panther) sobre retorno ao esporte",
+         "Retorno ao esporte é um contínuo (participação, esporte, desempenho); abandonar a decisão baseada apenas em tempo; usar testes funcionais e prontidão psicológica; considerar cicatrização e lesões concomitantes.",
+         "Baixa (consenso)"
+        ],
+        [
+         "@filbay2019",
+         "Revisão narrativa com recomendações (texto completo lido)",
+         "Reabilitação como primeira linha é razoável; ACLR se houver instabilidade funcional; reabilitação por critérios em cinco fases; acompanhamento ao menos a cada 2 semanas; regras de derrame e de dor para a carga; encaminhar ao médico se houver falseio repetido.",
+         "Baixa a moderada (síntese de especialistas)"
+        ],
+        [
+         "@kotsifaki2023",
+         "Diretriz Aspetar (AGREE II e GRADE), pós-ACLR",
+         "Exercício é o pilar; pouca evidência de dose-resposta; nenhuma evidência sobre critérios de progressão ou alta; critérios mínimos propostos por consenso (concordância ≥ 75,7%).",
+         "Muito baixa para a maioria dos componentes"
+        ],
+        [
+         "@vanmelick2016",
+         "Diretriz holandesa (KNGF), 90 estudos, pós-ACLR",
+         "Reabilitação pré-operatória e três fases criteriais; bateria de força, saltos, qualidade de movimento e testes psicológicos para progredir; 9 a 12 meses.",
+         "Baixa; anterior à diretriz Aspetar"
+        ],
+        [
+         "@arundale2023",
+         "Diretriz de prevenção de lesões de joelho e do LCA por exercício; atualiza a de 2018",
+         "Recomendações e graus não acessados (apenas o resumo).",
+         "Não aplicável"
+        ]
+       ],
+       "larguras_cm": [
+        2.6,
+        4.2,
+        6.8,
+        2.4
+       ],
+       "fonte": "Elaborado pelos autores com base nos documentos citados."
+      },
+      "A diretriz da *Orthopaedic Section* para o LCM [@logerstedt2017], as da *American Academy of Orthopaedic Surgeons* [@brophy2023] e da *Japanese Orthopaedic Association* [@ishibashi2019] tiveram recomendações e graus não extraídos (resumos genéricos e sites inacessíveis); nenhuma versão posterior da primeira foi encontrada no PubMed. Os critérios de retorno e de dose das diretrizes lidas vêm de populações pós-ACLR, e sua aplicação a Bruno é extrapolação."
+     ]
+    },
+    {
+     "titulo": "Estratégia conservadora em comparação com a reconstrução",
+     "blocos": [
+      "O ensaio KANON incluiu 121 adultos jovens ativos (idade média de 26 anos) com LCA agudo e joelho previamente hígido. A mudança do KOOS4 em 2 anos foi de 39,2 com ACLR precoce e de 39,4 com reabilitação e ACLR tardia opcional, diferença de 0,2 (IC 95% −6,5 a 6,8); do braço opcional, 23 de 59 foram operados em 2 anos e 30 (51%) em 5 anos, sem diferença do KOOS4 aos 5 anos (2,0; IC 95% −8,5 a 4,5), do tratamento do menisco ou da osteoartrite [@frobell2010; @frobell2013]. Evitaram a cirurgia, portanto, 36 de 59 (61%) em 2 anos e 29 de 59 (49%) em 5 anos, com risco de viés (RoB 2) de algumas preocupações pelo desfecho autorrelatado sem cegamento. A revisão Cochrane baseada nesse único ensaio e a revisão bayesiana de 3 ensaios (320 participantes) não encontraram diferença clinicamente importante em função, com certeza baixa a muito baixa [@monk2016; @saueressig2022].",
+      "No ensaio COMPARE (167 adultos de 18 a 65 anos), o IKDC aos 24 meses foi melhor com ACLR precoce, com diferença de 5,3 pontos (IC 95% 0,6–9,9) de importância clínica incerta, e aos 3 meses foi melhor na reabilitação; 50% (41/82) do braço de reabilitação foram operados [@reijman2021]. Em análise exploratória, 90% (37/41) dos operados citaram instabilidade, a maioria entre 3 e 6 meses, e eram mais jovens e mais ativos [@graaff2022]. O ensaio ACL SNNAP é o mais próximo do perfil de Bruno se a lesão for não aguda: com 316 pacientes com LCA não agudo e instabilidade persistente, o KOOS4 aos 18 meses foi de 73,0 (DP 18,3) com cirurgia e 64,6 (DP 21,6) com reabilitação, diferença ajustada de 7,9 (IC 95% 2,5–13,2), com 41% (65/160) do braço de reabilitação operados [@beard2022]. A certeza é baixa: desfecho autorrelatado em ensaio aberto, cruzamento de grupos, limite inferior do intervalo compatível com efeito pequeno e reabilitação pragmática, e não o algoritmo estruturado de Delaware-Oslo. O tempo de lesão de Bruno não consta do enunciado.",
+      "As sínteses posteriores convergem para equivalência funcional com incerteza: o retorno ao esporte não diferiu (razão de chances de 1,5; IC 95% 0,76–2,97), mas 10 de 15 estudos tinham alto risco de confusão favorecendo a cirurgia [@filbay2025]; a estabilidade foi melhor com ACLR no LCA isolado (diferença de médias de −2,44; IC 95% −3,21 a −1,66) [@dejonge2024]; e em sete estudos de tratamento conservador (351 pacientes) a continuidade do LCA na ressonância foi de 85,6%, mas a estabilidade no artrômetro, de apenas 54,7%, com 21,9% operados depois [@dayal2026]. Apenas a menor idade e a maior atividade pré-lesão predisseram a ACLR posterior [@arp2024]."
+     ]
+    },
+    {
+     "titulo": "Reabilitação conservadora: coortes, retorno ao esporte e nova lesão",
+     "blocos": [
+      "O algoritmo de Delaware-Oslo é a única estrutura de reabilitação por critérios para o tratamento conservador, mas seus estudos excluíram lesões associadas significativas. Em 271 atletas, após 10 sessões de treino neuromuscular e de força, quase metade dos *non-copers* iniciais passou a *potential copers*; o sucesso em 2 anos foi de 66% com ACLR e de 74% sem cirurgia, e quem era *potential coper* após o treino teve razão de chances de 2,7 (IC 95% 1,3–5,6) de sucesso se operado e de 2,9 (1,2–7,2) se não operado, em comparação com *non-copers* que optaram por ACLR [@thoma2019]. Entre 118 que optaram por não operar, 53,6% (52/97) tiveram sucesso em 2 anos [@grindem2018]. Aos 5 e 10 anos, os resultados foram semelhantes entre ACLR precoce, ACLR tardia e reabilitação isolada, com 95% a 100% ainda no esporte e, aos 10 anos, quadríceps simétrico em 72% e osteoartrite sintomática em 1%, mas com seleção de participantes como risco de viés [@pedersen2021; @urhausen2025].",
+      "O retorno ao esporte sem cirurgia é incerto. Em coorte pareada, o retorno geral foi de 68,1% nos dois grupos, mas os não operados de nível I voltaram menos que os de nível II (54,8% contra 88,9%), com alta não adesão à restrição de atividade [@grindem2012]. Na coorte NACOX (270 participantes, tratamentos mistos), 78% retornaram, 66% ao nível I e 60% no futebol [@svensson2026]; entre 88 pacientes sem cirurgia, 46% retornaram em 12 meses, e cada ponto de prontidão psicológica aumentou a razão de chances de retorno em 1,9 (IC 95% 1,2–3,2) [@slater2022]. Na revisão de escopo de reabilitação não cirúrgica (14 estudos, 570 atletas), 53% concluíram sem cirurgia, 30% retornaram ao esporte e 28% sofreram nova lesão, e as lesões associadas pioraram o retorno [@ghezzi2026]. Esses estudos sustentam o prognóstico, mas não a dose.",
+      "Sobre o conteúdo do exercício, o *overview* de revisões encontrou certeza moderada para a equivalência entre cadeia cinética aberta e fechada e entre reabilitação domiciliar e presencial, e certeza muito baixa para restrição de fluxo sanguíneo e exercícios de controle neuromuscular [@culvenor2022]; já uma metanálise de 9 ensaios encontrou cadeia aberta superior para a força isocinética do quadríceps aos 3 meses após ACLR e aos 4 meses no LCA deficiente, mas com certeza muito baixa a baixa [@pamboris2024]. A restrição de fluxo sanguíneo pós-ACLR elevou a força do quadríceps (diferença média padronizada de 0,77; IC 95% 0,42–1,13), evidência indireta [@xu2026]. A correção do valgo dinâmico tem evidência limitada e incerta em 8 ensaios de LCA [@nunes2023], e o treino de perturbação não acrescentou benefício pós-ACLR [@arundale2017]. Não há ensaio de dose no LCA deficiente: os protocolos descritos duraram em média 12 ± 8 semanas, com 48% focados em força, 10% em controle neuromuscular e 25% em exercícios esportivos [@ghezzi2026], e as revisões de treino de força pós-ACLR e de prevenção não documentaram a dose por completo [@augustsson2013; @petushek2019].",
+      "Os critérios de progressão e de retorno vêm sobretudo de populações pós-ACLR. Em coorte de reconstruídos, o retorno a esporte de nível I elevou em 4,3 vezes a taxa de nova lesão, cada mês de atraso até 9 meses a reduziu em 51%, e 38,2% de quem falhou nos critérios (escore acima de 90 em KOS-ADLS, escala global e simetria de força e de saltos) sofreram nova lesão, contra 5,6% de quem passou (HR 0,16; p = 0,075, sem significância) [@grindem2016]. Na metanálise, apenas 23% passaram nas baterias; passar reduziu a ruptura de enxerto (RR 0,40; IC 95% 0,23–0,69), mas não todas as lesões do LCA (RR 0,80; 0,27–2,3) e se associou a mais lesão do LCA contralateral (RR 3,35; 1,52–7,37), de modo que a validade desses critérios é equívoca [@webster2019]. O medo de nova lesão (escala TSK-11 ≥ 19) associou-se a risco 13 vezes maior de nova ruptura (RR 13,0; IC 95% 2,1–81,0) em estudo-piloto de 40 pacientes pós-ACLR [@paterno2018], e o consenso de Bern define o retorno ao esporte como um contínuo e uma gestão de risco [@ardern2016]. Para o ajuste de carga pela dor, o único ensaio localizado avaliou o tendão de Aquiles (n = 38): continuar a corrida e os saltos guiado por um modelo de monitoramento da dor não piorou o desfecho [@silbernagel2007]; não há estudo desse modelo em LCA ou LCM, e a regra de derrame e dor vem de consenso [@filbay2019; @kotsifaki2023]."
+     ]
+    },
+    {
+     "titulo": "Ligamento colateral medial associado",
+     "blocos": [
+      "Em revisão sistemática de 27 estudos (821 pacientes com lesões completas e agudas de LCA e LCM; nível IV), a estabilidade em valgo a 30° foi de 27% a 68% com LCA e LCM não operados, de 36% a 77% com reparo do LCM e LCA não operado, e de 80% a 100% com ACLR aguda e LCM não operado, sem diferença no escore de Lysholm [@vanderlist2024]. A metanálise de lesões combinadas (18 estudos, 1.534 casos) não mostrou diferença entre LCM não operatório e cirúrgico em escores relatados pelo paciente, amplitude de movimento e força do quadríceps, mas todos os braços tinham o LCA reconstruído, e os autores recomendam cirurgia concomitante do LCM se persistirem valgo ou instabilidade rotatória anteromedial após reabilitação [@shultz2024]. Um consenso de especialistas indica o tratamento não operatório como primeiro passo no grau III agudo, isolado ou associado à ruptura do LCA [@wijdicks2010]. O único dado direto de LCA e LCM sem nenhuma cirurgia é um caso-controle de 11 pacientes e 11 controles saudáveis: nenhum relatou instabilidade em 2 anos, com risco grave de viés [@dadgostar2024]. Em futebol profissional, a concordância entre exame clínico e ressonância no LCM foi de 92% [@lundblad2019]."
+     ]
+    },
+    {
+     "titulo": "Prevenção de nova lesão",
+     "blocos": [
+      "Em metanálise de 82 estudos (154.561 atletas, 55% mulheres), o treino neuromuscular reduziu as lesões do LCA em 61% (RR 0,39; IC 95% 0,25–0,60), com certeza alta para a prevenção primária em atletas do sexo feminino e certeza moderada e indireta para um homem já lesionado, como Bruno [@bullock2025]. A dose mínima de 10 min, 2 vezes por semana, pertence à análise de lesões de membros inferiores (RR 0,81; IC 95% 0,61–1,08; certeza baixa, não significativa), e não à estimativa do LCA [@bullock2025]. O aquecimento FIFA 11+ reduziu lesões em geral em 30% (RR 0,70; IC 95% 0,52–0,93) em 6 ensaios, com heterogeneidade e sem especificidade para o LCA [@sadigursky2017]. A diretriz de prevenção de lesões do joelho por exercício [@arundale2023] teve as recomendações não extraídas."
+     ]
+    },
+    {
+     "titulo": "Síntese da certeza por desfecho",
+     "blocos": [
+      "O Quadro 5 sintetiza a direção do efeito e a certeza GRADE por desfecho, conforme julgamento do avaliador a partir dos resumos e das graduações dos autores, quando existem; a evidência indireta rebaixa um nível.",
+      {
+       "tipo": "quadro",
+       "titulo": "Direção do efeito e certeza GRADE por desfecho",
+       "colunas": [
+        "Desfecho",
+        "Direção do efeito",
+        "Certeza",
+        "Motivo"
+       ],
+       "linhas": [
+        [
+         "Função autorrelatada, estratégia conservadora × ACLR precoce, LCA agudo",
+         "Sem diferença clinicamente importante [@saueressig2022; @monk2016]",
+         "Baixa",
+         "Risco de viés, imprecisão e evidência indireta (lesão aguda, sem LCM)"
+        ],
+        [
+         "Função, LCA não agudo com instabilidade persistente",
+         "Cirurgia melhor [@beard2022]",
+         "Baixa",
+         "Desfecho autorrelatado em ensaio aberto, cruzamento de grupos e imprecisão; aplicável só se a lesão de Bruno for não aguda"
+        ],
+        [
+         "Necessidade de cirurgia tardia ou falseio",
+         "41% a 51% operados em 3 ensaios [@frobell2013; @reijman2021; @beard2022; @graaff2022]",
+         "Moderada (taxa); baixa (preditores)",
+         "Consistência entre ensaios; preditores vêm de coortes [@arp2024]"
+        ],
+        [
+         "Retorno ao esporte",
+         "Conservador semelhante à ACLR, com 60% no futebol e 30% na revisão de escopo [@filbay2025; @grindem2012; @svensson2026; @ghezzi2026]",
+         "Baixa a muito baixa",
+         "Confusão, heterogeneidade e imprecisão"
+        ],
+        [
+         "Nova lesão",
+         "ACLR protetora, qualitativamente; reinjúria de 28% e de 7,1% em conservadores [@dejonge2024; @ghezzi2026; @dayal2026]",
+         "Muito baixa",
+         "Definições variáveis e seguimentos curtos"
+        ],
+        [
+         "Estabilidade objetiva (substituto)",
+         "Maior laxidão no conservador, sem pior função [@dejonge2024; @vanyperen2018; @dayal2026]",
+         "Baixa",
+         "Desenho misto e viés de seleção; a laxidão não prediz função [@filbay2019]"
+        ],
+        [
+         "Estabilidade em valgo a 30°, LCA e LCM sem cirurgia",
+         "27% a 68%, contra 80% a 100% com ACLR aguda [@vanderlist2024]",
+         "Muito baixa",
+         "Nível IV, lesões completas e agudas, heterogeneidade"
+        ],
+        [
+         "Função com LCM não operado",
+         "Sem diferença, sempre com ACLR [@shultz2024]; sem instabilidade em 11 pacientes sem cirurgia [@dadgostar2024]",
+         "Muito baixa",
+         "Observacional, evidência indireta e amostra mínima"
+        ],
+        [
+         "Reclassificação *coper*/*non-coper* após ~10 sessões",
+         "Quase metade dos *non-copers* tornou-se *potential coper* [@thoma2019; @grindem2018]",
+         "Baixa",
+         "Observacional, escolha do tratamento pelo paciente e exclusão de lesão associada"
+        ],
+        [
+         "Força do quadríceps (substituto)",
+         "Eletroestimulação e cadeias aberta e fechada equivalentes; cadeia aberta melhor aos 3 a 4 meses; restrição de fluxo sanguíneo eficaz [@culvenor2022; @pamboris2024; @xu2026]",
+         "Moderada para eletroestimulação e restrição de fluxo, só pós-ACLR; muito baixa a baixa para o conservador",
+         "Evidência indireta e inconsistência entre revisões"
+        ],
+        [
+         "Treino neuromuscular e de perturbação",
+         "Sem efeito claro em força ou função [@culvenor2022; @arundale2017]",
+         "Muito baixa",
+         "Imprecisão e evidência indireta"
+        ],
+        [
+         "Critérios de progressão e de retorno (substituto)",
+         "Falhar nos critérios: reinjúria de 38,2% contra 5,6% (p = 0,075); validade equívoca [@webster2019; @grindem2016]",
+         "Baixa (pós-ACLR); muito baixa para o conservador",
+         "Evidência indireta, p não significativo e risco contralateral"
+        ],
+        [
+         "Dor e derrame para ajustar a carga (substituto)",
+         "Sem estudo em LCA ou LCM; no tendão de Aquiles, continuar com monitoramento não prejudicou [@silbernagel2007]",
+         "Muito baixa",
+         "Evidência indireta (outro tendão) e amostra pequena"
+        ],
+        [
+         "Prevenção do LCA por treino neuromuscular",
+         "Redução de 61% em mulheres [@bullock2025]; FIFA 11+ reduz lesões em geral [@sadigursky2017]",
+         "Alta (mulheres); moderada e indireta (Bruno); baixa (dose de 10 min, 2 vezes por semana); baixa a moderada (FIFA 11+)",
+         "Rebaixa um nível por sexo e por prevenção primária × secundária; dose: intervalo inclui o nulo; FIFA 11+: heterogeneidade"
+        ],
+        [
+         "Dose FITT-VP no LCA deficiente",
+         "Sem dose-resposta; protocolos heterogêneos [@ghezzi2026; @kotsifaki2023]",
+         "Muito baixa",
+         "Ausência de ensaios e evidência indireta"
+        ]
+       ],
+       "larguras_cm": [
+        3.7,
+        5.3,
+        3.0,
+        4.0
+       ],
+       "fonte": "Elaborado pelos autores com base nos estudos citados na própria coluna de efeito."
+      },
+      "Duas lacunas organizam o restante do texto: não há ensaio de reabilitação por critérios contra reabilitação por tempo no LCA deficiente, nem estudo do tratamento conservador com LCA e LCM em atleta, pois os estudos de Delaware-Oslo excluíram lesões associadas [@pedersen2021; @grindem2018]. Toda proposta de intervenção para Bruno, portanto, combina evidência indireta e consenso, e deve ser lida com a certeza que o Quadro 5 atribui a cada componente."
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "Proposta de intervenção",
+   "blocos": [
+    "A proposta é uma prescrição de exercício físico, escopo do profissional de Educação Física, organizada em quatro fases cuja passagem depende de critérios medidos, e não do calendário. Os recursos físicos (eletroestimulação neuromuscular, crioterapia, estimulação elétrica nervosa transcutânea e terapia manual), a órtese, os testes de estabilidade ligamentar, a ressonância e a decisão cirúrgica são conduta da equipe multiprofissional e aparecem apenas como encaminhamento. O Quadro 6 resume o percurso, e as seções seguintes detalham cada fase.",
+    {
+     "tipo": "quadro",
+     "titulo": "Visão geral das quatro fases da proposta de intervenção",
+     "colunas": [
+      "Fase",
+      "Objetivo",
+      "Entra quando",
+      "Sai quando"
+     ],
+     "linhas": [
+      [
+       "1",
+       "Controle de sintomas, amplitude de movimento e reativação do quadríceps, com proteção do LCM",
+       "Laudo médico e linha de base registrada",
+       "Derrame ≤ traço, amplitude completa, sem *lag*, marcha normal, dor ≤ 3/10, 4–6 semanas em plano sagital e liberação do LCM"
+      ],
+      [
+       "2",
+       "Força e controle neuromuscular em bloco inicial por critérios (~5 semanas, ~10 sessões) e reclassificação",
+       "Fase 1 concluída e LCM liberado",
+       "Quadríceps com LSI ≥ 80%, zero falseio no bloco, reclassificação (salto cronometrado de 6 m ≥ 80%, escala funcional ≥ 80%, avaliação global ≥ 60), *step down* sem valgo e parecer do ortopedista"
+      ],
+      [
+       "3",
+       "Potência, pliometria, corrida e agilidade",
+       "Reclassificado como *potential coper* (ou decisão compartilhada) e critérios mínimos de corrida",
+       "LSI de força e dos quatro *hop tests* ≥ 90%, salto contramovimento e *drop jump* ≥ 90%, agilidade ≤ 11 s, IKDC e escala global ≥ 90, sem valgo e zero falseio"
+      ],
+      [
+       "4",
+       "Retorno ao esporte e prevenção",
+       "Fase 3 concluída em duas avaliações e parecer do ortopedista",
+       "Critérios de retorno cumpridos, ≥ 4 semanas de treino coletivo completo sem sintomas, prevenção incorporada e alta com o ortopedista"
+      ]
+     ],
+     "larguras_cm": [
+      1.2,
+      5.0,
+      4.4,
+      5.4
+     ],
+     "fonte": "Elaborado pelos autores com base na prescrição de exercício do grupo."
+    }
+   ],
+   "subsecoes": [
+    {
+     "titulo": "Premissas e limites",
+     "blocos": [
+      "Bruno é tratado como *non-coper* provisório (falseio recorrente, derrame e lesão associada), rótulo que é hipótese de trabalho e que se reclassifica ao fim do bloco inicial [@moksnes2008; @eitzen2010; @thoma2019]; o LCM associado o deixa fora da população em que o rastreio foi validado [@hurd2008outcomes]. O bloco inicial dura cerca de 5 semanas ou 10 sessões supervisionadas de força e treino neuromuscular, seguido de reclassificação e decisão compartilhada com o ortopedista [@eitzen2010program; @thoma2019; @pedersen2021; @filbay2019], e as semanas são ordem de grandeza: o que libera cada fase são os critérios. O falseio recorrente (≥ 2 episódios) é gatilho de encaminhamento ao ortopedista, não opcional [@diermeier2020; @filbay2019; @beard2022], e a estabilidade em valgo a 30° é gatilho de reavaliação do LCM [@vanderlist2024; @shultz2024]. Se a lesão for não aguda, com instabilidade persistente, o ensaio SNNAP favoreceu a cirurgia (KOOS4 +7,9; IC 95% 2,5–13,2; certeza baixa), condição e não fato do caso [@beard2022].",
+      "Não existe ensaio de dose no LCA insuficiente. A estrutura vem do programa de 5 semanas de Eitzen, coorte que não incluiu LCM sintomático nem lesão colateral grau III ou IV [@eitzen2010program], e do *American College of Sports Medicine* (ACSM) para adultos saudáveis [@acsm2009; @garber2011]; os critérios de corrida, progressão e retorno vêm de populações pós-ACLR [@kotsifaki2023; @grindem2016; @adams2012]. O modelo de monitoramento da dor foi descrito para dor patelofemoral e testado em tendinopatias [@silbernagel2007; @sprague2021], e as regras de derrame são de consenso [@adams2012; @filbay2019]. Os números sem fonte própria são declarados como convenção do prescritor (teto de dor ≤ 3/10 como zona verde, contatos de salto, altura de degrau, intervalos entre sessões) e valem como ponto de partida, ajustável pela resposta do atleta. As escalas são a numérica de dor (NPRS, de 0 a 10) [@sprague2021], a percepção subjetiva de esforço de 0 a 10 (CR-10 de Borg), com carga da sessão igual à PSE multiplicada pelos minutos [@filbay2019], as repetições máximas (RM) com o princípio “+2” [@eitzen2010program] e o teste do golpe modificado para o derrame [@sturgill2009]."
+     ]
+    },
+    {
+     "titulo": "Fase 1: controle de sintomas, amplitude e reativação do quadríceps",
+     "blocos": [
+      "Objetivo: zerar o derrame, recuperar extensão completa e flexão, religar o quadríceps (inibição artrogênica) e proteger o LCM com trabalho em plano sagital, antes de qualquer carga pesada, salto ou giro. O trabalho ocorre em plano sagital por 4 a 6 semanas da lesão, e o Quadro 7 detalha a prescrição.",
+      "Critérios de entrada:",
+      {
+       "tipo": "lista",
+       "estilo": "alineas",
+       "itens": [
+        "Avaliação médica prévia com grau do LCM e situação do menisco definidos por exame e RM (diagnóstico é da medicina) e liberação por escrito para exercício [@filbay2019; @lundblad2019].",
+        "Sem bloqueio articular e sem trauma novo; em trauma novo, a regra de Ottawa para joelho descarta fratura antes de qualquer carga [@filbay2019].",
+        "Linha de base registrada: derrame (teste do golpe modificado), dor NPRS 0–10, extensão e flexão passivas, elevação da perna estendida (lag), número de episódios de falseio [@sturgill2009; @adams2012].",
+        "Bruno informado sobre as opções (reabilitação com ACLR tardia opcional × ACLR) e de acordo com o plano — decisão compartilhada [@filbay2019]."
+       ]
+      },
+      {
+       "tipo": "quadro",
+       "titulo": "Prescrição FITT-VP da Fase 1",
+       "colunas": [
+        "Componente",
+        "Prescrição"
+       ],
+       "linhas": [
+        [
+         "F – Frequência",
+         "Supervisionado 2–3 sessões/semana (mínimo 2) + domiciliar curto diário (1–2 blocos/dia). Base: exercícios de diários a 2–3×/semana e visitas ao menos a cada 2 semanas [@filbay2019]; supervisão ≥ 2×/semana no programa de referência [@eitzen2010program]. Intervalo ≥ 24 h entre sessões supervisionadas."
+        ],
+        [
+         "I – Intensidade",
+         "Dor NPRS ≤ 3/10 durante e após (teto conservador do grupo — convenção; o modelo de monitoramento da dor aceita até 5/10 [@sprague2021]) e retorno ao basal na manhã seguinte; derrame igual ou menor que na linha de base (teste do golpe modificado) [@sturgill2009]. Isometria: esforço de contração de 5 a 8/10 (CR-10), subindo conforme a dor permitir. Aeróbico: PSE 3–4/10 (leve). Convenção do prescritor para os valores de esforço."
+        ],
+        [
+         "T – Tempo",
+         "Supervisionado 30–45 min (10 min de bicicleta leve no início); domiciliar 10–15 min por bloco."
+        ],
+        [
+         "T – Tipo",
+         "Isometria e ativação do quadríceps; elevação da perna estendida; mobilidade de extensão e flexão; cadeia fechada em amplitude curta (0–45°, ampliando até 0–60° sem dor [@adams2012]); ponte (facilita isquiotibiais [@shelburne2005; @rudolph2001]); quadril e tronco em alavanca curta, sem momento em valgo no joelho; bicicleta sem carga; equilíbrio bipodal. TODO o trabalho em PLANO SAGITAL por 4–6 semanas da lesão para o LCM cicatrizar, mantendo a tíbia em rotação interna (nunca em rotação externa) nos exercícios resistidos para reduzir o estresse em valgo sobre o LCM [@adams2012]. Recursos para derrame, dor e inibição (NMES, crioterapia, TENS) = equipe multiprofissional [@rice2010; @culvenor2022]."
+        ],
+        [
+         "V – Volume",
+         "Isometria de quadríceps a 60° de flexão: 3 séries × 8–10 contrações de 5 s (pausa 5–10 s; 60 s entre séries). Elevação da perna estendida: 3 × 10. Mini-agachamento 0–45°: 3 × 10, descida em 3 s. Ponte bilateral: 3 × 10. Clamshell e extensão de quadril em quatro apoios: 3 × 12 por lado. Equilíbrio unipodal em piso estável: 3 × 30 s. Bicicleta: 10–20 min. Extensão passiva por baixa carga e longa duração (prone hang) só se faltar extensão: 3 × 60 s [@adams2012] — tempos são convenção."
+        ],
+        [
+         "P – Progressão",
+         "Se por 2 sessões seguidas o semáforo estiver VERDE (dor ≤ 3/10, derrame igual ou menor, basal na manhã seguinte), mude UMA variável por sessão: +1 série (máx. 4), +2 contrações, ou amplitude 0–45° → 0–60°. Semáforo amarelo: mantém. Vermelho: regride. Passa de fase quando os critérios de saída forem cumpridos, nunca por tempo [@adams2012; @filbay2019]."
+        ],
+        [
+         "Evitar",
+         "Estresse em valgo e exercícios em plano frontal ou rotacional sob carga por 4–6 semanas da lesão (protege o LCM em cicatrização; no joelho sem LCA o LCM trabalha mais) [@adams2012; @kanamori2000]. Giros, pivô, corrida, saltos e mudança de direção: derrame, atrofia e falseio ainda presentes. Dor > 3/10 durante a sessão, ou derrame maior que na linha de base ao final. Alongamento forçado ou mobilização que force o valgo; cadeia aberta com carga em extensão final até a Fase 2. Treinar apesar de bloqueio, falseio ou dor aguda: encaminhar [@filbay2019]."
+        ],
+        [
+         "Monitoramento",
+         "Antes e depois de cada sessão: derrame (golpe modificado), NPRS, extensão e flexão passivas [@sturgill2009]. Dor na manhã seguinte (diário de 0–10) e registro de falseios. Semanal: lag na elevação da perna estendida, circunferência da coxa (perimetria) e marcha. A cada 2 semanas: reavaliação com a equipe [@filbay2019]."
+        ]
+       ],
+       "larguras_cm": [
+        2.8,
+        13.2
+       ],
+       "fonte": "Elaborado pelos autores com base na prescrição de exercício do grupo, com as fontes indicadas em cada célula; valores marcados como convenção não derivam da literatura."
+      },
+      "Critérios de saída, todos medidos:",
+      {
+       "tipo": "lista",
+       "estilo": "alineas",
+       "itens": [
+        "Derrame ≤ traço no teste do golpe modificado em 2 avaliações consecutivas, também após a sessão [@adams2012; @kotsifaki2023].",
+        "Extensão passiva completa (igual ao lado são) e flexão a até 10° do lado oposto [@adams2012].",
+        "Elevação da perna estendida sem lag e marcha normal sem dor.",
+        "Dor NPRS ≤ 3/10 nas tarefas da fase, com retorno ao basal na manhã seguinte [@sprague2021].",
+        "Passaram-se 4–6 semanas desde a lesão em plano sagital E houve liberação do médico/fisioterapeuta para cargas em plano frontal (data da lesão não consta do enunciado) [@adams2012]."
+       ]
+      }
+     ]
+    },
+    {
+     "titulo": "Fase 2: força e controle neuromuscular, com reclassificação",
+     "blocos": [
+      "Objetivo: recuperar força de quadríceps, isquiotibiais e quadril, corrigir o valgo dinâmico no step down e treinar estabilidade dinâmica sem salto reativo nem pivô; ao fim, reclassificar coper/non-coper e decidir com o ortopedista, em decisão compartilhada. O Quadro 8 detalha a prescrição.",
+      {
+       "tipo": "quadro",
+       "titulo": "Prescrição FITT-VP da Fase 2",
+       "colunas": [
+        "Componente",
+        "Prescrição"
+       ],
+       "linhas": [
+        [
+         "F – Frequência",
+         "3 sessões/semana de força, com ≥ 48 h entre sessões que treinem o mesmo grupo; no mínimo 2 supervisionadas por semana. Base: 2–4 sessões/semana no programa de referência [@eitzen2010program]; 2–3 dias/semana no iniciante e 3–4 no intermediário [@acsm2009]. Treino de perturbação em 10 sessões ao longo do bloco (≈ 2/semana) com a fisioterapia [@eitzen2010program]. O bloco fecha quando ~10 sessões forem cumpridas; se faltar frequência, o bloco se estende (não se corta)."
+        ],
+        [
+         "I – Intensidade",
+         "Semanas 1–2 (sessões 1–4): 8–12 RM, 2–3 séries (faixa de iniciante [@acsm2009]; membro atrofiado). Semanas 3–5 (sessões 5–10): cargas de 6–8 RM em 3–4 séries, com esforço máximo na última série [@eitzen2010program]; progressão pelo princípio '+2': se completar 2 repetições a mais na última série, sobe a carga na sessão seguinte [@eitzen2010program; @acsm2009] (ACSM: aumento de 2–10% da carga). Quadril e tronco: 8–12 RM. Dor NPRS ≤ 3/10 (até 5/10 sem progredir) [@sprague2021]; derrame inalterado. Aeróbico: PSE 4–5/10."
+        ],
+        [
+         "T – Tempo",
+         "Até 75 min por sessão, incluindo 10–15 min de aquecimento em bicicleta ou elíptico [@eitzen2010program]; aeróbico final de 15–20 min quando houver tempo."
+        ],
+        [
+         "T – Tipo",
+         "Força de alta carga unilateral e bilateral (a literatura sustenta alta carga [@filbay2019]); cadeia fechada e cadeia aberta combinadas — equivalentes para força do quadríceps (certeza moderada [@culvenor2022]; divergência com @pamboris2024, muito baixa/baixa); isquiotibiais (cocontração e facilitação reduzem a translação anterior [@shelburne2005; @rudolph2001]); abdutores e rotadores externos do quadril, tronco e dorsiflexão do tornozelo [@rabin2010; @burnham2016; @crossley2011]; step down com feedback visual; equilíbrio e perturbação [@eitzen2010program]. SEM pliometria nesta fase (diferença deliberada do programa de referência; ver justificativa)."
+        ],
+        [
+         "V – Volume",
+         "Semanas 1–2: 2–3 séries × 8–12 RM nos principais exercícios (leg press, agachamento, flexora). Semanas 3–5: 3–4 séries × 6–8 RM; descanso 2–3 min entre séries pesadas (ACSM: 3–5 min só em cargas de 1–6 RM). Cadeira extensora: 90–45° nas semanas 1–2 e 90–0° a partir da semana 3, 3–4 séries × 6–8 RM [@eitzen2010program; @kotsifaki2023]. Quadril: 2–3 séries × 8–12. Prancha frontal e lateral: 3 × 20–30 s. Step down: 3 × 8 por lado, degrau de 10 cm (convenção). Equilíbrio em superfície instável: 3 × 30 s. 10 sessões de perturbação (progressão da Universidade de Delaware, ver [@eitzen2010program])."
+        ],
+        [
+         "P – Progressão",
+         "Carga: princípio '+2'. Complexidade: sobe um nível (piso estável → almofada → perturbação) só com 2 sessões verdes seguidas. Altura do degrau: +5 cm quando 8 repetições saírem sem valgo evidente (escala visual de qualidade do movimento [@crossley2011]). Nas sessões 5 e 10: reavaliação (dinamometria, hops sem dor, questionários) e decisão sobre a Fase 3. Não avança por tempo."
+        ],
+        [
+         "Evitar",
+         "Pliometria, corrida e saltos: no programa de referência 3,9% (4/98) tiveram mais dor e derrame após a pliometria, e todos precisaram depois de reparo meniscal; aqui a pliometria só entra na Fase 3 [@eitzen2010program]. Giros e mudança de direção com o pé fixo, jogos e esportes de pivô. Agachamento ou leg press com joelhos para dentro (valgo) e rotação externa da tíbia sob carga [@adams2012]. Progredir carga com derrame +1 grau ou dor > 3/10 na sessão anterior. Treinar mais de 4 sessões de força/semana; cadeia aberta pesada em 30–0° nas semanas 1–2 (convenção conservadora)."
+        ],
+        [
+         "Monitoramento",
+         "Semáforo em toda sessão: dor (NPRS), derrame (golpe modificado), falseio, dor na manhã seguinte. Registro de carga (RM e '+2'), repetições e qualidade do step down (vídeo 2D). Sessão 5: dinamometria de quadríceps e isquiotibiais (LSI) e derrame. Sessão 10: bateria completa (abaixo). Sinal de dor e derrame depois de cargas altas: pode indicar lesão intra-articular, como o menisco [@eitzen2010program]."
+        ]
+       ],
+       "larguras_cm": [
+        2.8,
+        13.2
+       ],
+       "fonte": "Elaborado pelos autores com base na prescrição de exercício do grupo, com as fontes indicadas em cada célula; valores marcados como convenção não derivam da literatura."
+      },
+      "Critérios de saída, todos medidos:",
+      {
+       "tipo": "lista",
+       "estilo": "alineas",
+       "itens": [
+        "Derrame ≤ traço também após a semana de cargas máximas, sem aumento pós-sessão [@adams2012].",
+        "LSI de quadríceps ≥ 80% à dinamometria [@adams2012; @kotsifaki2023].",
+        "Zero episódios de falseio durante o bloco (o critério de potential coper é ≤ 1 episódio desde a lesão [@moksnes2008]; o grupo exige mais por causa do LCM).",
+        "Reclassificação: salto cronometrado de 6 m com LSI ≥ 80%, escala funcional ≥ 80% (KOS-ADLS, ou IKDC subjetivo na versão brasileira validada [@metsavaht2010], sem ponto de corte validado) e avaliação global ≥ 60/100, com ≤ 1 episódio de falseio desde a lesão [@moksnes2008; @eitzen2010program]. Potential coper → Fase 3. Non-coper persistente → ortopedista antes de pliometria e cortes [@thoma2019].",
+        "Step down sem valgo evidente na escala visual de qualidade (2 avaliadores ou vídeo) [@crossley2011].",
+        "Saltitos unipodais sem dor e sem derrame posterior; os testes de salto só são aplicados depois de confirmados LSI de quadríceps ≥ 80%, derrame ≤ traço e ADM completa [@adams2012; @kotsifaki2023; @moksnes2008].",
+        "Parecer do ortopedista após o bloco: sem instabilidade medial em valgo a 30° e decisão compartilhada registrada; instabilidade persistente → discutir cirurgia do LCM/LCA [@vanderlist2024; @shultz2024; @diermeier2020; @filbay2019]."
+       ]
+      }
+     ]
+    },
+    {
+     "titulo": "Fase 3: potência, pliometria, corrida e agilidade",
+     "blocos": [
+      "Objetivo: transformar força em potência, recuperar corrida, aterrissagem e mudança de direção planejada → reativa, sem derrame e sem falseio, preparando o joelho para as demandas do futebol society. O Quadro 9 detalha a prescrição.",
+      {
+       "tipo": "quadro",
+       "titulo": "Prescrição FITT-VP da Fase 3",
+       "colunas": [
+        "Componente",
+        "Prescrição"
+       ],
+       "linhas": [
+        [
+         "F – Frequência",
+         "4 sessões/semana: 2 de força/potência e 2 de corrida, pliometria e agilidade, em dias não consecutivos para pliometria e agilidade (≥ 48 h — convenção que dá ao semáforo uma manhã seguinte e um dia de recuperação). Reavaliação com a equipe a cada 2 semanas [@filbay2019]. ACSM: 3–4 dias/semana no intermediário [@acsm2009]."
+        ],
+        [
+         "I – Intensidade",
+         "Força: mantém 4–6 RM em 3–4 séries (faixa pesada de 1–6 RM [@acsm2009]). Potência: 0–60% de 1 RM em velocidade alta, 3–5 séries, 3–5 min de descanso [@acsm2009]. Pliometria: esforço submáximo no início (PSE 5–6/10), aterrissagem suave com o joelho sobre o pé [@eitzen2010program]. Corrida: PSE 4–6/10. Agilidade: 50–70% da velocidade → 100%. Teto de dor 5/10 durante e após e retorno ao basal na manhã seguinte [@sprague2021]; derrame inalterado."
+        ],
+        [
+         "T – Tempo",
+         "60–75 min por sessão; corrida contínua 15–25 min nas semanas finais da fase; aquecimento neuromuscular de 10–15 min."
+        ],
+        [
+         "T – Tipo",
+         "Corrida em linha reta (progressão trote/caminhada), pliometria bilateral → unilateral e vertical → horizontal, aterrissagens e desacelerações, mudança de direção planejada (45° → 90°) → reativa, força pesada de manutenção e potência com cargas leves rápidas. A pliometria é componente da fase tardia da reabilitação [@davies2015] e 8 semanas trouxeram benefício funcional pós-ACLR [@kotsifaki2023]."
+        ],
+        [
+         "V – Volume",
+         "Corrida (≥ 2 sessões/semana): início como no protocolo de Delaware, 3,2 km (2 mi) alternando trote e caminhada, aumentando a razão trote:caminhada por nível [@adams2012]. Pliometria (2 sessões/semana): estágio 3a, 3 séries × 5 saltos em 2 exercícios bilaterais verticais e aterrissagens = 30 contatos/sessão; estágio 3b, saltos unilaterais e horizontais, 3 séries × 5 por perna em 2 exercícios (convenção: sem fonte de contagem de contatos; escolhida abaixo dos volumes de treino de campo). Potência: 3–5 séries × 3–5 repetições. Agilidade: 4–6 passagens de 5–10 m por exercício, descanso 60–90 s (convenção)."
+        ],
+        [
+         "P – Progressão",
+         "A pliometria 3a e a agilidade só começam depois de ≥ 2 sessões da progressão de corrida sem aumento de derrame ou de dor (na sequência de Delaware, agilidade e pliometria entram quando a corrida não provoca efeitos adversos [@adams2012]). Progressão por estágios: 3a → 3b → mudança de direção planejada → reativa. Avança de estágio com 2 sessões verdes seguidas E derrame ≤ traço na manhã seguinte. Volume: +~20% de contatos/semana só com semáforo verde (convenção); não subir volume e intensidade na mesma semana. Teste intermediário a cada 2 semanas (hops, dinamometria) [@filbay2019]. Cortes ≥ 90° e pivô SOBRE O PÉ FIXO só na Fase 4."
+        ],
+        [
+         "Evitar",
+         "Pivô e giro com o pé fixo em grama sintética e com travas (mecanismo da lesão) e qualquer contato ou jogo [@alentorngeli2009]. Pliometria em dias consecutivos, em fadiga acentuada ou em piso muito duro. Subir volume de contatos e velocidade de agilidade na mesma semana. Treinar com derrame +1 grau, dor > 5/10 ou falseio na sessão anterior. Cortes reativos antes de dominar a mudança de direção planejada."
+        ],
+        [
+         "Monitoramento",
+         "Semáforo em toda sessão, mais derrame na manhã seguinte à pliometria e à agilidade (pior momento para o derrame). Contatos de salto e PSE × minutos por sessão e por semana [@filbay2019]. A cada 2 semanas: dinamometria (LSI), hops (salto único, triplo, cruzado e salto cronometrado) com registro da qualidade do movimento, não só da distância [@kotsifaki2022triple; @wellsandt2017]. Diferenças de LSI menores que ≈ 7–13% podem ser ruído de medida [@reid2007]."
+        ]
+       ],
+       "larguras_cm": [
+        2.8,
+        13.2
+       ],
+       "fonte": "Elaborado pelos autores com base na prescrição de exercício do grupo, com as fontes indicadas em cada célula; valores marcados como convenção não derivam da literatura."
+      },
+      "Critérios de saída, todos medidos:",
+      {
+       "tipo": "lista",
+       "estilo": "alineas",
+       "itens": [
+        "LSI de quadríceps e isquiotibiais ≥ 90% à dinamometria (a diretriz de Aspetar propõe 100% de simetria isocinética para esportes de pivô de alta demanda, em atletas profissionais) [@grindem2016; @kotsifaki2023].",
+        "Os 4 hop tests (salto único, triplo, cruzado, cronometrado de 6 m) com LSI ≥ 90% [@grindem2016; @filbay2019].",
+        "Salto contramovimento e drop jump com simetria > 90% [@kotsifaki2023] (consenso pós-ACLR; extrapolação).",
+        "Teste de agilidade ≤ 11 s, da bateria pós-ACLR de Kyritsis et al. relatada por [@filbay2019] (o teste específico não é nomeado no texto; extrapolação).",
+        "IKDC subjetivo dentro da faixa normativa para idade e sexo e escala global ≥ 90 [@grindem2016; @kotsifaki2023; @metsavaht2010].",
+        "Step down e aterrissagem sem valgo evidente na escala visual [@crossley2011]; sem derrame ou dor após 2 semanas consecutivas de volume pleno; zero falseios."
+       ]
+      }
+     ]
+    },
+    {
+     "titulo": "Fase 4: retorno ao esporte e prevenção",
+     "blocos": [
+      "Objetivo: reintroduzir de forma gradual os gestos e as demandas do futebol society (giros, cortes, contato, jogo) com monitoramento de carga, decidir o retorno por critérios e manter o treino neuromuscular para reduzir a chance de nova lesão. O Quadro 10 detalha a prescrição.",
+      {
+       "tipo": "quadro",
+       "titulo": "Prescrição FITT-VP da Fase 4",
+       "colunas": [
+        "Componente",
+        "Prescrição"
+       ],
+       "linhas": [
+        [
+         "F – Frequência",
+         "4 sessões/semana: 2 de manutenção de força/potência e treino neuromuscular (≥ 1 pesada) + 2 a 3 sessões específicas de futebol society com progressão de contato. Estágios de 1–2 semanas cada, avaliados pelo semáforo. O retorno é gradual e integrado à reabilitação, não um salto para a competição [@filbay2019]."
+        ],
+        [
+         "I – Intensidade",
+         "Carga da sessão = PSE (CR-10) × minutos, com progressão consistente e semanal para evitar exacerbação [@filbay2019]. Treino técnico PSE 4–6/10; treino coletivo PSE 6–7/10; jogo PSE 7–9/10. Teto de dor 5/10, retorno ao basal na manhã seguinte e derrame inalterado [@sprague2021]. Aumento semanal de carga de ~10–15% (convenção do prescritor)."
+        ],
+        [
+         "T – Tempo",
+         "60–90 min por sessão específica; jogo reduzido ou amistoso por tempo limitado (15–20 min → 30 → 45 → 60 min, convenção), com ≥ 48–72 h entre jogos nas primeiras semanas."
+        ],
+        [
+         "T – Tipo",
+         "Estágio 4a: gestos do futebol sem oposição (giros, cortes de 90°, chute, desacelerações) em grama sintética; 4b: treino coletivo sem contato e jogos reduzidos; 4c: treino com contato; 4d: jogos completos graduais. Manter força/potência e o programa de prevenção neuromuscular."
+        ],
+        [
+         "V – Volume",
+         "4a: 2 sessões × 60 min, 4–6 repetições de cada gesto por exercício, 3 séries. 4b: jogos reduzidos 3 × 6–8 min com 2–3 min de pausa. 4c: 3 sessões de treino com contato antes do jogo. 4d: amistoso por tempo limitado, como acima. Manutenção: 2 sessões de força (3 × 5–6 RM) e programa neuromuscular ≥ 10 min, ≥ 2×/semana."
+        ],
+        [
+         "P – Progressão",
+         "Cada estágio exige 2 sessões verdes seguidas e derrame inalterado na manhã seguinte. Sinais amarelos (derrame +1 grau, dor 4–5/10, 'quase falseio') = repete o estágio. Sinais vermelhos seguem o semáforo: falseio = interrompe, regride e comunica a equipe (segundo episódio = ortopedista); derrame ≥ +2 graus = sai do contato e do impacto até derrame ≤ traço e comunica a equipe; dor > 5/10 = regride um estágio. Reavalia hops e dinamometria a cada 4 semanas (queda de LSI < 90% = retorna à Fase 3) [@grindem2016]. A decisão final de jogar competitivo é da equipe, por critérios e não por tempo [@meredith2020]."
+        ],
+        [
+         "Evitar",
+         "Voltar ao jogo competitivo antes dos critérios, só por pressa ou por tempo [@meredith2020]. Saltar estágios de contato ou aumentar jogo e treino na mesma semana. Ignorar o semáforo na manhã seguinte ou o medo relatado pelo atleta. Treinar ou jogar com órtese sem orientação médica: a órtese não substitui critérios (ineficaz para função e laxidão no pós-operatório, certeza moderada [@culvenor2022])."
+        ],
+        [
+         "Monitoramento",
+         "PSE × min por sessão e semana; picos súbitos de carga [@filbay2019]. Semáforo (dor, derrame, falseio, dor na manhã seguinte) a cada sessão. A cada 4 semanas: hops, dinamometria e ACL-RSI; ao fim, KOOS ou IKDC [@roos2003; @irrgang2001]. Contagem de falseios e de novas lesões."
+        ]
+       ],
+       "larguras_cm": [
+        2.8,
+        13.2
+       ],
+       "fonte": "Elaborado pelos autores com base na prescrição de exercício do grupo, com as fontes indicadas em cada célula; valores marcados como convenção não derivam da literatura."
+      },
+      "Critérios de saída, todos medidos:",
+      {
+       "tipo": "lista",
+       "estilo": "alineas",
+       "itens": [
+        "Critérios de retorno ao esporte cumpridos (seção 'retorno_ao_esporte').",
+        "Treino coletivo completo, com contato, sem dor > 3/10, sem derrame e sem falseio por ≥ 4 semanas.",
+        "Programa de prevenção incorporado à rotina do clube (≥ 10 min, ≥ 2×/semana).",
+        "Alta do exercício supervisionado definida em conjunto com o ortopedista; seguimento de 6 e 12 meses."
+       ]
+      }
+     ]
+    },
+    {
+     "titulo": "Ajuste por sintomas: semáforo de carga",
+     "blocos": [
+      "O semáforo (Quadro 11) traduz o manejo da dor, do derrame e do falseio em condutas de sessão e da sessão seguinte. Os limiares derivam do modelo de monitoramento da dor, com NPRS até 5/10 durante e logo após a atividade e retorno ao nível pré-atividade na manhã seguinte, descrito originalmente para a dor patelofemoral e testado em tendinopatias, sem estudo em LCA ou LCM e, portanto, com evidência indireta [@sprague2021; @silbernagel2007]; as regras de derrame e dor para progredir vêm de consenso e de diretrizes pós-ACLR [@adams2012; @filbay2019; @kotsifaki2023]. Os valores abaixo de 5/10 (verde ≤ 3/10), os graus de derrame que disparam amarelo ou vermelho e os percentuais de redução de volume são operacionalizações do grupo. Dois amarelos em sessões seguidas valem um vermelho, e dois vermelhos na mesma fase, ou qualquer falseio recorrente ou bloqueio articular, exigem encaminhar ao ortopedista antes de continuar.",
+      {
+       "tipo": "quadro",
+       "titulo": "Semáforo de ajuste de carga por dor, derrame, falseio e outros sinais",
+       "colunas": [
+        "Cor",
+        "Sinal",
+        "Conduta (na sessão e na próxima sessão)",
+        "Fonte"
+       ],
+       "linhas": [
+        [
+         "VERDE",
+         "Dor durante o exercício NPRS ≤ 3/10 e que volta ao basal na manhã seguinte",
+         "Na sessão: segue o plano e registra. Na próxima sessão: aplica a regra de progressão da fase (uma variável por vez).",
+         "@sprague2021; @silbernagel2007"
+        ],
+        [
+         "AMARELO",
+         "Dor durante ou depois do exercício NPRS 4–5/10, ainda dentro do limite do modelo",
+         "Na sessão: mantém a carga, reduz volume (~20–30%) ou amplitude, troca o exercício provocador (ex.: cadeia aberta por fechada) e reavalia ao final. Na próxima sessão: repete a carga sem progredir; se voltar ao verde, retoma a progressão.",
+         "@sprague2021"
+        ],
+        [
+         "VERMELHO",
+         "Dor NPRS > 5/10, dor aguda cortante, ou dor que aumenta ao longo da sessão",
+         "Na sessão: interrompe o exercício, avalia derrame, ADM e marcha. Na próxima sessão: regride um nível dentro da fase (menor carga ou amplitude) e só volta a progredir após 2 sessões verdes; se persistir 48 h, comunica fisioterapia/médico.",
+         "@sprague2021; @adams2012"
+        ],
+        [
+         "VERDE",
+         "Dor/rigidez no dia seguinte: a dor volta ao nível basal na manhã seguinte",
+         "Na sessão: progride conforme o plano. Na próxima sessão: mantém ritmo de progressão.",
+         "@sprague2021"
+        ],
+        [
+         "AMARELO",
+         "Dor/rigidez no dia seguinte acima do basal na manhã seguinte, que volta ao basal em até 24 h",
+         "Na sessão (do dia seguinte): faz a sessão com 20–30% menos volume e sem exercício novo. Na próxima sessão: repete a carga anterior; progride só se a manhã seguinte voltar ao basal.",
+         "@sprague2021"
+        ],
+        [
+         "VERMELHO",
+         "Dor/rigidez que NÃO volta ao basal em 24 h, piora por 2 dias seguidos ou vem com perda de amplitude",
+         "Na sessão: sessão leve (mobilidade, bicicleta), sem carga pesada, e avalia derrame e amplitude. Na próxima sessão: regride um nível; se persistir por 48–72 h ou houver perda de extensão, encaminha ao fisioterapeuta/ortopedista.",
+         "@sprague2021; @filbay2019"
+        ],
+        [
+         "VERDE",
+         "Derrame igual ou menor que antes da sessão, e ≤ traço (teste do golpe modificado)",
+         "Na sessão: progride conforme o plano. Na próxima sessão: mantém ritmo.",
+         "@sturgill2009; @adams2012"
+        ],
+        [
+         "AMARELO",
+         "Derrame aumentou 1 grau em relação ao pré-sessão (ex.: traço → 1+) ou apareceu após a sessão",
+         "Na sessão: encerra a parte de alta carga, mantém só exercícios sem impacto (isometria leve, bicicleta) e registra. Na próxima sessão: repete a carga sem progredir; só passa de fase com derrame ≤ traço em 2 avaliações. Crioterapia e outros recursos são da fisioterapia.",
+         "@adams2012; @kotsifaki2023"
+        ],
+        [
+         "VERMELHO",
+         "Derrame aumentou ≥ 2 graus, ou derrame que persiste > 48 h, ou derrame com calor e dor",
+         "Na sessão: interrompe, repouso relativo, comunica a equipe. Na próxima sessão: retorna à Fase 1 (ou ao nível anterior da fase), sem carga pesada e sem salto até derrame ≤ traço; se persiste > 48–72 h ou recorre após regressão, encaminha ao ortopedista (suspeita de lesão intra-articular, ex.: menisco).",
+         "@eitzen2010program; @adams2012"
+        ],
+        [
+         "AMARELO",
+         "Sensação de insegurança ou 'quase falseio' sem queda, sem dor e sem derrame depois",
+         "Na sessão: reduz a velocidade e a complexidade da tarefa, volta ao exercício anterior mais estável, registra. Na próxima sessão: repete o nível; só progride com 2 sessões sem a sensação.",
+         "@moksnes2008"
+        ],
+        [
+         "VERMELHO",
+         "Episódio de falseio (subluxação percebida, com dor e/ou derrame posterior)",
+         "Na sessão: interrompe, avalia dor e derrame, não retoma a tarefa que provocou, comunica fisioterapeuta e médico. Na próxima sessão: regride um nível ou uma fase, mantém só carga sem pivô. Segundo episódio (falseio recorrente): encaminhamento ao ortopedista obrigatório antes de qualquer progressão; discussão de ACLR em decisão compartilhada.",
+         "@diermeier2020; @filbay2019; @beard2022; @moksnes2008"
+        ],
+        [
+         "VERMELHO",
+         "Bloqueio articular (joelho trava, perda súbita de extensão)",
+         "Na sessão: interrompe, não força a extensão nem tenta 'destravar' com carga, encaminha no mesmo dia ao ortopedista (suspeita de lesão meniscal). Na próxima sessão: só retorna com liberação médica e reavaliação (extensão, derrame).",
+         "@filbay2019; @eitzen2010program"
+        ],
+        [
+         "AMARELO",
+         "Dor medial (linha do LCM) 3–5/10 em tarefa com componente de valgo ou rotação (step down, aterrissagem, corte)",
+         "Na sessão: reduz a amplitude e a alavanca, volta à tarefa sagital, corrige o alinhamento com feedback. Na próxima sessão: mantém a tarefa em versão mais simples; avisa a fisioterapia para reavaliar o LCM.",
+         "@adams2012; @vanderlist2024"
+        ],
+        [
+         "VERMELHO",
+         "Dor medial > 5/10, edema ou abertura medial percebida em valgo, ou sensação de 'abrir' o joelho para dentro",
+         "Na sessão: interrompe toda carga em valgo ou rotação. Na próxima sessão: só plano sagital; encaminha ao ortopedista para testar o LCM (valgo a 0° e 30°) e decidir sobre cirurgia do LCM/LCA se houver valgo ou instabilidade rotatória anteromedial persistente.",
+         "@vanderlist2024; @shultz2024"
+        ],
+        [
+         "AMARELO",
+         "Dor anterior no joelho durante cadeia aberta (cadeira extensora)",
+         "Na sessão: encurta a amplitude, reduz a carga ou muda para cadeia fechada. Na próxima sessão: reintroduz a cadeira extensora em amplitude menor e progride devagar.",
+         "@kotsifaki2023"
+        ],
+        [
+         "AMARELO",
+         "ACL-RSI baixo, medo relatado ou recusa de tarefas (barreira psicológica)",
+         "Na sessão: dosagem gradual da exposição, meta clara, reforço positivo. Na próxima sessão: reaplica o ACL-RSI; se continuar baixo, encaminha ao psicólogo do esporte.",
+         "@filbay2019; @webster2008; @slater2022"
+        ],
+        [
+         "VERMELHO",
+         "Trauma novo ou dor aguda após queda ou torção",
+         "Na sessão: interrompe o treino e aplica a regra de Ottawa para joelho; encaminha à avaliação médica. Na próxima sessão: só retorna com liberação.",
+         "@filbay2019"
+        ]
+       ],
+       "larguras_cm": [
+        1.9,
+        3.9,
+        6.9,
+        3.3
+       ],
+       "fonte": "Elaborado pelos autores com base na prescrição de exercício do grupo e nas fontes indicadas na última coluna."
+      }
+     ]
+    },
+    {
+     "titulo": "Critérios de retorno ao esporte",
+     "blocos": [
+      "O retorno é decidido por critérios e de forma compartilhada, nunca apenas por tempo; todos os itens abaixo devem estar cumpridos.",
+      {
+       "tipo": "lista",
+       "estilo": "alineas",
+       "itens": [
+        "Quadríceps e isquiotibiais com LSI ≥ 90% à dinamometria (a diretriz de Aspetar propõe 100% de simetria isocinética para esportes de pivô em atletas profissionais) [@grindem2016; @kotsifaki2023].",
+        "Os 4 hop tests com LSI ≥ 90%, registrando também a qualidade do movimento (o LSI sozinho pode mascarar déficits) [@grindem2016; @kotsifaki2022triple; @wellsandt2017].",
+        "Salto contramovimento e drop jump com simetria > 90% [@kotsifaki2023].",
+        "Teste de agilidade ≤ 11 s (bateria pós-ACLR de Kyritsis et al., relatada por [@filbay2019]) e mudança de direção e corrida em alta velocidade com mecânica simétrica (> 90%) [@kotsifaki2023].",
+        "IKDC subjetivo na faixa normativa e escala global ≥ 90 [@grindem2016; @kotsifaki2023].",
+        "ACL-RSI acompanhado, sem barreira psicológica importante e sem ponto de corte validado nas fontes acessadas (prontidão psicológica aos 12 meses: OR 1,9 por ponto de aumento, IC 95% 1,2–3,2, em quem foi tratado sem cirurgia) [@webster2008; @slater2022; @meredith2020].",
+        "Sem derrame, sem dor e sem falseio em ≥ 4 semanas de treino coletivo completo, com programa específico do esporte concluído [@kotsifaki2023; @filbay2019].",
+        "Laudo médico: joelho estável clinicamente (Lachman, pivot-shift) e sem instabilidade medial; estabilidade objetiva não prediz função por si só [@kotsifaki2023; @filbay2019; @vanderlist2024].",
+        "Decisão por critérios e compartilhada, nunca só por tempo [@meredith2020]; não há prazo mínimo validado sem cirurgia. Expectativa a conversar: sem cirurgia, ≈ 55% dos atletas de nível I voltam e 60% dos jogadores de futebol (evidência de certeza baixa) [@grindem2012; @svensson2026]. Quem falhou nos critérios pós-ACLR teve 38,2% de relesão contra 5,6% de quem passou (indireta) [@grindem2016]."
+       ]
+      },
+      "Os critérios derivam de populações pós-ACLR; para o tratamento conservador a certeza é muito baixa e não há prazo mínimo validado."
+     ]
+    },
+    {
+     "titulo": "Prevenção de nova lesão",
+     "blocos": [
+      "Treino neuromuscular contínuo (equilíbrio, força, agilidade e mudança de direção), com o FIFA 11+ como formato de aquecimento da equipe, mantido depois do retorno e sem prazo para parar. Complementar com força de quadríceps e quadril 2×/semana.",
+      "Mínimo de 10 min, 2×/semana (dose mínima descrita nos programas de treino neuromuscular; o efeito para lesões de membros inferiores foi RR 0,81, IC 95% 0,61–1,08, não significativo, certeza baixa) [@bullock2025]. O FIFA 11+ reduziu lesões em geral em 30% (RR 0,70; IC 95% 0,52–0,93; heterogêneo; não é específico de LCA) [@sadigursky2017]. A redução de 61% nas lesões do LCA (RR 0,39; IC 95% 0,25–0,60) foi observada com treino neuromuscular em populações femininas e é indireta para um homem já lesionado: a dose NÃO deve ser atribuída a esse efeito. A diretriz atual de prevenção de lesões do joelho por exercício é a de 2023 [@arundale2023] (recomendações não extraídas nesta etapa). Treino de perturbação não trouxe benefício adicional pós-ACLR [@arundale2017]."
+     ]
+    },
+    {
+     "titulo": "Encaminhamento",
+     "blocos": [
+      "A equipe multiprofissional recebe o atleta nas situações a seguir:",
+      {
+       "tipo": "lista",
+       "estilo": "alineas",
+       "itens": [
+        "Ortopedista (obrigatório): falseio recorrente (≥ 2 episódios), bloqueio articular, derrame que não resolve ou volta após regressão, extensão que não recupera, instabilidade em valgo a 30° ou instabilidade rotatória anteromedial persistente, falha de reclassificação (non-coper persistente) ou desejo de retorno a esporte de pivô com instabilidade [@diermeier2020; @filbay2019; @beard2022; @vanderlist2024; @shultz2024].",
+        "Reavaliação médica no fim do bloco inicial (~5 semanas/~10 sessões): decisão compartilhada entre manter conservador e reconstruir, antes de pliometria e cortes [@eitzen2010; @thoma2019; @filbay2019].",
+        "Fisioterapia (conduta multiprofissional): NMES, crioterapia, TENS, terapia manual, testes clínicos de estabilidade (Lachman, gaveta, pivot-shift, valgo a 0°/30°), supervisão do treino de perturbação e liberação do LCM [@rice2010; @culvenor2022; @runer2026classification].",
+        "Médico: órtese de LCM quando indicada; a órtese pós-ACLR não melhorou função nem laxidão (overview de revisões, certeza moderada), e o dado sobre órtese em LCM grau II é observacional, sem randomização [@culvenor2022; @lundblad2019].",
+        "Psicologia do esporte: ACL-RSI persistentemente baixo ou medo que limita a progressão [@filbay2019; @slater2022].",
+        "Pronto-atendimento: trauma novo, joelho muito quente, vermelho e doloroso com febre ou dor súbita na panturrilha (sinais de alerta clínicos gerais, sem fonte específica nesta etapa)."
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "Discussão",
+   "subsecoes": [
+    {
+     "titulo": "Defesa da prescrição",
+     "blocos": [
+      "A progressão por critérios, e não por tempo, é a escolha que mais converge entre as fontes [@meredith2020; @vanmelick2016; @filbay2019; @kotsifaki2023]; o tempo permanece só como limite inferior biológico, como as 4 a 6 semanas do LCM em plano sagital [@adams2012]. Não há ensaio de critérios contra tempo no LCA deficiente, de modo que a escolha se apoia em consenso e em coerência fisiológica, com certeza muito baixa. A Fase 1 precede qualquer carga pesada porque o derrame e a dor inibem reflexamente o quadríceps [@rice2010; @sonnerycottet2024], a extensão completa é pré-requisito da progressão [@adams2012; @filbay2019] e o LCM, que no joelho sem LCA recebe carga extra [@kanamori2000], justifica o plano sagital. O teto de dor de 3/10 é mais conservador que o do modelo de monitoramento (5/10), por haver derrame e LCM em cicatrização; é escolha declarada, não dado de fonte.",
+      "O bloco de 5 semanas e 10 sessões da Fase 2 reproduz a unidade do programa de Delaware-Oslo, após a qual se reclassifica o atleta [@thoma2019; @eitzen2010], e responde à pergunta “por que não decidir a cirurgia logo?”. A dose de 6 a 8 RM em 3 a 4 séries com o princípio “+2” é a do programa de referência, que seguiu o ACSM para adultos [@eitzen2010program; @acsm2009], e a diretriz de Filbay recomenda treino de alta carga para o quadríceps [@filbay2019]; nas semanas 1 e 2 adotou-se a faixa de iniciante de 8 a 12 RM, porque o membro está atrofiado, transição própria do grupo. A certeza é baixa e indireta, porque o estudo excluiu LCM sintomático e lesão colateral grau III ou IV. Diferiu-se do programa de referência ao não incluir pliometria na Fase 2: nele, 4 de 98 pacientes (3,9%) tiveram mais dor e derrame após a pliometria e todos precisaram depois de reparo meniscal, e os autores sugerem que o sintoma pós-carga pode apontar lesão intra-articular [@eitzen2010program]; Bruno tem dor na linha articular medial (LCM ou menisco), valgo dinâmico e LCM em cicatrização, e adiar o salto é a escolha prudente. Cadeias aberta e fechada foram combinadas, pois são equivalentes para a força do quadríceps com certeza moderada [@culvenor2022] e a vantagem da aberta é de certeza muito baixa a baixa [@pamboris2024]. Quadril, tronco e dorsiflexão entram porque o valgo é multifatorial [@rabin2010; @burnham2016; @crossley2011], e os isquiotibiais, porque facilitá-los reduz a translação anterior em modelo [@shelburne2005], embora corrigir o valgo no *step down* não esteja demonstrado como redutor de falseio ou de nova lesão no LCA insuficiente [@nunes2023].",
+      "Na Fase 3, os critérios de corrida vêm da diretriz Aspetar e do protocolo de Delaware, ambos pós-ACLR, são consenso sem evidência de que sejam os critérios certos, e sua aplicação a Bruno é extrapolação [@kotsifaki2023; @adams2012]; força e potência seguem o ACSM, evidência de adultos saudáveis [@acsm2009]. O número de contatos de salto, a altura do degrau e os intervalos entre sessões não têm fonte verificada, e a regra de progressão é a resposta do joelho (semáforo), não o número. As saídas coincidem com os critérios de retorno pós-ACLR, de evidência indireta e validade equívoca [@grindem2016; @webster2019]; o LSI pode mascarar déficit de qualidade [@kotsifaki2022triple; @wellsandt2017], por isso a qualidade do movimento é registrada, e o limite de agilidade de 11 s provém de bateria pós-ACLR relatada por @filbay2019, também extrapolação. Na Fase 4, o retorno gradual e a carga monitorada pela PSE multiplicada pelos minutos seguem @filbay2019 e @meredith2020, e a expectativa a conversar com o atleta é honesta: sem cirurgia, cerca de 55% dos atletas de nível I voltam, 60% no futebol, com certeza baixa [@grindem2012; @svensson2026]. O ACL-RSI foi validado em reconstruídos e seu uso aqui é extrapolação [@slater2022; @webster2008], e a dose mínima de prevenção de 10 min, 2 vezes por semana, não deve ser atribuída à redução de 61% das lesões do LCA, que é de mulheres e indireta para Bruno [@bullock2025]."
+     ]
+    },
+    {
+     "titulo": "Conservar ou operar: convergências e divergências",
+     "blocos": [
+      "As fontes convergem em quatro pontos: a progressão por critérios, o núcleo de força do quadríceps e treino neuromuscular com atenção à prontidão psicológica, a decisão compartilhada após um período de reabilitação e o falseio recorrente como gatilho para a cirurgia [@meredith2020; @vanmelick2016; @filbay2019; @kotsifaki2023; @diermeier2020]. A divergência central é o consenso Panther, que recomenda ACLR precoce em atletas de pivô de alta demanda, com o argumento de risco meniscal e condral na cirurgia tardia [@diermeier2020], contra a revisão de Filbay, que sustenta a reabilitação como primeira linha com base no KANON [@filbay2019]. Parte da diferença vem do peso dado à evidência: o consenso é opinião, ao passo que, no COMPARE, os procedimentos meniscais em 2 anos foram 29% (25/85) com ACLR precoce e 21% (17/82) com reabilitação inicial (RR 0,67; IC 95% 0,40–1,12; p = 0,12), isto é, sem aumento com a estratégia de reabilitação [@graaff2022menisco]. Outra parte vem da população: o KANON incluiu lesões agudas em joelho previamente hígido, e o SNNAP, lesões não agudas com instabilidade persistente, em que a cirurgia foi favorecida [@frobell2010; @beard2022]. A proposta é, por isso, uma tentativa com prazo e critérios de reavaliação, e não uma recusa à cirurgia: entre 41% e 51% dos pacientes tratados com reabilitação foram operados nos ensaios, principalmente por instabilidade (Quadro 5), e Bruno, mais jovem e ativo, está no perfil que mais migra para a cirurgia [@graaff2022; @arp2024]."
+     ]
+    },
+    {
+     "titulo": "Mecanismo e evidência clínica",
+     "blocos": [
+      "Quatro tensões merecem registro. Primeiro, o modelo do valgo como fator central nasceu em mulheres [@hewett2005; @koga2010], e no futebol masculino profissional o colapso em valgo foi raro nas lesões sem contato [@walden2015]; treinar o controle de quadril é coerente com o mecanismo, mas o benefício clínico no tratamento conservador não foi demonstrado. Segundo, o enunciado descreve rotação externa, enquanto os dados de LCA sem contato apontam rotação interna acoplada ao valgo [@braaten2022; @koga2010; @shin2011], o que é material de discussão, e não erro do enunciado. Terceiro, a IMA tem mecanismo sólido em saudáveis, mas componentes centrais ainda debatidos no paciente real [@rice2014; @nolan2026], e o efeito de cada recurso sobre desfechos duros no conservador não foi testado nas fontes recuperadas. Quarto, a classificação *coper*/*non-coper* tem plausibilidade mecânica e diferenças objetivas entre os grupos [@kaplan2011; @rudolph2001], mas acertou pouco no prognóstico [@moksnes2008] e muda com o treino [@thoma2019]. Soma-se que LSI, força, *hop tests*, volume muscular, ângulo de valgo e frouxidão ao Lachman são marcadores intermediários, ao passo que os desfechos duros do caso são falseio, função, retorno ao esporte e nova lesão [@lynch2015]; o LSI superestima a função [@wellsandt2017], e a simetria de distância esconde déficit [@kotsifaki2022triple]."
+     ]
+    },
+    {
+     "titulo": "Ligamento colateral medial",
+     "blocos": [
+      "O LCM cicatriza bem quando o LCA está estável: com o LCA reconstruído, o LCM não operado não piorou escores relatados pelo paciente, amplitude nem força [@shultz2024], e a estabilidade em valgo a 30° foi de 80% a 100% com reconstrução aguda do LCA [@vanderlist2024]. No cenário de Bruno, com ambos os ligamentos sem cirurgia, a estabilidade em valgo foi alcançada em apenas 27% a 68% dos casos [@vanderlist2024], desfecho substituto, de nível IV e sem ensaio. O único estudo direto, de 11 pacientes, não relatou instabilidade em 2 anos, mas tem risco grave de viés [@dadgostar2024]. O estiramento do LCM, portanto, não autoriza tratar o caso como isolado, e a estabilidade em valgo a 30° permanece como gatilho de reavaliação médica. O grau do LCM, não informado, é a principal incógnita: um estiramento de baixo grau tende a cicatrizar, mas a evidência para isso vem de séries com LCA reconstruído."
+     ]
+    },
+    {
+     "titulo": "Limitações da evidência e deste estudo",
+     "blocos": [
+      "A evidência é indireta em quase todos os componentes: o mecanismo e o risco de valgo vêm de mulheres, os critérios de retorno vêm de pacientes reconstruídos, a dose do exercício vem de adultos saudáveis, o modelo de dor vem de tendinopatias e os estudos de Delaware-Oslo excluíram lesões associadas. Nenhum estudo de mecanismo é ensaio em paciente com LCA e LCM em tratamento conservador, e as estimativas de acurácia dos testes não vêm de lesões combinadas. Predominam resumos: AMSTAR 2, RoB 2 e ROBINS-I foram estimados sem acesso ao texto, as recomendações de diretrizes relevantes (Orthopaedic Section, AAOS, JOA, prevenção de 2023) não foram extraídas, e conflitos de interesse não foram avaliados. A Cochrane Library e a BVS/LILACS não foram consultadas diretamente, três buscas complementares não foram triadas individualmente, o filtro de 2010 exclui parte da literatura clássica, e a busca epidemiológica não alcançou fontes oficiais, sem dado de incidência para o futebol society ou de custo para o SUS. Por fim, faltam ao caso o grau do LCM, o tempo de lesão, a ressonância, a frouxidão medida e o número de falseios, dados que mudariam a conduta."
+     ]
+    },
+    {
+     "titulo": "Nota sobre o pós-operatório tardio",
+     "blocos": [
+      "Se Bruno fosse, de fato, um pós-operatório tardio, a lógica criterial permaneceria, mas mudariam o critério de tempo e as restrições. O retorno a esportes de pivô só ocorreria após pelo menos 9 meses da ACLR e após passar nos critérios [@filbay2019; @grindem2016], com a diretriz holandesa prevendo 9 a 12 meses [@vanmelick2016]; a maturação do enxerto pode passar de 12 meses [@filbay2019]; e as restrições relativas a menisco, enxerto e LCM seriam definidas pelo cirurgião. Frouxidão sem parada firme com cirurgia prévia seria suspeita de falha de enxerto e motivo para reencaminhar ao ortopedista antes de qualquer carga."
+     ]
+    },
+    {
+     "titulo": "Escopo profissional e aplicabilidade no SUS",
+     "blocos": [
+      "O profissional de Educação Física prescreve, executa e monitora o exercício e aplica testes funcionais, questionários e a contagem de falseios; Lachman, gaveta, *pivot-shift*, estresse em valgo, testes meniscais, ressonância, eletroestimulação, crioterapia, terapia manual e órtese são atos da medicina e da fisioterapia. Essa fronteira explica por que o semáforo prevê comunicação à equipe e por que o estresse em valgo e o *pivot-shift* não aparecem como testes do plano. Quanto à aplicabilidade, os testes funcionais (*step down*, agachamento unipodal, *hop tests*, dinamometria manual e perimetria) e o IKDC, validado em português do Brasil [@metsavaht2010], são de baixo custo e viáveis na atenção básica, ao passo que artrômetro, dinamômetro isocinético e ressonância dependem da rede especializada (inferência do grupo, sem fonte). A ausência de diretriz nacional obriga a adotar protocolos locais apoiados em literatura internacional, e a decisão sobre cirurgia permanece médica e compartilhada com o atleta."
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "Considerações finais",
+   "blocos": [
+    "A pergunta que orientou o estudo foi se, em um atleta jovem de esporte com pivô, com LCA insuficiente e estiramento do LCM tratados de forma conservadora, a reabilitação progressiva por critérios melhora a estabilidade funcional, a função, o retorno ao esporte e a nova lesão em comparação com a reabilitação por tempo, o cuidado usual ou a reconstrução precoce. A resposta, com a certeza que o estudo permite, é parcial: a reabilitação estruturada é uma estratégia legítima para o adulto jovem ativo, com função semelhante à da cirurgia precoce na lesão aguda, mas uma parcela importante dos pacientes acaba operada por instabilidade, e nenhuma fonte comparou diretamente critérios com tempo nem estudou o tratamento conservador com lesão associada do LCM em atletas. Quanto ao retorno ao esporte e à nova lesão, a certeza da evidência é baixa a muito baixa.",
+    "O objetivo de apresentar o raciocínio clínico e uma proposta de intervenção foi cumprido. O mecanismo de valgo com rotação externa e pé fixo, a inibição do quadríceps pelo derrame e a classificação funcional provisória do atleta sustentam um programa em quatro fases, cada uma com frequência, intensidade, tempo, tipo, volume e progressão, critérios de saída medidos, um semáforo para dor, derrame e falseio e regras de encaminhamento. A proposta deve ser entendida como tentativa com prazo e reavaliação, e não como alternativa definitiva à cirurgia: o falseio recorrente, o derrame que não resolve e a instabilidade em valgo exigem avaliação do ortopedista.",
+    "Os limites são os do material disponível: a dose do exercício e os critérios de progressão são extrapolações de outras populações, os números sem fonte são convenções declaradas, e os dados ausentes do caso podem mudar a conduta. Para a prática do profissional de Educação Física, a mensagem central é prescrever por critérios, monitorar a resposta do joelho a cada sessão, respeitar o limite de escopo e encaminhar com rapidez."
+   ]
+  }
+ ],
+ "referencias_arquivo": "referencias.json"
+}

@@ -42,7 +42,7 @@
       "etapas": [
         {
           "titulo": "Pé fixo e valgo",
-          "texto": "Valgo e rotação externa com o joelho fletido"
+          "texto": "O pé fixo converte o giro do corpo em torque no joelho"
         },
         {
           "titulo": "Freios cedem",
@@ -92,7 +92,7 @@
         [
           "Pivot-shift",
           "Não informado",
-          "Reproduz o falseio; sensibilidade 24–59%, negativo não exclui LCA",
+          "Reproduz o falseio; sensibilidade 55%, negativo não exclui LCA",
           "Médico/fisio"
         ],
         [
@@ -102,7 +102,7 @@
           "Médico/fisio"
         ],
         [
-          "Interlinha, McMurray e RM",
+          "Interlinha, McMurray e ressonância",
           "Dor medial",
           "LCM ou menisco? McMurray: sensibilidade 70%, especificidade 71%",
           "Médico/fisio"
@@ -120,8 +120,8 @@
           "EF"
         ]
       ],
-      "fonte": "[@sokal2022; @hegedus2007; @sturgill2009; @reid2007]",
-      "notas": "Os testes de estresse ligamentar são atos de diagnóstico da medicina e da fisioterapia; ao profissional de Educação Física cabe interpretar o laudo e aplicar os testes funcionais. O Lachman tem sensibilidade de 81% no geral, mas só 68% em rupturas completas, e foi superestimado no passado. O pivot-shift tem sensibilidade baixa, de 24% a 59% no paciente acordado, e especificidade alta: negativo não exclui o LCA. O valgo a 30 graus testa o LCM superficial; a zero grau, a cápsula posteromedial. A dor medial pode ser LCM ou menisco, e os testes meniscais têm acurácia modesta, por isso a RM decide. O derrame, medido pela varredura modificada, é o nosso termômetro de carga. No step down e nos hop tests, diferenças de LSI menores que 7% a 13% podem ser ruído. No Bruno, pedimos o laudo antes de qualquer carga. Júlia vai mostrar o que ele faz para compensar."
+      "fonte": "[@sokal2022; @wijdicks2010; @hegedus2007; @sturgill2009; @reid2007]",
+      "notas": "Os testes de estresse ligamentar são atos de diagnóstico da medicina e da fisioterapia; ao profissional de Educação Física cabe interpretar o laudo e aplicar os testes funcionais. O Lachman tem sensibilidade de 81% no geral, mas só 68% em rupturas completas, e foi superestimado no passado. O pivot-shift tem sensibilidade baixa, de 55% na metanálise mais recente, e especificidade alta: negativo não exclui o LCA. O valgo a 30 graus testa o LCM superficial; a zero grau, a cápsula posteromedial. A dor medial pode ser LCM ou menisco, e os testes meniscais têm acurácia modesta, por isso a RM decide. O derrame, medido pela varredura modificada, é o nosso termômetro de carga. No step down e nos hop tests, diferenças de LSI menores que 7% a 13% podem ser ruído. No Bruno, pedimos o laudo antes de qualquer carga. Júlia vai mostrar o que ele faz para compensar."
     },
     {
       "layout": "tabela",
@@ -169,11 +169,11 @@
       "tempo_seg": 65,
       "titulo": "Reabilitar primeiro é defensável, mas 41% a 51% dos jovens ativos acabam operados",
       "esquerda": {
-        "titulo": "Reabilitação ± cirurgia tardia (2 anos)",
+        "titulo": "Reabilitação ± cirurgia tardia",
         "itens": [
-          "Função equivalente: KOOS4 0,2 (IC 95% −6,5 a 6,8)",
-          "Operados depois: 41% a 51%, quase sempre por instabilidade",
-          "Primeira linha razoável; falseio recorrente indica cirurgia",
+          "Função igual em 2 anos: KOOS4 0,2 (IC 95% −6,5 a 6,8)",
+          "Instabilidade motiva 90% das cirurgias tardias",
+          "Primeira linha razoável na lesão aguda",
           "Certeza baixa; ensaios em lesão aguda, sem LCM associado"
         ]
       },
@@ -183,11 +183,11 @@
           "IKDC +5,3 (IC 95% 0,6–9,9) em 24 meses; relevância incerta",
           "Lesão não aguda com instabilidade: KOOS4 +7,9 (IC 95% 2,5–13,2)",
           "Pivô de alta demanda: consenso prefere cirurgia após reabilitação",
-          "LCA e LCM sem cirurgia: valgo estável em 27–68%, contra 80–100%"
+          "LCA + LCM: valgo estável em 80–100% com LCA reconstruído, 27–68% sem"
         ]
       },
-      "fonte": "[@frobell2010; @reijman2021; @beard2022; @vanderlist2024]",
-      "notas": "No ensaio KANON, jovens ativos com LCA agudo tiveram função igual em dois anos com reabilitação seguida de cirurgia opcional; 51% do braço conservador foi operado em cinco anos. No COMPARE, 50% foram operados e 90% desses citaram instabilidade; a reconstrução precoce deu IKDC 5,3 pontos melhor em 24 meses, de relevância incerta. O ensaio ACL SNNAP, em lesão não aguda com instabilidade persistente, favoreceu a cirurgia, com certeza baixa, e só vale se a lesão do Bruno não for aguda. O consenso Panther, que é opinião, indica reconstrução em esporte de pivô e alta demanda, após reabilitação. Para o LCM, com LCA e LCM completos sem cirurgia, a estabilidade em valgo a 30 graus foi de 27% a 68%, com certeza muito baixa. Logo, o estiramento associado não autoriza tratar o caso como isolado, e o falseio recorrente nos encaminha ao ortopedista. Não há diretriz brasileira específica."
+      "fonte": "[@frobell2010; @frobell2013; @reijman2021; @graaff2022; @beard2022; @diermeier2020; @vanderlist2024]",
+      "notas": "No ensaio KANON, jovens ativos com LCA agudo tiveram função igual em dois anos com reabilitação seguida de cirurgia opcional; 51% do braço conservador foi operado em cinco anos. No COMPARE, 50% foram operados e 90% desses citaram instabilidade; a reconstrução precoce deu IKDC 5,3 pontos melhor em 24 meses, de relevância incerta. O ensaio ACL SNNAP, em lesão não aguda com instabilidade persistente, operou 41% do braço de reabilitação e favoreceu a cirurgia, com certeza baixa, e só vale se a lesão do Bruno não for aguda. O consenso Panther, que é opinião, indica reconstrução em esporte de pivô e alta demanda, após reabilitação. Para o LCM, com LCA e LCM completos sem cirurgia, a estabilidade em valgo a 30 graus foi de 27% a 68%, com certeza muito baixa. Logo, o estiramento associado não autoriza tratar o caso como isolado, e o falseio recorrente nos encaminha ao ortopedista. Não há diretriz brasileira específica."
     },
     {
       "layout": "topicos",
@@ -201,8 +201,8 @@
         "Falseio persistente: o ortopedista decide sobre a cirurgia"
       ],
       "destaque": {
-        "valor": "10 sessões",
-        "rotulo": "de força e treino neuromuscular: quase metade dos non-copers vira potential coper"
+        "valor": "10",
+        "rotulo": "sessões de força e treino neuromuscular: quase metade dos non-copers vira potential coper"
       },
       "fonte": "[@moksnes2008; @hurd2008outcomes; @thoma2019]",
       "notas": "O rastreio coper e non-coper tem boa plausibilidade, mas prognóstico fraco: valor preditivo positivo de 60% e negativo de 30%, sem utilidade clínica prognóstica segundo os próprios autores. Além disso, foi validado sem lesão associada, e o Bruno tem derrame e LCM comprometido. Por isso o rótulo non-coper é provisório: não contraindica o tratamento conservador, já que 70% dos potential non-copers tratados sem cirurgia eram copers verdadeiros em um ano. Em uma coorte de 271 pacientes, quase metade dos non-copers virou potential coper após dez sessões de treino neuromuscular e de força. Então tratamos, reclassificamos ao fim do bloco inicial e decidimos com o ortopedista, de forma compartilhada."
@@ -252,7 +252,7 @@
         }
       ],
       "fonte": "[@filbay2019; @kotsifaki2023; @meredith2020]",
-      "notas": "Obrigado, Júlia. Prescrevemos exercício, que é o escopo da Educação Física; eletroestimulação, crioterapia e terapia manual ficam com a equipe multiprofissional. A Fase 1 trata derrame, extensão e inibição do quadríceps. A Fase 2 é o bloco de força, de cerca de cinco semanas e dez sessões, e termina na reclassificação. A Fase 3 devolve potência, corrida e agilidade. A Fase 4 reintroduz o futebol. Cada passagem exige critérios, porque o retorno não pode depender só do tempo. Uma ressalva: não há ensaio de dose no LCA insuficiente; a estrutura vem de Eitzen, da ACSM e de estudos pós-reconstrução, e os números sem fonte são convenção nossa."
+      "notas": "Obrigado, Júlia. Prescrevemos exercício, que é o escopo da Educação Física; eletroestimulação, crioterapia e terapia manual ficam com a equipe multiprofissional. A Fase 1 trata derrame, extensão e inibição do quadríceps. A Fase 2 é o bloco de força, de cerca de cinco semanas e dez sessões supervisionadas, e termina na reclassificação. A Fase 3 devolve potência, corrida e agilidade. A Fase 4 reintroduz o futebol. Cada passagem exige critérios, porque o retorno não pode depender só do tempo. Uma ressalva: não há ensaio de dose no LCA insuficiente; a estrutura vem de Eitzen, da ACSM e de estudos pós-reconstrução, e os números sem fonte são convenção nossa."
     },
     {
       "layout": "fitt",
@@ -284,7 +284,7 @@
       "layout": "fitt",
       "apresentador": "Gabriel",
       "tempo_seg": 95,
-      "titulo": "Fase 2: força de alta carga e controle do valgo em cerca de 10 sessões",
+      "titulo": "Fase 2: cinco semanas de força de alta carga e controle do valgo",
       "itens": {
         "F": "3 sessões por semana (≥ 2 supervisionadas), com ≥ 48 h entre as do mesmo grupo",
         "I": "Semanas 1–2: 8–12 RM; semanas 3–5: 6–8 RM; dor ≤ 3/10; regra do ‘+2’",
@@ -355,8 +355,8 @@
         "4 semanas de treino coletivo sem dor, derrame ou falseio",
         "Laudo médico e decisão compartilhada"
       ],
-      "fonte": "[@meredith2020; @filbay2019; @grindem2016; @bullock2025]",
-      "notas": "A Fase 4 reintroduz o esporte em estágios: gestos sem oposição, jogos reduzidos, treino com contato e amistoso por tempo limitado. A carga é medida pelo esforço percebido vezes minutos, com aumento semanal de 10% a 15%, por convenção. A regressão segue o semáforo: sinal amarelo repete o estágio; falseio, derrame com dois graus a mais ou dor acima de 5 interrompem e regridem. A cada quatro semanas reavaliamos hops e dinamometria; abaixo de 90%, volta à Fase 3. Quem falhou nos critérios após reconstrução teve 38,2% de nova lesão contra 5,6%, dado indireto. Sem cirurgia, o retorno esperado é de cerca de 55% em atletas de nível I e 60% no futebol, certeza baixa. A prevenção segue depois do retorno, com dez minutos, duas vezes por semana."
+      "fonte": "[@meredith2020; @filbay2019; @grindem2016; @grindem2012; @svensson2026; @bullock2025]",
+      "notas": "A Fase 4 reintroduz o esporte em estágios: gestos sem oposição, jogos reduzidos, treino com contato e amistoso por tempo limitado. A carga é medida pelo esforço percebido vezes minutos, com aumento semanal de 10% a 15%, por convenção. A regressão segue o semáforo: sinal amarelo repete o estágio; falseio, derrame com dois graus a mais ou dor acima de 5 interrompem e regridem. A cada quatro semanas reavaliamos hops e dinamometria; abaixo de 90%, volta à Fase 3. Quem falhou nos critérios após reconstrução teve 38,2% de nova lesão contra 5,6%, dado indireto. Sem cirurgia, cerca de 55% dos atletas de nível I voltam; no futebol, 60% voltaram numa coorte com tratamentos mistos; a certeza é baixa. A prevenção segue depois do retorno, com dez minutos, duas vezes por semana."
     },
     {
       "layout": "semaforo",
@@ -377,7 +377,7 @@
         {
           "cor": "amarelo",
           "sinal": "Dor medial 3–5/10 em tarefa com valgo, ou quase falseio",
-          "conduta": "Simplifica a tarefa, volta ao plano sagital e pede reavaliação do LCM"
+          "conduta": "Simplifica a tarefa, volta ao plano sagital e reavalia o LCM"
         },
         {
           "cor": "vermelho",
@@ -404,12 +404,12 @@
       "tempo_seg": 25,
       "titulo": "Reabilitar o Bruno por critérios é defensável, com o ortopedista por perto",
       "itens": [
-        "A instabilidade vem do conjunto: freios cedendo, quadríceps inibido e controle motor falho",
-        "Reabilitar primeiro é razoável; o falseio recorrente leva ao ortopedista",
-        "Cada fase só termina quando os critérios são cumpridos",
-        "O semáforo transforma sintomas em decisões de carga"
+        "Raciocínio: LCA sem função, LCM estirado e quadríceps inibido explicam o falseio",
+        "Decisão: reabilitar primeiro, reclassificar e decidir com o ortopedista",
+        "Prescrição: quatro fases FITT-VP; critérios liberam e o semáforo regula a carga",
+        "Limite: doses e cortes vêm sobretudo de estudos pós-reconstrução"
       ],
-      "notas": "Resumindo: a instabilidade do Bruno resulta do conjunto, não de um teste isolado. Reabilitar primeiro é razoável, com o ortopedista decidindo se o falseio persistir, porque o retorno ao esporte sem cirurgia é incerto. Cada fase termina por critérios, nunca por calendário, e o semáforo transforma dor, derrame e falseio em decisões de carga."
+      "notas": "Resumindo. Raciocínio: a instabilidade vem do conjunto, LCA sem função, LCM estirado e quadríceps inibido. Decisão: reabilitar primeiro, reclassificar e decidir com o ortopedista se o falseio persistir. Prescrição: quatro fases liberadas por critérios, com o semáforo ajustando a carga. Limite: a maior parte das doses e dos cortes vem de estudos pós-reconstrução."
     },
     {
       "layout": "encerramento",

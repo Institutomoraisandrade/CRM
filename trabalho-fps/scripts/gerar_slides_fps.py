@@ -908,7 +908,7 @@ class Construtor:
                        cor=rgb("#FFFFFF"), negrito=True, alinhar="centro", ancora="meio")
             self.texto(sl, MX + 2.3, y + 0.1, 4.6, rh - 0.2, nv.get("sinal", ""), tamanho=15,
                        cor=self.m.c["texto"], ancora="meio", realce=self.m.c["primaria"])
-            self.texto(sl, MX + 7.2, y + 0.1, W - MX - 7.4 - 0.2, rh - 0.2, nv.get("conduta", ""), tamanho=15,
+            self.texto(sl, MX + 7.2, y + 0.1, W - 2 * MX - 7.4, rh - 0.2, nv.get("conduta", ""), tamanho=15,
                        cor=self.m.c["texto"], ancora="meio", negrito=False, realce=self.m.c["primaria"])
             self._registrar(f"{nv.get('sinal', '')} {nv.get('conduta', '')}")
         self.rodape(sl, s.get("fonte"))

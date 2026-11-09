@@ -1261,10 +1261,7 @@
     "desenho": "Revisão narrativa (nível V)",
     "nivel_evidencia": null,
     "verificado": true,
-    "verificado_via": "PubMed PMID 42748362",
-    "aliases": [
-      "runer2026classification"
-    ]
+    "verificado_via": "PubMed PMID 42748362"
   },
   {
     "id": "dambrosi2021",
@@ -1473,10 +1470,7 @@
     "desenho": "Coorte",
     "nivel_evidencia": null,
     "verificado": true,
-    "verificado_via": "PubMed PMID 17940141; ano do fascículo 2008 confirmado por [ppdat]",
-    "aliases": [
-      "hurd2008determinants"
-    ]
+    "verificado_via": "PubMed PMID 17940141; ano do fascículo 2008 confirmado por [ppdat]"
   },
   {
     "id": "eitzen2010",
@@ -2689,5 +2683,52 @@
     "nivel_evidencia": null,
     "verificado": true,
     "verificado_via": "PubMed PMID 26618058 (metadados; texto completo PMC4637913 indisponível, só o resumo foi lido)"
+  },
+  {
+    "id": "runer2026classification",
+    "tipo": "artigo",
+    "autores": [
+      "Runer, Armin",
+      "Bouguennec, Nicolas",
+      "Wierer, Guido",
+      "Robinson, James"
+    ],
+    "et_al": true,
+    "titulo": "Current concepts in isolated and combined injuries of the medial collateral ligament complex",
+    "subtitulo": "Part II: the anteromedial knee instability classification",
+    "periodico": "Knee Surg Sports Traumatol Arthrosc",
+    "ano": 2026,
+    "volume": null,
+    "numero": null,
+    "paginas": null,
+    "doi": "10.1002/ksa.70630",
+    "pmid": "42789756",
+    "desenho": "Revisão narrativa (nível V)",
+    "nivel_evidencia": null,
+    "verificado": true,
+    "verificado_via": "PubMed PMID 42789756"
+  },
+  {
+    "id": "hurd2008determinants",
+    "tipo": "artigo",
+    "autores": [
+      "Hurd, Wendy J.",
+      "Axe, Michael J.",
+      "Snyder-Mackler, Lynn"
+    ],
+    "et_al": false,
+    "titulo": "A 10-year prospective trial of a patient management algorithm and screening examination for highly active individuals with anterior cruciate ligament injury",
+    "subtitulo": "Part 2, determinants of dynamic knee stability",
+    "periodico": "Am J Sports Med",
+    "ano": 2008,
+    "volume": "36",
+    "numero": "1",
+    "paginas": "48-56",
+    "doi": "10.1177/0363546507308191",
+    "pmid": "17932399",
+    "desenho": "Coorte",
+    "nivel_evidencia": null,
+    "verificado": true,
+    "verificado_via": "PubMed PMID 17932399; ano do fascículo 2008 confirmado por [ppdat]"
   }
 ]

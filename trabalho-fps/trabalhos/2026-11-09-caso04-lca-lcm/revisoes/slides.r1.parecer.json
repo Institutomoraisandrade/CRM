@@ -1,0 +1,87 @@
+{
+  "etapa": "slides",
+  "rodada": 1,
+  "revisor": "fps-lider-producao",
+  "modelo_revisor": "opus",
+  "executor": "fps-5-designer-slides",
+  "arquivos_revisados": ["slides.json", "apresentacao.pptx", "roteiro.md", "previa-apresentacao/pagina-01..21.png", "00-briefing.md", "rubrica.json", "02-analise-critica.md", "03-evidencias.md", "04-prescricao.json"],
+  "criterios": {
+    "clareza": 8.5,
+    "ausencia_de_redundancia": 8.0,
+    "identidade_visual_fps": 8.0,
+    "fidelidade_ao_artigo": 8.5,
+    "notas_do_apresentador": 9.0
+  },
+  "achados": [
+    {
+      "id": "A1",
+      "gravidade": "menor",
+      "local": "slides.json > slide 6 (dois_colunas)",
+      "problema": "Quatro falhas no mesmo slide. (1) O cabeçalho '(2 anos)' rotulava como de 2 anos uma faixa que vai de 41% (ACL SNNAP, 18 meses) a 51% (KANON, 5 anos). (2) O tópico 'Operados depois: 41% a 51%' repetia o número do título. (3) O tópico 'falseio recorrente indica cirurgia' era mais forte que a fonte, que trata o falseio como critério de encaminhamento, e repetia o slide 7 e a conclusão. (4) 'contra 80–100%' não dizia de qual grupo era o número. As notas citavam o 41% do título sem dizer de onde ele vinha, e o rodapé não trazia frobell2013 (51% em 5 anos), graaff2022 (90% por instabilidade) nem diermeier2020 (consenso Panther).",
+      "evidencia": "03-evidencias.md §5 (KANON 30/59 = 51% em 5 anos; COMPARE 41/82 = 50%, 90% por instabilidade; SNNAP 65/160 = 41%) e §6, linha 'Necessidade de cirurgia tardia'; 02-analise-critica.md l.185 (80–100% com ACLR aguda).",
+      "correcao": "APLICADA: o cabeçalho passou a 'Reabilitação ± cirurgia tardia'. Tópicos novos: 'Função igual em 2 anos: KOOS4 0,2 (IC 95% −6,5 a 6,8)', 'Instabilidade motiva 90% das cirurgias tardias' e 'Primeira linha razoável na lesão aguda'. À direita: 'LCA + LCM: valgo estável em 80–100% com LCA reconstruído, 27–68% sem'. As notas ganharam o 41% do SNNAP. Rodapé com as 7 fontes.",
+      "responsavel": "fps-5-designer-slides",
+      "licao": "Toda faixa numérica do título precisa ter, nas notas ou no corpo, a origem de cada extremo e o horizonte de tempo; o corpo não repete o número do título."
+    },
+    {
+      "id": "A2",
+      "gravidade": "menor",
+      "local": "slides.json > slide 13 (Fase 4) > notas",
+      "problema": "'Sem cirurgia, o retorno esperado é de cerca de 55% em atletas de nível I e 60% no futebol' atribuía ao tratamento sem cirurgia os 60% de uma coorte com tratamentos mistos (66% fizeram ACLR).",
+      "evidencia": "03-evidencias.md §5 (@svensson2026: futebol 60%, tratamentos mistos) e §7 (Resposta, item 3).",
+      "correcao": "APLICADA: 'Sem cirurgia, cerca de 55% dos atletas de nível I voltam; no futebol, 60% voltaram numa coorte com tratamentos mistos; a certeza é baixa.' O rodapé agora traz @grindem2012 e @svensson2026. A mesma imprecisão está em 04-prescricao.json > retorno_ao_esporte, que já foi aprovado; o artigo deve usar a forma corrigida.",
+      "responsavel": "fps-5-designer-slides",
+      "licao": "Ao resumir um número, mantenha a população de origem (com ou sem cirurgia, tratamentos mistos); ela faz parte do dado."
+    },
+    {
+      "id": "A3",
+      "gravidade": "menor",
+      "local": "slides.json > slide 11 (Fase 2) > título; slide 9 > notas",
+      "problema": "O título dizia 'em cerca de 10 sessões', mas a Frequência do mesmo slide é de 3 sessões por semana durante 5 semanas, o que dá cerca de 15. A banca pode cobrar essa conta em C2. As 10 sessões de Eitzen são as supervisionadas.",
+      "evidencia": "04-prescricao.json > Fase 2 > F ('3 sessões/semana… no mínimo 2 supervisionadas') × I ('Semanas 1–2 (sessões 1–4)… Semanas 3–5 (sessões 5–10)').",
+      "correcao": "APLICADA: título 'Fase 2: cinco semanas de força de alta carga e controle do valgo'; as notas do slide 9 dizem 'dez sessões supervisionadas'. A mesma ambiguidade continua em 04-prescricao.json e precisa ser alinhada no artigo.",
+      "responsavel": "fps-5-designer-slides"
+    },
+    {
+      "id": "A4",
+      "gravidade": "menor",
+      "local": "slides.json > slide 4 (testes)",
+      "problema": "Três problemas. (1) A sigla 'RM' significava ressonância magnética no slide 4 e repetição máxima nos slides 10 a 13. (2) A faixa de sensibilidade do pivot-shift (24–59%) vinha de Benjaminse e Huang, que não estavam no rodapé. (3) O valgo a 0° e a 30° não tinha fonte. Com todas as fontes, o rodapé invadia a marca FPS.",
+      "evidencia": "02-analise-critica.md l.82: 24%/98% [@benjaminse2006], 59%/97% [@huang2022], 55%/94% [@sokal2022]; prévia da página 4 com o rodapé sobreposto.",
+      "correcao": "APLICADA: 'ressonância' por extenso; o pivot-shift passou a usar o dado da metanálise mais recente já citada ('sensibilidade 55%') nas linhas e nas notas; @wijdicks2010 entrou no rodapé, agora sem sobreposição.",
+      "responsavel": "fps-5-designer-slides",
+      "licao": "A mesma sigla não pode ter dois sentidos na apresentação (RM = ressonância × repetição máxima)."
+    },
+    {
+      "id": "A5",
+      "gravidade": "menor",
+      "local": "slides.json > slide 3 (etapa 1) e slide 15 (conclusão)",
+      "problema": "A etapa 1 do fluxo repetia o tópico 'Trauma' do slide 2. Os quatro cartões da conclusão parafraseavam os títulos dos slides 6, 9 e 14 em vez de sintetizar.",
+      "evidencia": "Leitura cruzada: slide 2 'valgo com rotação externa da tíbia, joelho fletido' × slide 3 'Valgo e rotação externa com o joelho fletido'; slide 15 'O semáforo transforma sintomas em decisões de carga' × título do slide 14.",
+      "correcao": "APLICADA: etapa 1 = 'O pé fixo converte o giro do corpo em torque no joelho' (vem das notas). Conclusão em quatro eixos (Raciocínio, Decisão, Prescrição, Limite), e o Limite traz a ressalva de que doses e cortes vêm de estudos pós-reconstrução. Notas reescritas com 53 palavras para 25 s.",
+      "responsavel": "fps-5-designer-slides"
+    },
+    {
+      "id": "A6",
+      "gravidade": "menor",
+      "local": "slide 7 (destaque) e slide 14 (semáforo)",
+      "problema": "No slide 7, o valor '10 sessões' quebrava em duas linhas no corpo de 54 pt. No slide 14, o texto da coluna Conduta passava da borda direita do cartão: o script calculava a largura com uma margem só (W − MX − 7,6 em vez de W − 2·MX − 7,4).",
+      "evidencia": "Prévias das páginas 7 e 14 (r0); scripts/gerar_slides_fps.py, linha 911.",
+      "correcao": "APLICADA: valor '10', com 'sessões…' no rótulo. Linha 911 do script corrigida, o que vale para todos os trabalhos, e conduta do LCM encurtada.",
+      "responsavel": "fps-5-designer-slides"
+    }
+  ],
+  "correcoes_aplicadas": [
+    "A1–A6 aplicados pelo revisor em slides.json; apresentacao.pptx, roteiro.md e previa-apresentacao/ regenerados (21 páginas)",
+    "scripts/gerar_slides_fps.py l.911: largura da coluna Conduta do semáforo limitada à margem do cartão"
+  ],
+  "pontos_fortes": [
+    "Arco cobre a rubrica na ordem: C1 nos slides 2 a 5, decisão e cenário alternativo nos slides 6 a 8, C2 nos slides 9 a 13 com FITT-VP completo e critério de saída por fase, C3 no semáforo do slide 14.",
+    "Títulos são afirmações. Há uma ideia por slide, com no máximo 5 tópicos, e fonte autor-data em todo slide com dado.",
+    "Números conferidos contra 02, 03 e 04: Lachman 81/68%, McMurray 70/71%, κ 0,75, LSI 7–13%, KOOS4 0,2 e +7,9, IKDC +5,3, VPP 60% e VPN 30%, 27–68% × 80–100%, 38,2% × 5,6%, doses e gatilhos do semáforo idênticos aos de 04-prescricao.json (inclusive as correções A1, A2, A4, A5 e A7 da revisão da prescrição).",
+    "As notas são um roteiro de fala real (123–152 palavras/min). Marcam o que é convenção, extrapolação ou hipótese e têm transições entre integrantes.",
+    "Tempo: 13:40 de 15:00, dentro da janela de 13:30 a 14:00. Divisão de 3:20 a 3:30 por integrante (C5, C6). O escopo da Educação Física × equipe está explícito nos slides 4 e 9."
+  ],
+  "escalonado": false,
+  "resumo": "slides r1: 6 achados menores, todos corrigidos pelo revisor, e pptx, roteiro e prévia regenerados. Não houve achado crítico ou maior. Pendência conhecida: logo oficial da FPS. Para o artigo e o líder de ciência: alinhar 04-prescricao.json (retorno ao esporte: 60% no futebol vem de coorte com tratamentos mistos; Fase 2: 3 sessões/semana × '10 sessões', que são as supervisionadas)."
+}
