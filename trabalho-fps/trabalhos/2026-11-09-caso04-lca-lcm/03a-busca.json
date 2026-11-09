@@ -1,0 +1,168 @@
+{
+ "data_busca": "2026-11-09",
+ "buscas": [
+  {
+   "base": "PubMed",
+   "camada": "revisoes (variante de desenho do líder)",
+   "string": "(\"Anterior Cruciate Ligament Injuries\"[MeSH Terms] OR \"anterior cruciate ligament\"[tiab]) AND (nonoperative[tiab] OR nonsurgical[tiab] OR conservative[tiab] OR \"ACL-deficient\"[tiab] OR copers[tiab] OR noncopers[tiab] OR \"rehabilitation alone\"[tiab] OR \"delayed reconstruction\"[tiab]) AND (rehabilitation[tiab] OR \"Exercise Therapy\"[MeSH Terms] OR \"neuromuscular training\"[tiab] OR exercise[tiab]) AND (systematic review[pt] OR meta-analysis[pt] OR randomized controlled trial[pt] OR guideline[pt])",
+   "filtros": "pdat 2010/01/01–2026/12/31; sort pub_date",
+   "resultados": 72,
+   "retidos": 50,
+   "observacao": "String com SR/MA/RCT/guideline[pt] na forma do líder (17 operadores). A forma longa do 01-picos (com bloco SR/MA + população) excedeu 20 operadores do MCP (23) e não foi executada."
+  },
+  {
+   "base": "PubMed",
+   "camada": "ensaios",
+   "string": "(\"Anterior Cruciate Ligament Injuries\"[MeSH Terms] OR \"anterior cruciate ligament\"[tiab]) AND (nonoperative[tiab] OR nonsurgical[tiab] OR conservative[tiab] OR \"ACL-deficient\"[tiab] OR copers[tiab] OR noncopers[tiab] OR \"rehabilitation alone\"[tiab] OR \"delayed reconstruction\"[tiab]) AND (rehabilitation[tiab] OR \"Exercise Therapy\"[MeSH Terms] OR \"neuromuscular training\"[tiab] OR exercise[tiab]) AND (soccer[tiab] OR football[tiab] OR pivoting[tiab] OR active[tiab] OR athletes[tiab] OR \"Athletic Injuries\"[MeSH Terms]) AND randomized controlled trial[pt]",
+   "filtros": "pdat 2010/01/01–2026/12/31; sort pub_date",
+   "resultados": 17,
+   "retidos": 17
+  },
+  {
+   "base": "PubMed",
+   "camada": "principal (sem filtro de desenho)",
+   "string": "(\"Anterior Cruciate Ligament Injuries\"[MeSH Terms] OR \"anterior cruciate ligament\"[tiab]) AND (nonoperative[tiab] OR nonsurgical[tiab] OR conservative[tiab] OR \"ACL-deficient\"[tiab] OR copers[tiab] OR noncopers[tiab] OR \"rehabilitation alone\"[tiab] OR \"delayed reconstruction\"[tiab]) AND (rehabilitation[tiab] OR \"Exercise Therapy\"[MeSH Terms] OR \"neuromuscular training\"[tiab] OR exercise[tiab]) AND (soccer[tiab] OR football[tiab] OR pivoting[tiab] OR active[tiab] OR athletes[tiab] OR \"Athletic Injuries\"[MeSH Terms])",
+   "filtros": "pdat 2010/01/01–2026/12/31; sort pub_date",
+   "resultados": 165,
+   "retidos": 50
+  },
+  {
+   "base": "PubMed",
+   "camada": "diretrizes",
+   "string": "(\"Anterior Cruciate Ligament Injuries\"[MeSH Terms] OR \"anterior cruciate ligament\"[tiab]) AND (guideline*[ti] OR recommendations[ti] OR consensus[ti] OR \"clinical practice\"[ti]) AND (rehabilitation[tiab] OR management[tiab] OR \"return to sport\"[tiab] OR \"Exercise Therapy\"[MeSH Terms])",
+   "filtros": "pdat 2010/01/01–2026/12/31; sort pub_date",
+   "resultados": 115,
+   "retidos": 50
+  },
+  {
+   "base": "PubMed",
+   "camada": "diretrizes (filtro Practice Guideline/Guideline[pt])",
+   "string": "(\"Anterior Cruciate Ligament Injuries\"[MeSH Terms] OR \"anterior cruciate ligament\"[tiab]) AND (guideline*[ti] OR recommendations[ti] OR consensus[ti] OR \"clinical practice\"[ti]) AND (rehabilitation[tiab] OR management[tiab] OR \"return to sport\"[tiab] OR \"Exercise Therapy\"[MeSH Terms]) AND (Practice Guideline[pt] OR Guideline[pt])",
+   "filtros": "pdat 2010/01/01–2026/12/31; sort pub_date",
+   "resultados": 7,
+   "retidos": 7
+  },
+  {
+   "base": "PubMed",
+   "camada": "dose conservador (FITT-VP)",
+   "string": "(\"Anterior Cruciate Ligament Injuries\"[MeSH Terms] OR \"anterior cruciate ligament\"[tiab]) AND (nonoperative[tiab] OR nonsurgical[tiab] OR conservative[tiab] OR \"ACL-deficient\"[tiab] OR copers[tiab] OR noncopers[tiab] OR \"rehabilitation alone\"[tiab]) AND (\"Resistance Training\"[MeSH Terms] OR \"Plyometric Exercise\"[MeSH Terms] OR \"quadriceps strengthening\"[tiab] OR \"perturbation training\"[tiab] OR dose[tiab] OR \"neuromuscular training\"[tiab])",
+   "filtros": "pdat 2010/01/01–2026/12/31",
+   "resultados": 38,
+   "retidos": 38
+  },
+  {
+   "base": "PubMed",
+   "camada": "dose revisões (FITT-VP)",
+   "string": "(\"Anterior Cruciate Ligament Injuries\"[MeSH Terms] OR \"anterior cruciate ligament\"[tiab]) AND (dose[tiab] OR \"dose-response\"[tiab] OR volume[tiab] OR progression[tiab]) AND (\"Resistance Training\"[MeSH Terms] OR \"Plyometric Exercise\"[MeSH Terms] OR \"Exercise Therapy\"[MeSH Terms]) AND (systematic review[pt] OR guideline[pt])",
+   "filtros": "pdat 2010/01/01–2026/12/31",
+   "resultados": 7,
+   "retidos": 7
+  },
+  {
+   "base": "PubMed",
+   "camada": "LCM",
+   "string": "(\"Medial Collateral Ligament, Knee\"[MeSH Terms] OR \"medial collateral ligament\"[tiab]) AND (nonoperative[tiab] OR nonsurgical[tiab] OR conservative[tiab] OR rehabilitation[tiab]) AND (\"Anterior Cruciate Ligament Injuries\"[MeSH Terms] OR ACL[tiab]) AND (systematic review[pt] OR meta-analysis[pt] OR randomized controlled trial[pt])",
+   "filtros": "pdat 2010/01/01–2026/12/31",
+   "resultados": 10,
+   "retidos": 10
+  },
+  {
+   "base": "PubMed",
+   "camada": "diretriz JOSPT (busca dirigida, nota do líder)",
+   "string": "Logerstedt knee ligament sprain clinical practice guideline JOSPT",
+   "filtros": "pdat 2010/01/01–2026/12/31",
+   "resultados": 2,
+   "retidos": 2,
+   "observacao": "Recuperou PMID 29089004 (JOSPT 2017) e 20357420 (JOSPT 2010). A string de diretrizes não recupera a de 2017 nos 50 primeiros."
+  },
+  {
+   "base": "Consensus",
+   "camada": "revisões sistemáticas e metanálises",
+   "string": "nonoperative rehabilitation versus reconstruction anterior cruciate ligament injury active patients",
+   "filtros": "medical_mode=true; study_types=[systematic review, meta-analysis]; page_size=50",
+   "resultados": 50,
+   "retidos": 50,
+   "observacao": "Saída do Consensus salva em arquivo (JSON longo); registros sem PMID/DOI nesta versão do plano (DOI não retornado)."
+  }
+ ],
+ "diretrizes_web": [
+  {
+   "organizacao": "Orthopaedic Section, APTA (JOSPT)",
+   "titulo": "Knee Stability and Movement Coordination Impairments: Knee Ligament Sprain Revision 2017",
+   "ano": "2017",
+   "url": "https://doi.org/10.2519/jospt.2017.0303",
+   "status": "metadados conferidos no PubMed (PMID 29089004); texto completo não aberto"
+  },
+  {
+   "organizacao": "American Academy of Orthopaedic Surgeons (AAOS)",
+   "titulo": "Clinical Practice Guideline on the Management of Anterior Cruciate Ligament Injuries (atualização 2022; resumo JAAOS 2023 no PMID 36727995)",
+   "ano": "2022",
+   "url": "https://www.aaos.org/anteriorcruciateligamentinjuries/",
+   "status": "não aberto; data pelo resultado de busca web; versão de 2015 (PMID 25878313) superada"
+  },
+  {
+   "organizacao": "Aspetar (Qatar)",
+   "titulo": "Aspetar clinical practice guideline on rehabilitation after anterior cruciate ligament reconstruction",
+   "ano": "2023",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/36731908/",
+   "status": "metadados PubMed; evidência indireta (pós-reconstrução)"
+  },
+  {
+   "organizacao": "Japanese Orthopaedic Association (JOA)",
+   "titulo": "Japanese Orthopaedic Association (JOA) clinical practice guidelines on the management of anterior cruciate ligament injury",
+   "ano": "2019",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/31843222/",
+   "status": "metadados PubMed (PMID 31843222)"
+  },
+  {
+   "organizacao": "Consenso multidisciplinar (van Melick et al.)",
+   "titulo": "Evidence-based clinical practice update: practice guidelines for anterior cruciate ligament rehabilitation based on a systematic review and multidisciplinary consensus",
+   "ano": "2016",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/27539507/",
+   "status": "metadados PubMed (PMID 27539507); população majoritariamente pós-reconstrução"
+  },
+  {
+   "organizacao": "German Knee Society",
+   "titulo": "ACL rehabilitation after reconstruction: Evidence-based consensus recommendations from the German Knee Society - Part IV",
+   "ano": "2026",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42549304/",
+   "status": "metadados PubMed; evidência indireta (pós-reconstrução)"
+  },
+  {
+   "organizacao": "UEFA (consenso de futebol feminino)",
+   "titulo": "UEFA consensus guidelines on anterior cruciate ligament (ACL) injury in women's football - Part Two: rehabilitation, return to play, and players' perceptions",
+   "ano": "2026",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42875873/",
+   "status": "metadados PubMed; população de futebol; evidência de consenso"
+  },
+  {
+   "organizacao": "Panther Symposium ACL Treatment Consensus Group",
+   "titulo": "Treatment After Anterior Cruciate Ligament Injury: Panther Symposium ACL Treatment Consensus Group",
+   "ano": "2020",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/32637434/",
+   "status": "não verificado por metadados; apenas resultado de busca web (Consensus indicou publicação em 2021)"
+  },
+  {
+   "organizacao": "Australian Knee Society / Australian Orthopaedic Association",
+   "titulo": "ACL injury consensus position statement and guideline for physios",
+   "ano": "2021",
+   "url": "https://australian.physio/node/2929",
+   "status": "não aberto; apenas resultado de busca web"
+  },
+  {
+   "organizacao": "Revisão com recomendações (Filbay & Grindem)",
+   "titulo": "Evidence-based recommendations for the management of anterior cruciate ligament (ACL) rupture",
+   "ano": "2019",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/31431274/",
+   "status": "metadados PubMed; revisão com recomendações, não diretriz formal"
+  }
+ ],
+ "prisma": {
+  "identificados": 282,
+  "duplicatas_removidas": 46,
+  "triados": 236,
+  "excluidos_titulo_resumo": 176,
+  "para_avaliacao": 60
+ },
+ "alerta": null
+}
