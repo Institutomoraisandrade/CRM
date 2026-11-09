@@ -1,6 +1,6 @@
 # Validação — 2026-11-09-caso04-lca-lcm
 
-Gerado em 09/11/2026 22:11.
+Gerado em 09/11/2026 22:12.
 
 **Resultado:** ✅ APROVADO (0 erro(s), 3 aviso(s))
 
@@ -14,7 +14,7 @@ Gerado em 09/11/2026 22:11.
 
 ## Indicadores
 - resumo: 220 palavras
-- corpo do texto: ~13935 palavras
+- corpo do texto: ~13917 palavras
 - 109 referência(s); 40 (36%) dos últimos 5 anos; mais antiga: 2000
 - desenhos: Coorte: 21; Revisão sistemática com metanálise: 18; Revisão narrativa: 12; Diretriz: 11; Ensaio clínico randomizado: 9; Transversal: 4; Revisão sistemática: 4; Estudo experimental em voluntários saudáveis: 4; Estudo laboratorial em cadáver: 3; Estudo de validação: 3; Revisão de escopo: 2; Revisão narrativa (nível V): 2; Estudo de confiabilidade (medida clínica): 1; Revisão sistemática (overview de revisões sistemáticas): 1; Estudo laboratorial controlado: 1; Série de casos: 1; Estudo laboratorial descritivo em cadáver: 1; Revisão narrativa (simulação computacional): 1; Relato de caso: 1; Série de casos (análise sistemática de vídeo): 1; Série de casos (análise de vídeo): 1; Estudo de simulação computacional: 1; Estudo transversal (análise de movimento): 1; Estudo de acurácia/confiabilidade (voluntários assintomáticos): 1; Estudo laboratorial (voluntários saudáveis): 1; Consenso de especialistas (survey): 1; Análise exploratória de ensaio clínico randomizado (caso-controle): 1; Caso-controle: 1
 - 17 slide(s) definidos

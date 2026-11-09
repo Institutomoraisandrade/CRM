@@ -1,0 +1,28 @@
+{
+  "etapa": "artigo-forma",
+  "rodada": 2,
+  "revisor": "fps-lider-producao",
+  "modelo_revisor": "opus",
+  "executor": "fps-4-redator-abnt",
+  "arquivos_revisados": ["artigo.json", "artigo.docx", "revisoes/artigo-forma.r1.resposta.json", "previa-artigo/pagina-35.png", "validacao.md"],
+  "criterios": {
+    "estrutura_abnt": 9.0,
+    "redacao_cientifica": 8.0,
+    "coesao_do_argumento": 8.5,
+    "discussao_critica": 8.5,
+    "ausencia_de_redundancia": 7.5
+  },
+  "achados": [],
+  "correcoes_aplicadas": [
+    "7.1[2]: cortada a repetição do limite de agilidade de 11 s (já em 6.7 item d).",
+    "6.7 item f: OR 1,9 (IC 95% 1,2–3,2) substituído por remissão à seção 5.3 (número único em 5.3; elimina também a sigla OR não definida).",
+    "artigo.docx e previa-artigo regenerados (52 páginas); validar_trabalho.py sem erros; nenhum título ou legenda órfão no pé de página."
+  ],
+  "pontos_fortes": [
+    "A1–A5 resolvidos conforme pedido e conferidos: prevenção com números só em 5.5/Quadro 5; bateria de retorno única em 6.7, com a saída da Fase 3 remetendo a ela; 7.3 transformada em consequências para a prescrição; 7.4 acrescenta o que o grau desconhecido do LCM muda na Fase 1; premissas (bloco inicial, non-coper provisório, SNNAP, modelo de dor, escopo, falha de enxerto) com local único e remissões.",
+    "Alíneas da seção 6 padronizadas pela NBR 6024; rótulos de nível de evidência soltos removidos.",
+    "Corte de ~300 palavras menor que a meta, mas a redundância residual é de remissões e de frases de ligação; o volume restante está nos quadros FITT-VP e no semáforo, que são o núcleo do material de estudo — extensão justificada."
+  ],
+  "escalonado": false,
+  "resumo": "Rodada 2: os quatro maiores e o menor da r1 foram corrigidos sem regressão; duas repetições residuais cortadas pelo revisor. A redundância restante é aceitável para material de estudo. Pronto para APROVADO."
+}
