@@ -10,6 +10,11 @@ Layouts disponíveis (campo "layout" de cada slide):
   fases (visão geral das fases de um programa), fitt (FITT-VP de uma fase),
   semaforo (ajuste de carga por sintomas)
 
+Visual: "imagem" (+ "credito", "foco": [x, y] de 0 a 1) em capa, secao, topicos e
+encerramento — a foto é recortada, recebe véu na cor da marca (fundos) ou cantos
+arredondados (painel lateral). "kicker" põe um rótulo de seção acima do título
+(herdado do último slide "secao"). Barra de progresso automática no rodapé.
+
 Apresentação em equipe: cada slide pode ter "apresentador" e "tempo_seg". O gerador
 soma o tempo por integrante, avisa sobre desequilíbrio e estouro do tempo
 ("tempo_minutos") e escreve roteiro.md (fala por integrante, com marcas de tempo).
@@ -290,6 +295,11 @@ class Construtor:
         if n > LIMITES["caracteres_titulo"]:
             self.avisos.append(f"slide {self.n}: título longo ({n} caracteres) — reduza para uma frase direta")
         tam = 30 if n <= 55 else 26 if n <= 85 else 22
+        kicker = getattr(self, "_kicker", None)
+        if kicker:
+            self.forma(slide, MX, 0.3, 0.07, 0.24, self.m.c["destaque"])
+            self.texto(slide, MX + 0.17, 0.28, 9, 0.28, self.t(kicker).upper(), tamanho=11,
+                       cor=self.m.c["secundaria"], negrito=True, ancora="meio")
         self.texto(slide, MX, 0.42, W - 2 * MX, 1.05, txt, tamanho=tam, cor=self.m.c["primaria"],
                    negrito=True, ancora="base", fonte=self.m.fonte_titulo, entre=0.95)
         self.forma(slide, MX, 1.6, 0.9, 0.07, self.m.c["secundaria"])
@@ -305,6 +315,10 @@ class Construtor:
             self.texto(slide, MX + 0.6, 6.98, 9.6, 0.3, f"Fonte: {txt}", tamanho=10,
                        cor=self.m.c["texto_suave"], ancora="meio")
         self.logo(slide, W - MX, 6.86, 0.4)
+        total = getattr(self, "_total", 0)
+        if total:
+            self.forma(slide, 0, H - 0.07, W, 0.07, self.m.c["fundo_suave"])
+            self.forma(slide, 0, H - 0.07, W * min(1.0, self.n / total), 0.07, self.m.c["secundaria"])
 
     def notas(self, slide, s: dict):
         cab = []
@@ -341,8 +355,13 @@ class Construtor:
     # ================================================================ layouts
     def capa(self, s):
         sl = self.novo(self.m.c["primaria"])
-        self.forma(sl, W - 4.6, -1.8, 7.2, 7.2, self.m.c["secundaria"], MSO_SHAPE.OVAL, opacidade=0.35)
-        self.forma(sl, W - 2.3, 4.9, 3.4, 3.4, self.m.c["destaque"], MSO_SHAPE.OVAL, opacidade=0.22)
+        img = dict(s, imagem=s.get("imagem") or self.d.get("imagem_capa"),
+                   credito=s.get("credito") or self.d.get("credito_capa"))
+        if img["imagem"]:
+            self._fundo_foto(sl, img)
+        else:
+            self.forma(sl, W - 4.6, -1.8, 7.2, 7.2, self.m.c["secundaria"], MSO_SHAPE.OVAL, opacidade=0.35)
+            self.forma(sl, W - 2.3, 4.9, 3.4, 3.4, self.m.c["destaque"], MSO_SHAPE.OVAL, opacidade=0.22)
         self._logo_capa(sl)
         titulo = self.t(s.get("titulo") or self.d.get("titulo", ""))
         tam = 40 if len(titulo) <= 60 else 34 if len(titulo) <= 95 else 28
@@ -383,7 +402,12 @@ class Construtor:
 
     def secao(self, s):
         sl = self.novo(self.m.c["primaria"])
-        self.forma(sl, W - 3.4, -1.2, 5.0, 5.0, self.m.c["secundaria"], MSO_SHAPE.OVAL, opacidade=0.3)
+        self._kicker_secao = s.get("kicker") or s["titulo"]
+        if s.get("imagem"):
+            self._fundo_foto(sl, s)
+        else:
+            self.forma(sl, W - 3.4, -1.2, 5.0, 5.0, self.m.c["secundaria"], MSO_SHAPE.OVAL, opacidade=0.3)
+        self.forma(sl, MX, 3.3, 1.2, 0.07, self.m.c["destaque"])
         num = s.get("numero")
         if num is not None:
             self.texto(sl, MX, 1.9, 4, 1.4, f"{int(num):02d}" if str(num).isdigit() else str(num),
@@ -407,8 +431,12 @@ class Construtor:
         largura = W - 2 * MX
         if s.get("imagem"):
             largura = 6.9
-            self._imagem_em(sl, s["imagem"], MX + 7.4, TOPO_CONTEUDO, W - 2 * MX - 7.4,
-                            BASE_CONTEUDO - TOPO_CONTEUDO)
+            iw, ih = W - 2 * MX - 7.4, BASE_CONTEUDO - TOPO_CONTEUDO - 0.05
+            arq = self._foto(s["imagem"], iw, ih, raio=0.045, foco=tuple(s.get("foco", (0.5, 0.5))))
+            sl.shapes.add_picture(str(arq), Inches(MX + 7.4), Inches(TOPO_CONTEUDO + 0.05), Inches(iw), Inches(ih))
+            if s.get("credito"):
+                self.texto(sl, MX + 7.4, BASE_CONTEUDO + 0.03, iw, 0.22, s["credito"], tamanho=8,
+                           cor=self.m.c["texto_suave"], alinhar="dir")
         elif s.get("destaque"):
             largura = 7.6
             self._cartao_destaque(sl, s["destaque"], MX + 8.1, TOPO_CONTEUDO + 0.2,
@@ -682,6 +710,58 @@ class Construtor:
         self.rodape(sl, s.get("fonte"))
         self.notas(sl, s)
 
+    def _foto(self, caminho, w, h, overlay=None, raio=0.0, foco=(0.5, 0.5)):
+        """Recorta a foto na proporção w×h (pol.), aplica véu em degradê da cor primária
+        (overlay=(alfa_esq, alfa_dir)) e cantos arredondados. Devolve o caminho do PNG/JPG."""
+        import tempfile
+        from PIL import Image, ImageDraw
+        p = (self.base / caminho).resolve()
+        if not p.exists():
+            raise ErroEntrada(f"imagem não encontrada: {p}")
+        if not hasattr(self, "_tmp"):
+            self._tmp = Path(tempfile.mkdtemp(prefix="fps-slides-"))
+        im = Image.open(p).convert("RGB")
+        alvo = w / h
+        if im.width / im.height > alvo:
+            nw = int(im.height * alvo)
+            x0 = int((im.width - nw) * foco[0])
+            im = im.crop((x0, 0, x0 + nw, im.height))
+        else:
+            nh = int(im.width / alvo)
+            y0 = int((im.height - nh) * foco[1])
+            im = im.crop((0, y0, im.width, y0 + nh))
+        px_w = min(im.width, int(w * 150))
+        im = im.resize((px_w, max(1, int(px_w / alvo))), Image.LANCZOS)
+        if overlay:
+            a0, a1 = overlay
+            cor = tuple(int(self.m.hex["primaria"].lstrip("#")[i:i + 2], 16) for i in (0, 2, 4))
+            escuro = tuple(int(c * 0.55) for c in cor)
+            grad = Image.new("L", (im.width, 1))
+            grad.putdata([int(255 * (a0 + (a1 - a0) * (x / max(1, im.width - 1)) ** 1.4)) for x in range(im.width)])
+            mascara = grad.resize(im.size)
+            camada = Image.new("RGB", im.size, escuro)
+            im = Image.composite(camada, im, mascara)
+        nome = self._tmp / f"foto-{len(list(self._tmp.iterdir())):02d}"
+        if raio:
+            r = int(min(im.size) * raio)
+            m = Image.new("L", im.size, 0)
+            ImageDraw.Draw(m).rounded_rectangle([0, 0, im.width - 1, im.height - 1], r, fill=255)
+            im.putalpha(m)
+            destino = nome.with_suffix(".png")
+            im.save(destino)
+        else:
+            destino = nome.with_suffix(".jpg")
+            im.save(destino, quality=88)
+        return destino
+
+    def _fundo_foto(self, sl, s, overlay=(0.94, 0.38)):
+        foco = tuple(s.get("foco", (0.5, 0.5)))
+        arq = self._foto(s["imagem"], W, H, overlay=overlay, foco=foco)
+        sl.shapes.add_picture(str(arq), 0, 0, Inches(W), Inches(H))
+        if s.get("credito"):
+            self.texto(sl, W - 5.2, H - 0.36, 5.0, 0.25, s["credito"], tamanho=8,
+                       cor=self.m.c["texto_sobre_primaria_suave"], alinhar="dir")
+
     def _imagem_em(self, sl, caminho, x, y, w, h):
         p = (self.base / caminho).resolve()
         if not p.exists():
@@ -757,7 +837,10 @@ class Construtor:
 
     def encerramento(self, s):
         sl = self.novo(self.m.c["primaria"])
-        self.forma(sl, -2.0, 3.6, 6.0, 6.0, self.m.c["secundaria"], MSO_SHAPE.OVAL, opacidade=0.3)
+        if s.get("imagem"):
+            self._fundo_foto(sl, s, overlay=(0.82, 0.82))
+        else:
+            self.forma(sl, -2.0, 3.6, 6.0, 6.0, self.m.c["secundaria"], MSO_SHAPE.OVAL, opacidade=0.3)
         self.texto(sl, MX, 2.0, W - 2 * MX, 1.4, s.get("titulo", "Obrigado!"), tamanho=56,
                    cor=self.m.c["texto_sobre_primaria"], negrito=True, alinhar="centro", ancora="base",
                    fonte=self.m.fonte_titulo)
@@ -977,7 +1060,10 @@ class Construtor:
             raise ErroEntrada("'slides' vazio")
         # Referências ficam por último para listar o que foi citado nos slides anteriores.
         self.cronograma = []
+        self._kicker_secao = None
+        self._total = sum(1 for x in slides if x.get("layout") != "referencias")
         for s in slides:
+            self._kicker = s.get("kicker", self._kicker_secao)
             layout = s.get("layout", "topicos")
             fn = getattr(self, layout, None)
             if fn is None or layout.startswith("_") or layout in ("gerar", "roteiro", "cronometragem"):
