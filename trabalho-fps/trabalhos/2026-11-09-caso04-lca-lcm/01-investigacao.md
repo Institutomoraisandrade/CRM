@@ -1,0 +1,105 @@
+# Investigação — Reabilitação conservadora de LCA insuficiente + estiramento do LCM em atleta jovem de esporte com pivô (Caso Clínico 04)
+
+> Fontes: PubMed/Consensus (via ferramentas, 09/11/2026). Só entram aqui fatos vistos em resultado de ferramenta nesta execução; o que veio do enunciado é dado do caso, e o que vem de conhecimento geral sem fonte verificada está marcado **[não verificado]** e fica para os Agentes 2 e 3 confirmarem. O PLANO.md foi lido apenas como orientação.
+
+## 1. Delimitação e definição
+
+**Caso (dado do enunciado):** Bruno, 22 anos, atleta amador de futebol society; trauma em valgo dinâmico + rotação externa da tíbia + flexão do joelho com o pé preso ao gramado; queixa de dor e falseio na mudança de direção; derrame leve, dor na linha articular medial, Lachman/gaveta anterior positivos "sem parada firme", atrofia do quadríceps (vasto medial) e valgo dinâmico no *step down*; hipótese do professor: "pós-operatório tardio/conservador de LCA e estiramento do LCM".
+
+**Definição operacional.** A ruptura do LCA ocorre sobretudo em pessoas jovens e ativas, com impacto físico e psicológico de longo prazo; o diagnóstico combina história, exame clínico e, se apropriado, ressonância magnética. Os objetivos do manejo são restaurar a função do joelho, tratar barreiras psicológicas à atividade, prevenir nova lesão e osteoartrite e otimizar a qualidade de vida; há três vias: (1) reabilitação como primeira linha, com reconstrução (ACLR) se houver instabilidade funcional; (2) ACLR + reabilitação pós-operatória; (3) reabilitação pré-operatória seguida de ACLR [@filbay2019]. Nesta pesquisa, "LCA insuficiente" = ruptura com frouxidão clínica (Lachman/gaveta) e sem estabilização cirúrgica, o que corresponde ao braço conservador/"ACL-deficient".
+
+**Classificação funcional útil ao caso — coper/non-coper.** *Copers* mantêm boa estabilidade dinâmica após a ruptura e retornam ao esporte sem ACLR; *non-copers* têm instabilidade persistente apesar da reabilitação e precisam de estabilização cirúrgica. A classificação muda com treino: em 271 atletas, quase metade dos inicialmente *non-copers* tornou-se *potential coper* após 10 sessões de treino neuromuscular e de força, e quem era *potential coper* após o treino teve cerca de 2,7–2,9 vezes mais chance de "sucesso" aos 2 anos (ACLR: OR 2,7, IC 95% 1,3–5,6; não operados: OR 2,9, IC 95% 1,2–7,2); *non-copers* persistentes evoluíram mal [@thoma2019] (coorte; dados do resumo).
+
+**LCM.** Lesão ligamentar do joelho é tratada em diretriz de fisioterapia ortopédica (*knee ligament sprain*, revisão 2017) [@logerstedt2017]; o resumo acessado não traz conteúdo clínico específico — recomendações do texto completo ficam para o Agente 3 **[texto completo não acessado]**. Em lesões combinadas LCA+LCM: LCM tratado de forma não operatória com reabilitação foi comparável ao operatório em desfechos relatados (metanálise, sem diferença de PRO, ADM e força do quadríceps), com a ressalva de que laxidão em valgo ou rotatória anteromedial residual após reabilitação indica tratamento cirúrgico combinado [@shultz2023]. Revisão sistemática posterior: manejo não operatório de ambos os ligamentos associou-se a baixas taxas de estabilidade em valgo a 30° (27–68%), contra 80–100% quando o LCA foi reconstruído de forma aguda com LCM não operatório [@vanderlist2024] (nível de evidência IV; heterogêneo).
+
+**Entra no escopo:** exercício físico (força, controle neuromuscular/valgo dinâmico, pliometria, agilidade, retorno ao esporte), testes clínicos/funcionais e compensações, critérios de progressão, manejo de dor/derrame/falseio, prescrição FITT-VP em 4 fases. **Conduta multiprofissional (sinalizada, não prescrita pelo profissional de Educação Física):** eletroestimulação neuromuscular, crioterapia, terapia manual, decisão cirúrgica, imagem. **Fora/nota breve:** pós-operatório tardio (apenas o que mudaria), reconstrução do LCM, lesão multiligamentar, população pediátrica.
+
+**Inconsistência do enunciado (a discutir, não corrigir).** O enunciado fala em "pós-operatório tardio/conservador", mas descreve Lachman/gaveta positivos **sem parada firme**, o que é compatível com LCA insuficiente (ou falha de enxerto) e não com enxerto íntegro **[interpretação clínica a confirmar pelo Agente 2 com fonte]**. Adotamos o cenário **conservador** (decisão do grupo, briefing §6) e deixamos a pergunta "e se fosse pós-operatório?" como nota de arguição.
+
+## 2. Panorama epidemiológico e relevância (Brasil e mundo)
+
+**Limite desta pesquisa:** não foram consultadas bases oficiais (DATASUS/SIH, IBGE, GBD, CBF/FIFA) nesta execução; os números abaixo vêm só de artigos indexados no PubMed. Não há dado verificado de incidência de LCA/LCM em **futebol society/amador no Brasil**: **lacuna declarada**.
+
+- **Brasil (profissional, elite):** em 5 temporadas (2015–2019) das séries A e B do Campeonato Brasileiro foram detectadas 52 lesões de LCA, idade média 26,3 anos, afastamento de 244,5 ± 31,6 dias e incidência de 0,414 por 1000 h de jogo, "similar à literatura"; atacantes e zagueiros mais acometidos [@nitta2021]. **Limitação:** estudo transversal com dados extraídos de plataforma pública (Transfermarkt), não de registro médico; só profissionais.
+- **Brasil (ambulatório especializado):** em 440 atletas atendidos em ambulatório de joelho de centro de trauma esportivo em São Paulo, o futebol respondeu por quase 50% dos pacientes com lesão de LCA, e a ruptura completa do LCA foi a lesão mais comum em futebol, basquete e vôlei [@nicolini2014]. **Limitação:** amostra de serviço terciário, sem denominador populacional.
+- **Brasil (futebol feminino de elite):** em 4 clubes, entre 112 lesões com perda de tempo em uma temporada, joelho e coxa responderam por 29% cada, e lesões de LCA estavam entre as mais frequentes (juntamente com entorses de tornozelo e lesões de isquiotibiais, somando mais de um terço) [@gasparin2024].
+- **Mundo (futebol profissional masculino, UEFA):** lesão do LCM foi 130 de 4364 lesões registradas (3%) em 51 equipes, 75% por mecanismo de contato; descrita como a lesão traumática de joelho mais comum no futebol [@lundblad2019]. Entre 118 jogadores com ACLR, 17,8% sofreram segunda lesão de LCA (9,3% ipsilateral; 8,5% contralateral), com risco maior se a lesão inicial foi sem contato (HR 7,16, IC 95% 1,63–31,22) ou isolada (HR 2,73, IC 95% 1,06–7,07); cerca de 60% ainda jogavam no nível pré-lesão 5 anos após a ACLR [@dellavilla2021]. **Atenção:** nível de elite e pós-ACLR; não se extrapola ao amador conservador.
+- **Combinada LCA+LCM:** descrita como o padrão ligamentar combinado mais comum em esportes de pivô; no registro norueguês (35.139 ACLR), 2410 eram ACL+MCL; o LCM concomitante não aumentou o risco global de revisão, mas associou-se a KOOS Esporte/Recreação 2 pontos menor aos 2 anos [@birkenes2026] (dados de resumo; estudo pós-ACLR). Em profissionais de futebol e rúgbi submetidos a ACLR, o retorno ao jogo foi de 95,4% em média 12,0 ± 4,4 meses, sem diferença entre isolada, ACL+MCL não operado e ACL+MCL reconstruído [@abdul2026] (dados de resumo; série de casos nível 4, pós-ACLR).
+- **Impacto no SUS/prática:** não há dado verificado de custo/internações por LCA no SUS nesta execução; tratar como lacuna (Pendência 2). Para o profissional de Educação Física, o impacto é prático: retorno ao esporte, prevenção de nova lesão e trabalho integrado com fisioterapia/ortopedia.
+
+## 3. Mapa conceitual e prioridades
+
+| Subtema | Prioridade | Destino |
+|---|---|---|
+| Biomecânica da lesão combinada (valgo + rotação externa + pé fixo); papel do LCM e do LCA | Essencial | Agente 2 (mecanismo) |
+| Testes clínicos (Lachman, gaveta, pivot-shift, valgo 0°/30°, derrame) e funcionais (step-down, unipodal, hop) e compensações | Essencial | Agente 2 |
+| Tratamento conservador vs reconstrução; coper/non-coper | Essencial | Agente 3 (evidência) |
+| Fases de reabilitação, critérios de progressão e retorno ao esporte | Essencial | Ambos + prescritor |
+| Dor, derrame e falseio: regras de ajuste de carga | Essencial | Ambos + prescritor |
+| Manejo do LCM em lesão combinada | Complementar | Agente 3 |
+| Fatores psicológicos (medo, ACL-RSI) | Complementar | Agente 3 |
+| Pós-operatório tardio (nota breve) | Complementar | Agente 3 |
+| Epidemiologia futebol Brasil/mundo | Complementar | Agente 3 / redação |
+
+Mecanismos que exigem explicação (Agente 2): carga em valgo sobre LCM e LCA; inibição artrogênica do quadríceps pelo derrame; controle neuromuscular do quadril e valgo dinâmico; compensações (quadril/tronco/tornozelo; "evitação do quadríceps"). Eles não foram verificados aqui, exceto o valgo dinâmico como preditor de risco (abaixo).
+
+## 4. Estado da arte, controvérsias e lacunas
+
+**Tratamento conservador é opção legítima em jovens ativos.** No ECR de Frobell (121 adultos jovens ativos com ruptura aguda do LCA), reabilitação estruturada + reconstrução precoce **não** foi superior a reabilitação com reconstrução tardia opcional: diferença de mudança em KOOS4 aos 2 anos de 0,2 pontos (IC 95% −6,5 a 6,8); 23 de 59 do braço opcional foram operados (os demais, 36, só reabilitação) [@frobell2010]. Aos 5 anos, 51% (30) do braço opcional haviam sido operados, sem diferença de KOOS4 (−2,0; IC 95% −8,5 a 4,5), Tegner, osteoartrite radiográfica ou cirurgia de menisco [@frobell2013]. **Limite crítico:** o estudo incluiu lesões *agudas* de joelho previamente hígido; o caso do Bruno é de cronologia incerta, com derrame e falseio persistentes (perfil de provável *non-coper*); e o LCM não foi o foco.
+
+**Reabilitação por exercício — o que há de evidência.** Um *overview* de 22 revisões sistemáticas (142 ECR, em sua maioria homens) concluiu que o nível geral de evidência é baixo; certeza moderada para eletroestimulação neuromuscular aumentar a força do quadríceps, para equivalência entre cadeia cinética aberta e fechada, e para equivalência entre reabilitação domiciliar estruturada e presencial; certeza muito baixa para exercícios de controle neuromuscular [@culvenor2022] — todos em contexto majoritariamente pós-ACLR. A diretriz Aspetar (pós-ACLR) coloca o exercício como pilar, mas afirma que há pouca evidência de dose-resposta (volume/intensidade) e **nenhuma** sobre quais critérios de progressão ou alta usar, com certeza muito baixa para a maioria dos componentes [@kotsifaki2023]. A diretriz holandesa recomenda fases baseadas em critérios, com bateria de força, saltos, qualidade de movimento e testes psicológicos para progredir [@vanmelick2016]. **Lacuna central para o nosso caso:** a dose FITT-VP em ACL-deficiente não é padronizada — uma revisão de escopo de 14 estudos (570 atletas) sobre reabilitação não cirúrgica achou protocolos muito heterogêneos (média 12 ± 8 semanas; 48% focados em força, 10% em controle neuromuscular, 25% em exercícios esportivos), 53% concluíram sem cirurgia, 30% retornaram ao esporte e 28% sofreram nova lesão; lesões associadas pioraram o retorno [@ghezzi2026]. Esse número (30%) deve ser dito ao professor: **retorno conservador ao esporte pivotante é incerto**, e o ACSM (FITT-VP) é a base de prescrição, não evidência específica **[livro não verificável via PubMed; ver Pendência 3]**.
+
+**Critérios de retorno ao esporte — controvérsias.** (a) Em ACLR, retorno a esporte de nível I elevou a taxa de nova lesão em 4,3 vezes, cada mês de atraso até 9 meses reduziu a taxa de nova lesão em 51%, e 38,2% de quem falhou nos critérios (>90% em testes de força do quadríceps e salto) reinjuriou contra 5,6% de quem passou (HR 0,16, p = 0,075) [@grindem2016] — coorte pós-ACLR, **não** conservadora; (b) metanálise: só 23% passam baterias de teste; passar não reduziu todas as lesões de LCA (RR 0,80; IC 95% 0,27–2,3) e reduziu ruptura de enxerto, mas aumentou lesão do LCA contralateral (RR 3,35; IC 95% 1,52–7,37) — validade equívoca [@webster2019]; (c) simetria na distância do triple hop escondeu déficit de trabalho do joelho (51–66% de simetria na geração de trabalho) com compensação do quadril [@kotsifaki2022triple]; (d) medo de nova lesão (TSK-11 ≥ 19) associou-se a risco 13 vezes maior de nova ruptura (RR 13,0; IC 95% 2,1–81,0), em amostra de 40 pacientes [@paterno2018]; (e) o consenso de Bern define retorno ao esporte como um contínuo e gestão de risco, com evidência escassa [@ardern2016]. **Sinalização para a banca:** LSI e força são desfechos substitutos, e os critérios foram validados sobretudo pós-ACLR, então a aplicação ao conservador é extrapolação.
+
+**Valgo dinâmico como fator de risco.** Em estudo prospectivo com 205 atletas **mulheres** (futebol, basquete, vôlei), maior abdução do joelho na aterrissagem (8° maior) e momento de abdução 2,5 vezes maior (sensibilidade 78%, especificidade 73%) predisseram ruptura do LCA [@hewett2005]. **Limite:** população feminina; transposição para um homem de 22 anos é indireta. Treino neuromuscular reduz lesões de LCA em atletas mulheres em 61% (RR 0,39; IC 95% 0,25–0,60; certeza alta) em metanálise de prevenção [@bullock2025]; a diretriz de prevenção por exercício existe [@arundale2018]. Ambos são **prevenção primária**, não reabilitação do LCA insuficiente.
+
+**Derrame/dor.** Existe escala clínica de derrame de 5 pontos (*modified stroke test*) com concordância interavaliador razoável (κ = 0,75; 73% de concordância exata), usada para monitorar a progressão [@sturgill2009] — base para o "semáforo de carga". Não foi encontrada nesta execução fonte primária sobre modelos de monitoramento da dor (ex.: pain-monitoring model) nem sobre inibição artrogênica pelo derrame: **Pendência 4**.
+
+**Mitos/controvérsias a tratar:** "LCA rompido = cirurgia obrigatória" (contestado por Frobell em jovens ativos, com ressalvas acima); "passou no LSI de 90% = pode voltar" (contestado por [@webster2019; @kotsifaki2022triple]); "LCM sempre cicatriza sozinho" (laxidão residual em valgo pode exigir cirurgia [@shultz2023; @vanderlist2024]). **Fatores que mudam a conduta:** associação de LCM de alto grau, menisco, falseio recorrente, e preferência do atleta.
+
+## 5. Pergunta estruturada (PICOS) e justificativa
+
+**Estrutura:** PICOS (pergunta de intervenção; a prescrição é o objeto central do caso e a rubrica C2).
+
+**Pergunta:** Em atletas jovens de esportes com pivô com LCA insuficiente e estiramento do LCM, tratados de forma conservadora, a reabilitação/treinamento progressivo baseado em critérios (força, controle neuromuscular, pliometria/agilidade), comparada à reabilitação baseada apenas em tempo, ao cuidado usual ou à reconstrução precoce, melhora a estabilidade funcional (falseio), a função (KOOS/IKDC), o retorno ao esporte e reduz nova lesão?
+
+- **P:** atleta jovem (16–40 anos) de esporte com pivô, LCA insuficiente ± estiramento do LCM, conservador. **I:** reabilitação por exercício progressiva por critérios (eletroestimulação, crioterapia e terapia manual como conduta multiprofissional). **C:** reabilitação por tempo/cuidado usual/reconstrução precoce. **O:** primários clínicos: falseio, KOOS/IKDC, retorno ao esporte, nova lesão. **Substitutos sinalizados:** LSI de força do quadríceps e de hop tests, derrame/dor, qualidade de movimento. **S:** diretrizes, RS/MA, ECR; coortes prospectivas como fallback.
+- **Respondível?** Parcialmente: há um ECR sobre estratégia (Frobell), coortes sobre coper/non-coper e muitas RS pós-ACLR; a comparação direta "criterios vs tempo no conservador" provavelmente não tem ECR — será declarada lacuna.
+- **Observação sobre o raciocínio clínico:** a pergunta serve ao raciocínio (biomecânica, testes, compensações) e à prescrição FITT-VP; os subtemas de mecanismo seguem para o Agente 2, evidência comparativa para o Agente 3.
+
+## 6. Estratégia de busca (descritores, strings, critérios)
+
+**Descritores.** MeSH: *Anterior Cruciate Ligament Injuries; Medial Collateral Ligament, Knee; Conservative Treatment; Exercise Therapy; Resistance Training; Plyometric Exercise; Return to Sport; Joint Instability; Muscle Strength; Quadriceps Muscle; Soccer; Knee Injuries; Athletic Injuries; Patient Reported Outcome Measures*. DeCS: Lesões do Ligamento Cruzado Anterior; Tratamento Conservador; Terapia por Exercício; Treinamento Resistido; Exercício Pliométrico; Volta ao Esporte; Instabilidade Articular; Futebol (**o descritor DeCS específico do LCM não foi confirmado**; confirmar no portal DeCS). Termos livres: *ACL-deficient, nonoperative, nonsurgical, coper/non-coper, giving way, neuromuscular training, perturbation training, dynamic knee valgus, criteria-based rehabilitation, limb symmetry index, hop test, KOOS, IKDC*.
+
+**String principal PubMed (testada em 09/11/2026, filtro de data 2010–2026): 117 resultados.**
+```
+("Anterior Cruciate Ligament Injuries"[MeSH Terms] OR "anterior cruciate ligament"[tiab]) AND (nonoperative[tiab] OR non-operative[tiab] OR nonsurgical[tiab] OR conservative[tiab] OR "ACL-deficient"[tiab] OR copers[tiab]) AND (rehabilitation[tiab] OR "Exercise Therapy"[MeSH Terms] OR "neuromuscular training"[tiab] OR exercise[tiab]) AND (soccer[tiab] OR football[tiab] OR "pivoting sport*"[tiab] OR athletes[tiab])
+```
+**Variante com filtro de desenho** (`... AND (randomized controlled trial[Publication Type] OR systematic review[Publication Type] OR meta-analysis[Publication Type])`, sem o bloco de esporte e com `rehabilitation-only`): **59 resultados** (2010–2026). **String LCM (testada): 15 resultados** (`"Medial Collateral Ligament, Knee"[MeSH Terms] OR "medial collateral ligament"[tiab]) AND (nonoperative[tiab] OR conservative[tiab] OR rehabilitation[tiab]) AND ("Anterior Cruciate Ligament Injuries"[MeSH Terms] OR ACL[tiab]) AND (systematic review/meta-analysis/RCT[Publication Type])`, 2010–2026). Os 40 resultados da busca livre de LCA+LCM "nonoperative" foram a maioria pós-ACLR.
+
+**Pertinência (calibragem):** a string principal e a variante recuperaram os artigos esperados (revisões de reabilitação, coortes coper/non-coper); a revisão de escopo de reabilitação não cirúrgica (Ghezzi 2026) foi achada por Consensus e confirmada no PubMed. A seleção e a triagem completas ficam com o buscador (Haiku).
+
+**BVS/LILACS e Cochrane:** strings montadas em `01-picos.json`, **não testadas** (bases não consultadas). **Critérios:** inclusão/exclusão e período em `01-picos.json`. Idiomas: pt, en, es.
+
+## 7. Roteiro sugerido (artigo e apresentação)
+
+Rubrica do professor orienta a estrutura (C1 raciocínio, C2 FITT-VP, C3 dor/arguição, C4 comunicação, C5 15 min, C6 participação equilibrada). Artigo (se vier a ser exigido): Introdução (definição e epidemiologia, com a lacuna brasileira declarada) → Caso clínico → Raciocínio (biomecânica/testes/compensações) → Evidência (conservador vs cirurgia; critérios de progressão e suas limitações) → Prescrição → Limitações e considerações finais.
+
+Fio narrativo da apresentação (≈ 13:30–14:00 min, 4 integrantes ≈ 3:20 cada): (1) o caso e a pergunta (Rômulo); (2) mecanismo, testes e compensações — por que o joelho falseia (Júlia); (3) evidência: o que sustenta o tratamento conservador e seus limites (Gabriel); (4) prescrição FITT-VP em 4 fases, critérios de progressão e semáforo de dor/derrame/falseio, mensagem final (Daniel). Preparar resposta pronta para: "e se fosse pós-operatório tardio?", "por que não operar?" e "o que fazer se o joelho inchar/falsear?".
+
+## Fontes consultadas
+
+- PubMed (via MCP): buscas de LCA não operatório, retorno ao esporte, LCA+LCM, epidemiologia no Brasil/UEFA, strings de calibragem; metadados confirmados de todas as referências em `01-referencias.json`.
+- Consensus (1 busca ampla de reabilitação não operatória do LCA, 2015+).
+- WebSearch/WebFetch: **não utilizados**; DATASUS/IBGE/GBD/CBF **não consultados** (lacuna declarada).
+- Lidos: PROTOCOLO.md, memoria/licoes.md (seção do investigador), 00-briefing.md, rubrica.json, PLANO.md (orientação apenas).
+
+## Pendências para o líder
+
+1. (resolvida) `gasparin2024` incluída e verificada em `01-referencias.json`.
+2. **Epidemiologia SUS/Brasil:** não foi acessada fonte oficial (DATASUS/IBGE/GBD); falta dado de incidência de LCA/LCM em futebol society/amador no Brasil e custo para o SUS. Declarar como lacuna ou delegar busca a quem tenha acesso à rede.
+3. **ACSM (FITT-VP) e livros-texto:** diretriz/livro de prescrição do ACSM não verificável via PubMed; o prescritor deve citar a obra com fonte oficial verificada ou declarar a limitação.
+4. **Não encontradas fontes primárias (nesta execução) para:** inibição artrogênica do quadríceps pelo derrame; modelo de monitoramento da dor; confiabilidade do pivot-shift/Lachman; papel anatômico do LCM como restrição primária ao valgo; graduação do LCM; critérios de coper (Fitzgerald/Moksnes) em detalhe. Passar ao Agente 2/3.
+5. (resolvida) `birkenes2026` e `abdul2026` incluídas e verificadas; ambas são evidência pós-ACLR (indireta).
+6. DeCS do LCM e strings BVS/Cochrane não testadas.
+7. A maioria dos critérios de retorno ao esporte vem de ACLR; qualquer slide deve rotular como evidência indireta.
