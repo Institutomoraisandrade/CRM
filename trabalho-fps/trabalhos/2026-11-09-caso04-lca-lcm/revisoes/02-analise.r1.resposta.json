@@ -1,0 +1,27 @@
+{
+  "etapa": "02-analise",
+  "rodada": 1,
+  "executor": "fps-2-analista-critico",
+  "itens": [
+    {
+      "id": "A1",
+      "status": "corrigido",
+      "detalhe": "§1.1 Passo 2: corrigido para 25 sem contato, 8 contato indireto e 6 contato direto; as 3 lesões por carrinho tiveram colapso em valgo em todas; valgo frequente nas categorias principais (n=11), colapso dinâmico infrequente (n=3). Removida a classificação do Bruno como 'mais parecido com contato'; texto agora diz que o enunciado não informa contato, que o resumo de Waldén não analisa rotação tibial, que valgo + rotação externa com pé fixo é a descrição clássica da lesão medial [@braaten2022] e rotula o resto como [inferência]."
+    },
+    {
+      "id": "A2",
+      "status": "corrigido",
+      "detalhe": "§4.2.6 reescrito com os números do braço do caso: LCA+LCM sem cirurgia 27-68% de estabilidade em valgo a 30° contra 80-100% com LCA reconstruído (RS 27 estudos, 821 pac., nível IV) [@vanderlist2024]; shultz2024 só sustenta que, com LCA reconstruído, LCM não operado não piorou PRO/ADM/força (todos os braços com LCA reconstruído) e recomenda cirurgia do LCM se valgo residual persistir. Removida a frase invertida sobre 'séries recentes'. Equívoco 11 reescrito (vale com LCA estável; reavaliar valgo a 30° e encaminhar). Números levados à tabela §2 (linha LCM em cicatrização) e a duas novas linhas do quadro §3 (inclui 36-77% do LCM reparado)."
+    },
+    {
+      "id": "A3",
+      "status": "corrigido",
+      "detalhe": "Síntese 4, §1.2 (linha Lachman), §1.8 (argumento e resposta de arguição) e equívoco 3: 'incompatível com enxerto funcionante' trocado por 'pouco compatível / sugere LCA sem função [inferência]'; Melugin descrito como coorte de Segond com Lachman normal em 35/40 (88%) e 17/20 (85%), logo 12-15% não normais; sokal2022 retirado da frase sobre o enxerto (mantido só para acurácia, com nota de que não avalia enxerto). Linha adicionada ao quadro §3."
+    },
+    {
+      "id": "A4",
+      "status": "corrigido",
+      "detalhe": "§6: etapa 5 renomeada 'Compensações' com a frase 'Valgo dinâmico (quadril, tronco e tornozelo) e cocontração rígida tentam estabilizar o joelho — padrão dos non-copers, não proteção comprovada'; nota ao designer marca a etapa 5 como associação/hipótese com rodapé [@rudolph2001; @rabin2010]; etapa 6 recebe o ciclo falseio -> dor e derrame -> etapa 3 como opcional (definição de falseio em [@moksnes2008]; efeito sobre a IMA marcado [inferência]); título da seção diz que cada etapa herda o rótulo de certeza do corpo."
+    }
+  ]
+}
