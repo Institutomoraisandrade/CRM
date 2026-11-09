@@ -7,8 +7,8 @@
    "string": "(\"Anterior Cruciate Ligament Injuries\"[MeSH Terms] OR \"anterior cruciate ligament\"[tiab]) AND (nonoperative[tiab] OR nonsurgical[tiab] OR conservative[tiab] OR \"ACL-deficient\"[tiab] OR copers[tiab] OR noncopers[tiab] OR \"rehabilitation alone\"[tiab] OR \"delayed reconstruction\"[tiab]) AND (rehabilitation[tiab] OR \"Exercise Therapy\"[MeSH Terms] OR \"neuromuscular training\"[tiab] OR exercise[tiab]) AND (systematic review[pt] OR meta-analysis[pt] OR randomized controlled trial[pt] OR guideline[pt])",
    "filtros": "pdat 2010/01/01–2026/12/31; sort pub_date",
    "resultados": 72,
-   "retidos": 50,
-   "observacao": "String com SR/MA/RCT/guideline[pt] na forma do líder (17 operadores). A forma longa do 01-picos (com bloco SR/MA + população) excedeu 20 operadores do MCP (23) e não foi executada."
+   "retidos": 72,
+   "observacao": "Triagem de 100% dos registros (72) por paginação; sem corte antes da triagem."
   },
   {
    "base": "PubMed",
@@ -24,7 +24,8 @@
    "string": "(\"Anterior Cruciate Ligament Injuries\"[MeSH Terms] OR \"anterior cruciate ligament\"[tiab]) AND (nonoperative[tiab] OR nonsurgical[tiab] OR conservative[tiab] OR \"ACL-deficient\"[tiab] OR copers[tiab] OR noncopers[tiab] OR \"rehabilitation alone\"[tiab] OR \"delayed reconstruction\"[tiab]) AND (rehabilitation[tiab] OR \"Exercise Therapy\"[MeSH Terms] OR \"neuromuscular training\"[tiab] OR exercise[tiab]) AND (soccer[tiab] OR football[tiab] OR pivoting[tiab] OR active[tiab] OR athletes[tiab] OR \"Athletic Injuries\"[MeSH Terms])",
    "filtros": "pdat 2010/01/01–2026/12/31; sort pub_date",
    "resultados": 165,
-   "retidos": 50
+   "retidos": 165,
+   "observacao": "165 registros, todos triados (paginação retstart 0 e 100)."
   },
   {
    "base": "PubMed",
@@ -32,7 +33,8 @@
    "string": "(\"Anterior Cruciate Ligament Injuries\"[MeSH Terms] OR \"anterior cruciate ligament\"[tiab]) AND (guideline*[ti] OR recommendations[ti] OR consensus[ti] OR \"clinical practice\"[ti]) AND (rehabilitation[tiab] OR management[tiab] OR \"return to sport\"[tiab] OR \"Exercise Therapy\"[MeSH Terms])",
    "filtros": "pdat 2010/01/01–2026/12/31; sort pub_date",
    "resultados": 115,
-   "retidos": 50
+   "retidos": 115,
+   "observacao": "115 registros, todos triados (paginação retstart 0 e 100)."
   },
   {
    "base": "PubMed",
@@ -73,7 +75,7 @@
    "filtros": "pdat 2010/01/01–2026/12/31",
    "resultados": 2,
    "retidos": 2,
-   "observacao": "Recuperou PMID 29089004 (JOSPT 2017) e 20357420 (JOSPT 2010). A string de diretrizes não recupera a de 2017 nos 50 primeiros."
+   "observacao": "Busca dirigida (nota do líder): 2 registros, ambos triados."
   },
   {
    "base": "Consensus",
@@ -82,7 +84,44 @@
    "filtros": "medical_mode=true; study_types=[systematic review, meta-analysis]; page_size=50",
    "resultados": 50,
    "retidos": 50,
-   "observacao": "Saída do Consensus salva em arquivo (JSON longo); registros sem PMID/DOI nesta versão do plano (DOI não retornado)."
+   "observacao": "Saída do Consensus com 50 registros (sem PMID/DOI nesta saída); 12 pareados por título a PubMed já triados e 15 com PMID obtido por busca de título."
+  }
+ ],
+ "buscas_nacionais": [
+  {
+   "organizacao": "Ministério da Saúde (PCDT) / Conitec",
+   "consulta": "PCDT e relatórios Conitec para ruptura/lesão do LCA e reabilitação (busca web)",
+   "resultado": "nenhum PCDT nem relatório Conitec sobre reabilitação do LCA; resultados acadêmicos e uma nota técnica judicial sobre reconstrução (cita o portal Conitec)",
+   "url": "",
+   "observacao": "portal Conitec e lista de PCDTs não consultados diretamente"
+  },
+  {
+   "organizacao": "SBOT / AMB (Projeto Diretrizes)",
+   "consulta": "Projeto Diretrizes SBOT/AMB sobre lesão do LCA (busca web)",
+   "resultado": "duas diretrizes de 2007 (diagnóstico; escolha do enxerto), encontradas em site de terceiros; nenhuma diretriz atual de reabilitação ou retorno ao esporte",
+   "url": "https://www.saudedireta.com.br/docsupload/133132381430-LCA_diagnostico.pdf",
+   "observacao": "incluídas em diretrizes_web; a de diagnóstico é talvez, a de enxerto excluída"
+  },
+  {
+   "organizacao": "SBRATE",
+   "consulta": "diretriz/consenso brasileiro de reabilitação do LCA e retorno ao esporte (busca web)",
+   "resultado": "nenhuma diretriz ou consenso oficial; apenas trabalhos acadêmicos e um preprint",
+   "url": "",
+   "observacao": "sbrate.com.br não consultado diretamente"
+  },
+  {
+   "organizacao": "COFFITO / SONAFE",
+   "consulta": "recomendação ou protocolo de fisioterapia para ruptura do LCA (busca web)",
+   "resultado": "nenhum documento oficial; apenas trabalhos acadêmicos (inclui uma revisão sistemática da UFRGS, 2023, não avaliada aqui)",
+   "url": "",
+   "observacao": "sites oficiais não consultados diretamente"
+  },
+  {
+   "organizacao": "NICE",
+   "consulta": "NICE guideline on ACL injury rehabilitation / return to sport (busca web)",
+   "resultado": "nenhuma diretriz NICE específica; resultados de Aspetar (2023) e de um protocolo regional do NHS Lothian (2024)",
+   "url": "",
+   "observacao": "NICE e NICE CKS não consultados diretamente"
   }
  ],
  "diretrizes_web": [
@@ -155,14 +194,103 @@
    "ano": "2019",
    "url": "https://pubmed.ncbi.nlm.nih.gov/31431274/",
    "status": "metadados PubMed; revisão com recomendações, não diretriz formal"
+  },
+  {
+   "organizacao": "Projeto Diretrizes AMB/CFM (SBOT)",
+   "titulo": "Diagnóstico da lesão do ligamento cruzado anterior (versão final de 2007)",
+   "ano": "2007",
+   "url": "https://www.saudedireta.com.br/docsupload/133132381430-LCA_diagnostico.pdf",
+   "status": "encontrado em site de terceiros (não no portal oficial do Projeto Diretrizes); antigo; restrito ao diagnóstico (Lachman, ressonância); talvez, não usado para reabilitação"
+  },
+  {
+   "organizacao": "Projeto Diretrizes AMB/CFM (SBOT)",
+   "titulo": "Reconstrução do ligamento cruzado anterior: escolha do enxerto",
+   "ano": "2007",
+   "url": "https://www.saudedireta.com.br/docsupload/133132037937-Recontruca.Lig.Cru.An.pdf",
+   "status": "encontrado em site de terceiros; antigo; trata de técnica cirúrgica (excluído por intervenção)"
+  },
+  {
+   "organizacao": "Australian Knee Society / Australian Orthopaedic Association",
+   "titulo": "ACL injury consensus position statement and guideline for physios",
+   "ano": "2021",
+   "url": "https://australian.physio/node/2929",
+   "status": "não aberto; apenas resultado de busca web (candidato talvez, sem PMID)"
   }
  ],
  "prisma": {
-  "identificados": 282,
-  "duplicatas_removidas": 46,
-  "triados": 236,
-  "excluidos_titulo_resumo": 176,
-  "para_avaliacao": 60
+  "identificados": 486,
+  "identificados_por_base": {
+   "PubMed": 433,
+   "Consensus": 50,
+   "web": 3
+  },
+  "duplicatas_removidas": 108,
+  "duplicatas_por_tipo": {
+   "PubMed: mesmo PMID em strings diferentes": 88,
+   "Consensus x PubMed: mesmo estudo (ou resumo de congresso)": 13,
+   "mesma publicação em periódicos diferentes (título idêntico)": 7
+  },
+  "triados": 378,
+  "excluidos_titulo_resumo": 141,
+  "excluidos_titulo_resumo_motivos": {
+   "populacao": 32,
+   "intervencao": 47,
+   "fora_do_tema": 30,
+   "desenho": 15,
+   "desfecho": 11,
+   "versao_superada": 4,
+   "periodo": 2
+  },
+  "excluidos_por_volume": 157,
+  "excluidos_por_volume_niveis": {
+   "outros_desenhos": 55,
+   "coorte_caso_controle": 42,
+   "revisao_sistematica": 36,
+   "ECR": 24,
+   "diretriz_consenso": 0
+  },
+  "para_avaliacao": 80
  },
- "alerta": null
+ "alerta": "sem diretriz nacional de reabilitação do LCA/LCM localizada (MS/PCDT/Conitec, SBOT/AMB, SBRATE, COFFITO/SONAFE: busca web sem documento atual; único documento nacional encontrado é o Projeto Diretrizes AMB/CFM-SBOT de 2007, restrito a diagnóstico e enxerto); sem diretriz NICE específica (busca web). Corte de 80 itens autorizado pelo líder; 157 registros excluídos por volume.",
+ "criterio_corte": "diretriz sempre mantida; depois incluir antes de talvez; dentro de cada grupo, hierarquia diretriz > RS/MA > ECR > coorte > outros, mais recentes primeiro; cobertura de pelo menos 2 itens por subtema essencial (verificada por palavras-chave do título e resumo).",
+ "duplicatas_detalhe": {
+  "mesma publicação (título idêntico); mantido o registro de primeira publicação indicado": [
+   {
+    "removido": "32388664",
+    "mantido": "32637434",
+    "motivo": "Panther treatment consensus (Knee Surg Sports Traumatol Arthrosc 2020)"
+   },
+   {
+    "removido": "32661128",
+    "mantido": "32637434",
+    "motivo": "Panther treatment consensus (Br J Sports Med 2020)"
+   },
+   {
+    "removido": "34006576",
+    "mantido": "32637434",
+    "motivo": "Panther treatment consensus (J ISAKOS 2021, publicação simultânea)"
+   },
+   {
+    "removido": "32347344",
+    "mantido": "32647735",
+    "motivo": "Panther return-to-sport consensus (Knee Surg Sports Traumatol Arthrosc 2020)"
+   },
+   {
+    "removido": "34006577",
+    "mantido": "32647735",
+    "motivo": "Panther return-to-sport consensus (J ISAKOS 2021, publicação simultânea)"
+   },
+   {
+    "removido": "29455243",
+    "mantido": "29594177",
+    "motivo": "IOC 2018 paediatric ACL consensus (Knee Surg Sports Traumatol Arthrosc)"
+   },
+   {
+    "removido": "29478021",
+    "mantido": "29594177",
+    "motivo": "IOC 2018 paediatric ACL consensus (Br J Sports Med)"
+   }
+  ],
+  "observacao": "Os demais 88 registros removidos são repetições do mesmo PMID entre strings de busca; os 13 Consensus x PubMed são pareamentos por título (inclui 1 resumo de congresso de 39976186)."
+ }
 }

@@ -1,0 +1,32 @@
+{
+  "etapa": "03a-busca",
+  "rodada": 1,
+  "executor": "fps-op-buscador",
+  "itens": [
+    {
+      "id": "A1",
+      "status": "corrigido",
+      "detalhe": "Triagem de 100% dos registros das strings: principal 165 (retstart 0 e 100), revisões 72, diretrizes 115 (retstart 0 e 100), mais ensaios 17, dose conservador 38, dose revisões 7, LCM 10, diretriz [pt] 7 e JOSPT 2. Deduplicação por PMID, DOI e título refeita (345 PubMed únicos + 50 Consensus). Os PMIDs citados no parecer (Panther 32637434, Delaware-Oslo 29854860/33999877/35975945, NACOX 35633030, RS 38646275, RS/MA 26224582, RS 25394687, 22962290, 29927640, 29438635, Cochrane 27039329, retirada 21563147) estão em 03a-candidatos.json com decisão e motivo."
+    },
+    {
+      "id": "A2",
+      "status": "corrigido",
+      "detalhe": "Corte refeito por hierarquia (diretriz > RS/MA > ECR > coorte > outros) dentro de cada grupo de decisão, com incluir antes de talvez, mais recentes primeiro, e cobertura de pelo menos 2 itens por subtema essencial (verificada por palavras-chave); diretrizes nunca cortadas; 80 itens para avaliação (autorizado). Excluídos por volume em linha própria do PRISMA (157). Recuperados do corte anterior: 41710220, 41797294, 38811114, 42331698 (incluir) e 42875873 (diretriz UEFA); 42317908, 30001501 e 22898912 mantidos como talvez no conjunto selecionado."
+    },
+    {
+      "id": "A3",
+      "status": "corrigido",
+      "detalhe": "30001501 e 22898912 reclassificados como talvez (evidência indireta de dose, mantidos no conjunto selecionado); 42317908 (propriocepção aquática, força e equilíbrio) e 37130279 (consenso OA Action Alliance, prevenção secundária) como talvez. Revisei os excluir com motivo desfecho/fora_do_tema/desenho ligados a exercício, dose ou consenso: 22898912 e 30001501 foram os casos centrais;  os demais excluídos com esses motivos foram reavaliados título a título (cirurgia, pediatria, técnica ou população sem reabilitação conservadora) e permanecem excluídos."
+    },
+    {
+      "id": "A4",
+      "status": "corrigido",
+      "detalhe": "Buscas web registradas em buscas_nacionais e diretrizes_web: MS/PCDT/Conitec (sem PCDT de reabilitação do LCA), SBOT/AMB (Projeto Diretrizes de 2007 sobre diagnóstico e enxerto, encontradas em site de terceiros; a de diagnóstico entrou como talvez e a de enxerto como excluir), SBRATE e COFFITO/SONAFE (sem documento oficial), NICE (sem diretriz específica). Ausência declarada em alerta."
+    },
+    {
+      "id": "A5",
+      "status": "corrigido",
+      "detalhe": "PRISMA reescrito: identificados 486 (PubMed 433 retornados, Consensus 50, web 3); duplicatas 108 (por tipo, em duplicatas_por_tipo; 7 republicações do mesmo consenso listadas em duplicatas_detalhe); triados 378 = 141 excluídos na triagem + 157 excluídos por volume + 80 para avaliação, com asserção de consistência. Para os 41 registros sem identificador: 15 obtiveram PMID por busca de título (38601190, 36038357, 34932514, 42539917, 34929763, 24553885, 40276858, 41856547, 35810978, 38622858, 39041333, 32681200, 41496488, 26772611, 41566832); os demais, excluídos por população, intervenção ou desenho, permanecem sem identificador. A Cochrane 2016 tem PMID 27039329 e DOI nos dois registros unificados."
+    }
+  ]
+}
