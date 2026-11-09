@@ -1,8 +1,11 @@
 # Briefing — Caso Clínico 04: Membros Inferiores / Lesão no Esporte
 
-- **Criado em:** 09/11/2026 · **Situação:** aguardando as pendências da §6 para iniciar o pipeline
+- **Criado em:** 09/11/2026 · **Situação:** pendências resolvidas — pipeline em execução (**modo automático**, sem checkpoint)
 - **Tipo de trabalho:** `caso_clinico` (apresentação em equipe + arguição; ver `trabalho-fps/PROTOCOLO.md` §12)
 - **Instituição:** Faculdade Pernambucana de Saúde (FPS)
+- **Curso:** Educação Física
+- **Integrantes (ordem de fala sugerida):** Rômulo, Júlia, Gabriel, Daniel
+- **Tempo de apresentação:** 15 minutos
 - **Materiais do professor:** `fontes-do-professor/enunciado-caso-04.jpg` e `fontes-do-professor/criterios-de-avaliacao.jpg`
 - **Rubrica (pesos):** `rubrica.json`
 
@@ -56,13 +59,18 @@ controle neuromuscular, pliometria/agilidade, retorno ao esporte) · **C** — r
 cuidado usual / reconstrução precoce · **O** — estabilidade funcional (episódios de falseio), força do quadríceps
 (LSI), função (KOOS/IKDC), retorno ao esporte e nova lesão · **S** — diretrizes, revisões sistemáticas/metanálises, ECR.
 
-## 6. Pendências (preciso do usuário antes de rodar)
+## 6. Decisões do grupo (respondidas em 09/11/2026)
 
-- [ ] **Curso e período** (Educação Física? Fisioterapia?) — muda o vocabulário e o escopo de atuação.
-- [ ] **Integrantes do grupo** (nomes, quantos) — para dividir a fala de forma equilibrada (C6).
-- [ ] **Data da apresentação.**
-- [ ] **Cenário clínico:** assumir **tratamento conservador (joelho com LCA insuficiente)** — recomendado, ver
-      `PLANO.md` §2.3 — ou **pós-operatório tardio**? Se possível, confirmar com o professor.
-- [ ] **Modelo de slides ou logo oficial** da FPS/disciplina (arquivo .pptx ou .png).
-- [ ] **Documento escrito** é exigido? Se sim, formato (artigo, relatório, ficha de prescrição).
-- [ ] Algum livro-texto/material da disciplina que deva ser usado como referência.
+- **Curso:** Educação Física → a prescrição é de **exercício físico** (escopo do profissional de Educação Física).
+  Recursos como eletroestimulação, crioterapia e terapia manual entram apenas como **conduta da equipe
+  multiprofissional** (fisioterapia/medicina), sinalizados como tal.
+- **Integrantes:** Rômulo, Júlia, Gabriel e Daniel — fala dividida em blocos contínuos e tempo igual (±15%).
+- **Cenário clínico:** **tratamento conservador é o foco** (joelho com LCA insuficiente + estiramento do LCM).
+  O **pós-operatório tardio** entra só como **nota breve** (o que mudaria: maturação do enxerto, restrições,
+  critério de tempo para retorno), sem prescrição separada.
+- **Modelo de slides:** PowerPoint (.pptx), identidade FPS (paleta verde provisória até o arquivo oficial).
+- **Documento escrito:** não exigido pela rubrica → não será produzido nesta rodada (pode ser gerado depois).
+- **Fontes:** sem livro obrigatório da disciplina; usar a hierarquia do pipeline — diretrizes, revisões
+  sistemáticas/metanálises, ensaios clínicos, livros-texto de referência (ex.: ACSM para FITT-VP) — com a
+  pergunta estruturada pela estratégia PICOS.
+- **Data da apresentação:** não informada.
