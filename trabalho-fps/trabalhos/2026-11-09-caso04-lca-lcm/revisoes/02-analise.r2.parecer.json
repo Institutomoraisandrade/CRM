@@ -1,0 +1,33 @@
+{
+  "etapa": "02-analise",
+  "rodada": 2,
+  "revisor": "fps-lider-ciencia",
+  "modelo_revisor": "opus",
+  "executor": "fps-2-analista-critico",
+  "arquivos_revisados": ["02-analise-critica.md", "revisoes/02-analise.r1.resposta.json", "revisoes/02-analise.r1.parecer.json"],
+  "criterios": {
+    "cadeia_causal": 8.5,
+    "precisao_dos_detalhes": 9.0,
+    "classificacao_da_certeza": 8.5,
+    "analise_critica": 8.5,
+    "qualidade_das_fontes": 8.5
+  },
+  "achados": [],
+  "correcoes_aplicadas": [
+    "§5 equívoco 11: '80–100% com LCA reconstruído' → 'com reconstrução aguda do LCA' (o braço de van der List, PMID 38242254, é 'acute ACL reconstruction with nonoperative MCL').",
+    "§1.8 resposta de arguição: 'trataríamos como falha de enxerto' → 'como suspeita de falha de enxerto' (coerência com o verbo 'sugere' adotado em A3)."
+  ],
+  "decisoes_sobre_respostas": [
+    "A1 corrigido e aceito: §1.1 Passo 2 agora reproduz o resumo do PMID 25907183 (25/8/6; valgo n=11; colapso n=3; 3 por carrinho, todas com colapso), declara que Waldén não analisa a rotação tibial e não classifica o mecanismo do Bruno; Braaten sustenta valgo + rotação externa como mecanismo medial.",
+    "A2 corrigido e aceito: §4.2.6, §2 (linha 'LCM em cicatrização'), quadro §3 (duas linhas) e equívoco 11 conferidos com os resumos dos PMIDs 38242254 (27–68%, 36–77%, 80–100%; 27 estudos, 821 pacientes, nível IV) e 36960920 (todos os braços com LCA reconstruído; cirurgia do LCM se o valgo residual persistir).",
+    "A3 corrigido e aceito: síntese 4, §1.2, §1.8 e equívoco 3 usam 'pouco compatível / sugere [inferência]'; Melugin 35/40 (88%) e 17/20 (85%) confere com o PMID 29286825; sokal2022 ficou só para a acurácia.",
+    "A4 corrigido e aceito: a etapa 5 'Compensações' tem certeza compatível com o §1.4/§4.1; a nota ao designer marca as etapas 2 e 5 como hipótese/associação; o ciclo da etapa 6 está marcado como opcional, com a definição de falseio de Moksnes e o efeito sobre a IMA como [inferência]."
+  ],
+  "regressoes_verificadas": "Não há regressões. As 9 correções menores da r1 continuam no texto (lynch2015 = 2015; 'inibem reflexamente'; Ball 2020 no Passo 5; ressalva de Hurd; os 70% dos non-copers de Moksnes; Sokal em §4.3). Não restam ocorrências de 'incompatível' como afirmação. 02-referencias.json não mudou.",
+  "pontos_fortes": [
+    "As correções seguem os resumos ao pé da letra e levam os números do braço que corresponde ao caso (LCA + LCM sem cirurgia) ao §2 e ao quadro §3, o que dá ao prescritor e à banca um dado direto para o critério de encaminhamento.",
+    "O fluxo de 6 etapas para slides tem agora certeza coerente com o corpo, e as notas ao designer dizem exatamente o que marcar no rodapé."
+  ],
+  "escalonado": false,
+  "resumo": "Rodada 2: os 4 achados maiores foram corrigidos de forma fiel às fontes, sem contestação e sem regressões. Apliquei 2 ajustes menores de precisão verbal. A etapa pode seguir para 04-prescricao e slides."
+}
