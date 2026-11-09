@@ -434,6 +434,7 @@ class GeradorArtigo:
         if larguras and len(larguras) == len(colunas):
             tab.autofit = False
             for j, w in enumerate(larguras):
+                tab.columns[j].width = Cm(float(w))  # atualiza tblGrid (LibreOffice/Word respeitam)
                 for linha_t in tab.rows:
                     linha_t.cells[j].width = Cm(float(w))
         for i, linha in enumerate(linhas, start=1):

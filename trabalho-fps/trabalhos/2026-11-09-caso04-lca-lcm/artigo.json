@@ -31,7 +31,7 @@
    "nota": "Graduando(a) em Educação Física pela Faculdade Pernambucana de Saúde (FPS)."
   }
  ],
- "resumo": "**Objetivo:** apresentar o raciocínio clínico e uma proposta de intervenção por exercício para um atleta amador de futebol society, de 22 anos, com insuficiência do ligamento cruzado anterior (LCA) e estiramento do ligamento colateral medial (LCM), em tratamento conservador. **Método:** estudo de caso apoiado em revisão narrativa estruturada pela estratégia PICOS, com buscas no PubMed, no Consensus e na web em 9 de novembro de 2026 (486 registros identificados, 378 triados e 47 documentos no quadro de evidências) e certeza avaliada pelo sistema GRADE a partir dos resumos. **Resultados:** não há diretriz brasileira de reabilitação do LCA. Em adultos jovens ativos com lesão aguda, a reabilitação com reconstrução tardia opcional teve função semelhante à da reconstrução precoce (certeza baixa), mas 41% a 51% dos pacientes foram operados, sobretudo por instabilidade. Critérios de progressão, dose do exercício e proteção do LCM derivam de populações pós-reconstrução, de adultos saudáveis ou de consenso, com certeza muito baixa para o tratamento conservador. A proposta organiza quatro fases com frequência, intensidade, tempo, tipo, volume e progressão, critérios de saída medidos, um semáforo de ajuste por dor, derrame e falseio e critérios de encaminhamento. **Conclusão:** a reabilitação por critérios é defensável como tentativa com prazo e reavaliação, e o falseio recorrente ou a instabilidade em valgo exigem encaminhamento ortopédico.",
+ "resumo": "**Objetivo:** apresentar o raciocínio clínico e uma proposta de intervenção por exercício para um atleta amador de futebol society, de 22 anos, com insuficiência do ligamento cruzado anterior (LCA) e estiramento do ligamento colateral medial (LCM), em tratamento conservador. **Método:** estudo de caso apoiado em revisão narrativa estruturada pela estratégia PICOS, com buscas no PubMed, no Consensus e na web em 9 de novembro de 2026 (486 registros identificados, 378 triados e 47 documentos no quadro de evidências) e certeza avaliada pelo sistema GRADE a partir dos resumos. **Resultados:** não há diretriz brasileira de reabilitação do LCA. Em adultos jovens ativos com lesão aguda, a reabilitação com reconstrução tardia opcional teve função semelhante à da reconstrução precoce (certeza baixa), mas 41% dos pacientes foram operados em 18 meses e 51% em 5 anos, sobretudo por instabilidade. Critérios de progressão, dose do exercício e proteção do LCM derivam de populações pós-reconstrução, de adultos saudáveis ou de consenso, com certeza muito baixa para o tratamento conservador. A proposta organiza quatro fases com frequência, intensidade, tempo, tipo, volume e progressão, critérios de saída medidos, um semáforo de ajuste por dor, derrame e falseio e critérios de encaminhamento. **Conclusão:** a reabilitação por critérios é defensável como tentativa com prazo e reavaliação, e o falseio recorrente ou a instabilidade em valgo exigem encaminhamento ortopédico.",
  "palavras_chave": [
   "lesões do ligamento cruzado anterior",
   "tratamento conservador",
@@ -39,7 +39,7 @@
   "volta ao esporte",
   "futebol"
  ],
- "abstract": "**Objective:** to present the clinical reasoning and an exercise-based intervention proposal for a 22-year-old amateur society football player with anterior cruciate ligament (ACL) insufficiency and a medial collateral ligament (MCL) sprain managed conservatively. **Method:** case study supported by a narrative review structured by the PICOS strategy, searching PubMed, Consensus and the web on 9 November 2026 (486 records identified, 378 screened and 47 documents in the evidence table), with certainty rated by GRADE from abstracts. **Results:** no Brazilian guideline for ACL rehabilitation was found. In active young adults with acute injury, rehabilitation with optional delayed reconstruction produced function similar to early reconstruction (low certainty), but 41% to 51% of patients underwent surgery, mainly because of instability. Progression criteria, exercise dose and MCL protection derive from post-reconstruction populations, healthy adults or consensus, with very low certainty for conservative management. The proposal sets out four phases with frequency, intensity, time, type, volume and progression, measured exit criteria, a traffic-light system for pain, effusion and giving way, and referral criteria. **Conclusion:** criteria-based rehabilitation is defensible as a time-limited trial with reassessment, and recurrent giving way or valgus instability require orthopaedic referral.",
+ "abstract": "**Objective:** to present the clinical reasoning and an exercise-based intervention proposal for a 22-year-old amateur society football player with anterior cruciate ligament (ACL) insufficiency and a medial collateral ligament (MCL) sprain managed conservatively. **Method:** case study supported by a narrative review structured by the PICOS strategy, searching PubMed, Consensus and the web on 9 November 2026 (486 records identified, 378 screened and 47 documents in the evidence table), with certainty rated by GRADE from abstracts. **Results:** no Brazilian guideline for ACL rehabilitation was found. In active young adults with acute injury, rehabilitation with optional delayed reconstruction produced function similar to early reconstruction (low certainty), but 41% of patients underwent surgery within 18 months and 51% within 5 years, mainly because of instability. Progression criteria, exercise dose and MCL protection derive from post-reconstruction populations, healthy adults or consensus, with very low certainty for conservative management. The proposal sets out four phases with frequency, intensity, time, type, volume and progression, measured exit criteria, a traffic-light system for pain, effusion and giving way, and referral criteria. **Conclusion:** criteria-based rehabilitation is defensible as a time-limited trial with reassessment, and recurrent giving way or valgus instability require orthopaedic referral.",
  "keywords": [
   "anterior cruciate ligament injuries",
   "conservative treatment",
@@ -500,13 +500,13 @@
         ],
         [
          "Necessidade de cirurgia tardia ou falseio",
-         "41% a 51% operados em 3 ensaios [@frobell2013; @reijman2021; @beard2022; @graaff2022]",
+         "41% operados em 18 meses [@beard2022] e 51% em 5 anos [@frobell2013]; 50% em 24 meses no COMPARE [@reijman2021; @graaff2022]",
          "Moderada (taxa); baixa (preditores)",
          "Consistência entre ensaios; preditores vêm de coortes [@arp2024]"
         ],
         [
          "Retorno ao esporte",
-         "Conservador semelhante à ACLR, com 60% no futebol e 30% na revisão de escopo [@filbay2025; @grindem2012; @svensson2026; @ghezzi2026]",
+         "Conservador semelhante à ACLR, com 60% no futebol (coorte de tratamentos mistos) e 30% na revisão de escopo [@filbay2025; @grindem2012; @svensson2026; @ghezzi2026]",
          "Baixa a muito baixa",
          "Confusão, heterogeneidade e imprecisão"
         ],
@@ -612,7 +612,7 @@
       ],
       [
        "2",
-       "Força e controle neuromuscular em bloco inicial por critérios (~5 semanas, ~10 sessões) e reclassificação",
+       "Força e controle neuromuscular em bloco inicial por critérios (~5 semanas, ~10 sessões supervisionadas) e reclassificação",
        "Fase 1 concluída e LCM liberado",
        "Quadríceps com LSI ≥ 80%, zero falseio no bloco, reclassificação (salto cronometrado de 6 m ≥ 80%, escala funcional ≥ 80%, avaliação global ≥ 60), *step down* sem valgo e parecer do ortopedista"
       ],
@@ -642,7 +642,7 @@
     {
      "titulo": "Premissas e limites",
      "blocos": [
-      "Bruno é tratado como *non-coper* provisório (falseio recorrente, derrame e lesão associada), rótulo que é hipótese de trabalho e que se reclassifica ao fim do bloco inicial [@moksnes2008; @eitzen2010; @thoma2019]; o LCM associado o deixa fora da população em que o rastreio foi validado [@hurd2008outcomes]. O bloco inicial dura cerca de 5 semanas ou 10 sessões supervisionadas de força e treino neuromuscular, seguido de reclassificação e decisão compartilhada com o ortopedista [@eitzen2010program; @thoma2019; @pedersen2021; @filbay2019], e as semanas são ordem de grandeza: o que libera cada fase são os critérios. O falseio recorrente (≥ 2 episódios) é gatilho de encaminhamento ao ortopedista, não opcional [@diermeier2020; @filbay2019; @beard2022], e a estabilidade em valgo a 30° é gatilho de reavaliação do LCM [@vanderlist2024; @shultz2024]. Se a lesão for não aguda, com instabilidade persistente, o ensaio SNNAP favoreceu a cirurgia (KOOS4 +7,9; IC 95% 2,5–13,2; certeza baixa), condição e não fato do caso [@beard2022].",
+      "Bruno é tratado como *non-coper* provisório (falseio recorrente, derrame e lesão associada), rótulo que é hipótese de trabalho e que se reclassifica ao fim do bloco inicial [@moksnes2008; @eitzen2010; @thoma2019]; o LCM associado o deixa fora da população em que o rastreio foi validado [@hurd2008outcomes]. O bloco inicial dura cerca de 5 semanas, com cerca de 10 sessões supervisionadas de força e treino neuromuscular (a frequência de 3 sessões por semana soma cerca de 15 sessões no total, contando as não supervisionadas), seguido de reclassificação e decisão compartilhada com o ortopedista [@eitzen2010program; @thoma2019; @pedersen2021; @filbay2019], e as semanas são ordem de grandeza: o que libera cada fase são os critérios. O falseio recorrente (≥ 2 episódios) é gatilho de encaminhamento ao ortopedista, não opcional [@diermeier2020; @filbay2019; @beard2022], e a estabilidade em valgo a 30° é gatilho de reavaliação do LCM [@vanderlist2024; @shultz2024]. Se a lesão for não aguda, com instabilidade persistente, o ensaio SNNAP favoreceu a cirurgia (KOOS4 +7,9; IC 95% 2,5–13,2; certeza baixa), condição e não fato do caso [@beard2022].",
       "Não existe ensaio de dose no LCA insuficiente. A estrutura vem do programa de 5 semanas de Eitzen, coorte que não incluiu LCM sintomático nem lesão colateral grau III ou IV [@eitzen2010program], e do *American College of Sports Medicine* (ACSM) para adultos saudáveis [@acsm2009; @garber2011]; os critérios de corrida, progressão e retorno vêm de populações pós-ACLR [@kotsifaki2023; @grindem2016; @adams2012]. O modelo de monitoramento da dor foi descrito para dor patelofemoral e testado em tendinopatias [@silbernagel2007; @sprague2021], e as regras de derrame são de consenso [@adams2012; @filbay2019]. Os números sem fonte própria são declarados como convenção do prescritor (teto de dor ≤ 3/10 como zona verde, contatos de salto, altura de degrau, intervalos entre sessões) e valem como ponto de partida, ajustável pela resposta do atleta. As escalas são a numérica de dor (NPRS, de 0 a 10) [@sprague2021], a percepção subjetiva de esforço de 0 a 10 (CR-10 de Borg), com carga da sessão igual à PSE multiplicada pelos minutos [@filbay2019], as repetições máximas (RM) com o princípio “+2” [@eitzen2010program] e o teste do golpe modificado para o derrame [@sturgill2009]."
      ]
     },
@@ -706,7 +706,7 @@
         2.8,
         13.2
        ],
-       "fonte": "Elaborado pelos autores com base na prescrição de exercício do grupo, com as fontes indicadas em cada célula; valores marcados como convenção não derivam da literatura."
+       "fonte": "Elaborado pelos autores com base em @adams2012, @filbay2019 e @eitzen2010program; valores marcados como convenção não derivam da literatura."
       },
       "Critérios de saída, todos medidos:",
       {
@@ -748,7 +748,7 @@
         ],
         [
          "T – Tipo",
-         "Força de alta carga unilateral e bilateral (a literatura sustenta alta carga [@filbay2019]); cadeia fechada e cadeia aberta combinadas — equivalentes para força do quadríceps (certeza moderada [@culvenor2022]; divergência com @pamboris2024, muito baixa/baixa); isquiotibiais (cocontração e facilitação reduzem a translação anterior [@shelburne2005; @rudolph2001]); abdutores e rotadores externos do quadril, tronco e dorsiflexão do tornozelo [@rabin2010; @burnham2016; @crossley2011]; step down com feedback visual; equilíbrio e perturbação [@eitzen2010program]. SEM pliometria nesta fase (diferença deliberada do programa de referência; ver justificativa)."
+         "Força de alta carga unilateral e bilateral (a literatura sustenta alta carga [@filbay2019]); cadeia fechada e cadeia aberta combinadas — equivalentes para força do quadríceps (certeza moderada [@culvenor2022]; divergência com @pamboris2024, muito baixa/baixa); isquiotibiais (cocontração e facilitação reduzem a translação anterior [@shelburne2005; @rudolph2001]); abdutores e rotadores externos do quadril, tronco e dorsiflexão do tornozelo [@rabin2010; @burnham2016; @crossley2011]; step down com feedback visual; equilíbrio e perturbação [@eitzen2010program]. SEM pliometria nesta fase (diferença deliberada do programa de referência; ver seção 7.1)."
         ],
         [
          "V – Volume",
@@ -771,7 +771,7 @@
         2.8,
         13.2
        ],
-       "fonte": "Elaborado pelos autores com base na prescrição de exercício do grupo, com as fontes indicadas em cada célula; valores marcados como convenção não derivam da literatura."
+       "fonte": "Elaborado pelos autores com base em @eitzen2010program, @acsm2009 e @kotsifaki2023, com convenções do grupo onde indicado."
       },
       "Critérios de saída, todos medidos:",
       {
@@ -838,7 +838,7 @@
         2.8,
         13.2
        ],
-       "fonte": "Elaborado pelos autores com base na prescrição de exercício do grupo, com as fontes indicadas em cada célula; valores marcados como convenção não derivam da literatura."
+       "fonte": "Elaborado pelos autores com base em @acsm2009, @adams2012 e @kotsifaki2023; contatos de salto e intervalos são convenções do grupo."
       },
       "Critérios de saída, todos medidos:",
       {
@@ -904,14 +904,14 @@
         2.8,
         13.2
        ],
-       "fonte": "Elaborado pelos autores com base na prescrição de exercício do grupo, com as fontes indicadas em cada célula; valores marcados como convenção não derivam da literatura."
+       "fonte": "Elaborado pelos autores com base em @filbay2019, @meredith2020 e @bullock2025; tempos de jogo e aumentos semanais são convenções do grupo."
       },
       "Critérios de saída, todos medidos:",
       {
        "tipo": "lista",
        "estilo": "alineas",
        "itens": [
-        "Critérios de retorno ao esporte cumpridos (seção 'retorno_ao_esporte').",
+        "Critérios de retorno ao esporte cumpridos (seção 6.7).",
         "Treino coletivo completo, com contato, sem dor > 3/10, sem derrame e sem falseio por ≥ 4 semanas.",
         "Programa de prevenção incorporado à rotina do clube (≥ 10 min, ≥ 2×/semana).",
         "Alta do exercício supervisionado definida em conjunto com o ortopedista; seguimento de 6 e 12 meses."
@@ -1037,10 +1037,10 @@
         ]
        ],
        "larguras_cm": [
-        1.9,
-        3.9,
-        6.9,
-        3.3
+        2.5,
+        3.6,
+        6.7,
+        3.2
        ],
        "fonte": "Elaborado pelos autores com base na prescrição de exercício do grupo e nas fontes indicadas na última coluna."
       }
@@ -1062,7 +1062,7 @@
         "ACL-RSI acompanhado, sem barreira psicológica importante e sem ponto de corte validado nas fontes acessadas (prontidão psicológica aos 12 meses: OR 1,9 por ponto de aumento, IC 95% 1,2–3,2, em quem foi tratado sem cirurgia) [@webster2008; @slater2022; @meredith2020].",
         "Sem derrame, sem dor e sem falseio em ≥ 4 semanas de treino coletivo completo, com programa específico do esporte concluído [@kotsifaki2023; @filbay2019].",
         "Laudo médico: joelho estável clinicamente (Lachman, pivot-shift) e sem instabilidade medial; estabilidade objetiva não prediz função por si só [@kotsifaki2023; @filbay2019; @vanderlist2024].",
-        "Decisão por critérios e compartilhada, nunca só por tempo [@meredith2020]; não há prazo mínimo validado sem cirurgia. Expectativa a conversar: sem cirurgia, ≈ 55% dos atletas de nível I voltam e 60% dos jogadores de futebol (evidência de certeza baixa) [@grindem2012; @svensson2026]. Quem falhou nos critérios pós-ACLR teve 38,2% de relesão contra 5,6% de quem passou (indireta) [@grindem2016]."
+        "Decisão por critérios e compartilhada, nunca só por tempo [@meredith2020]; não há prazo mínimo validado sem cirurgia. Expectativa a conversar: sem cirurgia, ≈ 55% dos atletas de nível I voltam e, em coorte com tratamentos mistos, 60% dos jogadores de futebol (evidência de certeza baixa) [@grindem2012; @svensson2026]. Quem falhou nos critérios pós-ACLR teve 38,2% de relesão contra 5,6% de quem passou (indireta) [@grindem2016]."
        ]
       },
       "Os critérios derivam de populações pós-ACLR; para o tratamento conservador a certeza é muito baixa e não há prazo mínimo validado."
@@ -1102,14 +1102,14 @@
      "titulo": "Defesa da prescrição",
      "blocos": [
       "A progressão por critérios, e não por tempo, é a escolha que mais converge entre as fontes [@meredith2020; @vanmelick2016; @filbay2019; @kotsifaki2023]; o tempo permanece só como limite inferior biológico, como as 4 a 6 semanas do LCM em plano sagital [@adams2012]. Não há ensaio de critérios contra tempo no LCA deficiente, de modo que a escolha se apoia em consenso e em coerência fisiológica, com certeza muito baixa. A Fase 1 precede qualquer carga pesada porque o derrame e a dor inibem reflexamente o quadríceps [@rice2010; @sonnerycottet2024], a extensão completa é pré-requisito da progressão [@adams2012; @filbay2019] e o LCM, que no joelho sem LCA recebe carga extra [@kanamori2000], justifica o plano sagital. O teto de dor de 3/10 é mais conservador que o do modelo de monitoramento (5/10), por haver derrame e LCM em cicatrização; é escolha declarada, não dado de fonte.",
-      "O bloco de 5 semanas e 10 sessões da Fase 2 reproduz a unidade do programa de Delaware-Oslo, após a qual se reclassifica o atleta [@thoma2019; @eitzen2010], e responde à pergunta “por que não decidir a cirurgia logo?”. A dose de 6 a 8 RM em 3 a 4 séries com o princípio “+2” é a do programa de referência, que seguiu o ACSM para adultos [@eitzen2010program; @acsm2009], e a diretriz de Filbay recomenda treino de alta carga para o quadríceps [@filbay2019]; nas semanas 1 e 2 adotou-se a faixa de iniciante de 8 a 12 RM, porque o membro está atrofiado, transição própria do grupo. A certeza é baixa e indireta, porque o estudo excluiu LCM sintomático e lesão colateral grau III ou IV. Diferiu-se do programa de referência ao não incluir pliometria na Fase 2: nele, 4 de 98 pacientes (3,9%) tiveram mais dor e derrame após a pliometria e todos precisaram depois de reparo meniscal, e os autores sugerem que o sintoma pós-carga pode apontar lesão intra-articular [@eitzen2010program]; Bruno tem dor na linha articular medial (LCM ou menisco), valgo dinâmico e LCM em cicatrização, e adiar o salto é a escolha prudente. Cadeias aberta e fechada foram combinadas, pois são equivalentes para a força do quadríceps com certeza moderada [@culvenor2022] e a vantagem da aberta é de certeza muito baixa a baixa [@pamboris2024]. Quadril, tronco e dorsiflexão entram porque o valgo é multifatorial [@rabin2010; @burnham2016; @crossley2011], e os isquiotibiais, porque facilitá-los reduz a translação anterior em modelo [@shelburne2005], embora corrigir o valgo no *step down* não esteja demonstrado como redutor de falseio ou de nova lesão no LCA insuficiente [@nunes2023].",
-      "Na Fase 3, os critérios de corrida vêm da diretriz Aspetar e do protocolo de Delaware, ambos pós-ACLR, são consenso sem evidência de que sejam os critérios certos, e sua aplicação a Bruno é extrapolação [@kotsifaki2023; @adams2012]; força e potência seguem o ACSM, evidência de adultos saudáveis [@acsm2009]. O número de contatos de salto, a altura do degrau e os intervalos entre sessões não têm fonte verificada, e a regra de progressão é a resposta do joelho (semáforo), não o número. As saídas coincidem com os critérios de retorno pós-ACLR, de evidência indireta e validade equívoca [@grindem2016; @webster2019]; o LSI pode mascarar déficit de qualidade [@kotsifaki2022triple; @wellsandt2017], por isso a qualidade do movimento é registrada, e o limite de agilidade de 11 s provém de bateria pós-ACLR relatada por @filbay2019, também extrapolação. Na Fase 4, o retorno gradual e a carga monitorada pela PSE multiplicada pelos minutos seguem @filbay2019 e @meredith2020, e a expectativa a conversar com o atleta é honesta: sem cirurgia, cerca de 55% dos atletas de nível I voltam, 60% no futebol, com certeza baixa [@grindem2012; @svensson2026]. O ACL-RSI foi validado em reconstruídos e seu uso aqui é extrapolação [@slater2022; @webster2008], e a dose mínima de prevenção de 10 min, 2 vezes por semana, não deve ser atribuída à redução de 61% das lesões do LCA, que é de mulheres e indireta para Bruno [@bullock2025]."
+      "O bloco da Fase 2, de cerca de 5 semanas e cerca de 10 sessões supervisionadas (3 sessões por semana somam cerca de 15 no total), reproduz a unidade do programa de Delaware-Oslo, após a qual se reclassifica o atleta [@thoma2019; @eitzen2010], e responde à pergunta “por que não decidir a cirurgia logo?”. A dose de 6 a 8 RM em 3 a 4 séries com o princípio “+2” é a do programa de referência, que seguiu o ACSM para adultos [@eitzen2010program; @acsm2009], e a diretriz de Filbay recomenda treino de alta carga para o quadríceps [@filbay2019]; nas semanas 1 e 2 adotou-se a faixa de iniciante de 8 a 12 RM, porque o membro está atrofiado, transição própria do grupo. A certeza é baixa e indireta, porque o estudo excluiu LCM sintomático e lesão colateral grau III ou IV. Diferiu-se do programa de referência ao não incluir pliometria na Fase 2: nele, 4 de 98 pacientes (3,9%) tiveram mais dor e derrame após a pliometria e todos precisaram depois de reparo meniscal, e os autores sugerem que o sintoma pós-carga pode apontar lesão intra-articular [@eitzen2010program]; Bruno tem dor na linha articular medial (LCM ou menisco), valgo dinâmico e LCM em cicatrização, e adiar o salto é a escolha prudente. Cadeias aberta e fechada foram combinadas, pois são equivalentes para a força do quadríceps com certeza moderada [@culvenor2022] e a vantagem da aberta é de certeza muito baixa a baixa [@pamboris2024]. Quadril, tronco e dorsiflexão entram porque o valgo é multifatorial [@rabin2010; @burnham2016; @crossley2011], e os isquiotibiais, porque facilitá-los reduz a translação anterior em modelo [@shelburne2005], embora corrigir o valgo no *step down* não esteja demonstrado como redutor de falseio ou de nova lesão no LCA insuficiente [@nunes2023].",
+      "Na Fase 3, os critérios de corrida vêm da diretriz Aspetar e do protocolo de Delaware, ambos pós-ACLR, são consenso sem evidência de que sejam os critérios certos, e sua aplicação a Bruno é extrapolação [@kotsifaki2023; @adams2012]; força e potência seguem o ACSM, evidência de adultos saudáveis [@acsm2009]. O número de contatos de salto, a altura do degrau e os intervalos entre sessões não têm fonte verificada, e a regra de progressão é a resposta do joelho (semáforo), não o número. As saídas coincidem com os critérios de retorno pós-ACLR, de evidência indireta e validade equívoca [@grindem2016; @webster2019]; o LSI pode mascarar déficit de qualidade [@kotsifaki2022triple; @wellsandt2017], por isso a qualidade do movimento é registrada, e o limite de agilidade de 11 s provém de bateria pós-ACLR relatada por @filbay2019, também extrapolação. Na Fase 4, o retorno gradual e a carga monitorada pela PSE multiplicada pelos minutos seguem @filbay2019 e @meredith2020, e a expectativa a conversar com o atleta é honesta: sem cirurgia, cerca de 55% dos atletas de nível I voltam [@grindem2012], e 60% dos jogadores de futebol voltaram em coorte com tratamentos mistos [@svensson2026], com certeza baixa. O ACL-RSI foi validado em reconstruídos e seu uso aqui é extrapolação [@slater2022; @webster2008], e a dose mínima de prevenção de 10 min, 2 vezes por semana, não deve ser atribuída à redução de 61% das lesões do LCA, que é de mulheres e indireta para Bruno [@bullock2025]."
      ]
     },
     {
      "titulo": "Conservar ou operar: convergências e divergências",
      "blocos": [
-      "As fontes convergem em quatro pontos: a progressão por critérios, o núcleo de força do quadríceps e treino neuromuscular com atenção à prontidão psicológica, a decisão compartilhada após um período de reabilitação e o falseio recorrente como gatilho para a cirurgia [@meredith2020; @vanmelick2016; @filbay2019; @kotsifaki2023; @diermeier2020]. A divergência central é o consenso Panther, que recomenda ACLR precoce em atletas de pivô de alta demanda, com o argumento de risco meniscal e condral na cirurgia tardia [@diermeier2020], contra a revisão de Filbay, que sustenta a reabilitação como primeira linha com base no KANON [@filbay2019]. Parte da diferença vem do peso dado à evidência: o consenso é opinião, ao passo que, no COMPARE, os procedimentos meniscais em 2 anos foram 29% (25/85) com ACLR precoce e 21% (17/82) com reabilitação inicial (RR 0,67; IC 95% 0,40–1,12; p = 0,12), isto é, sem aumento com a estratégia de reabilitação [@graaff2022menisco]. Outra parte vem da população: o KANON incluiu lesões agudas em joelho previamente hígido, e o SNNAP, lesões não agudas com instabilidade persistente, em que a cirurgia foi favorecida [@frobell2010; @beard2022]. A proposta é, por isso, uma tentativa com prazo e critérios de reavaliação, e não uma recusa à cirurgia: entre 41% e 51% dos pacientes tratados com reabilitação foram operados nos ensaios, principalmente por instabilidade (Quadro 5), e Bruno, mais jovem e ativo, está no perfil que mais migra para a cirurgia [@graaff2022; @arp2024]."
+      "As fontes convergem em quatro pontos: a progressão por critérios, o núcleo de força do quadríceps e treino neuromuscular com atenção à prontidão psicológica, a decisão compartilhada após um período de reabilitação e o falseio recorrente como gatilho para a cirurgia [@meredith2020; @vanmelick2016; @filbay2019; @kotsifaki2023; @diermeier2020]. A divergência central é o consenso Panther, que recomenda ACLR precoce em atletas de pivô de alta demanda, com o argumento de risco meniscal e condral na cirurgia tardia [@diermeier2020], contra a revisão de Filbay, que sustenta a reabilitação como primeira linha com base no KANON [@filbay2019]. Parte da diferença vem do peso dado à evidência: o consenso é opinião, ao passo que, no COMPARE, os procedimentos meniscais em 2 anos foram 29% (25/85) com ACLR precoce e 21% (17/82) com reabilitação inicial (RR 0,67; IC 95% 0,40–1,12; p = 0,12), isto é, sem aumento com a estratégia de reabilitação [@graaff2022menisco]. Outra parte vem da população: o KANON incluiu lesões agudas em joelho previamente hígido, e o SNNAP, lesões não agudas com instabilidade persistente, em que a cirurgia foi favorecida [@frobell2010; @beard2022]. A proposta é, por isso, uma tentativa com prazo e critérios de reavaliação, e não uma recusa à cirurgia: 41% dos pacientes tratados com reabilitação foram operados em 18 meses e 51% em 5 anos, principalmente por instabilidade (Quadro 5), e Bruno, mais jovem e ativo, está no perfil que mais migra para a cirurgia [@graaff2022; @arp2024]."
      ]
     },
     {

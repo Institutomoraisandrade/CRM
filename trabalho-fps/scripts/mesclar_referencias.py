@@ -46,6 +46,8 @@ def main() -> int:
             continue
         for r in abnt.carregar_referencias(p):
             existente = next((indice[k] for k in chaves(r) if k in indice), None)
+            if existente and r.get("pmid") and existente.get("pmid") and str(r["pmid"]) != str(existente["pmid"]):
+                existente = None  # mesmo título, PMIDs diferentes (ex.: Parte 1 × Parte 2) → obras distintas
             if existente:
                 if r["id"] != existente["id"]:
                     existente.setdefault("aliases", [])
