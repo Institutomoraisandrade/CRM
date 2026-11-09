@@ -100,13 +100,71 @@
       "hop test",
       "KOOS",
       "IKDC",
-      "pivoting sports"
+      "pivoting sports",
+      "noncopers",
+      "rehabilitation alone",
+      "delayed reconstruction",
+      "dose-response",
+      "quadriceps strengthening"
     ]
   },
   "estrategias": {
-    "pubmed": "(\"Anterior Cruciate Ligament Injuries\"[MeSH Terms] OR \"anterior cruciate ligament\"[tiab]) AND (nonoperative[tiab] OR non-operative[tiab] OR nonsurgical[tiab] OR conservative[tiab] OR \"ACL-deficient\"[tiab] OR copers[tiab]) AND (rehabilitation[tiab] OR \"Exercise Therapy\"[MeSH Terms] OR \"neuromuscular training\"[tiab] OR exercise[tiab]) AND (soccer[tiab] OR football[tiab] OR \"pivoting sport*\"[tiab] OR athletes[tiab])",
+    "pubmed": "(\"Anterior Cruciate Ligament Injuries\"[MeSH Terms] OR \"anterior cruciate ligament\"[tiab]) AND (nonoperative[tiab] OR nonsurgical[tiab] OR conservative[tiab] OR \"ACL-deficient\"[tiab] OR copers[tiab] OR noncopers[tiab] OR \"rehabilitation alone\"[tiab] OR \"delayed reconstruction\"[tiab]) AND (rehabilitation[tiab] OR \"Exercise Therapy\"[MeSH Terms] OR \"neuromuscular training\"[tiab] OR exercise[tiab]) AND (soccer[tiab] OR football[tiab] OR pivoting[tiab] OR active[tiab] OR athletes[tiab] OR \"Athletic Injuries\"[MeSH Terms])",
     "bvs": "(mh:\"Lesões do Ligamento Cruzado Anterior\" OR \"ligamento cruzado anterior\" OR \"anterior cruciate ligament\") AND (\"tratamento conservador\" OR conservador OR nonoperative OR \"não cirúrgico\" OR \"ACL-deficient\") AND (reabilitação OR \"terapia por exercício\" OR \"treinamento neuromuscular\" OR exercício OR rehabilitation) AND (futebol OR soccer OR atletas OR athletes) — NÃO testada nesta execução (base BVS/LILACS não consultada)",
-    "cochrane": "#1 MeSH descriptor: [Anterior Cruciate Ligament Injuries] explode all trees; #2 (nonoperative OR non-operative OR nonsurgical OR conservative OR \"ACL-deficient\"):ti,ab,kw; #3 MeSH descriptor: [Exercise Therapy] explode all trees; #4 (rehabilitation OR \"neuromuscular training\" OR exercise):ti,ab,kw; #5 #1 AND #2 AND (#3 OR #4) — NÃO testada nesta execução (Cochrane Library não consultada)"
+    "cochrane": "#1 MeSH descriptor: [Anterior Cruciate Ligament Injuries] explode all trees; #2 (nonoperative OR non-operative OR nonsurgical OR conservative OR \"ACL-deficient\"):ti,ab,kw; #3 MeSH descriptor: [Exercise Therapy] explode all trees; #4 (rehabilitation OR \"neuromuscular training\" OR exercise):ti,ab,kw; #5 #1 AND #2 AND (#3 OR #4) — NÃO testada nesta execução (Cochrane Library não consultada)",
+    "pubmed_variante_desenho": "(\"Anterior Cruciate Ligament Injuries\"[MeSH Terms] OR \"anterior cruciate ligament\"[tiab]) AND (nonoperative[tiab] OR nonsurgical[tiab] OR conservative[tiab] OR \"ACL-deficient\"[tiab] OR copers[tiab] OR noncopers[tiab] OR \"rehabilitation alone\"[tiab] OR \"delayed reconstruction\"[tiab]) AND (rehabilitation[tiab] OR \"Exercise Therapy\"[MeSH Terms] OR \"neuromuscular training\"[tiab] OR exercise[tiab]) AND (systematic review[pt] OR meta-analysis[pt] OR randomized controlled trial[pt] OR guideline[pt])",
+    "pubmed_lcm": "(\"Medial Collateral Ligament, Knee\"[MeSH Terms] OR \"medial collateral ligament\"[tiab]) AND (nonoperative[tiab] OR nonsurgical[tiab] OR conservative[tiab] OR rehabilitation[tiab]) AND (\"Anterior Cruciate Ligament Injuries\"[MeSH Terms] OR ACL[tiab]) AND (systematic review[pt] OR meta-analysis[pt] OR randomized controlled trial[pt])",
+    "pubmed_diretrizes": "(\"Anterior Cruciate Ligament Injuries\"[MeSH Terms] OR \"anterior cruciate ligament\"[tiab]) AND (guideline*[ti] OR recommendations[ti] OR consensus[ti] OR \"clinical practice\"[ti]) AND (rehabilitation[tiab] OR management[tiab] OR \"return to sport\"[tiab] OR \"Exercise Therapy\"[MeSH Terms])",
+    "pubmed_dose_conservador": "(\"Anterior Cruciate Ligament Injuries\"[MeSH Terms] OR \"anterior cruciate ligament\"[tiab]) AND (nonoperative[tiab] OR nonsurgical[tiab] OR conservative[tiab] OR \"ACL-deficient\"[tiab] OR copers[tiab] OR noncopers[tiab] OR \"rehabilitation alone\"[tiab]) AND (\"Resistance Training\"[MeSH Terms] OR \"Plyometric Exercise\"[MeSH Terms] OR \"quadriceps strengthening\"[tiab] OR \"perturbation training\"[tiab] OR dose[tiab] OR \"neuromuscular training\"[tiab])",
+    "pubmed_dose_revisoes": "(\"Anterior Cruciate Ligament Injuries\"[MeSH Terms] OR \"anterior cruciate ligament\"[tiab]) AND (dose[tiab] OR \"dose-response\"[tiab] OR volume[tiab] OR progression[tiab]) AND (\"Resistance Training\"[MeSH Terms] OR \"Plyometric Exercise\"[MeSH Terms] OR \"Exercise Therapy\"[MeSH Terms]) AND (systematic review[pt] OR guideline[pt])",
+    "contagens_pubmed": {
+      "data_execucao": "2026-11-09",
+      "filtro": "pdat 2010-2026 (salvo onde indicado)",
+      "limite_operadores_mcp": 20,
+      "pubmed": {
+        "sem_filtro_data": 229,
+        "2010_2026": 165,
+        "operadores": 19
+      },
+      "pubmed_variante_desenho": {
+        "2010_2026": 72,
+        "operadores": 17
+      },
+      "pubmed_lcm": {
+        "2010_2026": 10,
+        "operadores": 10
+      },
+      "pubmed_diretrizes": {
+        "2010_2026": 115,
+        "operadores": 9
+      },
+      "pubmed_dose_conservador": {
+        "2010_2026": 38,
+        "operadores": 14
+      },
+      "pubmed_dose_revisoes": {
+        "2010_2026": 7,
+        "operadores": 10
+      },
+      "lista_controle": {
+        "pmids": [
+          "20660401",
+          "23349407",
+          "30790527",
+          "42233492",
+          "31431274"
+        ],
+        "recuperados_pela_principal": [
+          "20660401",
+          "23349407",
+          "30790527",
+          "42233492"
+        ],
+        "recuperado_so_pela_string_de_diretrizes": [
+          "31431274"
+        ]
+      }
+    }
   },
   "criterios": {
     "inclusao": [
@@ -159,6 +217,11 @@
     },
     {
       "nome": "Manejo do LCM em lesão combinada (grau, proteção do estresse em valgo nas fases iniciais, laxidão residual, cicatrização)",
+      "prioridade": "essencial",
+      "destino": "ambos"
+    },
+    {
+      "nome": "Dose e progressão do exercício (FITT-VP) no joelho com LCA insuficiente: força do quadríceps/isquiotibiais/quadril (carga, séries, frequência), cadeia aberta × fechada, treino neuromuscular/perturbação, pliometria (contatos), agilidade, retorno à corrida e progressão de carga; ACSM como base de prescrição (evidência de dose-resposta escassa e indireta; ver strings pubmed_dose_*)",
       "prioridade": "essencial",
       "destino": "ambos"
     },

@@ -642,5 +642,51 @@
     "nivel_evidencia": null,
     "verificado": true,
     "verificado_via": "PubMed PMID 42212766"
+  },
+  {
+    "id": "petushek2019",
+    "tipo": "artigo",
+    "autores": [
+      "Petushek, Erich J.",
+      "Sugimoto, Dai",
+      "Stoolmiller, Michael",
+      "Smith, Grace",
+      "Myer, Gregory D."
+    ],
+    "et_al": false,
+    "titulo": "Evidence-based best-practice guidelines for preventing anterior cruciate ligament injuries in young female athletes: a systematic review and meta-analysis",
+    "subtitulo": null,
+    "periodico": "Am J Sports Med",
+    "ano": 2019,
+    "volume": "47",
+    "numero": "7",
+    "paginas": "1744-1753",
+    "doi": "10.1177/0363546518782460",
+    "pmid": "30001501",
+    "desenho": "Revisão sistemática com metanálise",
+    "nivel_evidencia": null,
+    "verificado": true,
+    "verificado_via": "PubMed PMID 30001501 (ano do fascículo confirmado com [ppdat] 2019; Epub 2018)"
+  },
+  {
+    "id": "augustsson2013",
+    "tipo": "artigo",
+    "autores": [
+      "Augustsson, Jesper"
+    ],
+    "et_al": false,
+    "titulo": "Documentation of strength training for research purposes after ACL reconstruction",
+    "subtitulo": null,
+    "periodico": "Knee Surg Sports Traumatol Arthrosc",
+    "ano": 2013,
+    "volume": "21",
+    "numero": "8",
+    "paginas": "1849-1855",
+    "doi": "10.1007/s00167-012-2167-3",
+    "pmid": "22898912",
+    "desenho": "Revisão sistemática",
+    "nivel_evidencia": null,
+    "verificado": true,
+    "verificado_via": "PubMed PMID 22898912 (ano do fascículo confirmado com [ppdat] 2013; Epub 2012)"
   }
 ]

@@ -1,0 +1,42 @@
+{
+  "etapa": "01-investigacao",
+  "rodada": 1,
+  "executor": "fps-1-investigador",
+  "itens": [
+    {
+      "id": "A1",
+      "status": "corrigido",
+      "detalhe": "Bullet de Nicolini reescrito após confirmar no texto completo (PMC4108693, Tabelas 2 e 5): 440 atletas, futebol = 167 pacientes, LCA ≈ 54% dos jogadores de futebol, 34,7% com lesão meniscal e 6,2% com LCM associada; removido 'basquete e vôlei'; acrescentada nota de que o 'quase 50%' do resumo é a proporção de jogadores de futebol com LCA; limitação (serviço terciário, sem denominador) mantida."
+    },
+    {
+      "id": "A2",
+      "status": "corrigido",
+      "detalhe": "§6 e 01-picos.json: string principal com as duas contagens (229 sem filtro; 165 com 2010-2026 pdat, string revisada; a anterior dava 117/92). Variante com filtro de desenho (72), string LCM (10, com [pt] correto), diretrizes (115) e duas strings de dose (38 e 7) escritas por extenso, executadas em 09/11/2026 e gravadas em 01-picos.json (pubmed_variante_desenho, pubmed_lcm, pubmed_diretrizes, pubmed_dose_conservador, pubmed_dose_revisoes, contagens_pubmed). Limite de 20 operadores registrado; todas as strings têm 9 a 19 operadores (conferido por script)."
+    },
+    {
+      "id": "A3",
+      "status": "corrigido",
+      "detalhe": "String principal ampliada (active[tiab], pivoting[tiab], 'Athletic Injuries'[MeSH]; noncopers, 'rehabilitation alone', 'delayed reconstruction'; 19 operadores). Teste contra a lista de controle: recupera 20660401, 23349407, 30790527 e 42233492 (4/5). Filbay 2019 (31431274) não entra porque o resumo não tem termos de tratamento conservador; criada string complementar de diretrizes (115 resultados) que a recupera, cobrindo 5/5 pela união. Frase de 'Pertinência (calibragem)' reescrita com esse resultado."
+    },
+    {
+      "id": "A4",
+      "status": "corrigido",
+      "detalhe": "Bullet reescrito: LCA+LCM como lesão ligamentar combinada mais comum do joelho [@abdul2026] e ≈ 20% das lesões ligamentares do joelho [@shultz2024]; removido 'em esportes de pivô' e a atribuição indevida a Birkenes; dados do registro norueguês mantidos com [@birkenes2026]."
+    },
+    {
+      "id": "A5",
+      "status": "corrigido",
+      "detalhe": "§1: explicitado que em todos os braços de Shultz 2024 o LCA foi reconstruído (evidência indireta para o cenário conservador); ligado a van der List 2024 (27-68% de estabilidade em valgo a 30° sem cirurgia nos dois ligamentos), com implicação marcada como inferência: monitorar estabilidade em valgo a 30° como critério de reavaliação médica. Frase de mitos no §4 ajustada na mesma lógica."
+    },
+    {
+      "id": "A6",
+      "status": "corrigido",
+      "detalhe": "Subtema essencial 'Dose e progressão do exercício (FITT-VP)' acrescentado na tabela do §3 (Ambos + prescritor) e em 01-picos.json (destino 'ambos'). Duas strings PubMed próprias (conservador: 38 resultados; revisões/diretrizes de dose-resposta: 7) em §6 e em 01-picos.json. Dois estudos verificados no PubMed e incluídos em 01-referencias.json (augustsson2013, 2013; petushek2019, 2019; anos do fascículo confirmados por [ppdat]) e usados no §4: dose de força pós-ACLR mal documentada em 4 de 6 estudos; prevenção feminina com média de 2,51 sessões/semana, 24,1 min/sessão. Declarado que não há ECR/RS específica de dose-resposta para LCA insuficiente (evidência indireta)."
+    },
+    {
+      "id": "A7",
+      "status": "corrigido",
+      "detalhe": "Ciente (achado menor já aplicado pelo líder); mantidos kotsifaki2022triple (2022), paterno2018 (2018) e shultz2024. Nas duas novas referências usei o ano do fascículo conferido com [ppdat]."
+    }
+  ]
+}
