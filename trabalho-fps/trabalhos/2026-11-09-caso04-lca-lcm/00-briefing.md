@@ -42,7 +42,7 @@ estiramento do ligamento colateral medial (LCM).
 2. `roteiro.md` — fala de cada integrante, com cronometragem e transições.
 3. `04-prescricao.md` — programa FITT-VP em 4 fases, critérios de progressão e regras de ajuste por sintomas.
 4. `banca.md` — nota estimada pela rubrica do professor e banco de arguição (incluindo cenários de dor/derrame/falseio).
-5. *(opcional — confirmar)* documento escrito em ABNT (`artigo.docx`), se o professor exigir.
+5. `artigo.docx` — documento de estudo em ABNT (artigo com capa), aprofundando o conteúdo da apresentação.
 
 ## 4. Restrições e padrões
 
@@ -69,7 +69,10 @@ cuidado usual / reconstrução precoce · **O** — estabilidade funcional (epis
   O **pós-operatório tardio** entra só como **nota breve** (o que mudaria: maturação do enxerto, restrições,
   critério de tempo para retorno), sem prescrição separada.
 - **Modelo de slides:** PowerPoint (.pptx), identidade FPS (paleta verde provisória até o arquivo oficial).
-- **Documento escrito:** não exigido pela rubrica → não será produzido nesta rodada (pode ser gerado depois).
+- **Documento escrito:** **SIM** — pedido do grupo como **material de apoio para estudo** (não é exigência da
+  rubrica). Formato: artigo científico ABNT (NBR 6022) **com capa institucional** (`config.capa: true`), Arial 12,
+  estrutura de estudo de caso com proposta de intervenção (ver `fps-4-redator-abnt`, seção "Caso clínico").
+  Deve aprofundar tudo o que os slides mostram de forma resumida — é o texto que o grupo estuda para a arguição.
 - **Fontes:** sem livro obrigatório da disciplina; usar a hierarquia do pipeline — diretrizes, revisões
   sistemáticas/metanálises, ensaios clínicos, livros-texto de referência (ex.: ACSM para FITT-VP) — com a
   pergunta estruturada pela estratégia PICOS.

@@ -44,6 +44,25 @@ Pós-textuais: Referências (geradas automaticamente, só as citadas), apêndice
 
 Extensão padrão: 3.500–5.500 palavras de corpo (≈ 8–14 páginas), salvo indicação do briefing.
 
+## Caso clínico (briefing `caso_clinico`)
+O documento é um **estudo de caso com proposta de intervenção** e serve de material de estudo do grupo — mais
+profundo que os slides, com a mesma lógica e os mesmos números. Estrutura (substitui a de revisão):
+1. **Introdução** — a lesão no esporte (epidemiologia com fonte), relevância para o profissional do curso,
+   objetivo do trabalho no último parágrafo.
+2. **Apresentação do caso** — o enunciado do professor, fiel (é dado do caso, sem citação).
+3. **Raciocínio clínico** — biomecânica da lesão, interpretação de cada achado e teste, compensações,
+   diagnóstico funcional e decisão conservador × cirúrgico (Agente 2).
+4. **Método** — pergunta PICOS, bases, descritores, período, critérios, seleção e instrumentos de avaliação
+   (exatamente o que foi feito).
+5. **Evidências** — diretrizes, revisões/metanálises e ensaios com certeza GRADE (quadro de evidências).
+6. **Proposta de intervenção** — as fases com FITT-VP (um quadro por fase), critérios de progressão, ajuste por
+   sintomas (quadro do semáforo), critérios de retorno ao esporte, prevenção e encaminhamento
+   (`04-prescricao.json`/`.md` — sem alterar números aprovados).
+7. **Discussão** — por que essas escolhas (defesa da prescrição), limitações da evidência, nota sobre o
+   cenário alternativo (ex.: pós-operatório), escopo profissional e aplicabilidade.
+8. **Considerações finais** — sem citações.
+Use `config.capa: true` quando o briefing pedir capa. Extensão: 4.000–6.000 palavras de corpo.
+
 ## Regras de redação
 - Terceira pessoa, voz impessoal; presente para fatos estabelecidos, passado para resultados de estudos.
 - Cada parágrafo: frase-tópico → evidência citada → interpretação. Nada de parágrafos só descritivos em série.
