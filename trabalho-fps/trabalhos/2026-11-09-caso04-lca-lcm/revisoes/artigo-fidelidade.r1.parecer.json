@@ -1,0 +1,97 @@
+{
+  "etapa": "artigo-fidelidade",
+  "rodada": 1,
+  "revisor": "fps-lider-ciencia",
+  "modelo_revisor": "opus",
+  "executor": "fps-4-redator-abnt",
+  "modo": "revisor (sem disparo de executores); correções pontuais aplicadas pelo revisor por instrução do orquestrador",
+  "arquivos_revisados": ["artigo.json", "artigo.docx", "referencias.json", "02-analise-critica.md", "03-evidencias.md", "03-quadro-evidencias.json", "04-prescricao.json", "04-prescricao.md", "revisoes/slides.r1.parecer.json"],
+  "conferencia_nas_fontes": "63 de 109 chaves citadas (58%) conferidas no PubMed nesta rodada (resumo; Eitzen 2010 JOSPT em texto completo PMC3158986), incluindo todas as que trazem número ou recomendação nas seções 5 (Evidências) e 7 (Discussão): frobell2010, frobell2013, monk2016, saueressig2022, reijman2021, graaff2022, graaff2022menisco, beard2022, filbay2025, dejonge2024, dayal2026, arp2024, thoma2019, grindem2018, pedersen2021, urhausen2025, grindem2012, svensson2026, slater2022, ghezzi2026, culvenor2022, pamboris2024, xu2026, nunes2023, arundale2017, arundale2023, grindem2016, webster2019, paterno2018, silbernagel2007, vanderlist2024, shultz2024, dadgostar2024, lundblad2019, bullock2025, sadigursky2017, diermeier2020, meredith2020, vanmelick2016, kotsifaki2023, filbay2019, acsm2009, sprague2021, adams2012, eitzen2010, eitzen2010program, moksnes2008, hurd2008outcomes, fitzgerald2000; e da seção 3: ball2020, herbst2023, kanamori2000, koga2010, walden2015, sokal2022, vaneck2013, wellsandt2017, reid2007, lynch2015, sonnerycottet2024, dutaillis2021, melugin2018, hewett2005.",
+  "criterios": {
+    "fidelidade_das_citacoes": 7.5,
+    "precisao_numerica": 8.0,
+    "ausencia_de_extrapolacao": 8.0,
+    "coerencia_com_as_etapas": 8.5
+  },
+  "achados": [
+    {
+      "id": "A1",
+      "gravidade": "critica",
+      "local": "artigo.json > 3.1 Mecanismo da lesão, bloco 3 (tensão rotação externa × interna)",
+      "problema": "Atribuição invertida: o texto dizia que a rotação INTERNA da tíbia (~8° nos primeiros 40 ms) era 'achado que os autores atribuem à ruptura já ocorrida'. Na fonte, a rotação interna é acoplada ao valgo e faz parte do mecanismo; o que os autores atribuem à ruptura já ocorrida é a rotação EXTERNA (~17°) que vem depois. O erro enfraquecia o argumento da própria seção e contradizia a seção 7.3 e a etapa 02 (que estavam corretas).",
+      "evidencia": "PubMed PMID 20595545 (Koga 2010), resumo: 'the tibia rotated internally during the first 40 milliseconds and then external rotation was observed, possibly after the anterior cruciate ligament had torn ... internal tibial rotation is coupled with valgus motion'. 02-analise-critica.md l.167 e l.181 descrevem corretamente a rotação interna acoplada.",
+      "correcao": "APLICADA: '...a tíbia girou internamente cerca de 8° nos primeiros 40 ms, acoplada ao valgo, e só depois girou externamente cerca de 17°, rotação externa que os autores atribuem à ruptura já ocorrida [@koga2010]'.",
+      "responsavel": "fps-4-redator-abnt",
+      "licao": "Ao condensar um achado com duas fases (antes e depois de um evento), mantenha a ordem e a interpretação que os autores dão a cada fase; não desloque a ressalva de uma fase para a outra."
+    },
+    {
+      "id": "A2",
+      "gravidade": "maior",
+      "local": "artigo.json > 5.3 Reabilitação conservadora, bloco 1 (Delaware-Oslo 5 e 10 anos)",
+      "problema": "'Aos 5 e 10 anos, os resultados foram semelhantes entre ACLR precoce, ACLR tardia e reabilitação isolada' generaliza para 10 anos um achado de 5 anos. Aos 10 anos, o grupo de ACLR tardia teve KOOS Esporte/Recreação, KOOS Qualidade de vida e desempenho nos saltos piores que os outros dois grupos (p ≤ 0,03). A omissão importa para o caso: a proposta de Bruno é justamente reabilitação com ACLR tardia opcional. Além disso, '95% a 100% ainda no esporte' é dado de 5 anos ('some kind of sports'); aos 10 anos foram 93%.",
+      "evidencia": "PubMed PMID 33999877 (Pedersen 2021): sem diferenças aos 5 anos; 95–100% ativos em algum esporte. PMID 39919167 (Urhausen 2025): 'delayed ACLR scored lower on KOOS Sports, KOOS Quality of Life, and hop performance compared with both other groups'. 03-evidencias.md l.122 registra a diferença da ACLR tardia; o redator a omitiu.",
+      "correcao": "APLICADA: frase separada em 5 anos [@pedersen2021] e 10 anos [@urhausen2025], com o pior resultado da ACLR tardia (p ≤ 0,03) e o risco de seleção nos dois seguimentos.",
+      "responsavel": "fps-4-redator-abnt",
+      "licao": "Ao juntar dois seguimentos da mesma coorte numa frase, confira se a conclusão vale para os dois; diferenças de subgrupo registradas nas etapas anteriores não podem desaparecer na síntese."
+    },
+    {
+      "id": "A3",
+      "gravidade": "menor",
+      "local": "artigo.json > 5.2, bloco 1 (KANON 5 anos)",
+      "problema": "'(2,0; IC 95% −8,5 a 4,5)': ponto e intervalo com sentidos incompatíveis (o intervalo está centrado em −2,0). O resumo publica assim, mas a Cochrane registra DM −2,0 (−8,27 a 4,27).",
+      "evidencia": "PMID 23349407 (KOOS4: 42,9 ACLR precoce × 44,9 opcional); PMID 27039329 (Monk 2016: MD −2,0).",
+      "correcao": "APLICADA: '(−2,0 pontos para a ACLR precoce; IC 95% −8,5 a 4,5)'.",
+      "responsavel": "fps-4-redator-abnt"
+    },
+    {
+      "id": "A4",
+      "gravidade": "menor",
+      "local": "artigo.json > 5.2, bloco 2 (COMPARE, análise exploratória)",
+      "problema": "'a maioria entre 3 e 6 meses': 17 de 41 (41,5%) não é maioria; 03-evidencias.md diz 'a maior parte (41,5%)'.",
+      "evidencia": "PMID 35048733: 'Most reconstructions occurred between 3 and 6 months after inclusion (n = 17; 41.5%)'; mediana 6,4 meses.",
+      "correcao": "APLICADA: 'o maior grupo (17 de 41; 41,5%) operado entre 3 e 6 meses'.",
+      "responsavel": "fps-4-redator-abnt"
+    },
+    {
+      "id": "A5",
+      "gravidade": "menor",
+      "local": "artigo.json > 3.2, bloco 2 (acurácia dos testes)",
+      "problema": "'a de Sokal as excluiu' (lesões associadas): Sokal excluiu lesões LIGAMENTARES associadas, mas manteve as meniscais; 02-analise-critica.md l.189 tem a forma correta.",
+      "evidencia": "PMID 35150292: 'without concomitant knee ligament injury ... studies reporting ... with or without concomitant meniscal injury'.",
+      "correcao": "APLICADA: 'a de Sokal excluiu as lesões ligamentares associadas'.",
+      "responsavel": "fps-4-redator-abnt"
+    },
+    {
+      "id": "A6",
+      "gravidade": "menor",
+      "local": "artigo.json > 6.1 bloco 2 e 7.1 bloco 2; 04-prescricao.json > premissas; 04-prescricao.md l.12",
+      "problema": "'coorte que não incluiu LCM sintomático nem lesão colateral grau III ou IV': o critério de exclusão de Eitzen é lesão MENISCAL sintomática e lesão de ligamento colateral grau III ou IV; a ressalva sobre lesões associadas sintomáticas está na seção de limitações.",
+      "evidencia": "PMC3158986 (Eitzen 2010, texto completo): 'excluded if they had symptomatic meniscal injuries ... grade III or IV injury to collateral ligaments'; limitações: 'cannot be generalized to patients with symptomatic concomitant injuries'.",
+      "correcao": "APLICADA nos três arquivos: 'excluiu lesão meniscal sintomática e lesão de ligamento colateral grau III ou IV' (e, em 6.1, a ressalva dos autores sobre lesões associadas sintomáticas).",
+      "responsavel": "fps-4-redator-abnt"
+    },
+    {
+      "id": "A7",
+      "gravidade": "menor",
+      "local": "04-prescricao.json/.md (aprovado em 04-prescricao.r1) e artigo.json > Quadro 8 e 6.9",
+      "problema": "Pendências apontadas na revisão dos slides (slides.r1 A2 e A3): (1) '60% dos jogadores de futebol' aparecia como retorno sem cirurgia, mas vem da coorte NACOX com tratamentos mistos (66% operados em 3 anos); (2) a Fase 2 dizia '~10 sessões' e numerava 'sessões 1–4 / 5–10' com frequência de 3 sessões/semana por 5 semanas (≈ 15). As 10 são as supervisionadas do programa de Eitzen. O artigo já trazia a forma correta no texto corrido (6.1, 6.7, 7.1), mas o Quadro 8 e a 6.9 mantinham a numeração ambígua.",
+      "evidencia": "PMID 42419036 (Svensson 2026): 270 pacientes, 178 (66%) com ACLR, futebol 60%. PMC3158986: programa de 10 sessões em ~5 semanas, supervisão ≥ 2×/semana, força 2–4×/semana.",
+      "correcao": "APLICADA: 04-prescricao.json/.md com 'coorte com tratamentos mistos (66% operados)' e '~10 sessões supervisionadas (≈ 15 no total)'; 'sessões supervisionadas 1–4 / 5–10', 'sessões supervisionadas 5 e 10' na Progressão e no Monitoramento; mesmo ajuste no Quadro 8, na 3.5 e na 6.9 do artigo.",
+      "responsavel": "fps-prescritor-exercicio"
+    }
+  ],
+  "correcoes_aplicadas": [
+    "A1–A7 aplicados pelo revisor com Edit pontual em artigo.json (sem reescrever o arquivo; o líder de produção editava em paralelo).",
+    "04-prescricao.json e 04-prescricao.md: 13 substituições pontuais (60% futebol com população de origem; Fase 2 com ~10 sessões supervisionadas e ≈ 15 no total; exclusões de Eitzen). JSON validado. Cópias de segurança em scratchpad.",
+    "artigo.docx regenerado (gerar_docx_abnt.py: 109 referências citadas e listadas, 0 ids inexistentes); validar_trabalho.py: 0 erros."
+  ],
+  "pontos_fortes": [
+    "Os números das seções 5 e 7 batem com os resumos: KANON (0,2; −6,5 a 6,8; 51% em 5 anos), COMPARE (5,3; 0,6–9,9; 41/82; 90% instabilidade), SNNAP (73,0 × 64,6; 7,9; 2,5–13,2; 65/160), Thoma (2,7 e 2,9), Grindem 2016 (4,32×; 51%/mês; 38,2% × 5,6%; HR 0,16; p = 0,075), Webster (23%; RR 0,40, 0,80, 3,35), Bullock (RR 0,39 com dose atribuída corretamente à análise de membros inferiores, RR 0,81), Van der List (27–68% × 80–100%), Slater (OR 1,9), Ghezzi (53%, 30%, 28%), Dayal (85,6%, 54,7%, 21,9%, 7,1%).",
+    "Verbos proporcionais ao GRADE: 'não encontraram diferença clinicamente importante' (baixa), 'pode' e 'tentativa com prazo' na conclusão, 'não está demonstrado' para correção do valgo, extrapolações pós-ACLR declaradas em cada critério de retorno.",
+    "Considerações finais coerentes com 03-evidencias.md §7 (equivalência funcional na lesão aguda com certeza baixa, 41–51% operados por instabilidade, SNNAP condicional ao tempo de lesão, falseio recorrente como gatilho), sem citações nem dados novos.",
+    "O artigo já incorporava as duas correções da revisão dos slides no texto corrido (60% de coorte mista; ~10 sessões supervisionadas, ≈ 15 no total), e as convenções do prescritor estão marcadas como tais.",
+    "Nenhuma afirmação sem origem nas etapas 1–4 encontrada na leitura integral; a separação hurd2008outcomes × hurd2008determinants e runer2026 × runer2026classification está correta (PMIDs 17940141/17932399 conferidos)."
+  ],
+  "escalonado": false,
+  "resumo": "artigo-fidelidade r1: 1 crítico (Koga: rotação interna/externa invertida), 1 maior (Delaware-Oslo 10 anos: ACLR tardia pior omitida) e 5 menores; todos corrigidos pelo revisor com edições pontuais, por instrução do orquestrador. 04-prescricao.json/.md alinhados (60% em coorte mista; ~10 sessões supervisionadas, ≈ 15 no total; exclusões de Eitzen). 63/109 citações (58%) conferidas no PubMed. docx regenerado; validador sem erros. Rodada 2 verifica os achados e regressões."
+}

@@ -1,0 +1,86 @@
+{
+  "etapa": "artigo-forma",
+  "rodada": 1,
+  "revisor": "fps-lider-producao",
+  "modelo_revisor": "opus",
+  "executor": "fps-4-redator-abnt",
+  "arquivos_revisados": ["artigo.json", "artigo.docx", "previa-artigo/folha-de-contato.png", "previa-artigo/pagina-01.png", "previa-artigo/pagina-03.png", "previa-artigo/pagina-07.png", "previa-artigo/pagina-08.png", "previa-artigo/pagina-12.png", "previa-artigo/pagina-22.png", "previa-artigo/pagina-26.png", "previa-artigo/pagina-34.png", "previa-artigo/pagina-36.png", "validacao.md"],
+  "criterios": {
+    "estrutura_abnt": 8.5,
+    "redacao_cientifica": 7.5,
+    "coesao_do_argumento": 8.0,
+    "discussao_critica": 7.0,
+    "ausencia_de_redundancia": 5.5
+  },
+  "achados": [
+    {
+      "id": "A1",
+      "gravidade": "maior",
+      "local": "artigo.json > 5.5, 6.8, 7.1 (último período) e Quadro 5 (linha 'Prevenção do LCA')",
+      "problema": "O bloco de prevenção aparece quatro vezes com os mesmos números: RR 0,39 (61%), RR 0,81 da dose de 10 min 2x/semana, FIFA 11+ RR 0,70 e 'arundale2023 não extraída' estão em 5.5 e de novo em 6.8[1]; o aviso 'a dose não deve ser atribuída aos 61%' está em 5.5, 6.8 e 7.1[2]. Além disso, 6.8[0] e o início de 6.8[1] são frases sem verbo ('Treino neuromuscular contínuo (...)', 'Mínimo de 10 min, 2x/semana (...)').",
+      "evidencia": "Leitura integral: 5.5[0] e 6.8[1] trazem os mesmos quatro números com as mesmas citações (bullock2025, sadigursky2017, arundale2023); 7.1[2] repete a ressalva da dose.",
+      "correcao": "Manter os números só em 5.5 (e no Quadro 5). Reescrever 6.8 em 1 parágrafo com frases completas, só a prescrição (conteúdo, dose mínima, duração, quem conduz), remetendo 'evidência e certeza na seção 5.5'. Cortar o último período de 7.1[2] sobre a dose de prevenção. Remover de 6.8 a frase sobre arundale2023 e a de arundale2017 (já em 5.3[2]).",
+      "responsavel": "fps-4-redator-abnt",
+      "licao": "Cada número de efeito aparece em um único lugar (seção de evidências ou quadro); proposta e discussão remetem à seção, sem repetir estimativas."
+    },
+    {
+      "id": "A2",
+      "gravidade": "maior",
+      "local": "artigo.json > 6.4 (critérios de saída da Fase 3) × 6.7 (critérios de retorno) × 5.3/7.1",
+      "problema": "Os critérios de saída da Fase 3 (6.4[3], itens a–e) e os critérios de retorno ao esporte (6.7[1], itens a–e) são praticamente a mesma lista, com os mesmos parênteses e citações (LSI >= 90% com a ressalva dos 100% da Aspetar, 4 hop tests, CMJ/drop jump > 90%, agilidade <= 11 s, IKDC/escala global >= 90). O item i de 6.7 repete números já dados em 5.3 e retomados em 7.1[2] (cerca de 55% de nível I, 60% no futebol, 38,2% contra 5,6%).",
+      "evidencia": "Comparação item a item de 6.4[3] e 6.7[1]: 5 de 6 itens da Fase 3 reaparecem em 6.7 com a mesma redação; grindem2012/svensson2026 aparecem em 5.3[1], 6.7[1] e 7.1[2]; grindem2016 38,2%/5,6% em 5.3[3], Quadro 5, 6.7[1].",
+      "correcao": "Escolher um lugar para a bateria: (a) manter a lista completa em 6.7 e trocar a saída da Fase 3 por 'bateria da seção 6.7, itens a–e, cumprida em duas avaliações' + os itens próprios da fase (step down/aterrissagem sem valgo, sem derrame após 2 semanas de volume pleno, zero falseio); ou (b) o inverso. Em 6.7 item i, cortar os percentuais e remeter à seção 5.3; em 7.1[2], manter só a interpretação ('expectativa honesta de retorno, de certeza baixa') sem repetir os números.",
+      "responsavel": "fps-4-redator-abnt",
+      "licao": "Critérios de saída da última fase e critérios de retorno não se duplicam: uma lista completa, a outra remete a ela e acrescenta só o que é próprio."
+    },
+    {
+      "id": "A3",
+      "gravidade": "maior",
+      "local": "artigo.json > 7.3 e 7.4 (Discussão), 7.2 (último período)",
+      "problema": "Parte da Discussão resume em vez de discutir. 7.3 reapresenta quatro 'tensões' já expostas com as mesmas fontes: rotação externa × interna (= 3.1[2]), poder prognóstico do coper/non-coper (= 3.5[1]), LSI que superestima e mascara (= 3.2[5], Quadro 3 e 7.1[2]), valgo nascido em mulheres (= 3.4[2]). 7.4 repete os números de 5.4 e do Quadro 5 (27%–68% × 80%–100%, 11 pacientes de dadgostar2024). 7.2 termina repetindo 41%/51% já no Resumo, em 5.2 e no Quadro 5.",
+      "evidencia": "Leitura integral: 7.3[0] cita braaten2022/koga2010/shin2011, moksnes2008/thoma2019, wellsandt2017/kotsifaki2022triple com as mesmas afirmações das seções 3.1, 3.5 e 3.2; 7.4[0] cita shultz2024, vanderlist2024 e dadgostar2024 com os mesmos números de 5.4[0].",
+      "correcao": "7.3: cortar a reexposição e transformar cada tensão em consequência para a prescrição em 1–2 frases sem números (ex.: 'como o colapso em valgo é raro no futebol masculino, o treino de quadril é mantido como boa prática, mas não é critério de alta isolado'), remetendo às seções 3.x. 7.4: substituir os números por remissão à seção 5.4 e acrescentar o que falta de crítico: o que o grau desconhecido do LCM muda na Fase 1 (duração do plano sagital, órtese, momento de reavaliar em valgo a 30°). 7.2: trocar o período final por remissão ao Quadro 5, sem repetir 41%/51%.",
+      "responsavel": "fps-4-redator-abnt",
+      "licao": "A Discussão interpreta e confronta; não reapresenta resultados já descritos — remete à seção e diz o que aquilo muda na conduta."
+    },
+    {
+      "id": "A4",
+      "gravidade": "maior",
+      "local": "artigo.json > 3.2[0], 3.5[2]–[3], 6[0], 6.1[0]–[1], 6.6[0], 7.1[1], 7.6, 7.7, Quadro 6",
+      "problema": "Premissas repetidas em vários pontos: (1) bloco de ~5 semanas/~10 sessões '(3 sessões por semana somam cerca de 15 no total)' em Quadro 6, 6.1[0], 7.1[1] e 6.9; (2) Bruno como non-coper provisório e sua justificativa em 3.5[2] e 6.1[0]; (3) SNNAP com KOOS4 +7,9 (IC 2,5–13,2) em 5.2[1], 6.1[0] e Quadro 5; (4) origem do modelo de monitoramento da dor (patelofemoral, tendinopatias, sem estudo em LCA/LCM, regras de derrame por consenso) em 5.3[3], 6.1[1] e 6.6[0]; (5) delimitação de escopo do profissional de Educação Física em 3.2[0], 6[0] e 7.7; (6) 'frouxidão sem parada firme com cirurgia prévia = suspeita de falha de enxerto, reencaminhar' em 3.5[3] e 7.6.",
+      "evidencia": "Busca textual no artigo.json: 'somam cerca de 15' aparece em 6.1[0] e 7.1[1]; 'beard2022' com 7,9 em 5.2, 6.1 e Quadro 5; 'patelofemoral' em 6.1[1] e 6.6[0]; 'falha de enxerto' em 3.5[3] e 7.6.",
+      "correcao": "(1) Manter a conta das sessões só em 6.1[0]; em 7.1[1] e 6.9 escrever apenas 'bloco inicial (seção 6.1)'. (2) Em 6.1[0], reduzir a classificação a uma frase com remissão à seção 3.5. (3) Em 6.1[0], cortar o período sobre o SNNAP (fica em 5.2 e no Quadro 5) ou trocá-lo por 'se a lesão for não aguda, ver seção 5.2'. (4) Em 6.6[0], manter só a operacionalização do grupo (verde <= 3/10, graus de derrame, reduções de volume, dois amarelos = um vermelho) e remeter a 6.1[1] quanto à origem; em 6.1[1], não repetir o que 5.3[3] já disse sobre silbernagel2007. (5) Retirar a delimitação de escopo de 3.2[0] (fica em 6[0] e 7.7). (6) Manter a regra da falha de enxerto só em 7.6. Meta: cortar cerca de 1.000 palavras de texto corrido sem perder conteúdo; a extensão restante (raciocínio clínico, quadros FITT-VP e semáforo) é justificada como material de estudo.",
+      "responsavel": "fps-4-redator-abnt"
+    },
+    {
+      "id": "A5",
+      "gravidade": "menor",
+      "local": "artigo.json > listas das seções 6.2–6.5, 6.7 e 6.9",
+      "problema": "As alíneas da seção 6 começam com maiúscula e terminam em ponto, enquanto a lista de 3.4 segue a NBR 6024 (minúscula, ponto e vírgula, ponto final só na última). Rótulos de nível de evidência ('nível 3', 'nível 5', 'nível IV') aparecem soltos em 3.3[1], 3.4[0] e 5.4[0] sem dizer de qual escala.",
+      "evidencia": "pagina-26.png ('d) Bruno informado...'), pagina-36.png (alíneas h e i) × lista de 3.4.",
+      "correcao": "Na rodada de correção dos maiores: padronizar as alíneas da seção 6 (inicial minúscula, ';' ao fim de cada item, '.' no último) e retirar os rótulos de nível ou nomear a escala na primeira ocorrência. (Deixado ao redator para não editar ~40 itens em paralelo à revisão de fidelidade.)",
+      "responsavel": "fps-4-redator-abnt"
+    }
+  ],
+  "correcoes_aplicadas": [
+    "Título e title sem siglas: 'Reabilitação conservadora da lesão combinada dos ligamentos cruzado anterior e colateral medial' / 'anterior cruciate and medial collateral ligament injury'.",
+    "Tabela 1: larguras [2,6; 3,5; 3,0; 3,1; 3,8] — o cabeçalho 'Sensibilidade (%)' e 'Especificidade (%)' e os nomes de autores na coluna Fonte não quebram mais no meio da palavra; 'Pivot-shift' em itálico.",
+    "Nove parênteses aninhados com citação dentro de parênteses ('...[@x])' → '(Autor, ano))') desfeitos nos Quadros 7–10 e na lista 6.7.",
+    "'relatada por [@filbay2019]' e 'ver [@eitzen2010program]' passaram a citação narrativa ou parentética correta; retirada a menção a Kyritsis et al., autor sem referência na lista (citação de citação sem fonte).",
+    "Caixa alta enfática removida (TODO, PLANO SAGITAL, UMA, VERDE, SEM, SOBRE O PÉ FIXO, E, NÃO).",
+    "26 termos estrangeiros postos em itálico nos quadros e listas (step down, hop tests, hops, drop jump, lag, prone hang, leg press, feedback, pivot-shift, potential coper, non-coper, clamshell).",
+    "Siglas definidas na primeira ocorrência: NMES e TENS (6[0]), KOS-ADLS (3.5), KOOS4 (5.2), RR, HR, DP, TSK-11; ADM trocada por 'amplitude'; AAOS e JOA por extenso em 7.5.",
+    "Remissão corrigida: 'nota breve (seção 7)' → 'seção 7.6'; 'a diretriz de Filbay' → 'a revisão de Filbay' (coerente com o Quadro 4).",
+    "artigo.docx e previa-artigo regenerados (53 páginas); validar_trabalho.py sem erros."
+  ],
+  "pontos_fortes": [
+    "Estrutura de estudo de caso completa e na ordem do redator (Introdução → Caso → Raciocínio clínico → Método → Evidências → Proposta → Discussão → Considerações), com capa institucional, Arial 12, resumo/abstract e palavras-chave DeCS.",
+    "Resumo estruturado de 220 palavras que espelha o artigo; Introdução termina no objetivo; Método descreve a busca real com o fluxo numérico e declara o que não foi consultado.",
+    "Classes de certeza (consenso, clínica, mecanística, hipótese) e 'convenção do prescritor' declaradas de forma sistemática — honestidade epistêmica exemplar para material de estudo.",
+    "Discussão 7.1, 7.2, 7.5 e 7.7 críticas de verdade: defesa de cada escolha, divergência Panther × Filbay explicada por peso da evidência e população, limitações e aplicabilidade no SUS.",
+    "Considerações finais respondem à pergunta PICOS, sem citações nem dados novos.",
+    "Quadros FITT-VP e semáforo legíveis, com cabeçalho repetido nas quebras de página; nenhum título órfão."
+  ],
+  "escalonado": false,
+  "resumo": "Forma ABNT, estrutura e discussão de bom nível; o problema é redundância: prevenção, bateria de retorno, premissas do bloco inicial e números do SNNAP/KANON reaparecem 3–4 vezes, e 7.3/7.4 reexpõem resultados em vez de discuti-los. A extensão é justificável como material de estudo, mas cerca de 1.000 palavras são repetição. Menores corrigidos diretamente (título sem siglas, Tabela 1, parênteses aninhados, itálicos, siglas, caixa alta). REVISAR com 4 achados maiores para o redator."
+}
