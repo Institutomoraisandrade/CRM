@@ -119,8 +119,7 @@
     "aliases": [
       "arundale2018"
     ],
-    "nota": "Atualiza a CPG de 2018 (J Orthop Sports Phys Ther 2018;48(9):A1-A42, PMID 30170521), versão superada.",
-    "observacao_verificacao": "Substitui arundale2018. Recomendações não extraídas (só título e resumo). Se o avaliador criar o mesmo id em 03-referencias.json, manter uma só entrada."
+    "nota": "Atualiza a CPG de 2018 (J Orthop Sports Phys Ther 2018;48(9):A1-A42, PMID 30170521), versão superada."
   },
   {
     "id": "hewett2005",

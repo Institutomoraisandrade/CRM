@@ -1,0 +1,427 @@
+{
+  "titulo": "Bruno, 22 anos: reabilitação conservadora de LCA insuficiente com estiramento do LCM",
+  "subtitulo": "Caso Clínico 04 · Membros inferiores / lesão no esporte",
+  "autores": [
+    "Rômulo",
+    "Júlia",
+    "Gabriel",
+    "Daniel"
+  ],
+  "curso": "Educação Física – FPS",
+  "data": "2026",
+  "estilo_citacao": "2023",
+  "referencias_arquivo": "referencias.json",
+  "tempo_minutos": 15,
+  "slides": [
+    {
+      "layout": "capa",
+      "apresentador": "Rômulo",
+      "tempo_seg": 15,
+      "notas": "Somos Rômulo, Júlia, Gabriel e Daniel. Vamos apresentar o caso do Bruno em quatro blocos: o caso e o mecanismo da lesão, a decisão clínica, a prescrição em quatro fases e o manejo de dor, derrame e falseio."
+    },
+    {
+      "layout": "topicos",
+      "apresentador": "Rômulo",
+      "tempo_seg": 50,
+      "titulo": "Bruno tem joelho instável, com derrame e quadríceps atrofiado",
+      "itens": [
+        "**Queixa:** dor no joelho esquerdo e falseio ao mudar de direção",
+        "**Trauma:** valgo com rotação externa da tíbia, joelho fletido, pé preso no gramado",
+        "**Exame:** derrame leve, dor medial, Lachman e gaveta sem parada firme",
+        "**Função:** atrofia do vasto medial e valgo dinâmico no step down",
+        "**Leitura do grupo:** LCA insuficiente e LCM estirado, sem cirurgia prévia"
+      ],
+      "fonte": "Dados do caso (enunciado); leitura do grupo [@melugin2018]",
+      "notas": "Bruno tem 22 anos e joga futebol society. Chega com dor no joelho esquerdo e falseio ao mudar de direção, depois de um trauma em valgo dinâmico com rotação externa da tíbia, joelho fletido e pé preso no gramado. No exame, derrame leve, dor medial, Lachman e gaveta positivos sem parada firme, atrofia do vasto medial e valgo no step down. O enunciado diz pós-operatório tardio ou conservador. Adotamos o conservador: frouxidão sem parada firme sugere LCA sem função e é pouco compatível com enxerto funcionante; é inferência, não regra, já que após reconstrução o Lachman foi normal em 85% a 88% de uma coorte. Com cirurgia prévia, seria suspeita de falha do enxerto. Faltam tempo de lesão, RM e grau do LCM."
+    },
+    {
+      "layout": "fluxo",
+      "apresentador": "Rômulo",
+      "tempo_seg": 70,
+      "titulo": "O trauma em valgo inicia um ciclo de instabilidade, derrame e atrofia",
+      "etapas": [
+        {
+          "titulo": "Pé fixo e valgo",
+          "texto": "Valgo e rotação externa com o joelho fletido"
+        },
+        {
+          "titulo": "Freios cedem",
+          "texto": "LCM estirado; LCA perde função"
+        },
+        {
+          "titulo": "Inibição e atrofia",
+          "texto": "Derrame e dor inibem o quadríceps; o desuso reduz volume e força"
+        },
+        {
+          "titulo": "Compensações",
+          "texto": "Valgo dinâmico e cocontração rígida"
+        },
+        {
+          "titulo": "Falseio",
+          "texto": "Cada episódio traz dor e derrame, e realimenta a etapa 3"
+        }
+      ],
+      "conclusao": "Etapa 2 é hipótese plausível (cadáver); etapa 5 é associação, não causa comprovada",
+      "fonte": "[@ball2020; @herbst2023; @rudolph2001; @rabin2010]",
+      "notas": "Seguimos a cadeia em cinco etapas. Primeiro, o pé preso transforma o giro do corpo em torque no joelho. Segundo, em cadáver, o LCM superficial é o principal freio do valgo, com 40% a 54% da restrição, e o LCA freia a translação anterior, com 63% a 77%. A sequência de falha no Bruno é hipótese: não há estudo dela em lesão combinada real, e os dados de LCA sem contato mostram valgo com rotação interna. Terceiro, derrame e dor inibem o quadríceps por reflexo, o que ocorre em 56,7% dos LCA agudos, e 79% revertem com exercícios simples; o desuso consolida a atrofia, e o quadríceps do LCA insuficiente é menor. Quarto, os non-copers usam cocontração com mais isquiotibiais, e não evitam o quadríceps. Quinto, o falseio é subluxação com dor e derrame, que realimenta a inibição. Agora, como confirmar isso na prática."
+    },
+    {
+      "layout": "tabela",
+      "apresentador": "Rômulo",
+      "tempo_seg": 70,
+      "titulo": "Testes clínicos confirmam a instabilidade; os funcionais guiam o treino",
+      "colunas": [
+        "Teste",
+        "Achado no Bruno",
+        "Leitura e limite",
+        "Quem aplica"
+      ],
+      "larguras": [
+        22,
+        17,
+        47,
+        14
+      ],
+      "linhas": [
+        [
+          "Lachman e gaveta anterior",
+          "Positivos, sem parada firme",
+          "LCA sem função; sensibilidade do Lachman 81%, cai a 68% em rupturas completas",
+          "Médico/fisio"
+        ],
+        [
+          "Pivot-shift",
+          "Não informado",
+          "Reproduz o falseio; sensibilidade 24–59%, negativo não exclui LCA",
+          "Médico/fisio"
+        ],
+        [
+          "Valgo a 0° e 30°",
+          "Não informado",
+          "30°: LCM superficial; 0°: cápsula posteromedial; gradua o LCM",
+          "Médico/fisio"
+        ],
+        [
+          "Interlinha, McMurray e RM",
+          "Dor medial",
+          "LCM ou menisco? McMurray: sensibilidade 70%, especificidade 71%",
+          "Médico/fisio"
+        ],
+        [
+          "Derrame (varredura modificada)",
+          "Leve",
+          "Gatilho da inibição do quadríceps; termômetro de carga (κ = 0,75)",
+          "EF monitora"
+        ],
+        [
+          "Step down e hop tests",
+          "Valgo dinâmico",
+          "Controle de quadril, tronco e tornozelo; LSI abaixo de 7–13% pode ser ruído",
+          "EF"
+        ]
+      ],
+      "fonte": "[@sokal2022; @hegedus2007; @sturgill2009; @reid2007]",
+      "notas": "Os testes de estresse ligamentar são atos de diagnóstico da medicina e da fisioterapia; ao profissional de Educação Física cabe interpretar o laudo e aplicar os testes funcionais. O Lachman tem sensibilidade de 81% no geral, mas só 68% em rupturas completas, e foi superestimado no passado. O pivot-shift tem sensibilidade baixa, de 24% a 59% no paciente acordado, e especificidade alta: negativo não exclui o LCA. O valgo a 30 graus testa o LCM superficial; a zero grau, a cápsula posteromedial. A dor medial pode ser LCM ou menisco, e os testes meniscais têm acurácia modesta, por isso a RM decide. O derrame, medido pela varredura modificada, é o nosso termômetro de carga. No step down e nos hop tests, diferenças de LSI menores que 7% a 13% podem ser ruído. No Bruno, pedimos o laudo antes de qualquer carga. Júlia vai mostrar o que ele faz para compensar."
+    },
+    {
+      "layout": "tabela",
+      "apresentador": "Júlia",
+      "tempo_seg": 50,
+      "titulo": "Quadril, tornozelo e membro oposto compensam o joelho e mascaram o déficit",
+      "colunas": [
+        "Onde",
+        "Compensação esperada",
+        "Como identificar"
+      ],
+      "larguras": [
+        20,
+        38,
+        42
+      ],
+      "linhas": [
+        [
+          "Joelho",
+          "Cocontração rígida, com mais isquiotibiais",
+          "Joelho ‘travado’, menor excursão na tarefa; não é evitação do quadríceps"
+        ],
+        [
+          "Quadril e tronco",
+          "Adução e rotação interna do fêmur; tronco inclinado",
+          "Valgo dinâmico no step down e no agachamento unipodal"
+        ],
+        [
+          "Tornozelo e pé",
+          "Menos dorsiflexão e mais pronação",
+          "Medir a dorsiflexão antes de culpar o glúteo médio"
+        ],
+        [
+          "Membro oposto",
+          "Sobrecarga e mascaramento do déficit pelo LSI",
+          "Registrar a qualidade do movimento, não só a simetria"
+        ]
+      ],
+      "fonte": "[@rudolph2001; @rabin2010; @kotsifaki2022triple]",
+      "notas": "Obrigada, Rômulo. Estas compensações são associações observadas, não causas comprovadas. No joelho, os non-copers mostram cocontração generalizada, com mais isquiotibiais; o dado é de amostra pequena, e corrige a ideia de evitação do quadríceps. No quadril e no tronco, o padrão é adução e rotação interna do fêmur, que aparece como valgo no step down. Mas o valgo é multifatorial: em mulheres saudáveis, a pior qualidade do movimento se associou à menor dorsiflexão, e não à força do quadril. Por isso medimos o tornozelo antes de culpar o glúteo. Por fim, a simetria na distância do salto pode esconder déficit de trabalho do joelho, com compensação do quadril, então registramos também a qualidade do movimento."
+    },
+    {
+      "layout": "dois_colunas",
+      "apresentador": "Júlia",
+      "tempo_seg": 65,
+      "titulo": "Reabilitar primeiro é defensável, mas 41% a 51% dos jovens ativos acabam operados",
+      "esquerda": {
+        "titulo": "Reabilitação ± cirurgia tardia (2 anos)",
+        "itens": [
+          "Função equivalente: KOOS4 0,2 (IC 95% −6,5 a 6,8)",
+          "Operados depois: 41% a 51%, quase sempre por instabilidade",
+          "Primeira linha razoável; falseio recorrente indica cirurgia",
+          "Certeza baixa; ensaios em lesão aguda, sem LCM associado"
+        ]
+      },
+      "direita": {
+        "titulo": "Reconstrução precoce do LCA",
+        "itens": [
+          "IKDC +5,3 (IC 95% 0,6–9,9) em 24 meses; relevância incerta",
+          "Lesão não aguda com instabilidade: KOOS4 +7,9 (IC 95% 2,5–13,2)",
+          "Pivô de alta demanda: consenso prefere cirurgia após reabilitação",
+          "LCA e LCM sem cirurgia: valgo estável em 27–68%, contra 80–100%"
+        ]
+      },
+      "fonte": "[@frobell2010; @reijman2021; @beard2022; @vanderlist2024]",
+      "notas": "No ensaio KANON, jovens ativos com LCA agudo tiveram função igual em dois anos com reabilitação seguida de cirurgia opcional; 51% do braço conservador foi operado em cinco anos. No COMPARE, 50% foram operados e 90% desses citaram instabilidade; a reconstrução precoce deu IKDC 5,3 pontos melhor em 24 meses, de relevância incerta. O ensaio ACL SNNAP, em lesão não aguda com instabilidade persistente, favoreceu a cirurgia, com certeza baixa, e só vale se a lesão do Bruno não for aguda. O consenso Panther, que é opinião, indica reconstrução em esporte de pivô e alta demanda, após reabilitação. Para o LCM, com LCA e LCM completos sem cirurgia, a estabilidade em valgo a 30 graus foi de 27% a 68%, com certeza muito baixa. Logo, o estiramento associado não autoriza tratar o caso como isolado, e o falseio recorrente nos encaminha ao ortopedista. Não há diretriz brasileira específica."
+    },
+    {
+      "layout": "topicos",
+      "apresentador": "Júlia",
+      "tempo_seg": 50,
+      "titulo": "Bruno é non-coper provisório: treina-se e reclassifica-se",
+      "itens": [
+        "Falseio, derrame e LCM associado: perfil non-coper como hipótese de trabalho",
+        "O rastreio coper prevê pouco: VPP 60% e VPN 30%",
+        "Lesão associada deixa o Bruno fora da população validada",
+        "Falseio persistente: o ortopedista decide sobre a cirurgia"
+      ],
+      "destaque": {
+        "valor": "10 sessões",
+        "rotulo": "de força e treino neuromuscular: quase metade dos non-copers vira potential coper"
+      },
+      "fonte": "[@moksnes2008; @hurd2008outcomes; @thoma2019]",
+      "notas": "O rastreio coper e non-coper tem boa plausibilidade, mas prognóstico fraco: valor preditivo positivo de 60% e negativo de 30%, sem utilidade clínica prognóstica segundo os próprios autores. Além disso, foi validado sem lesão associada, e o Bruno tem derrame e LCM comprometido. Por isso o rótulo non-coper é provisório: não contraindica o tratamento conservador, já que 70% dos potential non-copers tratados sem cirurgia eram copers verdadeiros em um ano. Em uma coorte de 271 pacientes, quase metade dos non-copers virou potential coper após dez sessões de treino neuromuscular e de força. Então tratamos, reclassificamos ao fim do bloco inicial e decidimos com o ortopedista, de forma compartilhada."
+    },
+    {
+      "layout": "topicos",
+      "apresentador": "Júlia",
+      "tempo_seg": 40,
+      "titulo": "Se fosse pós-operatório tardio, mudariam o enxerto, as restrições e o prazo",
+      "itens": [
+        "O enxerto pode levar mais de 12 meses para amadurecer",
+        "Restrições de menisco, enxerto e LCM vêm do cirurgião",
+        "Frouxidão sem parada firme após cirurgia: suspeitar de falha do enxerto"
+      ],
+      "fonte": "[@filbay2019; @vanmelick2016]",
+      "notas": "Esta é a nota breve sobre o cenário alternativo. Se Bruno tivesse sido operado, três coisas mudariam: a maturação do enxerto, que pode passar de 12 meses; as restrições de menisco, enxerto e LCM, definidas pelo cirurgião; e o prazo, com retorno a esporte de pivô só após nove meses ou mais e critérios cumpridos. E, com cirurgia prévia, o Lachman sem parada firme seria suspeita de falha de enxerto: reencaminhamos ao ortopedista antes de qualquer carga. A prescrição, porém, é a do cenário conservador. Gabriel apresenta as quatro fases.",
+      "destaque": {
+        "valor": "9 meses",
+        "rotulo": "no mínimo, com critérios cumpridos, antes de voltar a esporte de pivô"
+      }
+    },
+    {
+      "layout": "fases",
+      "apresentador": "Gabriel",
+      "tempo_seg": 45,
+      "titulo": "Quatro fases, liberadas por critérios e nunca por calendário",
+      "fases": [
+        {
+          "nome": "Sintomas e reativação",
+          "objetivo": "Zerar o derrame e religar o quadríceps",
+          "saida": "Derrame ≤ traço e extensão completa"
+        },
+        {
+          "nome": "Força e controle neuromuscular",
+          "objetivo": "Força de quadril e coxa; corrigir o valgo",
+          "saida": "LSI do quadríceps ≥ 80% e reclassificação"
+        },
+        {
+          "nome": "Potência, corrida e agilidade",
+          "objetivo": "Saltos, corrida e mudança de direção",
+          "saida": "LSI ≥ 90% em força e saltos"
+        },
+        {
+          "nome": "Retorno ao esporte e prevenção",
+          "objetivo": "Giros, cortes, contato e jogo graduais",
+          "saida": "Critérios de retorno cumpridos"
+        }
+      ],
+      "fonte": "[@filbay2019; @kotsifaki2023; @meredith2020]",
+      "notas": "Obrigado, Júlia. Prescrevemos exercício, que é o escopo da Educação Física; eletroestimulação, crioterapia e terapia manual ficam com a equipe multiprofissional. A Fase 1 trata derrame, extensão e inibição do quadríceps. A Fase 2 é o bloco de força, de cerca de cinco semanas e dez sessões, e termina na reclassificação. A Fase 3 devolve potência, corrida e agilidade. A Fase 4 reintroduz o futebol. Cada passagem exige critérios, porque o retorno não pode depender só do tempo. Uma ressalva: não há ensaio de dose no LCA insuficiente; a estrutura vem de Eitzen, da ACSM e de estudos pós-reconstrução, e os números sem fonte são convenção nossa."
+    },
+    {
+      "layout": "fitt",
+      "apresentador": "Gabriel",
+      "tempo_seg": 60,
+      "titulo": "Fase 1: reduzir o derrame e religar o quadríceps, só no plano sagital",
+      "itens": {
+        "F": "2–3 sessões supervisionadas por semana, mais domiciliar curto diário",
+        "I": "Dor ≤ 3/10, de volta ao basal na manhã seguinte; isometria a 5–8/10 de esforço",
+        "T": "30–45 min supervisionado; 10–15 min por bloco domiciliar",
+        "Tipo": "Isometria, elevação da perna estendida, mini-agachamento 0–45°, ponte, bicicleta",
+        "V": "Isometria 3 × 8–10 × 5 s; demais exercícios 3 × 10–12; equilíbrio 3 × 30 s",
+        "P": "Dois dias verdes seguidos: muda 1 variável (+1 série ou amplitude até 60°)"
+      },
+      "exercicios": [
+        "Isometria de quadríceps a 60°",
+        "Elevação da perna estendida",
+        "Mini-agachamento 0–45°"
+      ],
+      "saida": [
+        "Derrame ≤ traço em 2 avaliações; extensão completa; sem lag",
+        "Dor ≤ 3/10 e marcha normal",
+        "4–6 semanas em plano sagital e liberação da equipe"
+      ],
+      "fonte": "[@filbay2019; @adams2012; @sprague2021]",
+      "notas": "Na Fase 1, o objetivo é zerar o derrame, recuperar extensão completa e religar o quadríceps, protegendo o LCM. Frequência: duas a três sessões supervisionadas por semana, com visitas de reavaliação a cada duas semanas, e um bloco domiciliar curto diário. Intensidade: dor até 3 em 10, que volta ao basal na manhã seguinte; o modelo de monitoramento aceita até 5, mas adotamos 3 por convenção, por causa do LCM. Isometria a 60 graus, com esforço de 5 a 8 em 10. Tempo: 30 a 45 minutos. Volume: 3 séries de 8 a 10 contrações de 5 segundos. Tudo em plano sagital, sem valgo sob carga, por quatro a seis semanas da lesão, para o LCM cicatrizar. Progressão: dois dias verdes seguidos e muda uma variável. Só avança com os critérios, e a data da lesão não consta do enunciado."
+    },
+    {
+      "layout": "fitt",
+      "apresentador": "Gabriel",
+      "tempo_seg": 95,
+      "titulo": "Fase 2: força de alta carga e controle do valgo em cerca de 10 sessões",
+      "itens": {
+        "F": "3 sessões por semana (≥ 2 supervisionadas), com ≥ 48 h entre as do mesmo grupo",
+        "I": "Semanas 1–2: 8–12 RM; semanas 3–5: 6–8 RM; dor ≤ 3/10; regra do ‘+2’",
+        "T": "Até 75 min por sessão, com 10–15 min de aquecimento",
+        "Tipo": "Leg press, agachamento, flexora, quadril, step down com feedback; sem pliometria",
+        "V": "2–3 séries × 8–12 RM, depois 3–4 × 6–8 RM; step down 3 × 8, degrau de 10 cm",
+        "P": "+2 repetições na última série: sobe a carga; degrau +5 cm sem valgo"
+      },
+      "exercicios": [
+        "Leg press unilateral 0–90°",
+        "Abdução e rotação externa do quadril",
+        "Step down com feedback"
+      ],
+      "saida": [
+        "Sem valgo no step down; LSI do quadríceps ≥ 80%; zero falseio",
+        "Reclassificar: salto de 6 m e escala funcional ≥ 80%, global ≥ 60",
+        "Ortopedista: valgo a 30° estável"
+      ],
+      "fonte": "[@eitzen2010program; @acsm2009; @moksnes2008; @crossley2011]",
+      "notas": "A Fase 2 é o coração do programa, e é aqui que defendemos a dose. Frequência: três sessões por semana, ao menos duas supervisionadas, com 48 horas entre sessões do mesmo grupo. Intensidade: nas semanas 1 e 2, 8 a 12 repetições máximas, faixa de iniciante da ACSM, porque o membro está atrofiado; nas semanas 3 a 5, 6 a 8 repetições máximas, como no programa de Eitzen, com a regra do mais dois: completou duas repetições a mais na última série, sobe a carga. Tempo: até 75 minutos, com aquecimento. Tipo: cadeia aberta e fechada se equivalem para força do quadríceps, com certeza moderada; incluímos isquiotibiais, abdutores e rotadores do quadril, tronco e dorsiflexão, que respondem ao valgo. Sem pliometria nesta fase. Volume: 3 a 4 séries; step down de 3 por 8, degrau de 10 centímetros. Progressão: a carga sobe pela regra do mais dois, e o degrau, 5 centímetros, quando sai sem valgo. Ao fim, reclassificamos: salto cronometrado de 6 metros e escala funcional com pelo menos 80%, avaliação global de 60 e no máximo um falseio. Potential coper segue para a Fase 3; non-coper persistente vai ao ortopedista antes de saltos e cortes. Daniel continua."
+    },
+    {
+      "layout": "fitt",
+      "apresentador": "Daniel",
+      "tempo_seg": 60,
+      "titulo": "Fase 3: potência, corrida e agilidade, com saltos contados e estágios",
+      "itens": {
+        "F": "4 sessões por semana: 2 de força/potência e 2 de corrida, saltos e agilidade",
+        "I": "Pliometria a 5–6/10 de esforço; corrida 4–6/10; dor ≤ 5/10 e derrame inalterado",
+        "T": "60–75 min por sessão; corrida contínua de 15–25 min no fim da fase",
+        "Tipo": "Corrida reta, saltos bilaterais e depois unilaterais, cortes planejados e depois reativos",
+        "V": "Pliometria: 3 × 5 saltos em 2 exercícios (30 contatos); agilidade 4–6 passagens",
+        "P": "Estágio sobe com 2 sessões verdes e derrame ≤ traço; +20% de contatos por semana"
+      },
+      "exercicios": [
+        "Saltos verticais e aterrissagens",
+        "Hop e hop-and-stick unilaterais",
+        "Mudança de direção 45° e 90°"
+      ],
+      "saida": [
+        "LSI de quadríceps e isquiotibiais ≥ 90%",
+        "4 hop tests com LSI ≥ 90%, sem valgo na aterrissagem",
+        "Sem derrame, dor ou falseio em 2 semanas de volume pleno"
+      ],
+      "fonte": "[@kotsifaki2023; @grindem2016; @filbay2019]",
+      "notas": "Obrigado, Gabriel. A Fase 3 transforma força em potência. Só entra quem tem derrame no máximo em traço, quadríceps com 80% de simetria e saltitos unipodais sem dor, os critérios mínimos de corrida do consenso Aspetar. Frequência: quatro sessões, duas de força e potência e duas de corrida, saltos e agilidade, com 48 horas entre as de impacto. Intensidade moderada, com teto de dor de 5 em 10. Volume de saltos: 30 contatos por sessão no início, escolhidos por convenção; sobe cerca de 20% por semana só com semáforo verde, e nunca volume e intensidade juntos. Cortes de 90 graus e pivô com o pé fixo ficam para a Fase 4. Os 90% de simetria em força e hop tests vêm de populações pós-reconstrução: é extrapolação, com certeza muito baixa para o conservador."
+    },
+    {
+      "layout": "fitt",
+      "apresentador": "Daniel",
+      "tempo_seg": 55,
+      "titulo": "Fase 4: retorno gradual ao futebol society, decidido por critérios e não por tempo",
+      "itens": {
+        "F": "4 sessões por semana: 2 de força e prevenção, 2–3 específicas de futebol",
+        "I": "Técnico 4–6/10; coletivo 6–7/10; jogo 7–9/10 de esforço; dor ≤ 5/10",
+        "T": "60–90 min; jogo por tempo limitado: 15–20, 30, 45 e 60 min",
+        "Tipo": "Gestos sem oposição, jogos reduzidos, contato e amistoso; FIFA 11+ no aquecimento",
+        "V": "Gestos 3 × 4–6; jogos reduzidos 3 × 6–8 min; força 3 × 5–6 RM",
+        "P": "Cada estágio exige 2 sessões verdes; carga semanal +10–15%; LSI < 90% volta à Fase 3"
+      },
+      "exercicios": [
+        "Giros, cortes e frenagem sem oposição",
+        "Jogos reduzidos 3v3 e 4v4",
+        "FIFA 11+ por 10 min ou mais"
+      ],
+      "saida": [
+        "Hop tests e dinamometria com LSI ≥ 90%; IKDC e ACL-RSI sem barreira",
+        "4 semanas de treino coletivo sem dor, derrame ou falseio",
+        "Laudo médico e decisão compartilhada"
+      ],
+      "fonte": "[@meredith2020; @filbay2019; @grindem2016; @bullock2025]",
+      "notas": "A Fase 4 reintroduz o esporte em estágios: gestos sem oposição, jogos reduzidos, treino com contato e amistoso por tempo limitado. A carga é medida pelo esforço percebido vezes minutos, com aumento semanal de 10% a 15%, por convenção. Falseio, derrame com dois graus a mais ou dor acima de 5 fazem voltar um estágio. A cada quatro semanas reavaliamos hops e dinamometria; abaixo de 90%, volta à Fase 3. Quem falhou nos critérios após reconstrução teve 38,2% de nova lesão contra 5,6%, dado indireto. Sem cirurgia, o retorno esperado é de cerca de 55% em atletas de nível I e 60% no futebol, certeza baixa. A prevenção segue depois do retorno, com dez minutos, duas vezes por semana."
+    },
+    {
+      "layout": "semaforo",
+      "apresentador": "Daniel",
+      "tempo_seg": 65,
+      "titulo": "O semáforo traduz dor, derrame e falseio em regras de carga",
+      "niveis": [
+        {
+          "cor": "verde",
+          "sinal": "Dor ≤ 3/10 que volta ao basal na manhã seguinte e derrame ≤ traço",
+          "conduta": "Segue o plano; muda uma variável por vez após 2 sessões verdes"
+        },
+        {
+          "cor": "amarelo",
+          "sinal": "Dor 4–5/10, rigidez acima do basal no dia seguinte ou derrame +1 grau",
+          "conduta": "Mantém a carga sem progredir; reduz o volume em 20–30%; sem impacto se o derrame subiu"
+        },
+        {
+          "cor": "amarelo",
+          "sinal": "Dor medial 3–5/10 em tarefa com valgo, ou quase falseio",
+          "conduta": "Simplifica a tarefa, volta ao plano sagital e pede reavaliação do LCM"
+        },
+        {
+          "cor": "vermelho",
+          "sinal": "Dor > 5/10, ou que não volta ao basal em 24 h",
+          "conduta": "Interrompe; regride um nível; se persistir por 48 h, fisioterapia ou médico"
+        },
+        {
+          "cor": "vermelho",
+          "sinal": "Derrame +2 graus, por mais de 48 h, ou com calor",
+          "conduta": "Volta à Fase 1, sem carga pesada nem salto; persistente: ortopedista"
+        },
+        {
+          "cor": "vermelho",
+          "sinal": "Falseio, bloqueio articular ou trauma novo",
+          "conduta": "Interrompe e comunica a equipe; no 2º falseio, ortopedista antes de progredir"
+        }
+      ],
+      "fonte": "[@sprague2021; @sturgill2009; @filbay2019; @moksnes2008]",
+      "notas": "Este é o manejo de sintomas, e responde ao que a banca costuma perguntar: e se doer, inchar ou falsear? Verde: dor até 3 em 10, de volta ao basal na manhã seguinte, e derrame no máximo em traço; segue o plano e muda uma variável por vez. Amarelo: dor de 4 a 5, rigidez acima do basal ou derrame com um grau a mais; mantém a carga, reduz o volume em 20% a 30% e não progride. Dor medial em tarefa com valgo pede voltar ao plano sagital e avisar a fisioterapia. Vermelho: dor acima de 5, derrame com dois graus a mais ou por mais de 48 horas, falseio, bloqueio ou trauma novo; interrompe, regride e comunica a equipe. O segundo falseio exige o ortopedista. O modelo de dor foi validado em tendinopatia, e os limiares de 3, 24 horas e 20% a 30% são convenção nossa."
+    },
+    {
+      "layout": "conclusao",
+      "apresentador": "Daniel",
+      "tempo_seg": 25,
+      "titulo": "Reabilitar o Bruno por critérios é defensável, com o ortopedista por perto",
+      "itens": [
+        "A instabilidade vem do conjunto: freios cedendo, quadríceps inibido e controle motor falho",
+        "Reabilitar primeiro é razoável; o falseio recorrente leva ao ortopedista",
+        "Cada fase só termina quando os critérios são cumpridos",
+        "O semáforo transforma sintomas em decisões de carga"
+      ],
+      "notas": "Resumindo: a instabilidade do Bruno resulta do conjunto, não de um teste isolado. Reabilitar primeiro é razoável, com o ortopedista decidindo se o falseio persistir, porque o retorno ao esporte sem cirurgia é incerto. Cada fase termina por critérios, nunca por calendário, e o semáforo transforma dor, derrame e falseio em decisões de carga."
+    },
+    {
+      "layout": "encerramento",
+      "apresentador": "Daniel",
+      "tempo_seg": 5,
+      "titulo": "Obrigado!",
+      "texto": "Perguntas e discussão",
+      "notas": "Obrigado! Estamos à disposição para as perguntas da banca."
+    },
+    {
+      "layout": "referencias",
+      "titulo": "Referências"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "etapa": "04-prescricao",
+  "rodada": 1,
+  "revisor": "fps-lider-ciencia",
+  "modelo_revisor": "opus",
+  "executor": "fps-prescritor-exercicio",
+  "arquivos_revisados": ["04-prescricao.json", "04-prescricao.md", "04-referencias.json", "00-briefing.md", "rubrica.json", "03-evidencias.md", "03-quadro-evidencias.json", "02-analise-critica.md"],
+  "verificacao_referencias": "Papel do verificador feito pelo revisor: get_article_metadata dos PMID 22402434 (adams2012), 20710097 (eitzen2010program), 33632313 (sprague2021), 26618058 (davies2015) e 36587265 (arundale2023). Título, periódico, ano, volume, fascículo, páginas e DOI conferem; a lista de autores (4 + et al.) está correta nos 5. arundale2023 estava duplicada (já existe em 01/03 com alias arundale2018): retirada de 04-referencias.json. referencias.json já continha as 4 novas.",
+  "limiares_conferidos_na_fonte": [
+    "Adams 2012 (texto completo PMC3576892): plano sagital por 4–6 semanas no ACL+LCM e tíbia em rotação interna nos exercícios resistidos; corrida com quadríceps ≥ 80%, derrame ≤ traço e regras de dor (8 semanas pós-ACLR); corrida inicial de 2 mi (3,2 km) alternando trote e caminhada; flexão a até 10° do lado oposto; cadeia fechada típica em 0–60°; perda de 3–5° de extensão piora o resultado; hops só com quadríceps ≥ 80%, derrame ≤ traço, ADM completa e saltitos sem dor; retorno com LSI e questionários ≥ 90%. Tudo confere.",
+    "Eitzen 2010 (texto completo PMC3158986): 10 sessões em ~5 semanas; 2–4 sessões/semana; 3–4 séries de 6–8 repetições com esforço máximo; princípio '+2'; ≤ 75 min com 10–15 min de aquecimento; supervisão ≥ 2×/semana; 10 sessões de perturbação; 4/98 (3,9%) com dor e derrame após a pliometria, todos depois com reparo meniscal; exclusão de colateral grau III/IV e de menisco sintomático; potential coper = KOS-ADLS ≥ 80%, global ≥ 60, hop cronometrado ≥ 80% e ≤ 1 falseio DESDE A LESÃO. Tudo confere, exceto 'na vida' (A1).",
+    "Sprague 2021 (texto completo PMC7905015): dor ≤ 5/10 na NPRS durante ou logo após a atividade e volta ao nível pré-atividade na manhã seguinte. Confere. O modelo foi descrito originalmente por Thomeé para dor patelofemoral, e não 'validado em tendinopatia' (A5).",
+    "Filbay 2019 (texto completo PMC6723618): exercícios de diários a 2–3×/semana e visitas a cada 2 semanas; reencaminhar ao médico por falseio repetido ou extensão que não volta; carga = PSE da sessão × minutos; regra de Ottawa; LSI ≥ 90% e 4 hops; agilidade ≤ 11 s vem da bateria de Kyritsis et al. (pós-ACLR), citada por Filbay (A6)."
+  ],
+  "criterios": {
+    "seguranca_clinica": 8.5,
+    "fundamentacao_em_evidencia": 8.5,
+    "completude_fitt_vp": 9.0,
+    "criterios_de_progressao": 8.5,
+    "ajuste_por_sintomas": 8.5,
+    "especificidade_ao_caso": 9.0
+  },
+  "achados": [
+    {
+      "id": "A1",
+      "gravidade": "menor",
+      "local": "04-prescricao.json/.md > Fase 2 > critérios de saída (reclassificação)",
+      "problema": "O critério de potential coper foi escrito como '≤ 1 episódio de falseio na vida'. O critério de Fitzgerald conta os episódios desde a lesão.",
+      "evidencia": "Eitzen 2010, PMC3158986, Métodos: 'maximum 1 episode of giving way since the injury'.",
+      "correcao": "APLICADA: 'desde a lesão'.",
+      "responsavel": "fps-prescritor-exercicio"
+    },
+    {
+      "id": "A2",
+      "gravidade": "menor",
+      "local": "Fase 1 > FITT-VP > Tipo",
+      "problema": "A proteção do LCM ficou só em 'plano sagital'. Faltou a instrução da fonte de manter a tíbia em rotação interna nos exercícios resistidos. Ela responde diretamente ao mecanismo do caso (valgo com rotação externa da tíbia).",
+      "evidencia": "Adams 2012, PMC3576892, seção Ligamentous: 'Tibial internal rotation, to minimize valgus stresses on the healing MCL, should also be maintained during resisted strengthening exercises'.",
+      "correcao": "APLICADA: frase acrescentada ao Tipo da Fase 1, com [@adams2012].",
+      "responsavel": "fps-prescritor-exercicio"
+    },
+    {
+      "id": "A3",
+      "gravidade": "menor",
+      "local": "Fase 2 > critérios de saída (saltitos unipodais)",
+      "problema": "Os testes de salto estavam na mesma lista do LSI ≥ 80% e do derrame ≤ traço, sem dizer que esses pré-requisitos vêm antes. Para um joelho sem LCA ainda não exposto a impacto, a ordem é questão de segurança.",
+      "evidencia": "Adams 2012: os hop tests exigem quadríceps ≥ 80%, derrame ≤ traço, ADM completa e saltitos sem dor.",
+      "correcao": "APLICADA: 'os testes de salto só são aplicados depois de confirmados LSI ≥ 80%, derrame ≤ traço e ADM completa [@adams2012]'.",
+      "responsavel": "fps-prescritor-exercicio"
+    },
+    {
+      "id": "A4",
+      "gravidade": "menor",
+      "local": "Fase 3 > FITT-VP > Progressão",
+      "problema": "A corrida, a pliometria 3a e a agilidade começavam ao mesmo tempo. Na fonte, agilidade e pliometria entram depois que a corrida se mostra sem efeitos adversos.",
+      "evidencia": "Adams 2012: 'Agility, plyometric, and sport-specific activities can be added… provided that the patient shows no adverse effects of the running progression (eg, increased effusion or pain)'.",
+      "correcao": "APLICADA: a pliometria 3a e a agilidade começam depois de ≥ 2 sessões de corrida sem aumento de derrame ou de dor.",
+      "responsavel": "fps-prescritor-exercicio"
+    },
+    {
+      "id": "A5",
+      "gravidade": "menor",
+      "local": "Ajuste por sintomas (introdução e coluna Fonte) e premissas",
+      "problema": "Duas falhas na descrição do modelo de monitoramento da dor. (1) 'Validado em tendinopatia' é mais forte do que a evidência: há um piloto de viabilidade (n = 15) e um ECR na tendinopatia de Aquiles. (2) A origem do modelo foi omitida: ele foi descrito para dor patelofemoral, uma condição do joelho, o que ajuda na arguição.",
+      "evidencia": "Sprague 2021, PMC7905015, Background: 'Originally described by Thomeé et al. for use in patellofemoral pain… pain levels should not exceed a 5/10… return to pre-activity levels by the following morning'.",
+      "correcao": "APLICADA: 'descrito para dor patelofemoral e testado em tendinopatia', nos três lugares em que aparecia.",
+      "responsavel": "fps-prescritor-exercicio",
+      "licao": "Não chame de 'validado' um limiar que só foi testado em estudo piloto ou em outra condição; diga onde ele foi descrito e onde foi testado."
+    },
+    {
+      "id": "A6",
+      "gravidade": "menor",
+      "local": "Fase 3 > critérios de saída; Retorno ao esporte",
+      "problema": "O corte de agilidade ≤ 11 s foi atribuído à 'bateria relatada por Filbay' sem dizer que vem da bateria pós-ACLR de Kyritsis et al. Sem essa informação, o caráter indireto do corte fica escondido.",
+      "evidencia": "Filbay 2019, PMC6723618: 'The test battery used by Kyritsis et al. consisted of… an agility test (≤11 s)'.",
+      "correcao": "APLICADA: 'bateria pós-ACLR de Kyritsis et al., relatada por [@filbay2019]… extrapolação'.",
+      "responsavel": "fps-prescritor-exercicio",
+      "licao": "Quando um ponto de corte vem de um estudo citado dentro de uma revisão, nomeie o estudo de origem e a população dele, para não esconder a extrapolação."
+    },
+    {
+      "id": "A7",
+      "gravidade": "menor",
+      "local": "Fase 4 > FITT-VP > Progressão × semáforo",
+      "problema": "A Fase 4 dizia que falseio, derrame +2 graus ou dor > 5/10 faziam o atleta 'voltar um estágio'. Isso é mais brando que o semáforo, em que derrame ≥ 2 graus tira toda carga e todo impacto e o segundo falseio leva ao ortopedista. A banca pode explorar essa incoerência em C3.",
+      "evidencia": "Leitura cruzada de 04-prescricao.json: fases[3].fitt_vp.P × ajuste_por_sintomas (linhas de derrame e de falseio).",
+      "correcao": "APLICADA: a progressão da Fase 4 agora repete o semáforo (amarelo = repete o estágio; vermelho = conduta do semáforo).",
+      "responsavel": "fps-prescritor-exercicio",
+      "licao": "As regras de regressão de cada fase devem repetir, palavra por palavra, os gatilhos da tabela de ajuste por sintomas."
+    },
+    {
+      "id": "A8",
+      "gravidade": "menor",
+      "local": "04-referencias.json; Pendências 2–3",
+      "problema": "arundale2023 foi criada outra vez, mas já existia em 01/03-referencias.json com alias.",
+      "evidencia": "grep do id nos *referencias.json: mesmo PMID 36587265 em 01, 03 e 04.",
+      "correcao": "APLICADA: a entrada foi retirada de 04-referencias.json e a pendência foi atualizada. O referencias.json mesclado não muda (a duplicata já tinha sido removida por PMID).",
+      "responsavel": "fps-prescritor-exercicio"
+    }
+  ],
+  "correcoes_aplicadas": [
+    "A1–A7: 04-prescricao.json e 04-prescricao.md corrigidos no lugar (JSON validado)",
+    "A8: duplicata de arundale2023 retirada de 04-referencias.json"
+  ],
+  "pontos_fortes": [
+    "Segurança: a Fase 1 protege o LCM (plano sagital por 4–6 semanas, sem valgo) e zera o derrame antes de carga pesada. A pliometria fica para depois do bloco, com justificativa na fonte (os 4 casos de Eitzen que tiveram dor e derrame após a pliometria precisaram de reparo meniscal). Encaminhamento para falseio recorrente, bloqueio, extensão que não volta e valgo a 30°.",
+    "Doses rastreáveis: 6–8 RM, 3–4 séries, '+2', 10 sessões e ≤ 75 min conferem com o texto completo de Eitzen. As faixas do ACSM estão marcadas como indiretas. Cada convenção sem fonte (contatos, degrau, descanso, +10–15%, verde ≤ 3/10, graus de derrame) está declarada como convenção.",
+    "Especificidade: cada déficit do caso tem resposta concreta. Inibição do quadríceps: isometria a 60° e NMES pela equipe. Valgo no step down: quadril, tronco, dorsiflexão e feedback. Falseio: perturbação, reclassificação e gatilhos. O futebol society entra com cortes, pivô e jogos reduzidos.",
+    "C3 bem servido: tabela com conduta na sessão e na sessão seguinte, para dor, dor no dia seguinte, derrame, falseio, bloqueio, dor medial, dor anterior e barreira psicológica.",
+    "Escopo da Educação Física correto: Lachman, NMES, crioterapia, órtese e liberação do LCM ficam como conduta da equipe."
+  ],
+  "escalonado": false,
+  "veredito_revisor": "APROVADO",
+  "resumo": "04-prescricao r1: prescrição segura, fiel às fontes e defensável na banca. 4 referências novas verificadas no PubMed. Limiares conferidos no texto completo de Adams 2012, Eitzen 2010, Sprague 2021 e Filbay 2019. 8 achados menores corrigidos pelo revisor. As correções que importam para quem consome o JSON são A1, A2, A4, A5, A6 e A7. A escolha de verde ≤ 3/10 está bem declarada como conservadora (o modelo aceita até 5/10)."
+}
