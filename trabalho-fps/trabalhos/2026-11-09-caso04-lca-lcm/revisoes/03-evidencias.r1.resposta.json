@@ -1,0 +1,22 @@
+{
+  "etapa": "03-evidencias",
+  "rodada": 1,
+  "executor": "fps-3-avaliador-evidencias",
+  "itens": [
+    {
+      "id": "A1",
+      "status": "corrigido",
+      "detalhe": "ACL SNNAP (beard2022) rebaixado para certeza BAIXA no §6 e no quadro, com os motivos: -1 risco de viés (KOOS4 autorrelatado em ensaio aberto; cruzamento de 28% no braço cirúrgico e 41% no de reabilitação), -1 imprecisão (limite inferior do IC, 2,5, compatível com efeito pequeno) e evidência indireta para o caso. RoB 2 no quadro agora segue o seu julgamento (alto risco na mensuração do desfecho; algumas preocupações nos desvios da intervenção). §4 e §7 (1) reescritos como condicional: 'se a lesão do Bruno for não aguda com instabilidade persistente (tempo de lesão não informado), o ensaio pragmático favoreceu a cirurgia (certeza baixa)'; falseio recorrente mantido como critério de encaminhamento. A frase de §3 sobre o SNNAP também recebeu 'certeza baixa'. Não invoquei o limiar de diferença mínima importante do KOOS4, pois não consta do resumo."
+    },
+    {
+      "id": "A2",
+      "status": "corrigido",
+      "detalhe": "Separadas as duas afirmações em §4, §5 (dose), §6, §7 (resposta 5 e insumos de prevenção) e no quadro (bullock2025): (a) LCA RR 0,39 (0,25-0,60), certeza alta para prevenção primária em mulheres e moderada (indireta) para o Bruno; (b) a dose mínima de 10 min, 2x/semana vem da análise de lesões de membros inferiores (9 estudos; RR 0,81; 0,61-1,08; certeza baixa, não significativa). Declarado que a dose de manutenção na prescrição é referência de baixa certeza."
+    },
+    {
+      "id": "A3",
+      "status": "corrigido",
+      "detalhe": "arundale2018 trocado por arundale2023 (PMID 36587265, DOI 10.2519/jospt.2023.0301, J Orthop Sports Phys Ther 2023;53(1):CPG1-CPG34), conferido com get_article_metadata em 09/11/2026 (resumo: 'update on the 2018 guideline'). Alterados: §2 (incluídos de fora dos 80 e motivo C1), §3 (linha da diretriz, com a de 2018 registrada como versão superada, PMID 30170521; recomendações e graus não acessados, AGREE II não avaliado), quadro (ref arundale2023) e 03-referencias.json (nova entrada, com aliases ['arundale2018'] e nota de versão superada). Contagens do PRISMA inalteradas (a referência substituída era a mesma contada). Pedido do líder atendido em 01-referencias.json: a entrada arundale2018 foi substituída pela de arundale2023, com aliases ['arundale2018'] para que as citações [@arundale2018] de 01-investigacao.md (1 ocorrência) e 02-analise-critica.md (1 ocorrência) continuem resolvendo; essas duas ocorrências ainda usam o id antigo e ficam como pendência do orquestrador, com o fps-1-investigador e o fps-2-analista-critico, se quiserem trocar o id no texto."
+    }
+  ]
+}

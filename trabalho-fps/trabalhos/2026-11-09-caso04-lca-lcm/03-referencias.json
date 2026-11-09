@@ -741,5 +741,33 @@
   "nivel_evidencia": null,
   "verificado": true,
   "verificado_via": "PubMed PMID 22962290"
+ },
+ {
+  "id": "arundale2023",
+  "tipo": "guideline",
+  "autores": [
+   "Arundale, Amelia J. H.",
+   "Bizzini, Mario",
+   "Dix, Celeste",
+   "Giordano, Airelle"
+  ],
+  "et_al": true,
+  "titulo": "Exercise-based knee and anterior cruciate ligament injury prevention",
+  "subtitulo": null,
+  "periodico": "J Orthop Sports Phys Ther",
+  "ano": 2023,
+  "volume": "53",
+  "numero": "1",
+  "paginas": "CPG1-CPG34",
+  "doi": "10.2519/jospt.2023.0301",
+  "pmid": "36587265",
+  "desenho": "Diretriz",
+  "nivel_evidencia": null,
+  "verificado": true,
+  "verificado_via": "PubMed PMID 36587265",
+  "aliases": [
+   "arundale2018"
+  ],
+  "nota": "Atualiza a CPG de 2018 (J Orthop Sports Phys Ther 2018;48(9):A1-A42, PMID 30170521), versão superada."
  }
 ]

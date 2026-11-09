@@ -112,18 +112,18 @@
   "observacoes": "EVIDÊNCIA INDIRETA (pós-ACLR); 2016."
  },
  {
-  "ref": "arundale2018",
-  "desenho": "Diretriz (CPG prevenção por exercício, JOSPT 2018)",
+  "ref": "arundale2023",
+  "desenho": "Diretriz (CPG prevenção por exercício, JOSPT 2023; atualiza a de 2018)",
   "n": "RS de base",
   "populacao": "Prevenção de lesões de joelho/LCA",
   "intervencao": "Programas de exercício",
   "comparador": "—",
   "desfecho": "Lesões de joelho/LCA",
-  "resultado": "Recomendações e graus não acessados (resumo sem conteúdo).",
+  "resultado": "Recomendações e graus não acessados (apenas resumo do PubMed, PMID 36587265). Atualiza a CPG de 2018 (PMID 30170521), versão superada.",
   "origem_dado": "resumo",
-  "avaliacao_critica": "AGREE II: não avaliado.",
+  "avaliacao_critica": "AGREE II: não avaliado (conteúdo não acessado). Vigência confirmada: o resumo declara \"an update on the 2018 guideline\".",
   "certeza_grade": "não aplicável",
-  "observacoes": ""
+  "observacoes": "Substitui arundale2018 (rodada r1, A3)."
  },
  {
   "ref": "culvenor2022",
@@ -298,14 +298,14 @@
   "desenho": "RS/MA (8 fontes; GRADE) — FAIR",
   "n": "82 estudos; 154.561 participantes (55% mulheres)",
   "populacao": "Atletas, sobretudo mulheres",
-  "intervencao": "Treino neuromuscular (equilíbrio, força, agilidade; mínimo 10 min, 2×/semana)",
+  "intervencao": "Treino neuromuscular (equilíbrio, força, agilidade)",
   "comparador": "Sem NMT",
   "desfecho": "Lesões de membros inferiores, LCA",
-  "resultado": "LCA: RR 0,39 (IC 95% 0,25–0,60; certeza ALTA, redução de 61%); entorse de tornozelo 0,61 (0,36–1,03; moderada); lesões de MMII 0,81 (0,61–1,08; baixa).",
+  "resultado": "LCA: RR 0,39 (IC 95% 0,25–0,60; certeza ALTA; redução de 61%); entorse de tornozelo 0,61 (0,36–1,03; moderada); lesões de MMII 0,81 (0,61–1,08; baixa) — a dose mínima de 10 min, 2×/semana pertence à análise de lesões de MMII (9 estudos), não à estimativa do LCA.",
   "origem_dado": "resumo",
   "avaliacao_critica": "AMSTAR 2 estimado: confiança alta (CRD42024486715).",
-  "certeza_grade": "alta (LCA, mulheres)",
-  "observacoes": "Prevenção PRIMÁRIA em mulheres; transposição ao Bruno (homem, já lesionado) é indireta."
+  "certeza_grade": "LCA: alta (prevenção primária em mulheres); moderada, indireta (homem já lesionado); dose 10 min 2×/semana: baixa (MMII, IC inclui nulo)",
+  "observacoes": "Prevenção PRIMÁRIA em mulheres; transposição ao Bruno (homem, já lesionado) é indireta (rebaixa 1 nível). Dose de manutenção na prescrição é referência de baixa certeza."
  },
  {
   "ref": "sadigursky2017",
@@ -401,9 +401,9 @@
   "desfecho": "KOOS4 em 18 meses",
   "resultado": "KOOS4 73,0 (DP 18,3) × 64,6 (DP 21,6); diferença ajustada 7,9 (IC 95% 2,5–13,2; p = 0,0053) a favor da cirurgia; 41% (65/160) do braço de reabilitação foram operados; 28% do braço cirúrgico não receberam a cirurgia; custo-efetividade favorável à cirurgia.",
   "origem_dado": "resumo",
-  "avaliacao_critica": "RoB 2: algumas preocupações (sem cegamento, cruzamento 28%); análise por intenção de tratar.",
-  "certeza_grade": "moderada (avaliação própria; ECR pragmático, imprecisão aceitável, indireta para o caso por excluir menisco com indicação cirúrgica imediata)",
-  "observacoes": "MAIS PERTINENTE AO BRUNO: lesão não aguda com instabilidade/falseio. Reabilitação aqui significa fisioterapia comum (não o algoritmo Delaware-Oslo)."
+  "avaliacao_critica": "RoB 2: alto risco no domínio de mensuração do desfecho (KOOS4 autorrelatado, sem cegamento) e algumas preocupações no domínio de desvios da intervenção (cruzamento: 28% do braço cirúrgico sem cirurgia; 41% do de reabilitação operados); análise por intenção de tratar.",
+  "certeza_grade": "baixa (−1 risco de viés; −1 imprecisão, limite inferior do IC 2,5 compatível com efeito pequeno; indireta para o caso)",
+  "observacoes": "APLICÁVEL AO BRUNO SOMENTE SE a lesão for não aguda com instabilidade persistente (tempo de lesão não informado no enunciado). Reabilitação aqui significa fisioterapia comum (não o algoritmo Delaware-Oslo)."
  },
  {
   "ref": "arundale2017",
