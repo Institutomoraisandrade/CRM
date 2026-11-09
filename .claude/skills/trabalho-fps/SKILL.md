@@ -1,97 +1,92 @@
 ---
 name: trabalho-fps
-description: Orquestra o pipeline de 5 subagentes que produz um trabalho acadêmico completo para a FPS (Faculdade Pernambucana de Saúde) — investigação do tema, análise crítica dos mecanismos, busca da melhor evidência (PICOS, diretrizes, revisões sistemáticas, metanálises, GRADE), artigo científico em .docx no padrão ABNT e apresentação .pptx com logo e cores da FPS. Use quando o usuário pedir um trabalho, seminário, artigo, revisão ou apresentação da faculdade/FPS sobre um tema, ou digitar /trabalho-fps <tema>.
+description: Orquestra a equipe hierárquica de agentes que produz um trabalho acadêmico completo para a FPS (Faculdade Pernambucana de Saúde) — executores Haiku/Sonnet produzem, líderes Opus revisam e devolvem correções, e uma banca Fable audita tudo no final. Entrega investigação do tema, análise crítica dos mecanismos, melhor evidência (PICOS, diretrizes, revisões sistemáticas, metanálises, GRADE), artigo .docx ABNT e slides .pptx com logo e cores da FPS. Use quando o usuário pedir um trabalho, seminário, artigo, revisão ou apresentação da faculdade/FPS sobre um tema, ou digitar /trabalho-fps <tema>.
 ---
 
-# /trabalho-fps — Orquestrador
+# /trabalho-fps — Orquestrador da equipe
 
-Você (thread principal) é o **orquestrador**. Os subagentes não conversam entre si nem chamam
-outros subagentes: você os dispara na ordem certa, passa a pasta do trabalho, confere cada entrega
-e decide se avança. Toda a comunicação entre etapas acontece por **arquivos** (ver
-`trabalho-fps/PROTOCOLO.md`).
+Você (conversa principal) é o **orquestrador**. Você não produz conteúdo: define a missão, dispara os
+**líderes de fase**, acompanha o painel de qualidade, conversa com o usuário nos pontos de decisão e entrega.
 
 ```
-            ┌──────────────────────┐
- briefing ─▶│ 1 fps-1-investigador │  (sonnet · amplitude)
-            └──────────┬───────────┘
-                       │  ✔ checkpoint: usuário aprova a pergunta PICOS
-          ┌────────────┴─────────────┐
-          ▼                          ▼          (em paralelo)
-┌──────────────────────┐  ┌──────────────────────────────┐
-│ 2 fps-2-analista-    │  │ 3 fps-3-pesquisador-         │
-│   critico (opus)     │  │   evidencias (opus)          │
-└──────────┬───────────┘  └──────────────┬───────────────┘
-           └────────────┬────────────────┘
-                        ▼
-            ┌──────────────────────┐
-            │ 4 fps-4-redator-abnt │  (opus · artigo.docx ABNT)
-            └──────────┬───────────┘
-                       ▼
-            ┌──────────────────────┐
-            │ 5 fps-5-designer-    │  (sonnet · apresentacao.pptx FPS)
-            │   slides             │
-            └──────────┬───────────┘
-                       ▼
-             validar_trabalho.py → entrega
+                         ┌──────────────────────────────┐
+  CAMADA 4 · Fable 5.2   │ fps-banca  (audita tudo e     │  ← revisa produto final E os revisores
+                         │  também os líderes)           │
+                         └──────────────▲───────────────┘
+                                        │ pareceres
+  CAMADA 3 · Opus 5.5    ┌──────────────┴───────────────────────────────────────────┐
+  (coordenam + revisam)  │ fps-lider-pesquisa   fps-lider-ciencia   fps-lider-producao│
+                         └───────┬──────────────────┬────────────────────┬──────────┘
+                    dispara/revisa│   devolve correções (modo correção)   │
+  CAMADA 2 · Sonnet 5.5  fps-1-investigador   fps-2-analista-critico   fps-4-redator-abnt
+  (produzem conteúdo)    fps-3-avaliador-evidencias                     fps-5-designer-slides
+                                  │
+  CAMADA 1 · Haiku 5.5   fps-op-buscador   fps-op-verificador   (volume e conferência mecânica)
+                                  │
+  CAMADA 0 · scripts     abnt · parecer (portões) · conferir_referencias · validar · prévia
 ```
 
-## Passo 0 — Briefing
-Colete (do pedido do usuário; pergunte **só o que faltar e for essencial**, numa única pergunta):
-- **Tema** (obrigatório) e, se houver, a pergunta/recorte que o professor deu.
-- Curso e período; disciplina/módulo/tutoria.
-- Nomes dos autores (e e-mails para a nota de rodapé); professor(a)/tutor(a).
-- Tempo de apresentação (padrão: 15 min).
-- Exigências do professor: nº de páginas, fonte (Arial/Times), capa, norma diferente, seções obrigatórias.
-- Modo: **com checkpoint** (padrão) ou **automático** (sem parar para aprovar a pergunta PICOS).
+**Funil de revisão:** scripts → verificador Haiku → autoverificação Sonnet → líder Opus → banca Fable.
+**Portão determinístico:** `parecer.py avaliar` — aprova só com 0 críticos, 0 maiores, média ≥ 7,5.
+**Simbiose:** executores podem contestar achados com evidência; erros recorrentes viram lições em
+`trabalho-fps/memoria/licoes.md`, lidas por todos antes de trabalhar (inclusive os líderes, quando a banca os corrige).
 
-Padrões quando o usuário não informar: Arial 12, sem capa, artigo de revisão de 8–14 páginas,
-15 min de apresentação, citação NBR 10520:2023, cidade Recife.
+## Fase 0 — Briefing (você)
+Colete do pedido; pergunte **numa única pergunta** só o essencial que faltar:
+tema e recorte · curso/período · disciplina/tutoria · autores (e e-mails) · professor(a)/tutor(a) ·
+tempo de apresentação (padrão 15 min) · exigências (páginas, fonte, capa, seções) ·
+modo **com checkpoint** (padrão) ou **automático**.
+Padrões: Arial 12, sem capa, revisão de 8–14 páginas, NBR 10520:2023, Recife.
 
-Crie a pasta `trabalho-fps/trabalhos/<AAAA-MM-DD>-<slug-do-tema>/` e escreva `00-briefing.md`
-com tudo acima (inclua a data de hoje).
-
-**Logo:** se `trabalho-fps/marca/logo-fps.png` não existir, peça ao usuário o arquivo do logo oficial
-(PNG, de preferência com fundo transparente) e siga sem bloquear — o pipeline continua com marcador de texto.
-Quando o logo chegar: salve em `trabalho-fps/marca/logo-fps.png` e rode
+Crie `trabalho-fps/trabalhos/<AAAA-MM-DD>-<slug>/` com `00-briefing.md` e a pasta `revisoes/`.
+**Logo:** se faltar `trabalho-fps/marca/logo-fps.png`, peça ao usuário e siga sem bloquear; ao receber, rode
 `python3 trabalho-fps/scripts/extrair_cores_logo.py trabalho-fps/marca/logo-fps.png --salvar --gerar-negativo`.
 
-## Passo 1 — Investigação
-Dispare `fps-1-investigador` com: caminho da pasta do trabalho + "leia PROTOCOLO.md e 00-briefing.md".
-Ao retornar, confira que existem `01-investigacao.md`, `01-picos.json` e `01-referencias.json`.
+## Fase 1 — Investigação
+Dispare `fps-lider-pesquisa` com: pasta + `missão: investigacao`.
+**Checkpoint (modo padrão):** mostre ao usuário a pergunta estruturada, desfechos primários e subtemas
+essenciais; aprovação ou ajuste (ajuste → redispare o líder com a correção).
 
-**Checkpoint (modo padrão):** mostre ao usuário, em poucas linhas, a pergunta estruturada (P, I, C, O, S),
-os desfechos primários e os subtemas essenciais, e pergunte se aprova ou quer ajustar o recorte.
-Ajustes → edite `01-picos.json`/`00-briefing.md` (ou redispare o agente 1 com a correção).
+## Fase 2 — Ciência ∥ Evidências (em paralelo, na mesma mensagem)
+- `fps-lider-ciencia` com pasta + `missão: analise`
+- `fps-lider-pesquisa` com pasta + `missão: evidencias`
+Se o líder de pesquisa sinalizar evidência insuficiente ou mudança de entendimento, avise o usuário antes de seguir.
 
-## Passo 2 — Análise crítica ∥ Evidências
-Dispare **na mesma mensagem** (paralelo) `fps-2-analista-critico` e `fps-3-pesquisador-evidencias`,
-cada um com o caminho da pasta. Ao retornar, confira os arquivos `02-*` e `03-*` e leia as
-*Pendências para o orquestrador*. Se o agente 3 encontrou pouca evidência ou mudou o entendimento da
-pergunta, informe o usuário antes de seguir.
+## Fase 3 — Artigo
+1. `fps-lider-producao` com pasta + `missão: artigo` (forma, ABNT, redação).
+2. Depois, `fps-lider-ciencia` com pasta + `missão: fidelidade` (números e citações contra as fontes).
 
-## Passo 3 — Artigo ABNT
-Dispare `fps-4-redator-abnt` com o caminho da pasta. Confira que `artigo.docx` existe e que o
-validador não acusa erros. Abra 1–2 páginas da prévia (`previa-artigo/`) para conferência rápida.
+## Fase 4 — Slides
+`fps-lider-producao` com pasta + `missão: slides`.
 
-## Passo 4 — Apresentação FPS
-Dispare `fps-5-designer-slides` com o caminho da pasta. Confira `apresentacao.pptx` e olhe a
-`previa-apresentacao/folha-de-contato.png`.
+## Fase 5 — Banca
+Rode `python3 trabalho-fps/scripts/parecer.py painel <pasta>` e dispare `fps-banca` com a pasta.
+Se a banca não puder rodar no Fable (modelo indisponível no ambiente), redispare com o parâmetro
+`model: "opus"` e registre isso no relatório final.
+Se a banca retornar REVISAR: encaminhe cada achado ao **líder** responsável pela etapa (ele corrige com o
+executor e reaprova); depois chame a banca de novo (rodada 2), pedindo foco nos achados abertos.
+Máximo de 2 rodadas de banca; o que restar vai como ressalva explícita ao usuário.
 
-## Passo 5 — Validação e entrega
-1. `python3 trabalho-fps/scripts/validar_trabalho.py <pasta>` → precisa terminar **sem erros**.
-   Erro remanescente → devolva ao agente responsável com a mensagem exata (no máximo 2 rodadas).
-2. Entregue ao usuário (curto e objetivo):
-   - caminhos de `artigo.docx` e `apresentacao.pptx` (envie os arquivos se a ferramenta existir);
-   - a pergunta PICOS e a resposta em 2–3 linhas, com a certeza GRADE;
-   - nº de referências (todas verificadas), nº de slides × tempo;
-   - avisos que exigem ação humana (logo ausente, acesso a texto completo, exigências não atendidas).
-3. Lembre o usuário de **ler e revisar** o conteúdo antes de entregar e de seguir a política da FPS/do
-   professor sobre uso de IA (declarar, se exigido).
-4. Se a pasta estiver num repositório git, ofereça commit dos arquivos do trabalho.
+## Fase 6 — Fechamento
+1. `python3 trabalho-fps/scripts/validar_trabalho.py <pasta> --final` — precisa terminar **sem erros** (exige todos os portões aprovados e `banca.md`).
+2. `python3 trabalho-fps/scripts/parecer.py painel <pasta>` e `python3 trabalho-fps/scripts/parecer.py licoes <pasta>`
+   (consolida o aprendizado na memória do pipeline).
+3. Entregue ao usuário, curto e direto:
+   - `artigo.docx`, `apresentacao.pptx` e `banca.md` (envie os arquivos se houver ferramenta para isso);
+   - pergunta PICOS e resposta em 2–3 linhas com a certeza GRADE;
+   - o painel (rodadas por etapa) e a nota estimada da banca;
+   - ressalvas que exigem ação humana (logo, texto completo não acessado, exigência não atendida).
+4. Lembre: ler e revisar tudo antes de entregar; seguir a política da FPS/do professor sobre uso de IA.
+5. Se a pasta estiver num repositório git, ofereça commit (inclua `trabalho-fps/memoria/`).
+
+## Modo plano (fallback)
+Se um líder responder `MODO PLANO NECESSÁRIO` (sem permissão para disparar subagentes), faça você o ciclo
+daquela fase: dispare o executor → `fps-op-verificador` → o líder em **modo revisor** → se REVISAR, o executor
+em modo correção com o caminho do parecer → o líder de novo; até APROVADO ou ESCALAR (o líder corrige).
 
 ## Regras do orquestrador
-- Não escreva o conteúdo das etapas você mesmo; seu papel é coordenar, conferir e decidir.
-- Não pule etapas nem o validador. Não avance com arquivo ausente ou referência não verificada.
-- Mantenha o usuário informado com uma linha por etapa concluída.
-- Reexecução parcial: o usuário pode pedir "refaça só os slides" ou "atualize as evidências" —
-  dispare apenas os agentes afetados e os posteriores que dependem deles.
+- Não escreva conteúdo das etapas nem aprove nada sem parecer: o portão decide.
+- Não pule a banca nem o validador. Não avance com etapa `REVISAR` pendente.
+- Uma linha de status para o usuário por fase concluída (etapa · decisão · rodadas).
+- Reexecução parcial ("refaça só os slides", "atualize as evidências"): dispare só o líder afetado e as fases
+  seguintes que dependem dele; a banca sempre fecha.

@@ -11,22 +11,29 @@ Cada subagente lê este arquivo antes de começar.
 ```
 trabalho-fps/trabalhos/<AAAA-MM-DD>-<slug-do-tema>/
 ├── 00-briefing.md              ← orquestrador (tema, curso, autores, exigências do professor)
-├── 01-investigacao.md          ← Agente 1 · Investigador
-├── 01-picos.json               ← Agente 1 · pergunta estruturada + estratégias de busca
-├── 01-referencias.json         ← Agente 1 · definição, classificação, epidemiologia
-├── 02-analise-critica.md       ← Agente 2 · Analista crítico (mecanismos e processos)
-├── 02-referencias.json         ← Agente 2
-├── 03-evidencias.md            ← Agente 3 · Pesquisador de evidências (PICOS + GRADE)
-├── 03-referencias.json         ← Agente 3
-├── 03-quadro-evidencias.json   ← Agente 3 · dados estruturados dos estudos incluídos
-├── referencias.json            ← Agente 4 · mescla de 01 + 02 + 03 (scripts/mesclar_referencias.py)
-├── artigo.json  → artigo.docx  ← Agente 4 · Redator ABNT
-├── slides.json  → apresentacao.pptx ← Agente 5 · Designer de slides
+├── 01-investigacao.md          ← fps-1-investigador (Sonnet)
+├── 01-picos.json               ←   pergunta estruturada + estratégias de busca
+├── 01-referencias.json         ←   definição, classificação, epidemiologia
+├── 03a-busca.json              ← fps-op-buscador (Haiku) · strings, bases, datas, contagens PRISMA
+├── 03a-candidatos.json         ←   candidatos triados por título/resumo
+├── 02-analise-critica.md       ← fps-2-analista-critico (Sonnet)
+├── 02-referencias.json         ←
+├── 03-evidencias.md            ← fps-3-avaliador-evidencias (Sonnet)
+├── 03-referencias.json         ←
+├── 03-quadro-evidencias.json   ←   dados estruturados dos estudos incluídos
+├── verificacao/                ← fps-op-verificador (Haiku) · metadados PubMed e relatórios de conferência
+├── referencias.json            ← fps-4-redator-abnt · mescla de 01 + 02 + 03 (scripts/mesclar_referencias.py)
+├── artigo.json  → artigo.docx  ← fps-4-redator-abnt (Sonnet)
+├── slides.json  → apresentacao.pptx ← fps-5-designer-slides (Sonnet)
+├── revisoes/                   ← pareceres dos líderes (Opus) e da banca (Fable) + respostas dos executores
+├── painel.md                   ← scripts/parecer.py painel (status de todas as etapas)
+├── banca.md                    ← fps-banca (Fable) · parecer final + preparação para a arguição
 ├── previa-artigo/ previa-apresentacao/  ← PNGs de revisão visual
 └── validacao.md                ← scripts/validar_trabalho.py
 ```
 
-Cada agente **lê** os arquivos das etapas anteriores e **escreve apenas os seus**.
+Cada agente **lê** os arquivos das etapas anteriores e **escreve apenas os seus**
+(exceção: líderes e banca podem aplicar correções `menor` e, no escalonamento, as demais — sempre registrando no parecer).
 Nunca apague nem reescreva o arquivo de outra etapa; se encontrar erro nele,
 registre em uma seção `## Pendências para o orquestrador` no seu próprio arquivo.
 
@@ -123,3 +130,90 @@ aparecem todos; 4 ou mais viram *et al.* Mesmo autor e ano recebem *a/b* automat
 Avaliação crítica: **AMSTAR 2** (revisões), **RoB 2** (ECR), **ROBINS-I/Newcastle-Ottawa** (observacionais),
 **AGREE II** (diretrizes), **QUADAS-2** (acurácia diagnóstica). Certeza por desfecho: **GRADE**
 (alta · moderada · baixa · muito baixa).
+
+---
+
+## 7. Hierarquia de modelos (quem executa, quem revisa)
+
+| Camada | Modelo | Agentes | Papel |
+|---|---|---|---|
+| 4 · Auditoria final | **Fable 5.2** (`fable`) | `fps-banca` | Revisa o produto final **e os próprios revisores**; simula a banca |
+| 3 · Liderança e revisão | **Opus 5.5** (`opus`) | `fps-lider-pesquisa`, `fps-lider-ciencia`, `fps-lider-producao` | Coordenam os executores da sua fase, revisam, devolvem correções e só entregam o que passou no portão |
+| 2 · Execução de conteúdo | **Sonnet 5.5** (`sonnet`) | `fps-1-investigador`, `fps-2-analista-critico`, `fps-3-avaliador-evidencias`, `fps-4-redator-abnt`, `fps-5-designer-slides` | Produzem o conteúdo |
+| 1 · Operacional | **Haiku 5.5** (`haiku`) | `fps-op-buscador`, `fps-op-verificador` | Tarefas mecânicas de volume: rodar buscas, triar, conferir metadados |
+| 0 · Determinística | — (scripts) | `scripts/*.py` | ABNT, portões, validação, prévias — nada que um código faça melhor fica com um modelo |
+
+Cada camada é revisada pela de cima. As verificações baratas vêm primeiro (**funil de revisão**):
+`scripts` → `fps-op-verificador` (Haiku) → autoverificação do executor (Sonnet) → líder (Opus) → banca (Fable).
+Assim os modelos caros gastam esforço em **julgamento**, não em conferência mecânica.
+
+## 8. Ciclo de qualidade: produzir → verificar → revisar → corrigir
+
+Arquivos em `<pasta>/revisoes/`:
+- `<etapa>.r<N>.parecer.json` — parecer do revisor na rodada N (`python3 trabalho-fps/scripts/parecer.py modelo <etapa>` gera o esqueleto).
+- `<etapa>.r<N>.resposta.json` — resposta do executor ao parecer N: `[{"id": "A1", "status": "corrigido|contestado", "detalhe": "..."}]`.
+
+Etapas: `01-investigacao`, `03a-busca`, `03-evidencias`, `02-analise`, `artigo-forma`, `artigo-fidelidade`, `slides`, `banca`.
+
+**Gravidade dos achados**
+- `critica` — erro factual; referência inexistente, errada ou não verificada; número sem fonte ou divergente da fonte; extrapolação indevida; viola norma obrigatória; compromete a resposta à pergunta.
+- `maior` — lacuna relevante; análise superficial; desvio do método declarado; redundância significativa; slide ou seção que não cumpre sua função.
+- `menor` — estilo, clareza pontual, formatação. **O revisor corrige direto** e registra em `correcoes_aplicadas` (não gasta uma rodada com isso).
+
+**Portão** (`parecer.py avaliar`, determinístico — vale mais que a opinião do revisor):
+APROVADO com 0 críticos, 0 maiores, média dos critérios ≥ 7,5 e nenhuma nota < 6.
+Senão REVISAR. Na **3ª rodada** sem aprovação → **ESCALAR**: o revisor corrige pessoalmente o que falta,
+marca `"escalonado": true` e reavalia.
+
+**Direito de contestação.** O executor pode contestar um achado com evidência (PMID, trecho, norma).
+O revisor decide na rodada seguinte e registra a decisão. Revisão é diálogo técnico, não obediência cega.
+
+**Rastreabilidade.** Todo achado `critica`/`maior` traz `evidencia` (o que o revisor conferiu e onde) e
+`correcao` acionável. Achados vagos ("melhorar a discussão") são inválidos.
+
+## 9. Modo correção (para executores)
+
+Quando o seu chamado traz um parecer (`revisoes/<etapa>.r<N>.parecer.json`):
+1. Leia o parecer inteiro; trate **só** os achados em que `responsavel` é você.
+2. Corrija no lugar, sem reescrever o que já foi aprovado e sem introduzir conteúdo novo não pedido.
+3. Se discordar, conteste com evidência em vez de "corrigir" para algo errado.
+4. Grave `revisoes/<etapa>.r<N>.resposta.json` e confira com
+   `python3 trabalho-fps/scripts/parecer.py resposta <resposta> <parecer>`.
+5. Devolva em até 5 linhas: quantos corrigidos, quantos contestados e por quê.
+
+## 10. Memória de lições (aprendizado entre trabalhos)
+
+`trabalho-fps/memoria/licoes.md` reúne regras aprendidas com erros reais, por agente.
+- **Executores**: leiam a sua seção antes de começar e tratem cada lição como regra.
+- **Revisores**: quando um achado revela um padrão que valeria para qualquer tema, preencham `licao`
+  (uma regra curta e geral — não cite o tema). O orquestrador consolida ao final com
+  `python3 trabalho-fps/scripts/parecer.py licoes <pasta>` (deduplica e mantém as 12 mais frequentes por agente).
+
+## 11. Procedimento dos líderes (Opus) — coordenar e revisar
+
+Para cada etapa sob sua responsabilidade:
+1. **Disparar o executor** (ferramenta `Agent`, `subagent_type` = nome do executor) com: caminho da pasta,
+   a missão e "leia PROTOCOLO.md e a sua seção de memoria/licoes.md". Etapas independentes → dispare em paralelo.
+2. **Funil barato primeiro**: rode os scripts aplicáveis (`validar_trabalho.py`, `previa.py`) e dispare o
+   `fps-op-verificador` para os `*referencias.json` da etapa. Leia o relatório antes de revisar.
+3. **Revisar com profundidade** (critérios da etapa: `python3 trabalho-fps/scripts/parecer.py modelo <etapa>`):
+   leia os arquivos inteiros e **confira por amostragem contra as fontes** (`mcp__PubMed__get_article_metadata`
+   para o resumo, página oficial para diretrizes). Priorize números, recomendações, afirmações causais fortes e
+   tudo o que vai para os slides.
+4. **Gravar o parecer** `revisoes/<etapa>.r<N>.parecer.json`, corrigindo você mesmo os achados `menor`.
+5. **Portão**: `python3 trabalho-fps/scripts/parecer.py avaliar <parecer>` →
+   - `APROVADO` (0): etapa concluída.
+   - `REVISAR` (1): dispare o executor em **modo correção** com o caminho do parecer; ao voltar, rode
+     `parecer.py resposta`, decida as contestações e revise a rodada N+1 só sobre os achados e possíveis regressões.
+   - `ESCALAR` (3): corrija pessoalmente o que falta, marque `"escalonado": true`, registre e reavalie.
+6. Em achados que revelem padrão geral, preencha `licao` (alimenta a memória do pipeline).
+7. **Responder ao orquestrador** em até 12 linhas: decisão do portão por etapa, nº de rodadas, o que mudou,
+   pendências que dependem do usuário.
+
+Regras: nas rodadas 1–2 não reescreva o trabalho do executor (exceto `menor`) — devolva instruções precisas;
+quem erra corrige, e a lição fica registrada. Achado bom: *"03-evidencias.md §4: RR 0,74 (0,65–0,85) diverge do
+resumo do PMID 12345678 (RR 0,79; 0,70–0,89) → corrigir no texto e no quadro"*. Achado ruim: *"revisar números"*.
+
+**Fallback (modo plano):** se você não tiver a ferramenta `Agent` (limite de profundidade ou versão do
+Claude Code), não execute o trabalho do executor: responda ao orquestrador `MODO PLANO NECESSÁRIO` com a lista
+de disparos; ele dispara os executores e chama você de novo apenas para revisar.

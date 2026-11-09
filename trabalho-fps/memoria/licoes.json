@@ -1,0 +1,114 @@
+{
+  "agentes": {
+    "fps-1-investigador": [
+      {
+        "texto": "Todo número epidemiológico precisa de fonte oficial primária (DATASUS, IBGE, Vigitel, OMS/GBD) com ano de referência; nunca use valores de memória.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "semente"
+        ]
+      },
+      {
+        "texto": "Sinalize desfechos substitutos (marcadores laboratoriais, intermediários) separadamente dos desfechos clínicos duros.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "semente"
+        ]
+      }
+    ],
+    "fps-op-verificador": [
+      {
+        "texto": "Referência de artigo sem PMID: procure no PubMed por citação (lookup_article_by_citation) e por título antes de ir à web; só marque 'não verificada' depois das duas tentativas.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "teste-verificador:sterne2019"
+        ]
+      },
+      {
+        "texto": "No PubMed, sobrenomes brasileiros e ibéricos vêm invertidos ('da Costa Santos CM'); na referência use o último sobrenome: 'Santos, Cristina Mamédio da Costa'.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "semente"
+        ]
+      },
+      {
+        "texto": "Páginas abreviadas no PubMed ('924-6') devem ser expandidas na referência ('924-926').",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "semente"
+        ]
+      }
+    ],
+    "fps-op-buscador": [
+      {
+        "texto": "Registre a string exata, a base, a data e o número de resultados de cada busca; contagens PRISMA precisam bater com a lista de candidatos.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "semente"
+        ]
+      }
+    ],
+    "fps-3-avaliador-evidencias": [
+      {
+        "texto": "Confirme no site da sociedade/órgão, na data de hoje, que a diretriz citada é a versão mais recente.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "semente"
+        ]
+      },
+      {
+        "texto": "Todo efeito vem com IC 95% e origem do dado (resumo ou texto completo); sem acesso ao número, declare a lacuna.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "semente"
+        ]
+      }
+    ],
+    "fps-2-analista-critico": [
+      {
+        "texto": "Classifique cada afirmação mecanística como consenso, evidência clínica, evidência pré-clínica ou hipótese; não extrapole de animal/in vitro para clínica sem aviso.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "semente"
+        ]
+      }
+    ],
+    "fps-4-redator-abnt": [
+      {
+        "texto": "Considerações finais respondem à pergunta e não trazem citações nem dados novos.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "semente"
+        ]
+      },
+      {
+        "texto": "O Método descreve a busca exatamente como foi feita (datas, bases, números do fluxo), sem arredondar nem inflar.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "semente"
+        ]
+      }
+    ],
+    "fps-5-designer-slides": [
+      {
+        "texto": "Título de slide é uma afirmação; o corpo do slide não repete o título nem dados de outro slide.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "semente"
+        ]
+      }
+    ]
+  }
+}

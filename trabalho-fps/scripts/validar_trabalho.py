@@ -2,7 +2,7 @@
 """Validador final do trabalho (artigo + referências + slides).
 
 Uso:
-  python3 validar_trabalho.py trabalhos/<pasta-do-tema> [--tolerante]
+  python3 validar_trabalho.py trabalhos/<pasta-do-tema> [--tolerante] [--final]
 
 Verifica, entre outros pontos:
   - integridade das citações (todo [@id] existe; toda referência é citada);
@@ -10,7 +10,8 @@ Verifica, entre outros pontos:
   - resumo com 100–250 palavras e 3–5 palavras-chave (NBR 6028:2021);
   - estrutura mínima (Introdução ... Considerações finais/Conclusão);
   - redundância (parágrafos/slides quase idênticos);
-  - slides: ≤ 5 tópicos, tópicos curtos, notas do apresentador, fonte nos slides de dados.
+  - slides: ≤ 5 tópicos, tópicos curtos, notas do apresentador, fonte nos slides de dados;
+  - governança: último parecer de cada etapa aprovado no portão (--final exige todas + banca.md).
 Gera <pasta>/validacao.md. Código de saída 1 se houver ERROS.
 """
 from __future__ import annotations
@@ -227,10 +228,40 @@ def validar_slides(sl: dict, refs: list[dict], rel: Relatorio):
             vistos.append((k, limpo))
 
 
+def validar_governanca(pasta: Path, rel: Relatorio, final: bool):
+    """Confere o ciclo de revisão hierárquica (pareceres + portões)."""
+    import parecer as pc
+    if not (pasta / "revisoes").is_dir():
+        (rel.erro if final else rel.aviso)("sem pasta revisoes/ — o trabalho não passou pela revisão hierárquica")
+        return
+    todos = pc.pareceres(pasta)
+    resumo = []
+    for etapa in pc.ORDEM_ETAPAS:
+        if etapa not in todos:
+            (rel.erro if final else rel.aviso)(f"etapa '{etapa}' sem parecer de revisão")
+            continue
+        rodada, arq = todos[etapa][-1]
+        try:
+            par = json.loads(arq.read_text(encoding="utf-8"))
+            decisao, _, est = pc.avaliar(par)
+        except (pc.ParecerInvalido, json.JSONDecodeError) as e:
+            rel.erro(f"parecer inválido em {arq.name}: {e}")
+            continue
+        resumo.append(f"{etapa}: {decisao} (r{rodada}, média {est['media']:.1f})")
+        if decisao != "APROVADO":
+            (rel.erro if final else rel.aviso)(f"etapa '{etapa}' não aprovada no portão ({decisao}, rodada {rodada})")
+    if resumo:
+        rel.nota("portões: " + " · ".join(resumo))
+    if final and not (pasta / "banca.md").exists():
+        rel.erro("banca.md ausente — a auditoria final (fps-banca) não rodou")
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("pasta", type=Path)
     ap.add_argument("--tolerante", action="store_true", help="referência não verificada vira aviso")
+    ap.add_argument("--final", action="store_true",
+                    help="entrega final: exige todas as etapas aprovadas no portão e banca.md")
     a = ap.parse_args()
     pasta = a.pasta
     rel = Relatorio()
@@ -265,6 +296,8 @@ def main() -> int:
         validar_slides(sl, refs_sl, rel)
         if not (pasta / "apresentacao.pptx").exists():
             rel.aviso("apresentacao.pptx ainda não gerada")
+
+    validar_governanca(pasta, rel, a.final)
 
     md = rel.markdown(pasta)
     if pasta.is_dir():
