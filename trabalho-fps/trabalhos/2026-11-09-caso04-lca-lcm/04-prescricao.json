@@ -115,7 +115,7 @@
    ],
    "fitt_vp": {
     "F": "3 sessões/semana de força, com ≥ 48 h entre sessões que treinem o mesmo grupo; no mínimo 2 supervisionadas por semana. Base: 2–4 sessões/semana no programa de referência [@eitzen2010program]; 2–3 dias/semana no iniciante e 3–4 no intermediário [@acsm2009]. Treino de perturbação em 10 sessões ao longo do bloco (≈ 2/semana) com a fisioterapia [@eitzen2010program]. O bloco fecha quando ~10 sessões forem cumpridas; se faltar frequência, o bloco se estende (não se corta).",
-    "I": "Semanas 1–2 (sessões 1–4): 8–12 RM, 2–3 séries (faixa de iniciante [@acsm2009]; membro atrofiado). Semanas 3–5 (sessões 5–10): cargas de 6–8 RM em 3–4 séries, com esforço máximo na última série [@eitzen2010program]; progressão pelo princípio '+2': se completar 2 repetições a mais na última série, sobe a carga na sessão seguinte [@eitzen2010program; @acsm2009: aumento de 2–10%]. Quadril e tronco: 8–12 RM. Dor NPRS ≤ 3/10 (até 5/10 sem progredir) [@sprague2021]; derrame inalterado. Aeróbico: PSE 4–5/10.",
+    "I": "Semanas 1–2 (sessões 1–4): 8–12 RM, 2–3 séries (faixa de iniciante [@acsm2009]; membro atrofiado). Semanas 3–5 (sessões 5–10): cargas de 6–8 RM em 3–4 séries, com esforço máximo na última série [@eitzen2010program]; progressão pelo princípio '+2': se completar 2 repetições a mais na última série, sobe a carga na sessão seguinte [@eitzen2010program; @acsm2009] (ACSM: aumento de 2–10% da carga). Quadril e tronco: 8–12 RM. Dor NPRS ≤ 3/10 (até 5/10 sem progredir) [@sprague2021]; derrame inalterado. Aeróbico: PSE 4–5/10.",
     "T": "Até 75 min por sessão, incluindo 10–15 min de aquecimento em bicicleta ou elíptico [@eitzen2010program]; aeróbico final de 15–20 min quando houver tempo.",
     "Tipo": "Força de alta carga unilateral e bilateral (a literatura sustenta alta carga [@filbay2019]); cadeia fechada e cadeia aberta combinadas — equivalentes para força do quadríceps (certeza moderada [@culvenor2022]; divergência com @pamboris2024, muito baixa/baixa); isquiotibiais (cocontração e facilitação reduzem a translação anterior [@shelburne2005; @rudolph2001]); abdutores e rotadores externos do quadril, tronco e dorsiflexão do tornozelo [@rabin2010; @burnham2016; @crossley2011]; step down com feedback visual; equilíbrio e perturbação [@eitzen2010program]. SEM pliometria nesta fase (diferença deliberada do programa de referência; ver justificativa).",
     "V": "Semanas 1–2: 2–3 séries × 8–12 RM nos principais exercícios (leg press, agachamento, flexora). Semanas 3–5: 3–4 séries × 6–8 RM; descanso 2–3 min entre séries pesadas (ACSM: 3–5 min só em cargas de 1–6 RM). Cadeira extensora: 90–45° nas semanas 1–2 e 90–0° a partir da semana 3, 3–4 séries × 6–8 RM [@eitzen2010program; @kotsifaki2023]. Quadril: 2–3 séries × 8–12. Prancha frontal e lateral: 3 × 20–30 s. Step down: 3 × 8 por lado, degrau de 10 cm (convenção). Equilíbrio em superfície instável: 3 × 30 s. 10 sessões de perturbação (progressão da Universidade de Delaware, ver [@eitzen2010program]).",
@@ -401,103 +401,120 @@
    "cor": "verde",
    "sinal": "Dor durante o exercício NPRS ≤ 3/10 e que volta ao basal na manhã seguinte",
    "conduta": "Na sessão: segue o plano e registra. Na próxima sessão: aplica a regra de progressão da fase (uma variável por vez).",
-   "fonte": "@sprague2021; @silbernagel2007 (modelo validado em tendinopatia; ≤ 3/10 como verde é convenção do grupo)"
+   "fonte": "@sprague2021; @silbernagel2007",
+   "nota_evidencia": "@sprague2021; @silbernagel2007 (modelo validado em tendinopatia; ≤ 3/10 como verde é convenção do grupo)"
   },
   {
    "cor": "amarelo",
    "sinal": "Dor durante ou depois do exercício NPRS 4–5/10, ainda dentro do limite do modelo",
    "conduta": "Na sessão: mantém a carga, reduz volume (~20–30%) ou amplitude, troca o exercício provocador (ex.: cadeia aberta por fechada) e reavalia ao final. Na próxima sessão: repete a carga sem progredir; se voltar ao verde, retoma a progressão.",
-   "fonte": "@sprague2021 (limite de 5/10); redução de ~20–30% é convenção do prescritor"
+   "fonte": "@sprague2021",
+   "nota_evidencia": "@sprague2021 (limite de 5/10); redução de ~20–30% é convenção do prescritor"
   },
   {
    "cor": "vermelho",
    "sinal": "Dor NPRS > 5/10, dor aguda cortante, ou dor que aumenta ao longo da sessão",
    "conduta": "Na sessão: interrompe o exercício, avalia derrame, ADM e marcha. Na próxima sessão: regride um nível dentro da fase (menor carga ou amplitude) e só volta a progredir após 2 sessões verdes; se persistir 48 h, comunica fisioterapia/médico.",
-   "fonte": "@sprague2021; @adams2012 (regras de carga por sintomas em consenso; evidência indireta)"
+   "fonte": "@sprague2021; @adams2012",
+   "nota_evidencia": "@sprague2021; @adams2012 (regras de carga por sintomas em consenso; evidência indireta)"
   },
   {
    "cor": "verde",
    "sinal": "Dor/rigidez no dia seguinte: a dor volta ao nível basal na manhã seguinte",
    "conduta": "Na sessão: progride conforme o plano. Na próxima sessão: mantém ritmo de progressão.",
-   "fonte": "@sprague2021"
+   "fonte": "@sprague2021",
+   "nota_evidencia": "@sprague2021"
   },
   {
    "cor": "amarelo",
    "sinal": "Dor/rigidez no dia seguinte acima do basal na manhã seguinte, que volta ao basal em até 24 h",
    "conduta": "Na sessão (do dia seguinte): faz a sessão com 20–30% menos volume e sem exercício novo. Na próxima sessão: repete a carga anterior; progride só se a manhã seguinte voltar ao basal.",
-   "fonte": "@sprague2021 (retorno ao basal na manhã seguinte); 24 h e redução de volume são convenção"
+   "fonte": "@sprague2021",
+   "nota_evidencia": "@sprague2021 (retorno ao basal na manhã seguinte); 24 h e redução de volume são convenção"
   },
   {
    "cor": "vermelho",
    "sinal": "Dor/rigidez que NÃO volta ao basal em 24 h, piora por 2 dias seguidos ou vem com perda de amplitude",
    "conduta": "Na sessão: sessão leve (mobilidade, bicicleta), sem carga pesada, e avalia derrame e amplitude. Na próxima sessão: regride um nível; se persistir por 48–72 h ou houver perda de extensão, encaminha ao fisioterapeuta/ortopedista.",
-   "fonte": "@sprague2021; @filbay2019 (extensão não recuperada exige reavaliação médica)"
+   "fonte": "@sprague2021; @filbay2019",
+   "nota_evidencia": "@sprague2021; @filbay2019 (extensão não recuperada exige reavaliação médica)"
   },
   {
    "cor": "verde",
    "sinal": "Derrame igual ou menor que antes da sessão, e ≤ traço (teste do golpe modificado)",
    "conduta": "Na sessão: progride conforme o plano. Na próxima sessão: mantém ritmo.",
-   "fonte": "@sturgill2009; @adams2012"
+   "fonte": "@sturgill2009; @adams2012",
+   "nota_evidencia": "@sturgill2009; @adams2012"
   },
   {
    "cor": "amarelo",
    "sinal": "Derrame aumentou 1 grau em relação ao pré-sessão (ex.: traço → 1+) ou apareceu após a sessão",
    "conduta": "Na sessão: encerra a parte de alta carga, mantém só exercícios sem impacto (isometria leve, bicicleta) e registra. Na próxima sessão: repete a carga sem progredir; só passa de fase com derrame ≤ traço em 2 avaliações. Crioterapia e outros recursos são da fisioterapia.",
-   "fonte": "@adams2012; @kotsifaki2023 (derrame ≤ traço para correr); o 'aumento de 1 grau' como gatilho é operacionalização do grupo, sem estudo em LCA/LCM"
+   "fonte": "@adams2012; @kotsifaki2023",
+   "nota_evidencia": "@adams2012; @kotsifaki2023 (derrame ≤ traço para correr); o 'aumento de 1 grau' como gatilho é operacionalização do grupo, sem estudo em LCA/LCM"
   },
   {
    "cor": "vermelho",
    "sinal": "Derrame aumentou ≥ 2 graus, ou derrame que persiste > 48 h, ou derrame com calor e dor",
    "conduta": "Na sessão: interrompe, repouso relativo, comunica a equipe. Na próxima sessão: retorna à Fase 1 (ou ao nível anterior da fase), sem carga pesada e sem salto até derrame ≤ traço; se persiste > 48–72 h ou recorre após regressão, encaminha ao ortopedista (suspeita de lesão intra-articular, ex.: menisco).",
-   "fonte": "@eitzen2010program (dor e derrame após carga podem indicar menisco); @adams2012"
+   "fonte": "@eitzen2010program; @adams2012",
+   "nota_evidencia": "@eitzen2010program (dor e derrame após carga podem indicar menisco); @adams2012"
   },
   {
    "cor": "amarelo",
    "sinal": "Sensação de insegurança ou 'quase falseio' sem queda, sem dor e sem derrame depois",
    "conduta": "Na sessão: reduz a velocidade e a complexidade da tarefa, volta ao exercício anterior mais estável, registra. Na próxima sessão: repete o nível; só progride com 2 sessões sem a sensação.",
-   "fonte": "@moksnes2008 (definição de falseio: subluxação com dor e derrame); conduta é do prescritor"
+   "fonte": "@moksnes2008",
+   "nota_evidencia": "@moksnes2008 (definição de falseio: subluxação com dor e derrame); conduta é do prescritor"
   },
   {
    "cor": "vermelho",
    "sinal": "Episódio de falseio (subluxação percebida, com dor e/ou derrame posterior)",
    "conduta": "Na sessão: interrompe, avalia dor e derrame, não retoma a tarefa que provocou, comunica fisioterapeuta e médico. Na próxima sessão: regride um nível ou uma fase, mantém só carga sem pivô. Segundo episódio (falseio recorrente): encaminhamento ao ortopedista obrigatório antes de qualquer progressão; discussão de ACLR em decisão compartilhada.",
-   "fonte": "@diermeier2020; @filbay2019; @beard2022; @moksnes2008"
+   "fonte": "@diermeier2020; @filbay2019; @beard2022; @moksnes2008",
+   "nota_evidencia": "@diermeier2020; @filbay2019; @beard2022; @moksnes2008"
   },
   {
    "cor": "vermelho",
    "sinal": "Bloqueio articular (joelho trava, perda súbita de extensão)",
    "conduta": "Na sessão: interrompe, não força a extensão nem tenta 'destravar' com carga, encaminha no mesmo dia ao ortopedista (suspeita de lesão meniscal). Na próxima sessão: só retorna com liberação médica e reavaliação (extensão, derrame).",
-   "fonte": "@filbay2019 (retornar ao médico por sintomas de nova lesão ou falha em conseguir extensão total); @eitzen2010program; sem estudo direto da conduta imediata no bloqueio"
+   "fonte": "@filbay2019; @eitzen2010program",
+   "nota_evidencia": "@filbay2019 (retornar ao médico por sintomas de nova lesão ou falha em conseguir extensão total); @eitzen2010program; sem estudo direto da conduta imediata no bloqueio"
   },
   {
    "cor": "amarelo",
    "sinal": "Dor medial (linha do LCM) 3–5/10 em tarefa com componente de valgo ou rotação (step down, aterrissagem, corte)",
    "conduta": "Na sessão: reduz a amplitude e a alavanca, volta à tarefa sagital, corrige o alinhamento com feedback. Na próxima sessão: mantém a tarefa em versão mais simples; avisa a fisioterapia para reavaliar o LCM.",
-   "fonte": "@adams2012; @vanderlist2024 (instabilidade em valgo a 30° como alvo de reavaliação)"
+   "fonte": "@adams2012; @vanderlist2024",
+   "nota_evidencia": "@adams2012; @vanderlist2024 (instabilidade em valgo a 30° como alvo de reavaliação)"
   },
   {
    "cor": "vermelho",
    "sinal": "Dor medial > 5/10, edema ou abertura medial percebida em valgo, ou sensação de 'abrir' o joelho para dentro",
    "conduta": "Na sessão: interrompe toda carga em valgo ou rotação. Na próxima sessão: só plano sagital; encaminha ao ortopedista para testar o LCM (valgo a 0° e 30°) e decidir sobre cirurgia do LCM/LCA se houver valgo ou instabilidade rotatória anteromedial persistente.",
-   "fonte": "@vanderlist2024; @shultz2024"
+   "fonte": "@vanderlist2024; @shultz2024",
+   "nota_evidencia": "@vanderlist2024; @shultz2024"
   },
   {
    "cor": "amarelo",
    "sinal": "Dor anterior no joelho durante cadeia aberta (cadeira extensora)",
    "conduta": "Na sessão: encurta a amplitude, reduz a carga ou muda para cadeia fechada. Na próxima sessão: reintroduz a cadeira extensora em amplitude menor e progride devagar.",
-   "fonte": "@kotsifaki2023 (monitorar dor anterior na cadeia aberta e ajustar a carga)"
+   "fonte": "@kotsifaki2023",
+   "nota_evidencia": "@kotsifaki2023 (monitorar dor anterior na cadeia aberta e ajustar a carga)"
   },
   {
    "cor": "amarelo",
    "sinal": "ACL-RSI baixo, medo relatado ou recusa de tarefas (barreira psicológica)",
    "conduta": "Na sessão: dosagem gradual da exposição, meta clara, reforço positivo. Na próxima sessão: reaplica o ACL-RSI; se continuar baixo, encaminha ao psicólogo do esporte.",
-   "fonte": "@filbay2019; @webster2008; @slater2022 (prontidão psicológica e retorno)"
+   "fonte": "@filbay2019; @webster2008; @slater2022",
+   "nota_evidencia": "@filbay2019; @webster2008; @slater2022 (prontidão psicológica e retorno)"
   },
   {
    "cor": "vermelho",
    "sinal": "Trauma novo ou dor aguda após queda ou torção",
    "conduta": "Na sessão: interrompe o treino e aplica a regra de Ottawa para joelho; encaminha à avaliação médica. Na próxima sessão: só retorna com liberação.",
-   "fonte": "@filbay2019"
+   "fonte": "@filbay2019",
+   "nota_evidencia": "@filbay2019"
   }
  ],
  "retorno_ao_esporte": {
@@ -540,7 +557,7 @@
   "Ortopedista (obrigatório): falseio recorrente (≥ 2 episódios), bloqueio articular, derrame que não resolve ou volta após regressão, extensão que não recupera, instabilidade em valgo a 30° ou instabilidade rotatória anteromedial persistente, falha de reclassificação (non-coper persistente) ou desejo de retorno a esporte de pivô com instabilidade [@diermeier2020; @filbay2019; @beard2022; @vanderlist2024; @shultz2024].",
   "Reavaliação médica no fim do bloco inicial (~5 semanas/~10 sessões): decisão compartilhada entre manter conservador e reconstruir, antes de pliometria e cortes [@eitzen2010; @thoma2019; @filbay2019].",
   "Fisioterapia (conduta multiprofissional): NMES, crioterapia, TENS, terapia manual, testes clínicos de estabilidade (Lachman, gaveta, pivot-shift, valgo a 0°/30°), supervisão do treino de perturbação e liberação do LCM [@rice2010; @culvenor2022; @runer2026classification].",
-  "Médico: órtese de LCM quando indicada; o ECR pós-ACLR não mostrou benefício funcional da órtese, e o uso em LCM grau II é observacional [@culvenor2022; @lundblad2019].",
+  "Médico: órtese de LCM quando indicada; a órtese pós-ACLR não melhorou função nem laxidão (overview de revisões, certeza moderada), e o dado sobre órtese em LCM grau II é observacional, sem randomização [@culvenor2022; @lundblad2019].",
   "Psicologia do esporte: ACL-RSI persistentemente baixo ou medo que limita a progressão [@filbay2019; @slater2022].",
   "Pronto-atendimento: trauma novo, joelho muito quente, vermelho e doloroso com febre ou dor súbita na panturrilha (sinais de alerta clínicos gerais, sem fonte específica nesta etapa)."
  ],
@@ -550,7 +567,6 @@
   "eitzen2010",
   "thoma2019",
   "pedersen2021",
-  "grindem2018",
   "moksnes2008",
   "hurd2008outcomes",
   "adams2012",
@@ -593,6 +609,7 @@
   "reid2007",
   "alentorngeli2009",
   "rice2010",
-  "runer2026classification"
+  "runer2026classification",
+  "vanmelick2016"
  ]
 }
