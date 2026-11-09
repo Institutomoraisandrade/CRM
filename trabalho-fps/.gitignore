@@ -1,0 +1,3 @@
+# Prévias de revisão visual (geradas pelos agentes; recriáveis com scripts/previa.py)
+trabalhos/**/previa-*/
+__pycache__/

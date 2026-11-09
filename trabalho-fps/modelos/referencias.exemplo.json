@@ -1,0 +1,90 @@
+[
+  {
+    "id": "page2021",
+    "tipo": "artigo",
+    "autores": ["Page, Matthew J.", "McKenzie, Joanne E.", "Bossuyt, Patrick M.", "Boutron, Isabelle"],
+    "et_al": true,
+    "titulo": "The PRISMA 2020 statement",
+    "subtitulo": "an updated guideline for reporting systematic reviews",
+    "periodico": "BMJ",
+    "ano": 2021, "volume": "372", "paginas": "n71",
+    "doi": "10.1136/bmj.n71", "pmid": "33782057",
+    "desenho": "Diretriz de relato (consenso)",
+    "verificado": true, "verificado_via": "PubMed PMID 33782057"
+  },
+  {
+    "id": "guyatt2008",
+    "tipo": "artigo",
+    "autores": ["Guyatt, Gordon H.", "Oxman, Andrew D.", "Vist, Gunn E.", "Kunz, Regina"],
+    "et_al": true,
+    "titulo": "GRADE",
+    "subtitulo": "an emerging consensus on rating quality of evidence and strength of recommendations",
+    "periodico": "BMJ",
+    "ano": 2008, "volume": "336", "numero": "7650", "paginas": "924-926",
+    "doi": "10.1136/bmj.39489.470347.AD", "pmid": "18436948",
+    "desenho": "Artigo metodológico",
+    "verificado": true, "verificado_via": "PubMed PMID 18436948"
+  },
+  {
+    "id": "shea2017",
+    "tipo": "artigo",
+    "autores": ["Shea, Beverley J.", "Reeves, Barnaby C.", "Wells, George", "Thuku, Micere"],
+    "et_al": true,
+    "titulo": "AMSTAR 2",
+    "subtitulo": "a critical appraisal tool for systematic reviews that include randomised or non-randomised studies of healthcare interventions, or both",
+    "periodico": "BMJ",
+    "ano": 2017, "volume": "358", "paginas": "j4008",
+    "doi": "10.1136/bmj.j4008", "pmid": "28935701",
+    "desenho": "Instrumento de avaliação crítica",
+    "verificado": true, "verificado_via": "PubMed PMID 28935701"
+  },
+  {
+    "id": "sterne2019",
+    "tipo": "artigo",
+    "autores": ["Sterne, Jonathan A. C.", "Savović, Jelena", "Page, Matthew J.", "Elbers, Roy G."],
+    "et_al": true,
+    "titulo": "RoB 2",
+    "subtitulo": "a revised tool for assessing risk of bias in randomised trials",
+    "periodico": "BMJ",
+    "ano": 2019, "volume": "366", "paginas": "l4898",
+    "doi": "10.1136/bmj.l4898", "pmid": "31462531",
+    "desenho": "Instrumento de avaliação de risco de viés",
+    "verificado": true, "verificado_via": "PubMed PMID 31462531"
+  },
+  {
+    "id": "santos2007",
+    "tipo": "artigo",
+    "autores": ["Santos, Cristina Mamédio da Costa", "Pimenta, Cibele Andrucioli de Mattos", "Nobre, Moacyr Roberto Cuce"],
+    "titulo": "The PICO strategy for the research question construction and evidence search",
+    "periodico": "Revista Latino-Americana de Enfermagem",
+    "ano": 2007, "volume": "15", "numero": "3", "paginas": "508-511",
+    "doi": "10.1590/S0104-11692007000300023", "pmid": "17653438",
+    "desenho": "Artigo metodológico",
+    "verificado": true, "verificado_via": "PubMed PMID 17653438"
+  },
+  {
+    "id": "brouwers2010",
+    "tipo": "artigo",
+    "autores": ["Brouwers, Melissa C.", "Kho, Michelle E.", "Browman, George P.", "Burgers, Jako S."],
+    "et_al": true,
+    "titulo": "AGREE II",
+    "subtitulo": "advancing guideline development, reporting and evaluation in health care",
+    "periodico": "Canadian Medical Association Journal",
+    "ano": 2010, "volume": "182", "numero": "18", "paginas": "E839-E842",
+    "doi": "10.1503/cmaj.090449", "pmid": "20603348",
+    "desenho": "Instrumento de avaliação de diretrizes",
+    "verificado": true, "verificado_via": "PubMed PMID 20603348"
+  },
+  {
+    "id": "methley2014",
+    "tipo": "artigo",
+    "autores": ["Methley, Abigail M.", "Campbell, Stephen", "Chew-Graham, Carolyn", "McNally, Rosalind", "Cheraghi-Sohi, Sudeh"],
+    "titulo": "PICO, PICOS and SPIDER",
+    "subtitulo": "a comparison study of specificity and sensitivity in three search tools for qualitative systematic reviews",
+    "periodico": "BMC Health Services Research",
+    "ano": 2014, "volume": "14", "paginas": "579",
+    "doi": "10.1186/s12913-014-0579-0", "pmid": "25413154",
+    "desenho": "Estudo metodológico comparativo",
+    "verificado": true, "verificado_via": "PubMed PMID 25413154"
+  }
+]

@@ -1,0 +1,84 @@
+{
+  "config": {
+    "fonte": "Arial",
+    "estilo_citacao": "2023",
+    "autores_referencia": "et_al",
+    "capa": false,
+    "abstract": true,
+    "cidade": "Recife"
+  },
+  "instituicao": "Faculdade Pernambucana de Saúde",
+  "curso": "Curso de Graduação em Medicina",
+  "disciplina": "Tutoria – Prática Baseada em Evidências",
+  "titulo": "Da pergunta à recomendação",
+  "subtitulo": "uso integrado das estratégias PICOS, PRISMA e GRADE na prática baseada em evidências",
+  "titulo_en": "From question to recommendation: integrated use of the PICOS, PRISMA and GRADE approaches in evidence-based practice",
+  "autores": [
+    {"nome": "Nome Completo do(a) Estudante", "nota": "Graduando(a) em Medicina pela Faculdade Pernambucana de Saúde (FPS). E-mail: estudante@exemplo.com."}
+  ],
+  "orientador": {"nome": "Nome do(a) Tutor(a)", "nota": "Tutor(a) da Faculdade Pernambucana de Saúde (FPS)."},
+  "resumo": "**Objetivo:** descrever como a formulação estruturada da pergunta clínica, o relato transparente de revisões sistemáticas e a graduação da certeza da evidência se articulam na prática baseada em evidências. **Método:** revisão narrativa estruturada pela estratégia PICOS, com consulta ao PubMed/MEDLINE e seleção de documentos metodológicos de referência internacional publicados entre 2007 e 2021. **Resultados:** a estratégia PICO organiza a pergunta em população, intervenção, comparação e desfecho, e o acréscimo do tipo de estudo (PICOS) aumenta a especificidade da busca quando tempo e recursos são limitados. O PRISMA 2020 padroniza o relato de revisões sistemáticas em uma lista de 27 itens e fluxogramas revisados. A qualidade metodológica deve ser avaliada com instrumentos específicos para cada desenho: AMSTAR 2 para revisões sistemáticas, RoB 2 para ensaios clínicos randomizados e AGREE II para diretrizes. O sistema GRADE gradua a certeza da evidência por desfecho em quatro níveis e separa esse julgamento da força da recomendação. **Conclusão:** o uso encadeado dessas ferramentas transforma uma dúvida clínica em uma resposta rastreável, cuja confiabilidade é explicitada ao leitor.",
+  "palavras_chave": ["prática clínica baseada em evidências", "revisão sistemática", "abordagem GRADE", "metanálise"],
+  "abstract": "**Objective:** to describe how structured question formulation, transparent reporting of systematic reviews and rating of the certainty of evidence are linked in evidence-based practice. **Method:** narrative review structured by the PICOS strategy, searching PubMed/MEDLINE and selecting internationally recognised methodological documents published between 2007 and 2021. **Results:** the PICO strategy frames the question as population, intervention, comparison and outcome, and adding the study type (PICOS) increases search specificity when time and resources are limited. PRISMA 2020 standardises the reporting of systematic reviews through a 27-item checklist and revised flow diagrams. Methodological quality should be appraised with design-specific instruments: AMSTAR 2 for systematic reviews, RoB 2 for randomised trials and AGREE II for guidelines. The GRADE system rates the certainty of evidence per outcome in four levels and separates this judgement from the strength of recommendation. **Conclusion:** the chained use of these tools turns a clinical doubt into a traceable answer whose reliability is made explicit to the reader.",
+  "keywords": ["evidence-based practice", "systematic review", "GRADE approach", "meta-analysis"],
+  "secoes": [
+    {
+      "titulo": "Introdução",
+      "blocos": [
+        "A prática baseada em evidências exige que a decisão clínica se apoie na melhor evidência científica disponível, integrada à experiência profissional e às preferências do paciente. Identificar essa evidência depende, antes de tudo, de uma pergunta bem construída e de uma busca bibliográfica adequada [@santos2007].",
+        "Entre a pergunta e a recomendação existem etapas metodológicas distintas — busca, seleção, avaliação crítica e síntese —, cada uma com ferramentas próprias. Este artigo tem como objetivo descrever como as estratégias PICOS, PRISMA e GRADE se articulam nesse percurso."
+      ]
+    },
+    {
+      "titulo": "Método",
+      "blocos": [
+        "Trata-se de revisão narrativa estruturada pela estratégia PICOS. A busca foi realizada no PubMed/MEDLINE com descritores relacionados à formulação de perguntas clínicas, ao relato de revisões sistemáticas e à avaliação da certeza da evidência. Foram priorizados documentos metodológicos de referência internacional, publicados em periódicos indexados e com identificador digital (DOI) verificável."
+      ]
+    },
+    {
+      "titulo": "Resultados e discussão",
+      "subsecoes": [
+        {
+          "titulo": "Formulação da pergunta",
+          "blocos": [
+            "A estratégia PICO decompõe a pergunta em quatro elementos: paciente ou problema, intervenção, comparação e desfecho (*outcome*) [@santos2007]. Ao comparar ferramentas de busca, @methley2014 observaram que o PICO oferece maior sensibilidade, enquanto a inclusão do tipo de estudo (PICOS) aumenta a especificidade:",
+            {"tipo": "citacao_longa", "texto": "The recommendations for practice are therefore to use the PICO tool for a fully comprehensive search but the PICOS tool where time and resources are limited. Based on these limited findings the SPIDER tool would not be recommended due to the risk of not identifying relevant papers, but has potential due to its greater specificity [@methley2014, não paginado]."}
+          ]
+        },
+        {
+          "titulo": "Relato e avaliação crítica",
+          "blocos": [
+            "O PRISMA 2020 substituiu a versão de 2009 e reúne uma lista de verificação de 27 itens, uma lista específica para resumos e fluxogramas revisados para revisões originais e atualizadas [@page2021]. A adesão ao PRISMA, porém, indica a transparência do relato, não a validade dos resultados; por isso, cada desenho de estudo exige um instrumento próprio de avaliação crítica (Quadro 1).",
+            {
+              "tipo": "quadro",
+              "titulo": "Instrumentos de avaliação crítica segundo o tipo de evidência",
+              "colunas": ["Tipo de evidência", "Instrumento", "O que avalia", "Julgamento final"],
+              "linhas": [
+                ["Revisão sistemática", "AMSTAR 2", "Qualidade metodológica, incluindo domínios críticos", "Confiança alta, moderada, baixa ou criticamente baixa"],
+                ["Ensaio clínico randomizado", "RoB 2", "Risco de viés em cinco domínios", "Baixo risco, algumas preocupações ou alto risco"],
+                ["Diretriz clínica", "AGREE II", "Rigor de desenvolvimento e relato da diretriz", "Avaliação global e recomendação de uso"],
+                ["Corpo de evidência por desfecho", "GRADE", "Fatores que reduzem ou elevam a certeza", "Certeza alta, moderada, baixa ou muito baixa"]
+              ],
+              "fonte": "Elaborado pelos autores com base em @shea2017, @sterne2019, @brouwers2010 e @guyatt2008."
+            }
+          ]
+        },
+        {
+          "titulo": "Da certeza à recomendação",
+          "blocos": [
+            "O sistema GRADE avalia a certeza da evidência para cada desfecho e a classifica em alta, moderada, baixa ou muito baixa. Ensaios randomizados partem de certeza alta e estudos observacionais, de certeza baixa; a classificação pode ser rebaixada por:",
+            {"tipo": "lista", "estilo": "alineas", "itens": ["limitações metodológicas (risco de viés);", "inconsistência entre os estudos;", "evidência indireta;", "imprecisão das estimativas;", "viés de publicação."]},
+            "A força da recomendação, por sua vez, é julgada separadamente da certeza, pois considera também o balanço entre benefícios e riscos, valores e custos [@guyatt2008]."
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Considerações finais",
+      "blocos": [
+        "A formulação da pergunta pela estratégia PICOS, o relato segundo o PRISMA, a avaliação crítica com instrumentos específicos para cada desenho e a graduação da certeza pelo GRADE compõem um percurso único. Aplicado de forma encadeada, esse percurso permite que o estudante de saúde responda a uma dúvida clínica com transparência sobre o quanto se pode confiar na resposta."
+      ]
+    }
+  ],
+  "referencias_arquivo": "referencias.exemplo.json"
+}

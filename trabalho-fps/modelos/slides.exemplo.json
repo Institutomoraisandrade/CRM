@@ -1,0 +1,75 @@
+{
+  "titulo": "Da pergunta à recomendação",
+  "subtitulo": "PICOS, PRISMA e GRADE na prática baseada em evidências",
+  "autores": ["Nome do(a) Estudante"],
+  "curso": "Medicina – FPS",
+  "disciplina": "Tutoria",
+  "orientador": "Tutor(a): Nome",
+  "data": "Novembro de 2026",
+  "estilo_citacao": "2023",
+  "referencias_arquivo": "referencias.exemplo.json",
+  "slides": [
+    {"layout": "capa", "notas": "Apresentação em 1 frase: como transformar uma dúvida clínica em resposta confiável."},
+    {
+      "layout": "topicos",
+      "titulo": "Decidir bem exige saber o quanto confiar na evidência",
+      "itens": ["Volume de publicações cresce mais rápido que a leitura", "Estudos divergem em desenho, qualidade e desfecho", "Sem método, a escolha do artigo vira opinião"],
+      "destaque": {"valor": "4", "rotulo": "etapas encadeadas: pergunta, busca, avaliação e graduação"},
+      "notas": "Contextualize: o problema não é falta de estudos, é escolher e pesar os estudos certos."
+    },
+    {
+      "layout": "picos",
+      "titulo": "A pergunta PICOS define o que buscar e o que excluir",
+      "P": "Quem é o paciente ou problema",
+      "I": "O que se quer testar",
+      "C": "Contra o quê se compara",
+      "O": "Qual desfecho importa",
+      "S": "Qual desenho responde melhor",
+      "pergunta": "Em [população], [intervenção] comparada a [comparação] melhora [desfecho] em [tipo de estudo]?",
+      "fonte": "[@santos2007; @methley2014]",
+      "notas": "PICO amplia a sensibilidade; acrescentar o S (tipo de estudo) aumenta a especificidade quando tempo e recursos são limitados."
+    },
+    {
+      "layout": "fluxo",
+      "titulo": "Cada etapa tem sua ferramenta própria",
+      "etapas": [
+        {"titulo": "Pergunta", "texto": "Estratégia **PICOS**"},
+        {"titulo": "Relato", "texto": "**PRISMA 2020**: 27 itens e fluxograma"},
+        {"titulo": "Avaliação crítica", "texto": "**AMSTAR 2**, **RoB 2**, **AGREE II**"},
+        {"titulo": "Certeza", "texto": "**GRADE** por desfecho"}
+      ],
+      "conclusao": "Relato transparente não garante validade: a avaliação crítica é obrigatória",
+      "fonte": "[@page2021; @shea2017; @sterne2019; @guyatt2008]",
+      "notas": "Percorra da esquerda para a direita; enfatize que PRISMA mede transparência, não qualidade."
+    },
+    {
+      "layout": "tabela",
+      "titulo": "O instrumento depende do desenho do estudo",
+      "colunas": ["Evidência", "Instrumento", "Julgamento final"],
+      "linhas": [
+        ["Revisão sistemática", "AMSTAR 2", "Confiança alta a criticamente baixa"],
+        ["Ensaio randomizado", "RoB 2", "Baixo risco, algumas preocupações, alto risco"],
+        ["Diretriz clínica", "AGREE II", "Avaliação global e recomendação de uso"]
+      ],
+      "fonte": "[@shea2017; @sterne2019; @brouwers2010]",
+      "notas": "Não aplique o mesmo checklist para tudo: cada desenho tem vieses típicos."
+    },
+    {
+      "layout": "evidencias",
+      "titulo": "GRADE: a certeza começa no desenho e muda com a análise",
+      "estudos": [
+        {"desenho": "ECR", "estudo": "Ponto de partida", "achado": "certeza alta; pode ser rebaixada por viés, inconsistência, evidência indireta, imprecisão ou viés de publicação", "certeza": "alta"},
+        {"desenho": "Observacional", "estudo": "Ponto de partida", "achado": "certeza baixa; pode ser elevada por efeito grande ou gradiente dose-resposta", "certeza": "baixa"}
+      ],
+      "fonte": "[@guyatt2008]",
+      "notas": "A força da recomendação é um julgamento separado: considera benefícios, riscos, valores e custos."
+    },
+    {
+      "layout": "conclusao",
+      "itens": ["Pergunta PICOS bem feita reduz ruído na busca", "PRISMA garante transparência, não qualidade", "Avalie cada desenho com seu instrumento", "Comunique a certeza junto com a resposta"],
+      "notas": "Feche retomando a pergunta inicial."
+    },
+    {"layout": "referencias"},
+    {"layout": "encerramento", "titulo": "Obrigado!", "texto": "Perguntas e discussão", "contato": "estudante@exemplo.com"}
+  ]
+}
