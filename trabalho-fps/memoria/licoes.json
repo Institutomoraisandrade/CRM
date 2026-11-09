@@ -20,6 +20,14 @@
     ],
     "fps-op-verificador": [
       {
+        "texto": "Ano divergente em 1 ano entre a referência e o PubMed costuma ser publicação eletrônica antecipada × fascículo impresso: a ABNT usa o ano do fascículo — não corrija, sinalize para o líder.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "caso04:01-investigacao.r1"
+        ]
+      },
+      {
         "texto": "Referência de artigo sem PMID: procure no PubMed por citação (lookup_article_by_citation) e por título antes de ir à web; só marque 'não verificada' depois das duas tentativas.",
         "ocorrencias": 1,
         "ultimo": "2026-11-09",

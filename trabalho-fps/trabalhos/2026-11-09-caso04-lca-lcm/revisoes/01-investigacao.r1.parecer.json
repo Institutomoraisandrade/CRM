@@ -1,0 +1,115 @@
+{
+  "etapa": "01-investigacao",
+  "rodada": 1,
+  "revisor": "fps-lider-pesquisa",
+  "modelo_revisor": "opus",
+  "executor": "fps-1-investigador",
+  "arquivos_revisados": [
+    "01-investigacao.md",
+    "01-picos.json",
+    "01-referencias.json",
+    "verificacao/01-referencias.relatorio.json"
+  ],
+  "criterios": {
+    "delimitacao": 8.5,
+    "epidemiologia_com_fontes": 6.0,
+    "pergunta_estruturada": 8.0,
+    "desfechos_relevantes": 8.5,
+    "estrategia_de_busca": 5.0
+  },
+  "achados": [
+    {
+      "id": "A1",
+      "gravidade": "critica",
+      "local": "01-investigacao.md > §2 Panorama epidemiológico > bullet 'Brasil (ambulatório especializado)'",
+      "problema": "O número foi mal interpretado: o texto diz que 'o futebol respondeu por quase 50% dos pacientes com lesão de LCA', mas na fonte o percentual é a proporção de jogadores de futebol que tinham lesão do LCA, não a fatia do futebol entre as lesões de LCA. A frase 'ruptura completa do LCA foi a lesão mais comum em futebol, basquete e vôlei' vem da conclusão do resumo e é contradita pela Tabela 5 no caso do vôlei.",
+      "evidencia": "Texto completo PMC4108693 (PMID 25061417), Tabelas 2 e 5 e Discussão: futebol = 167 dos 440 pacientes; LCA em 54,49% dos jogadores de futebol ('The most common found injuries among football practitioners is complete rupture of the anterior cruciate ligament, with 54% of injuries'); vôlei = tendinopatia patelar 30,77% contra LCA 26,92%; entre as lesões de LCA, 34,7% estavam associadas a lesão meniscal e 6,2% a lesão do LCM.",
+      "correcao": "Reescrever o bullet: 'em 440 atletas de um ambulatório de joelho de centro de traumatologia esportiva (São Paulo; idade média 28 anos), o futebol foi o esporte mais frequente (167 pacientes), e a ruptura do LCA foi o diagnóstico mais comum entre os jogadores de futebol (≈54%); 34,7% das lesões de LCA tinham lesão meniscal associada e 6,2% lesão do LCM [@nicolini2014] (texto completo PMC)'. Manter a limitação (serviço terciário, sem denominador populacional). Retirar 'basquete e vôlei' ou citar só o futebol.",
+      "responsavel": "fps-1-investigador",
+      "licao": "Quando um percentual do resumo for ambíguo, confirme no texto completo qual é o denominador (percentual de quê) antes de reportá-lo."
+    },
+    {
+      "id": "A2",
+      "gravidade": "maior",
+      "local": "01-investigacao.md > §6 (string principal, variante e string LCM) e 01-picos.json > estrategias",
+      "problema": "A contagem declarada não confere: o texto diz '117 resultados com filtro de data 2010–2026', mas 117 é o total sem filtro de data. Com 2010–2026 a busca retorna 92 resultados. A 'variante com filtro de desenho' (59) e a 'string LCM' (15) não estão escritas por extenso; a do LCM usa '(systematic review/meta-analysis/RCT[Publication Type])', que não é sintaxe executável. As duas não podem ser reproduzidas pelo buscador.",
+      "evidencia": "PubMed (mcp__PubMed__search_articles, 09/11/2026), string principal idêntica à de 01-picos.json: sem filtro = 117; date_from 2010/date_to 2026 (pdat) = 92; com datetype edat = 92. Reconstrução literal da string LCM, com (systematic review[pt] OR meta-analysis[pt] OR randomized controlled trial[pt]) e 2010–2026, deu 9 resultados, não 15.",
+      "correcao": "Em §6 e em 01-picos.json: (1) informar a string principal com as duas contagens (117 sem filtro; 92 com 2010–2026, pdat) e a data da execução; (2) escrever por extenso, já executáveis, a variante com filtro de desenho e a string do LCM, com os campos [pt] corretos; rodar cada uma e registrar a contagem exata e o filtro usado; (3) acrescentar as strings secundárias ao 01-picos.json (ex.: chaves 'pubmed_variante_desenho' e 'pubmed_lcm'); (4) o MCP do PubMed recusa mais de 20 operadores booleanos por consulta: deixar registrado e manter cada string dentro desse limite.",
+      "responsavel": "fps-1-investigador",
+      "licao": "Declare cada contagem de busca junto do filtro exato usado (datas e tipo de data) e escreva toda string secundária por extenso e executável; contagens sem filtro e com filtro são números diferentes."
+    },
+    {
+      "id": "A3",
+      "gravidade": "maior",
+      "local": "01-investigacao.md > §6 string principal; 01-picos.json > estrategias.pubmed",
+      "problema": "A string principal é pouco sensível para a comparação 'reconstrução precoce': não recupera o único ECR sobre a estratégia (Frobell 2010, NEJM, e o seguimento de 5 anos, 2013) nem Filbay 2019. O bloco obrigatório de esporte (soccer/football/pivoting sport*/athletes) exclui estudos em 'young, active adults', e faltam no bloco de intervenção os termos noncoper/'rehabilitation alone'/'delayed reconstruction'. O texto afirma que 'recuperou os artigos esperados', o que não se sustenta para o comparador.",
+      "evidencia": "PubMed 09/11/2026: string principal AND (30790527[uid] OR 31431274[uid] OR 20660401[uid] OR 23349407[uid] OR 42233492[uid]) devolveu só 42233492 e 30790527. Em teste do revisor, ampliar o bloco de população com active[tiab] e o de intervenção com noncopers[tiab], \"rehabilitation alone\"[tiab] e \"delayed reconstruction\"[tiab] recuperou 20660401 e 23349407 (string ampliada: 168 resultados em 2010–2026).",
+      "correcao": "Revisar a string principal: ampliar a população (ex.: active[tiab] OR pivoting[tiab] OR \"Athletic Injuries\"[MeSH Terms]) e a intervenção/comparação (noncopers[tiab], \"rehabilitation alone\"[tiab], \"delayed reconstruction\"[tiab], \"optional\"[tiab]), respeitando o limite de 20 operadores (se preciso, dividir em 2 strings complementares). Testar contra a lista de controle 20660401, 23349407, 30790527, 42233492, 31431274, informar quais recupera e a contagem com 2010–2026, e corrigir a frase de 'Pertinência (calibragem)'.",
+      "responsavel": "fps-1-investigador",
+      "licao": "Teste a string principal contra uma lista de artigos-chave conhecidos (incluindo o ECR pivotal do comparador) e amplie os blocos que os excluírem antes de declarar a calibragem."
+    },
+    {
+      "id": "A4",
+      "gravidade": "maior",
+      "local": "01-investigacao.md > §2 > bullet 'Combinada LCA+LCM'",
+      "problema": "A afirmação está atribuída à fonte errada e traz um qualificador sem fonte: 'descrita como o padrão ligamentar combinado mais comum em esportes de pivô' aparece com [@birkenes2026], mas o resumo de Birkenes diz apenas que a lesão concomitante do LCM é comum nas rupturas do LCA. 'Mais comum' está em Abdul 2026, e 'em esportes de pivô' não aparece em nenhuma das fontes.",
+      "evidencia": "Resumos PubMed: Birkenes 2026 (PMID 42367014): 'Concomitant MCL injury is common in ACL tears'. Abdul 2026 (PMID 42212766): 'Combined injury of the ACL and MCL is the most common combined knee ligament injury'. Shultz 2024 (PMID 36960920): 'accounts for 20% of all ligamentous knee injuries'.",
+      "correcao": "Reescrever: 'a lesão combinada LCA+LCM é a lesão ligamentar combinada mais comum do joelho [@abdul2026] e responde por cerca de 20% das lesões ligamentares do joelho [@shultz2024]'; retirar 'em esportes de pivô'. Manter os dados do registro norueguês com [@birkenes2026].",
+      "responsavel": "fps-1-investigador",
+      "licao": "Atribua cada afirmação à fonte que efetivamente a contém e não acrescente qualificadores (população, contexto) que a fonte não traz."
+    },
+    {
+      "id": "A5",
+      "gravidade": "maior",
+      "local": "01-investigacao.md > §1 parágrafo 'LCM' (Shultz) e §4 'Mitos/controvérsias'",
+      "problema": "O texto diz que o 'LCM tratado de forma não operatória com reabilitação foi comparável ao operatório' sem informar que, em todos os braços da metanálise, o LCA foi reconstruído. Para o caso (LCA não reconstruído), isso é evidência indireta, e a revisão de van der List mostra o oposto quando o LCA não é estabilizado. Os agentes seguintes podem extrapolar o achado para o tratamento conservador do Bruno.",
+      "evidencia": "Resumo PMID 36960920: 'Three different approaches ... ACL reconstruction with (1) nonoperative MCL, (2) MCL repair, and (3) MCL reconstruction'. Resumo PMID 38242254: 'Nonoperative MCL-ACL treatment ... led to low rates of valgus stability at 30° (27%-68%)'.",
+      "correcao": "No §1, explicitar na mesma frase: '(em todos os braços o LCA foi reconstruído; evidência indireta para o cenário conservador)'. Acrescentar a ligação com van der List: no tratamento conservador dos dois ligamentos, a laxidão residual em valgo é mais frequente, então monitorar a estabilidade em valgo a 30° é critério de reavaliação médica. Ajustar a frase de mitos se depender disso.",
+      "responsavel": "fps-1-investigador",
+      "licao": "Ao citar estudo cuja população ou tratamento difere do caso (ex.: pós-cirúrgico), explicite a diferença na mesma frase e rotule como evidência indireta."
+    },
+    {
+      "id": "A6",
+      "gravidade": "maior",
+      "local": "01-picos.json > subtemas; 01-investigacao.md > §3 e §6",
+      "problema": "Falta o subtema de dose do exercício (FITT-VP): parâmetros de força do quadríceps/quadril, controle neuromuscular, pliometria (contatos), corrida e progressão de carga, com a evidência de dose-resposta disponível. Ele sustenta o critério C2 (2,5 pontos) e o trabalho do fps-prescritor-exercicio, mas aparece só na pergunta-chave 5, sem subtema, sem destino e sem string de busca. Kotsifaki 2023 relata pouca evidência de dose-resposta, e isso precisa ser buscado de forma dirigida.",
+      "evidencia": "01-picos.json: perguntas_chave[4] ('Que exercícios ... e doses (FITT-VP) têm melhor respaldo?') sem subtema nem estratégia; nenhuma string em §6 cobre dose/parametrização. Rubrica C2: 'Detalhamento e justificativa das 4 fases ... (Frequência, Intensidade, Tempo, Tipo, Volume)'.",
+      "correcao": "Acrescentar o subtema essencial 'Dose e progressão do exercício (FITT-VP) na reabilitação do joelho com LCA insuficiente: força (carga/séries/frequência), cadeia aberta × fechada, treino neuromuscular/perturbação, pliometria, retorno à corrida; ACSM como base de prescrição', com destino 'ambos' (e prescritor), na tabela do §3 e no 01-picos.json. Em §6, incluir uma string PubMed testada para esse subtema (ex.: LCA/ACL-deficient AND (\"Resistance Training\"[MeSH Terms] OR \"Plyometric Exercise\"[MeSH Terms] OR \"quadriceps strengthening\"[tiab] OR \"perturbation training\"[tiab] OR dose[tiab])), com a contagem.",
+      "responsavel": "fps-1-investigador",
+      "licao": "Em caso clínico com prescrição de exercício, a dose (FITT-VP) é subtema essencial, com estratégia de busca própria."
+    },
+    {
+      "id": "A7",
+      "gravidade": "menor",
+      "local": "01-referencias.json > kotsifaki2022triple, paterno2018, shultz2023",
+      "problema": "A correção automática do script/verificador trocou o ano do fascículo pelo ano da publicação eletrônica antecipada (kotsifaki2022triple 2022→2021; paterno2018 2018→2017). Pelo mesmo motivo, shultz2023 está com o ano da Epub (2023), mas o fascículo, vol. 52, é de 2024.",
+      "evidencia": "PubMed 09/11/2026, busca por data de publicação impressa: 34889652 AND 2022[ppdat] → encontrado; 29272209 AND 2018[ppdat] → encontrado; 36960920 AND 2024[ppdat] → encontrado; os mesmos com 2021/2017/2023[ppdat] → 0. Os outros 24 PMIDs conferem com o ano registrado (ppdat ou dp).",
+      "correcao": "APLICADA pelo revisor: ano restaurado para 2022 (kotsifaki2022triple) e 2018 (paterno2018); shultz2023 renomeado para shultz2024, com ano 2024, também nas citações de 01-investigacao.md e 01-picos.json; verificado_via anotado. Os ids kotsifaki2022triple e paterno2018 foram mantidos, porque já correspondem ao ano correto.",
+      "responsavel": "fps-op-verificador",
+      "licao": "Na referência, o ano é o do fascículo impresso (PubMed [ppdat]/DP), não o da publicação eletrônica antecipada; se o ano do PubMed divergir em 1, confirme com [ppdat] antes de 'corrigir'."
+    }
+  ],
+  "correcoes_aplicadas": [
+    "A7: 01-referencias.json, anos de kotsifaki2022triple (2022), paterno2018 (2018) e shultz2023→shultz2024 (2024) corrigidos; citações @shultz2023→@shultz2024 atualizadas no .md e no .json.",
+    "01-investigacao.md §1 (thoma2019): comparador explicitado ('em comparação com non-copers que optaram por ACLR'), conforme o resumo.",
+    "01-investigacao.md §4 (frobell2013): diferença transcrita como no resumo ('2,0 pontos; IC 95% −8,5 a 4,5; P = 0,54').",
+    "01-investigacao.md §4 (grindem2016): critérios de retorno descritos por completo (KOS-ADLS, escala global, simetria de força e de saltos >90) e HR 0,16 com p = 0,075 sinalizado como não significativo.",
+    "01-investigacao.md §4 (paterno2018): 'estudo piloto', 'pós-ACLR' e 'em até 24 meses após o retorno' acrescentados.",
+    "01-investigacao.md §4 (sturgill2009): 'concordância razoável' trocado por 'substancial' (κ = 0,75 como proporção do kappa máximo; 75 pacientes).",
+    "01-investigacao.md §4 (bullock2025): rótulo 'RR' trocado por 'estimativa agrupada', porque o resumo não nomeia a medida.",
+    "01-investigacao.md §4 (hewett2005): informado que eram 9 rupturas e que sensibilidade e especificidade se referem ao momento de abdução.",
+    "01-investigacao.md §4 (vanmelick2016): diretriz rotulada como pós-ACLR; (culvenor2022): 'majoritariamente pós-ACLR' trocado por 'várias intervenções no contexto perioperatório da ACLR, segundo o resumo'.",
+    "01-investigacao.md §3 e 01-picos.json: subtema 'Manejo do LCM' passou de complementar a essencial (destino ambos + prescritor), porque a proteção do estresse em valgo condiciona as fases 1–2.",
+    "01-investigacao.md §5 e 01-picos.json: P harmonizado com os critérios de inclusão (≥14 anos; foco em 16–40 anos).",
+    "01-investigacao.md §6 e 01-picos.json: DeCS do LCM preenchido como 'Ligamento Colateral Médio do Joelho' (forma vista em registros da BVS via WebSearch; confirmação no portal DeCS pendente, BVS bloqueada nesta sessão)."
+  ],
+  "pontos_fortes": [
+    "A inconsistência do enunciado ('pós-operatório tardio' com Lachman sem parada firme) foi registrada e discutida, não corrigida em silêncio; o escopo segue a decisão do grupo (conservador) e o curso (Educação Física, condutas multiprofissionais sinalizadas).",
+    "Os desfechos primários são clínicos (falseio, KOOS/IKDC, retorno ao esporte, nova lesão), com os substitutos (LSI, hop, valgo, derrame) explicitamente sinalizados.",
+    "As 27 referências foram verificadas no PubMed. Conferi 100% dos números epidemiológicos (nitta2021, nicolini2014, gasparin2024, lundblad2019, dellavilla2021, birkenes2026, abdul2026) e todos os efeitos de frobell2010/2013, thoma2019, grindem2016, webster2019, paterno2018, hewett2005, bullock2025, sturgill2009, ghezzi2026, shultz2024, vanderlist2024, kotsifaki2022triple, culvenor2022 e kotsifaki2023 contra o resumo/texto: fora A1 e A4, conferem.",
+    "A evidência indireta (pós-ACLR, população feminina, elite) e a lacuna da epidemiologia brasileira de futebol amador/society estão declaradas de forma honesta."
+  ],
+  "escalonado": false,
+  "veredito_revisor": "REVISAR",
+  "resumo": "Etapa 01-investigacao, rodada 1: REVISAR (1 crítico, 5 maiores; 1 menor e 11 ajustes pontuais corrigidos pelo revisor). A pergunta PICOS e os desfechos estão adequados ao caso e à rubrica. Os problemas estão na estratégia de busca (contagem 117 = sem filtro, com 2010–2026 são 92; strings secundárias não reproduzíveis; a string principal não recupera o ECR de Frobell), em um número epidemiológico mal interpretado (Nicolini) e em duas atribuições/contextos (Birkenes; Shultz). Também falta o subtema de dose FITT-VP. Sugestão não bloqueante para o orquestrador: o script conferir_referencias.py compara com o ano da Epub, então deve consultar [ppdat] antes de corrigir o ano. Epidemiologia SUS: via WebSearch existe o código SIH 04.08.05.016-0 (reconstrução do LCA), mas o DATASUS não é acessível nesta sessão; manter como lacuna declarada."
+}

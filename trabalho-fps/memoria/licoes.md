@@ -25,6 +25,7 @@ Cada executor lê a sua seção **antes** de começar. Não edite à mão: edite
 - Registre a string exata, a base, a data e o número de resultados de cada busca; contagens PRISMA precisam bater com a lista de candidatos. *(visto 1x; último: 2026-11-09)*
 
 ## fps-op-verificador
+- Ano divergente em 1 ano entre a referência e o PubMed costuma ser publicação eletrônica antecipada × fascículo impresso: a ABNT usa o ano do fascículo — não corrija, sinalize para o líder. *(visto 1x; último: 2026-11-09)*
 - No PubMed, sobrenomes brasileiros e ibéricos vêm invertidos ('da Costa Santos CM'); na referência use o último sobrenome: 'Santos, Cristina Mamédio da Costa'. *(visto 1x; último: 2026-11-09)*
 - Páginas abreviadas no PubMed ('924-6') devem ser expandidas na referência ('924-926'). *(visto 1x; último: 2026-11-09)*
 - Referência de artigo sem PMID: procure no PubMed por citação (lookup_article_by_citation) e por título antes de ir à web; só marque 'não verificada' depois das duas tentativas. *(visto 1x; último: 2026-11-09)*

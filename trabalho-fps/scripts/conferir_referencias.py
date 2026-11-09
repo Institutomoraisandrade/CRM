@@ -86,13 +86,19 @@ def conferir(r: dict, meta: dict) -> dict:
         if a != b:
             if v_ref in (None, ""):
                 res["correcoes"][campo] = b if campo != "ano" else int(b)
+            elif campo == "ano" and a.isdigit() and b.isdigit() and abs(int(a) - int(b)) == 1:
+                # Diferença de 1 ano costuma ser publicação eletrônica antecipada × fascículo impresso.
+                # A ABNT usa o ano do fascículo: não corrigir automaticamente — o líder confere.
+                res["divergencias"].append(
+                    f"ano: ref = {v_ref!r}, PubMed = {v_meta!r} (possível epub × impresso; conferir o ano do fascículo)")
+                res["ano_a_conferir"] = True
             else:
                 res["divergencias"].append(f"{campo}: ref = {v_ref!r}, PubMed = {v_meta!r}")
                 res["correcoes"][campo] = b if campo != "ano" else int(b)
     titulo_ok = sim >= 0.85
     autor_ok = not any(d.startswith("1º autor") for d in res["divergencias"])
-    if not (titulo_ok and autor_ok):
-        res["status"] = "revisar"     # identidade da obra duvidosa: decisão do líder
+    if not (titulo_ok and autor_ok) or res.get("ano_a_conferir"):
+        res["status"] = "revisar"     # identidade ou ano duvidosos: decisão do líder
     elif res["divergencias"]:
         res["status"] = "corrigivel"  # mesma obra, metadados a ajustar
     return res

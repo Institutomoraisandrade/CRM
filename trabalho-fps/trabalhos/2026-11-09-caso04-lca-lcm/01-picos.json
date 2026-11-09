@@ -7,7 +7,7 @@
     {
       "letra": "P",
       "rotulo": "População",
-      "texto": "Atleta jovem (16–40 anos) de esporte com pivô/mudança de direção (ex.: futebol society), com LCA insuficiente (Lachman/gaveta positivos) ± estiramento do LCM, tratado de forma conservadora"
+      "texto": "Atleta jovem (≥14 anos; foco em adultos jovens de 16–40 anos) de esporte com pivô/mudança de direção (ex.: futebol society), com LCA insuficiente (Lachman/gaveta positivos) ± estiramento do LCM, tratado de forma conservadora"
     },
     {
       "letra": "I",
@@ -55,7 +55,7 @@
     "decs": [
       "Lesões do Ligamento Cruzado Anterior",
       "Ligamento Cruzado Anterior",
-      "Ligamentos Colaterais (confirmar o descritor específico do LCM no portal DeCS)",
+      "Ligamento Colateral Médio do Joelho (forma vista em registros da BVS via WebSearch; confirmar no portal DeCS — acesso à BVS bloqueado nesta sessão)",
       "Tratamento Conservador",
       "Terapia por Exercício",
       "Treinamento Resistido",
@@ -158,9 +158,9 @@
       "destino": "ambos"
     },
     {
-      "nome": "Manejo do LCM em lesão combinada (grau, laxidão em valgo, cicatrização)",
-      "prioridade": "complementar",
-      "destino": "agente3"
+      "nome": "Manejo do LCM em lesão combinada (grau, proteção do estresse em valgo nas fases iniciais, laxidão residual, cicatrização)",
+      "prioridade": "essencial",
+      "destino": "ambos"
     },
     {
       "nome": "Fatores psicológicos (medo de nova lesão, ACL-RSI)",
