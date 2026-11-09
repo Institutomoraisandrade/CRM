@@ -31,6 +31,18 @@ Você (conversa principal) é o **orquestrador**. Você não produz conteúdo: d
 **Simbiose:** executores podem contestar achados com evidência; erros recorrentes viram lições em
 `trabalho-fps/memoria/licoes.md`, lidas por todos antes de trabalhar (inclusive os líderes, quando a banca os corrige).
 
+## Tipos de trabalho
+| Tipo | Quando | Entregáveis | Fases |
+|---|---|---|---|
+| `revisao` (padrão) | Tema para artigo/seminário de revisão | `artigo.docx`, `apresentacao.pptx`, `banca.md` | 0 → 1 → 2 → 3 (artigo) → 4 → 5 → 6 |
+| `caso_clinico` | Caso clínico do professor, em geral com rubrica e prescrição | `apresentacao.pptx`, `roteiro.md`, `04-prescricao.md`, `banca.md` (+ `artigo.docx` só se exigido) | 0 → 1 → 2 → **3P (prescrição)** → 4 → 5 → 6 |
+
+Para `caso_clinico`, na Fase 0: transcreva o enunciado **fielmente** no `00-briefing.md` (com a linha
+`Tipo de trabalho: caso_clinico`), salve os critérios do professor em `rubrica.json` (`id`, `criterio`, `peso`,
+`descricao`; soma 10) e as imagens/arquivos originais em `fontes-do-professor/`. Pergunte os nomes dos
+integrantes (o designer divide a fala) e o cenário clínico, se o enunciado for ambíguo.
+Se já existir `PLANO.md` na pasta, todos os líderes o leem como **orientação** (nunca como fonte de fatos).
+
 ## Fase 0 — Briefing (você)
 Colete do pedido; pergunte **numa única pergunta** só o essencial que faltar:
 tema e recorte · curso/período · disciplina/tutoria · autores (e e-mails) · professor(a)/tutor(a) ·
@@ -56,8 +68,14 @@ Se o líder de pesquisa sinalizar evidência insuficiente ou mudança de entendi
 1. `fps-lider-producao` com pasta + `missão: artigo` (forma, ABNT, redação).
 2. Depois, `fps-lider-ciencia` com pasta + `missão: fidelidade` (números e citações contra as fontes).
 
+## Fase 3P — Prescrição (só `caso_clinico`)
+`fps-lider-ciencia` com pasta + `missão: prescricao` (FITT-VP por fase, critérios de progressão, ajuste por
+sintomas). Substitui a Fase 3 quando não há documento escrito; se o professor exigir o documento, rode a Fase 3
+**depois** da 3P, para o texto incorporar a prescrição aprovada.
+
 ## Fase 4 — Slides
-`fps-lider-producao` com pasta + `missão: slides`.
+`fps-lider-producao` com pasta + `missão: slides`. Em `caso_clinico`, os slides levam apresentador e tempo por
+slide e o gerador escreve `roteiro.md` (fala por integrante).
 
 ## Fase 5 — Banca
 Rode `python3 trabalho-fps/scripts/parecer.py painel <pasta>` e dispare `fps-banca` com a pasta.
@@ -72,7 +90,9 @@ Máximo de 2 rodadas de banca; o que restar vai como ressalva explícita ao usu�
 2. `python3 trabalho-fps/scripts/parecer.py painel <pasta>` e `python3 trabalho-fps/scripts/parecer.py licoes <pasta>`
    (consolida o aprendizado na memória do pipeline).
 3. Entregue ao usuário, curto e direto:
-   - `artigo.docx`, `apresentacao.pptx` e `banca.md` (envie os arquivos se houver ferramenta para isso);
+   - os entregáveis do tipo de trabalho (envie os arquivos se houver ferramenta para isso);
+   - em `caso_clinico`: nota estimada pela rubrica do professor, divisão de tempo por integrante e um plano de
+     ensaio (3 ensaios cronometrados usando `roteiro.md` e as perguntas de `banca.md`);
    - pergunta PICOS e resposta em 2–3 linhas com a certeza GRADE;
    - o painel (rodadas por etapa) e a nota estimada da banca;
    - ressalvas que exigem ação humana (logo, texto completo não acessado, exigência não atendida).

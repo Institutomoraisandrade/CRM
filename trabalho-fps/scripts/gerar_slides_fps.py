@@ -6,7 +6,13 @@ Uso:
 
 Layouts disponíveis (campo "layout" de cada slide):
   capa, secao, topicos, dois_colunas, fluxo, numeros, tabela, picos,
-  evidencias, mensagem, conclusao, imagem, referencias, encerramento
+  evidencias, mensagem, conclusao, imagem, referencias, encerramento,
+  fases (visão geral das fases de um programa), fitt (FITT-VP de uma fase),
+  semaforo (ajuste de carga por sintomas)
+
+Apresentação em equipe: cada slide pode ter "apresentador" e "tempo_seg". O gerador
+soma o tempo por integrante, avisa sobre desequilíbrio e estouro do tempo
+("tempo_minutos") e escreve roteiro.md (fala por integrante, com marcas de tempo).
 
 Princípios embutidos (apresentação limpa, direta e sem redundância):
   - uma ideia por slide; título = mensagem (frase-afirmação), não rótulo;
@@ -65,6 +71,11 @@ def altura_texto(texto: str, largura_pol: float, tamanho_pt: float, entre: float
     por_linha = max(1, int(largura_pol * 144 / tamanho_pt))
     linhas = sum(max(1, math.ceil(len(par) / por_linha)) for par in limpo.split("\n"))
     return linhas * tamanho_pt * entre / 72
+
+
+def mmss(seg) -> str:
+    seg = int(round(float(seg)))
+    return f"{seg // 60}:{seg % 60:02d}"
 
 
 def rgb(hexa: str) -> RGBColor:
@@ -296,8 +307,14 @@ class Construtor:
         self.logo(slide, W - MX, 6.86, 0.4)
 
     def notas(self, slide, s: dict):
+        cab = []
+        if s.get("apresentador"):
+            cab.append(f"🎤 {s['apresentador']}")
+        if s.get("tempo_seg"):
+            cab.append(mmss(s["tempo_seg"]))
+        prefixo = (" — ".join(cab) + "\n") if cab else ""
         if s.get("notas"):
-            slide.notes_slide.notes_text_frame.text = self.t(s["notas"])
+            slide.notes_slide.notes_text_frame.text = prefixo + self.t(s["notas"])
         elif s.get("layout") not in ("capa", "secao", "encerramento", "referencias"):
             self.avisos.append(f"slide {self.n}: sem 'notas' do apresentador")
 
@@ -766,23 +783,220 @@ class Construtor:
                        realce=self.m.c["texto_sobre_primaria"])
         self.notas(sl, s)
 
+
+    def fases(self, s):
+        """Visão geral de um programa em fases (2–5), com critério de saída de cada uma."""
+        sl = self.novo()
+        self.titulo(sl, s["titulo"])
+        fases = s["fases"]
+        n = len(fases)
+        if not 2 <= n <= 5:
+            raise ErroEntrada(f"slide {self.n}: 'fases' aceita de 2 a 5 fases")
+        seta = 0.32
+        cw = (W - 2 * MX - (n - 1) * seta) / n
+        y = TOPO_CONTEUDO + 0.05
+        h = BASE_CONTEUDO - y
+        t = 14 if n <= 4 else 12
+        hs_max = max((altura_texto(f["saida"], cw - 0.5, t - 1) + 0.45 for f in fases if f.get("saida")), default=0)
+        for i, f in enumerate(fases):
+            x = MX + i * (cw + seta)
+            self.forma(sl, x, y, cw, h, self.m.c["fundo_suave"], MSO_SHAPE.ROUNDED_RECTANGLE, raio=0.04)
+            self.forma(sl, x, y, cw, 0.95, self.m.c["primaria"], MSO_SHAPE.ROUNDED_RECTANGLE, raio=0.1)
+            self.forma(sl, x, y + 0.5, cw, 0.45, self.m.c["primaria"])
+            self.texto(sl, x + 0.18, y + 0.08, cw - 0.36, 0.3, f"FASE {i + 1}", tamanho=11,
+                       cor=self.m.c["destaque"], negrito=True)
+            self.texto(sl, x + 0.18, y + 0.36, cw - 0.36, 0.55, f.get("nome", ""), tamanho=15 if n <= 4 else 13,
+                       cor=self.m.c["texto_sobre_primaria"], negrito=True, ancora="topo", entre=0.95,
+                       fonte=self.m.fonte_titulo)
+            yy = y + 1.1
+            for rot, chave in (("Objetivo", "objetivo"), ("FITT-VP", "fitt")):
+                if f.get(chave):
+                    self.texto(sl, x + 0.18, yy, cw - 0.36, 0.25, rot.upper(), tamanho=10,
+                               cor=self.m.c["secundaria"], negrito=True)
+                    alt = altura_texto(f[chave], cw - 0.36, t) + 0.1
+                    self.texto(sl, x + 0.18, yy + 0.27, cw - 0.36, alt, f[chave], tamanho=t,
+                               cor=self.m.c["texto"], realce=self.m.c["primaria"])
+                    yy += 0.27 + alt + 0.12
+                    self._registrar(f[chave])
+            if f.get("saida"):
+                hs = hs_max
+                ys = y + h - hs - 0.15
+                self.forma(sl, x + 0.12, ys, cw - 0.24, hs, self.m.c["fundo"], MSO_SHAPE.ROUNDED_RECTANGLE, raio=0.08)
+                self.forma(sl, x + 0.12, ys, 0.07, hs, self.m.c["destaque"])
+                self.texto(sl, x + 0.3, ys + 0.08, cw - 0.5, 0.25, "CRITÉRIO DE SAÍDA", tamanho=9,
+                           cor=self.m.c["texto_suave"], negrito=True)
+                self.texto(sl, x + 0.3, ys + 0.32, cw - 0.5, hs - 0.36, f["saida"], tamanho=t - 1,
+                           cor=self.m.c["texto"])
+            if i < n - 1:
+                self.forma(sl, x + cw + 0.06, y + 0.3, seta - 0.12, 0.36, self.m.c["secundaria"], MSO_SHAPE.CHEVRON)
+        self.rodape(sl, s.get("fonte"))
+        self.notas(sl, s)
+
+    ROTULOS_FITT = [("F", "Frequência"), ("I", "Intensidade"), ("T", "Tempo"), ("Tipo", "Tipo"),
+                    ("V", "Volume"), ("P", "Progressão")]
+
+    def fitt(self, s):
+        """Prescrição de uma fase: F, I, T, Tipo, V, P + exercícios-chave e critério de saída."""
+        sl = self.novo()
+        self.titulo(sl, s["titulo"])
+        itens = s.get("itens", {})
+        faltando = [r for c, r in self.ROTULOS_FITT if not itens.get(c)]
+        if faltando:
+            self.avisos.append(f"slide {self.n}: FITT-VP incompleto (faltam: {', '.join(faltando)})")
+        lado = bool(s.get("exercicios") or s.get("saida"))
+        larg = 7.55 if lado else W - 2 * MX
+        presentes = [(c, r) for c, r in self.ROTULOS_FITT if itens.get(c)]
+        rh = (BASE_CONTEUDO - TOPO_CONTEUDO - 0.05) / max(len(presentes), 1)
+        tam = 15 if rh >= 0.72 else 13
+        for k, (c, rot) in enumerate(presentes):
+            y = TOPO_CONTEUDO + 0.05 + k * rh
+            letra = "T" if c == "Tipo" else c
+            self.forma(sl, MX, y + rh / 2 - 0.28, 0.56, 0.56,
+                       self.m.c["secundaria"] if c != "P" else self.m.c["primaria"], MSO_SHAPE.OVAL)
+            self.texto(sl, MX, y + rh / 2 - 0.28, 0.56, 0.56, letra, tamanho=17,
+                       cor=self.m.c["texto_sobre_primaria"], negrito=True, alinhar="centro", ancora="meio")
+            self.texto(sl, MX + 0.75, y, 1.55, rh, rot, tamanho=14, cor=self.m.c["primaria"], negrito=True,
+                       ancora="meio")
+            self.texto(sl, MX + 2.35, y, larg - 2.35, rh, itens[c], tamanho=tam, cor=self.m.c["texto"],
+                       ancora="meio", realce=self.m.c["primaria"])
+            self._registrar(itens[c])
+            if k < len(presentes) - 1:
+                self.forma(sl, MX + 0.75, y + rh - 0.01, larg - 0.75, 0.015, self.m.c["fundo_suave"])
+        if lado:
+            x = MX + larg + 0.35
+            w = W - MX - x
+            y = TOPO_CONTEUDO + 0.05
+            if s.get("exercicios"):
+                ex = s["exercicios"]
+                he = min(3.4, 0.7 + sum(altura_texto(e, w - 0.85, 13) + 0.2 for e in ex))
+                self.forma(sl, x, y, w, he, self.m.c["fundo_suave"], MSO_SHAPE.ROUNDED_RECTANGLE, raio=0.05)
+                self.texto(sl, x + 0.25, y + 0.15, w - 0.5, 0.3, "EXERCÍCIOS-CHAVE", tamanho=10,
+                           cor=self.m.c["secundaria"], negrito=True)
+                self.topicos_em(sl, x + 0.25, y + 0.5, w - 0.45, he - 0.55, ex, 13)
+                y += he + 0.25
+            if s.get("saida"):
+                hs = BASE_CONTEUDO - y
+                self.forma(sl, x, y, w, hs, self.m.c["primaria"], MSO_SHAPE.ROUNDED_RECTANGLE, raio=0.05)
+                self.texto(sl, x + 0.25, y + 0.15, w - 0.5, 0.3, "CRITÉRIO PARA AVANÇAR", tamanho=10,
+                           cor=self.m.c["destaque"], negrito=True)
+                saida = s["saida"] if isinstance(s["saida"], list) else [s["saida"]]
+                self.texto(sl, x + 0.25, y + 0.5, w - 0.5, hs - 0.6, ["• " + self.t(z) for z in saida],
+                           tamanho=13, cor=self.m.c["texto_sobre_primaria"], espaco_depois=4)
+        self.rodape(sl, s.get("fonte"))
+        self.notas(sl, s)
+
+    CORES_SEMAFORO = {"verde": ("#2E9D4E", "Verde"), "amarelo": ("#E8A800", "Amarelo"),
+                      "vermelho": ("#D64545", "Vermelho")}
+
+    def semaforo(self, s):
+        """Regras de ajuste de carga por sintomas (dor, derrame, falseio)."""
+        sl = self.novo()
+        self.titulo(sl, s["titulo"])
+        niveis = s["niveis"]
+        n = len(niveis)
+        y0 = TOPO_CONTEUDO + 0.05
+        cab = 0.35
+        self.texto(sl, MX + 2.3, y0, 4.6, cab, "SINAL", tamanho=10, cor=self.m.c["texto_suave"], negrito=True)
+        self.texto(sl, MX + 7.2, y0, 4.6, cab, "CONDUTA", tamanho=10, cor=self.m.c["texto_suave"], negrito=True)
+        rh = (BASE_CONTEUDO - y0 - cab) / max(n, 1)
+        for k, nv in enumerate(niveis):
+            hexa, rot = self.CORES_SEMAFORO.get(nv.get("cor", "").lower(), (self.m.hex["texto_suave"], nv.get("cor", "")))
+            y = y0 + cab + k * rh
+            self.forma(sl, MX, y + 0.08, W - 2 * MX, rh - 0.16, self.m.c["fundo_suave"], MSO_SHAPE.ROUNDED_RECTANGLE, raio=0.06)
+            self.forma(sl, MX, y + 0.08, 2.05, rh - 0.16, rgb(hexa), MSO_SHAPE.ROUNDED_RECTANGLE, raio=0.1)
+            self.texto(sl, MX, y + 0.08, 2.05, rh - 0.16, nv.get("rotulo", rot), tamanho=18,
+                       cor=rgb("#FFFFFF"), negrito=True, alinhar="centro", ancora="meio")
+            self.texto(sl, MX + 2.3, y + 0.1, 4.6, rh - 0.2, nv.get("sinal", ""), tamanho=15,
+                       cor=self.m.c["texto"], ancora="meio", realce=self.m.c["primaria"])
+            self.texto(sl, MX + 7.2, y + 0.1, W - MX - 7.4 - 0.2, rh - 0.2, nv.get("conduta", ""), tamanho=15,
+                       cor=self.m.c["texto"], ancora="meio", negrito=False, realce=self.m.c["primaria"])
+            self._registrar(f"{nv.get('sinal', '')} {nv.get('conduta', '')}")
+        self.rodape(sl, s.get("fonte"))
+        self.notas(sl, s)
+
+    # ================================================================ tempo e roteiro
+    def cronometragem(self) -> dict:
+        itens = self.cronograma
+        com_tempo = [c for c in itens if c.get("tempo_seg")]
+        if not com_tempo:
+            return {}
+        if len(com_tempo) < len(itens):
+            sem = [str(c["slide"]) for c in itens if not c.get("tempo_seg") and c["layout"] not in ("referencias",)]
+            if sem:
+                self.avisos.append(f"slides sem 'tempo_seg': {', '.join(sem)}")
+        total = sum(float(c["tempo_seg"]) for c in com_tempo)
+        por = {}
+        for c in com_tempo:
+            nome = c.get("apresentador") or "(sem apresentador)"
+            por[nome] = por.get(nome, 0) + float(c["tempo_seg"])
+        limite = float(self.d.get("tempo_minutos") or 0) * 60
+        if limite:
+            if total > limite:
+                self.avisos.append(f"tempo planejado {mmss(total)} estoura o limite de {mmss(limite)}")
+            elif total > limite * 0.95:
+                self.avisos.append(f"tempo planejado {mmss(total)} sem folga (limite {mmss(limite)}; deixe ~5–10%)")
+            elif total < limite * 0.75:
+                self.avisos.append(f"tempo planejado {mmss(total)} bem abaixo de {mmss(limite)}")
+        nomes = [k for k in por if k != "(sem apresentador)"]
+        if len(nomes) >= 2:
+            media = sum(por[k] for k in nomes) / len(nomes)
+            for k in nomes:
+                if abs(por[k] - media) > 0.2 * media:
+                    self.avisos.append(f"participação desequilibrada: {k} fala {mmss(por[k])} (média {mmss(media)})")
+        return {"total": mmss(total), "por_apresentador": {k: mmss(v) for k, v in por.items()}}
+
+    def roteiro(self, destino: Path, crono: dict) -> None:
+        linhas = [f"# Roteiro da apresentação — {self.d.get('titulo', '')}", ""]
+        if crono:
+            linhas.append(f"**Tempo planejado:** {crono['total']}"
+                          + (f" de {self.d['tempo_minutos']}:00" if self.d.get("tempo_minutos") else ""))
+            linhas += ["", "| Integrante | Tempo de fala |", "|---|---|"]
+            linhas += [f"| {k} | {v} |" for k, v in crono["por_apresentador"].items()]
+            linhas.append("")
+        relogio = 0.0
+        atual = None
+        for c in self.cronograma:
+            if c["layout"] == "referencias" and not c.get("tempo_seg"):
+                continue
+            ini, dur = relogio, float(c.get("tempo_seg") or 0)
+            relogio += dur
+            if c.get("apresentador") != atual:
+                atual = c.get("apresentador")
+                linhas += [f"## 🎤 {atual or 'Sem apresentador definido'}", ""]
+            faixa = f"[{mmss(ini)}–{mmss(relogio)}]" if dur else "[—]"
+            linhas.append(f"**{faixa} Slide {c['slide']} — {c['titulo']}**")
+            if c.get("notas"):
+                linhas += ["", self.t(c["notas"])]
+            linhas.append("")
+        destino.write_text("\n".join(linhas), encoding="utf-8")
+
     # ================================================================ fluxo
-    def gerar(self, saida: Path) -> dict:
+    def gerar(self, saida: Path, roteiro: Path | None = None) -> dict:
         slides = self.d.get("slides") or []
         if not slides:
             raise ErroEntrada("'slides' vazio")
         # Referências ficam por último para listar o que foi citado nos slides anteriores.
+        self.cronograma = []
         for s in slides:
             layout = s.get("layout", "topicos")
             fn = getattr(self, layout, None)
-            if fn is None or layout.startswith("_"):
+            if fn is None or layout.startswith("_") or layout in ("gerar", "roteiro", "cronometragem"):
                 raise ErroEntrada(f"layout desconhecido: {layout}")
+            inicio = self.n + 1
             fn(s)
+            self.cronograma.append({"slide": inicio, "layout": layout,
+                                    "titulo": self.t(s.get("titulo") or self.d.get("titulo", "")),
+                                    "apresentador": s.get("apresentador"), "tempo_seg": s.get("tempo_seg"),
+                                    "notas": s.get("notas")})
+        crono = self.cronometragem()
         if not (self.m.arquivo("logo") or self.m.arquivo("logo_negativo")):
             self.avisos.insert(0, "logo da FPS não encontrado em marca/ — usando marcador de texto")
         saida.parent.mkdir(parents=True, exist_ok=True)
         self.prs.save(str(saida))
-        return {"arquivo": str(saida), "slides": len(self.prs.slides),
+        if roteiro and (crono or any(c.get("apresentador") for c in self.cronograma)):
+            self.roteiro(roteiro, crono)
+        return {"arquivo": str(saida), "slides": len(self.prs.slides), "tempo": crono or None,
+                "roteiro": str(roteiro) if roteiro and roteiro.exists() else None,
                 "citacoes_sem_referencia": self.cit.ausentes, "avisos": self.avisos}
 
 
@@ -800,7 +1014,8 @@ def main() -> int:
     if dados.get("referencias_arquivo"):
         refs = abnt.carregar_referencias(base / dados["referencias_arquivo"])
     try:
-        res = Construtor(dados, base, marca, refs).gerar(a.saida or a.json.with_suffix(".pptx"))
+        saida = a.saida or a.json.with_suffix(".pptx")
+        res = Construtor(dados, base, marca, refs).gerar(saida, saida.parent / "roteiro.md")
     except (ErroEntrada, KeyError) as e:
         print(f"ERRO: {e}", file=sys.stderr)
         return 2

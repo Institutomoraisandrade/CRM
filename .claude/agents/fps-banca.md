@@ -35,6 +35,18 @@ Alguma contestação foi aceita sem evidência? Erros que os líderes deveriam t
 ### 4. Avaliação como banca da FPS
 Dê nota de 0 a 10, com justificativa curta, para cada critério da etapa `banca`
 (`python3 trabalho-fps/scripts/parecer.py modelo banca`).
+**Se existir `rubrica.json`** (critérios e pesos do professor), avalie também por ela: no parecer, campo
+`"rubrica": [{"id": "C1", "peso": 2.5, "nota": 2.1, "justificativa": "..."}]` — nota de 0 ao peso de cada
+critério. O `parecer.py avaliar` soma a nota estimada. Seja o professor exigente, não o colega generoso.
+
+### 5. Caso clínico (briefing `caso_clinico`)
+- Produtos a auditar: `02-analise-critica.md`, `04-prescricao.json`/`.md`, `slides.json`, `roteiro.md`
+  (e `artigo.json`, se houver).
+- **Tempo**: confira se a fala de cada slide cabe no `tempo_seg` (~130–150 palavras/minuto) e se a divisão
+  entre integrantes é equilibrada.
+- **Arguição**: inclua pelo menos 4 cenários de sintomas (dor durante o exercício, dor/rigidez no dia seguinte,
+  aumento de derrame, falseio ou bloqueio) com a conduta e a regra que a sustenta, e a pergunta
+  "e se o cenário clínico fosse outro?". Distribua as perguntas por integrante (cada um responde sobre o seu bloco).
 
 ## Saídas
 - `revisoes/banca.r<N>.parecer.json` — parecer no formato do PROTOCOLO §8 (`modelo_revisor`: `fable`).
@@ -45,6 +57,7 @@ Dê nota de 0 a 10, com justificativa curta, para cada critério da etapa `banca
   ## Veredito (pronto para entrega? sim / com ressalvas / não) e nota estimada por critério
   ## O que está forte (3 pontos)
   ## Riscos que um professor apontaria (e como responder)
+  ## Nota estimada pela rubrica do professor (se houver rubrica.json)
   ## Arguição: 10 perguntas prováveis com respostas-modelo (citando as referências do próprio trabalho)
   ## 3 perguntas difíceis sobre limitações da evidência
   ## Checklist final do estudante (o que ler/conferir pessoalmente antes de entregar)

@@ -10,7 +10,10 @@ Cada subagente lê este arquivo antes de começar.
 
 ```
 trabalho-fps/trabalhos/<AAAA-MM-DD>-<slug-do-tema>/
-├── 00-briefing.md              ← orquestrador (tema, curso, autores, exigências do professor)
+├── 00-briefing.md              ← orquestrador (tema/enunciado, curso, autores, exigências; "Tipo de trabalho")
+├── rubrica.json                ← orquestrador · critérios e pesos do professor (quando houver)
+├── fontes-do-professor/        ← enunciado, rubrica e modelos originais (imagens/arquivos)
+├── PLANO.md                    ← (opcional) estudo e plano prévio — orientação, nunca fonte de fatos
 ├── 01-investigacao.md          ← fps-1-investigador (Sonnet)
 ├── 01-picos.json               ←   pergunta estruturada + estratégias de busca
 ├── 01-referencias.json         ←   definição, classificação, epidemiologia
@@ -21,10 +24,13 @@ trabalho-fps/trabalhos/<AAAA-MM-DD>-<slug-do-tema>/
 ├── 03-evidencias.md            ← fps-3-avaliador-evidencias (Sonnet)
 ├── 03-referencias.json         ←
 ├── 03-quadro-evidencias.json   ←   dados estruturados dos estudos incluídos
+├── 04-prescricao.json / .md    ← fps-prescritor-exercicio (Sonnet) · só em caso clínico: fases FITT-VP
+├── 04-referencias.json         ←
 ├── verificacao/                ← fps-op-verificador (Haiku) · metadados PubMed e relatórios de conferência
 ├── referencias.json            ← fps-4-redator-abnt · mescla de 01 + 02 + 03 (scripts/mesclar_referencias.py)
 ├── artigo.json  → artigo.docx  ← fps-4-redator-abnt (Sonnet)
 ├── slides.json  → apresentacao.pptx ← fps-5-designer-slides (Sonnet)
+├── roteiro.md                  ← gerado com os slides · fala por integrante com marcas de tempo
 ├── revisoes/                   ← pareceres dos líderes (Opus) e da banca (Fable) + respostas dos executores
 ├── painel.md                   ← scripts/parecer.py painel (status de todas as etapas)
 ├── banca.md                    ← fps-banca (Fable) · parecer final + preparação para a arguição
@@ -139,7 +145,7 @@ Avaliação crítica: **AMSTAR 2** (revisões), **RoB 2** (ECR), **ROBINS-I/Newc
 |---|---|---|---|
 | 4 · Auditoria final | **Fable 5.2** (`fable`) | `fps-banca` | Revisa o produto final **e os próprios revisores**; simula a banca |
 | 3 · Liderança e revisão | **Opus 5.5** (`opus`) | `fps-lider-pesquisa`, `fps-lider-ciencia`, `fps-lider-producao` | Coordenam os executores da sua fase, revisam, devolvem correções e só entregam o que passou no portão |
-| 2 · Execução de conteúdo | **Sonnet 5.5** (`sonnet`) | `fps-1-investigador`, `fps-2-analista-critico`, `fps-3-avaliador-evidencias`, `fps-4-redator-abnt`, `fps-5-designer-slides` | Produzem o conteúdo |
+| 2 · Execução de conteúdo | **Sonnet 5.5** (`sonnet`) | `fps-1-investigador`, `fps-2-analista-critico`, `fps-3-avaliador-evidencias`, `fps-prescritor-exercicio`, `fps-4-redator-abnt`, `fps-5-designer-slides` | Produzem o conteúdo |
 | 1 · Operacional | **Haiku 5.5** (`haiku`) | `fps-op-buscador`, `fps-op-verificador` | Tarefas mecânicas de volume: rodar buscas, triar, conferir metadados |
 | 0 · Determinística | — (scripts) | `scripts/*.py` | ABNT, portões, validação, prévias — nada que um código faça melhor fica com um modelo |
 
@@ -153,7 +159,8 @@ Arquivos em `<pasta>/revisoes/`:
 - `<etapa>.r<N>.parecer.json` — parecer do revisor na rodada N (`python3 trabalho-fps/scripts/parecer.py modelo <etapa>` gera o esqueleto).
 - `<etapa>.r<N>.resposta.json` — resposta do executor ao parecer N: `[{"id": "A1", "status": "corrigido|contestado", "detalhe": "..."}]`.
 
-Etapas: `01-investigacao`, `03a-busca`, `03-evidencias`, `02-analise`, `artigo-forma`, `artigo-fidelidade`, `slides`, `banca`.
+Etapas: `01-investigacao`, `03a-busca`, `03-evidencias`, `02-analise`, `04-prescricao` (caso clínico),
+`artigo-forma`, `artigo-fidelidade` (revisão, ou caso clínico com documento), `slides`, `banca`.
 
 **Gravidade dos achados**
 - `critica` — erro factual; referência inexistente, errada ou não verificada; número sem fonte ou divergente da fonte; extrapolação indevida; viola norma obrigatória; compromete a resposta à pergunta.
@@ -217,3 +224,19 @@ resumo do PMID 12345678 (RR 0,79; 0,70–0,89) → corrigir no texto e no quadro
 **Fallback (modo plano):** se você não tiver a ferramenta `Agent` (limite de profundidade ou versão do
 Claude Code), não execute o trabalho do executor: responda ao orquestrador `MODO PLANO NECESSÁRIO` com a lista
 de disparos; ele dispara os executores e chama você de novo apenas para revisar.
+
+## 12. Tipos de trabalho
+
+| Tipo | Linha no `00-briefing.md` | Etapas com portão | Produto principal |
+|---|---|---|---|
+| Revisão (padrão) | `Tipo de trabalho: revisao` | 01, 03a, 03, 02, artigo-forma, artigo-fidelidade, slides, banca | artigo ABNT + slides |
+| Caso clínico | `Tipo de trabalho: caso_clinico` | 01, 03a, 03, 02, **04-prescricao**, slides, banca (+ artigo-* se houver `artigo.json`) | slides + roteiro + prescrição + arguição |
+
+No caso clínico:
+- a **rubrica do professor** (`rubrica.json`) orienta a estrutura dos slides e a nota estimada pela banca;
+- o raciocínio clínico (biomecânica, testes, compensações) é a missão do Agente 2;
+- a prescrição (FITT-VP por fase, critérios de progressão, ajuste por sintomas) é do `fps-prescritor-exercicio`;
+- o enunciado do professor é **dado do caso** (não precisa de referência), mas toda interpretação, conduta e
+  número fora do enunciado segue as regras de integridade da §5;
+- se o enunciado for ambíguo ou internamente inconsistente, isso é registrado e discutido (é material de
+  raciocínio clínico), nunca "corrigido" em silêncio.

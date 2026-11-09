@@ -44,6 +44,8 @@ CRITERIOS = {
                       "certeza_grade", "atualidade_das_diretrizes"],
     "02-analise": ["cadeia_causal", "precisao_dos_detalhes", "classificacao_da_certeza",
                    "analise_critica", "qualidade_das_fontes"],
+    "04-prescricao": ["seguranca_clinica", "fundamentacao_em_evidencia", "completude_fitt_vp",
+                      "criterios_de_progressao", "ajuste_por_sintomas", "especificidade_ao_caso"],
     "artigo-forma": ["estrutura_abnt", "redacao_cientifica", "coesao_do_argumento",
                      "discussao_critica", "ausencia_de_redundancia"],
     "artigo-fidelidade": ["fidelidade_das_citacoes", "precisao_numerica",
@@ -54,6 +56,51 @@ CRITERIOS = {
               "apresentacao", "coerencia_global", "rigor_das_revisoes"],
 }
 ORDEM_ETAPAS = list(CRITERIOS)
+ETAPAS_ARTIGO = ("artigo-forma", "artigo-fidelidade")
+
+
+def tipo_trabalho(pasta: Path) -> str:
+    """'caso_clinico' ou 'revisao' (padrão), lido do 00-briefing.md."""
+    b = pasta / "00-briefing.md"
+    if b.exists() and re.search(r"tipo de trabalho:?\**\s*`?caso_clinico", b.read_text(encoding="utf-8"), re.I):
+        return "caso_clinico"
+    return "revisao"
+
+
+def etapas_exigidas(pasta: Path) -> list[str]:
+    if tipo_trabalho(pasta) == "caso_clinico":
+        com_artigo = (pasta / "artigo.json").exists()
+        return [e for e in ORDEM_ETAPAS if com_artigo or e not in ETAPAS_ARTIGO]
+    return [e for e in ORDEM_ETAPAS if e != "04-prescricao"]
+
+
+def avaliar_rubrica(par: dict, arq_parecer: Path | None) -> tuple[float | None, list[str]]:
+    """Nota estimada pela rubrica do professor (rubrica.json na pasta do trabalho)."""
+    itens = par.get("rubrica")
+    if not itens:
+        return None, []
+    avisos = []
+    oficial = None
+    if arq_parecer is not None:
+        r = arq_parecer.resolve().parent.parent / "rubrica.json"
+        if r.exists():
+            oficial = {c["id"]: c for c in json.loads(r.read_text(encoding="utf-8"))}
+    total = 0.0
+    for it in itens:
+        peso = float(it.get("peso", 0))
+        if oficial and it.get("id") in oficial:
+            peso = float(oficial[it["id"]]["peso"])
+        nota = it.get("nota")
+        if not isinstance(nota, (int, float)) or not 0 <= nota <= peso:
+            raise ParecerInvalido(f"rubrica {it.get('id')}: nota {nota!r} fora de 0–{peso}")
+        if not it.get("justificativa"):
+            avisos.append(f"rubrica {it.get('id')}: sem justificativa")
+        total += nota
+    if oficial:
+        faltam = sorted(set(oficial) - {it.get("id") for it in itens})
+        if faltam:
+            raise ParecerInvalido(f"rubrica sem nota para: {', '.join(faltam)}")
+    return round(total, 2), avisos
 
 
 class ParecerInvalido(ValueError):
@@ -99,7 +146,7 @@ def modelo(etapa: str) -> dict:
 
 
 # ------------------------------------------------------------------ avaliar
-def avaliar(par: dict) -> tuple[str, list[str], dict]:
+def avaliar(par: dict, arq: Path | None = None) -> tuple[str, list[str], dict]:
     """Retorna (decisão, avisos, estatísticas)."""
     avisos: list[str] = []
     etapa = par.get("etapa")
@@ -154,6 +201,10 @@ def avaliar(par: dict) -> tuple[str, list[str], dict]:
     if not aprovado and media >= MEDIA_MINIMA and not (cont["critica"] or cont["maior"]):
         avisos.append(f"reprovado por nota mínima < {NOTA_MINIMA}")
     est = {"media": round(media, 2), "minimo": minimo, **cont}
+    nota_rubrica, av_rub = avaliar_rubrica(par, arq)
+    avisos += av_rub
+    if nota_rubrica is not None:
+        est["nota_rubrica"] = nota_rubrica
     return decisao, avisos, est
 
 
@@ -198,20 +249,26 @@ def painel(pasta: Path) -> str:
               "| Etapa | Executor | Revisor (modelo) | Rodadas | Decisão | Crít. | Maior | Menor | Média |",
               "|---|---|---|---|---|---|---|---|---|"]
     todos = pareceres(pasta)
-    for etapa in ORDEM_ETAPAS:
+    linhas.insert(2, f"Tipo de trabalho: `{tipo_trabalho(pasta)}`.")
+    linhas.insert(3, "")
+    for etapa in etapas_exigidas(pasta):
         if etapa not in todos:
             linhas.append(f"| {etapa} | — | — | 0 | pendente | | | | |")
             continue
         rod, arq = todos[etapa][-1]
         try:
             par = _ler(arq)
-            dec, _, est = avaliar(par)
+            dec, _, est = avaliar(par, arq)
         except ParecerInvalido as e:
             linhas.append(f"| {etapa} | ? | ? | {rod} | INVÁLIDO: {e} | | | | |")
             continue
+        if "nota_rubrica" in est:
+            nota_banca = est["nota_rubrica"]
         linhas.append(f"| {etapa} | {par.get('executor', '?')} | {par.get('revisor', '?')} "
                       f"({par.get('modelo_revisor', '?')}) | {rod} | **{dec}** | {est['critica']} | "
                       f"{est['maior']} | {est['menor']} | {est['media']:.1f} |")
+    if "nota_banca" in locals():
+        linhas += ["", f"**Nota estimada pela banca (rubrica do professor): {nota_banca:.1f} / 10**"]
     linhas += ["", "Portão: aprova com 0 críticos, 0 maiores, média ≥ 7,5 e nenhuma nota < 6. "
                "3ª rodada sem aprovação → ESCALAR (o revisor corrige diretamente)."]
     return "\n".join(linhas) + "\n"
@@ -287,8 +344,10 @@ def main(argv: list[str]) -> int:
             return 0
         if cmd == "avaliar":
             par = _ler(Path(alvo))
-            dec, avisos, est = avaliar(par)
+            dec, avisos, est = avaliar(par, Path(alvo))
             print(f"{par['etapa']} · rodada {par['rodada']} · {dec}")
+            if "nota_rubrica" in est:
+                print(f"  nota estimada pela rubrica do professor: {est['nota_rubrica']:.1f} / 10")
             print(f"  média {est['media']:.2f} · mínimo {est['minimo']:.1f} · "
                   f"críticos {est['critica']} · maiores {est['maior']} · menores {est['menor']}")
             for a in avisos:

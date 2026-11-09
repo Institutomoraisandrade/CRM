@@ -1,0 +1,12 @@
+[
+  {"id": "C1", "criterio": "Domínio Técnico e Raciocínio Clínico", "peso": 2.5,
+   "descricao": "Explicação da biomecânica da lesão, testes funcionais/clínicos e identificação de compensações articulares."},
+  {"id": "C2", "criterio": "Defesa da Prescrição FITT-VP e Progressão", "peso": 2.5,
+   "descricao": "Detalhamento e justificativa das 4 fases do treino (Frequência, Intensidade, Tempo, Tipo, Volume) e dos critérios de progressão."},
+  {"id": "C3", "criterio": "Arguição e Manejo da Dor", "peso": 1.0,
+   "descricao": "Segurança nas respostas aos questionamentos e capacidade de reajustar o treino/carga diante de sintomas."},
+  {"id": "C4", "criterio": "Comunicação e Recursos Visuais", "peso": 1.5,
+   "descricao": "Clareza verbal, uso de linguagem técnica adequada e slides objetivos/bem estruturados."},
+  {"id": "C5", "criterio": "Trabalho em Equipe e Gestão do Tempo (15 minutos)", "peso": 1.5, "descricao": ""},
+  {"id": "C6", "criterio": "Participação equilibrada de todos os integrantes", "peso": 1.0, "descricao": ""}
+]

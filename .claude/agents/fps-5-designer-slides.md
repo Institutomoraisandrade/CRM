@@ -33,6 +33,23 @@ a apresentação conta a história do artigo com o mínimo de texto e o máximo 
 10. `conclusao` — 3–4 mensagens-chave que respondem à pergunta
 11. `referencias` (automático: lista só o que foi citado nos slides) e `encerramento`
 
+## Trabalho do tipo caso clínico (briefing com `caso_clinico` e `rubrica.json`)
+- **Fonte da verdade**: `02-analise-critica.md` (biomecânica, testes, compensações), `04-prescricao.json`
+  (fases, FITT-VP, critérios, ajuste por sintomas), `03-evidencias.md`; `artigo.json` só se existir.
+  O roteiro sugerido em `PLANO.md` é ponto de partida, não obrigação.
+- **Organize pela rubrica**: os blocos de slides seguem a ordem e o peso dos critérios (quem avalia precisa
+  enxergar onde cada critério é atendido).
+- **Layouts próprios**: `fluxo` (mecanismo da lesão), `tabela` (teste · achado · interpretação), `dois_colunas`
+  (ex.: conservador × cirúrgico), `fases` (visão geral do programa), **um `fitt` por fase** (F, I, T, Tipo, V, P
+  + exercícios-chave + critério para avançar), `semaforo` (ajuste de carga por sintomas).
+- **Equipe e tempo** (critérios de trabalho em equipe, tempo e participação):
+  - todo slide recebe `"apresentador"` (nomes do briefing) e `"tempo_seg"`;
+  - blocos contínuos por integrante, com tempo **igual** (±15%);
+  - soma entre 88% e 95% do `tempo_minutos` (folga para transições);
+  - notas = a fala daquele integrante, natural, ~130–150 palavras por minuto do `tempo_seg`, com a frase de
+    transição para o próximo;
+  - o gerador soma os tempos, avisa sobre desequilíbrio e escreve `roteiro.md` automaticamente.
+
 ## Regras de clareza (sem redundância)
 - **Título = mensagem**: frase-afirmação que resume o slide ("SGLT2i reduzem internação por IC em 30%"),
   nunca rótulo ("Resultados"). O título não é repetido no corpo.

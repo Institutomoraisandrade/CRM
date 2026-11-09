@@ -25,7 +25,7 @@ CAMADA 4 · Fable 5.2   fps-banca ................. audita o produto final E os 
 CAMADA 3 · Opus 5.5    fps-lider-pesquisa · fps-lider-ciencia · fps-lider-producao
   (coordenam+revisam)     │ disparam executores, revisam, devolvem correções, só entregam o aprovado
 CAMADA 2 · Sonnet 5.5  fps-1-investigador · fps-2-analista-critico · fps-3-avaliador-evidencias
-  (produzem)              fps-4-redator-abnt · fps-5-designer-slides
+  (produzem)              fps-prescritor-exercicio · fps-4-redator-abnt · fps-5-designer-slides
 CAMADA 1 · Haiku 5.5   fps-op-buscador · fps-op-verificador ..... volume e conferência mecânica
 CAMADA 0 · scripts     ABNT · portões (parecer.py) · conferência de referências · validador · prévias
 ```
@@ -33,11 +33,20 @@ CAMADA 0 · scripts     ABNT · portões (parecer.py) · conferência de referê
 | Líder (Opus) | Coordena e revisa | Etapas (portões) |
 |---|---|---|
 | `fps-lider-pesquisa` | investigador (Sonnet), buscador (Haiku), avaliador de evidências (Sonnet) | `01-investigacao`, `03a-busca`, `03-evidencias` |
-| `fps-lider-ciencia` | analista crítico (Sonnet); fidelidade científica do artigo (redator) | `02-analise`, `artigo-fidelidade` |
+| `fps-lider-ciencia` | analista crítico (Sonnet); prescritor de exercício (Sonnet, casos clínicos); fidelidade científica do artigo | `02-analise`, `04-prescricao`, `artigo-fidelidade` |
 | `fps-lider-producao` | redator ABNT (Sonnet), designer de slides (Sonnet) | `artigo-forma`, `slides` |
 | `fps-banca` (Fable) | tudo, inclusive os pareceres dos líderes | `banca` |
 
 O verificador (Haiku) é chamado por todos os líderes antes de cada revisão.
+
+### Tipos de trabalho
+
+- **Revisão** (padrão): artigo ABNT + slides + banca.
+- **Caso clínico**: o enunciado e a rubrica do professor entram no briefing; a equipe produz o raciocínio clínico,
+  a **prescrição FITT-VP em fases** com critérios de progressão e o **semáforo de ajuste por sintomas**, os slides
+  com **apresentador e tempo por slide**, o `roteiro.md` por integrante e a **nota estimada pela rubrica do
+  professor**, com banco de arguição. Documento escrito só se exigido.
+  Exemplo em andamento: [`trabalhos/2026-11-09-caso04-lca-lcm/`](trabalhos/2026-11-09-caso04-lca-lcm/PLANO.md).
 
 ### Fluxo
 
@@ -75,7 +84,8 @@ cd trabalho-fps
 python3 scripts/extrair_cores_logo.py marca/logo-fps.png --salvar --gerar-negativo
 ```
 
-Detalhes em [marca/LEIA-ME.md](marca/LEIA-ME.md). Sem o logo, tudo funciona com marcador de texto e paleta provisória.
+Detalhes em [marca/LEIA-ME.md](marca/LEIA-ME.md). Sem o logo, tudo funciona com marcador de texto e a paleta verde
+provisória (estimada das fotos dos slides da disciplina).
 
 ## Garantias embutidas
 
@@ -93,7 +103,7 @@ Detalhes em [marca/LEIA-ME.md](marca/LEIA-ME.md). Sem o logo, tudo funciona com 
 | Script | Função |
 |---|---|
 | `scripts/gerar_docx_abnt.py artigo.json` | Gera o artigo .docx ABNT |
-| `scripts/gerar_slides_fps.py slides.json` | Gera a apresentação .pptx FPS (14 layouts) |
+| `scripts/gerar_slides_fps.py slides.json` | Gera a apresentação .pptx FPS (17 layouts, incl. `fases`, `fitt`, `semaforo`) e o `roteiro.md` por integrante |
 | `scripts/parecer.py modelo\|avaliar\|resposta\|painel\|licoes` | Pareceres, portões de qualidade, painel e memória de lições |
 | `scripts/conferir_referencias.py` | Confere referências contra metadados do PubMed (`--pendentes` prepara as buscas de PMID) |
 | `scripts/mesclar_referencias.py saida.json a.json b.json` | Une e deduplica referências (DOI/PMID/título) |

@@ -1,19 +1,19 @@
 {
-  "_status": "PROVISÓRIO: cores neutras de saúde até o logo oficial ser colocado em marca/. Rode: python3 scripts/extrair_cores_logo.py marca/logo-fps.png --salvar",
+  "_status": "PROVISÓRIO: paleta verde estimada das fotos dos slides da disciplina (Caso Clínico 04). Substitua pelo logo/modelo oficial: python3 scripts/extrair_cores_logo.py marca/logo-fps.png --salvar",
   "instituicao": "Faculdade Pernambucana de Saúde",
   "sigla": "FPS",
   "logo": "logo-fps.png",
   "logo_negativo": "logo-fps-branco.png",
   "cores": {
-    "primaria": "#0B3B60",
-    "secundaria": "#0F8B8D",
-    "destaque": "#F2A900",
+    "primaria": "#1E6B34",
+    "secundaria": "#3A9A47",
+    "destaque": "#B9CC1F",
     "texto": "#1E293B",
-    "texto_suave": "#64748B",
+    "texto_suave": "#5B6B60",
     "fundo": "#FFFFFF",
-    "fundo_suave": "#F1F5F9",
+    "fundo_suave": "#EEF6EF",
     "texto_sobre_primaria": "#FFFFFF",
-    "texto_sobre_primaria_suave": "#C9D8E6"
+    "texto_sobre_primaria_suave": "#CFE8D3"
   },
   "fontes": {
     "titulos": "Calibri",

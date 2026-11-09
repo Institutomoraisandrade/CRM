@@ -19,4 +19,4 @@ de leitura) e cria a versão branca do logo. Se preferir as cores exatas do manu
 edite `marca-fps.json` à mão (campos `primaria`, `secundaria`, `destaque`).
 
 Enquanto o logo não for colocado, os slides usam um marcador de texto "FPS · Faculdade
-Pernambucana de Saúde" e uma paleta provisória (azul-marinho, verde-azulado e âmbar).
+Pernambucana de Saúde" e uma paleta provisória verde (estimada das fotos dos slides da disciplina).

@@ -28,7 +28,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import abnt  # noqa: E402
 
-LAYOUTS_COM_FONTE = {"numeros", "tabela", "evidencias", "fluxo", "picos"}
+LAYOUTS_COM_FONTE = {"numeros", "tabela", "evidencias", "fluxo", "picos", "fitt", "fases", "semaforo"}
 
 
 def palavras(txt: str) -> int:
@@ -186,6 +186,21 @@ def validar_slides(sl: dict, refs: list[dict], rel: Relatorio):
             rel.aviso(f"{len(slides)} slides para {tempo} min — risco de estourar o tempo (≈1 slide/min)")
         elif len(slides) < tempo * 0.5:
             rel.aviso(f"apenas {len(slides)} slides para {tempo} min")
+    tempos = [s for s in slides if s.get("tempo_seg")]
+    if tempos:
+        total = sum(float(s["tempo_seg"]) for s in tempos)
+        rel.nota(f"tempo planejado: {int(total // 60)}:{int(total % 60):02d}")
+        if tempo and total > tempo * 60:
+            rel.erro(f"tempo planejado ({total / 60:.1f} min) estoura o limite de {tempo} min")
+        por: dict[str, float] = {}
+        for s in tempos:
+            if s.get("apresentador"):
+                por[s["apresentador"]] = por.get(s["apresentador"], 0) + float(s["tempo_seg"])
+        if len(por) >= 2:
+            media = sum(por.values()) / len(por)
+            for nome, seg in por.items():
+                if abs(seg - media) > 0.2 * media:
+                    rel.aviso(f"participação desequilibrada: {nome} com {seg / 60:.1f} min (média {media / 60:.1f})")
     validos = {r["id"] for r in refs} | {a for r in refs for a in (r.get("aliases") or [])}
     vistos: list[tuple[int, str]] = []
     for k, s in enumerate(slides, start=1):
@@ -228,6 +243,31 @@ def validar_slides(sl: dict, refs: list[dict], rel: Relatorio):
             vistos.append((k, limpo))
 
 
+CAMPOS_FITT = ("F", "I", "T", "Tipo", "V", "P")
+
+
+def validar_prescricao(pr: dict, rel: Relatorio):
+    """04-prescricao.json: fases com FITT-VP completo, critérios e regras de ajuste por sintomas."""
+    fases = pr.get("fases") or []
+    if not 3 <= len(fases) <= 5:
+        rel.aviso(f"prescrição com {len(fases)} fase(s) (o caso pede 4)")
+    for i, f in enumerate(fases, start=1):
+        falt = [c for c in CAMPOS_FITT if not (f.get("fitt_vp") or {}).get(c)]
+        if falt:
+            rel.erro(f"fase {i} ({f.get('nome', '?')}): FITT-VP incompleto, faltam {', '.join(falt)}")
+        if not f.get("criterios_saida"):
+            rel.erro(f"fase {i}: sem critérios de saída (progressão por critério)")
+        if not f.get("criterios_entrada") and i > 1:
+            rel.aviso(f"fase {i}: sem critérios de entrada")
+        if not f.get("exercicios"):
+            rel.aviso(f"fase {i}: sem exercícios listados")
+    regras = pr.get("ajuste_por_sintomas") or []
+    if len(regras) < 3:
+        rel.erro("prescrição sem regras de ajuste por sintomas (verde/amarelo/vermelho)")
+    if not pr.get("referencias_usadas"):
+        rel.aviso("prescrição sem 'referencias_usadas' (fundamentação)")
+
+
 def validar_governanca(pasta: Path, rel: Relatorio, final: bool):
     """Confere o ciclo de revisão hierárquica (pareceres + portões)."""
     import parecer as pc
@@ -236,14 +276,15 @@ def validar_governanca(pasta: Path, rel: Relatorio, final: bool):
         return
     todos = pc.pareceres(pasta)
     resumo = []
-    for etapa in pc.ORDEM_ETAPAS:
+    rel.nota(f"tipo de trabalho: {pc.tipo_trabalho(pasta)}")
+    for etapa in pc.etapas_exigidas(pasta):
         if etapa not in todos:
             (rel.erro if final else rel.aviso)(f"etapa '{etapa}' sem parecer de revisão")
             continue
         rodada, arq = todos[etapa][-1]
         try:
             par = json.loads(arq.read_text(encoding="utf-8"))
-            decisao, _, est = pc.avaliar(par)
+            decisao, _, est = pc.avaliar(par, arq)
         except (pc.ParecerInvalido, json.JSONDecodeError) as e:
             rel.erro(f"parecer inválido em {arq.name}: {e}")
             continue
@@ -280,12 +321,18 @@ def main() -> int:
     elif (pasta / "referencias.json").exists():
         refs = abnt.carregar_referencias(pasta / "referencias.json")
 
+    import parecer as pc
+    caso = pc.tipo_trabalho(pasta) == "caso_clinico"
+    if caso and (pasta / "04-prescricao.json").exists():
+        validar_prescricao(json.loads((pasta / "04-prescricao.json").read_text(encoding="utf-8")), rel)
+    elif caso:
+        rel.aviso("04-prescricao.json ainda não gerado")
     if art is not None:
         usados = validar_artigo(art, refs, rel)
         validar_referencias([r for r in refs if r["id"] in usados] or refs, rel, a.tolerante)
         if not (pasta / "artigo.docx").exists():
             rel.aviso("artigo.docx ainda não gerado")
-    else:
+    elif not caso:
         rel.aviso("artigo.json não encontrado")
 
     if (pasta / "slides.json").exists():
