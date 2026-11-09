@@ -1,0 +1,76 @@
+{
+  "etapa": "03-evidencias",
+  "rodada": 1,
+  "revisor": "fps-lider-pesquisa",
+  "modelo_revisor": "opus",
+  "executor": "fps-3-avaliador-evidencias",
+  "arquivos_revisados": ["03-evidencias.md", "03-quadro-evidencias.json", "03-referencias.json", "verificacao/03-referencias.relatorio.json"],
+  "criterios": {
+    "hierarquia_da_evidencia": 8.0,
+    "extracao_de_dados": 8.5,
+    "avaliacao_critica": 7.5,
+    "certeza_grade": 6.5,
+    "atualidade_das_diretrizes": 6.5
+  },
+  "conferencia_de_efeitos": "Conferi 20 fontes contra os resumos do PubMed em 09/11/2026, cerca de 55 números (mais de 30% dos efeitos), incluindo todos os que sustentam a resposta do §7: KANON 2010/2013 (KOOS4 39,2 × 39,4; 0,2 [−6,5 a 6,8]; 23/59; 42,9 × 44,9; 2,0 [−8,5 a 4,5], como no original; 51%), Monk 2016, COMPARE (5,3 [0,6–9,9]; −9,3; 41/82; re-rupturas), menisco COMPARE (RR 0,67 [0,40–1,12]), ACL SNNAP (73,0 × 64,6; 7,9 [2,5–13,2]; 65/160; 28%), Thoma 2019, Grindem 2012, Grindem 2016, Grindem 2018, NACOX 2026, van der List 2024, Bullock 2025, Webster 2019, Xu 2026, Sadigursky 2017, de Jonge 2024, Filbay 2025, Pamboris 2024, Culvenor 2022. Nenhuma divergência numérica. Houve 4 imprecisões de atribuição ou de subgrupo (Pamboris, Thoma, Grindem 2018, NACOX), que corrigi como menores. A exceção de peso, a dose atribuída a Bullock, está no achado A2.",
+  "reavaliacao_rob_amstar": "AMSTAR 2 de Monk 2016 (Cochrane, protocolo, busca ampla, seleção em dupla, RoB e GRADE): confiança alta, limitada a 1 ECR. Concordo. RoB 2 do KANON: algumas preocupações (desempenho e detecção sem cegamento). Concordo. RoB 2 do ACL SNNAP: alto risco no domínio 4, porque o KOOS é autorrelatado por participantes que sabem se foram operados, e algumas preocupações no domínio 2, porque 28% do braço cirúrgico e 41% do de reabilitação ficaram fora do tratamento alocado (a análise ITT é adequada para o efeito da alocação). Meu julgamento é mais severo que o do avaliador (ver A1).",
+  "achados": [
+    {
+      "id": "A1",
+      "gravidade": "maior",
+      "local": "03-evidencias.md > §6 (linha 'Função, LCA não agudo…'), §7 Resposta (1); 03-quadro-evidencias.json > beard2022",
+      "problema": "A certeza GRADE 'moderada' do ACL SNNAP não decorre dos rebaixamentos que o próprio avaliador declarou. Ele lista dois problemas de risco de viés (cruzamento de grupos e falta de cegamento num desfecho autorrelatado) e no quadro registra que o estudo é 'indireto para o caso', mas rebaixa só 1 nível. Também não considera a imprecisão: o limite inferior do IC (2,5 pontos de KOOS4) inclui efeitos clinicamente triviais. Além disso, o §7 afirma que o perfil 'não agudo com instabilidade persistente' 'é o perfil do Bruno', mas o enunciado não informa há quanto tempo foi a lesão (pendência 9 do próprio avaliador). A afirmação condicional virou fato e reforça a indicação cirúrgica com certeza maior do que a evidência sustenta.",
+      "evidencia": "Resumo do PMID 35988569: ECR pragmático e aberto, KOOS4 autorrelatado, diferença ajustada 7,9 (IC 95% 2,5–13,2), 43/156 (28%) do braço cirúrgico sem cirurgia e 65/160 (41%) do braço de reabilitação operados. Enunciado (00-briefing §1): o tempo desde a lesão não consta.",
+      "correcao": "Mude a certeza para 'Baixa' no §6 e no quadro, com os motivos (−1 risco de viés: desfecho autorrelatado sem cegamento e cruzamento; −1 imprecisão: IC inclui efeito trivial; indireto para o caso). Se quiser manter 'moderada', justifique com o limiar de diferença clinicamente importante do KOOS4 que o próprio ensaio usou. No §7 (1), reescreva assim: 'se a lesão do Bruno for não aguda com instabilidade persistente (tempo de lesão não informado), o ensaio pragmático favoreceu a cirurgia (certeza baixa)'. Mantenha o falseio recorrente como critério de encaminhamento.",
+      "responsavel": "fps-3-avaliador-evidencias",
+      "licao": "Certeza GRADE 'moderada' com dois problemas de risco de viés declarados, desfecho autorrelatado sem cegamento e IC que inclui efeito trivial não se sustenta; aplique cada rebaixamento declarado e trate como condição, não como fato, a correspondência entre o paciente do caso e a população do ensaio."
+    },
+    {
+      "id": "A2",
+      "gravidade": "maior",
+      "local": "03-evidencias.md > §4 'Prevenção', §5 'Dose', §6 (linha 'Prevenção'), §7 'Insumos… Prevenção e nova lesão'; quadro > bullock2025",
+      "problema": "A dose 'mínimo de 10 min, 2×/semana' foi ligada à redução de 61% de lesões do LCA com certeza alta, e é assim que vai para a prescrição. No resumo, porém, essa dose pertence à análise agrupada de lesões de membros inferiores (9 estudos, RR 0,81, IC 0,61–1,08, certeza baixa, não significativa), não à estimativa do LCA. Além disso, a certeza 'Alta' é a da pergunta dos autores (prevenção primária em atletas do sexo feminino). Para a pergunta do caso (homem já lesionado, prevenção de nova lesão), a evidência é indireta e precisa ser rebaixada na própria coluna de certeza, não só comentada.",
+      "evidencia": "Resumo do PMID 40645751: 'NMT programmes… with a minimum dose of 10 min two times per week, reduced… LE injuries by 19% (0.81, 95% CI 0.61 to 1.08; low certainty)… NMT significantly reduced ACL injuries by 61% (0.39, 95% CI 0.25 to 0.60; high certainty)'.",
+      "correcao": "Separe as duas afirmações: (a) LCA RR 0,39 (0,25–0,60), certeza alta para prevenção primária em mulheres e 'moderada (indireta)' para o caso; (b) a dose mínima de 10 min, 2×/semana vem da análise de membros inferiores, de certeza baixa e sem significância. Corrija o §4, o §5, o §6, o §7 (insumos) e o quadro. Avise que a dose de manutenção na prescrição é uma referência de baixa certeza.",
+      "responsavel": "fps-3-avaliador-evidencias",
+      "licao": "Ao extrair a dose de uma metanálise com vários desfechos, confira a qual análise o resumo atribui a dose; não a transfira para o desfecho de maior certeza."
+    },
+    {
+      "id": "A3",
+      "gravidade": "maior",
+      "local": "03-evidencias.md > §2 (incluídos de fora dos 80; C1 '30170524… usa-se a diretriz @arundale2018') e §3 (tabela de diretrizes); 03-referencias/01-referencias > arundale2018; quadro > arundale2018",
+      "problema": "A CPG de prevenção de lesões de joelho/LCA da JOSPT de 2018 foi apresentada como vigente, mas foi substituída pela revisão de 2023.",
+      "evidencia": "PubMed PMID 36587265: Arundale AJH, Bizzini M, Dix C et al. Exercise-Based Knee and Anterior Cruciate Ligament Injury Prevention. J Orthop Sports Phys Ther. 2023;53(1):CPG1-CPG34. DOI 10.2519/jospt.2023.0301. O resumo diz: 'provides an update on the 2018 guideline'. A lista de CPGs da AOPT (WebSearch de 09/11/2026) traz a 'Revision 2023'.",
+      "correcao": "Troque @arundale2018 pela revisão de 2023 (nova ref, ex.: arundale2023, verificada pelo PMID 36587265) no §3, no quadro e em 03-referencias.json, registrando a de 2018 como versão superada. Se as recomendações não forem acessadas, marque 'conteúdo não acessado'; o PDF jospt.2023.0301 aparece em orthopt.org, mas o WebFetch costuma falhar nesta rede. O fps-1-investigador deve trocar a referência também em 01-referencias.json; deixe isso nas pendências para o orquestrador.",
+      "responsavel": "fps-3-avaliador-evidencias",
+      "licao": "Antes de citar uma CPG, busque no PubMed pelo primeiro autor, o periódico e os anos seguintes uma revisão que a atualize ('update on the … guideline')."
+    },
+    {
+      "id": "A4",
+      "gravidade": "menor",
+      "local": "03-evidencias.md > §4 (Pamboris), §5 (Thoma, Grindem 2018, NACOX), §6 (retorno ao esporte), §3 (Logerstedt); 03-referencias.json > xu2026, ishibashi2019, slater2022, graaff2022menisco",
+      "problema": "Houve 4 imprecisões de atribuição. Pamboris: os 3 meses são pós-ACLR e os 4 meses são LCA deficiente. Thoma: faltava o grupo de referência das OR. Grindem 2018: os preditores de antes e de depois do treino estavam misturados. NACOX: 'mediana' não consta no resumo, e os 60% do futebol vêm de tratamentos mistos. Faltavam ainda a nota de versão da JOSPT 2017, a paginação de xu2026 e o ano do fascículo de três referências.",
+      "evidencia": "Resumos dos PMIDs 38887689, 30790527, 29854860 e 42419036; DOI 10.3390/jcm15124706; fascículos J Orthop Sci 25(1) 2020, Sports Health 15(2) 2023, Br J Sports Med 57(2) 2023.",
+      "correcao": "APLICADA pelo revisor: os textos do §3, §4, §5 e §6 foram ajustados; xu2026 recebeu paginas 4706; os anos passaram a 2020 (ishibashi2019), 2023 (slater2022) e 2023 (graaff2022menisco), seguindo a lição do verificador sobre o ano do fascículo (os ids não mudaram).",
+      "responsavel": "fps-3-avaliador-evidencias"
+    }
+  ],
+  "decisoes_pendencias": {
+    "1_meta_de_fontes": "Aceito: 47 fontes no artigo e um núcleo de 16 nos slides. O núcleo deve entrar sem o @arundale2018 (A3).",
+    "2_diretrizes_sem_recomendacoes": "Aceito como lacuna declarada (rede restrita). Confirmei pela lista da AOPT que a JOSPT 2017 continua sendo a revisão mais recente de entorse ligamentar.",
+    "5_buscas_C1_C3_C5_nao_triadas": "Não peço nova triagem: são buscas complementares de subtemas já cobertos e a limitação está declarada. Não bloqueia.",
+    "7_Monk_2016": "Não há atualização Cochrane indexada nas buscas do 03a; a revisão viva de Saueressig 2022 cobre o período depois de 2016. Manter."
+  },
+  "correcoes_aplicadas": [
+    "A4: 03-evidencias.md: Pamboris (3 meses pós-ACLR; 4 meses LCA deficiente; laxidão inconsistente aos 4 meses); Thoma (grupo de referência das OR); Grindem 2018 (preditores de antes e de depois do treino e as duas AUC); NACOX (12 meses, IC 95% 10–13, tratamentos mistos); §6 retorno ao esporte (futebol com tratamentos mistos); §3 Logerstedt (verificação da versão pelo líder).",
+    "A4: 03-referencias.json: xu2026 com paginas 4706; ano do fascículo em ishibashi2019 (2020), slater2022 (2023) e graaff2022menisco (2023)."
+  ],
+  "pontos_fortes": [
+    "Extração numérica muito fiel: cerca de 55 números conferidos sem divergência, todos com a origem indicada.",
+    "Evidência indireta (pós-ACLR, mulheres, Aquiles, adultos saudáveis) rotulada de forma sistemática, com lacunas declaradas, inclusive a de que não há estudo do tratamento conservador com LCA + LCM.",
+    "Divergência Panther × KANON explicada pelo peso da evidência e pela população, com o dado do COMPARE sobre menisco.",
+    "Insumos para a prescrição organizados por componente, cada um com o rótulo de certeza."
+  ],
+  "escalonado": false,
+  "resumo": "Etapa 03-evidencias, rodada 1: extração fiel (cerca de 55 números em 20 fontes, 0 divergência numérica). Três achados maiores: a certeza GRADE do ACL SNNAP e o 'perfil do Bruno' tratados como fato (A1); a dose de 10 min, 2×/semana atribuída à redução de 61% do LCA, embora pertença à análise de membros inferiores de baixa certeza (A2); a CPG de prevenção da JOSPT 2018 já substituída pela revisão de 2023 (A3). As imprecisões menores foram corrigidas pelo revisor. A1 e A2 mudam os insumos da prescrição."
+}
