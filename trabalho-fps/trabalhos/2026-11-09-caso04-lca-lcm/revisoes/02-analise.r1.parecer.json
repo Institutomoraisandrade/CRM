@@ -1,0 +1,78 @@
+{
+  "etapa": "02-analise",
+  "rodada": 1,
+  "revisor": "fps-lider-ciencia",
+  "modelo_revisor": "opus",
+  "executor": "fps-2-analista-critico",
+  "arquivos_revisados": ["02-analise-critica.md", "02-referencias.json", "verificacao/02-referencias.relatorio.json", "00-briefing.md", "rubrica.json", "PLANO.md", "01-investigacao.md"],
+  "criterios": {
+    "cadeia_causal": 7.0,
+    "precisao_dos_detalhes": 8.5,
+    "classificacao_da_certeza": 7.0,
+    "analise_critica": 7.5,
+    "qualidade_das_fontes": 8.0
+  },
+  "achados": [
+    {
+      "id": "A1",
+      "gravidade": "maior",
+      "local": "02-analise-critica.md > §1.1 Passo 2 ('Leitura')",
+      "problema": "A conclusão de que o mecanismo do Bruno 'se parece mais com a lesão de contato/indireta do que com o colapso em valgo clássico do LCA sem contato' não decorre da fonte e é internamente contraditória: em Waldén o colapso em valgo foi justamente o padrão das lesões por carrinho (contato direto), e o valgo foi frequente em todas as situações. Além disso, o texto diz 'nas três lesões por contato direto (carrinho)', mas houve 6 lesões por contato direto; as 3 com colapso em valgo foram as causadas por carrinho.",
+      "evidencia": "PMID 25907183 (resumo): 25 sem contato, 8 contato indireto, 6 contato direto; 'Knee valgus was frequently seen in the main categories of non-contact and indirect contact playing situations (n=11), but a dynamic valgus collapse was infrequent (n=3). This was in contrast to the tackling-induced direct contact situations where a knee valgus collapse occurred in all cases (n=3)'. O resumo não analisa rotação tibial.",
+      "correcao": "Reescrever a 'Leitura': (1) corrigir para '6 lesões por contato direto; nas 3 causadas por carrinho houve colapso em valgo em todas'; (2) retirar a classificação do mecanismo do Bruno como 'mais parecido com contato'; dizer que o enunciado não informa se houve contato, que o valgo esteve presente em todas as situações de jogo [@walden2015] e que a combinação valgo + rotação externa com pé fixo é a descrição clássica do mecanismo da lesão medial [@braaten2022]; qualquer leitura adicional deve vir rotulada [inferência].",
+      "responsavel": "fps-2-analista-critico",
+      "licao": "Toda 'leitura' que aplica um estudo ao caso precisa decorrer dos dados citados; se o estudo não analisou a variável (ex.: rotação tibial), diga isso em vez de classificar o caso."
+    },
+    {
+      "id": "A2",
+      "gravidade": "maior",
+      "local": "02-analise-critica.md > §4.2 item 6 e §5 equívoco 11",
+      "problema": "Leitura invertida e atribuição errada. A revisão de van der List traz exatamente o dado do cenário do Bruno (LCA e LCM sem cirurgia) e o texto diz que 'o que se sabe das séries recentes é que o LCA foi reconstruído'. Shultz 2024 é citado para 'ambos os ligamentos sem cirurgia → estabilidade em valgo baixa', mas só compara condutas do LCM com o LCA reconstruído. Os números que interessam à conduta conservadora não foram extraídos.",
+      "evidencia": "PMID 38242254 (resumo): 'Nonoperative MCL-ACL treatment and acute MCL repair with nonoperative ACL treatment led to low rates of valgus stability at 30° of flexion (27%-68% and 36%-77%, respectively) compared with acute ACL reconstruction with either nonoperative MCL treatment (80%-100%)...'; 27 estudos, 821 pacientes, revisão sistemática nível IV. PMID 36960920 (resumo): três estratégias, todas com reconstrução do LCA; sem diferença entre LCM não operado e operado em PRO, ADM e força do quadríceps; 'If residual valgus or anteromedial rotatory laxity remains after a period of rehabilitation, then concomitant surgical management... is warranted'.",
+      "correcao": "Reescrever §4.2.6: 'Com LCA e LCM tratados sem cirurgia, a estabilidade em valgo a 30° foi alcançada em só 27–68% dos casos, contra 80–100% com reconstrução aguda do LCA e LCM não operado (RS de 27 estudos, nível IV) [@vanderlist2024]; com o LCA reconstruído, tratar o LCM sem cirurgia não piorou PRO, ADM nem força [@shultz2024]'. Tirar shultz2024 da frase sobre 'ambos sem cirurgia'. Reescrever o equívoco 11: 'O LCM cicatriza bem sem cirurgia' vale sobretudo quando o LCA está estável; no joelho com LCA insuficiente a frouxidão em valgo residual é frequente → reavaliar o valgo a 30° e encaminhar se persistir [@vanderlist2024; @shultz2024]. Levar a frase para a tabela §2 (linha 'LCM em cicatrização') e para o quadro §3.",
+      "responsavel": "fps-2-analista-critico",
+      "licao": "Ao citar duas fontes juntas, confira se cada uma sustenta a frase sozinha; extraia o número do braço que corresponde ao cenário do caso."
+    },
+    {
+      "id": "A3",
+      "gravidade": "maior",
+      "local": "02-analise-critica.md > Síntese item 4; §1.8 ('Resposta de arguição'); §5 equívoco 3",
+      "problema": "Força da afirmação maior que a evidência. 'Sem parada firme' é declarado em negrito '**incompatível com enxerto funcionante**', com citação de sokal2022 e melugin2018. Nenhuma das duas fontes mostra incompatibilidade: Melugin é uma coorte de fratura de Segond em que o Lachman pós-operatório foi normal em 35/40 e 17/20 (ou seja, 12–15% não normais), e Sokal trata de acurácia diagnóstica pré-operatória. A ideia é [inferência] clínica razoável, mas está apresentada como fato com fonte.",
+      "evidencia": "PMID 29286825 (resumo): Lachman pós-operatório 'control group: 35 normal, 3 grade 1+, 2 grade 2+; study group: 17 normal, 3 grade 1+, 0 grade 2+'; desenho coorte nível 3 sobre Segond. PMID 35150292: acurácia de Lachman/gaveta/pivot em rupturas sem lesão ligamentar associada; não avalia enxerto.",
+      "correcao": "Trocar 'incompatível com enxerto funcionante' por 'pouco compatível com enxerto funcionante [inferência]: após reconstrução, o Lachman foi normal em 85–88% de uma coorte [@melugin2018]; frouxidão sem parada firme sugere LCA sem função (ruptura não tratada ou falha do enxerto)'. Na síntese, tirar sokal2022 da frase sobre o enxerto (deixá-lo só para a acurácia). Ajustar a resposta de arguição do §1.8 com o mesmo verbo ('sugere', não 'é incompatível').",
+      "responsavel": "fps-2-analista-critico",
+      "licao": "Verbos categóricos ('incompatível', 'exclui', 'prova') só com fonte que demonstre isso; inferência clínica fica rotulada e com verbo proporcional."
+    },
+    {
+      "id": "A4",
+      "gravidade": "maior",
+      "local": "02-analise-critica.md > §6 Fluxo para slides, etapa 5 (e nota ao designer)",
+      "problema": "A etapa 5 vai para o slide como fato o que a própria análise classifica como hipótese: 'Quadril em adução e rotação interna gera valgo dinâmico' (no §1.4 o valgo pode ser causa, consequência ou compensação e é multifatorial — tornozelo, tronco) e 'cocontração rígida protege o joelho' (Rudolph descreve a estratégia dos non-copers, com menor excursão do joelho; não há dado de proteção). A nota ao designer marca só a etapa 2 como hipótese.",
+      "evidencia": "PMID 11354855 (resumo): 'Non-copers reduced their knee motion... used a strategy involving more generalized co-contraction', enquanto os copers tinham padrões semelhantes aos controles; nada sobre proteção articular. §1.4 do próprio arquivo: 'três explicações concorrentes [HIPÓTESES]'; §4.1: 'Valgo dinâmico causa falseio/nova lesão no conservador — HIPÓTESE'.",
+      "correcao": "Etapa 5 → título 'Compensações'; frase: 'Valgo dinâmico (quadril, tronco e tornozelo) e cocontração rígida tentam estabilizar o joelho — padrão dos non-copers, não proteção comprovada.' Na nota ao designer, marcar também a etapa 5 como associação/hipótese, com rodapé [@rudolph2001; @rabin2010]. Sugestão (opcional, com fonte já verificada): na etapa 6, indicar que cada falseio traz dor e derrame [@moksnes2008, definição do episódio], o que realimenta a etapa 3 (ciclo).",
+      "responsavel": "fps-2-analista-critico",
+      "licao": "O fluxo para slides não pode ter certeza maior que a classificação dada no corpo da análise; cada etapa herda o rótulo de certeza da afirmação que resume."
+    }
+  ],
+  "correcoes_aplicadas": [
+    "02-referencias.json: lynch2015 → ano restaurado para 2015 (fascículo impresso BJSM 2015;49(5):335-342; 2013 é epub). verificado_via atualizado.",
+    "Anos sinalizados pelo verificador mantidos como estão (ano do fascículo impresso, conferido no volume/fascículo do PubMed): rice2010 (Semin Arthritis Rheum 2010;40(3)), vaneck2013 (KSSTA 2013;21(8)), decary2017 (Phys Ther Sport 2017;23), hurd2008outcomes e hurd2008determinants (AJSM 2008;36(1); epub out/2007), webster2008 (Phys Ther Sport 2008;9(1)), melugin2018 (AJSM 2018;46(4); epub dez/2017).",
+    "Síntese item 2 e fluxo etapa 3: 'desligam reflexamente' → 'inibem reflexamente' (IMA é inibição parcial do pool de motoneurônios).",
+    "§1.4: Hewett 2005 — 'mas só em mulheres' → 'em amostra só de atletas mulheres — não testado em homens'.",
+    "§4.1: Sonnery-Cottet 2024 descrito como 'estudo transversal grande (300 consecutivos)' em vez de 'coorte' (PMID 38164669: cross-sectional / case-control nível 3).",
+    "§1.7: Moksnes 2008 — esclarecido que VPP/VPN vêm dos 52 tratados sem cirurgia reavaliados em 1 ano; acrescentado ao item 'Aplicação ao Bruno' que 70% dos potential non-copers tratados sem cirurgia eram copers verdadeiros (o rótulo não contraindica o conservador) — PMID 18979658.",
+    "§1.7: '≈ 6 semanas' passou a citar hurd2008outcomes (o dado está no resumo do PMID 17940141: 'mean of 6 weeks'); acrescentada a ressalva de que o resumo não especifica tipo/grau da lesão associada que exclui ('provavelmente fora da população classificável').",
+    "§1.1 Passo 5: acrescentada a conclusão de Ball 2020 ('MCL deficiency increases the risk of ACL graft failure', PMID 32504158) para sustentar a direção freio medial perdido → LCA sobrecarregado na carga anteromedial.",
+    "§4.3 Populações: Sokal 2022 passa a ser descrito corretamente — excluiu lesões ligamentares associadas (as metanálises antigas as misturavam), logo nenhuma estimativa de acurácia vale diretamente para LCA + LCM."
+  ],
+  "pontos_fortes": [
+    "13 detalhes conferidos contra os resumos do PubMed sem divergência numérica: Ball 2020 (63–77%, 40–54%, 12%, 16%, 23–13%/13–22%/6–9%), Herbst 2023 (25,2–36,9%; 50,2% a 30°), Sonnery-Cottet 2024 (170/300 = 56,7%; 135/170 = 79%), Rudolph 2001 (cocontração, não evitação do quadríceps), Waldén 2015 (25 + 8 de 39 = 85%; valgo 11, colapso 3), Braaten 2022 (3,2 mm; > 9,8 mm), Moksnes 2008 (VPP 60% [41–78], VPN 30% [16–49]), Sokal 2022 (Lachman 81/85, 68/79, 70/77; pivot 55/94; gaveta 83/85), Dutaillis 2021 (d −0,35 a −0,40; VM −0,25; VL −0,31), Kanamori 2000 (< 20 N → ≈ 2×), Hegedus 2007 (70/71, 60/70, 63/77), Koga 2010 (23°, +12°, 8° RI, 3,2 PC, 40 ms), Lynch 2015 (1.779 respostas, seis critérios).",
+    "A correção do PLANO ('evitação do quadríceps' → cocontração generalizada com maior contribuição dos isquiotibiais) está correta e textual no resumo de Rudolph 2001 — aprovada para os slides.",
+    "Tensão rotação externa (enunciado) × rotação interna (LCA sem contato) bem tratada: não 'corrige' o enunciado, rotula a sequência como HIPÓTESE e usa Herbst (LCA como freio da translação anterior em rotação externa a 0–60°) como ponte plausível.",
+    "Rastreio coper/non-coper bem dissecado (critérios numéricos do texto completo, pré-requisitos, exclusão por lesão associada, reclassificação após 10 sessões); 'non-coper provisório' é uma hipótese de trabalho defensável na banca.",
+    "Lacunas declaradas (graduação do LCM em mm, Thessaly, contusão óssea, menisco como freio secundário, Tegner, KOOS-BR) estão corretas e marcadas para não ir aos slides; parágrafos de escopo da Educação Física/SUS corretamente rotulados como inferência.",
+    "Classificação de certeza explícita (consenso/clínica/mecanística/hipótese) em todo o texto e quadro §4.1 coerente; substitutos de desfecho separados dos desfechos duros."
+  ],
+  "escalonado": false,
+  "resumo": "Análise de alto nível, com números fiéis às fontes (13 detalhes conferidos, nenhum divergente). Quatro achados maiores, todos de interpretação e força de afirmação: a 'leitura' do vídeo de Waldén (contraditória e sem base), a leitura invertida de van der List/Shultz sobre o LCM com LCA não operado (dado central para o cenário conservador), 'incompatível com enxerto funcionante' sem fonte que o demonstre e a etapa 5 do fluxo para slides com certeza maior que a do corpo. Nove correções menores aplicadas pelo revisor, incluindo a restauração do ano de lynch2015 e a decisão sobre os 7 anos sinalizados."
+}
