@@ -231,28 +231,28 @@
    "mesma publicação em periódicos diferentes (título idêntico)": 7
   },
   "triados": 378,
-  "excluidos_titulo_resumo": 141,
+  "excluidos_titulo_resumo": 144,
   "excluidos_titulo_resumo_motivos": {
-   "populacao": 32,
-   "intervencao": 47,
+   "populacao": 34,
+   "intervencao": 48,
    "fora_do_tema": 30,
-   "desenho": 15,
-   "desfecho": 11,
    "versao_superada": 4,
+   "desfecho": 11,
+   "desenho": 15,
    "periodo": 2
   },
-  "excluidos_por_volume": 157,
+  "excluidos_por_volume": 154,
   "excluidos_por_volume_niveis": {
+   "revisao_sistematica": 32,
+   "ECR": 26,
+   "coorte_caso_controle": 41,
    "outros_desenhos": 55,
-   "coorte_caso_controle": 42,
-   "revisao_sistematica": 36,
-   "ECR": 24,
    "diretriz_consenso": 0
   },
   "para_avaliacao": 80
  },
- "alerta": "sem diretriz nacional de reabilitação do LCA/LCM localizada (MS/PCDT/Conitec, SBOT/AMB, SBRATE, COFFITO/SONAFE: busca web sem documento atual; único documento nacional encontrado é o Projeto Diretrizes AMB/CFM-SBOT de 2007, restrito a diagnóstico e enxerto); sem diretriz NICE específica (busca web). Corte de 80 itens autorizado pelo líder; 157 registros excluídos por volume.",
- "criterio_corte": "diretriz sempre mantida; depois incluir antes de talvez; dentro de cada grupo, hierarquia diretriz > RS/MA > ECR > coorte > outros, mais recentes primeiro; cobertura de pelo menos 2 itens por subtema essencial (verificada por palavras-chave do título e resumo).",
+ "alerta": "sem diretriz nacional de reabilitação do LCA/LCM localizada (MS/PCDT/Conitec, SBOT/AMB, SBRATE, COFFITO/SONAFE: busca web sem documento atual; único documento nacional encontrado é o Projeto Diretrizes AMB/CFM-SBOT de 2007, restrito a diagnóstico e enxerto); sem diretriz NICE específica (busca web). Corte de 80 itens autorizado pelo líder; 154 registros excluídos por volume.",
+ "criterio_corte": "diretriz sempre mantida; depois incluir antes de talvez; dentro de cada grupo, hierarquia diretriz > RS/MA > ECR > coorte > outros, mais recentes primeiro; cobertura de pelo menos 2 itens por subtema essencial (verificada por palavras-chave do título e resumo). Ajuste do líder (r2): 8 trocas 1:1 por pertinência aos subtemas essenciais — entraram 38887689, 37098282, 22962290, 30388671, 37068162, 30537875, 26772611, 28224443; saíram 41029301, 26935859, 41797294, 26231151, 35395764 (corte), 28220268 (consenso cirúrgico do ligamento anterolateral, excluído por intervenção) e 28056178, 40539191 (população >40/60 anos, reclassificados como excluídos na triagem).",
  "duplicatas_detalhe": {
   "mesma publicação (título idêntico); mantido o registro de primeira publicação indicado": [
    {

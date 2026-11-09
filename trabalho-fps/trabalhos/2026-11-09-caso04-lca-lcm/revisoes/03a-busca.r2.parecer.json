@@ -1,0 +1,57 @@
+{
+  "etapa": "03a-busca",
+  "rodada": 2,
+  "revisor": "fps-lider-pesquisa",
+  "modelo_revisor": "opus",
+  "executor": "fps-op-buscador",
+  "arquivos_revisados": ["03a-busca.json", "03a-candidatos.json", "revisoes/03a-busca.r1.resposta.json"],
+  "criterios": {
+    "cobertura_de_bases": 7.5,
+    "fidelidade_as_strings": 8.5,
+    "aderencia_aos_criterios": 7.5,
+    "registro_prisma": 8.5
+  },
+  "decisoes_contestacoes": "Nenhuma contestação: os 5 achados foram respondidos como corrigidos. Pendência levantada pelo buscador: 34006576 (Panther, J ISAKOS 2021) removido como duplicata de 32637434 (OJSM 2020). Decisão: está CORRETO. É publicação simultânea do mesmo consenso, com o mesmo resumo; conferi pelos metadados PubMed na r1. Mantém-se 32637434, e o registro fica em duplicatas_detalhe junto com 32388664 e 32661128. O avaliador pode citar a versão J ISAKOS se preferir o fascículo.",
+  "verificacao_dos_achados_r1": {
+    "A1": "Resolvido. Os 378 triados contêm todos os PMIDs que eu listei (Panther 32637434, Delaware-Oslo 29854860/33999877/35975945, NACOX 35633030, 38646275, 26224582, 25394687, 22962290, 29927640, 29438635, Cochrane 27039329, retirada 21563147 excluída por desenho). A soma das buscas PubMed dá 433 resultados, todos retidos.",
+    "A2": "Resolvido em parte; o restante corrigi eu (B1). Diretrizes não foram cortadas. A ordem 'incluir antes de talvez' deixou fora estudos pertinentes e manteve dentro estudos de população ou intervenção fora do escopo.",
+    "A3": "Resolvido. 30001501, 22898912, 42317908 e 37130279 estão como talvez. Numa amostra aleatória de 6 exclusões da triagem (seed 92), as 6 estavam corretas: infográfico, técnica cirúrgica, idosos, cartilagem, revisão cirúrgica ESSKA e relato de caso.",
+    "A4": "Resolvido. As buscas nacionais (MS/Conitec, SBOT/AMB, SBRATE, COFFITO/SONAFE) e a do NICE estão registradas em buscas_nacionais, a ausência está declarada em 'alerta' e o Projeto Diretrizes SBOT 2007 de diagnóstico entrou como talvez. Os portais oficiais não foram abertos diretamente (rede restrita); isso está declarado.",
+    "A5": "Resolvido. O PRISMA tem identificados por base (433+50+3=486), duplicatas por tipo (88+13+7=108), triados 378 e linhas próprias para triagem, volume e avaliação; 15 PMIDs foram recuperados por título. Os 26 que ficaram sem identificador estão todos excluídos."
+  },
+  "achados": [
+    {
+      "id": "B1",
+      "gravidade": "menor",
+      "local": "03a-candidatos.json > corte por volume (amostra auditada: as 36 RS e os 24 ECR cortados)",
+      "problema": "Como 'incluir' veio antes de 'talvez', o corte deixou fora RS diretamente ligadas a subtemas essenciais e manteve itens fora da população ou da intervenção do PICOS. Saíram: cadeia aberta × fechada (S7), protocolos conservadores, nova lesão em atletas jovens, descritores de dose, controle do valgo, questionários de instabilidade e Grindem 2012 (retorno ao pivô). Ficaram: >60 anos, meia-idade, concentrado de medula óssea, economia, esqui alpino de elite, Pilates em ruptura parcial, ruptura parcial e consenso cirúrgico do ligamento anterolateral.",
+      "evidencia": "Títulos em 03a-candidatos.json: 38887689, 37098282, 26772611, 30388671, 37068162, 30537875, 22962290 e 28224443 estavam em corte_volume. 28056178, 40539191, 41029301, 26935859, 41797294, 26231151, 35395764 e 28220268 estavam no conjunto de avaliação.",
+      "correcao": "APLICADA pelo revisor: 8 trocas 1:1, mantido o teto de 80. As 8 que entraram ficaram como talvez (26772611 e 28224443 como evidência indireta). 28056178 e 40539191 passaram a excluídos por população e 28220268 a excluído por intervenção, pois as diretrizes não são cortadas por volume. Os demais foram para corte_volume. PRISMA recalculado: 144 + 154 + 80 = 378; asserção conferida.",
+      "responsavel": "fps-op-buscador",
+      "licao": "No corte por volume, a pertinência ao PICOS e aos subtemas essenciais vem antes do rótulo incluir/talvez; item fora da população ou da intervenção é exclusão na triagem, não seleção."
+    },
+    {
+      "id": "B2",
+      "gravidade": "menor",
+      "local": "03a-candidatos.json > 29089004 (CPG JOSPT 2017)",
+      "problema": "A CPG de entorse ligamentar do joelho, que cobre LCA e LCM e é a diretriz mais específica para o caso, estava como talvez/evidência indireta.",
+      "evidencia": "Título e escopo: 'Knee Stability and Movement Coordination Impairments: Knee Ligament Sprain Revision 2017' (PMID 29089004).",
+      "correcao": "APLICADA pelo revisor: incluir / criterios_atendidos.",
+      "responsavel": "fps-op-buscador"
+    }
+  ],
+  "correcoes_aplicadas": [
+    "B1: 8 trocas por pertinência no conjunto de avaliação (registradas em 03a-busca.json > criterio_corte); PRISMA e 'alerta' atualizados (excluídos na triagem 144, por volume 154, para avaliação 80).",
+    "B2: 29089004 reclassificado como incluir.",
+    "Pendência 34006576: mantida a remoção como duplicata (publicação simultânea do Panther)."
+  ],
+  "pontos_fortes": [
+    "Triagem de 100% com paginação; as contagens das strings conferem com a reexecução do líder (72 e 165).",
+    "PRISMA completo e auditável: duplicatas por tipo, publicações simultâneas listadas, cortes por nível de desenho e asserção de consistência.",
+    "O buscador sinalizou o próprio desvio de ordem no corte e pediu auditoria, uma boa prática de transparência.",
+    "Cobertura nacional e do NICE registrada, com a ausência declarada, sem inventar documentos."
+  ],
+  "escalonado": false,
+  "veredito_revisor": "APROVADO",
+  "resumo": "Etapa 03a-busca, rodada 2: os 5 achados da r1 foram resolvidos (triagem de 100%, PRISMA 486→378→80, buscas nacionais e NICE registradas, IDs recuperados). A duplicata 34006576 (Panther J ISAKOS) foi mantida como removida. No corte por volume fiz 8 trocas por pertinência ao PICOS (B1) e reclassifiquei a CPG da JOSPT 2017 como incluir (B2). Limitações a declarar no Método: BVS/LILACS e Cochrane Library não consultadas diretamente; sem diretriz nacional de reabilitação."
+}
