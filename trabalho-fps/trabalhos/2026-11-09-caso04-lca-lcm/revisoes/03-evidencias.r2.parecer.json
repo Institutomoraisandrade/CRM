@@ -1,0 +1,40 @@
+{
+  "etapa": "03-evidencias",
+  "rodada": 2,
+  "revisor": "fps-lider-pesquisa",
+  "modelo_revisor": "opus",
+  "executor": "fps-3-avaliador-evidencias",
+  "arquivos_revisados": ["03-evidencias.md", "03-quadro-evidencias.json", "03-referencias.json", "01-referencias.json", "revisoes/03-evidencias.r1.resposta.json"],
+  "criterios": {
+    "hierarquia_da_evidencia": 8.0,
+    "extracao_de_dados": 8.5,
+    "avaliacao_critica": 8.0,
+    "certeza_grade": 8.0,
+    "atualidade_das_diretrizes": 7.5
+  },
+  "decisoes_contestacoes": "Nenhuma contestação. Aceito não citar a diferença mínima importante do KOOS4, porque o valor não consta do resumo.",
+  "verificacao_dos_achados_r1": {
+    "A1": "Resolvido. O SNNAP aparece como 'Baixa' no §6 e no quadro (−1 risco de viés, −1 imprecisão, indireto para o caso). §3, §5 e §7 (1) agora são condicionais ('se a lesão do Bruno for não aguda…'), o falseio recorrente continua como critério de encaminhamento e o RoB 2 do quadro segue o julgamento do revisor.",
+    "A2": "Resolvido. As duas afirmações estão separadas em §4, §5, §6, §7 (5) e nos insumos, e também no quadro: LCA RR 0,39 com certeza alta para mulheres e moderada (indireta) para o caso; dose de 10 min, 2×/semana ligada aos membros inferiores, RR 0,81 (0,61–1,08), certeza baixa. Os números conferem com o resumo do PMID 40645751.",
+    "A3": "Resolvido. arundale2023 (PMID 36587265; JOSPT 53(1):CPG1-CPG34; DOI 10.2519/jospt.2023.0301) está em 03 e em 01, com alias arundale2018 e a de 2018 (PMID 30170521) registrada como superada. As citações [@arundale2018] em 01-investigacao.md e 02-analise-critica.md continuam resolvendo, porque abnt.py, mesclar_referencias.py e validar_trabalho.py tratam aliases. Não há regressão."
+  },
+  "achados": [
+    {
+      "id": "B1",
+      "gravidade": "menor",
+      "local": "03-evidencias.md > §5 ACL SNNAP",
+      "problema": "Erro de redação introduzido na correção: 'Ressalva adicional: de que \"reabilitação\" ali…'.",
+      "evidencia": "Leitura do §5 na rodada 2.",
+      "correcao": "APLICADA pelo revisor: 'Ressalva adicional: \"reabilitação\" ali é fisioterapia pragmática…'.",
+      "responsavel": "fps-3-avaliador-evidencias"
+    }
+  ],
+  "correcoes_aplicadas": ["B1: frase do §5 sobre o ACL SNNAP corrigida."],
+  "pontos_fortes": [
+    "As correções foram feitas em todos os pontos em que o dado aparecia (texto, tabela GRADE, insumos e quadro), sem regressão numérica.",
+    "A troca de versão da diretriz foi feita com alias, sem quebrar as citações das etapas 01 e 02."
+  ],
+  "escalonado": false,
+  "veredito_revisor": "APROVADO",
+  "resumo": "Etapa 03-evidencias, rodada 2: os 3 achados maiores da r1 foram resolvidos e conferidos (SNNAP com certeza baixa e condicional; dose de Bullock separada da estimativa do LCA; diretriz JOSPT de 2023 no lugar da de 2018, com alias). Uma correção de redação foi feita pelo revisor. O prescritor deve usar os insumos atualizados do §7."
+}
