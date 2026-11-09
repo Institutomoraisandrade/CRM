@@ -1,0 +1,188 @@
+{
+  "tema": "Reabilitação conservadora de LCA insuficiente associada a estiramento do LCM em atleta jovem de esporte com pivô (caso clínico 04)",
+  "tipo_pergunta": "intervencao",
+  "estrutura": "PICOS",
+  "pergunta": "Em atletas jovens de esportes com pivô (futebol) com LCA insuficiente e estiramento do LCM tratados de forma conservadora, a reabilitação/treinamento progressivo baseado em critérios (força, controle neuromuscular, pliometria/agilidade), comparada à reabilitação baseada apenas em tempo, ao cuidado usual ou à reconstrução precoce, melhora a estabilidade funcional (falseio), a função (KOOS/IKDC), o retorno ao esporte e reduz nova lesão?",
+  "elementos": [
+    {
+      "letra": "P",
+      "rotulo": "População",
+      "texto": "Atleta jovem (16–40 anos) de esporte com pivô/mudança de direção (ex.: futebol society), com LCA insuficiente (Lachman/gaveta positivos) ± estiramento do LCM, tratado de forma conservadora"
+    },
+    {
+      "letra": "I",
+      "rotulo": "Intervenção",
+      "texto": "Reabilitação por exercício progressiva baseada em critérios: força (quadríceps/isquiotibiais/quadril), controle neuromuscular e do valgo dinâmico, pliometria e agilidade, retorno ao esporte graduado. Eletroestimulação, crioterapia e terapia manual somente como conduta multiprofissional"
+    },
+    {
+      "letra": "C",
+      "rotulo": "Comparação",
+      "texto": "Reabilitação baseada apenas em tempo, cuidado usual/fisioterapia convencional, ou reabilitação + reconstrução precoce do LCA"
+    },
+    {
+      "letra": "O",
+      "rotulo": "Desfechos",
+      "texto": "Primários clínicos: episódios de falseio, função autorrelatada (KOOS/IKDC), retorno ao esporte (nível pré-lesão), nova lesão (joelho/LCA). Substitutos: LSI de força do quadríceps e de testes de salto, derrame, dor (EVA)"
+    },
+    {
+      "letra": "S",
+      "rotulo": "Desenho de estudo",
+      "texto": "Diretrizes, revisões sistemáticas/metanálises, ECR; coortes prospectivas na ausência de ECR (lacuna: poucos ECR em tratamento conservador)"
+    }
+  ],
+  "desfechos": {
+    "primarios": [
+      "Episódios de falseio (giving way) / instabilidade funcional",
+      "Função autorrelatada: KOOS (subescalas Esporte/Recreação e Qualidade de vida) e IKDC subjetivo",
+      "Retorno ao esporte pivotante no nível pré-lesão",
+      "Nova lesão do joelho (incluindo lesão de menisco, contralateral ou conversão para reconstrução)"
+    ],
+    "secundarios": [
+      "Dor (EVA/NRS) e derrame (escala de varredura/stroke test)",
+      "Escalas Tegner e ACL-RSI (prontidão psicológica)",
+      "Amplitude de movimento",
+      "Adesão ao programa"
+    ],
+    "substitutos": [
+      "LSI de força isométrica/isocinética do quadríceps e isquiotibiais",
+      "LSI em testes de salto (hop tests)",
+      "Qualidade de movimento (valgo dinâmico no step-down/aterrissagem)",
+      "Perimetria/atrofia do quadríceps",
+      "Frouxidão ao Lachman/gaveta"
+    ]
+  },
+  "descritores": {
+    "decs": [
+      "Lesões do Ligamento Cruzado Anterior",
+      "Ligamento Cruzado Anterior",
+      "Ligamentos Colaterais (confirmar o descritor específico do LCM no portal DeCS)",
+      "Tratamento Conservador",
+      "Terapia por Exercício",
+      "Treinamento Resistido",
+      "Exercício Pliométrico",
+      "Volta ao Esporte",
+      "Instabilidade Articular",
+      "Força Muscular",
+      "Músculo Quadríceps",
+      "Futebol",
+      "Traumatismos do Joelho"
+    ],
+    "mesh": [
+      "Anterior Cruciate Ligament Injuries",
+      "Medial Collateral Ligament, Knee",
+      "Conservative Treatment",
+      "Exercise Therapy",
+      "Resistance Training",
+      "Plyometric Exercise",
+      "Return to Sport",
+      "Joint Instability",
+      "Muscle Strength",
+      "Quadriceps Muscle",
+      "Soccer",
+      "Knee Injuries",
+      "Athletic Injuries",
+      "Patient Reported Outcome Measures"
+    ],
+    "termos_livres": [
+      "ACL-deficient",
+      "nonoperative",
+      "non-operative",
+      "nonsurgical",
+      "coper",
+      "non-coper",
+      "giving way",
+      "rehabilitation-only",
+      "neuromuscular training",
+      "perturbation training",
+      "dynamic knee valgus",
+      "criteria-based rehabilitation",
+      "limb symmetry index",
+      "hop test",
+      "KOOS",
+      "IKDC",
+      "pivoting sports"
+    ]
+  },
+  "estrategias": {
+    "pubmed": "(\"Anterior Cruciate Ligament Injuries\"[MeSH Terms] OR \"anterior cruciate ligament\"[tiab]) AND (nonoperative[tiab] OR non-operative[tiab] OR nonsurgical[tiab] OR conservative[tiab] OR \"ACL-deficient\"[tiab] OR copers[tiab]) AND (rehabilitation[tiab] OR \"Exercise Therapy\"[MeSH Terms] OR \"neuromuscular training\"[tiab] OR exercise[tiab]) AND (soccer[tiab] OR football[tiab] OR \"pivoting sport*\"[tiab] OR athletes[tiab])",
+    "bvs": "(mh:\"Lesões do Ligamento Cruzado Anterior\" OR \"ligamento cruzado anterior\" OR \"anterior cruciate ligament\") AND (\"tratamento conservador\" OR conservador OR nonoperative OR \"não cirúrgico\" OR \"ACL-deficient\") AND (reabilitação OR \"terapia por exercício\" OR \"treinamento neuromuscular\" OR exercício OR rehabilitation) AND (futebol OR soccer OR atletas OR athletes) — NÃO testada nesta execução (base BVS/LILACS não consultada)",
+    "cochrane": "#1 MeSH descriptor: [Anterior Cruciate Ligament Injuries] explode all trees; #2 (nonoperative OR non-operative OR nonsurgical OR conservative OR \"ACL-deficient\"):ti,ab,kw; #3 MeSH descriptor: [Exercise Therapy] explode all trees; #4 (rehabilitation OR \"neuromuscular training\" OR exercise):ti,ab,kw; #5 #1 AND #2 AND (#3 OR #4) — NÃO testada nesta execução (Cochrane Library não consultada)"
+  },
+  "criterios": {
+    "inclusao": [
+      "Adultos jovens/atletas (≥14 anos) com ruptura/insuficiência do LCA, com ou sem lesão do LCM, em tratamento conservador (ou coortes com braço conservador)",
+      "Intervenção por exercício (força, neuromuscular, pliometria/agilidade, critérios de progressão/retorno ao esporte)",
+      "Desfechos clínicos: falseio, KOOS/IKDC, retorno ao esporte, nova lesão; LSI/força aceitos como substitutos sinalizados",
+      "Diretrizes, revisões sistemáticas/metanálises, ECR; coortes prospectivas quando não houver ECR",
+      "Evidência pós-reconstrução (ACLR) aceita apenas como evidência indireta, rotulada como tal (critérios de retorno ao esporte)"
+    ],
+    "exclusao": [
+      "Esqueleto imaturo/pediátrico isolado",
+      "Estudos apenas cirúrgicos sem componente de reabilitação por exercício",
+      "Lesões multiligamentares com LCP/canto posterolateral (escopo fora)",
+      "Estudos animais/in vitro",
+      "Relatos de caso isolados",
+      "Pós-operatório tardio como foco (apenas nota breve)"
+    ],
+    "periodo": "2010–2026 (clássicos pivotais mantidos, ex.: Frobell 2010/2013; Hewett 2005)",
+    "idiomas": [
+      "pt",
+      "en",
+      "es"
+    ]
+  },
+  "subtemas": [
+    {
+      "nome": "Biomecânica do mecanismo (valgo dinâmico + rotação externa da tíbia + pé fixo) e lesão combinada LCA+LCM",
+      "prioridade": "essencial",
+      "destino": "agente2"
+    },
+    {
+      "nome": "Testes clínicos e funcionais (Lachman, gaveta, pivot-shift, estresse em valgo 0°/30°, derrame, step-down, hop tests) e compensações",
+      "prioridade": "essencial",
+      "destino": "agente2"
+    },
+    {
+      "nome": "Tratamento conservador vs reconstrução: evidência (Frobell, copers/non-copers) e implicação para o caso",
+      "prioridade": "essencial",
+      "destino": "agente3"
+    },
+    {
+      "nome": "Reabilitação por fases com critérios de progressão e retorno ao esporte (LSI, hop, ACL-RSI) e suas limitações",
+      "prioridade": "essencial",
+      "destino": "ambos"
+    },
+    {
+      "nome": "Manejo de dor, derrame e falseio (semáforo de carga)",
+      "prioridade": "essencial",
+      "destino": "ambos"
+    },
+    {
+      "nome": "Manejo do LCM em lesão combinada (grau, laxidão em valgo, cicatrização)",
+      "prioridade": "complementar",
+      "destino": "agente3"
+    },
+    {
+      "nome": "Fatores psicológicos (medo de nova lesão, ACL-RSI)",
+      "prioridade": "complementar",
+      "destino": "agente3"
+    },
+    {
+      "nome": "Pós-operatório tardio (nota breve: maturação do enxerto, restrições)",
+      "prioridade": "complementar",
+      "destino": "agente3"
+    },
+    {
+      "nome": "Epidemiologia LCA/LCM no futebol (Brasil e mundo)",
+      "prioridade": "complementar",
+      "destino": "agente3"
+    }
+  ],
+  "perguntas_chave": [
+    "Qual a evidência de que reabilitação progressiva isolada é uma estratégia válida em atleta jovem com LCA rompido (e quais são os critérios coper/non-coper)?",
+    "Quais critérios objetivos (força, salto, qualidade de movimento, prontidão psicológica) devem governar a progressão entre fases e o retorno ao esporte, e qual a validade desses critérios no tratamento conservador?",
+    "Como o estiramento do LCM modifica a carga em valgo e a progressão (e quando a laxidão em valgo persistente indica reavaliação médica)?",
+    "Como ajustar carga diante de dor, derrame e falseio?",
+    "Que exercícios (cadeia aberta/fechada, controle de quadril, pliometria) e doses (FITT-VP) têm melhor respaldo?"
+  ]
+}
