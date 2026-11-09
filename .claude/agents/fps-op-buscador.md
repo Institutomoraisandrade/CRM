@@ -19,14 +19,17 @@ Quem julga a qualidade é o avaliador (Sonnet) e quem audita é o líder (Opus).
    Conitec, sociedade brasileira da área) e internacionais (OMS, NICE e as sociedades do tema).
    Registre título, organização, ano e URL. No PubMed: string + `AND (Practice Guideline[pt] OR Guideline[pt])`.
 2. **Revisões sistemáticas/metanálises** — string + `AND (systematic review[pt] OR meta-analysis[pt])`
-   com `mcp__PubMed__search_articles` (`max_results` 50, filtro de data do `01-picos.json`).
+   com `mcp__PubMed__search_articles` (filtro de data do `01-picos.json`). **Trie 100% dos registros**:
+   use `max_results` 100 e pagine com `retstart` (0, 100, 200…) até cobrir o total retornado pela string.
    Repita no `mcp__Consensus__search` com `medical_mode: true` e `study_types: ["systematic review", "meta-analysis"]`.
-3. **Ensaios clínicos** — string + `AND randomized controlled trial[pt]`, ordenado por data, `max_results` 50.
+3. **Ensaios clínicos** — string + `AND randomized controlled trial[pt]`, paginando até cobrir todos os resultados.
 4. **Duplicatas** — una por PMID, DOI ou título idêntico.
 5. **Triagem por título/resumo** — para cada candidato: `incluir`, `talvez` ou `excluir`, com motivo
    (`populacao`, `intervencao`, `comparador`, `desfecho`, `desenho`, `idioma`, `periodo`, `duplicata`, `fora_do_tema`).
    **Na dúvida, `talvez`** — excluir algo relevante é pior do que incluir algo a mais.
-6. Se sobrarem mais de 60 para avaliação, mantenha os de desenho mais alto e mais recentes e registre o corte.
+6. Se sobrarem mais de 60 para avaliação, corte respeitando a **hierarquia de desenho** (diretriz > RS/MA > ECR >
+   observacional) e garantindo **pelo menos 2 itens por subtema essencial** do `01-picos.json`; registre o corte
+   numa linha própria do PRISMA. Nunca corte diretrizes listadas em `diretrizes_web`.
    Se sobrarem menos de 5, registre `"alerta": "busca insuficiente"` com sugestões de ampliação.
 
 ## Saídas (na pasta do trabalho)

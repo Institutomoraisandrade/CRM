@@ -348,13 +348,13 @@
   "resumo_curto": "To analyse 5-year cost-effectiveness of early versus optional delayed acute anterior cruciate ligament (ACL) reconstruction. 121 young, active adults with acute ACL injury to a previously uninjured knee were randomised to early ACL reconstruction (n=62, within 10 weeks of injury) or optional delayed ACL reconstruction (n=59; 30 with ACL reconstruct"
  },
  {
-  "pmid": "",
-  "doi": "",
+  "pmid": "27039329",
+  "doi": "10.1002/14651858.CD011166.pub2",
   "titulo": "Surgical versus conservative interventions for treating anterior cruciate ligament injuries.",
   "ano": 2016,
   "periodico": "The Cochrane database of systematic reviews",
   "tipo_publicacao": "não informado pelo Consensus",
-  "fonte_busca": "Consensus",
+  "fonte_busca": "Consensus+PubMed",
   "decisao": "incluir",
   "motivo": "criterios_atendidos",
   "resumo_curto": "Background: Rupture of the anterior cruciate ligament (ACL) is a common injury, mainly affecting young, physically active individuals. The injury is characterised by joint instability, leading to decreased activity, which can lead to poor knee-related quality of life."
@@ -2660,7 +2660,7 @@
   "tipo_publicacao": "Journal Article/Practice Guideline",
   "fonte_busca": "PubMed",
   "decisao": "excluir",
-  "motivo": "duplicata",
+  "motivo": "versao_superada",
   "resumo_curto": "[Abstract not available]"
  },
  {
@@ -2792,7 +2792,7 @@
   "tipo_publicacao": "Journal Article/Practice Guideline",
   "fonte_busca": "PubMed",
   "decisao": "excluir",
-  "motivo": "duplicata",
+  "motivo": "versao_superada",
   "resumo_curto": "[Abstract not available]"
  },
  {

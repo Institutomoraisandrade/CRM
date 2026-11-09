@@ -22,7 +22,9 @@ Cada executor lê a sua seção **antes** de começar. Não edite à mão: edite
 - Título de slide é uma afirmação; o corpo do slide não repete o título nem dados de outro slide. *(visto 1x; último: 2026-11-09)*
 
 ## fps-op-buscador
+- Ao cortar por volume, respeite a hierarquia de desenho e mantenha pelo menos 2 itens por subtema essencial; nunca corte diretrizes já localizadas. *(visto 1x; último: 2026-11-09)*
 - Registre a string exata, a base, a data e o número de resultados de cada busca; contagens PRISMA precisam bater com a lista de candidatos. *(visto 1x; último: 2026-11-09)*
+- Trie 100% dos registros de cada string (pagine com retstart); triar só os primeiros resultados deixa de fora diretrizes, coortes e consensos centrais. *(visto 1x; último: 2026-11-09)*
 
 ## fps-op-verificador
 - Ano divergente em 1 ano entre a referência e o PubMed costuma ser publicação eletrônica antecipada × fascículo impresso: a ABNT usa o ano do fascículo — não corrija, sinalize para o líder. *(visto 1x; último: 2026-11-09)*

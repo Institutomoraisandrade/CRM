@@ -54,6 +54,22 @@
     ],
     "fps-op-buscador": [
       {
+        "texto": "Trie 100% dos registros de cada string (pagine com retstart); triar só os primeiros resultados deixa de fora diretrizes, coortes e consensos centrais.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "caso04:03a-busca.r1:A1"
+        ]
+      },
+      {
+        "texto": "Ao cortar por volume, respeite a hierarquia de desenho e mantenha pelo menos 2 itens por subtema essencial; nunca corte diretrizes já localizadas.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-09",
+        "origens": [
+          "caso04:03a-busca.r1:A2"
+        ]
+      },
+      {
         "texto": "Registre a string exata, a base, a data e o número de resultados de cada busca; contagens PRISMA precisam bater com a lista de candidatos.",
         "ocorrencias": 1,
         "ultimo": "2026-11-09",

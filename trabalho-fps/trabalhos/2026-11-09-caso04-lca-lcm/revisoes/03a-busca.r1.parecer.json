@@ -1,0 +1,87 @@
+{
+  "etapa": "03a-busca",
+  "rodada": 1,
+  "revisor": "fps-lider-pesquisa",
+  "modelo_revisor": "opus",
+  "executor": "fps-op-buscador",
+  "arquivos_revisados": ["03a-busca.json", "03a-candidatos.json", "01-picos.json", "00-briefing.md"],
+  "criterios": {
+    "cobertura_de_bases": 5.5,
+    "fidelidade_as_strings": 7.0,
+    "aderencia_aos_criterios": 5.0,
+    "registro_prisma": 5.0
+  },
+  "achados": [
+    {
+      "id": "A1",
+      "gravidade": "critica",
+      "local": "03a-busca.json > buscas 'principal', 'revisoes' e 'diretrizes' (retidos 50); 03a-candidatos.json",
+      "problema": "Só os 50 registros mais recentes (sort pub_date) de cada string grande foram triados. Ficaram sem triagem 86/165 da principal, 15/72 da de revisões e 65/115 da de diretrizes, e entre eles estão estudos centrais para a pergunta. O consenso do Panther Symposium, que recomenda reconstrução precoce para atletas de pivô e reabilitação progressiva antes dela, está fora da lista de candidatos, embora conste em diretrizes_web.",
+      "evidencia": "Reexecutei no PubMed em 09/11/2026 a principal (165, confere) e a de revisões (72, confere) e cruzei as listas com 03a-candidatos.json. Não triados, entre outros: Panther 32637434 (OJSM 2020) e 34006576 (J ISAKOS 2021); Delaware-Oslo 29854860 ('Who succeeds without reconstructive surgery?'), 33999877 (5 anos) e 35975945 (trajetórias); NACOX 35633030; 22962290 (retorno ao pivô em 1 ano); 29927640; 29438635 (20 anos); RS 38646275 (conservador × cirúrgico, 2024); RS/MA 26224582 (qualidade de vida no LCA insuficiente); RS 25394687 (fatores para precisar de cirurgia); Cochrane 27039329 (que só entrou pelo Consensus, sem PMID); Cochrane retirada 21563147 (exercício em LCA + lesão colateral, a registrar como retirada).",
+      "correcao": "Trie TODOS os registros de todas as strings PubMed (max_results ≥ 200 ou paginação). Na string de diretrizes, trie os 115. Una aos registros já triados, refaça a deduplicação por PMID, DOI e título e reclassifique. Os PMIDs listados na evidência devem aparecer em 03a-candidatos.json, com decisão e motivo.",
+      "responsavel": "fps-op-buscador",
+      "licao": "Nunca trunque uma string pela ordem de data: trie todos os registros que ela retornar e, se precisar cortar, corte depois da triagem, pelo desenho do estudo."
+    },
+    {
+      "id": "A2",
+      "gravidade": "maior",
+      "local": "03a-candidatos.json > 53 registros com motivo 'corte_volume:*'",
+      "problema": "O corte por volume não seguiu a regra do agente, que manda manter os desenhos mais altos e mais recentes. Saíram revisões sistemáticas, diretrizes e consensos recentes, além de itens dos subtemas essenciais (LCM, conservador direto). Duas diretrizes listadas em diretrizes_web foram excluídas dos candidatos.",
+      "evidencia": "Excluídos por corte: RS 41710220 (2026, reconstrução × reparo × conservador em atletas jovens); piloto conservador 41869243 (2026); 42331698 (menor efeito relevante da reconstrução × não cirúrgico); German Knee Society 42549304 e UEFA 42875873 (as duas em diretrizes_web); estudo de caso da diretriz AAOS 36952667; 38913807 (falta de consenso no LCM com LCA concomitante, subtema essencial); 40126657 e 40278544 (órtese no LCM, tratamento não cirúrgico); 38811114 e 28756525 (cuidado não operatório do LCA insuficiente); ACL-SPORTS 28224443/28224442 e 20195019 (evidência indireta aceita pelos critérios do 01-picos).",
+      "correcao": "Refaça o corte só depois de concluir A1, nesta ordem: diretrizes/consensos > RS/MA > ECR > coortes, e as mais recentes primeiro. Garanta pelo menos 2 itens por subtema essencial do 01-picos (conservador × reconstrução e coper; critérios de progressão e retorno ao esporte; LCM; dose FITT-VP; manejo de dor/derrame). O líder autoriza até 80 itens para avaliação. Os excluídos por volume vão para um campo próprio do PRISMA (ver A5), não para 'excluidos_titulo_resumo'.",
+      "responsavel": "fps-op-buscador",
+      "licao": "O corte por volume obedece à hierarquia de desenho e preserva a cobertura de cada subtema essencial; nunca exclua por volume um item que está listado como diretriz."
+    },
+    {
+      "id": "A3",
+      "gravidade": "maior",
+      "local": "03a-candidatos.json > exclusões fora do corte",
+      "problema": "Foram excluídos itens que o 01-picos designou para o subtema essencial de dose e itens dentro do escopo. Na amostra aleatória de 6 excluídos, 2 eram relevantes.",
+      "evidencia": "30001501 (Petushek 2019, diretriz de dose do treino neuromuscular, já citada em 01-referencias.json e recuperada pela string pubmed_dose_revisoes) foi excluído como 'fora_do_tema'; 22898912 (documentação do treino de força, mesma string) foi excluído por 'desfecho'. Amostra aleatória (seed 20261109): 42317908 (propriocepção aquática, força e equilíbrio na lesão do LCA) cortado por 'desenho', e 37130279 (consenso da OA Action Alliance sobre prevenção secundária após lesão do LCA) excluído por 'desfecho'. Os outros 4 da amostra foram excluídos corretamente.",
+      "correcao": "Reclassifique 30001501 e 22898912 como 'talvez' (evidência indireta de dose) e 42317908 e 37130279 como 'talvez'. Reveja todos os 'excluir' com motivo 'desfecho' ou 'fora_do_tema' que tratem de exercício, dose ou consenso em LCA: na dúvida, 'talvez'.",
+      "responsavel": "fps-op-buscador",
+      "licao": "Itens recuperados pelas strings de um subtema essencial não são 'fora do tema'; evidência indireta aceita pelos critérios fica como 'talvez'."
+    },
+    {
+      "id": "A4",
+      "gravidade": "maior",
+      "local": "03a-busca.json > diretrizes_web",
+      "problema": "Não há diretriz nacional nem registro de busca em órgãos nacionais (MS/Conitec, SBOT/AMB, SBRATE). NICE não aparece. A ausência não foi declarada em 'alerta'.",
+      "evidencia": "WebSearch do líder em 09/11/2026: existe o Projeto Diretrizes AMB/CFM, com a SBOT como autora (2007), sobre o diagnóstico da lesão do LCA (útil para o subtema de testes clínicos) e outro sobre a reconstrução. Não se encontrou diretriz brasileira de reabilitação nem consenso brasileiro de retorno ao esporte; a SBRATE só tem um levantamento de práticas (PMC12626718).",
+      "correcao": "Faça as buscas web nacionais (MS/PCDT/Conitec, Projeto Diretrizes AMB/SBOT, SBRATE, COFFITO/SONAFE) e a do NICE. Registre cada uma com URL e resultado. Inclua o Projeto Diretrizes SBOT (diagnóstico do LCA) com status 'não aberto' ou 'aberto', marcado como antigo e restrito ao diagnóstico. Preencha 'alerta' com: 'sem diretriz nacional de reabilitação do LCA/LCM; sem diretriz NICE específica' (se confirmado).",
+      "responsavel": "fps-op-buscador"
+    },
+    {
+      "id": "A5",
+      "gravidade": "maior",
+      "local": "03a-busca.json > prisma; 03a-candidatos.json > registros sem identificador",
+      "problema": "(a) Em 'identificados' (282) entraram só os registros retidos, não o total retornado pelas bases (PubMed 433 somando as strings, Consensus 50), e nada mostra os registros não triados nem os excluídos por volume. (b) São 41 registros sem PMID e sem DOI, não 12 como relatado. Assim a deduplicação falha: a Cochrane de 2016 entrou duas vezes, pelo Consensus sem PMID e pela PubMed com o PMID 27039329, não triado. Entre os sem identificador há 4 'incluir' e 6 'talvez'.",
+      "evidencia": "Soma de 'resultados' das 9 buscas PubMed: 72+17+165+115+7+38+7+10+2 = 433, e de 'retidos': 231. Contagem em 03a-candidatos.json: 41 registros com pmid e doi vazios. Exemplos 'incluir' sem ID: 'Nonoperative Treatment as an Option for Isolated ACL Injury: A Systematic review' (2024); 'Primary surgery versus primary rehabilitation for treating ACL injuries' (2022); 'ACL Reconstruction versus Nonoperative Treatment: Better Function…' (2021).",
+      "correcao": "Para todo 'incluir' e 'talvez' sem identificador, obtenha o PMID e/ou DOI por lookup_article_by_citation ou por busca do título no PubMed (registre 'sem PMID' só depois das duas tentativas). Deduplique de novo. Reescreva o PRISMA com: identificados por base (total retornado), duplicatas, triados, excluídos na triagem por motivo, excluídos por volume (campo separado) e para avaliação. Todas as contagens precisam bater com 03a-candidatos.json.",
+      "responsavel": "fps-op-buscador",
+      "licao": "No PRISMA, 'identificados' é o total que as bases retornaram; registros não triados e cortes por volume aparecem em linhas próprias."
+    },
+    {
+      "id": "A6",
+      "gravidade": "menor",
+      "local": "03a-candidatos.json > 20357420, 25878313; 27039329; 03a-busca.json > diretrizes_web Panther",
+      "problema": "As versões superadas (JOSPT 2010, AAOS 2015) estavam marcadas como 'duplicata'. A Cochrane de 2016 estava sem PMID e DOI. O Panther estava como 'não verificado'.",
+      "evidencia": "PubMed: 27039329 = Monk et al., Cochrane Database Syst Rev 2016, DOI 10.1002/14651858.CD011166.pub2; 32637434 = Diermeier et al., OJSM 2020;8(6), DOI 10.1177/2325967120931097; 34006576 = J ISAKOS 2021;6(3):129-137.",
+      "correcao": "APLICADA pelo revisor: motivo 'versao_superada'; PMID, DOI e periódico preenchidos no registro Cochrane (fonte 'Consensus+PubMed'); status do Panther atualizado com os metadados do PubMed.",
+      "responsavel": "fps-op-buscador"
+    }
+  ],
+  "correcoes_aplicadas": [
+    "A6: 20357420 e 25878313 passaram de 'duplicata' para 'versao_superada'.",
+    "A6: registro Cochrane (Consensus) recebeu PMID 27039329, DOI 10.1002/14651858.CD011166.pub2 e periódico; fonte 'Consensus+PubMed'.",
+    "A6: diretrizes_web > Panther agora tem status conferido no PubMed (PMID 32637434; publicação simultânea PMID 34006576)."
+  ],
+  "pontos_fortes": [
+    "As strings foram copiadas exatamente do 01-picos e as contagens se reproduzem: o revisor obteve 72 e 165 em 09/11/2026.",
+    "Os 5 PMIDs da lista de controle e a CPG da JOSPT de 2017 (busca dirigida) estão incluídos.",
+    "O PRISMA é internamente coerente com o arquivo (282 − 46 = 236 triados; 176 excluídos; 60 para avaliação). O problema está no conceito de 'identificados', não na aritmética.",
+    "A diretriz AAOS 2022 foi distinguida da versão superada de 2015, e a evidência pós-reconstrução foi rotulada como indireta em diretrizes_web."
+  ],
+  "escalonado": false,
+  "resumo": "Etapa 03a-busca, rodada 1: contagens e strings conferem (72/165), mas a triagem foi truncada nos 50 registros mais recentes de cada string grande. Ficaram fora estudos centrais (Panther, Delaware-Oslo, NACOX, RS conservador × cirúrgico, Cochrane pelo PMID). O corte por volume eliminou RS, diretrizes e itens de LCM e de dose. Não há diretriz nacional nem busca registrada, o PRISMA subconta os identificados e 41 registros estão sem identificador. Três correções menores foram aplicadas pelo revisor. REVISAR com o fps-op-buscador."
+}
