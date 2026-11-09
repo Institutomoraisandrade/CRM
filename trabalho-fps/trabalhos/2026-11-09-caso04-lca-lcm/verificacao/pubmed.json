@@ -1,1357 +1,1975 @@
 {
- "20660401": {
-  "titulo": "A randomized trial of treatment for acute anterior cruciate ligament tears.",
-  "ano": "2010",
-  "volume": "363",
-  "numero": "4",
-  "paginas": "331-42",
-  "doi": "10.1056/NEJMoa0907797",
-  "periodico": "N Engl J Med",
-  "autores": [
-   "Frobell",
-   "Roos",
-   "Roos",
-   "Ranstam",
-   "Lohmander"
-  ]
- },
- "23349407": {
-  "titulo": "Treatment for acute anterior cruciate ligament tear: five year outcome of randomised trial.",
-  "ano": "2013",
-  "volume": "346",
-  "numero": "",
-  "paginas": "f232",
-  "doi": "10.1136/bmj.f232",
-  "periodico": "BMJ",
-  "autores": [
-   "Frobell",
-   "Roos",
-   "Roos",
-   "Roemer",
-   "Ranstam",
-   "Lohmander"
-  ]
- },
- "31431274": {
-  "titulo": "Evidence-based recommendations for the management of anterior cruciate ligament (ACL) rupture.",
-  "ano": "2019",
-  "volume": "33",
-  "numero": "1",
-  "paginas": "33-47",
-  "doi": "10.1016/j.berh.2019.01.018",
-  "periodico": "Best Pract Res Clin Rheumatol",
-  "autores": [
-   "Filbay",
-   "Grindem"
-  ]
- },
- "27162233": {
-  "titulo": "Simple decision rules can reduce reinjury risk by 84% after ACL reconstruction: the Delaware-Oslo ACL cohort study.",
-  "ano": "2016",
-  "volume": "50",
-  "numero": "13",
-  "paginas": "804-8",
-  "doi": "10.1136/bjsports-2016-096031",
-  "periodico": "Br J Sports Med",
-  "autores": [
-   "Grindem",
-   "Snyder-Mackler",
-   "Moksnes",
-   "Engebretsen",
-   "Risberg"
-  ]
- },
- "30170521": {
-  "titulo": "Exercise-Based Knee and Anterior Cruciate Ligament Injury Prevention.",
-  "ano": "2018",
-  "volume": "48",
-  "numero": "9",
-  "paginas": "A1-A42",
-  "doi": "10.2519/jospt.2018.0303",
-  "periodico": "J Orthop Sports Phys Ther",
-  "autores": [
-   "Arundale",
-   "Bizzini",
-   "Giordano",
-   "Hewett",
-   "Logerstedt",
-   "Mandelbaum",
-   "Scalzitti",
-   "Silvers-Granelli",
-   "Snyder-Mackler"
-  ]
- },
- "15722287": {
-  "titulo": "Biomechanical measures of neuromuscular control and valgus loading of the knee predict anterior cruciate ligament injury risk in female athletes: a prospective study.",
-  "ano": "2005",
-  "volume": "33",
-  "numero": "4",
-  "paginas": "492-501",
-  "doi": "10.1177/0363546504269591",
-  "periodico": "Am J Sports Med",
-  "autores": [
-   "Hewett",
-   "Myer",
-   "Ford",
-   "Heidt",
-   "Colosimo",
-   "McLean",
-   "van den Bogert",
-   "Paterno",
-   "Succop"
-  ]
- },
- "27226389": {
-  "titulo": "2016 Consensus statement on return to sport from the First World Congress in Sports Physical Therapy, Bern.",
-  "ano": "2016",
-  "volume": "50",
-  "numero": "14",
-  "paginas": "853-64",
-  "doi": "10.1136/bjsports-2016-096278",
-  "periodico": "Br J Sports Med",
-  "autores": [
-   "Ardern",
-   "Glasgow",
-   "Schneiders",
-   "Witvrouw",
-   "Clarsen",
-   "Cools",
-   "Gojanovic",
-   "Griffin",
-   "Khan",
-   "Moksnes",
-   "Mutch",
-   "Phillips",
-   "Reurink",
-   "Sadler",
-   "Silbernagel",
-   "Thorborg",
-   "Wangensteen",
-   "Wilk",
-   "Bizzini"
-  ]
- },
- "30949749": {
-  "titulo": "Medial collateral ligament injuries of the knee in male professional football players: a prospective three-season study of 130 cases from the UEFA Elite Club Injury Study.",
-  "ano": "2019",
-  "volume": "27",
-  "numero": "11",
-  "paginas": "3692-3698",
-  "doi": "10.1007/s00167-019-05491-6",
-  "periodico": "Knee Surg Sports Traumatol Arthrosc",
-  "autores": [
-   "Lundblad",
-   "Hägglund",
-   "Thomeé",
-   "Hamrin Senorski",
-   "Ekstrand",
-   "Karlsson",
-   "Waldén"
-  ]
- },
- "29089004": {
-  "titulo": "Knee Stability and Movement Coordination Impairments: Knee Ligament Sprain Revision 2017.",
-  "ano": "2017",
-  "volume": "47",
-  "numero": "11",
-  "paginas": "A1-A47",
-  "doi": "10.2519/jospt.2017.0303",
-  "periodico": "J Orthop Sports Phys Ther",
-  "autores": [
-   "Logerstedt",
-   "Scalzitti",
-   "Risberg",
-   "Engebretsen",
-   "Webster",
-   "Feller",
-   "Snyder-Mackler",
-   "Axe",
-   "McDonough"
-  ]
- },
- "20032559": {
-  "titulo": "Interrater reliability of a clinical scale to assess knee joint effusion.",
-  "ano": "2009",
-  "volume": "39",
-  "numero": "12",
-  "paginas": "845-9",
-  "doi": "10.2519/jospt.2009.3143",
-  "periodico": "J Orthop Sports Phys Ther",
-  "autores": [
-   "Sturgill",
-   "Snyder-Mackler",
-   "Manal",
-   "Axe"
-  ]
- },
- "35768181": {
-  "titulo": "Rehabilitation after anterior cruciate ligament and meniscal injuries: a best-evidence synthesis of systematic reviews for the OPTIKNEE consensus.",
-  "ano": "2022",
-  "volume": "56",
-  "numero": "24",
-  "paginas": "1445-1453",
-  "doi": "10.1136/bjsports-2022-105495",
-  "periodico": "Br J Sports Med",
-  "autores": [
-   "Culvenor",
-   "Girdwood",
-   "Juhl",
-   "Patterson",
-   "Haberfield",
-   "Holm",
-   "Bricca",
-   "Whittaker",
-   "Roos",
-   "Crossley"
-  ]
- },
- "30790527": {
-  "titulo": "Coper Classification Early After Anterior Cruciate Ligament Rupture Changes With Progressive Neuromuscular and Strength Training and Is Associated With 2-Year Success: The Delaware-Oslo ACL Cohort Study.",
-  "ano": "2019",
-  "volume": "47",
-  "numero": "4",
-  "paginas": "807-814",
-  "doi": "10.1177/0363546519825500",
-  "periodico": "Am J Sports Med",
-  "autores": [
-   "Thoma",
-   "Grindem",
-   "Logerstedt",
-   "Axe",
-   "Engebretsen",
-   "Risberg",
-   "Snyder-Mackler"
-  ]
- },
- "36731908": {
-  "titulo": "Aspetar clinical practice guideline on rehabilitation after anterior cruciate ligament reconstruction.",
-  "ano": "2023",
-  "volume": "57",
-  "numero": "9",
-  "paginas": "500-514",
-  "doi": "10.1136/bjsports-2022-106158",
-  "periodico": "Br J Sports Med",
-  "autores": [
-   "Kotsifaki",
-   "Korakakis",
-   "King",
-   "Barbosa",
-   "Maree",
-   "Pantouveris",
-   "Bjerregaard",
-   "Luomajoki",
-   "Wilhelmsen",
-   "Whiteley"
-  ]
- },
- "27539507": {
-  "titulo": "Evidence-based clinical practice update: practice guidelines for anterior cruciate ligament rehabilitation based on a systematic review and multidisciplinary consensus.",
-  "ano": "2016",
-  "volume": "50",
-  "numero": "24",
-  "paginas": "1506-1515",
-  "doi": "10.1136/bjsports-2015-095898",
-  "periodico": "Br J Sports Med",
-  "autores": [
-   "van Melick",
-   "van Cingel",
-   "Brooijmans",
-   "Neeter",
-   "van Tienen",
-   "Hullegie",
-   "Nijhuis-van der Sanden"
-  ]
- },
- "33795969": {
-  "titulo": "EPIDEMIOLOGY OF ANTERIOR CRUCIATE LIGAMENT INJURY IN SOCCER PLAYERS IN THE BRAZILIAN CHAMPIONSHIP.",
-  "ano": "2021",
-  "volume": "29",
-  "numero": "1",
-  "paginas": "45-48",
-  "doi": "10.1590/1413-785220212901235225",
-  "periodico": "Acta Ortop Bras",
-  "autores": [
-   "Nitta",
-   "Baldan",
-   "Costa",
-   "Cohen",
-   "Pagura",
-   "Arliani"
-  ]
- },
- "25061417": {
-  "titulo": "Common injuries in athletes' knee: experience of a specialized center.",
-  "ano": "2014",
-  "volume": "22",
-  "numero": "3",
-  "paginas": "127-31",
-  "doi": "10.1590/1413-78522014220300475",
-  "periodico": "Acta Ortop Bras",
-  "autores": [
-   "Nicolini",
-   "de Carvalho",
-   "Matsuda",
-   "Sayum",
-   "Cohen"
-  ]
- },
- "33846157": {
-  "titulo": "High rate of second ACL injury following ACL reconstruction in male professional footballers: an updated longitudinal analysis from 118 players in the UEFA Elite Club Injury Study.",
-  "ano": "2021",
-  "volume": "55",
-  "numero": "23",
-  "paginas": "1350-1356",
-  "doi": "10.1136/bjsports-2020-103555",
-  "periodico": "Br J Sports Med",
-  "autores": [
-   "Della Villa",
-   "Hägglund",
-   "Della Villa",
-   "Ekstrand",
-   "Waldén"
-  ]
- },
- "30905035": {
-  "titulo": "What is the Evidence for and Validity of Return-to-Sport Testing after Anterior Cruciate Ligament Reconstruction Surgery? A Systematic Review and Meta-Analysis.",
-  "ano": "2019",
-  "volume": "49",
-  "numero": "6",
-  "paginas": "917-929",
-  "doi": "10.1007/s40279-019-01093-x",
-  "periodico": "Sports Med",
-  "autores": [
-   "Webster",
-   "Hewett"
-  ]
- },
- "42233492": {
-  "titulo": "Nonsurgical Anterior Cruciate Ligament Rehabilitation: A Scoping Review of Exercise Descriptors and Return-to-Sport Outcomes.",
-  "ano": "2026",
-  "volume": "18",
-  "numero": "5",
-  "paginas": "1023-1034",
-  "doi": "10.1177/19417381261449486",
-  "periodico": "Sports Health",
-  "autores": [
-   "Ghezzi",
-   "Pichero",
-   "Cioeta",
-   "Gokeler",
-   "Giovannico",
-   "Tortoli"
-  ]
- },
- "36960920": {
-  "titulo": "Nonoperative Management, Repair, or Reconstruction of the Medial Collateral Ligament in Combined Anterior Cruciate and Medial Collateral Ligament Injuries-Which Is Best? A Systematic Review and Meta-analysis.",
-  "ano": "2023",
-  "volume": "52",
-  "numero": "2",
-  "paginas": "522-534",
-  "doi": "10.1177/03635465231153157",
-  "periodico": "Am J Sports Med",
-  "autores": [
-   "Shultz",
-   "Poehlein",
-   "Morriss",
-   "Green",
-   "Hu",
-   "Lander",
-   "Amoo-Achampong",
-   "Lau"
-  ]
- },
- "38242254": {
-  "titulo": "Early Anterior Cruciate Ligament Treatment Might Be Crucial for Acute Combined Anterior Cruciate Ligament and Medial Collateral Ligament Injuries: A Systematic Review of the Various Treatment Strategies.",
-  "ano": "2024",
-  "volume": "40",
-  "numero": "8",
-  "paginas": "2322-2336",
-  "doi": "10.1016/j.arthro.2024.01.009",
-  "periodico": "Arthroscopy",
-  "autores": [
-   "van der List",
-   "Muscott",
-   "Parikh",
-   "Waterman",
-   "Trasolini"
-  ]
- },
- "34889652": {
-  "titulo": "Symmetry in Triple Hop Distance Hides Asymmetries in Knee Function After ACL Reconstruction in Athletes at Return to Sports.",
-  "ano": "2021",
-  "volume": "50",
-  "numero": "2",
-  "paginas": "441-450",
-  "doi": "10.1177/03635465211063192",
-  "periodico": "Am J Sports Med",
-  "autores": [
-   "Kotsifaki",
-   "Van Rossom",
-   "Whiteley",
-   "Korakakis",
-   "Bahr",
-   "Sideris",
-   "Smith",
-   "Jonkers"
-  ]
- },
- "29272209": {
-  "titulo": "Self-Reported Fear Predicts Functional Performance and Second ACL Injury After ACL Reconstruction and Return to Sport: A Pilot Study.",
-  "ano": "2017",
-  "volume": "10",
-  "numero": "3",
-  "paginas": "228-233",
-  "doi": "10.1177/1941738117745806",
-  "periodico": "Sports Health",
-  "autores": [
-   "Paterno",
-   "Flynn",
-   "Thomas",
-   "Schmitt"
-  ]
- },
- "40645751": {
-  "titulo": "Prevention strategies for lower extremity injury: a systematic review and meta-analyses for the Female, woman and/or girl Athlete Injury pRevention (FAIR) consensus.",
-  "ano": "2025",
-  "volume": "59",
-  "numero": "22",
-  "paginas": "1575-1586",
-  "doi": "10.1136/bjsports-2025-109910",
-  "periodico": "Br J Sports Med",
-  "autores": [
-   "Bullock",
-   "Räisänen",
-   "Martin",
-   "Martin",
-   "Galarneau",
-   "Whittaker",
-   "Losciale",
-   "Bizzini",
-   "Bourne",
-   "Dijkstra",
-   "Dubé",
-   "Hayden",
-   "Girdwood",
-   "Hägglund",
-   "McLeod",
-   "Mkumbuzi",
-   "Mosler",
-   "Murphy",
-   "Myklebust",
-   "Møller",
-   "Ocarino",
-   "Owoeye",
-   "Palmer",
-   "Pasanen",
-   "Rio",
-   "Thorborg",
-   "van Middelkoop",
-   "Verhagen",
-   "Warden",
-   "Whalan",
-   "Crossley",
-   "Emery"
-  ]
- },
- "38336547": {
-  "titulo": "Uncovering injuries in Brazilian elite women's football: A prospective cohort study.",
-  "ano": "2024",
-  "volume": "27",
-  "numero": "4",
-  "paginas": "228-233",
-  "doi": "10.1016/j.jsams.2024.01.008",
-  "periodico": "J Sci Med Sport",
-  "autores": [
-   "Gasparin",
-   "Ribas",
-   "Flores",
-   "Bueno",
-   "Vrkoslaw",
-   "Bittencourt",
-   "Baroni"
-  ]
- },
- "42367014": {
-  "titulo": "Risk of Revision and Patient-Reported Outcomes After ACL Reconstruction: Influence of Concomitant MCL Injury and Graft Choice: Analysis of 35,139 Reconstructions From the Norwegian Knee Ligament Register.",
-  "ano": "2026",
-  "volume": "54",
-  "numero": "10",
-  "paginas": "2381-2388",
-  "doi": "10.1177/03635465261457327",
-  "periodico": "Am J Sports Med",
-  "autores": [
-   "Birkenes",
-   "Chahla",
-   "Lygre",
-   "Williams",
-   "Inderhaug"
-  ]
- },
- "42212766": {
-  "titulo": "Comparison of Isolated ACL and Combined ACL/MCL Injuries in Professional Soccer and Rugby Players: Return to Play and Career Longevity Outcomes.",
-  "ano": "2026",
-  "volume": "54",
-  "numero": "9",
-  "paginas": "2091-2100",
-  "doi": "10.1177/03635465261448236",
-  "periodico": "Am J Sports Med",
-  "autores": [
-   "Abdul",
-   "Jones",
-   "Haslhofer",
-   "Motesharei",
-   "Ball",
-   "Williams"
-  ]
- },
- "19954822": {
-  "titulo": "Quadriceps arthrogenic muscle inhibition: neural mechanisms and treatment perspectives.",
-  "ano": "2009",
-  "volume": "40",
-  "numero": "3",
-  "paginas": "250-66",
-  "doi": "10.1016/j.semarthrit.2009.10.001",
-  "periodico": "Seminars in arthritis and rheumatism",
-  "autores": [
-   "Rice",
-   "McNair"
-  ]
- },
- "12937440": {
-  "titulo": "Cryotherapy and Transcutaneous Electric Neuromuscular Stimulation Decrease Arthrogenic Muscle Inhibition of the Vastus Medialis After Knee Joint Effusion.",
-  "ano": "2002",
-  "volume": "37",
-  "numero": "1",
-  "paginas": "25-31",
-  "doi": "",
-  "periodico": "Journal of athletic training",
-  "autores": [
-   "Hopkins",
-   "Ingersoll",
-   "Edwards",
-   "Klootwyk"
-  ]
- },
- "14627927": {
-  "titulo": "Arthrogenic muscle inhibition is not present in the limb contralateral to a simulated knee joint effusion.",
-  "ano": "2003",
-  "volume": "82",
-  "numero": "12",
-  "paginas": "910-6",
-  "doi": "10.1097/01.PHM.0000098045.04883.02",
-  "periodico": "American journal of physical medicine & rehabilitation",
-  "autores": [
-   "Palmieri",
-   "Ingersoll",
-   "Edwards",
-   "Hoffman",
-   "Stone",
-   "Babington",
-   "Cordova",
-   "Krause"
-  ]
- },
- "15685462": {
-  "titulo": "Pre-synaptic modulation of quadriceps arthrogenic muscle inhibition.",
-  "ano": "2005",
-  "volume": "13",
-  "numero": "5",
-  "paginas": "370-6",
-  "doi": "10.1007/s00167-004-0547-z",
-  "periodico": "Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA",
-  "autores": [
-   "Palmieri",
-   "Weltman",
-   "Edwards",
-   "Tom",
-   "Saliba",
-   "Mistry",
-   "Ingersoll"
-  ]
- },
- "19116960": {
-  "titulo": "Effects of cryotherapy on arthrogenic muscle inhibition using an experimental model of knee swelling.",
-  "ano": "2009",
-  "volume": "61",
-  "numero": "1",
-  "paginas": "78-83",
-  "doi": "10.1002/art.24168",
-  "periodico": "Arthritis and rheumatism",
-  "autores": [
-   "Rice",
-   "McNair",
-   "Dalbeth"
-  ]
- },
- "25497133": {
-  "titulo": "Quadriceps arthrogenic muscle inhibition: the effects of experimental knee joint effusion on motor cortex excitability.",
-  "ano": "2014",
-  "volume": "16",
-  "numero": "6",
-  "paginas": "502",
-  "doi": "10.1186/s13075-014-0502-4",
-  "periodico": "Arthritis research & therapy",
-  "autores": [
-   "Rice",
-   "McNair",
-   "Lewis",
-   "Dalbeth"
-  ]
- },
- "38164669": {
-  "titulo": "Incidence of and Risk Factors for Arthrogenic Muscle Inhibition in Acute Anterior Cruciate Ligament Injuries: A Cross-Sectional Study and Analysis of Associated Factors From the SANTI Study Group.",
-  "ano": "2024",
-  "volume": "52",
-  "numero": "1",
-  "paginas": "60-68",
-  "doi": "10.1177/03635465231209987",
-  "periodico": "The American journal of sports medicine",
-  "autores": [
-   "Sonnery-Cottet",
-   "Hopper",
-   "Gousopoulos",
-   "Pioger",
-   "Vieira",
-   "Thaunat",
-   "Fayard",
-   "Freychet",
-   "Cavaignac",
-   "Saithna"
-  ]
- },
- "33492623": {
-  "titulo": "Lower Limb Muscle Size after Anterior Cruciate Ligament Injury: A Systematic Review and Meta-Analysis.",
-  "ano": "2021",
-  "volume": "51",
-  "numero": "6",
-  "paginas": "1209-1226",
-  "doi": "10.1007/s40279-020-01419-0",
-  "periodico": "Sports medicine (Auckland, N.Z.)",
-  "autores": [
-   "Dutaillis",
-   "Maniar",
-   "Opar",
-   "Hickey",
-   "Timmins"
-  ]
- },
- "16715828": {
-  "titulo": "Clinical diagnosis of an anterior cruciate ligament rupture: a meta-analysis.",
-  "ano": "2006",
-  "volume": "36",
-  "numero": "5",
-  "paginas": "267-88",
-  "doi": "10.2519/jospt.2006.2011",
-  "periodico": "The Journal of orthopaedic and sports physical therapy",
-  "autores": [
-   "Benjaminse",
-   "Gokeler",
-   "van der Schans"
-  ]
- },
- "23085822": {
-  "titulo": "Methods to diagnose acute anterior cruciate ligament rupture: a meta-analysis of physical examinations with and without anaesthesia.",
-  "ano": "2012",
-  "volume": "21",
-  "numero": "8",
-  "paginas": "1895-903",
-  "doi": "10.1007/s00167-012-2250-9",
-  "periodico": "Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA",
-  "autores": [
-   "van Eck",
-   "van den Bekerom",
-   "Fu",
-   "Poolman",
-   "Kerkhoffs"
-  ]
- },
- "35150292": {
-  "titulo": "The diagnostic accuracy of clinical tests for anterior cruciate ligament tears are comparable but the Lachman test has been previously overestimated: a systematic review and meta-analysis.",
-  "ano": "2022",
-  "volume": "30",
-  "numero": "10",
-  "paginas": "3287-3303",
-  "doi": "10.1007/s00167-022-06898-4",
-  "periodico": "Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA",
-  "autores": [
-   "Sokal",
-   "Norris",
-   "Maddox",
-   "Oldershaw"
-  ]
- },
- "35945782": {
-  "titulo": "Value of clinical tests in diagnosing anterior cruciate ligament injuries: A systematic review and meta-analysis.",
-  "ano": "2022",
-  "volume": "101",
-  "numero": "31",
-  "paginas": "e29263",
-  "doi": "10.1097/MD.0000000000029263",
-  "periodico": "Medicine",
-  "autores": [
-   "Huang",
-   "Liu",
-   "Fan",
-   "Zou",
-   "Chen"
-  ]
- },
- "27693100": {
-  "titulo": "Diagnostic validity of physical examination tests for common knee disorders: An overview of systematic reviews and meta-analysis.",
-  "ano": "2016",
-  "volume": "23",
-  "numero": "",
-  "paginas": "143-155",
-  "doi": "10.1016/j.ptsp.2016.08.002",
-  "periodico": "Physical therapy in sport : official journal of the Association of Chartered Physiotherapists in Sports Medicine",
-  "autores": [
-   "Décary",
-   "Ouellet",
-   "Vendittoli",
-   "Roy",
-   "Desmeules"
-  ]
- },
- "17939613": {
-  "titulo": "Physical examination tests for assessing a torn meniscus in the knee: a systematic review with meta-analysis.",
-  "ano": "2007",
-  "volume": "37",
-  "numero": "9",
-  "paginas": "541-50",
-  "doi": "10.2519/jospt.2007.2560",
-  "periodico": "The Journal of orthopaedic and sports physical therapy",
-  "autores": [
-   "Hegedus",
-   "Cook",
-   "Hasselblad",
-   "Goode",
-   "McCrory"
-  ]
- },
- "19609008": {
-  "titulo": "Medial knee injury: Part 1, static function of the individual components of the main medial knee structures.",
-  "ano": "2009",
-  "volume": "37",
-  "numero": "9",
-  "paginas": "1762-70",
-  "doi": "10.1177/0363546509333852",
-  "periodico": "The American journal of sports medicine",
-  "autores": [
-   "Griffith",
-   "LaPrade",
-   "Johansen",
-   "Armitage",
-   "Wijdicks",
-   "Engebretsen"
-  ]
- },
- "20439679": {
-  "titulo": "Injuries to the medial collateral ligament and associated medial structures of the knee.",
-  "ano": "2010",
-  "volume": "92",
-  "numero": "5",
-  "paginas": "1266-80",
-  "doi": "10.2106/JBJS.I.01229",
-  "periodico": "The Journal of bone and joint surgery. American volume",
-  "autores": [
-   "Wijdicks",
-   "Griffith",
-   "Johansen",
-   "Engebretsen",
-   "LaPrade"
-  ]
- },
- "17768198": {
-  "titulo": "The anatomy of the medial part of the knee.",
-  "ano": "2007",
-  "volume": "89",
-  "numero": "9",
-  "paginas": "2000-10",
-  "doi": "10.2106/JBJS.F.01176",
-  "periodico": "The Journal of bone and joint surgery. American volume",
-  "autores": [
-   "LaPrade",
-   "Engebretsen",
-   "Ly",
-   "Johansen",
-   "Wentorf",
-   "Engebretsen"
-  ]
- },
- "37503921": {
-  "titulo": "The Anterior Fibers of the Superficial MCL and the ACL Restrain Anteromedial Rotatory Instability.",
-  "ano": "2023",
-  "volume": "51",
-  "numero": "11",
-  "paginas": "2928-2935",
-  "doi": "10.1177/03635465231187043",
-  "periodico": "The American journal of sports medicine",
-  "autores": [
-   "Herbst",
-   "Muhmann",
-   "Raschke",
-   "Katthagen",
-   "Oeckenpöhler",
-   "Wermers",
-   "Glasbrenner",
-   "Robinson",
-   "Kittl"
-  ]
- },
- "32504158": {
-  "titulo": "The medial ligaments and the ACL restrain anteromedial laxity of the knee.",
-  "ano": "2020",
-  "volume": "28",
-  "numero": "12",
-  "paginas": "3700-3708",
-  "doi": "10.1007/s00167-020-06084-4",
-  "periodico": "Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA",
-  "autores": [
-   "Ball",
-   "Stephen",
-   "El-Daou",
-   "Williams",
-   "Amis"
-  ]
- },
- "11180920": {
-  "titulo": "In-situ force in the medial and lateral structures of intact and ACL-deficient knees.",
-  "ano": "2000",
-  "volume": "5",
-  "numero": "6",
-  "paginas": "567-71",
-  "doi": "10.1007/s007760070007",
-  "periodico": "Journal of orthopaedic science : official journal of the Japanese Orthopaedic Association",
-  "autores": [
-   "Kanamori",
-   "Sakane",
-   "Zeminski",
-   "Rudy",
-   "Woo"
-  ]
- },
- "16286866": {
-  "titulo": "Muscle, ligament, and joint-contact forces at the knee during walking.",
-  "ano": "2005",
-  "volume": "37",
-  "numero": "11",
-  "paginas": "1948-56",
-  "doi": "10.1249/01.mss.0000180404.86078.ff",
-  "periodico": "Medicine and science in sports and exercise",
-  "autores": [
-   "Shelburne",
-   "Torry",
-   "Pandy"
-  ]
- },
- "28656567": {
-  "titulo": "Varus-valgus instability in the anterior cruciate ligament-deficient knee: effect of posterior tibial load.",
-  "ano": "2017",
-  "volume": "4",
-  "numero": "1",
-  "paginas": "24",
-  "doi": "10.1186/s40634-017-0087-3",
-  "periodico": "Journal of experimental orthopaedics",
-  "autores": [
-   "Ohori",
-   "Mae",
-   "Shino",
-   "Tachibana",
-   "Fujie",
-   "Yoshikawa",
-   "Nakata"
-  ]
- },
- "36452420": {
-  "titulo": "From Anatomy to Complex Reconstruction: A Modern Review on the Medial Collateral Ligament of the Knee.",
-  "ano": "2022",
-  "volume": "10",
-  "numero": "10",
-  "paginas": "818-826",
-  "doi": "10.22038/ABJS.2022.66697.3179",
-  "periodico": "The archives of bone and joint surgery",
-  "autores": [
-   "Braaten",
-   "Banovetz",
-   "Rodriguez",
-   "Thomas",
-   "LaPrade"
-  ]
- },
- "42748362": {
-  "titulo": "Current concepts in isolated and combined injuries of the medial collateral ligament complex-Part I: Anatomy, biomechanics, clinical and radiological examination of the medial collateral ligament of the knee.",
-  "ano": "2026",
-  "volume": "",
-  "numero": "",
-  "paginas": "",
-  "doi": "10.1002/ksa.70588",
-  "periodico": "Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA",
-  "autores": [
-   "Runer",
-   "Amis",
-   "Smigielski",
-   "Herbst",
-   "Kittl",
-   "Wierer",
-   "Bouguennec",
-   "Cristiani",
-   "Hoser",
-   "Abermann",
-   "Willinger",
-   "D'Ambrosi",
-   "Senorski",
-   "Getgood",
-   "Musahl",
-   "Ball",
-   "Williams",
-   "Moatshe",
-   "Siebenlist",
-   "Strauss",
-   "Lind",
-   "Herbort",
-   "Samuelsson",
-   "Fink",
-   "Robinson"
-  ]
- },
- "42789756": {
-  "titulo": "Current concepts in isolated and combined injuries of the medial collateral ligament complex, part II: The anteromedial knee instability classification.",
-  "ano": "2026",
-  "volume": "",
-  "numero": "",
-  "paginas": "",
-  "doi": "10.1002/ksa.70630",
-  "periodico": "Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA",
-  "autores": [
-   "Runer",
-   "Bouguennec",
-   "Wierer",
-   "Robinson",
-   "Amis",
-   "Herbst",
-   "Kittl",
-   "Cristiani",
-   "Hoser",
-   "Willinger",
-   "Abermann",
-   "D'Ambrosi",
-   "Senorski",
-   "Getgood",
-   "Musahl",
-   "Ball",
-   "Williams",
-   "Siebenlist",
-   "Moatshe",
-   "Smigielski",
-   "Lind",
-   "Strauss",
-   "Herbort",
-   "Samuelsson",
-   "Fink"
-  ]
- },
- "34150330": {
-  "titulo": "Posterior oblique ligament of the knee: state of the art.",
-  "ano": "2021",
-  "volume": "6",
-  "numero": "5",
-  "paginas": "364-371",
-  "doi": "10.1302/2058-5241.6.200127",
-  "periodico": "EFORT open reviews",
-  "autores": [
-   "D'Ambrosi",
-   "Corona",
-   "Guerra",
-   "Cerciello",
-   "Ursino",
-   "Ursino",
-   "Hantes"
-  ]
- },
- "23349168": {
-  "titulo": "Shelbourne's update of the O'Donoghue knee triad in a 17-year-old male Rugby player.",
-  "ano": "2013",
-  "volume": "2013",
-  "numero": "",
-  "paginas": "",
-  "doi": "10.1136/bcr.01.2012.5593",
-  "periodico": "BMJ case reports",
-  "autores": [
-   "Dacombe"
-  ]
- },
- "25907183": {
-  "titulo": "Three distinct mechanisms predominate in non-contact anterior cruciate ligament injuries in male professional football players: a systematic video analysis of 39 cases.",
-  "ano": "2015",
-  "volume": "49",
-  "numero": "22",
-  "paginas": "1452-60",
-  "doi": "10.1136/bjsports-2014-094573",
-  "periodico": "British journal of sports medicine",
-  "autores": [
-   "Waldén",
-   "Krosshaug",
-   "Bjørneboe",
-   "Andersen",
-   "Faul",
-   "Hägglund"
-  ]
- },
- "20595545": {
-  "titulo": "Mechanisms for noncontact anterior cruciate ligament injuries: knee joint kinematics in 10 injury situations from female team handball and basketball.",
-  "ano": "2010",
-  "volume": "38",
-  "numero": "11",
-  "paginas": "2218-25",
-  "doi": "10.1177/0363546510373570",
-  "periodico": "The American journal of sports medicine",
-  "autores": [
-   "Koga",
-   "Nakamae",
-   "Shima",
-   "Iwasa",
-   "Myklebust",
-   "Engebretsen",
-   "Bahr",
-   "Krosshaug"
-  ]
- },
- "21266934": {
-  "titulo": "Valgus plus internal rotation moments increase anterior cruciate ligament strain more than either alone.",
-  "ano": "2011",
-  "volume": "43",
-  "numero": "8",
-  "paginas": "1484-91",
-  "doi": "10.1249/MSS.0b013e31820f8395",
-  "periodico": "Medicine and science in sports and exercise",
-  "autores": [
-   "Shin",
-   "Chaudhari",
-   "Andriacchi"
-  ]
- },
- "19452139": {
-  "titulo": "Prevention of non-contact anterior cruciate ligament injuries in soccer players. Part 1: Mechanisms of injury and underlying risk factors.",
-  "ano": "2009",
-  "volume": "17",
-  "numero": "7",
-  "paginas": "705-29",
-  "doi": "10.1007/s00167-009-0813-1",
-  "periodico": "Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA",
-  "autores": [
-   "Alentorn-Geli",
-   "Myer",
-   "Silvers",
-   "Samitier",
-   "Romero",
-   "Lázaro-Haro",
-   "Cugat"
-  ]
- },
- "10795668": {
-  "titulo": "A decision-making scheme for returning patients to high-level activity with nonoperative treatment after anterior cruciate ligament rupture.",
-  "ano": "2000",
-  "volume": "8",
-  "numero": "2",
-  "paginas": "76-82",
-  "doi": "10.1007/s001670050190",
-  "periodico": "Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA",
-  "autores": [
-   "Fitzgerald",
-   "Axe",
-   "Snyder-Mackler"
-  ]
- },
- "18979658": {
-  "titulo": "Individuals with an anterior cruciate ligament-deficient knee classified as noncopers may be candidates for nonsurgical rehabilitation.",
-  "ano": "2008",
-  "volume": "38",
-  "numero": "10",
-  "paginas": "586-95",
-  "doi": "10.2519/jospt.2008.2750",
-  "periodico": "The Journal of orthopaedic and sports physical therapy",
-  "autores": [
-   "Moksnes",
-   "Snyder-Mackler",
-   "Risberg"
-  ]
- },
- "17940141": {
-  "titulo": "A 10-year prospective trial of a patient management algorithm and screening examination for highly active individuals with anterior cruciate ligament injury: Part 1, outcomes.",
-  "ano": "2007",
-  "volume": "36",
-  "numero": "1",
-  "paginas": "40-7",
-  "doi": "10.1177/0363546507308190",
-  "periodico": "The American journal of sports medicine",
-  "autores": [
-   "Hurd",
-   "Axe",
-   "Snyder-Mackler"
-  ]
- },
- "17932399": {
-  "titulo": "A 10-year prospective trial of a patient management algorithm and screening examination for highly active individuals with anterior cruciate ligament injury: Part 2, determinants of dynamic knee stability.",
-  "ano": "2007",
-  "volume": "36",
-  "numero": "1",
-  "paginas": "48-56",
-  "doi": "10.1177/0363546507308191",
-  "periodico": "The American journal of sports medicine",
-  "autores": [
-   "Hurd",
-   "Axe",
-   "Snyder-Mackler"
-  ]
- },
- "20411377": {
-  "titulo": "Functional tests should be accentuated more in the decision for ACL reconstruction.",
-  "ano": "2010",
-  "volume": "18",
-  "numero": "11",
-  "paginas": "1517-25",
-  "doi": "10.1007/s00167-010-1113-5",
-  "periodico": "Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA",
-  "autores": [
-   "Eitzen",
-   "Moksnes",
-   "Snyder-Mackler",
-   "Engebretsen",
-   "Risberg"
-  ]
- },
- "21979555": {
-  "titulo": "Identifying individuals with an anterior cruciate ligament-deficient knee as copers and noncopers: a narrative literature review.",
-  "ano": "2011",
-  "volume": "41",
-  "numero": "10",
-  "paginas": "758-66",
-  "doi": "10.2519/jospt.2011.3384",
-  "periodico": "The Journal of orthopaedic and sports physical therapy",
-  "autores": [
-   "Kaplan"
-  ]
- },
- "11354855": {
-  "titulo": "Dynamic stability in the anterior cruciate ligament deficient knee.",
-  "ano": "2001",
-  "volume": "9",
-  "numero": "2",
-  "paginas": "62-71",
-  "doi": "10.1007/s001670000166",
-  "periodico": "Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA",
-  "autores": [
-   "Rudolph",
-   "Axe",
-   "Buchanan",
-   "Scholz",
-   "Snyder-Mackler"
-  ]
- },
- "28355978": {
-  "titulo": "Limb Symmetry Indexes Can Overestimate Knee Function After Anterior Cruciate Ligament Injury.",
-  "ano": "2017",
-  "volume": "47",
-  "numero": "5",
-  "paginas": "334-338",
-  "doi": "10.2519/jospt.2017.7285",
-  "periodico": "The Journal of orthopaedic and sports physical therapy",
-  "autores": [
-   "Wellsandt",
-   "Failla",
-   "Snyder-Mackler"
-  ]
- },
- "17311886": {
-  "titulo": "Hop testing provides a reliable and valid outcome measure during rehabilitation after anterior cruciate ligament reconstruction.",
-  "ano": "2007",
-  "volume": "87",
-  "numero": "3",
-  "paginas": "337-49",
-  "doi": "10.2522/ptj.20060143",
-  "periodico": "Physical therapy",
-  "autores": [
-   "Reid",
-   "Birmingham",
-   "Stratford",
-   "Alcock",
-   "Giffin"
-  ]
- },
- "20118526": {
-  "titulo": "The influence of abnormal hip mechanics on knee injury: a biomechanical perspective.",
-  "ano": "2010",
-  "volume": "40",
-  "numero": "2",
-  "paginas": "42-51",
-  "doi": "10.2519/jospt.2010.3337",
-  "periodico": "The Journal of orthopaedic and sports physical therapy",
-  "autores": [
-   "Powers"
-  ]
- },
- "21335344": {
-  "titulo": "Performance on the single-leg squat task indicates hip abductor muscle function.",
-  "ano": "2011",
-  "volume": "39",
-  "numero": "4",
-  "paginas": "866-73",
-  "doi": "10.1177/0363546510395456",
-  "periodico": "The American journal of sports medicine",
-  "autores": [
-   "Crossley",
-   "Zhang",
-   "Schache",
-   "Bryant",
-   "Cowan"
-  ]
- },
- "20972344": {
-  "titulo": "Measures of range of motion and strength among healthy women with differing quality of lower extremity movement during the lateral step-down test.",
-  "ano": "2010",
-  "volume": "40",
-  "numero": "12",
-  "paginas": "792-800",
-  "doi": "10.2519/jospt.2010.3424",
-  "periodico": "The Journal of orthopaedic and sports physical therapy",
-  "autores": [
-   "Rabin",
-   "Kozol"
-  ]
- },
- "27592407": {
-  "titulo": "Relationship of Hip and Trunk Muscle Function with Single Leg Step-Down Performance: Implications for Return to Play Screening and Rehabilitation.",
-  "ano": "2016",
-  "volume": "22",
-  "numero": "",
-  "paginas": "66-73",
-  "doi": "10.1016/j.ptsp.2016.05.007",
-  "periodico": "Physical therapy in sport : official journal of the Association of Chartered Physiotherapists in Sports Medicine",
-  "autores": [
-   "Burnham",
-   "Yonz",
-   "Robertson",
-   "McKinley",
-   "Wilson",
-   "Johnson",
-   "Ireland",
-   "Noehren"
-  ]
- },
- "14613558": {
-  "titulo": "The Knee injury and Osteoarthritis Outcome Score (KOOS): from joint injury to osteoarthritis.",
-  "ano": "2003",
-  "volume": "1",
-  "numero": "",
-  "paginas": "64",
-  "doi": "10.1186/1477-7525-1-64",
-  "periodico": "Health and quality of life outcomes",
-  "autores": [
-   "Roos",
-   "Lohmander"
-  ]
- },
- "11573919": {
-  "titulo": "Development and validation of the international knee documentation committee subjective knee form.",
-  "ano": "2001",
-  "volume": "29",
-  "numero": "5",
-  "paginas": "600-13",
-  "doi": "10.1177/03635465010290051301",
-  "periodico": "The American journal of sports medicine",
-  "autores": [
-   "Irrgang",
-   "Anderson",
-   "Boland",
-   "Harner",
-   "Kurosaka",
-   "Neyret",
-   "Richmond",
-   "Shelborne"
-  ]
- },
- "19083699": {
-  "titulo": "Development and preliminary validation of a scale to measure the psychological impact of returning to sport following anterior cruciate ligament reconstruction surgery.",
-  "ano": "2007",
-  "volume": "9",
-  "numero": "1",
-  "paginas": "9-15",
-  "doi": "10.1016/j.ptsp.2007.09.003",
-  "periodico": "Physical therapy in sport : official journal of the Association of Chartered Physiotherapists in Sports Medicine",
-  "autores": [
-   "Webster",
-   "Feller",
-   "Lambros"
-  ]
- },
- "20472755": {
-  "titulo": "Translation and cross-cultural adaptation of the Brazilian version of the International Knee Documentation Committee Subjective Knee Form: validity and reproducibility.",
-  "ano": "2010",
-  "volume": "38",
-  "numero": "9",
-  "paginas": "1894-9",
-  "doi": "10.1177/0363546510365314",
-  "periodico": "The American journal of sports medicine",
-  "autores": [
-   "Metsavaht",
-   "Leporace",
-   "Riberto",
-   "de Mello Sposito",
-   "Batista"
-  ]
- },
- "23881894": {
-  "titulo": "Consensus criteria for defining 'successful outcome' after ACL injury and reconstruction: a Delaware-Oslo ACL cohort investigation.",
-  "ano": "2013",
-  "volume": "49",
-  "numero": "5",
-  "paginas": "335-42",
-  "doi": "10.1136/bjsports-2013-092299",
-  "periodico": "British journal of sports medicine",
-  "autores": [
-   "Lynch",
-   "Logerstedt",
-   "Grindem",
-   "Eitzen",
-   "Hicks",
-   "Axe",
-   "Engebretsen",
-   "Risberg",
-   "Snyder-Mackler"
-  ]
- },
- "29286825": {
-  "titulo": "Is Treatment of Segond Fracture Necessary With Combined Anterior Cruciate Ligament Reconstruction?",
-  "ano": "2017",
-  "volume": "46",
-  "numero": "4",
-  "paginas": "832-838",
-  "doi": "10.1177/0363546517745280",
-  "periodico": "The American journal of sports medicine",
-  "autores": [
-   "Melugin",
-   "Johnson",
-   "Wu",
-   "Levy",
-   "Stuart",
-   "Krych"
-  ]
- },
- "42909948": {
-  "titulo": "Arthrogenic Muscle Inhibition of the Knee: A Surgeon-Focused Narrative Review of Diagnosis and Management.",
-  "ano": "2026",
-  "volume": "18",
-  "numero": "",
-  "paginas": "643464",
-  "doi": "10.2147/ORR.S643464",
-  "periodico": "Orthopedic research and reviews",
-  "autores": [
-   "Nolan",
-   "Bhatti",
-   "Operti",
-   "Ford",
-   "Kress",
-   "Jildeh"
-  ]
- }
+  "20660401": {
+    "titulo": "A randomized trial of treatment for acute anterior cruciate ligament tears.",
+    "ano": "2010",
+    "volume": "363",
+    "numero": "4",
+    "paginas": "331-42",
+    "doi": "10.1056/NEJMoa0907797",
+    "periodico": "N Engl J Med",
+    "autores": [
+      "Frobell",
+      "Roos",
+      "Roos",
+      "Ranstam",
+      "Lohmander"
+    ]
+  },
+  "23349407": {
+    "titulo": "Treatment for acute anterior cruciate ligament tear: five year outcome of randomised trial.",
+    "ano": "2013",
+    "volume": "346",
+    "numero": "",
+    "paginas": "f232",
+    "doi": "10.1136/bmj.f232",
+    "periodico": "BMJ",
+    "autores": [
+      "Frobell",
+      "Roos",
+      "Roos",
+      "Roemer",
+      "Ranstam",
+      "Lohmander"
+    ]
+  },
+  "31431274": {
+    "titulo": "Evidence-based recommendations for the management of anterior cruciate ligament (ACL) rupture.",
+    "ano": "2019",
+    "volume": "33",
+    "numero": "1",
+    "paginas": "33-47",
+    "doi": "10.1016/j.berh.2019.01.018",
+    "periodico": "Best Pract Res Clin Rheumatol",
+    "autores": [
+      "Filbay",
+      "Grindem"
+    ]
+  },
+  "27162233": {
+    "titulo": "Simple decision rules can reduce reinjury risk by 84% after ACL reconstruction: the Delaware-Oslo ACL cohort study.",
+    "ano": "2016",
+    "volume": "50",
+    "numero": "13",
+    "paginas": "804-8",
+    "doi": "10.1136/bjsports-2016-096031",
+    "periodico": "Br J Sports Med",
+    "autores": [
+      "Grindem",
+      "Snyder-Mackler",
+      "Moksnes",
+      "Engebretsen",
+      "Risberg"
+    ]
+  },
+  "30170521": {
+    "titulo": "Exercise-Based Knee and Anterior Cruciate Ligament Injury Prevention.",
+    "ano": "2018",
+    "volume": "48",
+    "numero": "9",
+    "paginas": "A1-A42",
+    "doi": "10.2519/jospt.2018.0303",
+    "periodico": "J Orthop Sports Phys Ther",
+    "autores": [
+      "Arundale",
+      "Bizzini",
+      "Giordano",
+      "Hewett",
+      "Logerstedt",
+      "Mandelbaum",
+      "Scalzitti",
+      "Silvers-Granelli",
+      "Snyder-Mackler"
+    ]
+  },
+  "15722287": {
+    "titulo": "Biomechanical measures of neuromuscular control and valgus loading of the knee predict anterior cruciate ligament injury risk in female athletes: a prospective study.",
+    "ano": "2005",
+    "volume": "33",
+    "numero": "4",
+    "paginas": "492-501",
+    "doi": "10.1177/0363546504269591",
+    "periodico": "Am J Sports Med",
+    "autores": [
+      "Hewett",
+      "Myer",
+      "Ford",
+      "Heidt",
+      "Colosimo",
+      "McLean",
+      "van den Bogert",
+      "Paterno",
+      "Succop"
+    ]
+  },
+  "27226389": {
+    "titulo": "2016 Consensus statement on return to sport from the First World Congress in Sports Physical Therapy, Bern.",
+    "ano": "2016",
+    "volume": "50",
+    "numero": "14",
+    "paginas": "853-64",
+    "doi": "10.1136/bjsports-2016-096278",
+    "periodico": "Br J Sports Med",
+    "autores": [
+      "Ardern",
+      "Glasgow",
+      "Schneiders",
+      "Witvrouw",
+      "Clarsen",
+      "Cools",
+      "Gojanovic",
+      "Griffin",
+      "Khan",
+      "Moksnes",
+      "Mutch",
+      "Phillips",
+      "Reurink",
+      "Sadler",
+      "Silbernagel",
+      "Thorborg",
+      "Wangensteen",
+      "Wilk",
+      "Bizzini"
+    ]
+  },
+  "30949749": {
+    "titulo": "Medial collateral ligament injuries of the knee in male professional football players: a prospective three-season study of 130 cases from the UEFA Elite Club Injury Study.",
+    "ano": "2019",
+    "volume": "27",
+    "numero": "11",
+    "paginas": "3692-3698",
+    "doi": "10.1007/s00167-019-05491-6",
+    "periodico": "Knee Surg Sports Traumatol Arthrosc",
+    "autores": [
+      "Lundblad",
+      "Hägglund",
+      "Thomeé",
+      "Hamrin Senorski",
+      "Ekstrand",
+      "Karlsson",
+      "Waldén"
+    ]
+  },
+  "29089004": {
+    "titulo": "Knee Stability and Movement Coordination Impairments: Knee Ligament Sprain Revision 2017.",
+    "ano": "2017",
+    "volume": "47",
+    "numero": "11",
+    "paginas": "A1-A47",
+    "doi": "10.2519/jospt.2017.0303",
+    "periodico": "J Orthop Sports Phys Ther",
+    "autores": [
+      "Logerstedt",
+      "Scalzitti",
+      "Risberg",
+      "Engebretsen",
+      "Webster",
+      "Feller",
+      "Snyder-Mackler",
+      "Axe",
+      "McDonough"
+    ]
+  },
+  "20032559": {
+    "titulo": "Interrater reliability of a clinical scale to assess knee joint effusion.",
+    "ano": "2009",
+    "volume": "39",
+    "numero": "12",
+    "paginas": "845-9",
+    "doi": "10.2519/jospt.2009.3143",
+    "periodico": "J Orthop Sports Phys Ther",
+    "autores": [
+      "Sturgill",
+      "Snyder-Mackler",
+      "Manal",
+      "Axe"
+    ]
+  },
+  "35768181": {
+    "titulo": "Rehabilitation after anterior cruciate ligament and meniscal injuries: a best-evidence synthesis of systematic reviews for the OPTIKNEE consensus.",
+    "ano": "2022",
+    "volume": "56",
+    "numero": "24",
+    "paginas": "1445-1453",
+    "doi": "10.1136/bjsports-2022-105495",
+    "periodico": "Br J Sports Med",
+    "autores": [
+      "Culvenor",
+      "Girdwood",
+      "Juhl",
+      "Patterson",
+      "Haberfield",
+      "Holm",
+      "Bricca",
+      "Whittaker",
+      "Roos",
+      "Crossley"
+    ]
+  },
+  "30790527": {
+    "titulo": "Coper Classification Early After Anterior Cruciate Ligament Rupture Changes With Progressive Neuromuscular and Strength Training and Is Associated With 2-Year Success: The Delaware-Oslo ACL Cohort Study.",
+    "ano": "2019",
+    "volume": "47",
+    "numero": "4",
+    "paginas": "807-814",
+    "doi": "10.1177/0363546519825500",
+    "periodico": "Am J Sports Med",
+    "autores": [
+      "Thoma",
+      "Grindem",
+      "Logerstedt",
+      "Axe",
+      "Engebretsen",
+      "Risberg",
+      "Snyder-Mackler"
+    ]
+  },
+  "36731908": {
+    "titulo": "Aspetar clinical practice guideline on rehabilitation after anterior cruciate ligament reconstruction.",
+    "ano": "2023",
+    "volume": "57",
+    "numero": "9",
+    "paginas": "500-514",
+    "doi": "10.1136/bjsports-2022-106158",
+    "periodico": "Br J Sports Med",
+    "autores": [
+      "Kotsifaki",
+      "Korakakis",
+      "King",
+      "Barbosa",
+      "Maree",
+      "Pantouveris",
+      "Bjerregaard",
+      "Luomajoki",
+      "Wilhelmsen",
+      "Whiteley"
+    ]
+  },
+  "27539507": {
+    "titulo": "Evidence-based clinical practice update: practice guidelines for anterior cruciate ligament rehabilitation based on a systematic review and multidisciplinary consensus.",
+    "ano": "2016",
+    "volume": "50",
+    "numero": "24",
+    "paginas": "1506-1515",
+    "doi": "10.1136/bjsports-2015-095898",
+    "periodico": "Br J Sports Med",
+    "autores": [
+      "van Melick",
+      "van Cingel",
+      "Brooijmans",
+      "Neeter",
+      "van Tienen",
+      "Hullegie",
+      "Nijhuis-van der Sanden"
+    ]
+  },
+  "33795969": {
+    "titulo": "EPIDEMIOLOGY OF ANTERIOR CRUCIATE LIGAMENT INJURY IN SOCCER PLAYERS IN THE BRAZILIAN CHAMPIONSHIP.",
+    "ano": "2021",
+    "volume": "29",
+    "numero": "1",
+    "paginas": "45-48",
+    "doi": "10.1590/1413-785220212901235225",
+    "periodico": "Acta Ortop Bras",
+    "autores": [
+      "Nitta",
+      "Baldan",
+      "Costa",
+      "Cohen",
+      "Pagura",
+      "Arliani"
+    ]
+  },
+  "25061417": {
+    "titulo": "Common injuries in athletes' knee: experience of a specialized center.",
+    "ano": "2014",
+    "volume": "22",
+    "numero": "3",
+    "paginas": "127-31",
+    "doi": "10.1590/1413-78522014220300475",
+    "periodico": "Acta Ortop Bras",
+    "autores": [
+      "Nicolini",
+      "de Carvalho",
+      "Matsuda",
+      "Sayum",
+      "Cohen"
+    ]
+  },
+  "33846157": {
+    "titulo": "High rate of second ACL injury following ACL reconstruction in male professional footballers: an updated longitudinal analysis from 118 players in the UEFA Elite Club Injury Study.",
+    "ano": "2021",
+    "volume": "55",
+    "numero": "23",
+    "paginas": "1350-1356",
+    "doi": "10.1136/bjsports-2020-103555",
+    "periodico": "Br J Sports Med",
+    "autores": [
+      "Della Villa",
+      "Hägglund",
+      "Della Villa",
+      "Ekstrand",
+      "Waldén"
+    ]
+  },
+  "30905035": {
+    "titulo": "What is the Evidence for and Validity of Return-to-Sport Testing after Anterior Cruciate Ligament Reconstruction Surgery? A Systematic Review and Meta-Analysis.",
+    "ano": "2019",
+    "volume": "49",
+    "numero": "6",
+    "paginas": "917-929",
+    "doi": "10.1007/s40279-019-01093-x",
+    "periodico": "Sports Med",
+    "autores": [
+      "Webster",
+      "Hewett"
+    ]
+  },
+  "42233492": {
+    "titulo": "Nonsurgical Anterior Cruciate Ligament Rehabilitation: A Scoping Review of Exercise Descriptors and Return-to-Sport Outcomes.",
+    "ano": "2026",
+    "volume": "18",
+    "numero": "5",
+    "paginas": "1023-1034",
+    "doi": "10.1177/19417381261449486",
+    "periodico": "Sports Health",
+    "autores": [
+      "Ghezzi",
+      "Pichero",
+      "Cioeta",
+      "Gokeler",
+      "Giovannico",
+      "Tortoli"
+    ]
+  },
+  "36960920": {
+    "titulo": "Nonoperative Management, Repair, or Reconstruction of the Medial Collateral Ligament in Combined Anterior Cruciate and Medial Collateral Ligament Injuries-Which Is Best? A Systematic Review and Meta-analysis.",
+    "ano": "2023",
+    "volume": "52",
+    "numero": "2",
+    "paginas": "522-534",
+    "doi": "10.1177/03635465231153157",
+    "periodico": "Am J Sports Med",
+    "autores": [
+      "Shultz",
+      "Poehlein",
+      "Morriss",
+      "Green",
+      "Hu",
+      "Lander",
+      "Amoo-Achampong",
+      "Lau"
+    ]
+  },
+  "38242254": {
+    "titulo": "Early Anterior Cruciate Ligament Treatment Might Be Crucial for Acute Combined Anterior Cruciate Ligament and Medial Collateral Ligament Injuries: A Systematic Review of the Various Treatment Strategies.",
+    "ano": "2024",
+    "volume": "40",
+    "numero": "8",
+    "paginas": "2322-2336",
+    "doi": "10.1016/j.arthro.2024.01.009",
+    "periodico": "Arthroscopy",
+    "autores": [
+      "van der List",
+      "Muscott",
+      "Parikh",
+      "Waterman",
+      "Trasolini"
+    ]
+  },
+  "34889652": {
+    "titulo": "Symmetry in Triple Hop Distance Hides Asymmetries in Knee Function After ACL Reconstruction in Athletes at Return to Sports.",
+    "ano": "2021",
+    "volume": "50",
+    "numero": "2",
+    "paginas": "441-450",
+    "doi": "10.1177/03635465211063192",
+    "periodico": "Am J Sports Med",
+    "autores": [
+      "Kotsifaki",
+      "Van Rossom",
+      "Whiteley",
+      "Korakakis",
+      "Bahr",
+      "Sideris",
+      "Smith",
+      "Jonkers"
+    ]
+  },
+  "29272209": {
+    "titulo": "Self-Reported Fear Predicts Functional Performance and Second ACL Injury After ACL Reconstruction and Return to Sport: A Pilot Study.",
+    "ano": "2017",
+    "volume": "10",
+    "numero": "3",
+    "paginas": "228-233",
+    "doi": "10.1177/1941738117745806",
+    "periodico": "Sports Health",
+    "autores": [
+      "Paterno",
+      "Flynn",
+      "Thomas",
+      "Schmitt"
+    ]
+  },
+  "40645751": {
+    "titulo": "Prevention strategies for lower extremity injury: a systematic review and meta-analyses for the Female, woman and/or girl Athlete Injury pRevention (FAIR) consensus.",
+    "ano": "2025",
+    "volume": "59",
+    "numero": "22",
+    "paginas": "1575-1586",
+    "doi": "10.1136/bjsports-2025-109910",
+    "periodico": "Br J Sports Med",
+    "autores": [
+      "Bullock",
+      "Räisänen",
+      "Martin",
+      "Martin",
+      "Galarneau",
+      "Whittaker",
+      "Losciale",
+      "Bizzini",
+      "Bourne",
+      "Dijkstra",
+      "Dubé",
+      "Hayden",
+      "Girdwood",
+      "Hägglund",
+      "McLeod",
+      "Mkumbuzi",
+      "Mosler",
+      "Murphy",
+      "Myklebust",
+      "Møller",
+      "Ocarino",
+      "Owoeye",
+      "Palmer",
+      "Pasanen",
+      "Rio",
+      "Thorborg",
+      "van Middelkoop",
+      "Verhagen",
+      "Warden",
+      "Whalan",
+      "Crossley",
+      "Emery"
+    ]
+  },
+  "38336547": {
+    "titulo": "Uncovering injuries in Brazilian elite women's football: A prospective cohort study.",
+    "ano": "2024",
+    "volume": "27",
+    "numero": "4",
+    "paginas": "228-233",
+    "doi": "10.1016/j.jsams.2024.01.008",
+    "periodico": "J Sci Med Sport",
+    "autores": [
+      "Gasparin",
+      "Ribas",
+      "Flores",
+      "Bueno",
+      "Vrkoslaw",
+      "Bittencourt",
+      "Baroni"
+    ]
+  },
+  "42367014": {
+    "titulo": "Risk of Revision and Patient-Reported Outcomes After ACL Reconstruction: Influence of Concomitant MCL Injury and Graft Choice: Analysis of 35,139 Reconstructions From the Norwegian Knee Ligament Register.",
+    "ano": "2026",
+    "volume": "54",
+    "numero": "10",
+    "paginas": "2381-2388",
+    "doi": "10.1177/03635465261457327",
+    "periodico": "Am J Sports Med",
+    "autores": [
+      "Birkenes",
+      "Chahla",
+      "Lygre",
+      "Williams",
+      "Inderhaug"
+    ]
+  },
+  "42212766": {
+    "titulo": "Comparison of Isolated ACL and Combined ACL/MCL Injuries in Professional Soccer and Rugby Players: Return to Play and Career Longevity Outcomes.",
+    "ano": "2026",
+    "volume": "54",
+    "numero": "9",
+    "paginas": "2091-2100",
+    "doi": "10.1177/03635465261448236",
+    "periodico": "Am J Sports Med",
+    "autores": [
+      "Abdul",
+      "Jones",
+      "Haslhofer",
+      "Motesharei",
+      "Ball",
+      "Williams"
+    ]
+  },
+  "19954822": {
+    "titulo": "Quadriceps arthrogenic muscle inhibition: neural mechanisms and treatment perspectives.",
+    "ano": "2009",
+    "volume": "40",
+    "numero": "3",
+    "paginas": "250-66",
+    "doi": "10.1016/j.semarthrit.2009.10.001",
+    "periodico": "Seminars in arthritis and rheumatism",
+    "autores": [
+      "Rice",
+      "McNair"
+    ]
+  },
+  "12937440": {
+    "titulo": "Cryotherapy and Transcutaneous Electric Neuromuscular Stimulation Decrease Arthrogenic Muscle Inhibition of the Vastus Medialis After Knee Joint Effusion.",
+    "ano": "2002",
+    "volume": "37",
+    "numero": "1",
+    "paginas": "25-31",
+    "doi": "",
+    "periodico": "Journal of athletic training",
+    "autores": [
+      "Hopkins",
+      "Ingersoll",
+      "Edwards",
+      "Klootwyk"
+    ]
+  },
+  "14627927": {
+    "titulo": "Arthrogenic muscle inhibition is not present in the limb contralateral to a simulated knee joint effusion.",
+    "ano": "2003",
+    "volume": "82",
+    "numero": "12",
+    "paginas": "910-6",
+    "doi": "10.1097/01.PHM.0000098045.04883.02",
+    "periodico": "American journal of physical medicine & rehabilitation",
+    "autores": [
+      "Palmieri",
+      "Ingersoll",
+      "Edwards",
+      "Hoffman",
+      "Stone",
+      "Babington",
+      "Cordova",
+      "Krause"
+    ]
+  },
+  "15685462": {
+    "titulo": "Pre-synaptic modulation of quadriceps arthrogenic muscle inhibition.",
+    "ano": "2005",
+    "volume": "13",
+    "numero": "5",
+    "paginas": "370-6",
+    "doi": "10.1007/s00167-004-0547-z",
+    "periodico": "Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA",
+    "autores": [
+      "Palmieri",
+      "Weltman",
+      "Edwards",
+      "Tom",
+      "Saliba",
+      "Mistry",
+      "Ingersoll"
+    ]
+  },
+  "19116960": {
+    "titulo": "Effects of cryotherapy on arthrogenic muscle inhibition using an experimental model of knee swelling.",
+    "ano": "2009",
+    "volume": "61",
+    "numero": "1",
+    "paginas": "78-83",
+    "doi": "10.1002/art.24168",
+    "periodico": "Arthritis and rheumatism",
+    "autores": [
+      "Rice",
+      "McNair",
+      "Dalbeth"
+    ]
+  },
+  "25497133": {
+    "titulo": "Quadriceps arthrogenic muscle inhibition: the effects of experimental knee joint effusion on motor cortex excitability.",
+    "ano": "2014",
+    "volume": "16",
+    "numero": "6",
+    "paginas": "502",
+    "doi": "10.1186/s13075-014-0502-4",
+    "periodico": "Arthritis research & therapy",
+    "autores": [
+      "Rice",
+      "McNair",
+      "Lewis",
+      "Dalbeth"
+    ]
+  },
+  "38164669": {
+    "titulo": "Incidence of and Risk Factors for Arthrogenic Muscle Inhibition in Acute Anterior Cruciate Ligament Injuries: A Cross-Sectional Study and Analysis of Associated Factors From the SANTI Study Group.",
+    "ano": "2024",
+    "volume": "52",
+    "numero": "1",
+    "paginas": "60-68",
+    "doi": "10.1177/03635465231209987",
+    "periodico": "The American journal of sports medicine",
+    "autores": [
+      "Sonnery-Cottet",
+      "Hopper",
+      "Gousopoulos",
+      "Pioger",
+      "Vieira",
+      "Thaunat",
+      "Fayard",
+      "Freychet",
+      "Cavaignac",
+      "Saithna"
+    ]
+  },
+  "33492623": {
+    "titulo": "Lower Limb Muscle Size after Anterior Cruciate Ligament Injury: A Systematic Review and Meta-Analysis.",
+    "ano": "2021",
+    "volume": "51",
+    "numero": "6",
+    "paginas": "1209-1226",
+    "doi": "10.1007/s40279-020-01419-0",
+    "periodico": "Sports medicine (Auckland, N.Z.)",
+    "autores": [
+      "Dutaillis",
+      "Maniar",
+      "Opar",
+      "Hickey",
+      "Timmins"
+    ]
+  },
+  "16715828": {
+    "titulo": "Clinical diagnosis of an anterior cruciate ligament rupture: a meta-analysis.",
+    "ano": "2006",
+    "volume": "36",
+    "numero": "5",
+    "paginas": "267-88",
+    "doi": "10.2519/jospt.2006.2011",
+    "periodico": "The Journal of orthopaedic and sports physical therapy",
+    "autores": [
+      "Benjaminse",
+      "Gokeler",
+      "van der Schans"
+    ]
+  },
+  "23085822": {
+    "titulo": "Methods to diagnose acute anterior cruciate ligament rupture: a meta-analysis of physical examinations with and without anaesthesia.",
+    "ano": "2012",
+    "volume": "21",
+    "numero": "8",
+    "paginas": "1895-903",
+    "doi": "10.1007/s00167-012-2250-9",
+    "periodico": "Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA",
+    "autores": [
+      "van Eck",
+      "van den Bekerom",
+      "Fu",
+      "Poolman",
+      "Kerkhoffs"
+    ]
+  },
+  "35150292": {
+    "titulo": "The diagnostic accuracy of clinical tests for anterior cruciate ligament tears are comparable but the Lachman test has been previously overestimated: a systematic review and meta-analysis.",
+    "ano": "2022",
+    "volume": "30",
+    "numero": "10",
+    "paginas": "3287-3303",
+    "doi": "10.1007/s00167-022-06898-4",
+    "periodico": "Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA",
+    "autores": [
+      "Sokal",
+      "Norris",
+      "Maddox",
+      "Oldershaw"
+    ]
+  },
+  "35945782": {
+    "titulo": "Value of clinical tests in diagnosing anterior cruciate ligament injuries: A systematic review and meta-analysis.",
+    "ano": "2022",
+    "volume": "101",
+    "numero": "31",
+    "paginas": "e29263",
+    "doi": "10.1097/MD.0000000000029263",
+    "periodico": "Medicine",
+    "autores": [
+      "Huang",
+      "Liu",
+      "Fan",
+      "Zou",
+      "Chen"
+    ]
+  },
+  "27693100": {
+    "titulo": "Diagnostic validity of physical examination tests for common knee disorders: An overview of systematic reviews and meta-analysis.",
+    "ano": "2016",
+    "volume": "23",
+    "numero": "",
+    "paginas": "143-155",
+    "doi": "10.1016/j.ptsp.2016.08.002",
+    "periodico": "Physical therapy in sport : official journal of the Association of Chartered Physiotherapists in Sports Medicine",
+    "autores": [
+      "Décary",
+      "Ouellet",
+      "Vendittoli",
+      "Roy",
+      "Desmeules"
+    ]
+  },
+  "17939613": {
+    "titulo": "Physical examination tests for assessing a torn meniscus in the knee: a systematic review with meta-analysis.",
+    "ano": "2007",
+    "volume": "37",
+    "numero": "9",
+    "paginas": "541-50",
+    "doi": "10.2519/jospt.2007.2560",
+    "periodico": "The Journal of orthopaedic and sports physical therapy",
+    "autores": [
+      "Hegedus",
+      "Cook",
+      "Hasselblad",
+      "Goode",
+      "McCrory"
+    ]
+  },
+  "19609008": {
+    "titulo": "Medial knee injury: Part 1, static function of the individual components of the main medial knee structures.",
+    "ano": "2009",
+    "volume": "37",
+    "numero": "9",
+    "paginas": "1762-70",
+    "doi": "10.1177/0363546509333852",
+    "periodico": "The American journal of sports medicine",
+    "autores": [
+      "Griffith",
+      "LaPrade",
+      "Johansen",
+      "Armitage",
+      "Wijdicks",
+      "Engebretsen"
+    ]
+  },
+  "20439679": {
+    "titulo": "Injuries to the medial collateral ligament and associated medial structures of the knee.",
+    "ano": "2010",
+    "volume": "92",
+    "numero": "5",
+    "paginas": "1266-80",
+    "doi": "10.2106/JBJS.I.01229",
+    "periodico": "The Journal of bone and joint surgery. American volume",
+    "autores": [
+      "Wijdicks",
+      "Griffith",
+      "Johansen",
+      "Engebretsen",
+      "LaPrade"
+    ]
+  },
+  "17768198": {
+    "titulo": "The anatomy of the medial part of the knee.",
+    "ano": "2007",
+    "volume": "89",
+    "numero": "9",
+    "paginas": "2000-10",
+    "doi": "10.2106/JBJS.F.01176",
+    "periodico": "The Journal of bone and joint surgery. American volume",
+    "autores": [
+      "LaPrade",
+      "Engebretsen",
+      "Ly",
+      "Johansen",
+      "Wentorf",
+      "Engebretsen"
+    ]
+  },
+  "37503921": {
+    "titulo": "The Anterior Fibers of the Superficial MCL and the ACL Restrain Anteromedial Rotatory Instability.",
+    "ano": "2023",
+    "volume": "51",
+    "numero": "11",
+    "paginas": "2928-2935",
+    "doi": "10.1177/03635465231187043",
+    "periodico": "The American journal of sports medicine",
+    "autores": [
+      "Herbst",
+      "Muhmann",
+      "Raschke",
+      "Katthagen",
+      "Oeckenpöhler",
+      "Wermers",
+      "Glasbrenner",
+      "Robinson",
+      "Kittl"
+    ]
+  },
+  "32504158": {
+    "titulo": "The medial ligaments and the ACL restrain anteromedial laxity of the knee.",
+    "ano": "2020",
+    "volume": "28",
+    "numero": "12",
+    "paginas": "3700-3708",
+    "doi": "10.1007/s00167-020-06084-4",
+    "periodico": "Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA",
+    "autores": [
+      "Ball",
+      "Stephen",
+      "El-Daou",
+      "Williams",
+      "Amis"
+    ]
+  },
+  "11180920": {
+    "titulo": "In-situ force in the medial and lateral structures of intact and ACL-deficient knees.",
+    "ano": "2000",
+    "volume": "5",
+    "numero": "6",
+    "paginas": "567-71",
+    "doi": "10.1007/s007760070007",
+    "periodico": "Journal of orthopaedic science : official journal of the Japanese Orthopaedic Association",
+    "autores": [
+      "Kanamori",
+      "Sakane",
+      "Zeminski",
+      "Rudy",
+      "Woo"
+    ]
+  },
+  "16286866": {
+    "titulo": "Muscle, ligament, and joint-contact forces at the knee during walking.",
+    "ano": "2005",
+    "volume": "37",
+    "numero": "11",
+    "paginas": "1948-56",
+    "doi": "10.1249/01.mss.0000180404.86078.ff",
+    "periodico": "Medicine and science in sports and exercise",
+    "autores": [
+      "Shelburne",
+      "Torry",
+      "Pandy"
+    ]
+  },
+  "28656567": {
+    "titulo": "Varus-valgus instability in the anterior cruciate ligament-deficient knee: effect of posterior tibial load.",
+    "ano": "2017",
+    "volume": "4",
+    "numero": "1",
+    "paginas": "24",
+    "doi": "10.1186/s40634-017-0087-3",
+    "periodico": "Journal of experimental orthopaedics",
+    "autores": [
+      "Ohori",
+      "Mae",
+      "Shino",
+      "Tachibana",
+      "Fujie",
+      "Yoshikawa",
+      "Nakata"
+    ]
+  },
+  "36452420": {
+    "titulo": "From Anatomy to Complex Reconstruction: A Modern Review on the Medial Collateral Ligament of the Knee.",
+    "ano": "2022",
+    "volume": "10",
+    "numero": "10",
+    "paginas": "818-826",
+    "doi": "10.22038/ABJS.2022.66697.3179",
+    "periodico": "The archives of bone and joint surgery",
+    "autores": [
+      "Braaten",
+      "Banovetz",
+      "Rodriguez",
+      "Thomas",
+      "LaPrade"
+    ]
+  },
+  "42748362": {
+    "titulo": "Current concepts in isolated and combined injuries of the medial collateral ligament complex-Part I: Anatomy, biomechanics, clinical and radiological examination of the medial collateral ligament of the knee.",
+    "ano": "2026",
+    "volume": "",
+    "numero": "",
+    "paginas": "",
+    "doi": "10.1002/ksa.70588",
+    "periodico": "Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA",
+    "autores": [
+      "Runer",
+      "Amis",
+      "Smigielski",
+      "Herbst",
+      "Kittl",
+      "Wierer",
+      "Bouguennec",
+      "Cristiani",
+      "Hoser",
+      "Abermann",
+      "Willinger",
+      "D'Ambrosi",
+      "Senorski",
+      "Getgood",
+      "Musahl",
+      "Ball",
+      "Williams",
+      "Moatshe",
+      "Siebenlist",
+      "Strauss",
+      "Lind",
+      "Herbort",
+      "Samuelsson",
+      "Fink",
+      "Robinson"
+    ]
+  },
+  "42789756": {
+    "titulo": "Current concepts in isolated and combined injuries of the medial collateral ligament complex, part II: The anteromedial knee instability classification.",
+    "ano": "2026",
+    "volume": "",
+    "numero": "",
+    "paginas": "",
+    "doi": "10.1002/ksa.70630",
+    "periodico": "Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA",
+    "autores": [
+      "Runer",
+      "Bouguennec",
+      "Wierer",
+      "Robinson",
+      "Amis",
+      "Herbst",
+      "Kittl",
+      "Cristiani",
+      "Hoser",
+      "Willinger",
+      "Abermann",
+      "D'Ambrosi",
+      "Senorski",
+      "Getgood",
+      "Musahl",
+      "Ball",
+      "Williams",
+      "Siebenlist",
+      "Moatshe",
+      "Smigielski",
+      "Lind",
+      "Strauss",
+      "Herbort",
+      "Samuelsson",
+      "Fink"
+    ]
+  },
+  "34150330": {
+    "titulo": "Posterior oblique ligament of the knee: state of the art.",
+    "ano": "2021",
+    "volume": "6",
+    "numero": "5",
+    "paginas": "364-371",
+    "doi": "10.1302/2058-5241.6.200127",
+    "periodico": "EFORT open reviews",
+    "autores": [
+      "D'Ambrosi",
+      "Corona",
+      "Guerra",
+      "Cerciello",
+      "Ursino",
+      "Ursino",
+      "Hantes"
+    ]
+  },
+  "23349168": {
+    "titulo": "Shelbourne's update of the O'Donoghue knee triad in a 17-year-old male Rugby player.",
+    "ano": "2013",
+    "volume": "2013",
+    "numero": "",
+    "paginas": "",
+    "doi": "10.1136/bcr.01.2012.5593",
+    "periodico": "BMJ case reports",
+    "autores": [
+      "Dacombe"
+    ]
+  },
+  "25907183": {
+    "titulo": "Three distinct mechanisms predominate in non-contact anterior cruciate ligament injuries in male professional football players: a systematic video analysis of 39 cases.",
+    "ano": "2015",
+    "volume": "49",
+    "numero": "22",
+    "paginas": "1452-60",
+    "doi": "10.1136/bjsports-2014-094573",
+    "periodico": "British journal of sports medicine",
+    "autores": [
+      "Waldén",
+      "Krosshaug",
+      "Bjørneboe",
+      "Andersen",
+      "Faul",
+      "Hägglund"
+    ]
+  },
+  "20595545": {
+    "titulo": "Mechanisms for noncontact anterior cruciate ligament injuries: knee joint kinematics in 10 injury situations from female team handball and basketball.",
+    "ano": "2010",
+    "volume": "38",
+    "numero": "11",
+    "paginas": "2218-25",
+    "doi": "10.1177/0363546510373570",
+    "periodico": "The American journal of sports medicine",
+    "autores": [
+      "Koga",
+      "Nakamae",
+      "Shima",
+      "Iwasa",
+      "Myklebust",
+      "Engebretsen",
+      "Bahr",
+      "Krosshaug"
+    ]
+  },
+  "21266934": {
+    "titulo": "Valgus plus internal rotation moments increase anterior cruciate ligament strain more than either alone.",
+    "ano": "2011",
+    "volume": "43",
+    "numero": "8",
+    "paginas": "1484-91",
+    "doi": "10.1249/MSS.0b013e31820f8395",
+    "periodico": "Medicine and science in sports and exercise",
+    "autores": [
+      "Shin",
+      "Chaudhari",
+      "Andriacchi"
+    ]
+  },
+  "19452139": {
+    "titulo": "Prevention of non-contact anterior cruciate ligament injuries in soccer players. Part 1: Mechanisms of injury and underlying risk factors.",
+    "ano": "2009",
+    "volume": "17",
+    "numero": "7",
+    "paginas": "705-29",
+    "doi": "10.1007/s00167-009-0813-1",
+    "periodico": "Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA",
+    "autores": [
+      "Alentorn-Geli",
+      "Myer",
+      "Silvers",
+      "Samitier",
+      "Romero",
+      "Lázaro-Haro",
+      "Cugat"
+    ]
+  },
+  "10795668": {
+    "titulo": "A decision-making scheme for returning patients to high-level activity with nonoperative treatment after anterior cruciate ligament rupture.",
+    "ano": "2000",
+    "volume": "8",
+    "numero": "2",
+    "paginas": "76-82",
+    "doi": "10.1007/s001670050190",
+    "periodico": "Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA",
+    "autores": [
+      "Fitzgerald",
+      "Axe",
+      "Snyder-Mackler"
+    ]
+  },
+  "18979658": {
+    "titulo": "Individuals with an anterior cruciate ligament-deficient knee classified as noncopers may be candidates for nonsurgical rehabilitation.",
+    "ano": "2008",
+    "volume": "38",
+    "numero": "10",
+    "paginas": "586-95",
+    "doi": "10.2519/jospt.2008.2750",
+    "periodico": "The Journal of orthopaedic and sports physical therapy",
+    "autores": [
+      "Moksnes",
+      "Snyder-Mackler",
+      "Risberg"
+    ]
+  },
+  "17940141": {
+    "titulo": "A 10-year prospective trial of a patient management algorithm and screening examination for highly active individuals with anterior cruciate ligament injury: Part 1, outcomes.",
+    "ano": "2007",
+    "volume": "36",
+    "numero": "1",
+    "paginas": "40-7",
+    "doi": "10.1177/0363546507308190",
+    "periodico": "The American journal of sports medicine",
+    "autores": [
+      "Hurd",
+      "Axe",
+      "Snyder-Mackler"
+    ]
+  },
+  "17932399": {
+    "titulo": "A 10-year prospective trial of a patient management algorithm and screening examination for highly active individuals with anterior cruciate ligament injury: Part 2, determinants of dynamic knee stability.",
+    "ano": "2007",
+    "volume": "36",
+    "numero": "1",
+    "paginas": "48-56",
+    "doi": "10.1177/0363546507308191",
+    "periodico": "The American journal of sports medicine",
+    "autores": [
+      "Hurd",
+      "Axe",
+      "Snyder-Mackler"
+    ]
+  },
+  "20411377": {
+    "titulo": "Functional tests should be accentuated more in the decision for ACL reconstruction.",
+    "ano": "2010",
+    "volume": "18",
+    "numero": "11",
+    "paginas": "1517-25",
+    "doi": "10.1007/s00167-010-1113-5",
+    "periodico": "Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA",
+    "autores": [
+      "Eitzen",
+      "Moksnes",
+      "Snyder-Mackler",
+      "Engebretsen",
+      "Risberg"
+    ]
+  },
+  "21979555": {
+    "titulo": "Identifying individuals with an anterior cruciate ligament-deficient knee as copers and noncopers: a narrative literature review.",
+    "ano": "2011",
+    "volume": "41",
+    "numero": "10",
+    "paginas": "758-66",
+    "doi": "10.2519/jospt.2011.3384",
+    "periodico": "The Journal of orthopaedic and sports physical therapy",
+    "autores": [
+      "Kaplan"
+    ]
+  },
+  "11354855": {
+    "titulo": "Dynamic stability in the anterior cruciate ligament deficient knee.",
+    "ano": "2001",
+    "volume": "9",
+    "numero": "2",
+    "paginas": "62-71",
+    "doi": "10.1007/s001670000166",
+    "periodico": "Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA",
+    "autores": [
+      "Rudolph",
+      "Axe",
+      "Buchanan",
+      "Scholz",
+      "Snyder-Mackler"
+    ]
+  },
+  "28355978": {
+    "titulo": "Limb Symmetry Indexes Can Overestimate Knee Function After Anterior Cruciate Ligament Injury.",
+    "ano": "2017",
+    "volume": "47",
+    "numero": "5",
+    "paginas": "334-338",
+    "doi": "10.2519/jospt.2017.7285",
+    "periodico": "The Journal of orthopaedic and sports physical therapy",
+    "autores": [
+      "Wellsandt",
+      "Failla",
+      "Snyder-Mackler"
+    ]
+  },
+  "17311886": {
+    "titulo": "Hop testing provides a reliable and valid outcome measure during rehabilitation after anterior cruciate ligament reconstruction.",
+    "ano": "2007",
+    "volume": "87",
+    "numero": "3",
+    "paginas": "337-49",
+    "doi": "10.2522/ptj.20060143",
+    "periodico": "Physical therapy",
+    "autores": [
+      "Reid",
+      "Birmingham",
+      "Stratford",
+      "Alcock",
+      "Giffin"
+    ]
+  },
+  "20118526": {
+    "titulo": "The influence of abnormal hip mechanics on knee injury: a biomechanical perspective.",
+    "ano": "2010",
+    "volume": "40",
+    "numero": "2",
+    "paginas": "42-51",
+    "doi": "10.2519/jospt.2010.3337",
+    "periodico": "The Journal of orthopaedic and sports physical therapy",
+    "autores": [
+      "Powers"
+    ]
+  },
+  "21335344": {
+    "titulo": "Performance on the single-leg squat task indicates hip abductor muscle function.",
+    "ano": "2011",
+    "volume": "39",
+    "numero": "4",
+    "paginas": "866-73",
+    "doi": "10.1177/0363546510395456",
+    "periodico": "The American journal of sports medicine",
+    "autores": [
+      "Crossley",
+      "Zhang",
+      "Schache",
+      "Bryant",
+      "Cowan"
+    ]
+  },
+  "20972344": {
+    "titulo": "Measures of range of motion and strength among healthy women with differing quality of lower extremity movement during the lateral step-down test.",
+    "ano": "2010",
+    "volume": "40",
+    "numero": "12",
+    "paginas": "792-800",
+    "doi": "10.2519/jospt.2010.3424",
+    "periodico": "The Journal of orthopaedic and sports physical therapy",
+    "autores": [
+      "Rabin",
+      "Kozol"
+    ]
+  },
+  "27592407": {
+    "titulo": "Relationship of Hip and Trunk Muscle Function with Single Leg Step-Down Performance: Implications for Return to Play Screening and Rehabilitation.",
+    "ano": "2016",
+    "volume": "22",
+    "numero": "",
+    "paginas": "66-73",
+    "doi": "10.1016/j.ptsp.2016.05.007",
+    "periodico": "Physical therapy in sport : official journal of the Association of Chartered Physiotherapists in Sports Medicine",
+    "autores": [
+      "Burnham",
+      "Yonz",
+      "Robertson",
+      "McKinley",
+      "Wilson",
+      "Johnson",
+      "Ireland",
+      "Noehren"
+    ]
+  },
+  "14613558": {
+    "titulo": "The Knee injury and Osteoarthritis Outcome Score (KOOS): from joint injury to osteoarthritis.",
+    "ano": "2003",
+    "volume": "1",
+    "numero": "",
+    "paginas": "64",
+    "doi": "10.1186/1477-7525-1-64",
+    "periodico": "Health and quality of life outcomes",
+    "autores": [
+      "Roos",
+      "Lohmander"
+    ]
+  },
+  "11573919": {
+    "titulo": "Development and validation of the international knee documentation committee subjective knee form.",
+    "ano": "2001",
+    "volume": "29",
+    "numero": "5",
+    "paginas": "600-13",
+    "doi": "10.1177/03635465010290051301",
+    "periodico": "The American journal of sports medicine",
+    "autores": [
+      "Irrgang",
+      "Anderson",
+      "Boland",
+      "Harner",
+      "Kurosaka",
+      "Neyret",
+      "Richmond",
+      "Shelborne"
+    ]
+  },
+  "19083699": {
+    "titulo": "Development and preliminary validation of a scale to measure the psychological impact of returning to sport following anterior cruciate ligament reconstruction surgery.",
+    "ano": "2007",
+    "volume": "9",
+    "numero": "1",
+    "paginas": "9-15",
+    "doi": "10.1016/j.ptsp.2007.09.003",
+    "periodico": "Physical therapy in sport : official journal of the Association of Chartered Physiotherapists in Sports Medicine",
+    "autores": [
+      "Webster",
+      "Feller",
+      "Lambros"
+    ]
+  },
+  "20472755": {
+    "titulo": "Translation and cross-cultural adaptation of the Brazilian version of the International Knee Documentation Committee Subjective Knee Form: validity and reproducibility.",
+    "ano": "2010",
+    "volume": "38",
+    "numero": "9",
+    "paginas": "1894-9",
+    "doi": "10.1177/0363546510365314",
+    "periodico": "The American journal of sports medicine",
+    "autores": [
+      "Metsavaht",
+      "Leporace",
+      "Riberto",
+      "de Mello Sposito",
+      "Batista"
+    ]
+  },
+  "23881894": {
+    "titulo": "Consensus criteria for defining 'successful outcome' after ACL injury and reconstruction: a Delaware-Oslo ACL cohort investigation.",
+    "ano": "2013",
+    "volume": "49",
+    "numero": "5",
+    "paginas": "335-42",
+    "doi": "10.1136/bjsports-2013-092299",
+    "periodico": "British journal of sports medicine",
+    "autores": [
+      "Lynch",
+      "Logerstedt",
+      "Grindem",
+      "Eitzen",
+      "Hicks",
+      "Axe",
+      "Engebretsen",
+      "Risberg",
+      "Snyder-Mackler"
+    ]
+  },
+  "29286825": {
+    "titulo": "Is Treatment of Segond Fracture Necessary With Combined Anterior Cruciate Ligament Reconstruction?",
+    "ano": "2017",
+    "volume": "46",
+    "numero": "4",
+    "paginas": "832-838",
+    "doi": "10.1177/0363546517745280",
+    "periodico": "The American journal of sports medicine",
+    "autores": [
+      "Melugin",
+      "Johnson",
+      "Wu",
+      "Levy",
+      "Stuart",
+      "Krych"
+    ]
+  },
+  "42909948": {
+    "titulo": "Arthrogenic Muscle Inhibition of the Knee: A Surgeon-Focused Narrative Review of Diagnosis and Management.",
+    "ano": "2026",
+    "volume": "18",
+    "numero": "",
+    "paginas": "643464",
+    "doi": "10.2147/ORR.S643464",
+    "periodico": "Orthopedic research and reviews",
+    "autores": [
+      "Nolan",
+      "Bhatti",
+      "Operti",
+      "Ford",
+      "Kress",
+      "Jildeh"
+    ]
+  },
+  "32637434": {
+    "titulo": "Treatment After Anterior Cruciate Ligament Injury: Panther Symposium ACL Treatment Consensus Group.",
+    "ano": "2020",
+    "volume": "8",
+    "numero": "6",
+    "paginas": "2325967120931097",
+    "doi": "10.1177/2325967120931097",
+    "periodico": "Orthopaedic journal of sports medicine",
+    "autores": [
+      "Diermeier",
+      "Rothrauff",
+      "Engebretsen",
+      "Lynch",
+      "Ayeni",
+      "Paterno",
+      "Xerogeanes",
+      "Fu",
+      "Karlsson",
+      "Musahl",
+      "",
+      "Brown",
+      "Chmielewski",
+      "Clatworthy",
+      "Villa",
+      "Ernlund",
+      "Fink",
+      "Getgood",
+      "Hewett",
+      "Ishibashi",
+      "Johnson",
+      "Macalena",
+      "Marx",
+      "Menetrey",
+      "Meredith",
+      "Onishi",
+      "Rauer",
+      "Rothrauff",
+      "Schmitt",
+      "Seil",
+      "Senorski",
+      "Siebold",
+      "Snyder-Mackler",
+      "Spalding",
+      "Svantesson",
+      "Wilk"
+    ]
+  },
+  "32647735": {
+    "titulo": "Return to Sport After Anterior Cruciate Ligament Injury: Panther Symposium ACL Injury Return to Sport Consensus Group.",
+    "ano": "2020",
+    "volume": "8",
+    "numero": "6",
+    "paginas": "2325967120930829",
+    "doi": "10.1177/2325967120930829",
+    "periodico": "Orthopaedic journal of sports medicine",
+    "autores": [
+      "Meredith",
+      "Rauer",
+      "Chmielewski",
+      "Fink",
+      "Diermeier",
+      "Rothrauff",
+      "Svantesson",
+      "Hamrin Senorski",
+      "Hewett",
+      "Sherman",
+      "Lesniak",
+      "",
+      "Bizzini",
+      "Chen",
+      "Cohen",
+      "Villa",
+      "Engebretsen",
+      "Feng",
+      "Ferretti",
+      "Fu",
+      "Imhoff",
+      "Kaeding",
+      "Karlsson",
+      "Kuroda",
+      "Lynch",
+      "Menetrey",
+      "Musahl",
+      "Navarro",
+      "Rabuck",
+      "Siebold",
+      "Snyder-Mackler",
+      "Spalding",
+      "van Eck",
+      "Vyas",
+      "Webster",
+      "Wilk"
+    ]
+  },
+  "36727995": {
+    "titulo": "American Academy of Orthopaedic Surgeons Clinical Practice Guideline Summary: Management of Anterior Cruciate Ligament Injuries.",
+    "ano": "2023",
+    "volume": "31",
+    "numero": "11",
+    "paginas": "531-537",
+    "doi": "10.5435/JAAOS-D-22-01020",
+    "periodico": "The Journal of the American Academy of Orthopaedic Surgeons",
+    "autores": [
+      "Brophy",
+      "Lowry"
+    ]
+  },
+  "31843222": {
+    "titulo": "Japanese Orthopaedic Association (JOA) clinical practice guidelines on the management of anterior cruciate ligament injury - Secondary publication.",
+    "ano": "2019",
+    "volume": "25",
+    "numero": "1",
+    "paginas": "6-45",
+    "doi": "10.1016/j.jos.2019.10.009",
+    "periodico": "Journal of orthopaedic science : official journal of the Japanese Orthopaedic Association",
+    "autores": [
+      "Ishibashi",
+      "Adachi",
+      "Koga",
+      "Kondo",
+      "Kuroda",
+      "Mae",
+      "Uchio"
+    ]
+  },
+  "36038357": {
+    "titulo": "Primary surgery versus primary rehabilitation for treating anterior cruciate ligament injuries: a living systematic review and meta-analysis.",
+    "ano": "2022",
+    "volume": "56",
+    "numero": "21",
+    "paginas": "1241-1251",
+    "doi": "10.1136/bjsports-2021-105359",
+    "periodico": "British journal of sports medicine",
+    "autores": [
+      "Saueressig",
+      "Braun",
+      "Steglich",
+      "Diemer",
+      "Zebisch",
+      "Herbst",
+      "Zinser",
+      "Owen",
+      "Belavy"
+    ]
+  },
+  "38601190": {
+    "titulo": "Nonoperative Treatment as an Option for Isolated Anterior Cruciate Ligament Injury: A Systematic Review and Meta-analysis.",
+    "ano": "2024",
+    "volume": "12",
+    "numero": "4",
+    "paginas": "23259671241239665",
+    "doi": "10.1177/23259671241239665",
+    "periodico": "Orthopaedic journal of sports medicine",
+    "autores": [
+      "de Jonge",
+      "Máté",
+      "Kovács",
+      "Imrei",
+      "Pap",
+      "Agócs",
+      "Váncsa",
+      "Hegyi",
+      "Pánics"
+    ]
+  },
+  "40603829": {
+    "titulo": "No Difference in Return-to-Sport Rate or Activity Level in People with Anterior Cruciate Ligament (ACL) Injury Managed with ACL Reconstruction or Rehabilitation Alone: A Systematic Review and Meta-Analysis.",
+    "ano": "2025",
+    "volume": "55",
+    "numero": "9",
+    "paginas": "2191-2205",
+    "doi": "10.1007/s40279-025-02268-5",
+    "periodico": "Sports medicine (Auckland, N.Z.)",
+    "autores": [
+      "Filbay",
+      "Bullock",
+      "Russell",
+      "Brown",
+      "Hui",
+      "Egerton"
+    ]
+  },
+  "33687926": {
+    "titulo": "Early surgical reconstruction versus rehabilitation with elective delayed reconstruction for patients with anterior cruciate ligament rupture: COMPARE randomised controlled trial.",
+    "ano": "2021",
+    "volume": "372",
+    "numero": null,
+    "paginas": "n375",
+    "doi": "10.1136/bmj.n375",
+    "periodico": "BMJ (Clinical research ed.)",
+    "autores": [
+      "Reijman",
+      "Eggerding",
+      "van Es",
+      "van Arkel",
+      "van den Brand",
+      "van Linge",
+      "Zijl",
+      "Waarsing",
+      "Bierma-Zeinstra",
+      "Meuffels"
+    ]
+  },
+  "35988569": {
+    "titulo": "Rehabilitation versus surgical reconstruction for non-acute anterior cruciate ligament injury (ACL SNNAP): a pragmatic randomised controlled trial.",
+    "ano": "2022",
+    "volume": "400",
+    "numero": "10352",
+    "paginas": "605-615",
+    "doi": "10.1016/S0140-6736(22)01424-6",
+    "periodico": "Lancet (London, England)",
+    "autores": [
+      "Beard",
+      "Davies",
+      "Cook",
+      "Stokes",
+      "Leal",
+      "Fletcher",
+      "Abram",
+      "Chegwin",
+      "Greshon",
+      "Jackson",
+      "Bottomley",
+      "Dodd",
+      "Bourke",
+      "Shirkey",
+      "Paez",
+      "Lamb",
+      "Barker",
+      "Phillips",
+      "Brown",
+      "Lythe",
+      "Mirza",
+      "Carr",
+      "Monk",
+      "Morgado Areia",
+      "O'Leary",
+      "Haddad",
+      "Wilson",
+      "Price",
+      ""
+    ]
+  },
+  "28224443": {
+    "titulo": "Report of the Clinical and Functional Primary Outcomes in Men of the ACL-SPORTS Trial: Similar Outcomes in Men Receiving Secondary Prevention With and Without Perturbation Training 1 and 2 Years After ACL Reconstruction.",
+    "ano": "2017",
+    "volume": "475",
+    "numero": "10",
+    "paginas": "2523-2534",
+    "doi": "10.1007/s11999-017-5280-2",
+    "periodico": "Clinical orthopaedics and related research",
+    "autores": [
+      "Arundale",
+      "Cummer",
+      "Capin",
+      "Zarzycki",
+      "Snyder-Mackler"
+    ]
+  },
+  "35048733": {
+    "titulo": "Why, When, and in Which Patients Nonoperative Treatment of Anterior Cruciate Ligament Injury Fails: An Exploratory Analysis of the COMPARE Trial.",
+    "ano": "2022",
+    "volume": "50",
+    "numero": "3",
+    "paginas": "645-651",
+    "doi": "10.1177/03635465211068532",
+    "periodico": "The American journal of sports medicine",
+    "autores": [
+      "van der Graaff",
+      "Meuffels",
+      "Bierma-Zeinstra",
+      "van Es",
+      "Verhaar",
+      "Eggerding",
+      "Reijman"
+    ]
+  },
+  "36137731": {
+    "titulo": "Meniscal procedures are not increased with delayed ACL reconstruction and rehabilitation: results from a randomised controlled trial.",
+    "ano": "2022",
+    "volume": "57",
+    "numero": "2",
+    "paginas": "78-82",
+    "doi": "10.1136/bjsports-2021-105235",
+    "periodico": "British journal of sports medicine",
+    "autores": [
+      "van der Graaff",
+      "Reijman",
+      "van Es",
+      "Bierma-Zeinstra",
+      "Verhaar",
+      "Meuffels"
+    ]
+  },
+  "38442911": {
+    "titulo": "Two-Year Functional Outcomes of Nonsurgical Treatment in Concomitant Anterior Cruciate Ligament and Medial Collateral Ligament Injuries: A Case-Control Study.",
+    "ano": "2024",
+    "volume": "37",
+    "numero": "10",
+    "paginas": "730-735",
+    "doi": "10.1055/a-2281-1736",
+    "periodico": "The journal of knee surgery",
+    "autores": [
+      "Dadgostar",
+      "Zarrini",
+      "Hoveidaei",
+      "Sattarpour",
+      "Razi",
+      "Arasteh",
+      "Razi"
+    ]
+  },
+  "41856547": {
+    "titulo": "A High Percentage of Patients With Anterior Cruciate Ligament Tears Treated Nonoperatively Show Persistent Laxity on Arthrometer Assessment Despite Magnetic Resonance Imaging Evidence of Fiber Continuity: A Systematic Review.",
+    "ano": "2026",
+    "volume": "42",
+    "numero": "4",
+    "paginas": "815-825",
+    "doi": "10.1002/arj.70093",
+    "periodico": "Arthroscopy : the journal of arthroscopic & related surgery : official publication of the Arthroscopy Association of North America and the International Arthroscopy Association",
+    "autores": [
+      "Dayal",
+      "Rahaman",
+      "Berta",
+      "Harrell",
+      "Lamadrid",
+      "Beede",
+      "Casp",
+      "Evely",
+      "Brabston",
+      "Smith",
+      "Momaya"
+    ]
+  },
+  "38887689": {
+    "titulo": "Effect of open vs. closed kinetic chain exercises in ACL rehabilitation on knee joint pain, laxity, extensor muscles strength, and function: a systematic review with meta-analysis.",
+    "ano": "2024",
+    "volume": "6",
+    "numero": null,
+    "paginas": "1416690",
+    "doi": "10.3389/fspor.2024.1416690",
+    "periodico": "Frontiers in sports and active living",
+    "autores": [
+      "Pamboris",
+      "Pavlou",
+      "Paraskevopoulos",
+      "Mohagheghi"
+    ]
+  },
+  "33999877": {
+    "titulo": "Clinical, Functional, and Physical Activity Outcomes 5 Years Following the Treatment Algorithm of the Delaware-Oslo ACL Cohort Study.",
+    "ano": "2021",
+    "volume": "103",
+    "numero": "16",
+    "paginas": "1473-1481",
+    "doi": "10.2106/JBJS.20.01731",
+    "periodico": "The Journal of bone and joint surgery. American volume",
+    "autores": [
+      "Pedersen",
+      "Grindem",
+      "Johnson",
+      "Engebretsen",
+      "Axe",
+      "Snyder-Mackler",
+      "Risberg"
+    ]
+  },
+  "29854860": {
+    "titulo": "Anterior Cruciate Ligament Injury-Who Succeeds Without Reconstructive Surgery? The Delaware-Oslo ACL Cohort Study.",
+    "ano": "2018",
+    "volume": "6",
+    "numero": "5",
+    "paginas": "2325967118774255",
+    "doi": "10.1177/2325967118774255",
+    "periodico": "Orthopaedic journal of sports medicine",
+    "autores": [
+      "Grindem",
+      "Wellsandt",
+      "Failla",
+      "Snyder-Mackler",
+      "Risberg"
+    ]
+  },
+  "39919167": {
+    "titulo": "Clinical, Functional, Sports Participation, and Osteoarthritis Outcomes After ACL Injury: Ten-Year Follow-up Study of the Delaware-Oslo ACL Cohort Treatment Algorithm.",
+    "ano": "2025",
+    "volume": "107",
+    "numero": "8",
+    "paginas": "840-848",
+    "doi": "10.2106/JBJS.24.00243",
+    "periodico": "The Journal of bone and joint surgery. American volume",
+    "autores": [
+      "Urhausen",
+      "Pedersen",
+      "Grindem",
+      "Ito",
+      "Arhos",
+      "Gunderson",
+      "Aune",
+      "Engebretsen",
+      "Axe",
+      "Silbernagel",
+      "Holm",
+      "Snyder-Mackler",
+      "Risberg"
+    ]
+  },
+  "40878596": {
+    "titulo": "Rehabilitation alone after anterior cruciate ligament injury yields greater limb symmetry but lower knee related self-efficacy without limiting return to preinjury activity level.",
+    "ano": "2025",
+    "volume": "33",
+    "numero": "12",
+    "paginas": "4435-4445",
+    "doi": "10.1002/ksa.70042",
+    "periodico": "Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA",
+    "autores": [
+      "Hamrin Senorski",
+      "Piussi",
+      "Högberg",
+      "Thomeé",
+      "Samuelsson",
+      "Hamrin Senorski"
+    ]
+  },
+  "42419036": {
+    "titulo": "Return to preinjury sport after ACL injury treated with rehabilitation alone or ACL reconstruction: Results from the NACOX prospective cohort study.",
+    "ano": "2026",
+    "volume": "81",
+    "numero": null,
+    "paginas": "101952",
+    "doi": "10.1016/j.ptsp.2026.101952",
+    "periodico": "Physical therapy in sport : official journal of the Association of Chartered Physiotherapists in Sports Medicine",
+    "autores": [
+      "Svensson",
+      "Harringe",
+      "Hedevik",
+      "Kvist"
+    ]
+  },
+  "27039329": {
+    "titulo": "Surgical versus conservative interventions for treating anterior cruciate ligament injuries.",
+    "ano": "2016",
+    "volume": "4",
+    "numero": "4",
+    "paginas": "CD011166",
+    "doi": "10.1002/14651858.CD011166.pub2",
+    "periodico": "The Cochrane database of systematic reviews",
+    "autores": [
+      "Monk",
+      "Davies",
+      "Hopewell",
+      "Harris",
+      "Beard",
+      "Price"
+    ]
+  },
+  "39045722": {
+    "titulo": "Which patients need anterior cruciate ligament reconstruction after initial treatment with rehabilitation? A scoping review.",
+    "ano": "2024",
+    "volume": "33",
+    "numero": "2",
+    "paginas": "500-512",
+    "doi": "10.1002/ksa.12378",
+    "periodico": "Knee surgery, sports traumatology, arthroscopy : official journal of the ESSKA",
+    "autores": [
+      "Arp",
+      "Nedermark",
+      "Ingwersen",
+      "Ageberg",
+      "Varnum",
+      "Viberg"
+    ]
+  },
+  "37068162": {
+    "titulo": "Are Changes in Dynamic Knee Movement Control Related to Changes in Pain or Function in People With Knee Disorders? A Systematic Review and Meta-analysis.",
+    "ano": "2023",
+    "volume": "53",
+    "numero": "7",
+    "paginas": "388–401",
+    "doi": "10.2519/jospt.2023.11628",
+    "periodico": "The Journal of orthopaedic and sports physical therapy",
+    "autores": [
+      "Nunes",
+      "de Moraes",
+      "de Souza Sampaio",
+      "Seda",
+      "Dos Santos Mouta",
+      "Dangui",
+      "de Souza Petersen",
+      "Nakagawa"
+    ]
+  },
+  "17307888": {
+    "titulo": "Continued sports activity, using a pain-monitoring model, during rehabilitation in patients with Achilles tendinopathy: a randomized controlled study.",
+    "ano": "2007",
+    "volume": "35",
+    "numero": "6",
+    "paginas": "897-906",
+    "doi": "10.1177/0363546506298279",
+    "periodico": "The American journal of sports medicine",
+    "autores": [
+      "Silbernagel",
+      "Thomeé",
+      "Eriksson",
+      "Karlsson"
+    ]
+  },
+  "29209504": {
+    "titulo": "The FIFA 11+ injury prevention program for soccer players: a systematic review.",
+    "ano": "2017",
+    "volume": "9",
+    "numero": null,
+    "paginas": "18",
+    "doi": "10.1186/s13102-017-0083-z",
+    "periodico": "BMC sports science, medicine & rehabilitation",
+    "autores": [
+      "Sadigursky",
+      "Braid",
+      "De Lira",
+      "Machado",
+      "Carneiro",
+      "Colavolpe"
+    ]
+  },
+  "19204579": {
+    "titulo": "American College of Sports Medicine position stand. Progression models in resistance training for healthy adults.",
+    "ano": "2009",
+    "volume": "41",
+    "numero": "3",
+    "paginas": "687-708",
+    "doi": "10.1249/MSS.0b013e3181915670",
+    "periodico": "Medicine and science in sports and exercise",
+    "autores": [
+      ""
+    ]
+  },
+  "21694556": {
+    "titulo": "American College of Sports Medicine position stand. Quantity and quality of exercise for developing and maintaining cardiorespiratory, musculoskeletal, and neuromotor fitness in apparently healthy adults: guidance for prescribing exercise.",
+    "ano": "2011",
+    "volume": "43",
+    "numero": "7",
+    "paginas": "1334-59",
+    "doi": "10.1249/MSS.0b013e318213fefb",
+    "periodico": "Medicine and science in sports and exercise",
+    "autores": [
+      "Garber",
+      "Blissmer",
+      "Deschenes",
+      "Franklin",
+      "Lamonte",
+      "Lee",
+      "Nieman",
+      "Swain",
+      ""
+    ]
+  },
+  "42355875": {
+    "titulo": "The Effectiveness of Blood Flow Restriction Training on Rehabilitation After Anterior Cruciate Ligament Reconstruction: A Systematic Review and Meta-Analysis.",
+    "ano": "2026",
+    "volume": "15",
+    "numero": "12",
+    "paginas": "",
+    "doi": "10.3390/jcm15124706",
+    "periodico": "Journal of clinical medicine",
+    "autores": [
+      "Xu",
+      "Wang",
+      "Guo",
+      "Hong",
+      "Dudonienė"
+    ]
+  },
+  "29438635": {
+    "titulo": "Twenty-Year Follow-up Study Comparing Operative Versus Nonoperative Treatment of Anterior Cruciate Ligament Ruptures in High-Level Athletes.",
+    "ano": "2018",
+    "volume": "46",
+    "numero": "5",
+    "paginas": "1129-1136",
+    "doi": "10.1177/0363546517751683",
+    "periodico": "The American journal of sports medicine",
+    "autores": [
+      "van Yperen",
+      "Reijman",
+      "van Es",
+      "Bierma-Zeinstra",
+      "Meuffels"
+    ]
+  },
+  "35633030": {
+    "titulo": "Biopsychosocial Factors Associated With Return to Preinjury Sport After ACL Injury Treated Without Reconstruction: NACOX Cohort Study 12-Month Follow-up.",
+    "ano": "2022",
+    "volume": "15",
+    "numero": "2",
+    "paginas": "176-184",
+    "doi": "10.1177/19417381221094780",
+    "periodico": "Sports health",
+    "autores": [
+      "Slater",
+      "Kvist",
+      "Ardern"
+    ]
+  },
+  "22962290": {
+    "titulo": "A pair-matched comparison of return to pivoting sports at 1 year in anterior cruciate ligament-injured patients after a nonoperative versus an operative treatment course.",
+    "ano": "2012",
+    "volume": "40",
+    "numero": "11",
+    "paginas": "2509-16",
+    "doi": "10.1177/0363546512458424",
+    "periodico": "The American journal of sports medicine",
+    "autores": [
+      "Grindem",
+      "Eitzen",
+      "Moksnes",
+      "Snyder-Mackler",
+      "Risberg"
+    ]
+  }
 }
