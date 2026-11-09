@@ -1,0 +1,491 @@
+{
+  "arquivo": "trabalho-fps/trabalhos/2026-11-09-caso04-lca-lcm/02-referencias.json",
+  "resumo": {
+    "ok": 43,
+    "corrigivel": 1,
+    "revisar": 7,
+    "sem_pmid": 0,
+    "sem_metadados": 0
+  },
+  "itens": [
+    {
+      "id": "rice2010",
+      "pmid": "19954822",
+      "status": "revisar",
+      "divergencias": [
+        "ano: ref = 2010, PubMed = '2009' (possível epub × impresso; conferir o ano do fascículo)"
+      ],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "ano_a_conferir": true
+    },
+    {
+      "id": "hopkins2002",
+      "pmid": "12937440",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "palmieri2003",
+      "pmid": "14627927",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "palmieri2005",
+      "pmid": "15685462",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "rice2009",
+      "pmid": "19116960",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "rice2014",
+      "pmid": "25497133",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "sonnerycottet2024",
+      "pmid": "38164669",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "dutaillis2021",
+      "pmid": "33492623",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "benjaminse2006",
+      "pmid": "16715828",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "vaneck2013",
+      "pmid": "23085822",
+      "status": "revisar",
+      "divergencias": [
+        "ano: ref = 2013, PubMed = '2012' (possível epub × impresso; conferir o ano do fascículo)"
+      ],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "ano_a_conferir": true
+    },
+    {
+      "id": "sokal2022",
+      "pmid": "35150292",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "huang2022",
+      "pmid": "35945782",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "decary2017",
+      "pmid": "27693100",
+      "status": "revisar",
+      "divergencias": [
+        "ano: ref = 2017, PubMed = '2016' (possível epub × impresso; conferir o ano do fascículo)"
+      ],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "ano_a_conferir": true
+    },
+    {
+      "id": "hegedus2007",
+      "pmid": "17939613",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "griffith2009",
+      "pmid": "19609008",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "wijdicks2010",
+      "pmid": "20439679",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "laprade2007",
+      "pmid": "17768198",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "herbst2023",
+      "pmid": "37503921",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "ball2020",
+      "pmid": "32504158",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "kanamori2000",
+      "pmid": "11180920",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "shelburne2005",
+      "pmid": "16286866",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "ohori2017",
+      "pmid": "28656567",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "braaten2022",
+      "pmid": "36452420",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "runer2026",
+      "pmid": "42748362",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "runer2026classification",
+      "pmid": "42789756",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "dambrosi2021",
+      "pmid": "34150330",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "dacombe2013",
+      "pmid": "23349168",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "walden2015",
+      "pmid": "25907183",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "koga2010",
+      "pmid": "20595545",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "shin2011",
+      "pmid": "21266934",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "alentorngeli2009",
+      "pmid": "19452139",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "fitzgerald2000",
+      "pmid": "10795668",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "moksnes2008",
+      "pmid": "18979658",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "hurd2008outcomes",
+      "pmid": "17940141",
+      "status": "revisar",
+      "divergencias": [
+        "ano: ref = 2008, PubMed = '2007' (possível epub × impresso; conferir o ano do fascículo)"
+      ],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "ano_a_conferir": true
+    },
+    {
+      "id": "hurd2008determinants",
+      "pmid": "17932399",
+      "status": "revisar",
+      "divergencias": [
+        "ano: ref = 2008, PubMed = '2007' (possível epub × impresso; conferir o ano do fascículo)"
+      ],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "ano_a_conferir": true
+    },
+    {
+      "id": "eitzen2010",
+      "pmid": "20411377",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "kaplan2011",
+      "pmid": "21979555",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "rudolph2001",
+      "pmid": "11354855",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "wellsandt2017",
+      "pmid": "28355978",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "reid2007",
+      "pmid": "17311886",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "powers2010",
+      "pmid": "20118526",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "crossley2011",
+      "pmid": "21335344",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "rabin2010",
+      "pmid": "20972344",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "burnham2016",
+      "pmid": "27592407",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "roos2003",
+      "pmid": "14613558",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "irrgang2001",
+      "pmid": "11573919",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "webster2008",
+      "pmid": "19083699",
+      "status": "revisar",
+      "divergencias": [
+        "ano: ref = 2008, PubMed = '2007' (possível epub × impresso; conferir o ano do fascículo)"
+      ],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "ano_a_conferir": true
+    },
+    {
+      "id": "metsavaht2010",
+      "pmid": "20472755",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "lynch2015",
+      "pmid": "23881894",
+      "status": "corrigivel",
+      "divergencias": [
+        "ano: ref = 2015, PubMed = '2013'"
+      ],
+      "correcoes": {
+        "ano": 2013
+      },
+      "similaridade_titulo": 1.0,
+      "aplicado": true
+    },
+    {
+      "id": "melugin2018",
+      "pmid": "29286825",
+      "status": "revisar",
+      "divergencias": [
+        "ano: ref = 2018, PubMed = '2017' (possível epub × impresso; conferir o ano do fascículo)"
+      ],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "ano_a_conferir": true
+    },
+    {
+      "id": "nolan2026",
+      "pmid": "42909948",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {
+        "paginas": "643464"
+      },
+      "similaridade_titulo": 1.0,
+      "aplicado": true
+    }
+  ]
+}

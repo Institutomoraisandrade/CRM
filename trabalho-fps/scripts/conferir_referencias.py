@@ -86,11 +86,12 @@ def conferir(r: dict, meta: dict) -> dict:
         if a != b:
             if v_ref in (None, ""):
                 res["correcoes"][campo] = b if campo != "ano" else int(b)
-            elif campo == "ano" and a.isdigit() and b.isdigit() and abs(int(a) - int(b)) == 1:
-                # Diferença de 1 ano costuma ser publicação eletrônica antecipada × fascículo impresso.
+            elif campo == "ano" and a.isdigit() and b.isdigit() and 0 < int(a) - int(b) <= 3:
+                # PubMed com ano ANTERIOR ao da referência (até 3 anos) costuma ser publicação eletrônica
+                # antecipada × fascículo impresso.
                 # A ABNT usa o ano do fascículo: não corrigir automaticamente — o líder confere.
                 res["divergencias"].append(
-                    f"ano: ref = {v_ref!r}, PubMed = {v_meta!r} (possível epub × impresso; conferir o ano do fascículo)")
+                    f"ano: ref = {v_ref!r}, PubMed = {v_meta!r} (possível epub antecipado; conferir o ano do fascículo)")
                 res["ano_a_conferir"] = True
             else:
                 res["divergencias"].append(f"{campo}: ref = {v_ref!r}, PubMed = {v_meta!r}")
