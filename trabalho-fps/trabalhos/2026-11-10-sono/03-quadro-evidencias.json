@@ -248,7 +248,7 @@
   "resultado": "IMC com TCC-I/higiene: −0,64 kg/m² (0,28 a 1,01; I² 16%; 8 estudos); extensão: −0,15 kg/m² (−0,40 a 0,11); IMC geral NS (−0,26; −0,70 a 0,18; I² 59%); peso corporal NS para todas as intervenções (P = 0,23), higiene/TCC-I (P = 0,56) e extensão (P = 0,46); por subgrupo de IMC: −0,83 kg (0,32 a 1,35; 6 estudos, n = 337) no sobrepeso e −5,55 kg (4,13 a 6,97; 3 estudos, n = 72) na obesidade; ingestão −147,5 kcal/dia (5,74 a 289,41; I² 53%; 5 estudos, n = 223); sem mudança em atividade física; gordura % e massa livre de gordura NS (2 estudos cada)",
   "origem_dado": "resumo + texto completo (PMC13655966)",
   "avaliacao_critica": "AMSTAR 2: registro PROSPERO, 4 bases, duplicata, RoB Cochrane (12 de 26 sem preocupações), sensibilidade, viés de publicação; combina ECR e pré-pós. Confiança provisória: moderada. GRADE dos autores: IMC moderada, peso baixa, ingestão moderada",
-  "certeza_grade": "IMC: baixa; peso: baixa; ingestão: moderada",
+  "certeza_grade": "IMC: baixa; peso: baixa; ingestão: baixa nesta avaliação (imprecisão, limite inferior do IC perto de zero, I² 53%; evidência indireta); moderada para os autores",
   "observacoes": "O resultado por faixa de IMC é análise de subgrupo com 3 estudos pequenos. Seguimento: 2 semanas a 2,7 meses (extensão) e 3 a 12 meses (TCC-I/higiene)."
  },
  {
@@ -668,7 +668,7 @@
   "resultado": "Sono +1,2 h/noite (IC 95% 1,0 a 1,4); ingestão −270 kcal/dia (−393 a −147; P < 0,001); gasto total −53,9 (−134,9 a 27,1; NS); balanço energético −211 kcal/dia (−335 a −87); peso −0,87 kg (−1,39 a −0,35; P = 0,001); massa livre de gordura −0,62 kg (−1,02 a −0,23); massa gorda −0,25 kg (−0,39 a −0,10); controle ganhou 0,39 kg (0,02 a 0,76); r = −0,41 entre sono e ingestão; ≈ −162 kcal/dia por hora de sono a mais",
   "origem_dado": "texto completo (PMC8822469, Tabela 2)",
   "avaliacao_critica": "RoB 2: baixo risco nos domínios de aleatorização, desvios e desfecho (objetivo); algumas preocupações por cegamento apenas do propósito e perdas de 6% na ingestão; o ganho no grupo controle contribui ao efeito",
-  "certeza_grade": "moderada (ingestão); baixa (peso)",
+  "certeza_grade": "baixa (ingestão: -1 imprecisão da MA associada, -1 evidência indireta); baixa (peso)",
   "observacoes": "A queda de peso foi sobretudo de massa livre de gordura; 2 semanas; pesos domiciliares e ingestão inferida (precisão da água duplamente marcada ≈ 5%)."
  },
  {

@@ -1,0 +1,12 @@
+[
+ {
+  "id": "A1",
+  "status": "corrigido",
+  "detalhe": "§7 reescrito: a ingestão (+150 a +385 kcal/dia) agora vale para adultos majoritariamente saudáveis em laboratório (certeza moderada na direção; indireta para sobrepeso); a composição na dieta separa os estudos: Nedeltcheva (n = 10) com menos gordura e mais massa livre de gordura perdida; Wang (n = 36) com perdas semelhantes de peso, massa magra e massa gorda e menor proporção de gordura (certeza baixa). Grep no trabalho (03-evidencias.md, quadro e referências): a mesma atribuição genérica também estava na linha 'Proporção de gordura × massa livre de gordura' do §6, agora com cada achado atribuído ao estudo de origem. O quadro JSON já separava os dois estudos (nedeltcheva2010 e wang2018) e não precisou de mudança. Observação: 01-investigacao.md e 02-analise-critica.md não foram alterados por mim (fora do escopo); linhas 64 e 59-60 respectivamente já descrevem os estudos separadamente."
+ },
+ {
+  "id": "A2",
+  "status": "corrigido",
+  "detalhe": "Adotada a saída (a): certeza BAIXA para 'Ingestão com extensão do sono em quem dorme pouco', aplicando os dois rebaixamentos escritos (−1 imprecisão: MA com limite inferior do IC perto de zero e I² 53%; −1 evidência indireta: 2 semanas, sem dieta, adultos jovens com sobrepeso sem insônia). Propagado para o §6 (linha e motivos, com a divergência explícita da GRADE moderada dos autores de Mostafa 2026), o §7 (resposta: 'certeza baixa') e o quadro (tasali2022: 'baixa'; mostafa2026, ingestão: 'baixa nesta avaliação; moderada para os autores'). Pendência 12 registrada no §Pendências para que o orquestrador avise redator e designer, que usavam 'moderada'."
+ }
+]
