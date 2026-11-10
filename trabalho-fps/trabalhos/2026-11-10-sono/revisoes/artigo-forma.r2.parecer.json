@@ -1,0 +1,62 @@
+{
+  "etapa": "artigo-forma",
+  "rodada": 2,
+  "revisor": "fps-lider-producao",
+  "modelo_revisor": "opus",
+  "executor": "fps-4-redator-abnt",
+  "arquivos_revisados": [
+    "trabalho-fps/trabalhos/2026-11-10-sono/artigo.json",
+    "trabalho-fps/trabalhos/2026-11-10-sono/revisoes/artigo-forma.r1.resposta.json",
+    "trabalho-fps/trabalhos/2026-11-10-sono/artigo.docx",
+    "trabalho-fps/trabalhos/2026-11-10-sono/previa-artigo/folha-de-contato.png (31 páginas)"
+  ],
+  "criterios": {
+    "estrutura_abnt": 8.5,
+    "redacao_cientifica": 8.5,
+    "coesao_do_argumento": 8.5,
+    "discussao_critica": 8.0,
+    "ausencia_de_redundancia": 8.0
+  },
+  "achados": [
+    {
+      "id": "A1",
+      "gravidade": "menor",
+      "local": "artigo.json > Discussão §0",
+      "problema": "Redundância residual: 'A restrição aumentou o peso em experimentos internados, mas a metanálise agrupada não encontrou diferença' reexpunha o resultado da seção 5.2 (e do Quadro 2).",
+      "evidencia": "Seção 5.2 §0 (Spaeth, Markwald, Yu 2019) e Quadro 2, linha 'Peso com restrição, sem dieta'.",
+      "correcao": "Trocado por 'O contraste entre o ganho de peso nos experimentos internados e a metanálise nula (seção 5.2) é compatível com um total diário que, em vida livre, pode não mudar em poucos dias.' Corrigido pelo revisor.",
+      "responsavel": "fps-4-redator-abnt"
+    },
+    {
+      "id": "A2",
+      "gravidade": "menor",
+      "local": "artigo.json > resumo (Resultados)",
+      "problema": "Frase sobre telas mais longa que o necessário com o resumo no limite de 250 palavras.",
+      "evidencia": "Contagem do resumo após a correção A1 da rodada 1: 250 palavras.",
+      "correcao": "'o uso de telas associou-se a menos sono' → 'as telas associaram-se a menos sono'; resumo com 247 palavras pelo validador. Corrigido pelo revisor.",
+      "responsavel": "fps-4-redator-abnt"
+    }
+  ],
+  "decisoes_rodada_anterior": [
+    "A1 (crítico) — corrigido e conferido: resumo, abstract e CF §2 separam cafeína (tempo e eficiência, moderada), álcool (REM, moderada; tempo total incerto) e telas (associação, baixa); fim de semana com resultados divergentes. O 'em média' da força está no resumo e no abstract.",
+    "A2 — corrigido: lista 'não permitem afirmar' removida; as Considerações finais são o único lugar da resposta.",
+    "A3 — corrigido: Discussão §1, §4, §6 e §7 remetem às seções 5.3, 6.1/6.2 e 2.4; premissa da MLG (água e glicogênio) só na Discussão; encaminhamento fora da Discussão.",
+    "A4 — corrigido: 2.2 sem números da Tabela 1; 5.3 sem valores de Mostafa (remete ao Quadro 1); 'horário × sono' só na Discussão §3; consenso de atletas fora da seção 3.",
+    "A5 — contestação aceita: o orquestrador dispensou o limite de páginas (material de estudo pessoal, decisão registrada)."
+  ],
+  "correcoes_aplicadas": [
+    "A1 e A2 desta rodada aplicados por Edit pontual em artigo.json; artigo.docx e previa-artigo/ regenerados (31 páginas); validar_trabalho.py: 0 erros, resumo 247 palavras, corpo ~7.534 palavras.",
+    "Sem regressões: referências cruzadas de seção conferidas (4.1, 4.3, 5.2, 5.3, 5.4, 6.1, 6.2, 9.1, 2.4, 3, 1) e nenhum termo do pipeline no texto."
+  ],
+  "pontos_fortes": [
+    "Discussão agora só interpreta e remete às seções, com consequência prática explícita em cada parágrafo.",
+    "Resumo e abstract espelham o corpo com a certeza de cada desfecho; conclusão única nas Considerações finais.",
+    "Base do sono em ~1 página, como pede o briefing."
+  ],
+  "pendencias_orquestrador": [
+    "Nome do autor (marcador) e logo FPS: pendências conhecidas do usuário.",
+    "Tabela 1 continua quebrada entre as páginas 4 e 5, com o cabeçalho repetido; aceito como estético."
+  ],
+  "escalonado": false,
+  "resumo": "Os 4 achados da rodada 1 foram corrigidos, e a contestação de A5 foi aceita por decisão do orquestrador. Dois menores residuais, um de redundância na Discussão e um de concisão no resumo, foram corrigidos pelo revisor. Sem regressões de forma."
+}
