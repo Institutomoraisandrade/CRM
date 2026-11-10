@@ -1597,5 +1597,109 @@
       "Fridén",
       "Heijne"
     ]
+  },
+  "35575450": {
+    "titulo": "Adenosine, caffeine, and sleep-wake regulation: state of the science and perspectives.",
+    "ano": "2022",
+    "volume": "31",
+    "numero": "4",
+    "paginas": "e13597",
+    "doi": "10.1111/jsr.13597",
+    "periodico": "Journal of sleep research",
+    "autores": [
+      "Reichert",
+      "Deboer",
+      "Landolt"
+    ]
+  },
+  "26899133": {
+    "titulo": "Coffee, caffeine, and sleep: A systematic review of epidemiological studies and randomized controlled trials.",
+    "ano": "2017",
+    "volume": "31",
+    "numero": null,
+    "paginas": "70-78",
+    "doi": "10.1016/j.smrv.2016.01.006",
+    "periodico": "Sleep medicine reviews",
+    "autores": [
+      "Clark",
+      "Landolt"
+    ]
+  },
+  "25380732": {
+    "titulo": "The effectiveness of melatonin for promoting healthy sleep: a rapid evidence assessment of the literature.",
+    "ano": "2014",
+    "volume": "13",
+    "numero": null,
+    "paginas": "106",
+    "doi": "10.1186/1475-2891-13-106",
+    "periodico": "Nutrition journal",
+    "autores": [
+      "Costello",
+      "Lentino",
+      "Boyd",
+      "O'Connell",
+      "Crawford",
+      "Sprengel"
+    ]
+  },
+  "23691095": {
+    "titulo": "Meta-analysis: melatonin for the treatment of primary sleep disorders.",
+    "ano": "2013",
+    "volume": "8",
+    "numero": "5",
+    "paginas": "e63773",
+    "doi": "10.1371/journal.pone.0063773",
+    "periodico": "PloS one",
+    "autores": [
+      "Ferracioli-Oda",
+      "Qawasmi",
+      "Bloch"
+    ]
+  },
+  "36179487": {
+    "titulo": "Efficacy of melatonin for chronic insomnia: Systematic reviews and meta-analyses.",
+    "ano": "2022",
+    "volume": "66",
+    "numero": null,
+    "paginas": "101692",
+    "doi": "10.1016/j.smrv.2022.101692",
+    "periodico": "Sleep medicine reviews",
+    "autores": [
+      "Choi",
+      "Lee",
+      "Park",
+      "Je",
+      "Suh"
+    ]
+  },
+  "34626955": {
+    "titulo": "Melatonin supplementation and anthropometric indicators of obesity: A systematic review and meta-analysis.",
+    "ano": "2021",
+    "volume": "91-92",
+    "numero": null,
+    "paginas": "111399",
+    "doi": "10.1016/j.nut.2021.111399",
+    "periodico": "Nutrition (Burbank, Los Angeles County, Calif.)",
+    "autores": [
+      "Delpino",
+      "Figueiredo"
+    ]
+  },
+  "41515249": {
+    "titulo": "Comprehensive Effects of Melatonin Supplementation on Cardiometabolic Risk Factors: A Systematic Review and Dose-Response Meta-Analysis.",
+    "ano": "2025",
+    "volume": "18",
+    "numero": "1",
+    "paginas": null,
+    "doi": "10.3390/nu18010134",
+    "periodico": "Nutrients",
+    "autores": [
+      "Mohammadi",
+      "Ashtary-Larky",
+      "Erfanian-Salim",
+      "Alaghemand",
+      "Yousefi",
+      "Sanjari Pirayvatlou"
+    ]
   }
 }

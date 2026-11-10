@@ -1,0 +1,202 @@
+{
+ "data_busca": "2026-11-10",
+ "buscas": [
+  {
+   "base": "PubMed",
+   "camada": "revisões e ECR (string combinada; contém filtro RCT/MA/RS)",
+   "string": "(\"Sleep Deprivation\"[MeSH Terms] OR \"sleep restriction\"[tiab] OR \"short sleep\"[tiab] OR \"sleep extension\"[tiab] OR \"insufficient sleep\"[tiab]) AND (\"Body Weight\"[MeSH Terms] OR \"weight loss\"[tiab] OR \"body composition\"[tiab] OR \"fat mass\"[tiab] OR \"fat-free mass\"[tiab] OR \"Energy Intake\"[MeSH Terms] OR \"energy intake\"[tiab] OR \"weight gain\"[tiab] OR \"caloric intake\"[tiab] OR \"food intake\"[tiab]) AND (\"Randomized Controlled Trial\"[Publication Type] OR \"Meta-Analysis\"[Publication Type] OR \"Systematic Review\"[Publication Type] OR crossover[tiab] OR experimental[tiab] OR inpatient[tiab])",
+   "filtros": "pdat 2004/01/01 a 2026/11/10",
+   "resultados": 279,
+   "retidos": 112
+  },
+  {
+   "base": "PubMed",
+   "camada": "revisões e ECR",
+   "string": "(\"Sleep Deprivation\"[MeSH Terms] OR \"sleep restriction\"[tiab] OR \"short sleep\"[tiab] OR \"sleep curtailment\"[tiab]) AND (ghrelin[tiab] OR leptin[tiab] OR appetite[tiab] OR hunger[tiab] OR \"food intake\"[tiab] OR \"food reward\"[tiab] OR \"energy intake\"[tiab]) AND (\"Meta-Analysis\"[Publication Type] OR \"Systematic Review\"[Publication Type] OR \"Randomized Controlled Trial\"[Publication Type] OR crossover[tiab])",
+   "filtros": "2004/01/01–2026/11/10 pdat",
+   "resultados": 95,
+   "retidos": 10
+  },
+  {
+   "base": "PubMed",
+   "camada": "coortes e ECR",
+   "string": "(\"sleep duration\"[tiab] OR \"sleep quality\"[tiab] OR \"sleep efficiency\"[tiab] OR \"short sleep\"[tiab]) AND \"weight loss\"[tiab] AND (\"behavioral weight loss\"[tiab] OR \"lifestyle intervention\"[tiab] OR \"caloric restriction\"[tiab] OR \"weight loss intervention\"[tiab] OR hypocaloric[tiab])",
+   "filtros": "2004/01/01–2026/11/10 pdat",
+   "resultados": 58,
+   "retidos": 24
+  },
+  {
+   "base": "PubMed",
+   "camada": "revisões e ECR",
+   "string": "(\"Sleep Deprivation\"[MeSH Terms] OR \"sleep restriction\"[tiab] OR \"sleep loss\"[tiab] OR \"short sleep\"[tiab]) AND (\"exercise performance\"[tiab] OR \"athletic performance\"[tiab] OR \"muscle strength\"[tiab] OR \"muscle protein synthesis\"[tiab] OR \"resistance training\"[tiab] OR \"resistance exercise\"[tiab]) AND (\"Meta-Analysis\"[Publication Type] OR \"Systematic Review\"[Publication Type] OR \"Randomized Controlled Trial\"[Publication Type])",
+   "filtros": "2004/01/01–2026/11/10 pdat",
+   "resultados": 29,
+   "retidos": 25
+  },
+  {
+   "base": "PubMed",
+   "camada": "revisões",
+   "string": "(\"Exercise\"[MeSH Terms] OR \"exercise training\"[tiab] OR \"physical activity\"[tiab]) AND (\"Sleep Quality\"[MeSH Terms] OR \"sleep quality\"[tiab] OR \"sleep duration\"[tiab]) AND (\"Meta-Analysis\"[Publication Type] OR \"Systematic Review\"[Publication Type]) AND adult[MeSH Terms]",
+   "filtros": "2012/01/01–2026/11/10 pdat",
+   "resultados": 84,
+   "retidos": 41
+  },
+  {
+   "base": "PubMed",
+   "camada": "revisões",
+   "string": "(\"Sleep Hygiene\"[MeSH Terms] OR \"sleep hygiene\"[tiab] OR \"sleep extension\"[tiab] OR \"time in bed\"[tiab]) AND (\"Sleep Duration\"[MeSH Terms] OR \"sleep duration\"[tiab] OR \"total sleep time\"[tiab] OR \"Sleep Quality\"[MeSH Terms]) AND (\"Meta-Analysis\"[Publication Type] OR \"Systematic Review\"[Publication Type]) AND adult[MeSH Terms]",
+   "filtros": "2010/01/01–2026/11/10 pdat",
+   "resultados": 191,
+   "retidos": 42
+  },
+  {
+   "base": "PubMed",
+   "camada": "estudos experimentais e ECR (sem filtro de desenho)",
+   "string": "(\"sleep restriction\"[tiab] OR \"insufficient sleep\"[tiab] OR \"Sleep Deprivation\"[Majr]) AND (\"weight gain\"[tiab] OR \"Weight Gain\"[MeSH Terms] OR \"caloric intake\"[tiab]) AND (inpatient[tiab] OR laboratory[tiab] OR randomized[tiab] OR experimental[tiab])",
+   "filtros": "2004/01/01–2026/11/10 pdat",
+   "resultados": 87,
+   "retidos": 7
+  },
+  {
+   "base": "PubMed",
+   "camada": "revisões e ECR",
+   "string": "(melatonin[ti] OR \"Melatonin\"[MeSH Terms]) AND (\"body weight\"[tiab] OR \"body composition\"[tiab] OR obesity[MeSH Terms] OR \"exercise performance\"[tiab] OR \"athletic performance\"[tiab] OR \"healthy adults\"[tiab]) AND (\"Meta-Analysis\"[Publication Type] OR \"Systematic Review\"[Publication Type] OR \"Randomized Controlled Trial\"[Publication Type])",
+   "filtros": "2010/01/01–2026/11/10 pdat",
+   "resultados": 61,
+   "retidos": 22
+  },
+  {
+   "base": "PubMed",
+   "camada": "revisões",
+   "string": "(sleep[ti]) AND (supplements[ti] OR supplementation[ti] OR \"Dietary Supplements\"[MeSH Terms] OR magnesium[ti] OR glycine[ti] OR tryptophan[ti] OR valerian[ti]) AND (\"Meta-Analysis\"[Publication Type] OR \"Systematic Review\"[Publication Type])",
+   "filtros": "2010/01/01–2026/11/10 pdat",
+   "resultados": 34,
+   "retidos": 22
+  },
+  {
+   "base": "PubMed",
+   "camada": "revisões",
+   "string": "(\"consumer sleep\"[tiab] OR \"sleep tracker*\"[tiab] OR \"sleep-tracking\"[tiab] OR wearable*[tiab]) AND (polysomnography[MeSH Terms] OR polysomnograph*[tiab]) AND (validity[tiab] OR validation[tiab] OR accuracy[tiab] OR performance[tiab]) AND (\"Meta-Analysis\"[Publication Type] OR \"Systematic Review\"[Publication Type])",
+   "filtros": "pdat 2016/01/01 a 2026/11/10; variante de revisões (21 resultados); a variante ampla (453) não foi triada",
+   "resultados": 21,
+   "retidos": 11
+  },
+  {
+   "base": "PubMed",
+   "camada": "ECR e observacional (sem filtro de desenho)",
+   "string": "(\"catch-up sleep\"[tiab] OR \"weekend sleep\"[tiab] OR \"recovery sleep\"[tiab] OR \"weekend recovery\"[tiab] OR \"sleep debt\"[tiab]) AND (obesity[MeSH Terms] OR \"body weight\"[tiab] OR \"body mass index\"[tiab] OR \"insulin sensitivity\"[tiab] OR \"energy intake\"[tiab] OR \"metabolic health\"[tiab] OR \"glucose metabolism\"[tiab])",
+   "filtros": "2010/01/01–2026/11/10 pdat; com filtro AND (\"Meta-Analysis\"[Publication Type] OR \"Systematic Review\"[Publication Type] OR \"Randomized Controlled Trial\"[Publication Type]) (14 operadores): 13 resultados",
+   "resultados": 151,
+   "retidos": 9
+  },
+  {
+   "base": "PubMed",
+   "camada": "observacional e ECR",
+   "string": "(\"meal timing\"[tiab] OR \"late eating\"[tiab] OR \"late-night eating\"[tiab] OR \"night eating\"[tiab] OR \"time-restricted eating\"[tiab] OR chronotype[tiab] OR \"timing of food intake\"[tiab]) AND (sleep[ti]) AND (\"body weight\"[tiab] OR \"body composition\"[tiab] OR \"energy intake\"[tiab] OR obesity[MeSH Terms] OR \"weight gain\"[tiab])",
+   "filtros": "2010/01/01–2026/11/10 pdat",
+   "resultados": 112,
+   "retidos": 16
+  },
+  {
+   "base": "PubMed",
+   "camada": "revisões",
+   "string": "(chronotype[tiab] OR \"social jetlag\"[tiab] OR \"social jet lag\"[tiab] OR eveningness[tiab]) AND (obesity[MeSH Terms] OR \"body mass index\"[tiab] OR \"body weight\"[tiab] OR \"meal timing\"[tiab] OR \"energy intake\"[tiab]) AND (\"Meta-Analysis\"[Publication Type] OR \"Systematic Review\"[Publication Type])",
+   "filtros": "2010/01/01–2026/11/10 pdat",
+   "resultados": 22,
+   "retidos": 11
+  },
+  {
+   "base": "PubMed",
+   "camada": "revisões e ECR",
+   "string": "(caffeine[tiab] OR \"Caffeine\"[MeSH Terms] OR \"Alcohol Drinking\"[MeSH Terms] OR alcohol[tiab] OR \"screen time\"[tiab] OR \"blue light\"[tiab] OR \"blue-light\"[tiab] OR smartphone*[tiab]) AND (sleep[ti]) AND (\"Meta-Analysis\"[Publication Type] OR \"Systematic Review\"[Publication Type] OR \"Randomized Controlled Trial\"[Publication Type]) NOT (child*[ti] OR adolescen*[ti])",
+   "filtros": "2010/01/01–2026/11/10 pdat",
+   "resultados": 243,
+   "retidos": 69
+  },
+  {
+   "base": "PubMed",
+   "camada": "diretrizes e consensos",
+   "string": "(sleep[ti] OR \"sleep duration\"[ti]) AND (guideline[pt] OR \"Practice Guideline\"[pt] OR consensus[ti] OR \"scientific statement\"[ti] OR \"position statement\"[ti] OR recommendations[ti]) AND (obesity OR weight OR health OR athletes OR exercise) NOT (child*[ti] OR infant*[ti] OR adolescen*[ti] OR pediatric*[ti] OR pregnan*[ti])",
+   "filtros": "2010/01/01–2026/11/10 pdat",
+   "resultados": 287,
+   "retidos": 33
+  },
+  {
+   "base": "PubMed",
+   "camada": "diretrizes brasileiras",
+   "string": "(Brazil[ad] OR Brazilian[ti] OR \"Brazilian Sleep Association\"[tiab] OR \"Associação Brasileira do Sono\"[tiab]) AND (sleep[ti] OR insomnia[ti]) AND (guideline[pt] OR \"Practice Guideline\"[pt] OR consensus[ti] OR recommendations[ti] OR guidelines[ti])",
+   "filtros": "2010/01/01–2026/11/10 pdat",
+   "resultados": 26,
+   "retidos": 2
+  },
+  {
+   "base": "Consensus",
+   "camada": "revisões (medical_mode; RS/MA)",
+   "string": "sleep duration restriction effects on body weight, fat mass and fat-free mass during energy restriction or weight loss in adults",
+   "filtros": "medical_mode=true; study_types=[systematic review, meta-analysis]; page_size=100",
+   "resultados": 100,
+   "retidos": 2
+  }
+ ],
+ "diretrizes_web": [
+  {
+   "organizacao": "American Academy of Sleep Medicine; Sleep Research Society",
+   "titulo": "Recommended Amount of Sleep for a Healthy Adult: a joint consensus statement",
+   "ano": "2015",
+   "url": "https://doi.org/10.5664/jcsm.4758",
+   "pmid": "25979105"
+  },
+  {
+   "organizacao": "National Sleep Foundation",
+   "titulo": "National Sleep Foundation's updated sleep duration recommendations: final report",
+   "ano": "2015",
+   "url": "https://doi.org/10.1016/j.sleh.2015.10.004",
+   "pmid": "29073398"
+  },
+  {
+   "organizacao": "American Heart Association",
+   "titulo": "Sleep Duration and Quality: Impact on Lifestyle Behaviors and Cardiometabolic Health (scientific statement)",
+   "ano": "2016",
+   "url": "https://doi.org/10.1161/CIR.0000000000000444",
+   "pmid": "27647451"
+  },
+  {
+   "organizacao": "American Heart Association",
+   "titulo": "Life's Essential 8: Updating and Enhancing the AHA's Construct of Cardiovascular Health (presidential advisory)",
+   "ano": "2022",
+   "url": "https://doi.org/10.1161/CIR.0000000000001078",
+   "pmid": "35766027"
+  },
+  {
+   "organizacao": "Walsh NP et al. (expert consensus, British Journal of Sports Medicine)",
+   "titulo": "Sleep and the athlete: narrative review and 2021 expert consensus recommendations",
+   "ano": "2021",
+   "url": "https://doi.org/10.1136/bjsports-2020-102025",
+   "pmid": "33144349"
+  },
+  {
+   "organizacao": "Associação Brasileira do Sono",
+   "titulo": "2023 Guidelines on the Diagnosis and Treatment of Insomnia in Adults",
+   "ano": "2023",
+   "url": "https://doi.org/10.1055/s-0043-1776281",
+   "pmid": "38370879"
+  },
+  {
+   "organizacao": "Obesity Medicine Association",
+   "titulo": "Obesity Sleep guideline bundle (apenas resumo de busca acessado)",
+   "ano": "2026",
+   "url": "https://eguideline.guidelinecentral.com/i/1544297/6",
+   "pmid": ""
+  }
+ ],
+ "prisma": {
+  "identificados": 1882,
+  "duplicatas_removidas": 274,
+  "triados": 1608,
+  "excluidos_titulo_resumo": 1148,
+  "cortados_por_volume": 380,
+  "para_avaliacao": 80
+ },
+ "alerta": null,
+ "observacoes": "Variantes não executadas: (a) variante de revisões da string principal (principal + AND (systematic review[pt] OR meta-analysis[pt])) tem 22 operadores, acima do limite da ferramenta (20); a string principal já contém filtro de desenho (RCT, MA, RS), e todos os seus 279 registros foram triados; (b) variante de ECR com randomized controlled trial[pt] não executada pelo mesmo limite. Wearables: usada a variante de revisões (21 resultados) conforme instrução; a ampla (453) não foi triada. BVS e Cochrane Library não executadas (inacessíveis na rede restrita, conforme 01-picos.json). Consensus: uma busca (100 resultados; 16 duplicatas de PubMed; 84 triados). Registro dirigido: LE8 (PMID 35766027) incluído por busca direta pelo PMID solicitado, fora das strings; contado à parte em identificados. Diretriz de obesidade: uma busca web (WebSearch) encontrou o OMA Obesity Sleep bundle (resumo apenas). Triagem: 1.523 registros PubMed únicos e 84 do Consensus, todos decididos por título e resumo; ver 03a-candidatos.json. Corte por volume: 380 registros elegíveis cortados pelo teto de 80, por subtema e hierarquia de desenho (diretriz > RS/MA > ECR > observacional), com pelo menos 2 itens por subtema essencial. Os PMIDs das buscas com 'retidos' contam a triagem positiva antes do corte."
+}

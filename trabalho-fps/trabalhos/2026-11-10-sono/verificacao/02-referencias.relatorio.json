@@ -1,9 +1,9 @@
 {
   "arquivo": "trabalho-fps/trabalhos/2026-11-10-sono/02-referencias.json",
   "resumo": {
-    "ok": 30,
+    "ok": 36,
     "corrigivel": 0,
-    "revisar": 13,
+    "revisar": 14,
     "sem_pmid": 0,
     "sem_metadados": 0
   },
@@ -14,8 +14,7 @@
       "status": "ok",
       "divergencias": [],
       "correcoes": {},
-      "similaridade_titulo": 1.0,
-      "aplicado": false
+      "similaridade_titulo": 1.0
     },
     {
       "id": "hanlon2020",
@@ -45,8 +44,7 @@
       "status": "ok",
       "divergencias": [],
       "correcoes": {},
-      "similaridade_titulo": 1.0,
-      "aplicado": false
+      "similaridade_titulo": 1.0
     },
     {
       "id": "stonge2012",
@@ -54,8 +52,7 @@
       "status": "ok",
       "divergencias": [],
       "correcoes": {},
-      "similaridade_titulo": 1.0,
-      "aplicado": false
+      "similaridade_titulo": 1.0
     },
     {
       "id": "nedeltcheva2009",
@@ -74,8 +71,7 @@
       "status": "ok",
       "divergencias": [],
       "correcoes": {},
-      "similaridade_titulo": 1.0,
-      "aplicado": false
+      "similaridade_titulo": 1.0
     },
     {
       "id": "radcliffe2021",
@@ -83,8 +79,7 @@
       "status": "ok",
       "divergencias": [],
       "correcoes": {},
-      "similaridade_titulo": 1.0,
-      "aplicado": false
+      "similaridade_titulo": 1.0
     },
     {
       "id": "mcneil2017",
@@ -114,8 +109,7 @@
       "status": "ok",
       "divergencias": [],
       "correcoes": {},
-      "similaridade_titulo": 1.0,
-      "aplicado": false
+      "similaridade_titulo": 1.0
     },
     {
       "id": "soltanieh2021",
@@ -123,8 +117,7 @@
       "status": "ok",
       "divergencias": [],
       "correcoes": {},
-      "similaridade_titulo": 1.0,
-      "aplicado": false
+      "similaridade_titulo": 1.0
     },
     {
       "id": "chaput2023",
@@ -143,8 +136,7 @@
       "status": "ok",
       "divergencias": [],
       "correcoes": {},
-      "similaridade_titulo": 1.0,
-      "aplicado": false
+      "similaridade_titulo": 1.0
     },
     {
       "id": "buxton2012",
@@ -152,8 +144,7 @@
       "status": "ok",
       "divergencias": [],
       "correcoes": {},
-      "similaridade_titulo": 1.0,
-      "aplicado": false
+      "similaridade_titulo": 1.0
     },
     {
       "id": "broussard2012",
@@ -161,8 +152,7 @@
       "status": "ok",
       "divergencias": [],
       "correcoes": {},
-      "similaridade_titulo": 1.0,
-      "aplicado": false
+      "similaridade_titulo": 1.0
     },
     {
       "id": "spiegel1999",
@@ -170,8 +160,7 @@
       "status": "ok",
       "divergencias": [],
       "correcoes": {},
-      "similaridade_titulo": 1.0,
-      "aplicado": false
+      "similaridade_titulo": 1.0
     },
     {
       "id": "leproult1997",
@@ -179,8 +168,7 @@
       "status": "ok",
       "divergencias": [],
       "correcoes": {},
-      "similaridade_titulo": 1.0,
-      "aplicado": false
+      "similaridade_titulo": 1.0
     },
     {
       "id": "leproult2011",
@@ -188,8 +176,7 @@
       "status": "ok",
       "divergencias": [],
       "correcoes": {},
-      "similaridade_titulo": 1.0,
-      "aplicado": false
+      "similaridade_titulo": 1.0
     },
     {
       "id": "reutrakul2014",
@@ -197,8 +184,7 @@
       "status": "ok",
       "divergencias": [],
       "correcoes": {},
-      "similaridade_titulo": 1.0,
-      "aplicado": false
+      "similaridade_titulo": 1.0
     },
     {
       "id": "vancauter2000",
@@ -206,8 +192,7 @@
       "status": "ok",
       "divergencias": [],
       "correcoes": {},
-      "similaridade_titulo": 1.0,
-      "aplicado": false
+      "similaridade_titulo": 1.0
     },
     {
       "id": "dattilo2011",
@@ -215,8 +200,7 @@
       "status": "ok",
       "divergencias": [],
       "correcoes": {},
-      "similaridade_titulo": 1.0,
-      "aplicado": false
+      "similaridade_titulo": 1.0
     },
     {
       "id": "morton2018",
@@ -235,8 +219,7 @@
       "status": "ok",
       "divergencias": [],
       "correcoes": {},
-      "similaridade_titulo": 1.0,
-      "aplicado": false
+      "similaridade_titulo": 1.0
     },
     {
       "id": "lowe2020",
@@ -244,8 +227,7 @@
       "status": "ok",
       "divergencias": [],
       "correcoes": {},
-      "similaridade_titulo": 1.0,
-      "aplicado": false
+      "similaridade_titulo": 1.0
     },
     {
       "id": "palmer2024",
@@ -264,8 +246,7 @@
       "status": "ok",
       "divergencias": [],
       "correcoes": {},
-      "similaridade_titulo": 1.0,
-      "aplicado": false
+      "similaridade_titulo": 1.0
     },
     {
       "id": "mah2011",
@@ -273,8 +254,7 @@
       "status": "ok",
       "divergencias": [],
       "correcoes": {},
-      "similaridade_titulo": 1.0,
-      "aplicado": false
+      "similaridade_titulo": 1.0
     },
     {
       "id": "roenneberg2012",
@@ -282,8 +262,7 @@
       "status": "ok",
       "divergencias": [],
       "correcoes": {},
-      "similaridade_titulo": 1.0,
-      "aplicado": false
+      "similaridade_titulo": 1.0
     },
     {
       "id": "krause2017",
@@ -291,8 +270,7 @@
       "status": "ok",
       "divergencias": [],
       "correcoes": {},
-      "similaridade_titulo": 1.0,
-      "aplicado": false
+      "similaridade_titulo": 1.0
     },
     {
       "id": "chang2015",
@@ -322,8 +300,7 @@
       "status": "ok",
       "divergencias": [],
       "correcoes": {},
-      "similaridade_titulo": 1.0,
-      "aplicado": false
+      "similaridade_titulo": 1.0
     },
     {
       "id": "akerstedt2019",
@@ -342,8 +319,7 @@
       "status": "ok",
       "divergencias": [],
       "correcoes": {},
-      "similaridade_titulo": 1.0,
-      "aplicado": false
+      "similaridade_titulo": 1.0
     },
     {
       "id": "kecklund2016",
@@ -351,8 +327,7 @@
       "status": "ok",
       "divergencias": [],
       "correcoes": {},
-      "similaridade_titulo": 1.0,
-      "aplicado": false
+      "similaridade_titulo": 1.0
     },
     {
       "id": "liu2018",
@@ -360,8 +335,7 @@
       "status": "ok",
       "divergencias": [],
       "correcoes": {},
-      "similaridade_titulo": 1.0,
-      "aplicado": false
+      "similaridade_titulo": 1.0
     },
     {
       "id": "sun2018",
@@ -380,8 +354,7 @@
       "status": "ok",
       "divergencias": [],
       "correcoes": {},
-      "similaridade_titulo": 1.0,
-      "aplicado": false
+      "similaridade_titulo": 1.0
     },
     {
       "id": "fullagar2015",
@@ -389,8 +362,7 @@
       "status": "ok",
       "divergencias": [],
       "correcoes": {},
-      "similaridade_titulo": 1.0,
-      "aplicado": false
+      "similaridade_titulo": 1.0
     },
     {
       "id": "temesi2013",
@@ -398,8 +370,7 @@
       "status": "ok",
       "divergencias": [],
       "correcoes": {},
-      "similaridade_titulo": 1.0,
-      "aplicado": false
+      "similaridade_titulo": 1.0
     },
     {
       "id": "milewski2014",
@@ -407,8 +378,7 @@
       "status": "ok",
       "divergencias": [],
       "correcoes": {},
-      "similaridade_titulo": 1.0,
-      "aplicado": false
+      "similaridade_titulo": 1.0
     },
     {
       "id": "vonrosen2017",
@@ -416,6 +386,65 @@
       "status": "revisar",
       "divergencias": [
         "ano: ref = 2017, PubMed = '2016' (possível epub antecipado; conferir o ano do fascículo)"
+      ],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "ano_a_conferir": true
+    },
+    {
+      "id": "reichert2022",
+      "pmid": "35575450",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0
+    },
+    {
+      "id": "clark2017",
+      "pmid": "26899133",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0
+    },
+    {
+      "id": "costello2014",
+      "pmid": "25380732",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0
+    },
+    {
+      "id": "ferracioli2013",
+      "pmid": "23691095",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0
+    },
+    {
+      "id": "choi2022",
+      "pmid": "36179487",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0
+    },
+    {
+      "id": "delpino2021",
+      "pmid": "34626955",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0
+    },
+    {
+      "id": "mohammadi2026",
+      "pmid": "41515249",
+      "status": "revisar",
+      "divergencias": [
+        "ano: ref = 2026, PubMed = '2025' (possível epub antecipado; conferir o ano do fascículo)"
       ],
       "correcoes": {},
       "similaridade_titulo": 1.0,

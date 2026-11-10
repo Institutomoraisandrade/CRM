@@ -1,0 +1,22 @@
+[
+  {
+    "id": "A1",
+    "status": "corrigido",
+    "detalhe": "Lido o texto completo de Tasali 2022 (PMC8822469, Tabela 2): peso -0,87 kg (IC 95% -1,39 a -0,35; P = 0,001) contra o controle em 2 semanas, -0,48 kg do basal na extensão e +0,39 kg no controle; massa livre de gordura -0,62 kg (-1,02 a -0,23) e gordura -0,25 kg (-0,39 a -0,10); gasto total sem diferença significativa. Mostafa 2026 (resumo, PMID 42044907): extensão isolada IMC -0,15 kg/m² (-0,40 a 0,11; 5 estudos, n = 138); peso -0,83 kg no sobrepeso (6 estudos, n = 337) e -5,55 kg na obesidade (3 estudos, n = 72); ingestão -147,5 kcal/dia (5 estudos, n = 223); pré-pós aceito; qualidade baixa em 12 estudos. Reescritos: Síntese 5, §1.1 passo 5 (com a ressalva do ganho no controle, do seguimento de 2 semanas e de que a ingestão é calculada a partir do peso/estoques, logo não independente do peso [inferência]), §1.3 (ressalva de água/glicogênio, novo bullet de extensão e resposta à pergunta central com peso total semelhante nos 2 ECR de dieta), §2 (linhas Duração do sono e Peso), §3, §4.1, §4.2 item 2 e equívoco 2 com o verbo proporcional sugerido."
+  },
+  {
+    "id": "A2",
+    "status": "corrigido",
+    "detalhe": "Lido o texto completo de Craven 2022 (PMC9584849). §1.4 passo 2 reescrito confrontando Craven (força -2,85%, IC -4,47 a -1,23, I² 62,2%, 25 estudos, n = 289; subgrupo: só a privação total significativa, -3,00%; membros inferiores sim, superiores não; tarde sim, manhã em geral não) e Knowles 2018 (privação total com pouco efeito; restrição consecutiva reduz multiarticulares). Conciliação: Craven exclui protocolos de várias noites, então as sínteses são complementares. Dose-resposta (~0,4% por hora acordada; restrição tardia -0,55%/h, privação -0,27%/h sem o desfecho atípico) e padrão de perda (privação e restrição tardia consistentes, restrição precoce não) acrescentados ao passo 1 e ao item de treino da manhã. 'Maior em resistência' retirado do equívoco 5: a análise de subgrupo mostra resistência -5,55% (-8,12 a -2,99) contra força -2,85% (-4,47 a -1,23), numericamente diferentes e com ICs sobrepostos, e o texto completo não relata teste formal entre categorias; a afirmação foi substituída por essa ressalva. §3, §4.1 e §4.2 item 4 ajustados."
+  },
+  {
+    "id": "A3",
+    "status": "corrigido",
+    "detalhe": "Título do fluxo trocado por 'da noite mal dormida à composição do peso perdido' (em vez de 'platô na balança'; evitei 'de pior qualidade' por ser mais forte que o desfecho medido). Etapa 4 passa a dizer que o peso perdido foi parecido e a fração como gordura caiu; etapa 6 virou 'Balança e composição': 'Em dieta, peso perdido parecido, com menos gordura; fora dela, o efeito é inconsistente.' (14 palavras), com certeza 'evidência clínica limitada (2 ECR pequenos); soma = hipótese'. 'Peso perdido semelhante' em Nedeltcheva vem da soma dos números do resumo (0,6 + 2,4 = 3,0 contra 1,4 + 1,5 = 2,9 kg), rotulada [inferência de cálculo] no §1.3; em Wang 2018, do resumo."
+  },
+  {
+    "id": "A4",
+    "status": "corrigido",
+    "detalhe": "(a) Cafeína: busca 'caffeine[tiab] AND adenosine[tiab] AND sleep[tiab] AND review[pt]' (58 registros; refinada em título: 9). Citados Reichert 2022 (PMID 35575450; mecanismo adenosinérgico e regulação do sono) e Clark e Landolt 2017 (PMID 26899133; efeitos em latência, tempo total, ondas lentas, dose-resposta, idosos, diferenças individuais), ambos pelo resumo; o vínculo com o processo homeostático do §1.0 está rotulado [inferência]. (b) Melatonina: as 16 revisões da string 7 foram triadas por título e resumo (5 usadas, 4 lidas e não citadas, 7 excluídas por animal ou população com doença; detalhe na Pendência 2). Como a string 7 trata de peso, composição e desempenho, não cobre o sono; fiz busca dirigida de latência (6 registros) e citei Ferracioli-Oda 2013 (latência -7,06 min; tempo total +8,25 min; distúrbios primários), Choi 2022 (adultos com insônia crônica sem efeito significativo; divergência declarada) e Costello 2014 (adultos saudáveis, só recomendações fracas), com o limite do briefing explícito. Para peso, Delpino 2021 e Mohammadi 2026 (63 ECR) substituem a frase 'não localizei dado em humanos'. Equívocos 8, 12 (melatonina faz dormir) e 13 (cafeína) e linhas de §2, §3, §4.1 e §4.2 item 8 atualizados. 7 referências novas (50 no total) com verificado true; mohammadi2026 sinalizada ao verificador: ano de fascículo 2026 pelo volume 18, sem [ppdat] no PubMed."
+  }
+]
