@@ -1,0 +1,43 @@
+{
+  "etapa": "02-analise",
+  "rodada": 3,
+  "revisor": "fps-lider-ciencia",
+  "modelo_revisor": "opus",
+  "executor": "fps-2-analista-critico",
+  "arquivos_revisados": [
+    "trabalho-fps/trabalhos/2026-11-10-sono/02-analise-critica.md",
+    "trabalho-fps/trabalhos/2026-11-10-sono/revisoes/02-analise.r2.resposta.json"
+  ],
+  "criterios": {
+    "cadeia_causal": 8.5,
+    "precisao_dos_detalhes": 8.5,
+    "classificacao_da_certeza": 8.5,
+    "analise_critica": 8.5,
+    "qualidade_das_fontes": 8.5
+  },
+  "decisoes_contestacoes": [],
+  "verificacao_achados_r2": [
+    {
+      "id": "R1",
+      "status": "resolvido",
+      "evidencia": "Síntese 5, §1.3 passo 4, §2 (linha Peso) e equívoco 2 agora dizem: 12 dos 26 estudos com baixo risco de viés em todos os domínios, os demais com ao menos alguma preocupação; GRADE moderada para IMC e ingestão e baixa para peso; 16 dos 17 estudos de adiposidade eram ECR. Confere com o texto completo PMC13655966 (§3.4 e GRADE) que li na r2. Não sobrou nenhuma ocorrência de 'qualidade baixa' no arquivo."
+    },
+    {
+      "id": "R2",
+      "status": "resolvido",
+      "evidencia": "'Nem de perda de gordura' retirado da Síntese 5 e do equívoco 2, e 'não de gordura' do §1.3; as três passagens trazem agora 'pequena redução de gordura (−0,25 kg)', que confere com Tasali 2022, PMC8822469, Tabela 2 (−0,25; −0,39 a −0,10)."
+    }
+  ],
+  "achados": [],
+  "correcoes_aplicadas": [],
+  "pontos_fortes": [
+    "As correções ficaram restritas aos achados, sem regressões: as citações resolvem todas nas 93 referências (01 + 02), e os números de Tasali, Mostafa e Craven estão consistentes entre §1, §2, §3, §4 e §5.",
+    "O analista procurou e corrigiu por conta própria uma terceira ocorrência equivalente (§1.3, ressalva metodológica)."
+  ],
+  "pendencias_orquestrador": [
+    "Lowe 2020: a direção do índice de massa magra apendicular segue sem conferência no texto completo (não bloqueante; fica para o Agente 3, se usar o dado).",
+    "Lesão em adultos e triagem de álcool, telas e suplementos (string 12 e string 8): lacunas de leitura declaradas no texto, sem afirmações sem fonte."
+  ],
+  "escalonado": false,
+  "resumo": "R1 e R2 resolvidos e conferidos contra os textos completos, sem regressões. A etapa 02-analise está aprovada na 3ª rodada, sem precisar de escalonamento."
+}
