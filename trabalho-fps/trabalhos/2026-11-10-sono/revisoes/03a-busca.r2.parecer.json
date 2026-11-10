@@ -1,0 +1,31 @@
+{
+  "etapa": "03a-busca",
+  "rodada": 2,
+  "revisor": "fps-lider-pesquisa",
+  "modelo_revisor": "opus",
+  "executor": "fps-op-buscador",
+  "arquivos_revisados": [
+    "trabalho-fps/trabalhos/2026-11-10-sono/03a-busca.json",
+    "trabalho-fps/trabalhos/2026-11-10-sono/03a-candidatos.json",
+    "trabalho-fps/trabalhos/2026-11-10-sono/revisoes/03a-busca.r1.resposta.json"
+  ],
+  "criterios": {
+    "cobertura_de_bases": 8.0,
+    "fidelidade_as_strings": 9.0,
+    "aderencia_aos_criterios": 8.5,
+    "registro_prisma": 9.0
+  },
+  "verificacao_achados_r1": [
+    {"id": "A1", "status": "resolvido", "evidencia": "Os 10 PMIDs do núcleo (42407080, 23814334, 23479616, 26098388, 33001515, 32537891, 15583226, 20357041, 25683266, 31217539) estão em 03a-candidatos.json com decisão diferente de 'excluir'."},
+    {"id": "A2", "status": "resolvido", "evidencia": "As 17 RS/MA reincluídas e os 18 PMIDs com saída indicada foram conferidos: os 18 estão como 'excluir', com motivo. Cobertura por subtema no conjunto de 95: há RS/MA em todos os subtemas com evidência comparativa (2: 6; 3: 10; 4: 10; 6: 4; 7: 4; 8: 3; 9: 5). O subtema 5 (adesão) é coberto por coortes/ECR e pela RS 42478101 do subtema 3."},
+    {"id": "A3", "status": "resolvido", "evidencia": "Os 6 registros dirigidos da 01 têm fonte_busca 'dirigida (01-referencias)'; Edinger 2021 (33164742) foi reclassificado; Riemann 2023 e Edinger 2021 estão em diretrizes_web; a diretriz OMA 2026 está como 'excluir' (fonte não verificável) e saiu de diretrizes_web."}
+  ],
+  "achados": [],
+  "correcoes_aplicadas": [],
+  "pontos_fortes": [
+    "PRISMA fecha: 1.882 + 6 dirigidos = 1.888; 1.888 − 274 = 1.614 = linhas de 03a-candidatos.json; 1.156 + 363 = 1.519 excluídos; 77 + 18 = 95.",
+    "Sem regressões: nenhuma das 20 referências-chave das etapas 01/03a ficou como 'excluir'."
+  ],
+  "escalonado": false,
+  "resumo": "Os três achados da r1 foram resolvidos e conferidos no arquivo de candidatos. PRISMA consistente, hierarquia de desenho restaurada e diretrizes da 01 incorporadas. Portão: APROVADO."
+}
