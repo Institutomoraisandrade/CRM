@@ -1,0 +1,35 @@
+{
+  "etapa": "03-evidencias",
+  "rodada": 2,
+  "revisor": "fps-lider-pesquisa",
+  "modelo_revisor": "opus",
+  "executor": "fps-3-avaliador-evidencias",
+  "arquivos_revisados": [
+    "trabalho-fps/trabalhos/2026-11-10-sono/03-evidencias.md",
+    "trabalho-fps/trabalhos/2026-11-10-sono/03-quadro-evidencias.json",
+    "trabalho-fps/trabalhos/2026-11-10-sono/03-referencias.json",
+    "trabalho-fps/trabalhos/2026-11-10-sono/verificacao/03-referencias.relatorio.json",
+    "trabalho-fps/trabalhos/2026-11-10-sono/revisoes/03-evidencias.r1.resposta.json"
+  ],
+  "criterios": {
+    "hierarquia_da_evidencia": 8.5,
+    "extracao_de_dados": 9.0,
+    "avaliacao_critica": 8.0,
+    "certeza_grade": 8.5,
+    "atualidade_das_diretrizes": 9.0
+  },
+  "verificacao_achados_r1": [
+    {"id": "A1", "status": "resolvido", "evidencia": "§7 Resposta e §6 (linha 'Proporção de gordura') agora separam Nedeltcheva (n = 10: mais massa livre de gordura perdida) de Wang (n = 36: perdas semelhantes, menor proporção de gordura), de acordo com o resumo do PMID 29438540. A ingestão com restrição passou a ser descrita como dado de adultos majoritariamente saudáveis em laboratório, indireto para quem tem sobrepeso."},
+    {"id": "A2", "status": "resolvido", "evidencia": "Ingestão com extensão do sono está como certeza BAIXA no §6, no §7 e no quadro (tasali2022), com os dois rebaixamentos escritos e a divergência com a GRADE dos autores de Mostafa justificada (indireção)."}
+  ],
+  "decisao_verificador": "Os 6 itens 'revisar' do verificador eram só divergência de ano (publicação eletrônica × fascículo). Conferi por [ppdat] no PubMed em uma busca: hartescu2022 (2022), murawski2018 (2018), steger2023 (2023), arab2024 (2024), gardiner2025 (2025) e itani2017 (2017) estão confirmados no ano do fascículo. Mantenho os anos das referências. steger2023: volume '31' com número 'Suppl 1' está correto para a ABNT (o PubMed junta os dois no campo volume). Nenhuma correção.",
+  "achados": [],
+  "correcoes_aplicadas": [],
+  "regressoes": "Nenhuma: os números conferidos na r1 (Tasali, Covassin, Craven, Mostafa, Zuraikat) estão inalterados, e as correções menores da r1 (5 dias a 6 semanas) foram mantidas.",
+  "pontos_fortes": [
+    "A resposta à pergunta agora mantém população, estudo de origem e certeza em cada efeito.",
+    "A divergência com a GRADE dos autores está declarada e justificada, sem ocultar a estimativa original."
+  ],
+  "escalonado": false,
+  "resumo": "Os dois achados da r1 foram resolvidos sem regressões. O verificador não aponta problema real: os 6 anos de fascículo foram confirmados por [ppdat]. Portão: APROVADO."
+}
