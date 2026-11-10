@@ -10,7 +10,7 @@
   {
    "layout": "capa",
    "tempo_seg": 10,
-   "notas": "Material de estudo sobre o impacto do sono, e não sobre o sono em si. Vamos seguir cinco blocos: hábito alimentar, peso e composição corporal, treinamento, rotina e, por fim, o que fazer na prática e quais mitos cair. Em cada slide, a certeza da evidência aparece junto do dado.",
+   "notas": "Material de estudo sobre o impacto do sono, e não sobre o sono em si. Vamos seguir cinco blocos: hábito alimentar, peso e composição corporal, treinamento, rotina e, por fim, o que fazer na prática e quais mitos derrubar. Em cada slide, a certeza da evidência aparece junto do dado.",
    "imagem": "imagens/sono-quarto.jpg"
   },
   {
@@ -18,7 +18,7 @@
    "tempo_seg": 30,
    "titulo": "No Vigitel 2024, mais da metade dos adultos dormia um tempo inadequado",
    "metricas": [
-    {"valor": "52,3%", "rotulo": "duração inadequada do sono", "detalhe": "curta ou longa"},
+    {"valor": "52,3%", "rotulo": "duração inadequada", "detalhe": "do sono, curta ou longa"},
     {"valor": "31,8%", "rotulo": "sintomas de insônia"},
     {"valor": "11,9%", "rotulo": "alto risco de apneia"}
    ],
@@ -57,8 +57,8 @@
     {"letra": "O", "rotulo": "Desfechos", "texto": "Peso, massa gorda e magra, ingestão de energia"},
     {"letra": "S", "rotulo": "Estudos", "texto": "ECR e sínteses de ECR; coortes como apoio"}
    ],
+   "fonte": "Elaborado pelos autores, 2026",
    "pergunta": "Em adultos com sobrepeso ou em dieta, dormir pouco, comparado a dormir o suficiente, altera o peso perdido, a composição corporal e a ingestão de energia?",
-   "fonte": "Pergunta estruturada em PICOS, definida para este estudo",
    "notas": "Esta é a pergunta central. A população são adultos com sobrepeso, obesidade ou em dieta; para apetite e ingestão, aceitamos adultos saudáveis, como evidência indireta. A exposição é o sono curto ou restrito, e em paralelo olhamos a extensão do sono. Os desfechos primários são peso, massa gorda, massa livre de gordura e ingestão; hormônios do apetite são desfechos substitutos. Treino, rotina, prática e mitos seguem o mesmo critério, tema a tema. Fora do escopo: farmacoterapia e manejo clínico de distúrbios do sono.",
    "kicker": "Pergunta",
    "banner": "imagens/sono-quarto.jpg",
@@ -94,12 +94,12 @@
   {
    "layout": "numeros",
    "tempo_seg": 40,
-   "titulo": "Dormir pouco aumenta a ingestão em 200 a 400 kcal por dia nos experimentos",
+   "titulo": "Dormir pouco aumenta a ingestão em cerca de 200 a 385 kcal por dia nos experimentos",
    "metricas": [
     {"valor": "+385 kcal", "rotulo": "por dia com privação parcial do sono", "detalhe": "IC 95% 252–517 · 11 estudos, n = 172 · gasto sem mudança"},
     {"valor": "+204 kcal", "rotulo": "por dia com sono de até 5,5 h", "detalhe": "IC 95% 112–295 · 15 estudos"}
    ],
-   "texto": "Adultos majoritariamente saudáveis, em laboratório. Certeza **moderada** na direção e **baixa** na magnitude em vida real",
+   "texto": "Adultos majoritariamente saudáveis, em laboratório. Certeza **moderada** na direção; **baixa** na magnitude real",
    "fonte": "[@alkhatib2017; @fenton2021]",
    "notas": "A faixa do título tem duas origens: 385 quilocalorias vêm da metanálise de Alkhatib, com privação parcial, e 204, da de Fenton, com sono de até 5,5 horas. Em ambas, o horizonte é de 1 a 14 dias de laboratório, com adultos majoritariamente saudáveis; vale como evidência indireta para quem tem sobrepeso. O gasto energético não mudou na primeira. A certeza é moderada para a direção, porque as três metanálises concordam, e baixa para a magnitude fora do laboratório, por evidência indireta. Atenção: restrição muito severa, de 2 horas, pode até reduzir o apetite; a relação não é linear. A extensão do sono foi testada em poucos estudos.",
    "kicker": "Hábito alimentar",
@@ -179,9 +179,9 @@
   {
    "layout": "evidencias",
    "tempo_seg": 45,
-   "titulo": "Na dieta, dormir pouco manteve o peso perdido e piorou a fração de gordura",
+   "titulo": "Na dieta, dormir pouco não mudou o peso perdido, mas piorou a fração de gordura",
    "estudos": [
-    {"desenho": "ECR cruzado", "estudo": "n = 10 · 14 dias · 5,5 contra 8,5 h", "achado": "Peso perdido igual; gordura 0,6 contra 1,4 kg; massa livre de gordura 2,4 contra 1,5 kg", "certeza": "baixa"},
+    {"desenho": "ECR cruzado", "estudo": "n = 10 · 14 dias · 5,5 contra 8,5 h", "achado": "Peso perdido igual; perdas de gordura 0,6 contra 1,4 kg e de massa livre de gordura 2,4 contra 1,5 kg", "certeza": "baixa"},
     {"desenho": "ECR paralelo", "estudo": "n = 36 · 8 semanas", "achado": "Peso, massa magra e massa gorda perdidos semelhantes; só a fração de gordura foi menor (P = 0,016)", "certeza": "baixa"},
     {"desenho": "Revisão", "estudo": "30 estudos, 13 ECR", "achado": "Em programas de emagrecimento, a restrição do sono reduziu a perda de gordura"},
     {"desenho": "Lacuna", "estudo": "Extensão do sono em dieta", "achado": "Nenhum ECR; os 2 ECR de dieta duram só 2 e 8 semanas"}
@@ -217,11 +217,11 @@
    "tempo_seg": 40,
    "titulo": "Sem dieta, restringir o sono elevou o peso em experimentos, mas a síntese não confirma",
    "metricas": [
-    {"valor": "+0,45 kg", "rotulo": "6 semanas, −78 min por noite", "detalhe": "IC 95% 0,33–0,57 · n = 95"},
+    {"valor": "+0,45 kg", "rotulo": "6 semanas, −78 min/noite", "detalhe": "IC 95% 0,33–0,57 · n = 95"},
     {"valor": "+0,5 kg", "rotulo": "14 dias de 4 h, internação", "detalhe": "IC 95% 0,1–0,8 · n = 12"},
-    {"valor": "DMP 0,44", "rotulo": "metanálise de 6 experimentos", "detalhe": "IC 95% −0,13 a 1,02 · n = 275 · sem diferença"}
+    {"valor": "DMP 0,44", "rotulo": "metanálise, 6 estudos", "detalhe": "IC 95% −0,13 a 1,02 · n = 275 · sem diferença"}
    ],
-   "texto": "Gordura total sem aumento detectável (certeza **baixa**); gordura visceral subiu em 1 estudo de 12 pessoas (**muito baixa**)",
+   "texto": "Gordura total sem aumento detectável (certeza **baixa**); visceral subiu em 1 estudo, n = 12 (**muito baixa**)",
    "fonte": "[@zuraikat2026; @covassin2022; @yu2019]",
    "notas": "Nos experimentos com alimento livre, o peso subiu. Em 6 semanas, com 78 minutos a menos por noite, o ganho foi de 0,45 quilo; em 14 dias de 4 horas, 0,5 quilo. Outros experimentos, de 5 noites, mostraram ganhos de 0,97 e 0,82 quilo; o intervalo total é de 5 dias a 6 semanas, cerca de 0,5 a 1 quilo. Mas a metanálise de 6 experimentos não achou diferença significativa, por isso a certeza do peso é baixa: inconsistência, evidência indireta e efeito pequeno. Na composição, a gordura total não mudou nos dois estudos; a gordura abdominal e a visceral subiram em apenas 12 pessoas, com IC encostado em zero. Em 3 dias de recuperação, ingestão e peso normalizaram, mas a gordura visceral continuou a subir.",
    "kicker": "Peso e composição",
@@ -239,7 +239,7 @@
    ],
    "texto": "ECR de 2 semanas (n = 80). Na metanálise, a extensão isolada não reduziu o IMC (−0,15 kg/m²; IC 95% −0,40 a 0,11). Certeza: ingestão e peso **baixa**",
    "fonte": "[@tasali2022; @mostafa2026]",
-   "notas": "O ECR de Tasali incluiu 80 adultos com sobrepeso que dormiam menos de 6,5 horas e estendeu o sono em 1,2 hora por noite por duas semanas, sem prescrever dieta. A ingestão foi calculada pelo balanço de energia, com água duplamente marcada, e o gasto total não mudou de forma significativa. O peso caiu 0,87 quilo contra o controle, mas o controle ganhou 0,39, o que contribui para o efeito. A mudança foi sobretudo de massa livre de gordura, com pequena redução de gordura. Na metanálise de Mostafa, o peso global não mudou de forma significativa (P = 0,23); o resultado de 5,55 quilos na obesidade é subgrupo de 3 estudos e não deve ser citado. A certeza é baixa para a ingestão, por imprecisão da metanálise e evidência indireta (2 semanas, sem dieta, adultos jovens sem insônia), e baixa para o peso. Não há dado de efeito sustentado.",
+   "notas": "O ECR de Tasali incluiu 80 adultos com sobrepeso que dormiam menos de 6,5 horas e estendeu o sono em 1,2 hora por noite por duas semanas, sem prescrever dieta. A ingestão foi calculada pelo balanço de energia, com água duplamente marcada, e o gasto total não mudou de forma significativa. O peso caiu 0,87 quilo contra o controle, mas o controle ganhou 0,39, o que contribui para o efeito. A mudança foi sobretudo de massa livre de gordura, com pequena redução de gordura. Na metanálise de Mostafa, o peso global não mudou de forma significativa (P = 0,23); a redução de 5,55 quilos na obesidade vem de um subgrupo exploratório de 3 estudos, com certeza muito baixa, e não representa o efeito geral. A certeza é baixa para a ingestão, por imprecisão da metanálise e evidência indireta (2 semanas, sem dieta, adultos jovens sem insônia), e baixa para o peso. Não há dado de efeito sustentado.",
    "kicker": "Peso e composição",
    "banner": "imagens/balanca.jpg",
    "banner_foco": [0.5, 0.5]
@@ -361,7 +361,7 @@
    "esquerda": {
     "titulo": "Em experimentos",
     "itens": [
-     "Afeto positivo cai e ansiedade sobe (DMP 0,57–0,63)",
+     "Ansiedade sobe (DMP 0,57–0,63) e afeto positivo cai",
      "Metanálise de 154 estudos; inclui crianças e adolescentes",
      "Tolerância à glicose piora após 6 noites de 4 h (11 homens)",
      "5,6 h por 3 semanas elevou a glicose; normalizou em 9 dias"
@@ -411,7 +411,7 @@
    "layout": "tabela",
    "tempo_seg": 45,
    "titulo": "Cinco crenças comuns sobre sono têm base fraca ou limitada",
-   "colunas": ["Crença", "O que a evidência mostra", "Certeza"],
+   "colunas": ["Crença", "O que a evidência mostra", "Certeza do achado"],
    "larguras": [24, 56, 20],
    "linhas": [
     ["Recupero no fim de semana", "No laboratório, a recuperação não impediu a piora quando a restrição voltou (n = 36)", "Baixa"],
@@ -429,12 +429,12 @@
   {
    "layout": "conclusao",
    "tempo_seg": 35,
-   "titulo": "Dormir pouco aumenta a ingestão, mas dormir mais emagrecer a longo prazo não foi provado",
+   "titulo": "Dormir pouco aumenta a ingestão; que dormir mais emagreça a longo prazo não foi provado",
    "itens": [
-    "**Alimentação:** sono curto traz mais lanches à noite, por recompensa e freio fraco",
-    "**Dieta:** o peso perdido se mantém, mas a fração de gordura piora (certeza baixa)",
+    "**Alimentação:** sono curto traz mais lanches à noite, provavelmente por recompensa e freio fraco",
+    "**Dieta:** perde-se o mesmo peso, mas com menor fração de gordura (certeza baixa)",
     "**Treino:** desempenho cai e esforço pesa mais; efeito no músculo é lacuna",
-    "**Prática:** horário fixo e cafeína cedo; fim de semana e suplementos não compensam"
+    "**Prática:** horário fixo, cafeína cedo; fim de semana e suplementos não substituem sono regular"
    ],
    "notas": "Respondendo à pergunta: dormir pouco aumenta a ingestão, com lanches à noite, mas isso não prova que corrigir o sono emagreça, nem quanto, nem por quanto tempo. Em dieta, dormir pouco mudou o que se perde, não quanto, em amostras pequenas. No treino, o desempenho cai e o esforço pesa mais, mas o músculo não foi medido. Na prática, vale o horário fixo e a cafeína cedo; recuperar no fim de semana e suplementos não substituem dormir bem. Lacunas: seguimentos curtos, pouca mulher, poucos brasileiros e nenhuma diretriz do Ministério da Saúde sobre duração do sono.",
    "kicker": "Síntese",

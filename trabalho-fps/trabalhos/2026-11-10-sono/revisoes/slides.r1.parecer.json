@@ -1,0 +1,97 @@
+{
+  "etapa": "slides",
+  "rodada": 1,
+  "revisor": "fps-lider-producao",
+  "modelo_revisor": "opus",
+  "executor": "fps-5-designer-slides",
+  "arquivos_revisados": [
+    "trabalho-fps/trabalhos/2026-11-10-sono/slides.json",
+    "trabalho-fps/trabalhos/2026-11-10-sono/apresentacao.pptx",
+    "trabalho-fps/trabalhos/2026-11-10-sono/roteiro.md",
+    "trabalho-fps/trabalhos/2026-11-10-sono/previa-apresentacao/pagina-01.png … pagina-37.png",
+    "trabalho-fps/trabalhos/2026-11-10-sono/02-analise-critica.md",
+    "trabalho-fps/trabalhos/2026-11-10-sono/03-evidencias.md",
+    "trabalho-fps/trabalhos/2026-11-10-sono/03-quadro-evidencias.json"
+  ],
+  "criterios": {
+    "clareza": 8.5,
+    "ausencia_de_redundancia": 8.0,
+    "identidade_visual_fps": 8.0,
+    "fidelidade_ao_artigo": 9.0,
+    "notas_do_apresentador": 9.0
+  },
+  "achados": [
+    {
+      "id": "A1",
+      "gravidade": "menor",
+      "local": "slides.json > slide 7 (título)",
+      "problema": "Título 'em 200 a 400 kcal por dia' arredonda para cima o extremo de 385 kcal (Alkhatib 2017) mostrado no próprio slide.",
+      "evidencia": "03-evidencias.md §6: ingestão com restrição +150 a +385 kcal/dia; slide mostra +385 e +204.",
+      "correcao": "Título passa a 'em cerca de 200 a 385 kcal por dia nos experimentos'. Corrigido pelo revisor.",
+      "responsavel": "fps-5-designer-slides",
+      "licao": "A faixa numérica do título usa os extremos exatos mostrados no corpo; arredondar um extremo para cima torna o título mais forte que a fonte."
+    },
+    {
+      "id": "A2",
+      "gravidade": "menor",
+      "local": "slides.json > slide 12 (título) e slide 27 (tópico Dieta)",
+      "problema": "'dormir pouco manteve o peso perdido' / 'o peso perdido se mantém' pode ser lido como manutenção da perda (sem reganho), não como perda igual entre os braços.",
+      "evidencia": "03-evidencias.md §6, linha 'Peso total perdido em dieta': semelhante entre braços (Nedeltcheva n = 10; Wang n = 36).",
+      "correcao": "Slide 12: 'não mudou o peso perdido, mas piorou a fração de gordura'; slide 27: 'perde-se o mesmo peso, mas com menor fração de gordura'. Corrigido pelo revisor.",
+      "responsavel": "fps-5-designer-slides",
+      "licao": "Evite verbos ambíguos ao resumir uma comparação ('manteve', 'se mantém'); diga 'igual entre os grupos' ou 'não mudou'."
+    },
+    {
+      "id": "A3",
+      "gravidade": "menor",
+      "local": "slides.json > slide 27 (título e tópicos 1 e 4)",
+      "problema": "Título agramatical ('dormir mais emagrecer ... não foi provado'); tópico 1 com causalidade ('por recompensa') mais forte que a classificação mecanística; tópico 4 'não compensam' categórico para suplementos com melhora subjetiva relatada.",
+      "evidencia": "02-analise-critica.md §1.3 (neuroimagem = evidência mecanística); 03-evidencias.md §6 (suplementos: melhora subjetiva, certeza muito baixa).",
+      "correcao": "Título: 'Dormir pouco aumenta a ingestão; que dormir mais emagreça a longo prazo não foi provado'; 'provavelmente por recompensa e freio fraco'; 'fim de semana e suplementos não substituem sono regular'. Corrigido pelo revisor.",
+      "responsavel": "fps-5-designer-slides"
+    },
+    {
+      "id": "A4",
+      "gravidade": "menor",
+      "local": "slides.json > slide 23 (coluna Em experimentos)",
+      "problema": "'Afeto positivo cai e ansiedade sobe (DMP 0,57–0,63)' faz a DMP parecer valer para os dois desfechos; ela é só da ansiedade.",
+      "evidencia": "02-analise-critica.md §4.1: afeto positivo DMP −0,27 a −1,14; ansiedade 0,57–0,63 (Palmer 2024).",
+      "correcao": "'Ansiedade sobe (DMP 0,57–0,63) e afeto positivo cai'. Corrigido pelo revisor.",
+      "responsavel": "fps-5-designer-slides"
+    },
+    {
+      "id": "A5",
+      "gravidade": "menor",
+      "local": "previa > slides 2, 7, 14, 13, 26, 4",
+      "problema": "Rótulos de métrica em 2 linhas sobrepostos ao detalhe (slides 2 e 14); linha órfã no texto de base (7 e 14); rodapé de fonte invadindo o marcador do logo (13 e 26); fonte genérica no slide 4.",
+      "evidencia": "pagina-02/07/13/14/26/04.png da prévia original.",
+      "correcao": "Rótulos encurtados; textos de base encurtados; slide 4 com 'Elaborado pelos autores, 2026'; rodapé do gerador limitado a 8,8 pol. e corpo 9 quando a fonte passa de 150 caracteres (scripts/gerar_slides_fps.py, rodape). Regenerado e conferido na prévia. Corrigido pelo revisor.",
+      "responsavel": "fps-5-designer-slides"
+    },
+    {
+      "id": "A6",
+      "gravidade": "menor",
+      "local": "slides.json > slides 12, 15, 26 e notas do slide 1",
+      "problema": "Linha de Nedeltcheva sem dizer que 0,6/1,4 e 2,4/1,5 kg são perdas; nota do slide 15 com instrução interna ('não deve ser citado'); coluna 'Certeza' do slide 26 lida como certeza da crença; 'quais mitos cair'.",
+      "evidencia": "03-evidencias.md linha Nedeltcheva 2010 e §3 (Mostafa: −5,55 kg = subgrupo por IMC basal, 3 estudos).",
+      "correcao": "'perdas de gordura … e de massa livre de gordura …'; nota: 'vem de um subgrupo exploratório de 3 estudos, com certeza muito baixa, e não representa o efeito geral'; coluna 'Certeza do achado'; 'quais mitos derrubar'. Corrigido pelo revisor.",
+      "responsavel": "fps-5-designer-slides"
+    }
+  ],
+  "correcoes_aplicadas": [
+    "A1–A6 aplicados em slides.json (edições pontuais) e no rodapé de scripts/gerar_slides_fps.py; apresentacao.pptx, roteiro.md e previa-apresentacao/ regenerados (37 páginas: 29 slides + 8 de referências extras); gerador sem avisos além do logo ausente.",
+    "Conferência numérica: todos os números dos 29 slides (≈ 120 tokens) foram localizados em 02-analise-critica.md/03-evidencias.md/03-quadro-evidencias.json; certezas GRADE por desfecho iguais às de 03-evidencias §6 (ingestão com extensão = baixa; partição = baixa; coortes = muito baixa; força = baixa)."
+  ],
+  "pontos_fortes": [
+    "Base do sono em 1 slide (slide 3) e o restante nos itens 2–7, como pede o briefing.",
+    "Ressalvas aprovadas preservadas: 'mais massa livre de gordura perdida' atribuído só a Nedeltcheva (n = 10) no slide 12 e nas notas; Mostafa com peso global NS (P = 0,23) e −5,55 kg tratado como subgrupo; ingestão com extensão com certeza baixa no slide 15.",
+    "Títulos-afirmação, certeza declarada junto do dado e fonte em todo slide com dado; notas completas que funcionam como texto de estudo."
+  ],
+  "pendencias_orquestrador": [
+    "Logo oficial da FPS ausente (marcador textual em uso).",
+    "Autor(es) a confirmar.",
+    "Validador aponta 29 slides para 15 min: aceito, material de estudo pessoal sem banca."
+  ],
+  "escalonado": false,
+  "resumo": "Slides fiéis às etapas aprovadas, sem erro numérico nem perda de ressalva. Seis achados menores (título com faixa arredondada, verbos ambíguos, título agramatical, DMP atribuída a dois desfechos, sobreposições visuais e de rodapé) corrigidos pelo revisor e regenerados."
+}

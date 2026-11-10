@@ -320,7 +320,8 @@ class Construtor:
             txt = self.t(fonte).strip()
             if txt.startswith("(") and txt.endswith(")") and txt.count("(") == 1:
                 txt = txt[1:-1]
-            self.texto(slide, MX + 0.6, 6.98, 9.6, 0.3, f"Fonte: {txt}", tamanho=10,
+            # largura limitada para não invadir o marcador/logo à direita; fonte menor se for longa
+            self.texto(slide, MX + 0.6, 6.98, 8.8, 0.3, f"Fonte: {txt}", tamanho=10 if len(txt) <= 150 else 9,
                        cor=self.m.c["texto_suave"], ancora="meio")
         self.logo(slide, W - MX, 6.86, 0.4)
         total = getattr(self, "_total", 0)

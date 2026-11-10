@@ -8,7 +8,7 @@
 
 **[0:00–0:10] Slide 1 — Sono, perda de peso e rotina**
 
-Material de estudo sobre o impacto do sono, e não sobre o sono em si. Vamos seguir cinco blocos: hábito alimentar, peso e composição corporal, treinamento, rotina e, por fim, o que fazer na prática e quais mitos cair. Em cada slide, a certeza da evidência aparece junto do dado.
+Material de estudo sobre o impacto do sono, e não sobre o sono em si. Vamos seguir cinco blocos: hábito alimentar, peso e composição corporal, treinamento, rotina e, por fim, o que fazer na prática e quais mitos derrubar. Em cada slide, a certeza da evidência aparece junto do dado.
 
 **[0:10–0:40] Slide 2 — No Vigitel 2024, mais da metade dos adultos dormia um tempo inadequado**
 
@@ -30,7 +30,7 @@ Este é o mapa do que vem a seguir. Na primeira etapa, poucos dias de sono muito
 
 Primeiro bloco: o que o sono curto faz no prato.
 
-**[2:44–3:24] Slide 7 — Dormir pouco aumenta a ingestão em 200 a 400 kcal por dia nos experimentos**
+**[2:44–3:24] Slide 7 — Dormir pouco aumenta a ingestão em cerca de 200 a 385 kcal por dia nos experimentos**
 
 A faixa do título tem duas origens: 385 quilocalorias vêm da metanálise de Alkhatib, com privação parcial, e 204, da de Fenton, com sono de até 5,5 horas. Em ambas, o horizonte é de 1 a 14 dias de laboratório, com adultos majoritariamente saudáveis; vale como evidência indireta para quem tem sobrepeso. O gasto energético não mudou na primeira. A certeza é moderada para a direção, porque as três metanálises concordam, e baixa para a magnitude fora do laboratório, por evidência indireta. Atenção: restrição muito severa, de 2 horas, pode até reduzir o apetite; a relação não é linear. A extensão do sono foi testada em poucos estudos.
 
@@ -50,7 +50,7 @@ Na coorte de 420 pessoas em tratamento de 20 semanas, quem almoçava depois das 
 
 Segundo bloco: a balança e a composição do peso perdido.
 
-**[5:18–6:03] Slide 12 — Na dieta, dormir pouco manteve o peso perdido e piorou a fração de gordura**
+**[5:18–6:03] Slide 12 — Na dieta, dormir pouco não mudou o peso perdido, mas piorou a fração de gordura**
 
 É a pergunta central, e a resposta é cautelosa. No cruzado de Nedeltcheva, com 10 adultos com sobrepeso, a perda total foi de cerca de 3 quilos nas duas condições, mas com 5,5 horas a fração perdida como gordura caiu 55% e a perda de massa livre de gordura subiu 60%. No ECR de Wang, com 36 pessoas, peso, massa magra e massa gorda perdidos foram semelhantes; só a proporção de gordura no peso perdido foi menor. Portanto, a perda maior de massa livre de gordura vale só para Nedeltcheva. A direção concorda; a magnitude, não. A certeza GRADE é baixa: sem cegamento, amostras pequenas e ICs não informados nos resumos. Massa livre de gordura inclui água e glicogênio, que variam muito nas primeiras semanas de dieta: não equivale a perda de músculo. A revisão de Duan aponta a mesma direção, sem GRADE nesta avaliação.
 
@@ -64,7 +64,7 @@ Nos experimentos com alimento livre, o peso subiu. Em 6 semanas, com 78 minutos 
 
 **[7:13–7:58] Slide 15 — Estender o sono de quem dorme pouco reduziu a ingestão e o peso em 2 semanas**
 
-O ECR de Tasali incluiu 80 adultos com sobrepeso que dormiam menos de 6,5 horas e estendeu o sono em 1,2 hora por noite por duas semanas, sem prescrever dieta. A ingestão foi calculada pelo balanço de energia, com água duplamente marcada, e o gasto total não mudou de forma significativa. O peso caiu 0,87 quilo contra o controle, mas o controle ganhou 0,39, o que contribui para o efeito. A mudança foi sobretudo de massa livre de gordura, com pequena redução de gordura. Na metanálise de Mostafa, o peso global não mudou de forma significativa (P = 0,23); o resultado de 5,55 quilos na obesidade é subgrupo de 3 estudos e não deve ser citado. A certeza é baixa para a ingestão, por imprecisão da metanálise e evidência indireta (2 semanas, sem dieta, adultos jovens sem insônia), e baixa para o peso. Não há dado de efeito sustentado.
+O ECR de Tasali incluiu 80 adultos com sobrepeso que dormiam menos de 6,5 horas e estendeu o sono em 1,2 hora por noite por duas semanas, sem prescrever dieta. A ingestão foi calculada pelo balanço de energia, com água duplamente marcada, e o gasto total não mudou de forma significativa. O peso caiu 0,87 quilo contra o controle, mas o controle ganhou 0,39, o que contribui para o efeito. A mudança foi sobretudo de massa livre de gordura, com pequena redução de gordura. Na metanálise de Mostafa, o peso global não mudou de forma significativa (P = 0,23); a redução de 5,55 quilos na obesidade vem de um subgrupo exploratório de 3 estudos, com certeza muito baixa, e não representa o efeito geral. A certeza é baixa para a ingestão, por imprecisão da metanálise e evidência indireta (2 semanas, sem dieta, adultos jovens sem insônia), e baixa para o peso. Não há dado de efeito sustentado.
 
 **[7:58–8:33] Slide 16 — Em coortes de emagrecimento, dormir mal acompanhou menor perda, com certeza muito baixa**
 
@@ -110,7 +110,7 @@ Cinco ações, cada uma com a sua força. Fixar o horário de dormir teve efeito
 
 Fim de semana: em 36 adultos internados, dormir mais no fim de semana reduziu a ingestão após o jantar, mas a piora voltou com a nova restrição; já Killick viu melhora aguda da sensibilidade à insulina com três noites de 10 horas. A NSF é mais favorável à recuperação. Sono curto e obesidade: associação robusta, mas sugestiva; os experimentos de ingestão sustentam a causa. Melatonina: efeito de poucos minutos, sem efeito significativo em adultos com insônia crônica numa metanálise; para peso, uma síntese achou redução no limite da significância, e outra, com 63 ECR, nada. Suplementos: só autorrelato, nenhum com desfecho de peso ou treino. Relógios: superestimam o sono e não servem para diagnóstico; use para tendência de horários.
 
-**[13:10–13:45] Slide 27 — Dormir pouco aumenta a ingestão, mas dormir mais emagrecer a longo prazo não foi provado**
+**[13:10–13:45] Slide 27 — Dormir pouco aumenta a ingestão; que dormir mais emagreça a longo prazo não foi provado**
 
 Respondendo à pergunta: dormir pouco aumenta a ingestão, com lanches à noite, mas isso não prova que corrigir o sono emagreça, nem quanto, nem por quanto tempo. Em dieta, dormir pouco mudou o que se perde, não quanto, em amostras pequenas. No treino, o desempenho cai e o esforço pesa mais, mas o músculo não foi medido. Na prática, vale o horário fixo e a cafeína cedo; recuperar no fim de semana e suplementos não substituem dormir bem. Lacunas: seguimentos curtos, pouca mulher, poucos brasileiros e nenhuma diretriz do Ministério da Saúde sobre duração do sono.
 
