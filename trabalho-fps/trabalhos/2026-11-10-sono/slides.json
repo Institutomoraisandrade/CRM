@@ -1,0 +1,457 @@
+{
+ "titulo": "Sono, perda de peso e rotina",
+ "subtitulo": "Como dormir pouco muda a fome, o peso perdido, o treino e o dia a dia",
+ "curso": "Educação Física – FPS",
+ "data": "Novembro de 2026",
+ "estilo_citacao": "2023",
+ "referencias_arquivo": "referencias.json",
+ "tempo_minutos": 15,
+ "slides": [
+  {
+   "layout": "capa",
+   "tempo_seg": 10,
+   "notas": "Material de estudo sobre o impacto do sono, e não sobre o sono em si. Vamos seguir cinco blocos: hábito alimentar, peso e composição corporal, treinamento, rotina e, por fim, o que fazer na prática e quais mitos cair. Em cada slide, a certeza da evidência aparece junto do dado.",
+   "imagem": "imagens/sono-quarto.jpg"
+  },
+  {
+   "layout": "numeros",
+   "tempo_seg": 30,
+   "titulo": "No Vigitel 2024, mais da metade dos adultos dormia um tempo inadequado",
+   "metricas": [
+    {"valor": "52,3%", "rotulo": "duração inadequada do sono", "detalhe": "curta ou longa"},
+    {"valor": "31,8%", "rotulo": "sintomas de insônia"},
+    {"valor": "11,9%", "rotulo": "alto risco de apneia"}
+   ],
+   "fonte": "[@menezesjunior2026]",
+   "notas": "Os números vêm de um artigo que analisou o Vigitel 2024, com 27.048 adultos. O problema é frequente, e as medidas deste material são de baixo custo e cabem na atenção primária. Ressalva: o resumo do artigo não detalha os pontos de corte de duração inadequada, e o relatório oficial do Ministério da Saúde não pôde ser aberto; por isso, outros números de notícias não entraram. Insônia persistente e suspeita de apneia saem do escopo e pedem encaminhamento.",
+   "kicker": "Contexto",
+   "banner": "imagens/sono-quarto.jpg",
+   "banner_foco": [0.5, 0.5]
+  },
+  {
+   "layout": "topicos",
+   "tempo_seg": 35,
+   "titulo": "O sono tem pressão e relógio, e adultos precisam de pelo menos 7 h",
+   "itens": [
+    "**Pressão de sono:** cresce a cada hora de vigília",
+    "**Relógio circadiano:** define quando o sono é favorecido",
+    "**Consenso:** AASM/SRS pede 7 h ou mais; a NSF, 7 a 9 h",
+    "**Atletas:** metas individuais, sem regra única",
+    "**Laboratório:** testa 4–5,5 h, mais severo que o dia a dia"
+   ],
+   "destaque": {"valor": "< 7 h", "rotulo": "por noite é o que se chama de sono curto habitual"},
+   "fonte": "[@borbely2016; @watson2015; @hirshkowitz2015; @walsh2021]",
+   "notas": "Só o necessário. O sono é regulado por dois processos: a pressão de sono, que cresce com a vigília, e o relógio circadiano, que define quando dormir é favorecido. Para adultos, o consenso AASM e SRS pede pelo menos 7 horas, e a National Sleep Foundation, de 7 a 9. O consenso de atletas pede meta individual. O ponto que importa para o resto: os experimentos restringem a 4 a 5,5 horas, mais severo que o hábito de muita gente, e o que vale para 4 horas não se transfere automaticamente para 6. O valor de 7 horas da AASM veio de resultado de busca; a página da AASM não pôde ser aberta.",
+   "kicker": "Contexto",
+   "banner": "imagens/sono-quarto.jpg",
+   "banner_foco": [0.5, 0.5]
+  },
+  {
+   "layout": "picos",
+   "tempo_seg": 35,
+   "titulo": "A pergunta central compara sono curto e sono adequado em quem emagrece",
+   "elementos": [
+    {"letra": "P", "rotulo": "População", "texto": "Adultos com sobrepeso, obesidade ou em dieta"},
+    {"letra": "I", "rotulo": "Exposição", "texto": "Sono curto ou restrito; em paralelo, extensão do sono"},
+    {"letra": "C", "rotulo": "Comparação", "texto": "Sono adequado (7–9 h) ou sono habitual"},
+    {"letra": "O", "rotulo": "Desfechos", "texto": "Peso, massa gorda e magra, ingestão de energia"},
+    {"letra": "S", "rotulo": "Estudos", "texto": "ECR e sínteses de ECR; coortes como apoio"}
+   ],
+   "pergunta": "Em adultos com sobrepeso ou em dieta, dormir pouco, comparado a dormir o suficiente, altera o peso perdido, a composição corporal e a ingestão de energia?",
+   "fonte": "Pergunta estruturada em PICOS, definida para este estudo",
+   "notas": "Esta é a pergunta central. A população são adultos com sobrepeso, obesidade ou em dieta; para apetite e ingestão, aceitamos adultos saudáveis, como evidência indireta. A exposição é o sono curto ou restrito, e em paralelo olhamos a extensão do sono. Os desfechos primários são peso, massa gorda, massa livre de gordura e ingestão; hormônios do apetite são desfechos substitutos. Treino, rotina, prática e mitos seguem o mesmo critério, tema a tema. Fora do escopo: farmacoterapia e manejo clínico de distúrbios do sono.",
+   "kicker": "Pergunta",
+   "banner": "imagens/sono-quarto.jpg",
+   "banner_foco": [0.5, 0.5]
+  },
+  {
+   "layout": "fluxo",
+   "tempo_seg": 50,
+   "titulo": "A cadeia do sono curto ao peso tem elos firmes e elos ainda hipotéticos",
+   "etapas": [
+    {"titulo": "Noite curta", "texto": "Fome, humor e freio sobre lanches mudam"},
+    {"titulo": "Fome e recompensa", "texto": "Comida calórica atrai mais; mediadores são candidatos"},
+    {"titulo": "Lanches à noite", "texto": "A ingestão sobe, sobretudo depois do jantar"},
+    {"titulo": "Pior partição", "texto": "Na dieta, menos gordura no peso perdido (2 ECR)"},
+    {"titulo": "Treino mais pesado", "texto": "O esforço sobe; hipertrofia não foi medida"},
+    {"titulo": "Balança", "texto": "Sem dieta, o efeito no peso é inconsistente"}
+   ],
+   "conclusao": "Firmes: mais ingestão e mais esforço percebido. Hipotéticos: os mediadores e a perda de músculo",
+   "fonte": "[@alkhatib2017; @stonge2012; @nedeltcheva2010; @wang2018; @temesi2013; @yu2019]",
+   "notas": "Este é o mapa do que vem a seguir. Na primeira etapa, poucos dias de sono muito reduzido alteram fome, humor e freio sobre lanches: evidência clínica de laboratório, em adultos jovens saudáveis. Na segunda, a comida calórica atrai mais; o efeito no cérebro é evidência mecanística, mas grelina e o endocanabinoide 2-AG como mediadores são hipótese. Na terceira, a ingestão sobe, sobretudo em lanches depois do jantar: evidência clínica de curto prazo. Na quarta, em dieta, o peso perdido foi parecido, com menos gordura em dois ECR pequenos: evidência clínica limitada. Na quinta, o esforço percebido sobe, e a síntese proteica cai em horas, mas músculo não foi medido. Na sexta, sem dieta, o peso ganha pouco e a metanálise não confirma.",
+   "kicker": "Mecanismo",
+   "banner": "imagens/sono-quarto.jpg",
+   "banner_foco": [0.5, 0.5]
+  },
+  {
+   "layout": "secao",
+   "tempo_seg": 4,
+   "titulo": "Hábito alimentar",
+   "subtitulo": "Fome, lanches, horário das refeições e cronotipo",
+   "imagem": "imagens/comida-noite.jpg",
+   "notas": "Primeiro bloco: o que o sono curto faz no prato."
+  },
+  {
+   "layout": "numeros",
+   "tempo_seg": 40,
+   "titulo": "Dormir pouco aumenta a ingestão em 200 a 400 kcal por dia nos experimentos",
+   "metricas": [
+    {"valor": "+385 kcal", "rotulo": "por dia com privação parcial do sono", "detalhe": "IC 95% 252–517 · 11 estudos, n = 172 · gasto sem mudança"},
+    {"valor": "+204 kcal", "rotulo": "por dia com sono de até 5,5 h", "detalhe": "IC 95% 112–295 · 15 estudos"}
+   ],
+   "texto": "Adultos majoritariamente saudáveis, em laboratório. Certeza **moderada** na direção e **baixa** na magnitude em vida real",
+   "fonte": "[@alkhatib2017; @fenton2021]",
+   "notas": "A faixa do título tem duas origens: 385 quilocalorias vêm da metanálise de Alkhatib, com privação parcial, e 204, da de Fenton, com sono de até 5,5 horas. Em ambas, o horizonte é de 1 a 14 dias de laboratório, com adultos majoritariamente saudáveis; vale como evidência indireta para quem tem sobrepeso. O gasto energético não mudou na primeira. A certeza é moderada para a direção, porque as três metanálises concordam, e baixa para a magnitude fora do laboratório, por evidência indireta. Atenção: restrição muito severa, de 2 horas, pode até reduzir o apetite; a relação não é linear. A extensão do sono foi testada em poucos estudos.",
+   "kicker": "Hábito alimentar",
+   "banner": "imagens/comida-noite.jpg",
+   "banner_foco": [0.5, 0.5]
+  },
+  {
+   "layout": "topicos",
+   "tempo_seg": 35,
+   "titulo": "O excesso vem de lanches depois do jantar, não das refeições principais",
+   "itens": [
+    "**Refeições principais:** iguais com 5,5 h ou 8,5 h de sono",
+    "**Lanches:** 1.087 contra 866 kcal/dia, em 14 dias",
+    "**Horário:** o excesso cai entre 22h e 3h59",
+    "**Gordura:** 33,0% das calorias à noite, contra 28,2% de dia",
+    "**Macronutrientes:** gordura sobe nas sínteses; carboidrato, só em alguns"
+   ],
+   "destaque": {"valor": "+553 kcal", "rotulo": "a mais na janela noturna após 5 noites de 4 h (n = 31; sem IC no estudo)"},
+   "fonte": "[@nedeltcheva2009; @spaeth2013; @markwald2013; @alkhatib2017]",
+   "notas": "Com 14 dias de 5,5 horas, as refeições principais ficaram iguais, mas as calorias de lanches subiram, de 866 para 1.087 por dia. Em cinco noites de 4 horas, o excesso de cerca de 553 quilocalorias ocorreu entre 22h e 3h59, com mais gordura nesse horário. Em outro experimento, a ingestão também excedeu a necessidade depois do jantar. Nas metanálises, a gordura sobe de forma consistente; o carboidrato subiu em estudos isolados, mas não nas sínteses. Certeza baixa para o horário: são experimentos de laboratório e subconjuntos de participantes.",
+   "kicker": "Hábito alimentar",
+   "banner": "imagens/comida-noite.jpg",
+   "banner_foco": [0.5, 0.5]
+  },
+  {
+   "layout": "dois_colunas",
+   "tempo_seg": 40,
+   "titulo": "O mecanismo mais sustentado é recompensa e freio fraco, não grelina e leptina",
+   "esquerda": {
+    "titulo": "Hormônios: sinal inconsistente",
+    "itens": [
+     "Grelina mais alta no sono curto: DMP 0,14 (0,03–0,25)",
+     "Leptina vai em direções opostas entre estudos",
+     "Revisão de 50 ECR: leptina, grelina e cortisol não mudaram",
+     "Com só 2 h de sono, o apetite caiu: relação não linear"
+    ]
+   },
+   "direita": {
+    "titulo": "Cérebro: recompensa e freio",
+    "itens": [
+     "Comida ativa mais áreas de recompensa (n = 26, 6 noites de 4 h)",
+     "Uma noite em claro ativa mais o cingulado, sem relação com as calorias",
+     "Fica mais difícil inibir lanches palatáveis; o 2-AG é só hipótese"
+    ]
+   },
+   "fonte": "[@lin2020; @soltanieh2021; @radcliffe2021; @stonge2012; @benedict2012; @hanlon2016; @tajiri2023]",
+   "notas": "A narrativa popular é que o sono curto desregula grelina e leptina. A metanálise de Lin achou grelina mais alta, mas a leptina esteve mais alta, e não mais baixa, nos experimentos; a revisão de 50 ECR concluiu que leptina, grelina e cortisol não foram influenciados pela duração do sono. Com restrição severa, de 2 horas, a fome pós-prandial caiu 23% e o almoço diminuiu 332 quilocalorias. Já a neuroimagem mostra mais ativação de áreas de recompensa, mesmo sem relação com as calorias da imagem. O 2-AG tem pico mais tardio com 4,5 horas, mas não se associou à ingestão em vida livre: é hipótese plausível. Os hormônios são desfechos substitutos; a neuroimagem é evidência mecanística.",
+   "kicker": "Hábito alimentar",
+   "banner": "imagens/comida-noite.jpg",
+   "banner_foco": [0.5, 0.5]
+  },
+  {
+   "layout": "topicos",
+   "tempo_seg": 35,
+   "titulo": "O horário do almoço predisse a perda de peso; duração do sono e cronotipo, não",
+   "itens": [
+    "Ingestão, gasto, hormônios e sono eram semelhantes entre os grupos",
+    "**Cronotipo vespertino:** pior dieta em ~95% de 43 estudos; maior peso em ~47%",
+    "**Jet lag social:** IMC r = 0,12 (0,07–0,17), transversal",
+    "Janela 12h–20h não superou comer livre em 12 semanas; sono não medido"
+   ],
+   "destaque": {"valor": "15h", "rotulo": "almoço depois desse horário: menos peso perdido em 20 semanas (n = 420; P = 0,002)"},
+   "fonte": "[@garaulet2013; @teixeira2022; @arab2024; @lowe2020]",
+   "notas": "Na coorte de 420 pessoas em tratamento de 20 semanas, quem almoçava depois das 15 horas perdeu menos peso, mesmo com ingestão, gasto, hormônios e duração do sono semelhantes. Nem duração do sono nem cronotipo se associaram de forma independente à perda. Isso separa horário de sono. As revisões sobre cronotipo vespertino e jet lag social são transversais, com heterogeneidade alta, e a certeza é baixa. No ECR de janela alimentar, a diferença foi de 0,26 quilo, com IC de menos 1,30 a 0,78, e o sono não foi medido. Hipótese nossa, não testada: sono curto e ingestão noturna se somam.",
+   "kicker": "Hábito alimentar",
+   "banner": "imagens/comida-noite.jpg",
+   "banner_foco": [0.5, 0.5]
+  },
+  {
+   "layout": "secao",
+   "tempo_seg": 4,
+   "titulo": "Peso e composição corporal",
+   "subtitulo": "A pergunta central: o que muda na dieta e fora dela",
+   "imagem": "imagens/balanca.jpg",
+   "notas": "Segundo bloco: a balança e a composição do peso perdido."
+  },
+  {
+   "layout": "evidencias",
+   "tempo_seg": 45,
+   "titulo": "Na dieta, dormir pouco manteve o peso perdido e piorou a fração de gordura",
+   "estudos": [
+    {"desenho": "ECR cruzado", "estudo": "n = 10 · 14 dias · 5,5 contra 8,5 h", "achado": "Peso perdido igual; gordura 0,6 contra 1,4 kg; massa livre de gordura 2,4 contra 1,5 kg", "certeza": "baixa"},
+    {"desenho": "ECR paralelo", "estudo": "n = 36 · 8 semanas", "achado": "Peso, massa magra e massa gorda perdidos semelhantes; só a fração de gordura foi menor (P = 0,016)", "certeza": "baixa"},
+    {"desenho": "Revisão", "estudo": "30 estudos, 13 ECR", "achado": "Em programas de emagrecimento, a restrição do sono reduziu a perda de gordura"},
+    {"desenho": "Lacuna", "estudo": "Extensão do sono em dieta", "achado": "Nenhum ECR; os 2 ECR de dieta duram só 2 e 8 semanas"}
+   ],
+   "fonte": "[@nedeltcheva2010; @wang2018; @duan2026]",
+   "notas": "É a pergunta central, e a resposta é cautelosa. No cruzado de Nedeltcheva, com 10 adultos com sobrepeso, a perda total foi de cerca de 3 quilos nas duas condições, mas com 5,5 horas a fração perdida como gordura caiu 55% e a perda de massa livre de gordura subiu 60%. No ECR de Wang, com 36 pessoas, peso, massa magra e massa gorda perdidos foram semelhantes; só a proporção de gordura no peso perdido foi menor. Portanto, a perda maior de massa livre de gordura vale só para Nedeltcheva. A direção concorda; a magnitude, não. A certeza GRADE é baixa: sem cegamento, amostras pequenas e ICs não informados nos resumos. Massa livre de gordura inclui água e glicogênio, que variam muito nas primeiras semanas de dieta: não equivale a perda de músculo. A revisão de Duan aponta a mesma direção, sem GRADE nesta avaliação.",
+   "kicker": "Peso e composição",
+   "banner": "imagens/balanca.jpg",
+   "banner_foco": [0.5, 0.5]
+  },
+  {
+   "layout": "tabela",
+   "tempo_seg": 30,
+   "titulo": "Os mecanismos propostos para a pior partição ainda são hipóteses",
+   "colunas": ["Candidato", "O que se observou", "Leitura"],
+   "larguras": [24, 46, 30],
+   "linhas": [
+    ["Oxidação de gordura", "Quociente respiratório mais alto ou sem queda no sono curto", "Mecanístico; pode depender do déficit"],
+    ["Resistência à insulina", "Adipócito menos sensível após 4 noites de 4,5 h (n = 7)", "Hipótese; não testada"],
+    ["Cortisol", "Subiu com 4 h; sem mudança em 1 semana de 5 h", "Inconsistente"],
+    ["Testosterona", "−10% a −15% após 1 semana de 5 h (10 homens)", "Mecanístico; sem massa magra"],
+    ["Hormônio do crescimento", "Sono profundo preservado com 5 h", "Hipótese sem teste"],
+    ["Movimento", "Sedentarismo +17 min/dia em 6 semanas", "Associação; fora da dieta"]
+   ],
+   "fonte": "[@nedeltcheva2010; @wang2018; @broussard2012; @spiegel1999; @leproult2011; @zuraikat2026]",
+   "notas": "Nenhum destes candidatos foi testado como mediador nos ECR de dieta. A menor oxidação de gordura aparece nos dois ECR, mas pode depender do déficit calórico. A resistência à insulina foi medida em adipócitos de sete pessoas; como a insulina inibe a lipólise, a ligação com pior partição nem é intuitiva. O cortisol subiu com seis noites de 4 horas, mas não com uma semana de 5. A testosterona caiu em homens, sem medida de massa magra. Na restrição moderada, o sono profundo é preservado, então a queda de hormônio do crescimento seria mais provável com privação total. O sedentarismo mais alto vem do estudo sem dieta.",
+   "kicker": "Peso e composição",
+   "banner": "imagens/balanca.jpg",
+   "banner_foco": [0.5, 0.5]
+  },
+  {
+   "layout": "numeros",
+   "tempo_seg": 40,
+   "titulo": "Sem dieta, restringir o sono elevou o peso em experimentos, mas a síntese não confirma",
+   "metricas": [
+    {"valor": "+0,45 kg", "rotulo": "6 semanas, −78 min por noite", "detalhe": "IC 95% 0,33–0,57 · n = 95"},
+    {"valor": "+0,5 kg", "rotulo": "14 dias de 4 h, internação", "detalhe": "IC 95% 0,1–0,8 · n = 12"},
+    {"valor": "DMP 0,44", "rotulo": "metanálise de 6 experimentos", "detalhe": "IC 95% −0,13 a 1,02 · n = 275 · sem diferença"}
+   ],
+   "texto": "Gordura total sem aumento detectável (certeza **baixa**); gordura visceral subiu em 1 estudo de 12 pessoas (**muito baixa**)",
+   "fonte": "[@zuraikat2026; @covassin2022; @yu2019]",
+   "notas": "Nos experimentos com alimento livre, o peso subiu. Em 6 semanas, com 78 minutos a menos por noite, o ganho foi de 0,45 quilo; em 14 dias de 4 horas, 0,5 quilo. Outros experimentos, de 5 noites, mostraram ganhos de 0,97 e 0,82 quilo; o intervalo total é de 5 dias a 6 semanas, cerca de 0,5 a 1 quilo. Mas a metanálise de 6 experimentos não achou diferença significativa, por isso a certeza do peso é baixa: inconsistência, evidência indireta e efeito pequeno. Na composição, a gordura total não mudou nos dois estudos; a gordura abdominal e a visceral subiram em apenas 12 pessoas, com IC encostado em zero. Em 3 dias de recuperação, ingestão e peso normalizaram, mas a gordura visceral continuou a subir.",
+   "kicker": "Peso e composição",
+   "banner": "imagens/balanca.jpg",
+   "banner_foco": [0.5, 0.5]
+  },
+  {
+   "layout": "numeros",
+   "tempo_seg": 45,
+   "titulo": "Estender o sono de quem dorme pouco reduziu a ingestão e o peso em 2 semanas",
+   "metricas": [
+    {"valor": "−270 kcal", "rotulo": "de ingestão por dia", "detalhe": "IC 95% −393 a −147 · sono +1,2 h por noite"},
+    {"valor": "−0,87 kg", "rotulo": "de peso contra o controle", "detalhe": "IC 95% −1,39 a −0,35 · controle ganhou 0,39 kg"},
+    {"valor": "−0,62 kg", "rotulo": "de massa livre de gordura", "detalhe": "IC 95% −1,02 a −0,23 · gordura −0,25 kg (−0,39 a −0,10)"}
+   ],
+   "texto": "ECR de 2 semanas (n = 80). Na metanálise, a extensão isolada não reduziu o IMC (−0,15 kg/m²; IC 95% −0,40 a 0,11). Certeza: ingestão e peso **baixa**",
+   "fonte": "[@tasali2022; @mostafa2026]",
+   "notas": "O ECR de Tasali incluiu 80 adultos com sobrepeso que dormiam menos de 6,5 horas e estendeu o sono em 1,2 hora por noite por duas semanas, sem prescrever dieta. A ingestão foi calculada pelo balanço de energia, com água duplamente marcada, e o gasto total não mudou de forma significativa. O peso caiu 0,87 quilo contra o controle, mas o controle ganhou 0,39, o que contribui para o efeito. A mudança foi sobretudo de massa livre de gordura, com pequena redução de gordura. Na metanálise de Mostafa, o peso global não mudou de forma significativa (P = 0,23); o resultado de 5,55 quilos na obesidade é subgrupo de 3 estudos e não deve ser citado. A certeza é baixa para a ingestão, por imprecisão da metanálise e evidência indireta (2 semanas, sem dieta, adultos jovens sem insônia), e baixa para o peso. Não há dado de efeito sustentado.",
+   "kicker": "Peso e composição",
+   "banner": "imagens/balanca.jpg",
+   "banner_foco": [0.5, 0.5]
+  },
+  {
+   "layout": "tabela",
+   "tempo_seg": 35,
+   "titulo": "Em coortes de emagrecimento, dormir mal acompanhou menor perda, com certeza muito baixa",
+   "colunas": ["Coorte", "Participantes e tempo", "Achado"],
+   "larguras": [26, 22, 52],
+   "linhas": [
+    ["Kline 2026", "296 · 12 meses", "Sono < 6 h: perda 4,5 ± 1,3% menor e 2,0 sessões a menos"],
+    ["Creasy 2022", "156 · 18 meses", "Menor eficiência e mais despertares atenuaram a perda"],
+    ["Papandreou 2020", "1.986 · 12 meses", "Maior variabilidade do sono: peso +0,5 kg (0,1–0,9)"],
+    ["Rodríguez-Martín 2025", "3.628 · 25 semanas", "Sono > 8 h perdeu menos; sono curto sem associação"]
+   ],
+   "fonte": "[@kline2026; @creasy2022; @papandreou2020; @rodriguezmartin2025; @duan2026]",
+   "notas": "São coortes dentro de programas de emagrecimento, evidência complementar. Em cinco de seis coortes avaliadas, sono curto ou ineficiente acompanhou menor perda e menor adesão; a coorte de 3.628 pessoas não achou associação com o sono curto e achou menor perda no sono longo. Duas coortes de manutenção e de mulheres não entraram no slide por ambiguidade nos resumos. O sono é autorrelatado na maioria, e depressão, apneia e estresse podem confundir; causalidade reversa não está excluída. A revisão de Duan, com 30 estudos, mostra metade dos observacionais com resultado positivo. A certeza é muito baixa. Sinal de adesão: sono curto e menos sessões.",
+   "kicker": "Peso e composição",
+   "banner": "imagens/balanca.jpg",
+   "banner_foco": [0.5, 0.5]
+  },
+  {
+   "layout": "secao",
+   "tempo_seg": 4,
+   "titulo": "Treinamento",
+   "subtitulo": "Desempenho, esforço, síntese proteica e o sentido inverso",
+   "imagem": "imagens/treino.jpg",
+   "notas": "Terceiro bloco: o que a noite mal dormida faz no treino."
+  },
+  {
+   "layout": "numeros",
+   "tempo_seg": 40,
+   "titulo": "A perda aguda de sono reduz o desempenho físico, e a força cai menos",
+   "metricas": [
+    {"valor": "−7,56%", "rotulo": "desempenho físico geral", "detalhe": "IC 95% −11,9 a −3,13 · I² = 98,1% · 69 publicações"},
+    {"valor": "−2,85%", "rotulo": "força", "detalhe": "IC 95% −4,47 a −1,23 · I² = 62,2% · 25 estudos, n = 289"}
+   ],
+   "texto": "Efeito maior com privação total e em tarefas da tarde; de manhã quase não aparece. Certeza da força: **baixa**",
+   "fonte": "[@craven2022]",
+   "notas": "A metanálise de Craven reuniu 69 publicações e 959 participantes, 89% homens. O I² de 98% diz que a média esconde variação enorme. Na força, o efeito foi significativo só na privação total, de menos 3%, e nos membros inferiores. Há dose-resposta com o tempo acordado, cerca de 0,4% de queda por hora, na privação e na restrição tardia. Os autores sugerem treinar de manhã se a perda de sono for inevitável. Uma revisão de 2018 aponta que noites consecutivas de restrição reduzem a força em movimentos multiarticulares. Não dá para afirmar que o prejuízo é maior em uma categoria de exercício, porque não houve teste formal entre elas.",
+   "kicker": "Treinamento",
+   "banner": "imagens/treino.jpg",
+   "banner_foco": [0.5, 0.5]
+  },
+  {
+   "layout": "topicos",
+   "tempo_seg": 40,
+   "titulo": "Sem dormir, o treino pesa mais e a síntese proteica cai, mas o músculo não foi medido",
+   "itens": [
+    "**Esforço percebido** maior; falha em 1.137 s sem dormir contra 1.236 s",
+    "**Função neuromuscular** sem diferença entre as condições (n = 12)",
+    "**Síntese proteica:** −18% após uma noite em claro (n = 13)",
+    "**HIIT** manteve a síntese miofibrilar em 5 noites de 4 h (n = 24)"
+   ],
+   "destaque": {"valor": "0 ECR", "rotulo": "de hipertrofia ou composição com sono restrito por semanas, nos 95 itens avaliados"},
+   "fonte": "[@temesi2013; @lamon2021; @saner2020]",
+   "notas": "No estudo de Temesi, 12 homens ativos pedalaram até a falha após uma noite sem dormir: o tempo caiu e o esforço percebido subiu, sem diferença na função neuromuscular. Ou seja, o treino parece mais pesado por percepção, não por falha do músculo. Após uma noite em claro, a síntese proteica miofibrilar caiu 18%, com cortisol 21% maior e testosterona 24% menor. Mas o HIIT manteve a síntese sob cinco noites de 4 horas. São desfechos substitutos, de dias; a certeza é muito baixa. Nenhum ECR mediu hipertrofia com restrição crônica: queda aguda de síntese não é perda de músculo. Dados de lesão existem só em adolescentes, e ficam como lacuna.",
+   "kicker": "Treinamento",
+   "banner": "imagens/treino.jpg",
+   "banner_foco": [0.5, 0.5]
+  },
+  {
+   "layout": "dois_colunas",
+   "tempo_seg": 30,
+   "titulo": "O exercício melhora o sono, e treinar à noite pouco o atrapalha em bons dormidores",
+   "esquerda": {
+    "titulo": "Exercício regular",
+    "itens": [
+     "Qualidade do sono melhora, com efeito moderado (66 estudos, busca até 2013)",
+     "Na insônia: DMP 0,37 em sono objetivo e 0,90 no subjetivo",
+     "Certeza baixa: bons dormidores e busca antiga"
+    ]
+   },
+   "direita": {
+    "titulo": "Treino intenso à noite",
+    "itens": [
+     "HIIT 0,5–4 h antes de dormir: só o REM caiu, 2,34%",
+     "Corrida moderada à noite não perturbou o sono (n = 16)",
+     "Não avaliado em quem já dorme mal"
+    ]
+   },
+   "fonte": "[@kredlow2015; @riedel2024; @frimpong2021; @saidi2020]",
+   "notas": "O sentido inverso: o treino ajuda o sono. A metanálise de Kredlow, com 66 estudos, mostra efeito moderado do exercício regular na qualidade do sono. Na insônia, o efeito foi de 0,37 no sono objetivo, com IC de 0,17 a 0,57, e 0,90 no subjetivo, com heterogeneidade alta. O medo de treinar à noite tem pouco respaldo em bons dormidores: o exercício intervalado terminando de 0,5 a 4 horas antes de dormir reduziu só o REM. A corrida moderada à noite também não atrapalhou, e melhor quando terminou 4 horas antes. Quem já dorme mal não foi avaliado; os mecanismos do exercício sobre o sono não foram revisados.",
+   "kicker": "Treinamento",
+   "banner": "imagens/treino.jpg",
+   "banner_foco": [0.5, 0.5]
+  },
+  {
+   "layout": "secao",
+   "tempo_seg": 4,
+   "titulo": "Rotina",
+   "subtitulo": "Cafeína, álcool, telas, humor, glicose e turnos",
+   "imagem": "imagens/cafe.jpg",
+   "notas": "Quarto bloco: o que encurta o sono e o que o sono curto cobra de volta."
+  },
+  {
+   "layout": "tabela",
+   "tempo_seg": 30,
+   "titulo": "Cafeína, álcool e telas encurtam o sono por caminhos diferentes",
+   "colunas": ["Hábito", "Efeito medido", "Certeza"],
+   "larguras": [16, 62, 22],
+   "linhas": [
+    ["Cafeína", "−45 min de sono e −7% de eficiência; antagoniza a adenosina", "Moderada"],
+    ["Álcool", "Reduz e atrasa o REM já com cerca de 2 doses", "Moderada (REM)"],
+    ["Telas", "Cada hora por dia: 3 a 5 min a menos de sono", "Baixa"],
+    ["Luz à noite", "E-reader e luz ambiente atrasam o relógio e a melatonina", "Mecanística"]
+   ],
+   "fonte": "[@gardiner2023; @gardiner2025; @he2025; @chang2015; @gooley2011]",
+   "notas": "A cafeína reduziu o tempo total de sono em 45 minutos e a eficiência em 7%, e age bloqueando receptores de adenosina: mascara a sonolência sem eliminar a pressão de sono acumulada. O álcool encurta a latência, mas fragmenta a segunda metade da noite; o REM já cai com cerca de 2 doses. Cada hora de tela por dia se associou a 3 a 5 minutos a menos de sono e a atraso de 13 minutos no horário de dormir, mas em coortes com tela autorrelatada. O elo tela, menos sono e peso não foi testado nos estudos lidos. Os limites de horário da cafeína ficam para o bloco de prática.",
+   "kicker": "Rotina",
+   "banner": "imagens/cafe.jpg",
+   "banner_foco": [0.5, 0.5]
+  },
+  {
+   "layout": "dois_colunas",
+   "tempo_seg": 35,
+   "titulo": "O sono curto cobra no humor, na glicose e, entre turnistas, no peso",
+   "esquerda": {
+    "titulo": "Em experimentos",
+    "itens": [
+     "Afeto positivo cai e ansiedade sobe (DMP 0,57–0,63)",
+     "Metanálise de 154 estudos; inclui crianças e adolescentes",
+     "Tolerância à glicose piora após 6 noites de 4 h (11 homens)",
+     "5,6 h por 3 semanas elevou a glicose; normalizou em 9 dias"
+    ]
+   },
+   "direita": {
+    "titulo": "Em estudos observacionais",
+    "itens": [
+     "Turnos: sobrepeso RR 1,25 e obesidade RR 1,17 (26 estudos)",
+     "Trabalho noturno: coortes RR 1,10; transversais, 1,26 (viés possível)",
+     "Sono como via causal nos turnos: lacuna",
+     "Sono curto, pior decisão e pior adesão: elo não demonstrado"
+    ]
+   },
+   "fonte": "[@palmer2024; @spiegel1999; @buxton2012; @liu2018; @sun2018; @kecklund2016]",
+   "notas": "Na metanálise de 154 estudos experimentais, a perda de sono reduziu o afeto positivo e aumentou os sintomas de ansiedade; afeto negativo e depressão tiveram resultados mistos. Na glicose, seis noites de 4 horas pioraram a tolerância, e três semanas de 5,6 horas, combinadas com desalinhamento circadiano, elevaram a glicose pós-prandial, normalizada com recuperação. Nos turnos, o sobrepeso teve RR de 1,25, com IC de 1,08 a 1,44, e a obesidade, 1,17, de 1,12 a 1,22. A diferença entre coortes e transversais sugere seleção ou causalidade reversa. Em adultos em emagrecimento, não localizamos fonte que demonstre a cadeia de decisão até a adesão.",
+   "kicker": "Rotina",
+   "banner": "imagens/cafe.jpg",
+   "banner_foco": [0.5, 0.5]
+  },
+  {
+   "layout": "secao",
+   "tempo_seg": 4,
+   "titulo": "Na prática e nos mitos",
+   "subtitulo": "O que fazer, com a certeza declarada, e o que não acreditar",
+   "imagem": "imagens/despertador.jpg",
+   "notas": "Último bloco: ação e mitos."
+  },
+  {
+   "layout": "evidencias",
+   "tempo_seg": 45,
+   "titulo": "Há ações de baixo custo, mas só aconselhar higiene do sono rende pouco",
+   "estudos": [
+    {"desenho": "Metanálise", "estudo": "Fixar a hora de dormir", "achado": "Definir o horário superou o coaching; mais componentes, menos efeito"},
+    {"desenho": "Piloto", "estudo": "Só higiene do sono", "achado": "+21 min de sono (IC 95% 6–36) em adultos de peso normal; n = 42"},
+    {"desenho": "Metanálise", "estudo": "Cafeína com antecedência", "achado": "Café ≥ 8,8 h e pré-treino ≥ 13,2 h antes de deitar; o limite varia com a dose", "certeza": "moderada"},
+    {"desenho": "Metanálise", "estudo": "Cochilo de 30 a < 60 min", "achado": "Melhorou desempenho e fadiga em homens; DMP 0,99 (0,67–1,31)"},
+    {"desenho": "Diretrizes", "estudo": "Insônia persistente ou suspeita de apneia", "achado": "Encaminhar; a TCC-I é o tratamento de primeira linha da insônia"}
+   ],
+   "fonte": "[@baron2021; @alkhatib2018; @gardiner2023; @mesas2023; @riemann2023; @drager2023]",
+   "notas": "Cinco ações, cada uma com a sua força. Fixar o horário de dormir teve efeito maior que o coaching na metanálise de Baron, mas com heterogeneidade extrema e adolescentes incluídos. O aconselhamento de higiene sozinho rendeu só 21 minutos em adultos de peso normal; por isso, dizer apenas durma mais tem pouco efeito. Os limites da cafeína, de 8,8 horas para o café e 13,2 para o pré-treino, vêm de modelo e dependem de dose e sensibilidade. O cochilo foi estudado só em homens. Insônia persistente ou suspeita de apneia saem do escopo do educador físico e pedem encaminhamento; no Brasil, há diretriz de insônia, mas nenhuma de duração do sono, peso ou exercício. Em geral, a certeza não foi graduada no GRADE, exceto na cafeína.",
+   "kicker": "Prática",
+   "banner": "imagens/despertador.jpg",
+   "banner_foco": [0.5, 0.5]
+  },
+  {
+   "layout": "tabela",
+   "tempo_seg": 45,
+   "titulo": "Cinco crenças comuns sobre sono têm base fraca ou limitada",
+   "colunas": ["Crença", "O que a evidência mostra", "Certeza"],
+   "larguras": [24, 56, 20],
+   "linhas": [
+    ["Recupero no fim de semana", "No laboratório, a recuperação não impediu a piora quando a restrição voltou (n = 36)", "Baixa"],
+    ["Sono curto causa obesidade", "OR 1,40 (1,27–1,55), evidência sugestiva; a randomização mendeliana apoia causa", "Sugestiva"],
+    ["Melatonina faz dormir e emagrecer", "Latência −7,06 min (4,37–9,75) em distúrbios do sono; efeito no peso diverge entre sínteses", "Muito baixa (peso)"],
+    ["Suplemento melhora o sono", "Melhora subjetiva com aminoácidos e vitamina D; magnésio sem suporte; nada em peso", "Muito baixa"],
+    ["O relógio mede meu sono profundo", "Sensibilidade ≥ 0,93, especificidade 0,18–0,54; estágios inconsistentes", "Moderada"]
+   ],
+   "fonte": "[@depner2019; @malasevskaia2026; @yang2024; @ferracioli2013; @delpino2021; @mohammadi2026; @chan2021; @mei2025; @lopresti2026; @chinoy2021]",
+   "notas": "Fim de semana: em 36 adultos internados, dormir mais no fim de semana reduziu a ingestão após o jantar, mas a piora voltou com a nova restrição; já Killick viu melhora aguda da sensibilidade à insulina com três noites de 10 horas. A NSF é mais favorável à recuperação. Sono curto e obesidade: associação robusta, mas sugestiva; os experimentos de ingestão sustentam a causa. Melatonina: efeito de poucos minutos, sem efeito significativo em adultos com insônia crônica numa metanálise; para peso, uma síntese achou redução no limite da significância, e outra, com 63 ECR, nada. Suplementos: só autorrelato, nenhum com desfecho de peso ou treino. Relógios: superestimam o sono e não servem para diagnóstico; use para tendência de horários.",
+   "kicker": "Mitos",
+   "banner": "imagens/despertador.jpg",
+   "banner_foco": [0.5, 0.5]
+  },
+  {
+   "layout": "conclusao",
+   "tempo_seg": 35,
+   "titulo": "Dormir pouco aumenta a ingestão, mas dormir mais emagrecer a longo prazo não foi provado",
+   "itens": [
+    "**Alimentação:** sono curto traz mais lanches à noite, por recompensa e freio fraco",
+    "**Dieta:** o peso perdido se mantém, mas a fração de gordura piora (certeza baixa)",
+    "**Treino:** desempenho cai e esforço pesa mais; efeito no músculo é lacuna",
+    "**Prática:** horário fixo e cafeína cedo; fim de semana e suplementos não compensam"
+   ],
+   "notas": "Respondendo à pergunta: dormir pouco aumenta a ingestão, com lanches à noite, mas isso não prova que corrigir o sono emagreça, nem quanto, nem por quanto tempo. Em dieta, dormir pouco mudou o que se perde, não quanto, em amostras pequenas. No treino, o desempenho cai e o esforço pesa mais, mas o músculo não foi medido. Na prática, vale o horário fixo e a cafeína cedo; recuperar no fim de semana e suplementos não substituem dormir bem. Lacunas: seguimentos curtos, pouca mulher, poucos brasileiros e nenhuma diretriz do Ministério da Saúde sobre duração do sono.",
+   "kicker": "Síntese",
+   "banner": "imagens/sono-quarto.jpg",
+   "banner_foco": [0.5, 0.5]
+  },
+  {
+   "layout": "encerramento",
+   "tempo_seg": 5,
+   "titulo": "Bom estudo!",
+   "texto": "Sono, perda de peso e rotina",
+   "notas": "Fim do material.",
+   "imagem": "imagens/sono-quarto.jpg"
+  },
+  {
+   "layout": "referencias",
+   "titulo": "Referências"
+  }
+ ]
+}
