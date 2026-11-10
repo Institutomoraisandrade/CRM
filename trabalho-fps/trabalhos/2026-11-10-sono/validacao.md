@@ -1,8 +1,8 @@
 # Validação — 2026-11-10-sono
 
-Gerado em 10/11/2026 11:26.
+Gerado em 10/11/2026 11:28.
 
-**Resultado:** ✅ APROVADO (0 erro(s), 3 aviso(s))
+**Resultado:** ✅ APROVADO (0 erro(s), 2 aviso(s))
 
 ## Erros (corrigir antes de entregar)
 - nenhum
@@ -10,7 +10,6 @@ Gerado em 10/11/2026 11:26.
 ## Avisos (revisar)
 - 79 referência(s) não citada(s) no artigo (serão omitidas da lista): santahelena2024, morin2022, spiegelhalder2026, ncdrisc2024, bacaro2020, patel2008, capers2015, greer2013, brondel2010, papandreou2020, bonnar2018, riedel2024, stonge2016, lloydjones2022, chinoy2021, bodur2025, hanlon2016, hanlon2020, broussard2016, benedict2012, yang2019, mcneil2017, tajiri2018, tajiri2023, soltanieh2021, chaput2023, benedict2011, buxton2012, broussard2012, spiegel1999, leproult1997, leproult2011, reutrakul2014, vancauter2000, dattilo2011, parr2014, lowe2020, mah2011, roenneberg2012, krause2017, baron2017, akerstedt2019, drake2013, kecklund2016, sun2018, ebrahim2013, fullagar2015, milewski2014, vonrosen2017, reichert2022, clark2017, costello2014, bogh2023, zuraikat2024, barragan2023, depner2021, hartescu2022, beals2026, merchant2025, easow2025, stonge2025, thomson2012, cros2019, murawski2018, saidi2020, erim2024, steger2023, clavero2025, shen2025, yang2024, allmanfarinelli2020, itani2017, gonzalezortiz2020, henst2019, lange2024, jiang2024, dzierzewski2026cst, mei2025, faria2025
 - 29 slides para 15 min — risco de estourar o tempo (≈1 slide/min)
-- etapa 'banca' não aprovada no portão (REVISAR, rodada 1)
 
 ## Indicadores
 - resumo: 245 palavras
@@ -20,4 +19,4 @@ Gerado em 10/11/2026 11:26.
 - 29 slide(s) definidos
 - tempo planejado: 13:50
 - tipo de trabalho: revisao
-- portões: 01-investigacao: APROVADO (r2, média 8.5) · 03a-busca: APROVADO (r2, média 8.6) · 03-evidencias: APROVADO (r2, média 8.6) · 02-analise: APROVADO (r3, média 8.5) · artigo-forma: APROVADO (r2, média 8.3) · artigo-fidelidade: APROVADO (r2, média 8.6) · slides: APROVADO (r1, média 8.5) · banca: REVISAR (r1, média 7.8)
+- portões: 01-investigacao: APROVADO (r2, média 8.5) · 03a-busca: APROVADO (r2, média 8.6) · 03-evidencias: APROVADO (r2, média 8.6) · 02-analise: APROVADO (r3, média 8.5) · artigo-forma: APROVADO (r2, média 8.3) · artigo-fidelidade: APROVADO (r2, média 8.6) · slides: APROVADO (r1, média 8.5) · banca: APROVADO (r2, média 8.2)

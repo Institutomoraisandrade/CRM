@@ -1,0 +1,86 @@
+{
+ "etapa": "banca",
+ "rodada": 2,
+ "revisor": "fps-banca",
+ "modelo_revisor": "fable",
+ "executor": "pipeline (fps-3, fps-4, fps-5 e líderes)",
+ "arquivos_revisados": [
+  "trabalho-fps/trabalhos/2026-11-10-sono/03-evidencias.md (§4.2, §4.4, §6)",
+  "trabalho-fps/trabalhos/2026-11-10-sono/03-quadro-evidencias.json (he2025, arab2024)",
+  "trabalho-fps/trabalhos/2026-11-10-sono/artigo.json (comparação campo a campo com a versão anterior à banca)",
+  "trabalho-fps/trabalhos/2026-11-10-sono/artigo.docx (previa-artigo/, 32 páginas)",
+  "trabalho-fps/trabalhos/2026-11-10-sono/slides.json (comparação campo a campo)",
+  "trabalho-fps/trabalhos/2026-11-10-sono/apresentacao.pptx (previa-apresentacao/ páginas 10, 22 e 25)",
+  "trabalho-fps/trabalhos/2026-11-10-sono/revisoes/banca.r1.parecer.json"
+ ],
+ "criterios": {
+  "rigor_cientifico": 8.5,
+  "qualidade_da_evidencia": 8.0,
+  "redacao_e_abnt": 8.5,
+  "apresentacao": 8.5,
+  "coerencia_global": 8.5,
+  "rigor_das_revisoes": 7.5
+ },
+ "justificativas": {
+  "rigor_cientifico": "As duas afirmações mais fortes que a fonte foram corrigidas; a metanálise de telas agora traz população, exposição e o limite da recomendação.",
+  "qualidade_da_evidencia": "Sem mudança: limites de busca e de avaliação por resumo continuam declarados.",
+  "redacao_e_abnt": "Resumo com 250 palavras ou menos, 0 erros no validador, 32 páginas, 70 referências citadas.",
+  "apresentacao": "Slides 10, 22 e 25 corrigidos, sem estouro de texto na prévia.",
+  "coerencia_global": "Artigo, slides e etapa 03 dizem o mesmo sobre telas, álcool, jet lag social e aconselhamento de sono.",
+  "rigor_das_revisoes": "Nota mantida: mede o processo de revisão das rodadas anteriores. As correções desta rodada foram precisas e sem regressão."
+ },
+ "achados": [
+  {
+   "id": "M1",
+   "gravidade": "menor",
+   "local": "artigo.json > abstract (Conclusion)",
+   "problema": "A correção encurtou a conclusão do resumo ('nem quanto') e deixou o abstract com 'by how much or for how long'.",
+   "evidencia": "Comparação resumo × abstract na versão corrigida.",
+   "correcao": "Abstract: 'nor by how much'. Corrigido pela banca; docx e prévia regenerados.",
+   "responsavel": "fps-4-redator-abnt"
+  }
+ ],
+ "correcoes_aplicadas": [
+  "artigo.json > abstract: conclusão igualada à do resumo ('nor by how much'); artigo.docx e previa-artigo/ regenerados (32 páginas).",
+  "banca.md atualizado para a rodada 2 (veredito, tabela de correções e checklist)."
+ ],
+ "verificacao_achados_r1": [
+  {
+   "id": "A1",
+   "status": "resolvido",
+   "evidencia": "slides.json slide 22: título 'A cafeína encurta o sono, o álcool reduz o REM e as telas se associam a menos sono'; notas do álcool reescritas conforme Gardiner 2025 (REM com cerca de 2 doses; latência só com dose alta; tempo total, eficiência e vigília incertos). Prévia pagina-22.png sem estouro."
+  },
+  {
+   "id": "A2",
+   "status": "resolvido",
+   "evidencia": "03-evidencias.md §4.4 e §6: 4 de 20 estudos em adultos, composição etária completa, exposição = tempo diário de tela, P = 0,48, fonte PMC12754674. artigo.json §7.3, Quadro 3 ('Reduzir o tempo diário de tela, sobretudo perto de deitar', com a ressalva de que o horário noturno é plausibilidade mecanística, Chang 2015 e Gooley 2011), §2.1 (exceção ao critério de população declarada), Considerações finais, resumo e abstract. Slide 22: linha e notas. Confere com o texto completo lido na r1."
+  },
+  {
+   "id": "A3",
+   "status": "resolvido",
+   "evidencia": "slides.json slide 10: 'IMC r = 0,12; % de gordura r = 0,37; observacional'; notas com os dois ICs e a OR 1,20. 03-evidencias.md §4.2 e §6 com r = 0,37 (0,33 a 0,41; I² 96%) e 'observacionais'. Confere com Arab 2024 (PMID 38072635)."
+  },
+  {
+   "id": "A4",
+   "status": "resolvido",
+   "evidencia": "slides.json slide 25: título 'Há ações de baixo custo, e o ganho de sono depende de como se aconselha'; linha com o piloto (+21 min, n = 42) e o ECR (+1,2 h, n = 80); Tasali 2022 na fonte; notas explicam a diferença de população e de método. Coerente com o slide 15 e com o Quadro 3."
+  }
+ ],
+ "decisoes": [
+  "Certeza da metanálise de telas: aceito 'baixa' para a associação no conjunto das idades, com a nota de leitura conservadora 'muito baixa' para adultos e uso noturno. A decisão está escrita e justificada (subgrupo por idade sem diferença, P = 0,48), e o artigo não faz recomendação mais forte do que isso.",
+  "03-quadro-evidencias.json > arab2024 > avaliacao_critica ainda diz 'associação transversal'. É campo interno, não aparece no artigo nem nos slides; fica como pendência não bloqueante para o orquestrador."
+ ],
+ "regressoes": "Nenhuma. A comparação campo a campo de artigo.json e slides.json com as versões anteriores à banca mostra só as correções pedidas e as menores da r1. Gerador de slides sem avisos além do logo.",
+ "pontos_fortes": [
+  "As quatro correções foram feitas na origem (etapa 03) e propagadas ao artigo e aos slides, sem perder número nem ressalva.",
+  "A exceção ao critério de população passou a ser declarada no Método, em vez de ficar implícita.",
+  "O slide 25 agora mostra os dois estudos de aconselhamento lado a lado, o que explica a diferença em vez de escolher um."
+ ],
+ "pendencias_conhecidas": [
+  "Autor é marcador (a preencher).",
+  "Logo oficial da FPS ausente.",
+  "29 slides para 15 min: aceito, material de estudo sem apresentação."
+ ],
+ "escalonado": false,
+ "resumo": "Os quatro achados da rodada 1 (1 crítico, 3 maiores) foram resolvidos e conferidos contra as fontes lidas na r1, sem regressões. Um achado menor (conclusão do abstract diferente da do resumo) foi corrigido pela banca. Aceita a certeza 'baixa' para a associação entre telas e sono, com a nota de 'muito baixa' para adultos e uso noturno. Portão: APROVADO."
+}

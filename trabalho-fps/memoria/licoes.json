@@ -2,6 +2,30 @@
   "agentes": {
     "fps-1-investigador": [
       {
+        "texto": "A lista de controle deve incluir estudos pivotais que fujam do vocabulário da string (sem MeSH, outro sinônimo do desfecho, sem rótulo de ECR); uma lista feita só de artigos já recuperados não testa nada. Leia também os recuperados mais citados antes de fechar a síntese.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-10",
+        "origens": [
+          "2026-11-10-sono:01-investigacao.r1.parecer.json:A1"
+        ]
+      },
+      {
+        "texto": "Cada subtema que o usuário pediu precisa de uma string própria executada; só declare 'sem evidência localizada' depois de rodar a busca, e confira se os critérios de exclusão não eliminam um subtema do briefing.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-10",
+        "origens": [
+          "2026-11-10-sono:01-investigacao.r1.parecer.json:A2"
+        ]
+      },
+      {
+        "texto": "Toda investigação de revisão tem uma string própria de diretrizes/consensos e registra a tentativa de achar a diretriz nacional, mesmo quando o resultado for negativo.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-10",
+        "origens": [
+          "2026-11-10-sono:01-investigacao.r1.parecer.json:A3"
+        ]
+      },
+      {
         "texto": "Todo número epidemiológico precisa de fonte oficial primária (DATASUS, IBGE, Vigitel, OMS/GBD) com ano de referência; nunca use valores de memória.",
         "ocorrencias": 1,
         "ultimo": "2026-11-09",
@@ -118,6 +142,30 @@
     ],
     "fps-op-buscador": [
       {
+        "texto": "Antes de cortar por volume, cruze a lista com as referências e a lista de controle da etapa 01: o que a investigação já usou para formular a pergunta ou a controvérsia nunca pode sair por volume.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-10",
+        "origens": [
+          "2026-11-10-sono:03a-busca.r1.parecer.json:A1"
+        ]
+      },
+      {
+        "texto": "No corte por volume, aplique a hierarquia dentro de cada subtema: só corte um ECR depois de garantir que as RS/MA do mesmo subtema e desfecho estão no conjunto; um subtema nunca pode ficar só com documentos marginais.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-10",
+        "origens": [
+          "2026-11-10-sono:03a-busca.r1.parecer.json:A2"
+        ]
+      },
+      {
+        "texto": "Semeie os candidatos com as referências pertinentes da etapa 01 (busca dirigida) e trate diretrizes do mesmo tema com a mesma regra; diretriz vista só em resumo de busca não entra como candidata.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-10",
+        "origens": [
+          "2026-11-10-sono:03a-busca.r1.parecer.json:A3"
+        ]
+      },
+      {
         "texto": "Trie 100% dos registros de cada string (pagine com retstart); triar só os primeiros resultados deixa de fora diretrizes, coortes e consensos centrais.",
         "ocorrencias": 1,
         "ultimo": "2026-11-09",
@@ -184,6 +232,22 @@
     ],
     "fps-3-avaliador-evidencias": [
       {
+        "texto": "Na resposta final, cada efeito resumido mantém a população e o estudo de origem; não atribua a 'os dois ensaios' o que só um mostrou, e não transfira para a população-alvo um efeito medido em voluntários saudáveis sem dizer que é indireto.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-10",
+        "origens": [
+          "2026-11-10-sono:03-evidencias.r1.parecer.json:A1"
+        ]
+      },
+      {
+        "texto": "A certeza final é a conta dos rebaixamentos escritos na mesma linha: dois motivos listados significam dois rebaixamentos, a menos que o texto explique por que um deles não se aplica.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-10",
+        "origens": [
+          "2026-11-10-sono:03-evidencias.r1.parecer.json:A2"
+        ]
+      },
+      {
         "texto": "Confirme no site da sociedade/órgão, na data de hoje, que a diretriz citada é a versão mais recente.",
         "ocorrencias": 1,
         "ultimo": "2026-11-09",
@@ -225,6 +289,54 @@
       }
     ],
     "fps-2-analista-critico": [
+      {
+        "texto": "Quando citar um ensaio por um desfecho, leia e reporte os demais desfechos do mesmo ensaio que afetam a conclusão, sobretudo os que contrariam a tese do texto.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-10",
+        "origens": [
+          "2026-11-10-sono:02-analise.r1.parecer.json:A1"
+        ]
+      },
+      {
+        "texto": "Entre duas sínteses sobre o mesmo desfecho, a conclusão segue a mais recente e mais completa ou explicita a divergência; comparações de magnitude entre subgrupos só com o dado de subgrupo à vista.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-10",
+        "origens": [
+          "2026-11-10-sono:02-analise.r1.parecer.json:A2"
+        ]
+      },
+      {
+        "texto": "O título do fluxo para slides é uma afirmação e precisa da mesma certeza que a etapa mais fraca que ele resume.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-10",
+        "origens": [
+          "2026-11-10-sono:02-analise.r1.parecer.json:A3"
+        ]
+      },
+      {
+        "texto": "Lacuna de leitura em tema que o briefing pede explicitamente não pode ficar como pendência: leia ao menos a melhor síntese disponível antes de entregar.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-10",
+        "origens": [
+          "2026-11-10-sono:02-analise.r1.parecer.json:A4"
+        ]
+      },
+      {
+        "texto": "'Low' e 'some concerns' em avaliação de risco de viés (RoB 2) significam baixo risco e alguma preocupação, não qualidade baixa; confira no texto completo antes de qualificar a evidência e traga a certeza GRADE que a própria revisão reporta.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-10",
+        "origens": [
+          "2026-11-10-sono:02-analise.r2.parecer.json:R1"
+        ]
+      },
+      {
+        "texto": "Uma frase-resumo negativa ('não há prova de...') precisa ser conferida contra todos os números citados no próprio texto; resumo não pode contradizer o dado que apresenta.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-10",
+        "origens": [
+          "2026-11-10-sono:02-analise.r2.parecer.json:R2"
+        ]
+      },
       {
         "texto": "Classifique cada afirmação mecanística como consenso, evidência clínica, evidência pré-clínica ou hipótese; não extrapole de animal/in vitro para clínica sem aviso.",
         "ocorrencias": 1,
@@ -268,71 +380,127 @@
     ],
     "fps-4-redator-abnt": [
       {
+        "texto": "Ao condensar o desfecho de uma fase de recuperação, copie o número da fonte; 'voltou ao basal' é afirmação que exige o dado de retorno, não só a direção.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-10",
+        "origens": [
+          "2026-11-10-sono:artigo-fidelidade.r1.parecer.json:A1"
+        ]
+      },
+      {
+        "texto": "Em metanálise com subgrupos, o número pertence à análise em que foi estimado; a condição 'em que o efeito foi maior' não herda o número do conjunto.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-10",
+        "origens": [
+          "2026-11-10-sono:artigo-fidelidade.r1.parecer.json:A2"
+        ]
+      },
+      {
+        "texto": "No resumo e nas considerações, cada exposição leva o desfecho e a certeza que lhe cabem; não agrupe exposições com certezas diferentes sob o mesmo verbo.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-10",
+        "origens": [
+          "2026-11-10-sono:artigo-fidelidade.r1.parecer.json:A3"
+        ]
+      },
+      {
+        "texto": "Ao qualificar a força de uma associação ('fraca'), relate todos os desfechos principais da síntese; escolher só os menores muda a leitura.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-10",
+        "origens": [
+          "2026-11-10-sono:artigo-fidelidade.r1.parecer.json:A4"
+        ]
+      },
+      {
+        "texto": "Em tema com sínteses divergentes registradas nas etapas anteriores, o artigo apresenta as duas, nunca só a favorável.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-10",
+        "origens": [
+          "2026-11-10-sono:artigo-fidelidade.r1.parecer.json:A5"
+        ]
+      },
+      {
+        "texto": "Resumo e conclusão herdam a certeza e o desfecho exatos do corpo: dois fatores com evidências diferentes não podem ser agrupados sob o mesmo verbo e a mesma certeza.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-10",
+        "origens": [
+          "2026-11-10-sono:artigo-forma.r1.parecer.json:A1"
+        ]
+      },
+      {
+        "texto": "Uma lista do que 'não se pode afirmar' no fim da Discussão duplica as Considerações finais: a resposta à pergunta é escrita uma vez só, na conclusão.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-10",
+        "origens": [
+          "2026-11-10-sono:artigo-forma.r1.parecer.json:A2"
+        ]
+      },
+      {
+        "texto": "Premissa declarada numa seção de convenções ou num parágrafo de resultados não volta na Discussão: ela remete ao número da seção e acrescenta só a consequência.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-10",
+        "origens": [
+          "2026-11-10-sono:artigo-forma.r1.parecer.json:A3"
+        ]
+      },
+      {
+        "texto": "Quando há tabela ou quadro, o texto não reescreve os números dele: diz o que a tabela não mostra (motivos, interpretação) e remete a ela.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-10",
+        "origens": [
+          "2026-11-10-sono:artigo-forma.r1.parecer.json:A4"
+        ]
+      },
+      {
+        "texto": "Antes de entregar, confira o número de páginas do corpo na prévia contra o limite do briefing; excesso se corta primeiro na redundância e nos desfechos secundários dos quadros.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-10",
+        "origens": [
+          "2026-11-10-sono:artigo-forma.r1.parecer.json:A5"
+        ]
+      },
+      {
+        "texto": "Ao condensar um ensaio de grupos paralelos, não use 'de X para Y': a preposição descreve mudança no mesmo grupo.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-10",
+        "origens": [
+          "2026-11-10-sono:banca.r1.parecer.json:M1"
+        ]
+      },
+      {
         "texto": "Considerações finais respondem à pergunta e não trazem citações nem dados novos.",
         "ocorrencias": 1,
         "ultimo": "2026-11-09",
         "origens": [
           "semente"
         ]
-      },
-      {
-        "texto": "O Método descreve a busca exatamente como foi feita (datas, bases, números do fluxo), sem arredondar nem inflar.",
-        "ocorrencias": 1,
-        "ultimo": "2026-11-09",
-        "origens": [
-          "semente"
-        ]
-      },
-      {
-        "texto": "Ao condensar um achado com duas fases (antes e depois de um evento), mantenha a ordem e a interpretação que os autores dão a cada fase; não desloque a ressalva de uma fase para a outra.",
-        "ocorrencias": 1,
-        "ultimo": "2026-11-09",
-        "origens": [
-          "2026-11-09-caso04-lca-lcm:artigo-fidelidade.r1.parecer.json:A1"
-        ]
-      },
-      {
-        "texto": "Ao juntar dois seguimentos da mesma coorte numa frase, confira se a conclusão vale para os dois; diferenças de subgrupo registradas nas etapas anteriores não podem desaparecer na síntese.",
-        "ocorrencias": 1,
-        "ultimo": "2026-11-09",
-        "origens": [
-          "2026-11-09-caso04-lca-lcm:artigo-fidelidade.r1.parecer.json:A2"
-        ]
-      },
-      {
-        "texto": "Cada número de efeito aparece em um único lugar (seção de evidências ou quadro); proposta e discussão remetem à seção, sem repetir estimativas.",
-        "ocorrencias": 1,
-        "ultimo": "2026-11-09",
-        "origens": [
-          "2026-11-09-caso04-lca-lcm:artigo-forma.r1.parecer.json:A1"
-        ]
-      },
-      {
-        "texto": "Critérios de saída da última fase e critérios de retorno não se duplicam: uma lista completa, a outra remete a ela e acrescenta só o que é próprio.",
-        "ocorrencias": 1,
-        "ultimo": "2026-11-09",
-        "origens": [
-          "2026-11-09-caso04-lca-lcm:artigo-forma.r1.parecer.json:A2"
-        ]
-      },
-      {
-        "texto": "A Discussão interpreta e confronta; não reapresenta resultados já descritos — remete à seção e diz o que aquilo muda na conduta.",
-        "ocorrencias": 1,
-        "ultimo": "2026-11-09",
-        "origens": [
-          "2026-11-09-caso04-lca-lcm:artigo-forma.r1.parecer.json:A3"
-        ]
-      },
-      {
-        "texto": "Ao condensar o texto das etapas, não troque o desenho do estudo (revisão narrativa não é consenso) nem estenda um dado de confiabilidade a um teste que o estudo não avaliou.",
-        "ocorrencias": 1,
-        "ultimo": "2026-11-09",
-        "origens": [
-          "2026-11-09-caso04-lca-lcm:banca.r1.parecer.json:A3"
-        ]
       }
     ],
     "fps-5-designer-slides": [
+      {
+        "texto": "Antes de fechar um título que resume uma intervenção, confira os outros slides e o quadro de recomendações sobre a mesma intervenção: o título não pode ser desmentido por um ensaio maior já mostrado.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-10",
+        "origens": [
+          "2026-11-10-sono:banca.r1.parecer.json:A4"
+        ]
+      },
+      {
+        "texto": "A faixa numérica do título usa os extremos exatos mostrados no corpo; arredondar um extremo para cima torna o título mais forte que a fonte.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-10",
+        "origens": [
+          "2026-11-10-sono:slides.r1.parecer.json:A1"
+        ]
+      },
+      {
+        "texto": "Evite verbos ambíguos ao resumir uma comparação ('manteve', 'se mantém'); diga 'igual entre os grupos' ou 'não mudou'.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-10",
+        "origens": [
+          "2026-11-10-sono:slides.r1.parecer.json:A2"
+        ]
+      },
       {
         "texto": "Título de slide é uma afirmação; o corpo do slide não repete o título nem dados de outro slide.",
         "ocorrencias": 1,
@@ -402,6 +570,14 @@
     ],
     "fps-lider-ciencia": [
       {
+        "texto": "Ao mandar corrigir um achado no artigo, busque o mesmo dado (id da referência) em slides.json e nos arquivos das etapas anteriores e confirme a propagação de todos os achados da rodada, não só de um.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-10",
+        "origens": [
+          "2026-11-10-sono:banca.r1.parecer.json:A3"
+        ]
+      },
+      {
         "texto": "Na revisão de fidelidade, confira o Resumo e o Abstract frase a frase contra o corpo: cada número deve aparecer com a população e o horizonte do estudo de origem.",
         "ocorrencias": 1,
         "ultimo": "2026-11-09",
@@ -444,6 +620,14 @@
     ],
     "fps-lider-producao": [
       {
+        "texto": "Quando um achado crítico ou maior é registrado em um produto, procure a mesma afirmação nos outros produtos já aprovados (títulos de slides, notas, resumo) antes de fechar a etapa; aprovação anterior não isenta o slide.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-10",
+        "origens": [
+          "2026-11-10-sono:banca.r1.parecer.json:A1"
+        ]
+      },
+      {
         "texto": "Antes de aprovar a forma, busque no texto final os nomes de papéis do pipeline (líder, avaliador, prescritor, executor, etapa, agente): o documento do estudante só pode falar em 'os autores' ou 'o grupo'.",
         "ocorrencias": 1,
         "ultimo": "2026-11-09",
@@ -473,6 +657,16 @@
         "ultimo": "2026-11-09",
         "origens": [
           "2026-11-09-caso04-lca-lcm:banca.r1.parecer.json:A11"
+        ]
+      }
+    ],
+    "fps-lider-pesquisa": [
+      {
+        "texto": "Ao aprovar uma metanálise como evidência, compare a população incluída (faixas etárias, número de estudos por faixa) com o critério de elegibilidade do trabalho; se o texto perder uma ressalva que o quadro estruturado registra, devolva.",
+        "ocorrencias": 1,
+        "ultimo": "2026-11-10",
+        "origens": [
+          "2026-11-10-sono:banca.r1.parecer.json:A2"
         ]
       }
     ]
