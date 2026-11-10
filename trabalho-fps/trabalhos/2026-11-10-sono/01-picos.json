@@ -1,0 +1,278 @@
+{
+  "tema": "Sono, perda de peso e rotina: como o sono impacta hábito alimentar, composição corporal e treinamento",
+  "tipo_pergunta": "intervencao",
+  "estrutura": "PICOS",
+  "pergunta": "Em adultos com sobrepeso/obesidade ou em programa de emagrecimento (P), a restrição ou a curta duração do sono (I), em comparação com o sono adequado ou com a extensão/melhora do sono (C), altera a perda de peso, a composição corporal (massa gorda × massa livre de gordura) e a ingestão energética (O) em ensaios clínicos randomizados e sínteses desses ensaios (S)?",
+  "elementos": [
+    {
+      "letra": "P",
+      "rotulo": "População",
+      "texto": "Adultos (≥ 18 anos) com sobrepeso ou obesidade, ou em dieta/programa de perda de peso. Em estudos de apetite e ingestão, aceitam-se adultos saudáveis com sono habitual de 7–9 h (restrição experimental) ou com sono habitualmente curto (extensão), rotulados como evidência indireta."
+    },
+    {
+      "letra": "I",
+      "rotulo": "Intervenção / exposição",
+      "texto": "Restrição ou curta duração do sono (experimental, p. ex. 4–5,5 h na cama; ou sono habitual < 7 h). Em paralelo, estudadas como intervenção: extensão do sono, higiene do sono e TCC-I."
+    },
+    {
+      "letra": "C",
+      "rotulo": "Comparador",
+      "texto": "Sono adequado (7–9 h; 8,5 h na cama em protocolos experimentais), sono habitual sem intervenção ou controle de atenção."
+    },
+    {
+      "letra": "O",
+      "rotulo": "Desfechos",
+      "texto": "Primários: variação do peso corporal, massa gorda, massa livre de gordura (e proporção do peso perdido como gordura) e ingestão energética. Secundários: gasto energético, fome/apetite, escolhas alimentares, adesão (sessões, dieta, atividade física) e marcadores hormonais/metabólicos (substitutos)."
+    },
+    {
+      "letra": "S",
+      "rotulo": "Desenho dos estudos",
+      "texto": "ECR paralelos e cruzados; revisões sistemáticas e metanálises de ECR; diretrizes/consensos. Coortes prospectivas dentro de programas de perda de peso entram como evidência complementar (prognóstico e adesão)."
+    }
+  ],
+  "desfechos": {
+    "primarios": [
+      "Variação do peso corporal (kg ou %)",
+      "Massa gorda e massa livre de gordura (kg) e proporção do peso perdido como gordura",
+      "Ingestão energética (kcal/dia), preferencialmente medida de forma objetiva (água duplamente marcada, balanço de energia)"
+    ],
+    "secundarios": [
+      "Gasto energético total e de repouso",
+      "Fome, apetite e desejo por alimentos (escalas)",
+      "Escolhas alimentares (açúcares livres, gordura, qualidade da dieta)",
+      "Adesão: frequência às sessões, adesão à dieta, atividade física, tempo sedentário",
+      "Circunferência da cintura",
+      "Glicose, insulina e sensibilidade à insulina"
+    ],
+    "substitutos": [
+      "Grelina, leptina e PYY (hormônios do apetite)",
+      "Sensibilidade à insulina / HOMA-IR",
+      "Quociente respiratório (oxidação de substratos)",
+      "Ativação cerebral em neuroimagem frente a alimentos",
+      "Fome subjetiva em escalas visuais analógicas",
+      "Peso e composição corporal são desfechos intermediários de saúde; ECR de manipulação do sono não medem mortalidade nem eventos cardiovasculares"
+    ]
+  },
+  "descritores": {
+    "decs": [
+      "Privação do Sono",
+      "Sono",
+      "Duração do Sono",
+      "Qualidade do Sono",
+      "Higiene do Sono",
+      "Perda de Peso",
+      "Composição Corporal",
+      "Ingestão de Energia",
+      "Obesidade",
+      "Sobrepeso",
+      "Restrição Calórica",
+      "Grelina",
+      "Leptina",
+      "Apetite",
+      "Fome",
+      "Exercício Físico",
+      "Treinamento Resistido",
+      "Desempenho Atlético",
+      "Força Muscular",
+      "Terapia Cognitivo-Comportamental",
+      "Transtornos do Início e da Manutenção do Sono",
+      "Ritmo Circadiano"
+    ],
+    "mesh": [
+      "Sleep Deprivation",
+      "Sleep",
+      "Sleep Duration",
+      "Sleep Quality",
+      "Sleep Hygiene",
+      "Body Weight",
+      "Weight Loss",
+      "Body Composition",
+      "Energy Intake",
+      "Obesity",
+      "Overweight",
+      "Caloric Restriction",
+      "Ghrelin",
+      "Leptin",
+      "Appetite",
+      "Hunger",
+      "Exercise",
+      "Resistance Training",
+      "Athletic Performance",
+      "Muscle Strength",
+      "Cognitive Behavioral Therapy",
+      "Sleep Initiation and Maintenance Disorders",
+      "Circadian Rhythm"
+    ],
+    "termos_livres": [
+      "sleep restriction",
+      "sleep curtailment",
+      "short sleep",
+      "sleep extension",
+      "partial sleep deprivation",
+      "catch-up sleep",
+      "social jetlag",
+      "time in bed",
+      "fat-free mass",
+      "fat mass",
+      "food intake",
+      "food reward",
+      "time-restricted eating"
+    ]
+  },
+  "estrategias": {
+    "pubmed": "(\"Sleep Deprivation\"[MeSH Terms] OR \"sleep restriction\"[tiab] OR \"short sleep\"[tiab] OR \"sleep extension\"[tiab] OR \"sleep curtailment\"[tiab]) AND (\"Body Weight\"[MeSH Terms] OR \"weight loss\"[tiab] OR \"body composition\"[tiab] OR \"fat mass\"[tiab] OR \"fat-free mass\"[tiab] OR \"Energy Intake\"[MeSH Terms] OR \"energy intake\"[tiab]) AND (\"Randomized Controlled Trial\"[Publication Type] OR \"Meta-Analysis\"[Publication Type] OR \"Systematic Review\"[Publication Type] OR crossover[tiab])",
+    "pubmed_filtros": "Filtro de data aplicado: 2004/01/01 a 2026/11/10, tipo de data = pdat (data de publicação). Executada em 10/11/2026 via mcp__PubMed__search_articles: 151 resultados (100 + 51 em duas páginas). Com 2016/01/01–2026/11/10: 97 resultados.",
+    "pubmed_secundarias": {
+      "hormonios_apetite_ingestao": {
+        "string": "(\"Sleep Deprivation\"[MeSH Terms] OR \"sleep restriction\"[tiab] OR \"short sleep\"[tiab] OR \"sleep curtailment\"[tiab]) AND (ghrelin[tiab] OR leptin[tiab] OR appetite[tiab] OR hunger[tiab] OR \"food intake\"[tiab] OR \"food reward\"[tiab] OR \"energy intake\"[tiab]) AND (\"Meta-Analysis\"[Publication Type] OR \"Systematic Review\"[Publication Type] OR \"Randomized Controlled Trial\"[Publication Type] OR crossover[tiab])",
+        "filtro": "2004/01/01–2026/11/10 pdat",
+        "n": 95
+      },
+      "perda_de_peso_adesao_coortes": {
+        "string": "(\"sleep duration\"[tiab] OR \"sleep quality\"[tiab] OR \"sleep efficiency\"[tiab] OR \"short sleep\"[tiab]) AND \"weight loss\"[tiab] AND (\"behavioral weight loss\"[tiab] OR \"lifestyle intervention\"[tiab] OR \"caloric restriction\"[tiab] OR \"weight loss intervention\"[tiab] OR hypocaloric[tiab])",
+        "filtro": "2004/01/01–2026/11/10 pdat",
+        "n": 58
+      },
+      "treino_desempenho_recuperacao": {
+        "string": "(\"Sleep Deprivation\"[MeSH Terms] OR \"sleep restriction\"[tiab] OR \"sleep loss\"[tiab] OR \"short sleep\"[tiab]) AND (\"exercise performance\"[tiab] OR \"athletic performance\"[tiab] OR \"muscle strength\"[tiab] OR \"muscle protein synthesis\"[tiab] OR \"resistance training\"[tiab] OR \"resistance exercise\"[tiab]) AND (\"Meta-Analysis\"[Publication Type] OR \"Systematic Review\"[Publication Type] OR \"Randomized Controlled Trial\"[Publication Type])",
+        "filtro": "2004/01/01–2026/11/10 pdat",
+        "n": 29
+      },
+      "exercicio_efeito_no_sono": {
+        "string": "(\"Exercise\"[MeSH Terms] OR \"exercise training\"[tiab] OR \"physical activity\"[tiab]) AND (\"Sleep Quality\"[MeSH Terms] OR \"sleep quality\"[tiab] OR \"sleep duration\"[tiab]) AND (\"Meta-Analysis\"[Publication Type] OR \"Systematic Review\"[Publication Type]) AND adult[MeSH Terms]",
+        "filtro": "2012/01/01–2026/11/10 pdat",
+        "n": 84
+      },
+      "intervencoes_para_melhorar_o_sono": {
+        "string": "(\"Sleep Hygiene\"[MeSH Terms] OR \"sleep hygiene\"[tiab] OR \"sleep extension\"[tiab] OR \"time in bed\"[tiab]) AND (\"Sleep Duration\"[MeSH Terms] OR \"sleep duration\"[tiab] OR \"total sleep time\"[tiab] OR \"Sleep Quality\"[MeSH Terms]) AND (\"Meta-Analysis\"[Publication Type] OR \"Systematic Review\"[Publication Type]) AND adult[MeSH Terms]",
+        "filtro": "2010/01/01–2026/11/10 pdat",
+        "n": 191
+      }
+    },
+    "bvs": "(mh:\"Privação do Sono\" OR tw:\"restrição de sono\" OR tw:\"sono curto\" OR tw:\"extensão do sono\" OR tw:\"curta duração do sono\" OR mh:\"Sleep Deprivation\") AND (mh:\"Perda de Peso\" OR mh:\"Composição Corporal\" OR mh:\"Ingestão de Energia\" OR tw:\"massa gorda\" OR tw:\"massa livre de gordura\" OR mh:\"Body Composition\" OR mh:\"Energy Intake\") AND (type_of_study:\"clinical_trials\" OR type_of_study:\"systematic_reviews\" OR type_of_study:\"guidelines\") — NÃO executada (BVS inacessível na rede restrita); conferir DeCS e contagem no portal.",
+    "cochrane": "#1 MeSH descriptor: [Sleep Deprivation] explode all trees; #2 (\"sleep restriction\" OR \"short sleep\" OR \"sleep extension\" OR \"sleep curtailment\" OR \"partial sleep deprivation\"):ti,ab,kw; #3 #1 OR #2; #4 MeSH descriptor: [Weight Loss] explode all trees; #5 MeSH descriptor: [Body Composition] explode all trees; #6 MeSH descriptor: [Energy Intake] explode all trees; #7 (\"weight loss\" OR \"fat mass\" OR \"fat-free mass\" OR \"body composition\" OR \"energy intake\" OR \"food intake\"):ti,ab,kw; #8 #4 OR #5 OR #6 OR #7; #9 #3 AND #8 (limitar a Trials e Cochrane Reviews, 2004–2026) — NÃO executada (Cochrane Library inacessível na rede restrita)."
+  },
+  "lista_controle": [
+    {
+      "pmid": "20921542",
+      "ref": "nedeltcheva2010",
+      "recuperado_pela_string_principal": true
+    },
+    {
+      "pmid": "29438540",
+      "ref": "wang2018",
+      "recuperado_pela_string_principal": true
+    },
+    {
+      "pmid": "35129580",
+      "ref": "tasali2022",
+      "recuperado_pela_string_principal": true
+    },
+    {
+      "pmid": "27804960",
+      "ref": "alkhatib2017",
+      "recuperado_pela_string_principal": true
+    },
+    {
+      "pmid": "26098388",
+      "ref": "capers2015",
+      "recuperado_pela_string_principal": true
+    },
+    {
+      "pmid": "42407080",
+      "ref": "zuraikat2026 (extra)",
+      "recuperado_pela_string_principal": true
+    },
+    {
+      "pmid": "42044907",
+      "ref": "mostafa2026 (extra)",
+      "recuperado_pela_string_principal": true
+    },
+    {
+      "pmid": "30977011",
+      "ref": "yu2019 (extra)",
+      "recuperado_pela_string_principal": true
+    }
+  ],
+  "criterios": {
+    "inclusao": [
+      "Adultos ≥ 18 anos; sobrepeso/obesidade ou programa de perda de peso (população-alvo); adultos saudáveis aceitos para ingestão/apetite, como evidência indireta",
+      "Sono manipulado (restrição, extensão, higiene do sono, TCC-I) ou exposição a sono curto/qualidade ruim em coorte dentro de programa de emagrecimento",
+      "Desfechos: peso, composição corporal, ingestão/gasto energético, apetite, escolhas alimentares ou adesão",
+      "Desenhos: ECR (paralelo/cruzado), revisão sistemática com ou sem metanálise, diretriz/consenso; coortes prospectivas como complemento",
+      "Duração do protocolo informada (dias/semanas) e método de aferição do sono (actigrafia, polissonografia ou questionário)"
+    ],
+    "exclusao": [
+      "Crianças e adolescentes (estudos pediátricos só como contexto)",
+      "População-alvo com apneia obstrutiva do sono ou outro distúrbio do sono diagnosticado (tratamento clínico fora do escopo)",
+      "Intervenção farmacológica (hipnóticos, melatonina, canabinoides) como foco",
+      "Estudos em animais, in vitro ou de modelagem sem desfecho humano",
+      "Privação total aguda sem desfecho de ingestão, composição ou desempenho (usada apenas em mecanismo)",
+      "Relatos de caso, editoriais, cartas, protocolos sem resultados e resumos de congresso"
+    ],
+    "periodo": "2004/01/01 a 2026/11/10 (âncora: primeiro ECR de apetite e restrição parcial do sono); priorizar 2016–2026 e manter os clássicos pivotais",
+    "idiomas": [
+      "pt",
+      "en",
+      "es"
+    ]
+  },
+  "subtemas": [
+    {
+      "nome": "Base mínima do sono: duração recomendada, arquitetura, processos S e C, como se mede (PSG, actigrafia, PSQI)",
+      "prioridade": "essencial",
+      "destino": "agente2"
+    },
+    {
+      "nome": "Sono e hábito alimentar: fome e saciedade (grelina, leptina), recompensa, ingestão e escolhas",
+      "prioridade": "essencial",
+      "destino": "ambos"
+    },
+    {
+      "nome": "Sono, perda de peso e composição corporal (massa gorda × massa livre de gordura em dieta) — pergunta central",
+      "prioridade": "essencial",
+      "destino": "ambos"
+    },
+    {
+      "nome": "Sono e treinamento: desempenho, força, recuperação, síntese proteica muscular, percepção de esforço, lesão; e o exercício como intervenção para o sono",
+      "prioridade": "essencial",
+      "destino": "ambos"
+    },
+    {
+      "nome": "Sono, rotina e adesão: sono como preditor de perda de peso e de adesão em programas de emagrecimento",
+      "prioridade": "essencial",
+      "destino": "agente3"
+    },
+    {
+      "nome": "Rotina: glicose/insulina, cortisol, humor, jet lag social, trabalho em turnos, telas, cafeína e álcool",
+      "prioridade": "complementar",
+      "destino": "agente2"
+    },
+    {
+      "nome": "O que fazer na prática: extensão do sono, higiene do sono, TCC-I, horário de treino e refeições, cochilo",
+      "prioridade": "essencial",
+      "destino": "agente3"
+    },
+    {
+      "nome": "Mitos e controvérsias: recuperar o sono no fim de semana, melatonina e suplementos, wearables",
+      "prioridade": "complementar",
+      "destino": "agente3"
+    },
+    {
+      "nome": "Sinais de encaminhamento (apneia, insônia crônica)",
+      "prioridade": "complementar",
+      "destino": "agente2"
+    }
+  ],
+  "perguntas_chave": [
+    "A restrição do sono durante uma dieta hipocalórica muda a proporção do peso perdido como gordura e como massa magra, e o peso total?",
+    "Quanto o sono curto aumenta a ingestão energética em ensaios controlados, e esse aumento é compensado pelo gasto?",
+    "Estender o sono de quem dorme pouco reduz a ingestão e o peso em condições de vida real, e por quanto tempo o efeito se sustenta?",
+    "Os hormônios do apetite (grelina, leptina) explicam o aumento da fome, ou a recompensa e a escolha alimentar pesam mais?",
+    "Sono curto e sono de má qualidade ou irregular predizem menor perda de peso e menor adesão em programas de emagrecimento?",
+    "Quanto a perda de sono reduz desempenho, força e síntese proteica muscular, e o exercício compensa parte do efeito?",
+    "Quais intervenções de higiene do sono e de comportamento estendem o sono em adultos sem distúrbio do sono, e em quantos minutos?",
+    "O exercício (e o horário dele) melhora o sono de adultos, e o exercício vigoroso à noite o atrapalha?",
+    "Dormir mais no fim de semana compensa a restrição da semana em termos metabólicos?"
+  ]
+}
