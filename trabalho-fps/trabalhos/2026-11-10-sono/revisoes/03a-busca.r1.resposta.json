@@ -1,0 +1,17 @@
+[
+  {
+    "id": "A1",
+    "status": "corrigido",
+    "detalhe": "Reincluídos como incluir os 10 PMIDs do núcleo da pergunta e das controvérsias (42407080, 23814334, 23479616, 26098388, 33001515, 32537891, 15583226, 20357041, 25683266, 31217539), mantidos os subtemas. Registro em 03a-busca.json (observacoes) e recálculo de cortados_por_volume e para_avaliacao."
+  },
+  {
+    "id": "A2",
+    "status": "corrigido",
+    "detalhe": "Reincluídos 17 RS/MA e sínteses (subtemas 4, 6, 8 e 9) conforme o parecer. Excluídos com motivo registrado os 18 PMIDs indicados: 4 ECR do subtema 2 e 5 ECR do subtema 8 (cobertos pela MA 40498475) por corte_volume, e os demais por população, intervenção, desfecho, desenho ou diretriz superada (20730332). Sem alteração em strings."
+  },
+  {
+    "id": "A3",
+    "status": "corrigido",
+    "detalhe": "Acrescentados 6 registros dirigidos pela etapa 01 (38016484, 42948184, 32078168, 38749363, 33378539, 23922121) com metadados de get_article_metadata (PubMed), fonte_busca 'dirigida (01-referencias)', como incluir. 33164742 reclassificado para incluir (subtema 7). Diretriz OMA 2026: não localizada em fonte aberta nem no PubMed; excluída por 'fonte não verificável' e retirada de diretrizes_web. Riemann 2023 e Edinger 2021 incluídas em diretrizes_web. PRISMA recalculado: identificados 1888, duplicatas 274, triados 1614, excluídos título/resumo 1156, cortados por volume 363, para avaliação 95."
+  }
+]
