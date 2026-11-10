@@ -72,6 +72,12 @@ def _ponto_final(s: str) -> str:
     return s if s.endswith((".", "?", "!")) else s + "."
 
 
+def _fecha_titulo(s: str) -> str:
+    """Título seguido de ponto, sem duplicar quando já termina em ? ou ! (evita 'matter?.')."""
+    s = s.rstrip()
+    return s + " " if s.endswith(("?", "!")) else s + ". "
+
+
 # ------------------------------------------------------------------------ autores
 
 def parse_autor(autor: str) -> tuple[str, str]:
@@ -201,12 +207,12 @@ def referencia_segmentos(ref: dict, cfg: dict | None = None) -> list[Segmento]:
         # Entrada pelo título: primeira palavra em maiúsculas, sem destaque.
         partes = titulo.split(" ", 1)
         t = partes[0].upper() + (" " + partes[1] if len(partes) > 1 else "")
-        segs.append((t + (f": {sub}" if sub else "") + ". ", ""))
+        segs.append((_fecha_titulo(t + (f": {sub}" if sub else "")), ""))
 
     if tipo == "artigo":
         if autores:
             segs.append((autores + " ", ""))
-            segs.append((titulo + (f": {sub}" if sub else "") + ". ", ""))
+            segs.append((_fecha_titulo(titulo + (f": {sub}" if sub else "")), ""))
         else:
             titulo_sem_autor(False)
         if not ref.get("periodico"):
@@ -227,7 +233,7 @@ def referencia_segmentos(ref: dict, cfg: dict | None = None) -> list[Segmento]:
         segs += _acesso_online(ref)
     elif tipo == "capitulo":
         segs.append(((autores or "") + " ", ""))
-        segs.append((titulo + (f": {sub}" if sub else "") + ". ", ""))
+        segs.append((_fecha_titulo(titulo + (f": {sub}" if sub else "")), ""))
         segs.append(("In: ", ""))
         if ref.get("in_autores"):
             segs.append((_lista_in(ref["in_autores"], ref.get("in_papel")) + " ", ""))

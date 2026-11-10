@@ -277,6 +277,13 @@ class GeradorArtigo:
         self.cfg.setdefault("ano", dt.date.today().year)
         self.refs = self._carregar_refs()
         self.refs = abnt.ordenar_e_desambiguar(self.refs, self.cfg)
+        if self.cfg.get("apenas_citadas", True):
+            # a/b no ano só entre as obras que entram na lista (NBR 10520): sem isso,
+            # uma obra não citada do mesmo autor e ano deixa um '2026b' sem '2026a'.
+            texto = json.dumps(dados, ensure_ascii=False)
+            usados = set(re.findall(r"@([A-Za-z0-9][\w:-]*[A-Za-z0-9]|[A-Za-z0-9])", texto))
+            abnt.ordenar_e_desambiguar([r for r in self.refs if r["id"] in usados
+                                        or set(r.get("aliases") or []) & usados], self.cfg)
         self.cit = abnt.Citador(self.refs, str(self.cfg["estilo_citacao"]))
         self.doc = Document()
         self.notas = NotasRodape(self.cfg["fonte"], self.cfg["tamanho_menor"])

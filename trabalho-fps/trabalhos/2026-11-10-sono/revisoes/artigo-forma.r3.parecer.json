@@ -1,0 +1,81 @@
+{
+  "etapa": "artigo-forma",
+  "rodada": 1,
+  "ciclo": "capitulo (formato capítulo de livro; os arquivos r1-r2 avaliaram a versão em formato de artigo, hoje guardada em artigo-formato-artigo.json)",
+  "revisor": "fps-lider-producao",
+  "modelo_revisor": "opus",
+  "executor": "fps-4-redator-abnt",
+  "arquivos_revisados": ["artigo.json", "artigo.docx", "previa-artigo/ (folha de contato e páginas 1, 2, 11-14, 20-21, 25, 27-28)", "validacao.md"],
+  "criterios": {
+    "estrutura_abnt": 7.5,
+    "redacao_cientifica": 8.0,
+    "coesao_do_argumento": 8.5,
+    "discussao_critica": 9.0,
+    "ausencia_de_redundancia": 6.0
+  },
+  "achados": [
+    {
+      "id": "A1",
+      "gravidade": "maior",
+      "local": "artigo.json > caixas das seções 3, 4, 5, 8 e 9 e Quadro 2 (seção 7)",
+      "problema": "Redundância sistemática entre caixas e quadro: a mesma mensagem aparece duas ou três vezes na mesma seção (Pontos-chave + Mito ou fato? + Na prática) e o Quadro 2 repete quase literalmente os itens das caixas Na prática das seções 3, 4 e 5.",
+      "evidencia": "Seção 3.4: Pontos-chave item 3 ('narrativa de grelina e leptina é a que menos resiste'), caixa Mito ('Mais mito do que fato... direções inconsistentes') e Na prática item 3 ('desregulação da leptina passa uma certeza que os dados não têm') dizem a mesma coisa. Seção 4.5: Pontos-chave item 4 = caixa Mito 'Dormir mais emagrece' (ensaio de duas semanas × metanálise). Seção 5.4: caixa Mito repete Pontos-chave itens 1-2 ('força cai cerca de 3%', 'esforço mais pesado'). Seção 8: a caixa Pontos-chave final repete as três caixas Mito (melatonina 'efeito de poucos minutos... inconsistente em adultos' quase palavra por palavra; rastreadores 'não substituem a polissonografia'). Seção 9: Pontos-chave item 3 repete o 2º parágrafo ('baixo custo... atenção primária... profissional de Educação Física'). Quadro 2, linhas 7-10 ('Após uma noite curta, manter a sessão, treinar de manhã se possível e esperar esforço percebido maior'; 'Treino intenso à noite pode ser mantido por bons dormidores'; 'planejar os lanches e evitar alimento livre à noite'; 'manter treino resistido e proteína adequada' com @morton2018) repetem Na prática 5.4 item 1, Pontos-chave 5.4 item 4, Na prática 3.4 item 1 e Na prática 4.5 item 2.",
+      "correcao": "Regra: dentro de cada seção, cada mensagem mora em uma só caixa; a caixa Mito leva a crença e o veredito, a Pontos-chave leva o restante, a Na prática leva só ação. (1) 3.4: apagar Pontos-chave item 3 e Na prática item 3. (2) 4.5: no Pontos-chave item 4, manter só 'Nas coortes de programas de emagrecimento, o sono prediz o resultado de forma inconsistente.' (3) 5.4: reescrever o texto da caixa Mito sem números: 'Exagero. A sessão continua útil; o que os estudos não permitem dizer é o que acontece quando a noite curta se repete por semanas.' (4) Seção 8: apagar a caixa Pontos-chave final. (5) Seção 9: apagar Pontos-chave item 3. (6) Quadro 2: apagar as linhas 7, 8, 9 e 10 (noite curta/treino, treino noturno, lanches, déficit calórico) e acrescentar ao parágrafo anterior ao quadro: 'As orientações sobre alimentação e treino estão nas caixas Na prática das seções 3, 4 e 5.'",
+      "responsavel": "fps-4-redator-abnt",
+      "licao": "Em capítulo com caixas, cada mensagem tem um único lugar por seção (Mito = crença e veredito; Pontos-chave = o resto; Na prática = ação), e o quadro de orientações não repete as caixas Na prática: remete a elas."
+    },
+    {
+      "id": "A2",
+      "gravidade": "maior",
+      "local": "artigo.json > seção 'Os limites do que sabemos', 3º parágrafo; Introdução, 5º parágrafo",
+      "problema": "Linguagem e contagens do processo de revisão no corpo do capítulo, contra a especificação de capítulo (sem contagens de busca; 'como foi construído' em no máximo um parágrafo curto).",
+      "evidencia": "Seção 9, §3: 'parte dos registros elegíveis foi deixada de lado, por limite de volume, sem leitura individual', 'A qualidade das revisões foi avaliada, na maior parte, a partir dos resumos', 'uma diretriz de 2026 sobre obesidade e sono não pôde ser verificada e não foi usada', 'Na busca de atualização do consenso de atletas, 9 de 13 registros recentes não foram lidos'. Introdução §5 repete as bases não consultadas (BVS e Cochrane), dito de novo na seção 9.",
+      "correcao": "Substituir o 3º parágrafo da seção 9 por: 'O próprio capítulo tem limites. Como revisão narrativa, não esgota a literatura: duas bases (Biblioteca Virtual em Saúde e Cochrane Library) não foram consultadas, alguns estudos foram lidos apenas no resumo, e os números do Vigitel e o valor de 7 h do consenso AASM/SRS vêm de fontes secundárias [@menezesjunior2026; @liu2016].' Na Introdução §5, apagar a oração '; a Biblioteca Virtual em Saúde e a Cochrane Library não puderam ser consultadas' (fica só na seção 9).",
+      "responsavel": "fps-4-redator-abnt",
+      "licao": "No formato capítulo, as limitações do próprio texto são ditas em uma ou duas frases de linguagem comum; contagens de registros, buscas de atualização e itens não lidos ficam nos arquivos do pipeline, não no corpo."
+    },
+    {
+      "id": "A3",
+      "gravidade": "maior",
+      "local": "artigo.json > Introdução, 6º parágrafo ('Três cuidados de leitura') e 5º parágrafo (convenção de verbos)",
+      "problema": "A Introdução tem seis parágrafos e termina num bloco técnico de ~200 palavras (dose dos experimentos, desfechos substitutos, IC, I², DPM, ±) que é material de consulta, não de leitura corrida; além disso, a convenção 'indica = moderada, sugere = baixa, é compatível com = muito baixa' é redundante, porque o corpo declara a confiança por extenso em quase todo achado ('confiança baixa', 'confiança muito baixa').",
+      "evidencia": "Prévia p. 2-3: o leitor só chega à seção 2 depois de um parágrafo de glossário estatístico. Exemplos de confiança declarada por extenso: 3.3 'A confiança é baixa para a associação... muito baixa para o efeito'; 4.2 'com confiança baixa'; 5.1 'A confiança para a força é baixa'; 6.3 'confiança baixa'.",
+      "correcao": "(1) Transformar o 6º parágrafo da Introdução numa caixa logo após a Introdução: {\"tipo\": \"caixa\", \"titulo\": \"Como ler este capítulo\", \"itens\": [dose dos experimentos (4 a 5,5 h, adultos jovens saudáveis, dias a semanas; extensão só em quem dorme < 6,5 h); desfechos substitutos (grelina, leptina, cortisol, síntese proteica, MLG não equivalem a fome, músculo ou desempenho); IC 95% e I²; DPM; o sinal ±]}, mantendo as citações @spaeth2013, @nedeltcheva2010, @covassin2022 e @tasali2022. (2) Apagar do 5º parágrafo a frase da convenção de verbos (''indica' marca evidência de confiança moderada...') e substituir por 'Em cada tema, o texto privilegia as sínteses e os ensaios que respondem diretamente à pergunta e diz, em palavras, o quanto se pode confiar em cada achado.' A Introdução passa a terminar no parágrafo do fio condutor e do método.",
+      "responsavel": "fps-4-redator-abnt",
+      "licao": "Em capítulo didático, glossário estatístico e premissas de leitura vão para uma caixa 'Como ler este capítulo'; a Introdução em prosa termina no fio condutor."
+    },
+    {
+      "id": "A4",
+      "gravidade": "maior",
+      "local": "artigo.docx > prévia p. 11-13 (subseção 4.5 e Quadro 1); subseções 'Resumo e aplicação' 3.4, 4.5, 5.4 e 6.4",
+      "problema": "Título órfão e paginação ruim: '4.5 RESUMO E APLICAÇÃO' fica sozinho no pé da página 10 e as caixas começam na seguinte; o 'quebra_pagina' antes do Quadro 1 deixa meia página em branco, e o quadro aparece só depois das caixas da seção 4, quatro páginas após a primeira remissão (3.2, Covassin). Além disso, as subseções numeradas 'Resumo e aplicação' contêm só caixas (exceto 6.4, que tem uma frase) e não existem nas seções 2, 7, 8 e 9, que terminam com caixa sem subtítulo: estrutura inconsistente.",
+      "evidencia": "previa-artigo/pagina-11.png (título 4.5 na última linha), pagina-12.png (três caixas e metade inferior vazia), pagina-13.png (Quadro 1 sozinho).",
+      "correcao": "(1) Remover as quatro subseções 'Resumo e aplicação' e pôr as caixas diretamente ao fim de cada seção, como nas seções 2, 7, 8 e 9; a frase de 6.4 ('Em síntese, o sono entra na rotina...') passa para o fim do último parágrafo de 6.3. (2) Apagar o bloco quebra_pagina e mover o Quadro 1 para logo após o 1º parágrafo da seção 4 ('Esta é a pergunta...'), onde é anunciado. (3) Regerar e conferir na prévia que nenhum título fica no pé de página.",
+      "responsavel": "fps-4-redator-abnt",
+      "licao": "Quadro vai logo após o parágrafo que o anuncia, sem quebra de página forçada; seção que termina em caixas não ganha subtítulo numerado só para elas."
+    }
+  ],
+  "correcoes_aplicadas": [
+    "Seções 3.1 e 5.2: 'entre os estudos recuperados' (jargão de busca) -> 'na literatura revisada'.",
+    "Quadro 1, linha Mostafa: estimativas com sinal negativo e IC positivo ('−0,64 (0,28 a 1,01)', '−0,83 kg (0,32 a 1,35)', '−5,55 kg (4,13 a 6,97)', 'Ingestão −147,5 (5,74 a 289,41)') reescritas como 'redução de X (IC)', mantendo os números da fonte; o leitor via um IC que não continha a estimativa.",
+    "Quadro 1: 'Sem IC no resumo' -> 'IC não disponível'; 'Valores absolutos e ICs não acessados (só o resumo)' -> 'Valores absolutos e IC não disponíveis'.",
+    "Seção 5.1: 'com efeito nos membros inferiores e tarefas da manhã pouco afetadas' (ambíguo) -> 'com efeito nos membros inferiores, e não nos superiores, e pouco efeito nas tarefas feitas pela manhã' (conforme 02-analise-critica.md, passo 2).",
+    "Seção 5.1: 'convive com esse achado porque inclui' -> 'não contradiz esse achado, porque inclui'.",
+    "Seção 8.3: retirada a repetição, no mesmo parágrafo, de que o resumo de Lee et al. não explicita o sentido da diferença; 'o resumo de @lee2025 não define' -> '@lee2025 não definem'.",
+    "Seção 6.2: '(o resumo não traz intervalo de confiança legível)' -> '(sem intervalo de confiança disponível)'.",
+    "Seção 8, abertura: 'confronta três delas' -> 'confronta quatro delas' (o título lista quatro crenças).",
+    "scripts/gerar_docx_abnt.py: o sufixo a/b do ano passa a ser calculado só entre as obras citadas (o capítulo mostrava 'Dzierzewski et al., 2026b' sem 2026a, porque dzierzewski2026cst não é citada; NBR 10520).",
+    "scripts/abnt.py: título terminado em '?' ou '!' não recebe ponto extra (corrige 'too far?.' e 'does weekend sleep matter?.' na lista; NBR 6023).",
+    "artigo.docx e previa-artigo/ regenerados; validar_trabalho.py: 0 erros, ~8.700 palavras."
+  ],
+  "pontos_fortes": [
+    "Fio condutor claro ('o dia de quem dorme pouco') e transições curtas no início de cada seção.",
+    "A crítica da evidência está dentro de cada tema, em linguagem natural, sem GRADE/AMSTAR/RoB/PRISMA no corpo.",
+    "Divergências tratadas com honestidade (Tasali × Mostafa, Spaeth × Yu, Craven × Knowles, paradoxo da MLG).",
+    "Quadros legíveis, com larguras proporcionais e fonte; formatação ABNT (capa, seções numeradas, citações autor-data, referências NBR 6023) correta após as correções de script.",
+    "Objetivos de aprendizagem, caixas Mito ou fato? e Questões para reflexão bem escolhidos para o público de pós-graduação."
+  ],
+  "escalonado": false,
+  "veredito_revisor": "REVISAR",
+  "resumo": "1ª rodada do ciclo capítulo. Capítulo bem construído e crítico, com fio condutor e transições; ABNT de formatação correta depois de duas correções de script (sufixo 2026b órfão e '?.' nas referências). Quatro achados maiores, todos de forma: redundância sistemática entre caixas e Quadro 2 (A1), linguagem e contagens do processo de revisão na seção de limites (A2), Introdução com glossário estatístico em prosa e convenção de verbos redundante (A3), título órfão, quadro deslocado e subseções 'Resumo e aplicação' inconsistentes (A4). Oito correções menores aplicadas direto. Sugestão ao usuário (não é achado): o título cobre só alimentação e composição corporal, mas o capítulo trata também de treino e rotina; considerar 'Sono, alimentação, composição corporal e treinamento: o que muda quando se dorme pouco'. Para o fps-lider-ciencia: a linha de Mostafa no Quadro 1 foi reescrita como 'redução de X' sem mudar números; a expressão 'de qualidade moderada ou fraca' para Knowles 2018 é ambígua (a revisão ou os estudos incluídos?) e merece conferência."
+}
