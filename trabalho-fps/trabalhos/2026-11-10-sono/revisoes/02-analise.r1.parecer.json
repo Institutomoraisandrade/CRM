@@ -1,0 +1,94 @@
+{
+  "etapa": "02-analise",
+  "rodada": 1,
+  "revisor": "fps-lider-ciencia",
+  "modelo_revisor": "opus",
+  "executor": "fps-2-analista-critico",
+  "arquivos_revisados": [
+    "trabalho-fps/trabalhos/2026-11-10-sono/02-analise-critica.md",
+    "trabalho-fps/trabalhos/2026-11-10-sono/02-referencias.json",
+    "trabalho-fps/trabalhos/2026-11-10-sono/verificacao/02-referencias.relatorio.json"
+  ],
+  "criterios": {
+    "cadeia_causal": 7.5,
+    "precisao_dos_detalhes": 7.0,
+    "classificacao_da_certeza": 8.0,
+    "analise_critica": 7.0,
+    "qualidade_das_fontes": 8.0
+  },
+  "achados": [
+    {
+      "id": "A1",
+      "gravidade": "critica",
+      "local": "02-analise-critica.md > Síntese item 5; §1.1 passo 5; §2 (linhas 'Duração do sono' e 'Peso'); §5 equívoco 2",
+      "problema": "A resposta sobre 'dormir mais emagrece' omite os resultados de peso das duas fontes citadas e afirma o contrário do que elas mostram: 'efeito no peso não é demonstrado isoladamente'. O ECR de extensão citado só pela ingestão também reduziu o peso, e a metanálise citada só pelo IMC também relata redução de peso e de ingestão com intervenções de sono.",
+      "evidencia": "Tasali 2022 (PMID 35129580, texto completo PMC8822469, Tabela 2): peso −0,87 kg (IC 95% −1,39 a −0,35; P = 0,001) com extensão versus controle em 2 semanas; composição da mudança: massa livre de gordura −0,62 kg (−1,02 a −0,23) e gordura −0,25 kg (−0,39 a −0,10); limitação dos autores: o grupo controle ganhou 0,39 kg (0,02 a 0,76), o que contribui para o efeito. Mostafa 2026 (PMID 42044907, resumo): extensão isolada não reduziu o IMC (−0,15 kg/m²; −0,40 a 0,11; 5 estudos, n = 138), mas intervenções de sono reduziram o peso no sobrepeso (0,83 kg; 0,32 a 1,35; 6 estudos, n = 337) e na obesidade (5,55 kg; 4,13 a 6,97; 3 estudos, n = 72) e reduziram a ingestão em 147,5 kcal/dia (5,74 a 289,41; 5 estudos, n = 223); estudos pré-pós aceitos.",
+      "correcao": "Em Síntese 5, §1.1 passo 5, §2 e equívoco 2: (1) acrescentar o efeito de Tasali no peso (−0,87 kg em 2 semanas, versus controle) e a composição (sobretudo massa livre de gordura, o que reforça a ressalva de água/glicogênio do §1.3), com a limitação do ganho no controle e da curta duração; (2) acrescentar os resultados de peso e ingestão de Mostafa com n e a ressalva de pré-pós; (3) reescrever a correção do equívoco 2 com verbo proporcional, por exemplo: 'Em quem dorme pouco, estender o sono reduziu a ingestão e o peso em 2 semanas num ECR; em metanálise, a extensão isolada não mudou o IMC; não há prova de efeito sustentado.' Ajustar a linha correspondente em §4.1 se for o caso.",
+      "responsavel": "fps-2-analista-critico",
+      "licao": "Quando citar um ensaio por um desfecho, leia e reporte os demais desfechos do mesmo ensaio que afetam a conclusão, sobretudo os que contrariam a tese do texto."
+    },
+    {
+      "id": "A2",
+      "gravidade": "maior",
+      "local": "02-analise-critica.md > §1.4 passo 2 (Força); §5 equívoco 5",
+      "problema": "A conclusão sobre força se apoia só na revisão de 2018 (sem metanálise) e ignora que a metanálise de 2022, já citada, encontrou efeito significativo em todas as categorias, inclusive força. A correção do equívoco 5 ('o prejuízo é maior em resistência/esforço prolongado') não tem fonte: nenhum resumo lido compara a magnitude entre categorias.",
+      "evidencia": "Craven 2022 (PMID 35708888, resumo): 'Effects were significant for all exercise categories' (66 desfechos de força); efeito consistente só com privação e restrição tardia; cerca de 0,4% a menos por hora acordado antes da tarefa; tarefas da manhã praticamente sem efeito; 89% homens. Knowles 2018 (PMID 29422383): privação pouco afeta a força; restrição consecutiva reduz força em movimentos multiarticulares; qualidade moderada/fraca.",
+      "correcao": "Reescrever §1.4 passo 2 confrontando Craven (força afetada na média, com I² 98,1%) e Knowles (sobretudo multiarticulares e sob restrição repetida); incluir a relação dose-resposta com horas acordado (~0,4%/h) e o padrão de perda de sono (privação e restrição tardia, não restrição precoce), que é informação prática para o item 6. No equívoco 5, retirar 'maior em resistência' ou sustentá-lo com a análise de subgrupo do texto completo PMC9584849.",
+      "responsavel": "fps-2-analista-critico",
+      "licao": "Entre duas sínteses sobre o mesmo desfecho, a conclusão segue a mais recente e mais completa ou explicita a divergência; comparações de magnitude entre subgrupos só com o dado de subgrupo à vista."
+    },
+    {
+      "id": "A3",
+      "gravidade": "maior",
+      "local": "02-analise-critica.md > §6 Fluxo para slides (título e etapa 6)",
+      "problema": "O título do fluxo 'da noite mal dormida ao platô na balança' afirma um desfecho que as fontes não mostram: nos dois ECR em dieta o peso perdido foi semelhante e o que mudou foi a composição; e o ECR de extensão mostrou redução de peso. A etapa 6 diz 'efeito líquido inconsistente', mas o título já vendeu o platô.",
+      "evidencia": "Wang 2018 (PMID 29438540, resumo): 'despite similar weight loss', com menor proporção de gordura no grupo com restrição; Nedeltcheva 2010 (PMID 20921542, resumo): o desfecho primário é a composição (gordura 0,6 × 1,4 kg; massa livre de gordura 2,4 × 1,5 kg); Tasali 2022 (PMC8822469): −0,87 kg com extensão.",
+      "correcao": "Trocar o título por um que corresponda à evidência (ex.: 'da noite mal dormida à perda de peso de pior qualidade') e reescrever a etapa 6: 'Em dieta, o peso perdido foi parecido; mudou a composição (dois ECR pequenos). Fora da dieta, o efeito no peso é inconsistente.' Manter o rótulo de certeza herdado do §4.1.",
+      "responsavel": "fps-2-analista-critico",
+      "licao": "O título do fluxo para slides é uma afirmação e precisa da mesma certeza que a etapa mais fraca que ele resume."
+    },
+    {
+      "id": "A4",
+      "gravidade": "maior",
+      "local": "02-analise-critica.md > §1.5 item 5 (cafeína); §1.6 (melatonina); Pendências 2 e 3",
+      "problema": "Dois pontos centrais dos itens 5 e 7 do briefing ficaram sem fonte por falta de leitura, não por falta de evidência: (a) o mecanismo da cafeína sobre o sono (antagonismo da adenosina), que liga a cafeína ao processo homeostático do §1.0; (b) o mito mais comum sobre melatonina, 'ajuda a dormir', que não aparece: o texto trata só de desempenho e composição, e as 13 revisões de melatonina da string 7 não foram triadas.",
+      "evidencia": "§1.5 item 5 declara 'não foi verificado em fonte desta etapa'; Pendências 2 e 3; briefing item 7 inclui melatonina explicitamente.",
+      "correcao": "(a) Localizar no PubMed e verificar ao menos uma revisão sobre cafeína, adenosina e sono (busca sugerida: caffeine[tiab] AND adenosine[tiab] AND sleep[tiab] AND review[pt]) e citar o mecanismo com o rótulo adequado; (b) triar as 13 revisões de melatonina e reportar o efeito em latência/tempo total de sono em adultos de ao menos uma revisão sistemática com metanálise, com números do resumo e rótulo de certeza, mantendo o limite do briefing (sem manejo farmacológico de distúrbios). Se não houver síntese acessível, declarar como lacuna de existência, não de leitura.",
+      "responsavel": "fps-2-analista-critico",
+      "licao": "Lacuna de leitura em tema que o briefing pede explicitamente não pode ficar como pendência: leia ao menos a melhor síntese disponível antes de entregar."
+    }
+  ],
+  "correcoes_aplicadas": [
+    "Síntese item 3: 'eleva o esforço percebido' passou a 'após uma noite sem dormir, eleva o esforço percebido' (Temesi 2013, PMID 23760468, é privação total).",
+    "§1.1 passo 5: acrescentada a frase sobre macronutrientes nas sínteses (gordura consistente; carboidrato sem mudança em Al Khatib 2017 e Soltanieh 2021 e aumento em Fenton 2021), conferida nos resumos dos PMIDs 27804960, 34620371 e 33001515.",
+    "§1.1 passo 5: descrição da medida de Tasali 2022 corrigida para 'balanço energético (água duplamente marcada + pesagens diárias e DXA)', conforme o resumo e o texto completo.",
+    "§1.2 item 1: 'atrasa a fase circadiana, aumentando a ingestão' passou a relato de simultaneidade, como no resumo de Depner 2019 (PMID 30827911).",
+    "§1.3 passo 4: acrescentado que a revisão de 50 ECR relata aumento do peso com a restrição (Soltanieh 2021, resumo).",
+    "§6 etapa 5: especificado que o esforço percebido maior vem de privação total e a queda da síntese, de 4 h por 5 noites (Temesi 2013; Saner 2020).",
+    "02-referencias.json, 13 itens 'revisar' do verificador (hanlon2020, broussard2016, nedeltcheva2009, mcneil2017, tajiri2018, chaput2023, morton2018, palmer2024, chang2015, gooley2011, akerstedt2019, sun2018, vonrosen2017): decisão de manter o ano do fascículo. Conferi por busca PubMed com [ppdat] que todos têm data de impressão no ano registrado (epub no ano anterior); volumes/fascículos conferem (ex.: Obesity 24(1), Psychol Bull 150(4), J Clin Endocrinol Metab 96(3), J Sleep Res 28(1)). Nenhuma alteração."
+  ],
+  "detalhes_conferidos_na_fonte": [
+    "Nedeltcheva 2010 (PMID 20921542): gordura 1,4 × 0,6 kg (−55%), massa livre de gordura 1,5 × 2,4 kg (+60%), n = 10 — confere.",
+    "Wang 2018 (PMID 29438540): 57 ± 36 min/dia nos 5 dias de restrição, n = 15 + 21, P = 0,016, 0,033 e 0,029 — confere.",
+    "Spiegel 2004 (PMID 15583226): leptina −18%, grelina +28%, fome +24%, 12 homens — confere.",
+    "Lamon 2021 (PMID 33400856): síntese −18%, cortisol +21%, testosterona −24%, n = 13 (7 H, 6 M) — confere.",
+    "Craven 2022 (PMID 35708888): −7,56% (−11,9 a −3,13), I² 98,1%, 69 publicações, manhã praticamente sem efeito — confere (ver A2 para o que faltou).",
+    "Spaeth 2013 (PMID 23814334): +0,97 × +0,11 kg; 552,9 kcal entre 22h e 3h59; gordura 33,0% × 28,2% — confere.",
+    "Leproult 2011 (PMC4445839): estágio 2 −2 h 45 min, REM −1 h 3 min, estágios 3+4 +9 min; testosterona 16,5 × 18,4 nmol/L; cortisol diurno semelhante — confere.",
+    "Broussard 2012 (PMID 23070488): 0,71 × 0,24 nM, AUC −30%, n = 7 — confere.",
+    "Hanlon 2016, Broussard 2016, Benedict 2011, Temesi 2013, Radcliffe 2021, Garaulet 2013, Markwald 2013, Covassin 2022, Depner 2019, Leproult 1997, Van Cauter 2000, Åkerstedt 2019, Al Khatib 2017, Fenton 2021, Lin 2020, Gooley 2011, Drake 2013, Palmer 2024, Saner 2020, Mesas 2023, Knowles 2018 — números e direções conferem com os resumos."
+  ],
+  "pontos_fortes": [
+    "Cadeia causal bem construída e honesta: o texto rebaixa a narrativa grelina/leptina com dados e desloca o peso para recompensa, inibição e lanches noturnos, o que é a leitura correta da literatura.",
+    "Rótulos de certeza aplicados afirmação por afirmação; marcação [inferência] separa raciocínio próprio de dado; a tensão 'adipócito resistente à insulina deveria lipolisar mais' é um ótimo exemplo de pensamento crítico de mecanismo.",
+    "Quase todos os números conferidos (mais de 25 estudos) batem com resumo ou texto completo; 43 referências verificadas, sem ids duplicados nem citações órfãs.",
+    "Peso do item 1 respeitado (um parágrafo), como pediu o usuário."
+  ],
+  "decisoes_contestacoes": [],
+  "pendencias_orquestrador": [
+    "Lowe 2020: direção da diferença no índice de massa magra apendicular segue como 'conferir no texto completo' (PMC7522780); não afeta a cadeia principal.",
+    "Lesão em adultos: lacuna declarada aceita (só adolescentes); não exigida nesta rodada."
+  ],
+  "escalonado": false,
+  "resumo": "Análise sólida na cadeia e nos números, mas a resposta a 'dormir mais emagrece' omite e contradiz os resultados de peso das próprias fontes (Tasali −0,87 kg; Mostafa, peso e ingestão), a conclusão sobre força ignora a metanálise de 2022, o título do fluxo afirma um 'platô' que os ECR não mostram, e melatonina-para-dormir e mecanismo da cafeína ficaram sem leitura. 1 crítico, 3 maiores, 6 menores corrigidos; anos de fascículo mantidos."
+}
