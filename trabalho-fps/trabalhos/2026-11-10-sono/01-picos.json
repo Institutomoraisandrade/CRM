@@ -76,7 +76,15 @@
       "Força Muscular",
       "Terapia Cognitivo-Comportamental",
       "Transtornos do Início e da Manutenção do Sono",
-      "Ritmo Circadiano"
+      "Ritmo Circadiano",
+      "Melatonina",
+      "Suplementos Nutricionais",
+      "Cafeína",
+      "Consumo de Bebidas Alcoólicas",
+      "Polissonografia",
+      "Dispositivos Eletrônicos Vestíveis",
+      "Refeições",
+      "Cronotipo"
     ],
     "mesh": [
       "Sleep Deprivation",
@@ -101,7 +109,16 @@
       "Muscle Strength",
       "Cognitive Behavioral Therapy",
       "Sleep Initiation and Maintenance Disorders",
-      "Circadian Rhythm"
+      "Circadian Rhythm",
+      "Melatonin",
+      "Dietary Supplements",
+      "Caffeine",
+      "Alcohol Drinking",
+      "Polysomnography",
+      "Wearable Electronic Devices",
+      "Meals",
+      "Chronotype",
+      "Weight Gain"
     ],
     "termos_livres": [
       "sleep restriction",
@@ -116,41 +133,127 @@
       "fat mass",
       "food intake",
       "food reward",
-      "time-restricted eating"
+      "time-restricted eating",
+      "insufficient sleep",
+      "caloric intake",
+      "weekend recovery sleep",
+      "consumer sleep technology",
+      "sleep tracker",
+      "meal timing",
+      "late-night eating",
+      "eveningness",
+      "screen time",
+      "blue light"
     ]
   },
   "estrategias": {
-    "pubmed": "(\"Sleep Deprivation\"[MeSH Terms] OR \"sleep restriction\"[tiab] OR \"short sleep\"[tiab] OR \"sleep extension\"[tiab] OR \"sleep curtailment\"[tiab]) AND (\"Body Weight\"[MeSH Terms] OR \"weight loss\"[tiab] OR \"body composition\"[tiab] OR \"fat mass\"[tiab] OR \"fat-free mass\"[tiab] OR \"Energy Intake\"[MeSH Terms] OR \"energy intake\"[tiab]) AND (\"Randomized Controlled Trial\"[Publication Type] OR \"Meta-Analysis\"[Publication Type] OR \"Systematic Review\"[Publication Type] OR crossover[tiab])",
-    "pubmed_filtros": "Filtro de data aplicado: 2004/01/01 a 2026/11/10, tipo de data = pdat (data de publicação). Executada em 10/11/2026 via mcp__PubMed__search_articles: 151 resultados (100 + 51 em duas páginas). Com 2016/01/01–2026/11/10: 97 resultados.",
+    "pubmed": "(\"Sleep Deprivation\"[MeSH Terms] OR \"sleep restriction\"[tiab] OR \"short sleep\"[tiab] OR \"sleep extension\"[tiab] OR \"insufficient sleep\"[tiab]) AND (\"Body Weight\"[MeSH Terms] OR \"weight loss\"[tiab] OR \"body composition\"[tiab] OR \"fat mass\"[tiab] OR \"fat-free mass\"[tiab] OR \"Energy Intake\"[MeSH Terms] OR \"energy intake\"[tiab] OR \"weight gain\"[tiab] OR \"caloric intake\"[tiab] OR \"food intake\"[tiab]) AND (\"Randomized Controlled Trial\"[Publication Type] OR \"Meta-Analysis\"[Publication Type] OR \"Systematic Review\"[Publication Type] OR crossover[tiab] OR experimental[tiab] OR inpatient[tiab])",
+    "pubmed_filtros": "Filtro de data: 2004/01/01 a 2026/11/10, tipo de data = pdat (data de publicação). Executada em 10/11/2026 (r1) via mcp__PubMed__search_articles: 279 resultados. Com 2016/01/01–2026/11/10: 157 resultados. Versão da r0 (15 operadores, sem \"insufficient sleep\", \"weight gain\", \"caloric intake\", \"food intake\", \"experimental\", \"inpatient\" e com \"sleep curtailment\"): 151 e 97 resultados, e não recuperava Spaeth 2013 nem Markwald 2013.",
     "pubmed_secundarias": {
       "hormonios_apetite_ingestao": {
         "string": "(\"Sleep Deprivation\"[MeSH Terms] OR \"sleep restriction\"[tiab] OR \"short sleep\"[tiab] OR \"sleep curtailment\"[tiab]) AND (ghrelin[tiab] OR leptin[tiab] OR appetite[tiab] OR hunger[tiab] OR \"food intake\"[tiab] OR \"food reward\"[tiab] OR \"energy intake\"[tiab]) AND (\"Meta-Analysis\"[Publication Type] OR \"Systematic Review\"[Publication Type] OR \"Randomized Controlled Trial\"[Publication Type] OR crossover[tiab])",
         "filtro": "2004/01/01–2026/11/10 pdat",
-        "n": 95
+        "n": 95,
+        "operadores": 14
       },
       "perda_de_peso_adesao_coortes": {
         "string": "(\"sleep duration\"[tiab] OR \"sleep quality\"[tiab] OR \"sleep efficiency\"[tiab] OR \"short sleep\"[tiab]) AND \"weight loss\"[tiab] AND (\"behavioral weight loss\"[tiab] OR \"lifestyle intervention\"[tiab] OR \"caloric restriction\"[tiab] OR \"weight loss intervention\"[tiab] OR hypocaloric[tiab])",
         "filtro": "2004/01/01–2026/11/10 pdat",
-        "n": 58
+        "n": 58,
+        "operadores": 9
       },
       "treino_desempenho_recuperacao": {
         "string": "(\"Sleep Deprivation\"[MeSH Terms] OR \"sleep restriction\"[tiab] OR \"sleep loss\"[tiab] OR \"short sleep\"[tiab]) AND (\"exercise performance\"[tiab] OR \"athletic performance\"[tiab] OR \"muscle strength\"[tiab] OR \"muscle protein synthesis\"[tiab] OR \"resistance training\"[tiab] OR \"resistance exercise\"[tiab]) AND (\"Meta-Analysis\"[Publication Type] OR \"Systematic Review\"[Publication Type] OR \"Randomized Controlled Trial\"[Publication Type])",
         "filtro": "2004/01/01–2026/11/10 pdat",
-        "n": 29
+        "n": 29,
+        "operadores": 12
       },
       "exercicio_efeito_no_sono": {
         "string": "(\"Exercise\"[MeSH Terms] OR \"exercise training\"[tiab] OR \"physical activity\"[tiab]) AND (\"Sleep Quality\"[MeSH Terms] OR \"sleep quality\"[tiab] OR \"sleep duration\"[tiab]) AND (\"Meta-Analysis\"[Publication Type] OR \"Systematic Review\"[Publication Type]) AND adult[MeSH Terms]",
         "filtro": "2012/01/01–2026/11/10 pdat",
-        "n": 84
+        "n": 84,
+        "operadores": 9
       },
       "intervencoes_para_melhorar_o_sono": {
         "string": "(\"Sleep Hygiene\"[MeSH Terms] OR \"sleep hygiene\"[tiab] OR \"sleep extension\"[tiab] OR \"time in bed\"[tiab]) AND (\"Sleep Duration\"[MeSH Terms] OR \"sleep duration\"[tiab] OR \"total sleep time\"[tiab] OR \"Sleep Quality\"[MeSH Terms]) AND (\"Meta-Analysis\"[Publication Type] OR \"Systematic Review\"[Publication Type]) AND adult[MeSH Terms]",
         "filtro": "2010/01/01–2026/11/10 pdat",
-        "n": 191
+        "n": 191,
+        "operadores": 10
+      },
+      "experimentos_laboratorio_sem_filtro_de_desenho": {
+        "string": "(\"sleep restriction\"[tiab] OR \"insufficient sleep\"[tiab] OR \"Sleep Deprivation\"[Majr]) AND (\"weight gain\"[tiab] OR \"Weight Gain\"[MeSH Terms] OR \"caloric intake\"[tiab]) AND (inpatient[tiab] OR laboratory[tiab] OR randomized[tiab] OR experimental[tiab])",
+        "filtro": "2004/01/01–2026/11/10 pdat",
+        "n": 87,
+        "operadores": 9,
+        "controle": "Spaeth 2013 (23814334), Markwald 2013 (23479616) e Covassin 2022 (35361348) recuperados"
+      },
+      "melatonina_composicao_desempenho": {
+        "string": "(melatonin[ti] OR \"Melatonin\"[MeSH Terms]) AND (\"body weight\"[tiab] OR \"body composition\"[tiab] OR obesity[MeSH Terms] OR \"exercise performance\"[tiab] OR \"athletic performance\"[tiab] OR \"healthy adults\"[tiab]) AND (\"Meta-Analysis\"[Publication Type] OR \"Systematic Review\"[Publication Type] OR \"Randomized Controlled Trial\"[Publication Type])",
+        "filtro": "2010/01/01–2026/11/10 pdat",
+        "n": 61,
+        "operadores": 10,
+        "controle": "Faria 2024 (36872593) e Guo 2026 (41769636) recuperados; inclui estudos em animais (excluir na triagem)"
+      },
+      "suplementos_sono_revisoes": {
+        "string": "(sleep[ti]) AND (supplements[ti] OR supplementation[ti] OR \"Dietary Supplements\"[MeSH Terms] OR magnesium[ti] OR glycine[ti] OR tryptophan[ti] OR valerian[ti]) AND (\"Meta-Analysis\"[Publication Type] OR \"Systematic Review\"[Publication Type])",
+        "filtro": "2010/01/01–2026/11/10 pdat",
+        "n": 34,
+        "operadores": 9,
+        "controle": "Bodur 2025 (39551351) recuperado"
+      },
+      "wearables_vs_polissonografia": {
+        "string": "(\"consumer sleep\"[tiab] OR \"sleep tracker*\"[tiab] OR \"sleep-tracking\"[tiab] OR wearable*[tiab]) AND (polysomnography[MeSH Terms] OR polysomnograph*[tiab]) AND (validity[tiab] OR validation[tiab] OR accuracy[tiab] OR performance[tiab])",
+        "filtro": "2016/01/01–2026/11/10 pdat; versão de revisões (acrescenta AND (\"Meta-Analysis\"[Publication Type] OR \"Systematic Review\"[Publication Type])): 21 resultados",
+        "n": 453,
+        "operadores": 9,
+        "controle": "Chinoy 2021 (33378539) recuperado pela ampla; Lee 2025 (39484805) pela de revisões (11 operadores); 3 curingas"
+      },
+      "recuperar_fim_de_semana": {
+        "string": "(\"catch-up sleep\"[tiab] OR \"weekend sleep\"[tiab] OR \"recovery sleep\"[tiab] OR \"weekend recovery\"[tiab] OR \"sleep debt\"[tiab]) AND (obesity[MeSH Terms] OR \"body weight\"[tiab] OR \"body mass index\"[tiab] OR \"insulin sensitivity\"[tiab] OR \"energy intake\"[tiab] OR \"metabolic health\"[tiab] OR \"glucose metabolism\"[tiab])",
+        "filtro": "2010/01/01–2026/11/10 pdat; com filtro AND (\"Meta-Analysis\"[Publication Type] OR \"Systematic Review\"[Publication Type] OR \"Randomized Controlled Trial\"[Publication Type]) (14 operadores): 13 resultados",
+        "n": 151,
+        "operadores": 11,
+        "controle": "Depner 2019 (30827911) recuperado pela ampla; Killick 2015 (25683266) pela versão com filtro de desenho"
+      },
+      "refeicoes_alimentacao_tardia_cronotipo_sleep_no_titulo": {
+        "string": "(\"meal timing\"[tiab] OR \"late eating\"[tiab] OR \"late-night eating\"[tiab] OR \"night eating\"[tiab] OR \"time-restricted eating\"[tiab] OR chronotype[tiab] OR \"timing of food intake\"[tiab]) AND (sleep[ti]) AND (\"body weight\"[tiab] OR \"body composition\"[tiab] OR \"energy intake\"[tiab] OR obesity[MeSH Terms] OR \"weight gain\"[tiab])",
+        "filtro": "2010/01/01–2026/11/10 pdat",
+        "n": 112,
+        "operadores": 12,
+        "controle": "Depner 2019 (30827911) e Spaeth 2013 (23814334) recuperados"
+      },
+      "cronotipo_jetlag_social_revisoes": {
+        "string": "(chronotype[tiab] OR \"social jetlag\"[tiab] OR \"social jet lag\"[tiab] OR eveningness[tiab]) AND (obesity[MeSH Terms] OR \"body mass index\"[tiab] OR \"body weight\"[tiab] OR \"meal timing\"[tiab] OR \"energy intake\"[tiab]) AND (\"Meta-Analysis\"[Publication Type] OR \"Systematic Review\"[Publication Type])",
+        "filtro": "2010/01/01–2026/11/10 pdat",
+        "n": 22,
+        "operadores": 10,
+        "controle": "Teixeira 2022 (35771674) recuperado"
+      },
+      "cafeina_alcool_telas_adultos": {
+        "string": "(caffeine[tiab] OR \"Caffeine\"[MeSH Terms] OR \"Alcohol Drinking\"[MeSH Terms] OR alcohol[tiab] OR \"screen time\"[tiab] OR \"blue light\"[tiab] OR \"blue-light\"[tiab] OR smartphone*[tiab]) AND (sleep[ti]) AND (\"Meta-Analysis\"[Publication Type] OR \"Systematic Review\"[Publication Type] OR \"Randomized Controlled Trial\"[Publication Type]) NOT (child*[ti] OR adolescen*[ti])",
+        "filtro": "2010/01/01–2026/11/10 pdat",
+        "n": 243,
+        "operadores": 13,
+        "controle": "Gardiner 2023 (36870101) e Drake 2013 (24235903) recuperados; 3 curingas; ruído de \"alcohol\" em outros contextos"
+      },
+      "diretrizes_consensos_declaracoes": {
+        "string": "(sleep[ti] OR \"sleep duration\"[ti]) AND (guideline[pt] OR \"Practice Guideline\"[pt] OR consensus[ti] OR \"scientific statement\"[ti] OR \"position statement\"[ti] OR recommendations[ti]) AND (obesity OR weight OR health OR athletes OR exercise) NOT (child*[ti] OR infant*[ti] OR adolescen*[ti] OR pediatric*[ti] OR pregnan*[ti])",
+        "filtro": "2010/01/01–2026/11/10 pdat",
+        "n": 287,
+        "operadores": 17,
+        "controle": "Watson 2015 (25979105), Hirshkowitz 2015 (29073398), St-Onge 2016 (27647451) e Walsh 2021 (33144349) recuperados; Lloyd-Jones 2022 (35766027) não, porque o título não traz \"sleep\" (busca dirigida por \"Life's Essential 8\"[ti]); 5 curingas"
+      },
+      "diretriz_brasileira_sono": {
+        "string": "(Brazil[ad] OR Brazilian[ti] OR \"Brazilian Sleep Association\"[tiab] OR \"Associação Brasileira do Sono\"[tiab]) AND (sleep[ti] OR insomnia[ti]) AND (guideline[pt] OR \"Practice Guideline\"[pt] OR consensus[ti] OR recommendations[ti] OR guidelines[ti])",
+        "filtro": "2010/01/01–2026/11/10 pdat",
+        "n": 26,
+        "operadores": 10,
+        "controle": "Recuperou a diretriz de insônia da ABS 2023 (38370879) e a de 2010 (20730332). Nenhuma diretriz/consenso brasileiro de duração do sono, sono e peso ou sono e exercício; Guia de Atividade Física (MS, 2021) e site da ABS inacessíveis (403)"
       }
     },
-    "bvs": "(mh:\"Privação do Sono\" OR tw:\"restrição de sono\" OR tw:\"sono curto\" OR tw:\"extensão do sono\" OR tw:\"curta duração do sono\" OR mh:\"Sleep Deprivation\") AND (mh:\"Perda de Peso\" OR mh:\"Composição Corporal\" OR mh:\"Ingestão de Energia\" OR tw:\"massa gorda\" OR tw:\"massa livre de gordura\" OR mh:\"Body Composition\" OR mh:\"Energy Intake\") AND (type_of_study:\"clinical_trials\" OR type_of_study:\"systematic_reviews\" OR type_of_study:\"guidelines\") — NÃO executada (BVS inacessível na rede restrita); conferir DeCS e contagem no portal.",
-    "cochrane": "#1 MeSH descriptor: [Sleep Deprivation] explode all trees; #2 (\"sleep restriction\" OR \"short sleep\" OR \"sleep extension\" OR \"sleep curtailment\" OR \"partial sleep deprivation\"):ti,ab,kw; #3 #1 OR #2; #4 MeSH descriptor: [Weight Loss] explode all trees; #5 MeSH descriptor: [Body Composition] explode all trees; #6 MeSH descriptor: [Energy Intake] explode all trees; #7 (\"weight loss\" OR \"fat mass\" OR \"fat-free mass\" OR \"body composition\" OR \"energy intake\" OR \"food intake\"):ti,ab,kw; #8 #4 OR #5 OR #6 OR #7; #9 #3 AND #8 (limitar a Trials e Cochrane Reviews, 2004–2026) — NÃO executada (Cochrane Library inacessível na rede restrita)."
+    "bvs": "(mh:\"Privação do Sono\" OR tw:\"restrição de sono\" OR tw:\"sono curto\" OR tw:\"extensão do sono\" OR tw:\"sono insuficiente\" OR tw:\"curta duração do sono\" OR mh:\"Sleep Deprivation\") AND (mh:\"Perda de Peso\" OR mh:\"Composição Corporal\" OR mh:\"Ingestão de Energia\" OR tw:\"massa gorda\" OR tw:\"massa livre de gordura\" OR mh:\"Body Composition\" OR mh:\"Energy Intake\" OR tw:\"ganho de peso\" OR tw:\"ingestão calórica\") AND (type_of_study:\"clinical_trials\" OR type_of_study:\"systematic_reviews\" OR type_of_study:\"guidelines\") — NÃO executada (BVS inacessível na rede restrita); conferir DeCS e contagem no portal.",
+    "cochrane": "#1 MeSH descriptor: [Sleep Deprivation] explode all trees; #2 (\"sleep restriction\" OR \"short sleep\" OR \"sleep extension\" OR \"sleep curtailment\" OR \"partial sleep deprivation\" OR \"insufficient sleep\"):ti,ab,kw; #3 #1 OR #2; #4 MeSH descriptor: [Weight Loss] explode all trees; #5 MeSH descriptor: [Body Composition] explode all trees; #6 MeSH descriptor: [Energy Intake] explode all trees; #7 (\"weight loss\" OR \"fat mass\" OR \"fat-free mass\" OR \"body composition\" OR \"energy intake\" OR \"food intake\" OR \"weight gain\" OR \"caloric intake\"):ti,ab,kw; #8 #4 OR #5 OR #6 OR #7; #9 #3 AND #8 (limitar a Trials e Cochrane Reviews, 2004–2026) — NÃO executada (Cochrane Library inacessível na rede restrita).",
+    "pubmed_operadores": "20 (4 + 9 + 5 OR e 2 AND); limite da ferramenta: 20 operadores e 5 curingas por string"
   },
   "lista_controle": [
     {
@@ -192,6 +295,24 @@
       "pmid": "30977011",
       "ref": "yu2019 (extra)",
       "recuperado_pela_string_principal": true
+    },
+    {
+      "pmid": "23814334",
+      "ref": "spaeth2013 (r1: fora do vocabulário da r0; entra por \"experimental\")",
+      "recuperado_pela_string_principal": true,
+      "recuperado_pela_versao_r0": false
+    },
+    {
+      "pmid": "23479616",
+      "ref": "markwald2013 (r1: fora do vocabulário da r0; entra por \"inpatient\")",
+      "recuperado_pela_string_principal": true,
+      "recuperado_pela_versao_r0": false
+    },
+    {
+      "pmid": "35361348",
+      "ref": "covassin2022 (r1: ECR recuperado pela r0 e ausente da síntese)",
+      "recuperado_pela_string_principal": true,
+      "recuperado_pela_versao_r0": true
     }
   ],
   "criterios": {
@@ -200,12 +321,13 @@
       "Sono manipulado (restrição, extensão, higiene do sono, TCC-I) ou exposição a sono curto/qualidade ruim em coorte dentro de programa de emagrecimento",
       "Desfechos: peso, composição corporal, ingestão/gasto energético, apetite, escolhas alimentares ou adesão",
       "Desenhos: ECR (paralelo/cruzado), revisão sistemática com ou sem metanálise, diretriz/consenso; coortes prospectivas como complemento",
-      "Duração do protocolo informada (dias/semanas) e método de aferição do sono (actigrafia, polissonografia ou questionário)"
+      "Duração do protocolo informada (dias/semanas) e método de aferição do sono (actigrafia, polissonografia ou questionário)",
+      "Mitos e rotina (subtemas 6, 8 e 9): revisões, metanálises e ECR em adultos sobre melatonina, suplementos, rastreadores de sono contra polissonografia, recuperação de fim de semana, horário das refeições, cronotipo, cafeína, álcool e telas"
     ],
     "exclusao": [
       "Crianças e adolescentes (estudos pediátricos só como contexto)",
       "População-alvo com apneia obstrutiva do sono ou outro distúrbio do sono diagnosticado (tratamento clínico fora do escopo)",
-      "Intervenção farmacológica (hipnóticos, melatonina, canabinoides) como foco",
+      "Farmacoterapia de distúrbios do sono (hipnóticos, tratamento medicamentoso da insônia) como foco. Melatonina e suplementos em adultos sem distúrbio do sono NÃO são excluídos: entram como avaliação do mito (subtema 8), não como tratamento",
       "Estudos em animais, in vitro ou de modelagem sem desfecho humano",
       "Privação total aguda sem desfecho de ingestão, composição ou desempenho (usada apenas em mecanismo)",
       "Relatos de caso, editoriais, cartas, protocolos sem resultados e resumos de congresso"
@@ -254,9 +376,14 @@
       "destino": "agente3"
     },
     {
-      "nome": "Mitos e controvérsias: recuperar o sono no fim de semana, melatonina e suplementos, wearables",
+      "nome": "Horário das refeições, beliscar à noite e cronotipo × sono e peso (item 2 do briefing)",
+      "prioridade": "essencial",
+      "destino": "ambos"
+    },
+    {
+      "nome": "Mitos e controvérsias: recuperar o sono no fim de semana, melatonina e suplementos (como avaliação do mito, não como tratamento), wearables (buscas executadas na r1)",
       "prioridade": "complementar",
-      "destino": "agente3"
+      "destino": "ambos"
     },
     {
       "nome": "Sinais de encaminhamento (apneia, insônia crônica)",
@@ -273,6 +400,9 @@
     "Quanto a perda de sono reduz desempenho, força e síntese proteica muscular, e o exercício compensa parte do efeito?",
     "Quais intervenções de higiene do sono e de comportamento estendem o sono em adultos sem distúrbio do sono, e em quantos minutos?",
     "O exercício (e o horário dele) melhora o sono de adultos, e o exercício vigoroso à noite o atrapalha?",
-    "Dormir mais no fim de semana compensa a restrição da semana em termos metabólicos?"
-  ]
+    "Dormir mais no fim de semana compensa a restrição da semana em termos metabólicos?",
+    "Comer tarde da noite ou em horário desalinhado ao cronotipo piora o efeito do sono curto sobre peso e glicose, e mudar o horário das refeições compensa?",
+    "Quais fontes de melatonina, suplementos e rastreadores de sono têm síntese de ensaios em adultos saudáveis, e o que elas mostram sobre desempenho, composição e acurácia?"
+  ],
+  "lista_controle_nota": "Conferência em 10/11/2026: 11 de 11 recuperados pela string principal da r1 (2004/01/01–2026/11/10, pdat; 279 resultados). 2016–2026 pela lista completa; 2004–2015 por janelas de data (2010, 2015, 2013/03–07). Controles das strings secundárias estão no campo \"controle\" de cada uma."
 }

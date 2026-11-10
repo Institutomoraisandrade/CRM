@@ -1,0 +1,17 @@
+[
+  {
+    "id": "A1",
+    "status": "corrigido",
+    "detalhe": "String principal ampliada (20 operadores, limite da ferramenta; saiu 'sleep curtailment', entraram 'insufficient sleep', 'weight gain', 'caloric intake', 'food intake', 'experimental' e 'inpatient'): 279 resultados (2004/01/01-2026/11/10, pdat) e 157 em 2016-2026. Lista de controle passou a 11 itens e todos foram recuperados, inclusive Spaeth 2013 (23814334), Markwald 2013 (23479616) e Covassin 2022 (35361348), conferidos por janelas de data. Acrescentei string secundaria 6 (experimentos de laboratorio, sem filtro de desenho; 87 resultados; recupera os tres). Spaeth, Markwald e Covassin entraram na sec. 4 com numeros do resumo, rotulados como evidencia indireta (adultos saudaveis, sem dieta), e a controversia 1 foi retomada com eles. 01-picos.json atualizado (estrategias, lista_controle)."
+  },
+  {
+    "id": "A2",
+    "status": "corrigido",
+    "detalhe": "Strings executaveis, cada uma com operadores, filtro de data e pdat, contagem e controle: 7 melatonina (61), 8 suplementos (34), 9 wearables vs PSG (453 ampla; 21 revisoes), 10 recuperar no fim de semana (151; 13 com filtro de desenho), 11a refeicoes/cronotipo (112) e 11b cronotipo/jet lag social (22), 12 cafeina/alcool/telas (243). Controles recuperados: Faria 2024, Guo 2026, Bodur 2025, Chinoy 2021, Lee 2025, Depner 2019, Killick 2015, Spaeth 2013, Teixeira 2022, Gardiner 2023, Drake 2013. Retirei o 'sem evidencia' (sec. 4 Lacunas e Pendencia 7): ha sinteses de melatonina x desempenho, wearables x PSG e cafeina x sono, resumidas na sec. 4 com numeros do resumo; declarei o que NAO li (melatonina x composicao em humanos, outros suplementos, alcool, telas, turnos). Criterio de exclusao reescrito como 'farmacoterapia de disturbios do sono como foco' (sec. 1, sec. 6 e 01-picos.json); melatonina e suplementos entram como avaliacao de mito. Subtema 'horario das refeicoes, beliscar a noite e cronotipo' criado na sec. 3 e em 01-picos.json."
+  },
+  {
+    "id": "A3",
+    "status": "corrigido",
+    "detalhe": "String 13 de diretrizes (17 operadores, 5 curingas; 287 resultados, 2010/01/01-2026/11/10, pdat) recupera Watson 2015, Hirshkowitz 2015, St-Onge 2016 e Walsh 2021; Lloyd-Jones 2022 nao e recuperado porque o titulo nao traz 'sleep', entao documentei busca dirigida e confirmacao por PMID. St-Onge 2016 (27647451) e Life's Essential 8 (35766027) verificados com get_article_metadata, incluidos em 01-referencias.json (conferir_referencias.py sem divergencias) e usados na sec. 1 so no que o resumo sustenta (o resumo do LE8 nao traz a regra de pontuacao do sono; sinalizado). Tentativa de diretriz brasileira (string 14, 26 resultados, 9 com resumo lido; WebSearch; Guia de Atividade Fisica e bvsms com 403): localizada apenas a diretriz de insonia da ABS 2023 (Drager et al., PMID 38370879, adicionada como referencia, fora do escopo, uso de encaminhamento) e a de 2010 (superada); nenhuma sobre duracao do sono, sono e peso ou sono e exercicio, declarado como nao localizado (Pendencia 8)."
+  }
+]
