@@ -1,0 +1,12 @@
+[
+  {
+    "id": "R1",
+    "status": "corrigido",
+    "detalhe": "Conferido no texto completo de Mostafa 2026 (PMC13655966): §3.4 'From the 26 studies considered for study quality, 12 studies had low concern throughout all categories assessed, with other studies having at least some concern'; risco de viés geral 'some concern' nos ECR e alto nos não randomizados (RoB 2 e ROBINS-I); 17 estudos de adiposidade, 16 ECR; GRADE: 'BMI, body weight, and daily calorie intake ... moderate, low, and moderate'. 'Qualidade baixa em 12 estudos / com ressalvas em 10' substituído por 12 dos 26 estudos com baixo risco de viés em todos os domínios, os demais com ao menos alguma preocupação, GRADE moderada para IMC e ingestão e baixa para peso, e 16 dos 17 estudos de adiposidade ECR. Alterado em: Síntese 5, §1.3 passo 4 (Sentido inverso), §2 linha Peso (coluna Certeza) e §5 equívoco 2. Nota: o texto completo usa 26 estudos na avaliação de qualidade (o resumo cita 12 e 10)."
+  },
+  {
+    "id": "R2",
+    "status": "corrigido",
+    "detalhe": "Tasali 2022 (PMC8822469, Tabela 2): gordura -0,25 kg (IC 95% -0,39 a -0,10; P = 0,001) contra o controle. 'Nem de perda de gordura' retirado da Síntese 5 e do equívoco 2, reescritos como 'em 2 semanas, a redução de peso foi sobretudo de massa livre de gordura, com pequena redução de gordura (-0,25 kg); não há dado de efeito sustentado'. Grep no arquivo inteiro por afirmações equivalentes: achada e corrigida a do §1.3 (ressalva metodológica): 'não de gordura' passou a 'com pouca redução de gordura (-0,25 kg)'. Demais menções (§2, §3, quadro de certeza) já traziam o -0,25 kg ou não negam a perda de gordura."
+  }
+]

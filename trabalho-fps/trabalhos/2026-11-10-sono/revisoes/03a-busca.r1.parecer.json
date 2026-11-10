@@ -1,0 +1,61 @@
+{
+  "etapa": "03a-busca",
+  "rodada": 1,
+  "revisor": "fps-lider-pesquisa",
+  "modelo_revisor": "opus",
+  "executor": "fps-op-buscador",
+  "arquivos_revisados": [
+    "trabalho-fps/trabalhos/2026-11-10-sono/03a-busca.json",
+    "trabalho-fps/trabalhos/2026-11-10-sono/03a-candidatos.json",
+    "trabalho-fps/trabalhos/2026-11-10-sono/01-picos.json",
+    "trabalho-fps/trabalhos/2026-11-10-sono/01-referencias.json"
+  ],
+  "criterios": {
+    "cobertura_de_bases": 7.0,
+    "fidelidade_as_strings": 9.0,
+    "aderencia_aos_criterios": 4.5,
+    "registro_prisma": 8.0
+  },
+  "achados": [
+    {
+      "id": "A1",
+      "gravidade": "critica",
+      "local": "03a-candidatos.json > corte por volume (subtemas 2 e 3, pergunta central)",
+      "problema": "O corte por volume tirou do conjunto de avaliação ensaios e sínteses que respondem diretamente à pergunta PICOS e às controvérsias registradas na 01. Ficou comprometida a resposta à pergunta central: não há ECR de restrição prolongada com desfecho de peso além de Nedeltcheva/Wang, e a metanálise de ECR mais antiga e as de ingestão saíram.",
+      "evidencia": "03a-candidatos.json: com motivo 'corte_volume', estão fora PMID 42407080 (Zuraikat 2026, análise agrupada de 2 ECR, +0,45 kg; pivô da controvérsia 1 na 01), 23814334 (Spaeth 2013, n = 225), 23479616 (Markwald 2013), 26098388 (Capers 2015, RS de ECR), 33001515 (Fenton 2021, MA de ingestão), 32537891 (Lin 2020, MA de hormônios), 15583226 (Spiegel 2004), 20357041 (Brondel 2010), 25683266 (Killick 2015) e 31217539 (Papandreou 2020, n = 1.986). Enquanto isso, ficaram ECR pequenos e indiretos do mesmo subtema: 33259829 (café da manhã hiperproteico), 37432152, 35565768 e 40628780.",
+      "correcao": "Devolva ao conjunto de avaliação (decisao 'incluir', mantendo o subtema): 42407080, 23814334, 23479616, 26098388, 33001515, 32537891, 15583226, 20357041, 25683266 e 31217539. Registre a mudança em 03a-busca.json (observacoes) e recalcule 'cortados_por_volume' e 'para_avaliacao'.",
+      "responsavel": "fps-op-buscador",
+      "licao": "Antes de cortar por volume, cruze a lista com as referências e a lista de controle da etapa 01: o que a investigação já usou para formular a pergunta ou a controvérsia nunca pode sair por volume."
+    },
+    {
+      "id": "A2",
+      "gravidade": "maior",
+      "local": "03a-candidatos.json > corte por volume (subtemas 4, 6, 8 e 9)",
+      "problema": "O corte inverteu a hierarquia de desenho. 196 revisões sistemáticas/metanálises foram cortadas, enquanto ECR isolados ficaram. Nos subtemas de mitos (9) e rotina (6) sobraram documentos marginais: uma MA de um probiótico específico, enfermeiras de turno e vício em smartphone em 18–25 anos. As sínteses que respondem ao briefing saíram.",
+      "evidencia": "Perfil por desenho de 03a-candidatos.json. Cortados: 54 RS/MA no subtema 4, 46 no 9, 20 no 6 e 16 no 8. Selecionados: 8 ECR no subtema 8 (time-restricted eating × sono) contra 0 RS/MA. Saíram por volume: 25596964 (Kredlow, MA exercício × sono), 34416428 (Frimpong, MA exercício noturno), 29422383 (Knowles), 29352373 (Bonnar), 33400856 (Lamon), 36870101 (Gardiner, MA cafeína × sono), 39631226 (MA álcool × sono), 41480345 (MA tempo de tela × sono), 36872593 (Faria) e 41769636 (Guo) (melatonina × desempenho), 34626955 (MA melatonina × antropometria), 39484805 (Lee, MA wearables × PSG), 42175611 (MA wearables 2026), 30827911 (Depner, recuperação de fim de semana), 35771674 (Teixeira, RS cronotipo), 38072635 (MA jet lag social × obesidade) e 40498475 (MA time-restricted eating × sono).",
+      "correcao": "ENTRAM no conjunto de avaliação: 25596964, 34416428, 29422383, 29352373, 33400856, 36870101, 39631226, 41480345, 36872593, 41769636, 34626955, 39484805, 42175611, 30827911, 35771674, 38072635 e 40498475. SAEM, para 'excluir' com motivo 'corte_volume (hierarquia; coberto por síntese)': 33259829, 37432152, 35565768 e 40628780 (subtema 2, ECR pequenos e indiretos); 33759620, 42208206, 42280467, 40241264 e 39458522 (subtema 8, ECR de time-restricted eating, cobertos pela MA 40498475; ficam 36518092, 38652930 e 40560588); 37413809 (probiótico específico), 39964667 (cirurgia bariátrica), 31902652 (enfermeiras de turno), 42568215 (smartphone 18–25 anos), 42576331 (idosos), 42625730 (relaxamento muscular), 25611944 (efeito do programa sobre o sono, direção inversa), 33111359 (preliminar) e 20730332 (diretriz de insônia de 2010, superada pela de 2023). Atualize o PRISMA.",
+      "responsavel": "fps-op-buscador",
+      "licao": "No corte por volume, aplique a hierarquia dentro de cada subtema: só corte um ECR depois de garantir que as RS/MA do mesmo subtema e desfecho estão no conjunto; um subtema nunca pode ficar só com documentos marginais."
+    },
+    {
+      "id": "A3",
+      "gravidade": "maior",
+      "local": "03a-candidatos.json e 03a-busca.json > diretrizes e referências-chave da etapa 01",
+      "problema": "Diretrizes e sínteses já localizadas na 01 não chegaram ao conjunto, porque as strings não as recuperam ou porque a exclusão foi inconsistente. Além disso, uma 'diretriz' entrou sem fonte verificável.",
+      "evidencia": "Ausentes de 03a-candidatos.json, embora verificados em 01-referencias.json: 38016484 (Riemann 2023, diretriz europeia de insônia; o título não tem 'sleep', por isso a string de diretrizes não a recupera), 42948184 (Malasevskaia 2026, umbrella review), 32078168 (Saner 2020), 38749363 (Riedel 2024), 33378539 (Chinoy 2021) e 23922121 (Greer 2013). 33164742 (Edinger 2021, diretriz AASM de tratamento comportamental da insônia) foi excluído por 'populacao', mas a diretriz de insônia da ABS (38370879) entrou; o subtema 7 inclui TCC-I. A diretriz da Obesity Medicine Association 2026 entrou como 'talvez' só por resumo de busca, sem PMID nem documento aberto ('recomenda 7–9 h' não foi visto na fonte).",
+      "correcao": "(1) Acrescente aos candidatos, com fonte_busca 'dirigida (01-referencias)', e marque 'incluir': 38016484, 33164742 (reclassificar), 42948184, 32078168, 38749363, 33378539 e 23922121. Conte-os à parte em 'identificados' (registro dirigido). (2) Diretriz OMA 2026: abra o documento ou ache um registro indexado. Se não conseguir, mude para 'excluir' com motivo 'fonte não verificável' e retire-a de 'diretrizes_web'.",
+      "responsavel": "fps-op-buscador",
+      "licao": "Semeie os candidatos com as referências pertinentes da etapa 01 (busca dirigida) e trate diretrizes do mesmo tema com a mesma regra; diretriz vista só em resumo de busca não entra como candidata."
+    }
+  ],
+  "correcoes_aplicadas": [],
+  "pontos_fortes": [
+    "Contagens reproduzidas: string principal 279 (127 + 157 por janelas, com 5 sobreposições), recuperação de fim de semana 151 e cafeína/álcool/telas 243.",
+    "PRISMA aritmeticamente consistente: 1.880 das strings + 2 dirigidos = 1.882; 1.608 linhas em 03a-candidatos.json = triados; 1.148 + 380 = 1.528 excluídos; 54 + 26 = 80.",
+    "Amostra de 8 exclusões aleatórias e de 31 exclusões suspeitas pelo título (por exemplo, 31983513 adolescentes, 33237635 pré-escolares, 22012696 ratos): todas corretas.",
+    "Limites registrados com transparência: variantes acima de 20 operadores, BVS/Cochrane inacessíveis, wearables só revisões."
+  ],
+  "observacoes_ao_orquestrador": "O avaliador já trabalha com o conjunto de 80. Trocas: ENTRAM 34 PMIDs (A1: 42407080, 23814334, 23479616, 26098388, 33001515, 32537891, 15583226, 20357041, 25683266, 31217539; A2: 25596964, 34416428, 29422383, 29352373, 33400856, 36870101, 39631226, 41480345, 36872593, 41769636, 34626955, 39484805, 42175611, 30827911, 35771674, 38072635, 40498475; A3: 38016484, 33164742, 42948184, 32078168, 38749363, 33378539, 23922121). SAEM 19 itens: 18 PMIDs (33259829, 37432152, 35565768, 40628780, 33759620, 42208206, 42280467, 40241264, 39458522, 37413809, 39964667, 31902652, 42568215, 42576331, 42625730, 25611944, 33111359, 20730332) e a diretriz OMA 2026, que não tem PMID e sai se não for verificada. O conjunto final fica com 95 itens.",
+  "escalonado": false,
+  "resumo": "Strings fiéis e contagens reproduzidas; PRISMA consistente; triagem por título/resumo correta na amostra. O corte por volume, porém, retirou o núcleo da pergunta central (Zuraikat, Spaeth, Markwald, Capers, Fenton) e inverteu a hierarquia de desenho nos subtemas de treino, rotina, refeições e mitos. Diretrizes e sínteses já verificadas na 01 ficaram fora do conjunto. Portão: REVISAR."
+}
