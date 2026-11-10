@@ -34,8 +34,19 @@
         "Nos estudos observacionais, os dois fenômenos caminham juntos: uma revisão de 16 metanálises estimou razão de chances (*odds ratio*, OR) de 1,40 (intervalo de confiança de 95% [IC 95%] de 1,27 a 1,55; I² = 83,7%, indicador de heterogeneidade entre os estudos) para obesidade em quem dorme pouco, mas classificou a evidência como apenas sugestiva [@malasevskaia2026]. Associação, porém, não responde à pergunta que interessa a quem prescreve exercício e orienta hábitos: mudar o sono muda o que a pessoa come, o que ela perde na balança, como treina e como mantém a rotina?",
         "A pergunta tem peso prático para o profissional de Educação Física, que lida com treino, recuperação e adesão, e cruza com duas crenças populares: a de que dormir mais emagrece e a de que o sono perdido na semana se recupera no fim de semana. A literatura que as testa é dispersa, formada em boa parte por experimentos curtos e com poucos participantes, e raramente separa o que é efeito demonstrado do que é mecanismo plausível. Este capítulo tenta fazer essa separação.",
         "O fio condutor é o dia de quem dorme pouco. A noite curta começa mudando a fome e a escolha dos alimentos; essa mudança pode, ou não, aparecer na balança e na composição do corpo, sobretudo para quem faz dieta; ela encarece o treino do dia seguinte; e se soma a fatores da rotina (turnos, cafeína, álcool, telas) que empurram o sono para baixo. Depois desse percurso, o capítulo reúne as orientações práticas, confronta crenças populares com os dados e aponta os limites do que se sabe. A fisiologia do sono ocupa apenas o espaço necessário para acompanhar o restante.",
-        "Trata-se de uma revisão narrativa, apoiada em diretrizes, revisões sistemáticas, metanálises e ensaios clínicos randomizados (nos quais os participantes são sorteados para cada condição), localizados em buscas no PubMed e no Consensus (ferramenta de busca semântica de artigos científicos) em novembro de 2026; a Biblioteca Virtual em Saúde e a Cochrane Library não puderam ser consultadas. Em cada tema, o texto privilegia as sínteses e os ensaios que respondem diretamente à pergunta e diz, em palavras, o quanto se pode confiar em cada achado: ‘indica’ marca evidência de confiança moderada, ‘sugere’ marca confiança baixa e ‘é compatível com’ marca confiança muito baixa.",
-        "Três cuidados de leitura valem para o capítulo inteiro. O primeiro é a dose: os experimentos de laboratório sobre restrição do sono limitam o tempo na cama a 4 a 5,5 h [@spaeth2013; @nedeltcheva2010; @covassin2022], em adultos jovens, majoritariamente saudáveis, muitas vezes homens, por dias a poucas semanas e com alimento à disposição; o único ensaio de extensão do sono recrutou quem dormia menos de 6,5 h por noite [@tasali2022]. O que vale para 4 h não se transfere automaticamente a quem dorme 6 h, e essa distância limita a aplicação prática de todos os achados experimentais. O segundo é o tipo de desfecho: grelina, leptina, cortisol, ativação cerebral, síntese proteica muscular e massa livre de gordura são medidas intermediárias (desfechos substitutos) e não equivalem a fome percebida, perda de músculo ou desempenho. O terceiro é a leitura dos números: o IC 95% indica a faixa de valores compatível com os dados e, quando inclui o zero (ou o 1, nas razões como OR e RR), o efeito pode ser nulo; o I² indica o quanto os estudos reunidos divergem entre si (quanto maior, maior a divergência); a diferença padronizada de médias (DPM) permite comparar estudos que medem o mesmo desfecho em escalas diferentes; e o sinal ± acompanha o resumo da fonte, que nem sempre informa se a dispersão é desvio-padrão ou erro-padrão."
+        "Trata-se de uma revisão narrativa, apoiada em diretrizes, revisões sistemáticas, metanálises e ensaios clínicos randomizados (nos quais os participantes são sorteados para cada condição), localizados em buscas no PubMed e no Consensus (ferramenta de busca semântica de artigos científicos) em novembro de 2026. Em cada tema, o texto privilegia as sínteses e os ensaios que respondem diretamente à pergunta e diz, em palavras, o quanto se pode confiar em cada achado.",
+        {
+          "tipo": "caixa",
+          "titulo": "Como ler este capítulo",
+          "itens": [
+            "Dose: os experimentos de laboratório sobre restrição do sono limitam o tempo na cama a 4 a 5,5 h [@spaeth2013; @nedeltcheva2010; @covassin2022], em adultos jovens, majoritariamente saudáveis, muitas vezes homens, por dias a poucas semanas e com alimento à disposição; o único ensaio de extensão do sono recrutou quem dormia menos de 6,5 h por noite [@tasali2022]. O que vale para 4 h não se transfere automaticamente a quem dorme 6 h, e essa distância limita a aplicação prática de todos os achados experimentais.",
+            "Tipo de desfecho: grelina, leptina, cortisol, ativação cerebral, síntese proteica muscular e massa livre de gordura são medidas intermediárias (desfechos substitutos) e não equivalem a fome percebida, perda de músculo ou desempenho.",
+            "IC 95% e I²: o IC 95% indica a faixa de valores compatível com os dados e, quando inclui o zero (ou o 1, nas razões como OR e RR), o efeito pode ser nulo; o I² indica o quanto os estudos reunidos divergem entre si (quanto maior, maior a divergência).",
+            "Diferença padronizada de médias (DPM): permite comparar estudos que medem o mesmo desfecho em escalas diferentes.",
+            "O sinal ±: acompanha o resumo da fonte, que nem sempre informa se a dispersão é desvio-padrão ou erro-padrão."
+          ],
+          "cor": "EAF1FB"
+        }
       ]
     },
     {
@@ -82,19 +93,13 @@
           "titulo": "Horário das refeições e cronotipo",
           "blocos": [
             "O horário das refeições e o cronotipo (a preferência individual por dormir e acordar mais cedo ou mais tarde) reforçam a hipótese de um efeito do relógio, e não só da duração. Em revisão de 43 estudos observacionais, cerca de 95% associaram o tipo vespertino a ao menos um hábito alimentar pouco saudável (comer tarde, pular o café da manhã, consumir ultraprocessados) e cerca de 47%, a maior peso ou índice de massa corporal (IMC) [@teixeira2022]. Em 420 pessoas em tratamento de 20 semanas, quem almoçava depois das 15h perdeu menos peso (P = 0,002), embora ingestão, gasto, hormônios e duração do sono fossem semelhantes, e nem a duração do sono nem o cronotipo se associaram de forma independente à perda [@garaulet2013]. O horário da refeição principal, e não o sono, predisse o resultado, o que lembra que o sono é uma variável entre várias.",
-            "Mexer na janela alimentar também não resolve o sono: em 13 estudos (638 participantes), a análise restrita aos ensaios controlados não mostrou efeito da alimentação com restrição de horário sobre a duração do sono nem sobre o índice de qualidade de Pittsburgh (PSQI); o pequeno efeito apareceu só na comparação com a linha de base [@jin2026]. A confiança é baixa para a associação entre cronotipo e dieta e muito baixa para o efeito de corrigir o horário; a causalidade é desconhecida."
-          ]
-        },
-        {
-          "titulo": "Resumo e aplicação",
-          "blocos": [
+            "Mexer na janela alimentar também não resolve o sono: em 13 estudos (638 participantes), a análise restrita aos ensaios controlados não mostrou efeito da alimentação com restrição de horário sobre a duração do sono nem sobre o índice de qualidade de Pittsburgh (PSQI); o pequeno efeito apareceu só na comparação com a linha de base [@jin2026]. A confiança é baixa para a associação entre cronotipo e dieta e muito baixa para o efeito de corrigir o horário; a causalidade é desconhecida.",
             {
               "tipo": "caixa",
               "titulo": "Pontos-chave",
               "itens": [
                 "Dormir pouco aumenta a ingestão quando há alimento à disposição; a direção do efeito é bem sustentada, mas o tamanho na vida real é incerto.",
                 "O excesso vem sobretudo de lanches e da noite, e não das refeições principais.",
-                "A narrativa de grelina e leptina é a que menos resiste aos dados; o que se repete é a resposta de recompensa diante da comida.",
                 "O horário da refeição principal e o cronotipo associam-se a hábitos e a resultado, mas a causalidade é desconhecida."
               ],
               "cor": "EAF1FB"
@@ -110,8 +115,7 @@
               "titulo": "Na prática",
               "itens": [
                 "Para quem atravessa semanas de sono curto, planejar os lanches e evitar manter alimento livre à disposição à noite é uma estratégia razoável, mas é inferência dos achados de laboratório, e não uma intervenção testada.",
-                "Ao avaliar a adesão de um aluno em dieta, vale perguntar o horário da refeição principal e a qualidade do sono, sem tratar a duração como causa; o almoço tardio associou-se a menor perda de peso, e associação não é prova de efeito.",
-                "Explicar o apetite de quem dorme pouco por ‘desregulação da leptina’ passa uma certeza que os dados não têm."
+                "Ao avaliar a adesão de um aluno em dieta, vale perguntar o horário da refeição principal e a qualidade do sono, sem tratar a duração como causa; o almoço tardio associou-se a menor perda de peso, e associação não é prova de efeito."
               ],
               "cor": "E8F3E8"
             }
@@ -122,7 +126,57 @@
     {
       "titulo": "Sono, perda de peso e composição corporal",
       "blocos": [
-        "Esta é a pergunta que mais interessa a quem acompanha alunos em programas de emagrecimento: dormir pouco atrapalha a perda de peso e muda o que se perde, gordura ou músculo? Ela admite três situações, que organizam a seção: dormir pouco durante uma dieta, dormir pouco sem dieta e estender o sono de quem dorme pouco. O Quadro 1 traz os números dos estudos centrais; o texto os interpreta e diz o quanto se pode confiar em cada achado. Um termo aparece com frequência: massa livre de gordura (MLG), que reúne tudo o que não é gordura (músculo, água, órgãos, osso) e, por isso, não equivale a músculo."
+        "Esta é a pergunta que mais interessa a quem acompanha alunos em programas de emagrecimento: dormir pouco atrapalha a perda de peso e muda o que se perde, gordura ou músculo? Ela admite três situações, que organizam a seção: dormir pouco durante uma dieta, dormir pouco sem dieta e estender o sono de quem dorme pouco. O Quadro 1 traz os números dos estudos centrais; o texto os interpreta e diz o quanto se pode confiar em cada achado. Um termo aparece com frequência: massa livre de gordura (MLG), que reúne tudo o que não é gordura (músculo, água, órgãos, osso) e, por isso, não equivale a músculo.",
+        {
+          "tipo": "quadro",
+          "titulo": "Estudos centrais sobre sono, peso e composição corporal",
+          "colunas": [
+            "Estudo e participantes",
+            "O que foi feito",
+            "O que se encontrou"
+          ],
+          "larguras_cm": [
+            3.9,
+            3.0,
+            9.1
+          ],
+          "linhas": [
+            [
+              "@nedeltcheva2010. Ensaio cruzado; 10 adultos com sobrepeso (3 mulheres), 35 a 49 anos",
+              "Dieta a 90% da taxa metabólica de repouso por 14 dias, com 5,5 h contra 8,5 h na cama",
+              "Peso perdido semelhante (≈ 3 kg). Gordura perdida 0,6 contra 1,4 kg (P = 0,043; −55%); massa livre de gordura perdida 2,4 contra 1,5 kg (P = 0,002; +60%). Sinais de menor oxidação de gordura; gasto total sem diferença detectável. IC não disponível"
+            ],
+            [
+              "@wang2018. Ensaio paralelo; 36 adultos com sobrepeso ou obesidade (15 só dieta; 21 dieta e restrição do sono)",
+              "Dieta a 95% da taxa metabólica de repouso por 8 semanas, com ou sem restrição de cerca de 1 h na cama em 5 noites por semana",
+              "Sono −57 ± 36 min nos dias de restrição e +59 ± 38 min nos dias livres. Perda semelhante de peso, massa magra e massa gorda; proporção do peso perdido como gordura maior na dieta isolada (P = 0,016). Quociente respiratório de repouso reduzido só na dieta (P = 0,033); leptina de jejum reduzida só com restrição (P = 0,029). Valores absolutos e IC não disponíveis"
+            ],
+            [
+              "@covassin2022. Ensaio cruzado internado; 12 adultos (9 homens), sem obesidade, 19 a 39 anos",
+              "14 dias com 4 h contra 9 h de oportunidade de sono, com alimento livre",
+              "Ingestão +308,1 kcal/dia (IC 59,2 a 556,8; P = 0,015). Gasto sem mudança. Peso +0,5 kg (0,1 a 0,8; P = 0,008). Gordura corporal total e massa livre de gordura sem diferença (DXA; P = 0,710). Área de gordura abdominal +15,2 cm² (3,6 a 26,8): subcutânea +7,4 (0,1 a 14,6) e visceral +7,8 (0,3 a 15,3), em análise exploratória."
+            ],
+            [
+              "@zuraikat2026. Análise agrupada de 2 ensaios cruzados (não pré-especificada); 95 participantes (72 mulheres), risco cardiometabólico, sono habitual ≥ 7 h",
+              "6 semanas com −78,4 min/noite (−83,5 a −73,3) contra sono adequado",
+              "Peso +0,45 kg (0,33 a 0,57). Cintura +0,52 cm (0,25 a 0,79). Proporção de tecido adiposo e muscular (ressonância) sem efeito. Leptina +2,03 ng/mL (0,38 a 3,68). Tempo sedentário +17,2 min/dia (11,7 a 22,7); atividade moderada a vigorosa sem diferença. Gasto total (34 participantes) sem diferença. Ingestão não medida"
+            ],
+            [
+              "@tasali2022. Ensaio paralelo; 80 adultos de 21 a 40 anos com sobrepeso (IMC 25 a 29,9) e sono habitual < 6,5 h",
+              "Aconselhamento individual de higiene do sono, com alvo de 8,5 h na cama, por 2 semanas, contra sono habitual",
+              "Sono +1,2 h/noite (1,0 a 1,4). Diferença entre grupos: ingestão −270 kcal/dia (−393 a −147; P < 0,001); gasto total −53,9 (−134,9 a 27,1; não significativo); peso −0,87 kg (−1,39 a −0,35; P = 0,001); massa livre de gordura −0,62 kg (−1,02 a −0,23); massa gorda −0,25 kg (−0,39 a −0,10). No controle, o peso subiu 0,39 kg (0,02 a 0,76). Correlação entre sono e ingestão r = −0,41 (≈ −162 kcal/dia por hora a mais de sono)"
+            ],
+            [
+              "@mostafa2026. Metanálise; 27 estudos (25 na análise), em adultos sem apneia e com sono ruim",
+              "TCC-I ou higiene do sono (8 estudos, 1.384 participantes) ou extensão do sono (5 estudos, 138), contra controle",
+              "IMC global −0,26 kg/m² (−0,70 a 0,18; não significativo). TCC-I ou higiene: redução de 0,64 (0,28 a 1,01), dominado por 3 ensaios em diabetes tipo 2 (1.121 participantes); extensão −0,15 (−0,40 a 0,11). Peso corporal sem redução significativa (todas as intervenções P = 0,23). Subgrupos por IMC basal: redução de 0,83 kg (0,32 a 1,35; 6 estudos, 337 participantes) no sobrepeso e de 5,55 kg (4,13 a 6,97; 3 estudos, 72) na obesidade. Ingestão: redução de 147,5 kcal/dia (5,74 a 289,41; 5 estudos, 223). Seguimento de 2 semanas a 12 meses"
+            ]
+          ],
+          "fonte": "Elaborado pelos autores com base em @nedeltcheva2010, @wang2018, @covassin2022, @zuraikat2026, @tasali2022 e @mostafa2026.",
+          "nota": [
+            "IMC: índice de massa corporal; DXA: absorciometria por raios X de dupla energia. Entre parênteses: IC 95%."
+          ]
+        }
       ],
       "subsecoes": [
         {
@@ -152,12 +206,7 @@
           "titulo": "O que os programas de emagrecimento mostram",
           "blocos": [
             "Em programas de emagrecimento, o sono foi estudado como preditor do resultado, em coortes de confiança muito baixa. Entre 296 adultos em programa comportamental de 12 meses (perda média do grupo de 6,9%), o sono curto (menos de 6 h) na linha de base associou-se a perda 4,5 ± 1,3% menor, o sono ruim a perda 2,2 ± 1,2% menor, e ambos juntos a perda pelo menos 5,0% menor; o sono curto associou-se ainda a 2,0 ± 0,8 sessões a menos [@kline2026]. Em 156 adultos acompanhados por 18 meses, menor eficiência, mais despertares e maior latência do sono associaram-se a perda atenuada, mesmo com ajuste estatístico [@creasy2022].",
-            "O maior estudo, porém, contradiz o padrão esperado: em 3.628 adultos por 25 semanas, o sono longo (mais de 8 h), e não o curto, associou-se a menor perda (7,42% contra 7,90%; P = 0,015), menor chance de perder pelo menos 5% (OR 0,79; IC 95% 0,66 a 0,96) e maior abandono (OR 1,21; 1,03 a 1,43); o sono curto não teve associação [@rodriguezmartin2025]. Uma revisão de 30 estudos (13 ensaios) em programas de emagrecimento concluiu que a restrição do sono reduziu a perda de gordura, que a associação entre duração e perda é inconsistente nos estudos observacionais e que eficiência e satisfação com o sono podem ajudar [@duan2026]. Os estudos usam sono autorrelatado e não excluem causalidade reversa nem confusão (depressão, rotina de trabalho, apneia); a própria medida pesa, pois a associação com obesidade é muito mais forte com polissonografia do que com autorrelato."
-          ]
-        },
-        {
-          "titulo": "Resumo e aplicação",
-          "blocos": [
+            "O maior estudo, porém, contradiz o padrão esperado: em 3.628 adultos por 25 semanas, o sono longo (mais de 8 h), e não o curto, associou-se a menor perda (7,42% contra 7,90%; P = 0,015), menor chance de perder pelo menos 5% (OR 0,79; IC 95% 0,66 a 0,96) e maior abandono (OR 1,21; 1,03 a 1,43); o sono curto não teve associação [@rodriguezmartin2025]. Uma revisão de 30 estudos (13 ensaios) em programas de emagrecimento concluiu que a restrição do sono reduziu a perda de gordura, que a associação entre duração e perda é inconsistente nos estudos observacionais e que eficiência e satisfação com o sono podem ajudar [@duan2026]. Os estudos usam sono autorrelatado e não excluem causalidade reversa nem confusão (depressão, rotina de trabalho, apneia); a própria medida pesa, pois a associação com obesidade é muito mais forte com polissonografia do que com autorrelato.",
             {
               "tipo": "caixa",
               "titulo": "Pontos-chave",
@@ -165,7 +214,7 @@
                 "Nenhum desfecho central tem confiança alta; só a maior ingestão chega a moderada.",
                 "Em dieta, dois ensaios pequenos sugerem menos gordura no peso perdido, sem mudar o total; a perda maior de MLG aparece só no ensaio de 10 participantes.",
                 "Sem dieta, dormir pouco sugere ganho pequeno de peso em semanas, mas a metanálise não encontrou diferença significativa.",
-                "Estender o sono reduziu ingestão e peso em um ensaio de duas semanas, mas não o peso na metanálise; nas coortes, o sono prediz o resultado de forma inconsistente."
+                "Nas coortes de programas de emagrecimento, o sono prediz o resultado de forma inconsistente."
               ],
               "cor": "EAF1FB"
             },
@@ -184,59 +233,6 @@
                 "Não interpretar uma queda de MLG de duas semanas como perda de músculo."
               ],
               "cor": "E8F3E8"
-            },
-            {
-              "tipo": "quebra_pagina"
-            },
-            {
-              "tipo": "quadro",
-              "titulo": "Estudos centrais sobre sono, peso e composição corporal",
-              "colunas": [
-                "Estudo e participantes",
-                "O que foi feito",
-                "O que se encontrou"
-              ],
-              "larguras_cm": [
-                3.9,
-                3.0,
-                9.1
-              ],
-              "linhas": [
-                [
-                  "@nedeltcheva2010. Ensaio cruzado; 10 adultos com sobrepeso (3 mulheres), 35 a 49 anos",
-                  "Dieta a 90% da taxa metabólica de repouso por 14 dias, com 5,5 h contra 8,5 h na cama",
-                  "Peso perdido semelhante (≈ 3 kg). Gordura perdida 0,6 contra 1,4 kg (P = 0,043; −55%); massa livre de gordura perdida 2,4 contra 1,5 kg (P = 0,002; +60%). Sinais de menor oxidação de gordura; gasto total sem diferença detectável. IC não disponível"
-                ],
-                [
-                  "@wang2018. Ensaio paralelo; 36 adultos com sobrepeso ou obesidade (15 só dieta; 21 dieta e restrição do sono)",
-                  "Dieta a 95% da taxa metabólica de repouso por 8 semanas, com ou sem restrição de cerca de 1 h na cama em 5 noites por semana",
-                  "Sono −57 ± 36 min nos dias de restrição e +59 ± 38 min nos dias livres. Perda semelhante de peso, massa magra e massa gorda; proporção do peso perdido como gordura maior na dieta isolada (P = 0,016). Quociente respiratório de repouso reduzido só na dieta (P = 0,033); leptina de jejum reduzida só com restrição (P = 0,029). Valores absolutos e IC não disponíveis"
-                ],
-                [
-                  "@covassin2022. Ensaio cruzado internado; 12 adultos (9 homens), sem obesidade, 19 a 39 anos",
-                  "14 dias com 4 h contra 9 h de oportunidade de sono, com alimento livre",
-                  "Ingestão +308,1 kcal/dia (IC 59,2 a 556,8; P = 0,015). Gasto sem mudança. Peso +0,5 kg (0,1 a 0,8; P = 0,008). Gordura corporal total e massa livre de gordura sem diferença (DXA; P = 0,710). Área de gordura abdominal +15,2 cm² (3,6 a 26,8): subcutânea +7,4 (0,1 a 14,6) e visceral +7,8 (0,3 a 15,3), em análise exploratória."
-                ],
-                [
-                  "@zuraikat2026. Análise agrupada de 2 ensaios cruzados (não pré-especificada); 95 participantes (72 mulheres), risco cardiometabólico, sono habitual ≥ 7 h",
-                  "6 semanas com −78,4 min/noite (−83,5 a −73,3) contra sono adequado",
-                  "Peso +0,45 kg (0,33 a 0,57). Cintura +0,52 cm (0,25 a 0,79). Proporção de tecido adiposo e muscular (ressonância) sem efeito. Leptina +2,03 ng/mL (0,38 a 3,68). Tempo sedentário +17,2 min/dia (11,7 a 22,7); atividade moderada a vigorosa sem diferença. Gasto total (34 participantes) sem diferença. Ingestão não medida"
-                ],
-                [
-                  "@tasali2022. Ensaio paralelo; 80 adultos de 21 a 40 anos com sobrepeso (IMC 25 a 29,9) e sono habitual < 6,5 h",
-                  "Aconselhamento individual de higiene do sono, com alvo de 8,5 h na cama, por 2 semanas, contra sono habitual",
-                  "Sono +1,2 h/noite (1,0 a 1,4). Diferença entre grupos: ingestão −270 kcal/dia (−393 a −147; P < 0,001); gasto total −53,9 (−134,9 a 27,1; não significativo); peso −0,87 kg (−1,39 a −0,35; P = 0,001); massa livre de gordura −0,62 kg (−1,02 a −0,23); massa gorda −0,25 kg (−0,39 a −0,10). No controle, o peso subiu 0,39 kg (0,02 a 0,76). Correlação entre sono e ingestão r = −0,41 (≈ −162 kcal/dia por hora a mais de sono)"
-                ],
-                [
-                  "@mostafa2026. Metanálise; 27 estudos (25 na análise), em adultos sem apneia e com sono ruim",
-                  "TCC-I ou higiene do sono (8 estudos, 1.384 participantes) ou extensão do sono (5 estudos, 138), contra controle",
-                  "IMC global −0,26 kg/m² (−0,70 a 0,18; não significativo). TCC-I ou higiene: redução de 0,64 (0,28 a 1,01), dominado por 3 ensaios em diabetes tipo 2 (1.121 participantes); extensão −0,15 (−0,40 a 0,11). Peso corporal sem redução significativa (todas as intervenções P = 0,23). Subgrupos por IMC basal: redução de 0,83 kg (0,32 a 1,35; 6 estudos, 337 participantes) no sobrepeso e de 5,55 kg (4,13 a 6,97; 3 estudos, 72) na obesidade. Ingestão: redução de 147,5 kcal/dia (5,74 a 289,41; 5 estudos, 223). Seguimento de 2 semanas a 12 meses"
-                ]
-              ],
-              "fonte": "Elaborado pelos autores com base em @nedeltcheva2010, @wang2018, @covassin2022, @zuraikat2026, @tasali2022 e @mostafa2026.",
-              "nota": [
-                "IMC: índice de massa corporal; DXA: absorciometria por raios X de dupla energia. Entre parênteses: IC 95%."
-              ]
             }
           ]
         }
@@ -266,12 +262,7 @@
         {
           "titulo": "O inverso: exercício e sono",
           "blocos": [
-            "A relação inversa também importa para a prescrição. O exercício regular melhorou a qualidade do sono, com efeito moderado, em revisão de 66 estudos cuja busca foi até 2013 [@kredlow2015]. Em bons dormidores (15 estudos, 194 participantes), o exercício de alta intensidade terminando entre 0,5 e 4 h antes de deitar reduziu apenas o sono REM em 2,34%, sem outras alterações [@frimpong2021]. A confiança é baixa, e os achados valem para bons dormidores, não para quem já dorme mal."
-          ]
-        },
-        {
-          "titulo": "Resumo e aplicação",
-          "blocos": [
+            "A relação inversa também importa para a prescrição. O exercício regular melhorou a qualidade do sono, com efeito moderado, em revisão de 66 estudos cuja busca foi até 2013 [@kredlow2015]. Em bons dormidores (15 estudos, 194 participantes), o exercício de alta intensidade terminando entre 0,5 e 4 h antes de deitar reduziu apenas o sono REM em 2,34%, sem outras alterações [@frimpong2021]. A confiança é baixa, e os achados valem para bons dormidores, não para quem já dorme mal.",
             {
               "tipo": "caixa",
               "titulo": "Pontos-chave",
@@ -286,7 +277,7 @@
             {
               "tipo": "caixa",
               "titulo": "Mito ou fato? ‘Uma noite mal dormida arruína o treino de força’",
-              "texto": "Exagero. Na média, a força cai cerca de 3% e o esforço parece mais pesado, uma queda pequena que não justifica, por si, cancelar a sessão. O que os estudos não permitem dizer é o que acontece quando a noite curta se repete por semanas, porque esse cenário foi pouco estudado.",
+              "texto": "Exagero. A sessão continua útil; o que os estudos não permitem dizer é o que acontece quando a noite curta se repete por semanas.",
               "cor": "FFF4E0"
             },
             {
@@ -327,13 +318,7 @@
           "blocos": [
             "A cafeína age bloqueando os receptores de adenosina, substância que favorece a sonolência, o que reduz a sonolência; esse é o modelo aceito, com fontes em animais e em humanos [@reichert2022]. Em 24 estudos, ela reduziu o tempo total de sono em 45 min e a eficiência em 7%, e aumentou a latência em 9 min e a vigília após o início do sono em 12 min, com confiança moderada [@gardiner2023]. O horário-limite depende da dose, do produto e da sensibilidade individual: em ensaio doméstico, 400 mg tomados 0, 3 ou 6 h antes de deitar perturbaram o sono [@drake2013]. Os intervalos sugeridos estão no Quadro 2.",
             "O álcool em dose baixa (até 0,50 g/kg, cerca de 2 doses) já reduz e atrasa o sono REM, e a latência só diminui com doses altas (a partir de 0,85 g/kg, cerca de 5 doses); os efeitos sobre tempo total, eficiência e vigília são incertos [@gardiner2025]. Uma revisão qualitativa mais antiga descreve latência menor já em doses baixas, divergindo nesse ponto da metanálise, e mais perturbação na segunda metade da noite [@ebrahim2013]. Assim, ‘apagar mais rápido’ não é dormir melhor.",
-            "Quanto às telas, cada hora diária de uso associou-se a 3 a 5 min a menos de sono (β −0,05; IC 95% −0,08 a −0,03), OR de 1,25 (1,08 a 1,40) para sono curto e atraso de 13,2 min no horário de deitar em 21 coortes [@he2025]. A associação é observacional e autorrelatada, e a maioria dos estudos de duração do sono é de crianças e adolescentes (apenas 4 de 20 em adultos); o subgrupo por idade não diferiu, mas a evidência para adultos é indireta e a confiança é baixa. A exposição medida foi o tempo diário de tela, não o uso à noite. O efeito do horário noturno apoia-se na plausibilidade mecanística: ler em e-reader luminoso antes de dormir, em ensaio cruzado pequeno, aumentou a latência, reduziu a sonolência e a melatonina, atrasou o relógio circadiano e reduziu o alerta na manhã seguinte [@chang2015], e a luz ambiente (< 200 lux) nas 8 h antes de deitar atrasou o início da melatonina em 99% dos indivíduos em análise retrospectiva de 116 participantes [@gooley2011]."
-          ]
-        },
-        {
-          "titulo": "Resumo e aplicação",
-          "blocos": [
-            "Em síntese, o sono entra na rotina por várias portas, e quase todos os achados desta seção são observacionais ou de confiança baixa.",
+            "Quanto às telas, cada hora diária de uso associou-se a 3 a 5 min a menos de sono (β −0,05; IC 95% −0,08 a −0,03), OR de 1,25 (1,08 a 1,40) para sono curto e atraso de 13,2 min no horário de deitar em 21 coortes [@he2025]. A associação é observacional e autorrelatada, e a maioria dos estudos de duração do sono é de crianças e adolescentes (apenas 4 de 20 em adultos); o subgrupo por idade não diferiu, mas a evidência para adultos é indireta e a confiança é baixa. A exposição medida foi o tempo diário de tela, não o uso à noite. O efeito do horário noturno apoia-se na plausibilidade mecanística: ler em e-reader luminoso antes de dormir, em ensaio cruzado pequeno, aumentou a latência, reduziu a sonolência e a melatonina, atrasou o relógio circadiano e reduziu o alerta na manhã seguinte [@chang2015], e a luz ambiente (< 200 lux) nas 8 h antes de deitar atrasou o início da melatonina em 99% dos indivíduos em análise retrospectiva de 116 participantes [@gooley2011]. Em síntese, o sono entra na rotina por várias portas, e quase todos os achados desta seção são observacionais ou de confiança baixa.",
             {
               "tipo": "caixa",
               "titulo": "Pontos-chave",
@@ -362,7 +347,7 @@
       "titulo": "Como ampliar o sono na prática e o que esperar",
       "blocos": [
         "A pergunta prática é como ampliar o sono. Intervenções comportamentais estenderam o sono em 42 estudos (DPM 0,80; IC 95% 0,28 a 1,31; I² = 99,2%, nos estudos de dois braços), com efeito maior quando o horário de dormir era definido do que com orientação isolada e menor com mais componentes [@baron2021]; a revisão incluiu adolescentes a partir de 12 anos. O ganho costuma ser menor do que o tempo na cama: em 42 adultos de peso normal que dormiam de 5 a menos de 7 h, quatro semanas de consulta individual aumentaram o tempo na cama em 55 min, mas o sono em apenas 21 min (IC 95% 6 a 36), com redução de 9,6 g de açúcar livre (3,1 a 16,0) [@alkhatib2018]. O ensaio de @tasali2022 obteve ganho maior de sono com aconselhamento individual (Quadro 1), o que reforça a importância do método e do acompanhamento.",
-        "Para a insônia crônica, que está fora do escopo deste capítulo, o tratamento de primeira linha é a TCC-I, com recomendação forte; a higiene do sono como terapia isolada não é recomendada (recomendação condicional), e a diretriz europeia reserva a luz e o exercício a adjuvantes [@edinger2021; @riemann2023]. A diretriz brasileira cobre diagnóstico e tratamento da insônia em adultos [@drager2023]. Essas diretrizes tratam doença e não se transferem a quem dorme pouco por escolha ou rotina. O Quadro 2 reúne as orientações com o nível de confiança; nenhuma é prescrição de tratamento.",
+        "Para a insônia crônica, que está fora do escopo deste capítulo, o tratamento de primeira linha é a TCC-I, com recomendação forte; a higiene do sono como terapia isolada não é recomendada (recomendação condicional), e a diretriz europeia reserva a luz e o exercício a adjuvantes [@edinger2021; @riemann2023]. A diretriz brasileira cobre diagnóstico e tratamento da insônia em adultos [@drager2023]. Essas diretrizes tratam doença e não se transferem a quem dorme pouco por escolha ou rotina. O Quadro 2 reúne as orientações com o nível de confiança; nenhuma é prescrição de tratamento. As orientações sobre alimentação e treino estão nas caixas Na prática das seções 3, 4 e 5.",
         {
           "tipo": "quadro",
           "titulo": "Orientações práticas, base e ressalvas",
@@ -406,26 +391,6 @@
               "Reduzir o tempo diário de tela, sobretudo perto de deitar",
               "Coortes autorrelatadas, 4 de 20 estudos em adultos; confiança baixa [@he2025]",
               "Associação, não efeito demonstrado; o horário noturno é plausibilidade mecanística [@chang2015; @gooley2011], não o que a metanálise mediu"
-            ],
-            [
-              "Após uma noite curta, manter a sessão, treinar de manhã se possível e esperar esforço percebido maior",
-              "Confiança baixa para a força; esforço percebido em 12 homens [@craven2022; @temesi2013]",
-              "Estudos agudos, maioria de homens; sem dado sobre adaptação crônica"
-            ],
-            [
-              "Treino intenso à noite pode ser mantido por bons dormidores",
-              "Confiança baixa [@frimpong2021]",
-              "Não avaliado em quem já dorme mal"
-            ],
-            [
-              "Em semanas de sono curto, planejar os lanches e evitar alimento livre à noite",
-              "Confiança baixa (laboratório) [@spaeth2013; @nedeltcheva2009]",
-              "Inferência dos autores; não testada como intervenção"
-            ],
-            [
-              "Em déficit calórico, manter treino resistido e proteína adequada",
-              "Extrapolação (hipótese): evidência sem manipulação do sono; sem benefício adicional acima de ≈ 1,6 g/kg/dia de proteína total [@morton2018]",
-              "Nenhum ensaio de sono em dieta testou se isso anula o efeito da restrição"
             ],
             [
               "Insônia persistente ou suspeita de distúrbio respiratório do sono: encaminhar",
@@ -488,18 +453,7 @@
               "texto": "Mito quanto às fases do sono. Os aparelhos de consumo servem, no máximo, para acompanhar a regularidade dos horários; não substituem a polissonografia e erram em parâmetros importantes.",
               "cor": "FFF4E0"
             },
-            "Na metanálise de 24 estudos (798 participantes), os rastreadores de pulso diferiram da polissonografia no tempo total de sono (−16,9 min; IC 95% −26,3 a −7,4), na eficiência (−4,7%; −7,1 a −2,3) e na vigília após o início (+13,3 min; 4,5 a 22,0) [@lee2025]. Outra metanálise concluiu que os aparelhos superestimam tempo total e eficiência e subestimam a vigília, com grande variabilidade entre modelos [@agostinho2026]. O sentido do erro não é claro: @lee2025 não definem a convenção de sinal, e a outra metanálise descreve superestimação; isso impede corrigir mentalmente a leitura do relógio, e a AASM não aceita esses aparelhos para diagnóstico ou tratamento [@khosla2018]. Em 34 adultos jovens, a sensibilidade para detectar sono foi igual ou superior a 0,93, a especificidade ficou entre 0,18 e 0,54 e a classificação das fases foi inconsistente [@chinoy2021]; em termos simples, o aparelho raramente deixa de contar o sono, mas confunde vigília parada com sono. Há ainda o relato de ‘ortossonia’, a preocupação perfeccionista com os dados do rastreador, que pode piorar o sono [@baron2017]. A confiança de que os aparelhos não substituem a polissonografia é moderada; a do tamanho e do sentido do erro é baixa.",
-            {
-              "tipo": "caixa",
-              "titulo": "Pontos-chave",
-              "itens": [
-                "A recuperação de fim de semana tem resultados divergentes e, no maior experimento, não preveniu a piora metabólica; a confiança é baixa.",
-                "A melatonina tem efeito de poucos minutos sobre o sono, inconsistente em adultos, e não tem base para uso em peso ou desempenho.",
-                "Os suplementos têm evidência sobre índices subjetivos de sono, de confiança muito baixa, e nenhuma sobre peso ou treino.",
-                "Os rastreadores acompanham horários, mas não substituem a polissonografia nem informam fases do sono."
-              ],
-              "cor": "EAF1FB"
-            }
+            "Na metanálise de 24 estudos (798 participantes), os rastreadores de pulso diferiram da polissonografia no tempo total de sono (−16,9 min; IC 95% −26,3 a −7,4), na eficiência (−4,7%; −7,1 a −2,3) e na vigília após o início (+13,3 min; 4,5 a 22,0) [@lee2025]. Outra metanálise concluiu que os aparelhos superestimam tempo total e eficiência e subestimam a vigília, com grande variabilidade entre modelos [@agostinho2026]. O sentido do erro não é claro: @lee2025 não definem a convenção de sinal, e a outra metanálise descreve superestimação; isso impede corrigir mentalmente a leitura do relógio, e a AASM não aceita esses aparelhos para diagnóstico ou tratamento [@khosla2018]. Em 34 adultos jovens, a sensibilidade para detectar sono foi igual ou superior a 0,93, a especificidade ficou entre 0,18 e 0,54 e a classificação das fases foi inconsistente [@chinoy2021]; em termos simples, o aparelho raramente deixa de contar o sono, mas confunde vigília parada com sono. Há ainda o relato de ‘ortossonia’, a preocupação perfeccionista com os dados do rastreador, que pode piorar o sono [@baron2017]. A confiança de que os aparelhos não substituem a polissonografia é moderada; a do tamanho e do sentido do erro é baixa."
           ]
         }
       ]
@@ -509,14 +463,13 @@
       "blocos": [
         "Além da distância entre a dose dos experimentos e o sono curto do dia a dia, já apontada na introdução, a evidência tem limites que convém ter em mente. O seguimento máximo é de seis semanas na restrição e de poucos meses na extensão; a ingestão é frequentemente inferida, autorrelatada ou medida em uma única refeição; e as metanálises têm heterogeneidade elevada.",
         "No Brasil, o problema é frequente, como mostra o Vigitel, mas faltam diretriz nacional de duração do sono e dados brasileiros nos estudos experimentais. As medidas discutidas neste capítulo (horário fixo, cafeína, álcool, telas, ajuste do treino) têm baixo custo e cabem na atenção primária e no trabalho do profissional de Educação Física, ao contrário dos rastreadores de consumo, que têm custo e imprecisão.",
-        "O próprio capítulo tem limites. A Biblioteca Virtual em Saúde e a Cochrane Library não foram consultadas, e parte dos registros elegíveis foi deixada de lado, por limite de volume, sem leitura individual, o que pode ter excluído estudos relevantes. A qualidade das revisões foi avaliada, na maior parte, a partir dos resumos; do ensaio de @wang2018 só o resumo foi lido. O valor de 7 h do consenso AASM/SRS foi obtido por citação secundária [@liu2016]; os números do Vigitel vêm de artigo que analisou o inquérito, e não do relatório oficial; e uma diretriz de 2026 sobre obesidade e sono não pôde ser verificada e não foi usada. Na busca de atualização do consenso de atletas, 9 de 13 registros recentes não foram lidos.",
+        "O próprio capítulo tem limites. Como revisão narrativa, não esgota a literatura: duas bases (Biblioteca Virtual em Saúde e Cochrane Library) não foram consultadas, alguns estudos foram lidos apenas no resumo, e os números do Vigitel e o valor de 7 h do consenso AASM/SRS vêm de fontes secundárias [@menezesjunior2026; @liu2016].",
         {
           "tipo": "caixa",
           "titulo": "Pontos-chave",
           "itens": [
             "Os achados valem para o curto prazo e, em geral, para adultos jovens e saudáveis; o sono curto do dia a dia é menos severo do que o dos experimentos.",
-            "Faltam diretriz brasileira de duração do sono e dados nacionais nos estudos experimentais.",
-            "As medidas discutidas são de baixo custo e compatíveis com a atenção primária e com o trabalho do profissional de Educação Física."
+            "Faltam diretriz brasileira de duração do sono e dados nacionais nos estudos experimentais."
           ],
           "cor": "EAF1FB"
         }
