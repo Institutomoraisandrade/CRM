@@ -43,8 +43,8 @@ def textos_blocos(blocos) -> list[str]:
             out.append(b)
         elif b.get("tipo") in ("paragrafo", "citacao_longa"):
             out.append(b.get("texto", ""))
-        elif b.get("tipo") == "lista":
-            out += b.get("itens", [])
+        elif b.get("tipo") in ("lista", "caixa"):
+            out += b.get("itens", []) + ([b["texto"]] if b.get("texto") else [])
         elif b.get("tipo") in ("tabela", "quadro"):
             out.append(b.get("titulo", ""))
             out.append(b.get("fonte", ""))
@@ -117,23 +117,33 @@ def validar_referencias(refs: list[dict], rel: Relatorio, tolerante: bool):
 
 
 def validar_artigo(art: dict, refs: list[dict], rel: Relatorio) -> set[str]:
-    for campo in ("titulo", "autores", "resumo", "palavras_chave", "secoes"):
+    capitulo = (art.get("config") or {}).get("formato") == "capitulo"
+    obrig = ("titulo", "autores", "secoes") if capitulo else ("titulo", "autores", "resumo", "palavras_chave", "secoes")
+    for campo in obrig:
         if not art.get(campo):
             rel.erro(f"artigo sem campo obrigatório '{campo}'")
-    n = palavras(art.get("resumo", ""))
-    if not 100 <= n <= 250:
-        rel.erro(f"resumo com {n} palavras (NBR 6028: artigos 100–250)")
+    if capitulo:
+        rel.nota("formato: capítulo de livro (sem resumo/abstract)")
+        caixas = sum(1 for _, s in percorrer_secoes(art.get("secoes")) for b in s.get("blocos", [])
+                     if isinstance(b, dict) and b.get("tipo") == "caixa")
+        rel.nota(f"caixas de destaque: {caixas}")
+        if not art.get("objetivos"):
+            rel.aviso("capítulo sem 'objetivos' de aprendizagem na abertura")
     else:
-        rel.nota(f"resumo: {n} palavras")
-    pc = art.get("palavras_chave") or []
-    if not 3 <= len(pc) <= 5:
-        rel.aviso(f"{len(pc)} palavras-chave (recomendado 3–5, preferir descritores DeCS)")
-    if (art.get("config") or {}).get("abstract", True) and not art.get("abstract"):
-        rel.aviso("abstract ausente (resumo em língua estrangeira)")
-    if art.get("abstract") and art.get("keywords") and len(art["keywords"]) != len(pc):
-        rel.aviso("número de keywords diferente do de palavras-chave")
+        n = palavras(art.get("resumo", ""))
+        if not 100 <= n <= 250:
+            rel.erro(f"resumo com {n} palavras (NBR 6028: artigos 100–250)")
+        else:
+            rel.nota(f"resumo: {n} palavras")
+        pc = art.get("palavras_chave") or []
+        if not 3 <= len(pc) <= 5:
+            rel.aviso(f"{len(pc)} palavras-chave (recomendado 3–5, preferir descritores DeCS)")
+        if (art.get("config") or {}).get("abstract", True) and not art.get("abstract"):
+            rel.aviso("abstract ausente (resumo em língua estrangeira)")
+        if art.get("abstract") and art.get("keywords") and len(art["keywords"]) != len(pc):
+            rel.aviso("número de keywords diferente do de palavras-chave")
     titulos = [s["titulo"].lower() for s in art.get("secoes", [])]
-    if titulos and "introdu" not in titulos[0]:
+    if titulos and "introdu" not in titulos[0] and not capitulo:
         rel.aviso("primeira seção não é 'Introdução'")
     if titulos and not any(k in titulos[-1] for k in ("considera", "conclus")):
         rel.aviso("última seção não é 'Considerações finais' ou 'Conclusão'")

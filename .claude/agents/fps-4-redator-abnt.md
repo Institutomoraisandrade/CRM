@@ -63,6 +63,33 @@ profundo que os slides, com a mesma lógica e os mesmos números. Estrutura (sub
 8. **Considerações finais** — sem citações.
 Use `config.capa: true` quando o briefing pedir capa. Extensão: 4.000–6.000 palavras de corpo.
 
+## Capítulo de livro (briefing com `Formato do documento: capitulo`)
+O documento é um **capítulo de livro de pós-graduação**: revisão de literatura narrativa, didática e
+aprofundada, para ser lida do começo ao fim. **Da ABNT fica só a formatação** (margens, fonte, espaçamento,
+numeração de seções, citações autor-data NBR 10520 e referências NBR 6023) — a estrutura de artigo NÃO se aplica.
+Use `"config": {"formato": "capitulo", "capa": true}`; não escreva resumo, abstract, palavras-chave nem seção de Método.
+- **Abertura**: `capitulo_numero` (se houver), título e subtítulo, autores; `objetivos` (4–6 objetivos de
+  aprendizagem, verbos de ação); opcionalmente `epigrafe`.
+- **Introdução** que contextualiza o problema, apresenta o fio condutor do capítulo e diz como ele está organizado.
+- **Seções temáticas** (títulos informativos, não "Resultados"/"Discussão"): cada uma desenvolve um tema em
+  prosa corrida — conceito, mecanismo, o que os estudos mostram (com números essenciais e citação), o quanto se
+  pode confiar e o que isso significa na prática. A crítica da evidência vem **dentro** do texto de cada tema.
+- **Linguagem**: de livro-texto — clara, encadeada, com transições entre seções, exemplos e analogias quando
+  ajudarem; termos técnicos definidos na primeira ocorrência. Sem jargão de revisão sistemática no corpo
+  (PRISMA, strings de busca, AMSTAR, RoB, "GRADE baixa"): traduza a certeza em linguagem natural
+  ("dois ensaios pequenos sugerem…", "evidência consistente mostra…", "ainda não se sabe se…").
+- **Caixas** (bloco `{"tipo": "caixa", "titulo": ..., "itens"/"texto": ...}`): "Pontos-chave" ao fim de cada
+  seção principal (3–5 itens); "Na prática" onde houver orientação aplicável; "Mito ou fato?" quando couber.
+- **Quadros e tabelas** de síntese (poucos e legíveis; sem colunas de avaliação metodológica).
+- **Como este capítulo foi construído**: no máximo um parágrafo curto ao final da Introdução (ou uma caixa)
+  dizendo que é uma revisão narrativa baseada em diretrizes, revisões sistemáticas e ensaios clínicos, com as
+  bases consultadas — sem contagens de busca.
+- **Síntese final**: "Considerações finais" em prosa (sem citações) + caixa "Para levar do capítulo";
+  opcionalmente "Questões para reflexão" (4–6 perguntas).
+- **Referências** ao final (só as citadas). Extensão: 6.000–9.000 palavras, salvo indicação do briefing.
+- O rigor não muda: nenhum fato ou número fora das etapas aprovadas; mesmos limites e ressalvas, ditos em
+  linguagem de livro.
+
 ## Regras de redação
 - Terceira pessoa, voz impessoal; presente para fatos estabelecidos, passado para resultados de estudos.
 - Cada parágrafo: frase-tópico → evidência citada → interpretação. Nada de parágrafos só descritivos em série.

@@ -11,6 +11,11 @@ Uso:
   python3 gerar_docx_abnt.py trabalhos/<tema>/artigo.json [-o artigo.docx]
 
 Veja modelos/artigo.exemplo.json para o formato de entrada.
+
+Formato "capitulo" (config.formato): capítulo de livro — sem resumo, abstract e palavras-chave;
+aceita "capitulo_numero", "epigrafe", "objetivos" (caixa de abertura) e blocos
+{"tipo": "caixa", "titulo": "...", "texto": "...", "itens": [...]} para pontos-chave e
+aplicações práticas. A ABNT fica só na formatação (margens, fonte, citações, referências).
 """
 from __future__ import annotations
 
@@ -43,6 +48,7 @@ PADRAO = {
     "estilo_citacao": "2023",    # "2023" (Silva, 2020) | "2002" (SILVA, 2020)
     "autores_referencia": "et_al",  # >3 autores: "et_al" (1º autor + et al.) | "todos"
     "destaque": "negrito",       # destaque do título na referência: negrito | italico
+    "formato": "artigo",         # "artigo" (NBR 6022) | "capitulo" (capítulo de livro: sem resumo/abstract)
     "capa": False,               # True = capa institucional (NBR 14724) antes do artigo
     "abstract": True,            # resumo em língua estrangeira
     "apenas_citadas": True,      # lista só as referências citadas no texto
@@ -390,6 +396,8 @@ class GeradorArtigo:
             self.tabela(b, tipo)
         elif tipo == "figura":
             self.figura(b)
+        elif tipo == "caixa":
+            self.caixa(b)
         elif tipo == "quebra_pagina":
             self.doc.add_paragraph().add_run().add_break(WD_BREAK.PAGE)
         else:
@@ -494,6 +502,9 @@ class GeradorArtigo:
 
     def abertura(self) -> None:
         d = self.d
+        if self.cfg.get("formato") == "capitulo" and d.get("capitulo_numero") is not None:
+            self.par(f"CAPÍTULO {d['capitulo_numero']}", alinhamento="centro", recuo_primeira=0,
+                     entrelinha=1.5, depois=6)
         p = self.par("", alinhamento="centro", recuo_primeira=0, entrelinha=1.5)
         add_texto(p, d["titulo"].upper(), negrito=True)
         if d.get("subtitulo"):
@@ -515,6 +526,40 @@ class GeradorArtigo:
             add_texto(p, o["nome"])
             if o.get("nota"):
                 self.notas.adicionar(p, o["nota"])
+
+    def caixa(self, b: dict) -> None:
+        """Caixa de destaque (pontos-chave, na prática, objetivos): tabela de 1 célula sombreada."""
+        self.par("", entrelinha=1.0, depois=2)
+        tab = self.doc.add_table(rows=1, cols=1)
+        tab.alignment = WD_TABLE_ALIGNMENT.CENTER
+        _bordas_tabela(tab, "quadro")
+        cel = tab.rows[0].cells[0]
+        tcpr = cel._tc.get_or_add_tcPr()
+        shd = OxmlElement("w:shd")
+        shd.set(qn("w:val"), "clear"); shd.set(qn("w:color"), "auto"); shd.set(qn("w:fill"), b.get("cor", "F2F2F2"))
+        _inserir_antes(tcpr, shd, ("w:noWrap", "w:tcMar", "w:textDirection", "w:tcFitText", "w:vAlign", "w:hideMark"))
+        p = cel.paragraphs[0]
+        fmt_paragrafo(p, alinhamento="esquerda", entrelinha=1.15, antes=4, depois=4)
+        add_texto(p, self.t(b.get("titulo", "")), negrito=True)
+        if b.get("texto"):
+            q = cel.add_paragraph()
+            fmt_paragrafo(q, alinhamento="justificado", entrelinha=1.15, depois=4)
+            add_texto(q, self.t(b["texto"]), tamanho=self.cfg["tamanho"] - 1)
+        for item in b.get("itens", []):
+            q = cel.add_paragraph()
+            fmt_paragrafo(q, alinhamento="justificado", recuo_primeira=-0.5, recuo_esq=0.7, entrelinha=1.15, depois=3)
+            add_texto(q, "• " + self.t(item), tamanho=self.cfg["tamanho"] - 1)
+        self.par("", entrelinha=1.0, depois=6)
+
+    def abertura_capitulo(self) -> None:
+        d = self.d
+        if d.get("epigrafe"):
+            self.par(d["epigrafe"], alinhamento="direita", recuo_primeira=0, recuo_esq=8, entrelinha=1.0,
+                     antes=18, depois=12, italico=True, tamanho=self.cfg["tamanho_menor"])
+        if d.get("objetivos"):
+            self.par("", entrelinha=1.0, depois=6)
+            self.caixa({"titulo": d.get("objetivos_titulo", "Ao final deste capítulo, você será capaz de:"),
+                        "itens": d["objetivos"]})
 
     def resumo(self, rotulo: str, texto: str, rot_pc: str, palavras: list[str]) -> None:
         self.titulo_secao(rotulo, 1, None, centralizado=True)
@@ -565,7 +610,9 @@ class GeradorArtigo:
     # ------------------------------------------------------------ fluxo
     def gerar(self, saida: Path) -> dict:
         d = self.d
-        for campo in ("titulo", "autores", "resumo", "palavras_chave", "secoes"):
+        capitulo = self.cfg.get("formato") == "capitulo"
+        obrig = ("titulo", "autores", "secoes") if capitulo else ("titulo", "autores", "resumo", "palavras_chave", "secoes")
+        for campo in obrig:
             if not d.get(campo):
                 raise ErroEntrada(f"campo obrigatório ausente: '{campo}'")
         self.configurar()
@@ -576,8 +623,11 @@ class GeradorArtigo:
             # A capa não exibe número de página.
             self.doc.sections[0].header.is_linked_to_previous = False
         self.abertura()
-        self.resumo("Resumo", d["resumo"], "Palavras-chave", d["palavras_chave"])
-        if self.cfg["abstract"] and d.get("abstract"):
+        if capitulo:
+            self.abertura_capitulo()
+        else:
+            self.resumo("Resumo", d["resumo"], "Palavras-chave", d["palavras_chave"])
+        if not capitulo and self.cfg["abstract"] and d.get("abstract"):
             self.resumo("Abstract", d["abstract"], "Keywords", d.get("keywords") or [])
         self.secoes(d["secoes"])
         self.referencias()

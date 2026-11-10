@@ -35,6 +35,14 @@ Fora do escopo: farmacoterapia e manejo clínico de distúrbios (apneia etc.) �
 não sobre o sono em si. O item 1 é só contexto: no máximo ~1 página no documento e 1 slide; nada de capítulo de
 fisiologia do sono. O espaço vai para os itens 2–7, com números, mecanismos aplicados e orientação prática.
 
+## Formato do documento (decisão do usuário, 10/11/2026)
+
+**Formato do documento: capitulo** — capítulo de livro de pós-graduação (revisão de literatura narrativa e
+didática). **ABNT só na formatação** (margens, fonte, espaçamentos, citações autor-data e referências). Sem resumo,
+abstract, palavras-chave, seção de Método, contagens de busca ou jargão de revisão sistemática no corpo.
+Ver `fps-4-redator-abnt`, seção "Capítulo de livro". A versão em formato de artigo fica guardada como
+`artigo-formato-artigo.json/.docx`.
+
 ## Padrões
 Arial 12, com capa, 10–16 páginas de corpo, NBR 10520:2023, Recife, apresentação de 15 min.
 

@@ -240,3 +240,13 @@ No caso clínico:
   número fora do enunciado segue as regras de integridade da §5;
 - se o enunciado for ambíguo ou internamente inconsistente, isso é registrado e discutido (é material de
   raciocínio clínico), nunca "corrigido" em silêncio.
+
+## 13. Formato do documento escrito
+
+| Formato | Linha no briefing | Estrutura | `config.formato` |
+|---|---|---|---|
+| Artigo (padrão) | — | NBR 6022: resumo, abstract, palavras-chave, Método, etc. | `artigo` |
+| Capítulo de livro | `Formato do documento: capitulo` | Revisão narrativa didática: objetivos, seções temáticas, caixas de pontos-chave/na prática, síntese final; **ABNT só na formatação** | `capitulo` |
+
+No capítulo, os revisores avaliam os mesmos critérios de `artigo-forma` e `artigo-fidelidade`, lendo "estrutura_abnt"
+como "formatação ABNT + estrutura de capítulo" (não cobrar resumo, abstract nem Método).
