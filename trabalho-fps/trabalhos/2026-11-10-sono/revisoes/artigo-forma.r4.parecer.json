@@ -1,0 +1,38 @@
+{
+  "etapa": "artigo-forma",
+  "rodada": 2,
+  "ciclo": "capitulo (2ª rodada do ciclo capítulo; r1-r2 avaliaram a versão em formato de artigo)",
+  "revisor": "fps-lider-producao",
+  "modelo_revisor": "opus",
+  "executor": "fps-4-redator-abnt",
+  "arquivos_revisados": ["artigo.json", "artigo.docx", "previa-artigo/folha-de-contato.png", "revisoes/artigo-forma.r3.resposta.json", "validacao.md"],
+  "criterios": {
+    "estrutura_abnt": 8.5,
+    "redacao_cientifica": 8.5,
+    "coesao_do_argumento": 8.5,
+    "discussao_critica": 9.0,
+    "ausencia_de_redundancia": 8.0
+  },
+  "achados": [],
+  "decisoes_sobre_r3": [
+    "A1 corrigido: as caixas não se repetem dentro das seções 3, 4, 5, 8 e 9; o Quadro 2 ficou com 7 linhas e remete às caixas Na prática das seções 3, 4 e 5.",
+    "A2 corrigido: a seção 9, §3, ficou em uma frase de linguagem comum, sem contagens; a Introdução não repete mais as bases não consultadas.",
+    "A3 corrigido: a caixa 'Como ler este capítulo' tem 5 itens e mantém as citações; a convenção de verbos saiu.",
+    "A4 corrigido: sem subseções 'Resumo e aplicação' nem quebra_pagina; o Quadro 1 vem logo após o 1º parágrafo da seção 4; na folha de contato (33 p.) não há título isolado no pé de página."
+  ],
+  "fidelidade_conferida": [
+    "Cafeína: 'reduz a sonolência' presente (sem 'eliminar o cansaço'); a redação duplicada foi corrigida como menor.",
+    "Sun 2018: 'os autores leem o conjunto como confirmação do risco, mas a diferença entre os desenhos é compatível com viés de seleção ou causalidade reversa' presente e coerente com o RR 1,10 × 1,26."
+  ],
+  "correcoes_aplicadas": [
+    "Seção 6.3: 'A cafeína age bloqueando os receptores de adenosina, substância que favorece a sonolência, o que reduz a sonolência' -> 'A cafeína bloqueia os receptores de adenosina, substância que favorece a sonolência, e assim reduz a sonolência'. Docx e prévia regenerados."
+  ],
+  "pontos_fortes": [
+    "Cada mensagem tem agora um só lugar; as caixas Mito, Pontos-chave e Na prática têm funções distintas.",
+    "Introdução enxuta, terminando no fio condutor; o material de consulta fica na caixa.",
+    "Formatação ABNT, citações e referências corretas; validador sem erros (~8.300 palavras, dentro de 6.000-9.000)."
+  ],
+  "escalonado": false,
+  "veredito_revisor": "APROVADO",
+  "resumo": "Os quatro achados maiores da rodada 1 do ciclo capítulo foram corrigidos sem regressões, e as duas frases de fidelidade (cafeína e Sun 2018) estão no texto. Uma correção menor de redação foi aplicada. Pendências do usuário: nome do autor na capa, logo da FPS e, se quiser, título mais amplo (incluir treinamento)."
+}
