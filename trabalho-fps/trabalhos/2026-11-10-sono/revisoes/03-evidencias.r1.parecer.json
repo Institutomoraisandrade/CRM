@@ -1,0 +1,61 @@
+{
+  "etapa": "03-evidencias",
+  "rodada": 1,
+  "revisor": "fps-lider-pesquisa",
+  "modelo_revisor": "opus",
+  "executor": "fps-3-avaliador-evidencias",
+  "arquivos_revisados": [
+    "trabalho-fps/trabalhos/2026-11-10-sono/03-evidencias.md",
+    "trabalho-fps/trabalhos/2026-11-10-sono/03-quadro-evidencias.json",
+    "trabalho-fps/trabalhos/2026-11-10-sono/03-referencias.json"
+  ],
+  "criterios": {
+    "hierarquia_da_evidencia": 8.5,
+    "extracao_de_dados": 8.5,
+    "avaliacao_critica": 7.5,
+    "certeza_grade": 6.5,
+    "atualidade_das_diretrizes": 9.0
+  },
+  "achados": [
+    {
+      "id": "A1",
+      "gravidade": "critica",
+      "local": "03-evidencias.md > §7 Resposta (1º parágrafo)",
+      "problema": "A resposta à pergunta generaliza além das fontes em dois pontos. (a) 'em dois ECR pequenos (n = 46), a perda total foi semelhante, mas com menos gordura e mais massa magra perdida' atribui aos dois ensaios um achado que só Nedeltcheva mostrou. Em Wang 2018 a perda de massa magra e de massa gorda foi semelhante; só a proporção do peso perdido como gordura foi menor. (b) 'Em adultos com sobrepeso, a melhor evidência disponível mostra que dormir pouco aumenta a ingestão (≈ 150 a 385 kcal/dia em laboratório)': as metanálises de ingestão são, na maioria, de adultos saudáveis em laboratório, não de adultos com sobrepeso. O próprio §6 rebaixa essa linha por evidência indireta.",
+      "evidencia": "PubMed PMID 29438540 (Wang 2018), resumo: 'The CR and CR + SR groups lost similar amounts of weight, lean mass, and fat mass. However, the proportion of total mass lost as fat was significantly greater (p = 0.016) in the CR group'. O §6 (linha 'Proporção de gordura') está correto ('no outro, mesma perda total e menor proporção de gordura'), mas o §7 contradiz essa linha. Alkhatib 2017 (PMID 27804960), Fenton 2021 (33001515) e González-Ortiz 2020 (32960623) são metanálises de privação parcial em adultos, majoritariamente saudáveis; o quadro registra 'Adultos saudáveis' para González-Ortiz.",
+      "correcao": "Reescreva as duas frases do §7. Sugestão: 'Em experimentos de laboratório com adultos majoritariamente saudáveis, dormir pouco aumenta a ingestão (≈ 150 a 385 kcal/dia; certeza moderada quanto à direção, evidência indireta para quem tem sobrepeso). Durante a dieta, dormir pouco mudou a composição do que se perde: em um ECR cruzado (n = 10), a perda total foi semelhante, mas com menos gordura e mais massa livre de gordura perdida; em outro (n = 36), peso, massa magra e massa gorda perdidos foram semelhantes, com menor proporção de gordura no peso perdido (certeza baixa).' Confira a mesma frase em 03-quadro-evidencias.json, se ela tiver sido repetida lá.",
+      "responsavel": "fps-3-avaliador-evidencias",
+      "licao": "Na resposta final, cada efeito resumido mantém a população e o estudo de origem; não atribua a 'os dois ensaios' o que só um mostrou, e não transfira para a população-alvo um efeito medido em voluntários saudáveis sem dizer que é indireto."
+    },
+    {
+      "id": "A2",
+      "gravidade": "maior",
+      "local": "03-evidencias.md > §6, linha 'Ingestão com extensão do sono em quem dorme pouco' (e §7, que repete 'certeza moderada')",
+      "problema": "A certeza 'Moderada' não segue dos rebaixamentos declarados. A coluna 'Motivos' lista dois problemas: '−1 (imprecisão da MA, limite perto de zero) e indireta (2 semanas; adultos jovens com sobrepeso sem insônia)'. Com dois rebaixamentos a partir de ECR, a certeza fica baixa. Se apenas um foi aplicado, o texto precisa dizer qual e por que o outro não foi.",
+      "evidencia": "Tasali 2022 (texto completo PMC8822469, Tabela 2): −270,4 kcal/dia (−393,4 a −147,4), n = 80, 2 semanas, sem dieta. Mostafa 2026 (texto completo PMC13655966): ingestão −147,5 kcal/dia (5,74 a 289,41; I² 53%; 5 estudos, n = 223); os autores graduam como moderada. As duas fontes concordam na direção, mas a MA tem limite inferior perto de zero e heterogeneidade moderada.",
+      "correcao": "Escolha e registre uma das duas saídas. (a) Rebaixe para 'Baixa', aplicando os dois rebaixamentos. (b) Mantenha 'Moderada' com um único rebaixamento explícito (evidência indireta: 2 semanas, sem dieta, adultos jovens), justificando por que a imprecisão não rebaixa: o ECR principal tem IC que exclui efeito trivial e ingestão medida por água duplamente marcada. Propague a decisão para o §7 e para o quadro. Avise o orquestrador se a certeza mudar, porque o redator e o designer já usam 'moderada'.",
+      "responsavel": "fps-3-avaliador-evidencias",
+      "licao": "A certeza final é a conta dos rebaixamentos escritos na mesma linha: dois motivos listados significam dois rebaixamentos, a menos que o texto explique por que um deles não se aplica."
+    }
+  ],
+  "correcoes_aplicadas": [
+    "03-evidencias.md §6, linha 'Peso corporal com restrição (sem dieta)': '+0,45 a +0,97 kg em 2 a 6 semanas' virou '… em 5 dias a 6 semanas' (Spaeth e Markwald são de 5 noites/dias; Covassin, 14 dias; Zuraikat, 6 semanas).",
+    "03-evidencias.md §7, item 3: 'ganho de ≈ 0,5 kg em 2 a 6 semanas' virou 'ganho de ≈ 0,5 a 1 kg em 5 dias a 6 semanas', pela mesma razão."
+  ],
+  "conferencia_numerica": "Conferi contra o resumo ou o texto completo mais de 30% dos efeitos numéricos, incluindo todos os que sustentam a resposta. Texto completo: Tasali 2022 (ingestão, gasto, balanço, peso, MLG, gordura, ganho do controle), Covassin 2022 (+308,1 kcal; peso +0,5; áreas abdominal, subcutânea e visceral; recuperação), Craven 2022 (−7,56%; força −2,85%; subgrupo de privação −3,00%; metarregressões −0,36, −0,55 e −0,30 com P = 0,051 e retirada do outlier; habilidade −20,9%), Mostafa 2026 (peso NS, P = 0,23, 11 estudos, n = 493; subgrupos −5,55 e −0,83; GRADE moderada/baixa/moderada) e LE8 ('≈ 7 to 8 hours'). Resumo: Nedeltcheva, Wang, Zuraikat, Spaeth, Markwald, Alkhatib 2017, Fenton, Yu, Lin, Spiegel, Brondel, Duan, Delpino, Kline, Creasy, Rodríguez-Martín, Papandreou, Lamon, Gardiner 2023, Faria 2024, Guo, Lee 2025, Chinoy, Frimpong, Baron, Killick, Depner 2019, Teixeira, Dzierzewski 2026, St-Onge 2025 e Riemann 2023. Todos conferem. O único erro de conteúdo é o de A1, na síntese do §7.",
+  "reavaliacao_critica": "Refiz duas avaliações. AMSTAR 2 de Mostafa 2026: PROSPERO, 4 bases, seleção e extração em duplicata, RoB, análise só de ECR para peso (P = 0,23 mantido) e GRADE; a mistura de pré-pós é tratada em sensibilidade. Concordo com 'moderada (provisória)'. RoB 2 de Tasali 2022: randomização em envelopes opacos, participantes cegos até a randomização (grupo controle até o fim), desfecho objetivo (água duplamente marcada), ITT, 93,8% com desfecho primário. Concordo com 'baixo risco a algumas preocupações'. Ressalva registrada pelos próprios autores: o ganho do grupo controle (+0,39 kg) contribui para o efeito.",
+  "diretrizes": "A WebSearch de hoje não achou atualização do consenso AASM/SRS 2015. NSF 2026 (PMID 42248743, Sleep Health 12(4):599-611) e AHA 2025 (PMID 40223596) estão corretos e são as versões mais recentes localizadas. As forças da ESRS 2023 conferem com o resumo (TCC-I A; melatonina de liberação rápida não recomendada A; liberação prolongada ≥ 55 anos B; luz e exercício B; actigrafia C).",
+  "ajuste_na_etapa_02": "02-analise-critica.md, tabela da linha 132: '−0,83 kg no sobrepeso (6 estudos, n = 337) e −5,55 kg na obesidade (3 estudos, n = 72)' aparece sem dizer que são subgrupos por IMC basal e que o efeito global sobre o peso não foi significativo (11 estudos, n = 493, P = 0,23; GRADE dos autores: baixa; texto completo PMC13655966). Recomendo que o líder da ciência acrescente essa ressalva na mesma célula, como correção menor. Leptina (Lin 2020, Radcliffe 2021) e o ≈ 0,4%/h de Craven já estão tratados corretamente em 02 (linhas 26–28, 164, 202 e 223): não exigem ajuste.",
+  "pontos_fortes": [
+    "Extração numérica fiel: nenhum número divergente nas mais de 30 fontes conferidas, várias pelo texto completo.",
+    "Hierarquia respeitada: metanálises e diretrizes à frente; ECR isolados apresentados como tais; observacionais e randomização mendeliana com ressalvas.",
+    "Atualização de diretrizes por busca dirigida (NSF 2026, AHA 2025), com conflito de interesse e autoavaliação da NSF apontados.",
+    "Subgrupo de −5,55 kg de Mostafa corretamente desmontado; ressalvas de Radcliffe e Lin sobre a narrativa hormonal registradas."
+  ],
+  "pendencias_orquestrador": [
+    "verificacao/03-referencias.relatorio.json ainda não existia no momento desta revisão; o líder confere na rodada 2.",
+    "Mudam conclusões já entregues ao redator/designer: (1) a frase de A1 sobre 'mais massa magra perdida' em dois ECR deve passar a valer só para Nedeltcheva (n = 10); (2) a ingestão com restrição vale para adultos majoritariamente saudáveis em laboratório; (3) a certeza da ingestão com extensão pode cair de moderada para baixa (A2); (4) o ganho de peso com restrição é de 5 dias a 6 semanas, não de 2 a 6."
+  ],
+  "escalonado": false,
+  "resumo": "Etapa forte em extração e hierarquia: todos os números conferidos batem com as fontes, e as diretrizes estão atualizadas. Ficam dois problemas, ambos na síntese: a resposta do §7 generaliza o achado de massa magra para os dois ECR e a ingestão para quem tem sobrepeso (crítico), e a certeza 'moderada' da ingestão com extensão não segue dos dois rebaixamentos declarados (maior). Duas correções menores de horizonte temporal foram aplicadas. Portão: REVISAR."
+}
