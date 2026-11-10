@@ -1,0 +1,41 @@
+{
+  "etapa": "artigo-fidelidade",
+  "rodada": 2,
+  "revisor": "fps-lider-ciencia",
+  "modelo_revisor": "opus",
+  "executor": "fps-4-redator-abnt",
+  "arquivos_revisados": [
+    "trabalho-fps/trabalhos/2026-11-10-sono/artigo.json",
+    "trabalho-fps/trabalhos/2026-11-10-sono/revisoes/artigo-fidelidade.r1.resposta.json",
+    "trabalho-fps/trabalhos/2026-11-10-sono/03-evidencias.md",
+    "trabalho-fps/trabalhos/2026-11-10-sono/slides.json"
+  ],
+  "criterios": {
+    "fidelidade_das_citacoes": 8.5,
+    "precisao_numerica": 8.5,
+    "ausencia_de_extrapolacao": 8.5,
+    "coerencia_com_as_etapas": 9.0
+  },
+  "decisoes_contestacoes": [],
+  "verificacao_achados_r1": [
+    {"id": "A1", "status": "resolvido", "evidencia": "§5.2: 'na recuperação, a ingestão caiu, mas o peso praticamente não mudou (−0,03 ± 0,50 kg)'. Confere com o resumo do PMID 23479616."},
+    {"id": "A2", "status": "resolvido", "evidencia": "§6.2: DPM 0,99 atribuído ao cochilo após noite normal, com '30 a menos de 60 min' só como condição de benefício maior. Confere com o PMID 36690376. 03-evidencias.md (linha 148) e slides.json também corrigidos."},
+    {"id": "A3", "status": "resolvido", "evidencia": "Resumo e abstract: álcool reduz o REM (moderada), com efeito incerto no tempo total; telas, associação em coortes (baixa). Considerações: 'o álcool altera o sono REM e o uso de telas à noite associa-se a menos sono'. Confere com Gardiner 2025 e He 2025."},
+    {"id": "A4", "status": "resolvido", "evidencia": "§7.2: correlações pequenas para IMC, massa gorda e cintura e moderada para % de gordura (r = 0,37; 0,33 a 0,41); OR 1,20 com nota sobre o erro tipográfico do IC no resumo (o limite superior '1,140' de fato é inconsistente). Desenho observacional. Confere com o PMID 38072635."},
+    {"id": "A5", "status": "resolvido", "evidencia": "§9.2: Choi 2022 (sem efeito em adultos com insônia crônica) e Mohammadi 2026 (63 ECR, sem efeito em peso, IMC, cintura ou % de gordura) acrescentados. Confere com os PMIDs 36179487 e 41515249."}
+  ],
+  "achados": [],
+  "correcoes_aplicadas": [
+    "artigo.json > resumo: regressão corrigida. 'reduziu o desempenho físico e a força em cerca de 3%' dava a entender que o desempenho também caiu cerca de 3% (o valor é −7,56%); voltou a 'e, em média, a força em cerca de 3%', como no abstract.",
+    "artigo.docx regenerado; validar_trabalho.py: APROVADO (0 erros)."
+  ],
+  "pontos_fortes": [
+    "As correções foram cirúrgicas, sem regressões de conteúdo além da frase do resumo; as duas referências novas no texto já estavam verificadas em referencias.json.",
+    "O redator propagou a correção de Mesas a 03 e aos slides por conta própria."
+  ],
+  "pendencias_orquestrador": [
+    "03-quadro-evidencias.json: o campo de certeza de zuraikat2026 ('moderada', certeza do estudo) segue diferente do §6 ('baixa', certeza do desfecho); não afeta o artigo."
+  ],
+  "escalonado": false,
+  "resumo": "Os 5 achados da r1 foram resolvidos e conferidos contra as fontes. Corrigi uma regressão menor no resumo e regenerei o docx. Etapa artigo-fidelidade aprovada na 2ª rodada."
+}

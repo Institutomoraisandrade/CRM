@@ -1,6 +1,6 @@
 # Validação — 2026-11-10-sono
 
-Gerado em 10/11/2026 11:10.
+Gerado em 10/11/2026 11:11.
 
 **Resultado:** ✅ APROVADO (0 erro(s), 5 aviso(s))
 
@@ -15,7 +15,7 @@ Gerado em 10/11/2026 11:10.
 - etapa 'banca' sem parecer de revisão
 
 ## Indicadores
-- resumo: 247 palavras
+- resumo: 249 palavras
 - corpo do texto: ~7529 palavras
 - 67 referência(s); 41 (61%) dos últimos 5 anos; mais antiga: 2004
 - desenhos: Revisão sistemática com metanálise: 26; Ensaio clínico randomizado: 9; Ensaio clínico randomizado (cruzado): 4; Diretriz (consenso): 3; Diretriz: 3; Transversal: 3; Coorte: 3; Revisão sistemática: 3; Revisão narrativa e consenso de especialistas: 1; Revisão narrativa: 1; Revisão sistemática (umbrella review): 1; Ensaio experimental de laboratório (medidas repetidas; randomização aproximada de 8:1): 1; Estudo experimental de internação (sem rótulo de ECR no PubMed): 1; Ensaio clínico randomizado cruzado: 1; Ensaio experimental randomizado (3 grupos paralelos, internação): 1; Revisão sistemática (estudos observacionais): 1; Coorte (tratamento multicêntrico de 20 semanas): 1; Estudo experimental (cruzado, n = 12): 1; Revisão sistemática (de metanálises) e reavaliação de diretriz: 1; Revisão sistemática com metanálise (estudos de coorte): 1; Diretriz (posicionamento de sociedade): 1
