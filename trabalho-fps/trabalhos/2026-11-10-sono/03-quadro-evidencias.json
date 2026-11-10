@@ -371,7 +371,7 @@
   "intervencao": "Cochilo diurno",
   "comparador": "Sem cochilo",
   "desfecho": "Desempenho cognitivo, físico, fadiga",
-  "resultado": "Após noite normal: cognição DPM 0,69 (0,37 a 1,00; I² 71,5%); desempenho físico 0,99 (0,67 a 1,31; I² 89,1%); fadiga −0,76 (−1,24 a −0,28; I² 89,5%); melhor com cochilo de 30 a < 60 min; efeitos também após restrição parcial",
+  "resultado": "Após noite normal: cognição DPM 0,69 (0,37 a 1,00; I² 71,5%); desempenho físico 0,99 (0,67 a 1,31; I² 89,1%); fadiga −0,76 (−1,24 a −0,28; I² 89,5%); efeitos também após restrição parcial; benefícios maiores com cochilo de 30 a < 60 min e com intervalo > 1 h entre o despertar e o teste (o resumo não traz estimativa numérica separada para esse subgrupo)",
   "origem_dado": "resumo",
   "avaliacao_critica": "AMSTAR 2 (só resumo): registro PROSPERO, 6 bases; só homens; heterogeneidade alta. Confiança provisória: moderada a baixa",
   "certeza_grade": "baixa",
@@ -724,7 +724,7 @@
   "resultado": "Peso +0,45 kg (0,33 a 0,57); cintura +0,52 cm (0,25 a 0,79); volume corporal total +0,56 L (0,19 a 0,93); sem efeito na % de tecido adiposo ou muscular; leptina +2,03 ng/mL (0,38 a 3,68); grelina com tendência a menor (NS); GLP-1 NS; tempo sedentário +17,2 min/dia (11,7 a 22,7); atividade moderada-vigorosa NS; gasto total (n = 34) NS; ingestão não medida",
   "origem_dado": "resumo + texto completo (PMC13464323)",
   "avaliacao_critica": "RoB 2: algumas preocupações (análise agrupada não pré-especificada; sem cegamento; desfechos objetivos; 6 semanas podem ser curtas para composição)",
-  "certeza_grade": "moderada (ganho de peso ≈ 0,5 kg em 6 semanas)",
+  "certeza_grade": "baixa",
   "observacoes": "Ingestão inferida, não medida; ganho semelhante ao de Covassin com 2 semanas de restrição severa."
  },
  {
