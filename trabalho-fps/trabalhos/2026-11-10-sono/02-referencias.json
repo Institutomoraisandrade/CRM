@@ -1173,12 +1173,12 @@
     "ano": 2026,
     "volume": "18",
     "numero": "1",
-    "paginas": null,
+    "paginas": "134",
     "doi": "10.3390/nu18010134",
     "pmid": "41515249",
     "desenho": "Revisão sistemática com metanálise",
     "nivel_evidencia": "Metanálise de 63 ECR",
     "verificado": true,
-    "verificado_via": "PubMed PMID 41515249 (get_article_metadata, 10/11/2026; epub 31/12/2025, volume 18 = 2026; [ppdat] 2025 e 2026 sem resultado: ano do fascículo a conferir pelo verificador)"
+    "verificado_via": "PubMed PMID 41515249 (get_article_metadata, 10/11/2026; epub 31/12/2025; Nutrients 18(1), artigo 134 = fascículo de 2026; ano confirmado pelo líder científico na r2)"
   }
 ]

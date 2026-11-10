@@ -1,0 +1,78 @@
+{
+  "etapa": "02-analise",
+  "rodada": 2,
+  "revisor": "fps-lider-ciencia",
+  "modelo_revisor": "opus",
+  "executor": "fps-2-analista-critico",
+  "arquivos_revisados": [
+    "trabalho-fps/trabalhos/2026-11-10-sono/02-analise-critica.md",
+    "trabalho-fps/trabalhos/2026-11-10-sono/02-referencias.json",
+    "trabalho-fps/trabalhos/2026-11-10-sono/revisoes/02-analise.r1.resposta.json"
+  ],
+  "criterios": {
+    "cadeia_causal": 8.5,
+    "precisao_dos_detalhes": 7.0,
+    "classificacao_da_certeza": 7.5,
+    "analise_critica": 8.5,
+    "qualidade_das_fontes": 8.5
+  },
+  "decisoes_contestacoes": [],
+  "verificacao_achados_r1": [
+    {
+      "id": "A1",
+      "status": "parcial",
+      "evidencia": "Números de Tasali (−0,87 kg; MLG −0,62; gordura −0,25; controle +0,39) e de Mostafa (IMC −0,15; peso −0,83 e −5,55; ingestão −147,5) conferem com PMC8822469 e com o resumo do PMID 42044907. A correção trouxe duas regressões: ver R1 e R2."
+    },
+    {
+      "id": "A2",
+      "status": "resolvido",
+      "evidencia": "Conferi no texto completo PMC9584849: força −2,85% (−4,47 a −1,23; I² 62,2%; 25 estudos; n = 289; 74% homens), só privação significativa (−3,00%), membros inferiores sim e superiores não, manhã em geral sem efeito; resistência −5,55%, potência anaeróbia −6,26%, habilidade −20,9%; meta-regressão restrição tardia −0,55%/h e privação −0,27%/h após retirar o outlier; exclusão de protocolos de várias noites. Tudo confere; 'maior em resistência' retirado com a ressalva correta."
+    },
+    {
+      "id": "A3",
+      "status": "resolvido",
+      "evidencia": "Título 'da noite mal dormida à composição do peso perdido'; etapas 4 e 6 dizem peso perdido parecido e menos gordura; soma 3,0 × 2,9 kg confere com o resumo do PMID 20921542 e está rotulada como inferência de cálculo."
+    },
+    {
+      "id": "A4",
+      "status": "resolvido",
+      "evidencia": "Conferi os 7 resumos novos: Reichert 2022 (adenosina 'widely accepted' como reguladora endógena; cafeína antagonista), Clark 2017 (latência, tempo total, eficiência, ondas lentas, dose e horário, idosos, polimorfismos), Costello 2014 (35 ECR, 83% alta qualidade, recomendações GRADE fracas), Ferracioli-Oda 2013 (latência 7,06 min; tempo total 8,25 min; adultos e crianças), Choi 2022 (sem efeito em adultos), Delpino 2021 (DMP −0,48; I² 92%; IMC e cintura nulos), Mohammadi 2026 (63 ECR; sem efeito em peso, IMC, cintura e % de gordura; quadril −1,18 cm). Tudo confere."
+    }
+  ],
+  "achados": [
+    {
+      "id": "R1",
+      "gravidade": "critica",
+      "local": "02-analise-critica.md > Síntese item 5; §1.3 passo 4 ('Sentido inverso'); §2 linha 'Peso' (coluna Certeza); §5 equívoco 2",
+      "problema": "A qualidade da metanálise de intervenções de sono está invertida. O texto diz 'qualidade avaliada como baixa em 12 estudos e com ressalvas em 10' e 'estudos de qualidade baixa', mas a fonte diz que 12 estudos tiveram BAIXO RISCO DE VIÉS em todos os domínios. A certeza GRADE, que a própria metanálise reporta, também ficou de fora.",
+      "evidencia": "Mostafa 2026, texto completo PMC13655966, §3.4: '12 studies had low concern throughout all categories assessed, with other studies having at least some concern'; risco de viés geral: 'some concern for RCTs and high risk of bias for nonrandomized studies'; 16 dos 17 estudos de adiposidade eram ECR; GRADE: 'for the outcomes of BMI, body weight, and daily calorie intake, the final levels of certainty determined were moderate, low, and moderate'. O resumo ('12 and 10 studies were of low and some concerns') usa as categorias de risco de viés do RoB 2.",
+      "correcao": "Substituir 'qualidade baixa em 12 estudos e com ressalvas em 10' e 'estudos de qualidade baixa' por: '12 estudos com baixo risco de viés em todos os domínios e os demais com ao menos alguma preocupação; certeza GRADE moderada para IMC e ingestão e baixa para peso; inclui estudos não randomizados (alto risco de viés), mas 16 dos 17 estudos de adiposidade eram ECR' (texto completo PMC13655966). Ajustar a coluna Certeza da linha 'Peso' no §2 e a Síntese 5 e o equívoco 2 na mesma direção.",
+      "responsavel": "fps-2-analista-critico",
+      "licao": "'Low' e 'some concerns' em avaliação de risco de viés (RoB 2) significam baixo risco e alguma preocupação, não qualidade baixa; confira no texto completo antes de qualificar a evidência e traga a certeza GRADE que a própria revisão reporta."
+    },
+    {
+      "id": "R2",
+      "gravidade": "critica",
+      "local": "02-analise-critica.md > Síntese item 5 (última frase); §5 equívoco 2 (Correção)",
+      "problema": "'Não há prova de efeito sustentado nem de perda de gordura' contradiz o ECR citado na mesma frase, que relata redução significativa da massa gorda contra o controle. O próprio §1.3 do texto traz o número (−0,25 kg).",
+      "evidencia": "Tasali 2022, PMC8822469, Tabela 2: massa gorda −0,25 kg (IC 95% −0,39 a −0,10; P = 0,001) com extensão contra controle em 2 semanas, por DXA.",
+      "correcao": "Reescrever as duas frases com o dado, por exemplo: 'a redução de peso em 2 semanas foi sobretudo de massa livre de gordura, com pequena redução de gordura (−0,25 kg); não há dado de efeito sustentado'.",
+      "responsavel": "fps-2-analista-critico",
+      "licao": "Uma frase-resumo negativa ('não há prova de...') precisa ser conferida contra todos os números citados no próprio texto; resumo não pode contradizer o dado que apresenta."
+    }
+  ],
+  "correcoes_aplicadas": [
+    "02-referencias.json > mohammadi2026: 'paginas' preenchido com '134' (número do artigo, DOI 10.3390/nu18010134). Decisão sobre o ano: mantido 2026 (Nutrients 18(1), fascículo de janeiro de 2026; epub em 31/12/2025, sem [ppdat] no PubMed). Registro feito em verificado_via.",
+    "Conferidos os metadados das 7 referências novas (reichert2022, clark2017, costello2014, ferracioli2013, choi2022, delpino2021, mohammadi2026) por get_article_metadata: títulos, periódicos, volumes, páginas/números de artigo e DOI conferem."
+  ],
+  "pontos_fortes": [
+    "A2 resolvido com rigor exemplar: conciliação Craven × Knowles pelo critério de inclusão (protocolos de uma noite × várias noites), números conferidos no texto completo e retirada da comparação entre categorias por falta de teste formal.",
+    "A ressalva de água/glicogênio ganhou um dado concreto (Tasali: perda sobretudo de massa livre de gordura), o que melhora a cadeia causal.",
+    "Melatonina tratada como mito com verbo proporcional e divergência declarada (Ferracioli-Oda × Choi; Delpino × Mohammadi), respeitando o escopo do briefing."
+  ],
+  "pendencias_orquestrador": [
+    "Lowe 2020: direção do índice de massa magra apendicular segue sem conferência no texto completo (não bloqueante)."
+  ],
+  "escalonado": false,
+  "resumo": "A2, A3 e A4 resolvidos e conferidos nos textos completos e nos resumos. O A1 trouxe duas regressões críticas, ambas de redação curta: a qualidade da metanálise de Mostafa ficou invertida (12 estudos têm baixo risco de viés, não qualidade baixa; GRADE moderada para IMC e ingestão e baixa para peso), e a frase 'nem de perda de gordura' contradiz o −0,25 kg de gordura de Tasali. Uma correção menor nas referências (mohammadi2026)."
+}
