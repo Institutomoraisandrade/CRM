@@ -1,0 +1,54 @@
+{
+  "etapa": "01-investigacao",
+  "rodada": 2,
+  "revisor": "fps-lider-pesquisa",
+  "modelo_revisor": "opus",
+  "executor": "fps-1-investigador",
+  "arquivos_revisados": [
+    "trabalho-fps/trabalhos/2026-11-10-sono/01-investigacao.md",
+    "trabalho-fps/trabalhos/2026-11-10-sono/01-picos.json",
+    "trabalho-fps/trabalhos/2026-11-10-sono/01-referencias.json",
+    "trabalho-fps/trabalhos/2026-11-10-sono/revisoes/01-investigacao.r1.resposta.json"
+  ],
+  "criterios": {
+    "delimitacao": 8.5,
+    "epidemiologia_com_fontes": 8.5,
+    "pergunta_estruturada": 8.5,
+    "desfechos_relevantes": 8.5,
+    "estrategia_de_busca": 8.5
+  },
+  "decisoes_contestacoes": [],
+  "verificacao_achados_r1": [
+    {
+      "id": "A1",
+      "status": "resolvido",
+      "evidencia": "Rodei de novo a string principal (20 operadores), em duas janelas por causa do limite de 200 registros da ferramenta. 2004–2015: 127 registros; 2016–2026/11/10: 157 registros. Cinco PMIDs aparecem nas duas janelas (publicação eletrônica em 2015 e impressa em 2016), o que dá 279 registros únicos, como declarado. Os 157 também conferem. Spaeth 2013 (23814334), Markwald 2013 (23479616), Covassin 2022 (35361348) e os 8 controles originais foram recuperados. Os números de Spaeth, Markwald e Covassin na §4 conferem com os resumos e estão rotulados como evidência indireta."
+    },
+    {
+      "id": "A2",
+      "status": "resolvido",
+      "evidencia": "Rodei de novo a string 7 (melatonina, 2010–2026, pdat): 61 resultados, como declarado. Conferi nos resumos os números de Faria 2024, Guo 2026, Depner 2019, Lee 2025, Chinoy 2021, Gardiner 2023, Teixeira 2022 e Bodur 2025: todos batem. Retirada a afirmação de 'sem evidência'. O critério de exclusão foi reescrito e agora é coerente com o item 7 do briefing. O subtema de horário das refeições e cronotipo foi criado. Ficou declarado o que não foi lido (álcool, telas, outros suplementos)."
+    },
+    {
+      "id": "A3",
+      "status": "resolvido",
+      "evidencia": "Rodei de novo a string 13 (diretrizes, 2010–2026, pdat): 287 resultados, como declarado. St-Onge 2016 e Lloyd-Jones 2022 foram incluídos, verificados e usados só no que os resumos sustentam. A diretriz brasileira de insônia da ABS (PMID 38370879, Sleep Sci 16(Suppl 2):507-549) foi verificada. A busca por diretriz nacional sobre duração do sono foi registrada como negativa, com os bloqueios declarados."
+    }
+  ],
+  "achados": [],
+  "correcoes_aplicadas": [
+    "01-investigacao.md §4 (Spaeth 2013): retirei 'entre os restritos' da frase sobre a proporção de gordura na madrugada (33,0% × 28,2%), porque o resumo não especifica o grupo. Acrescentei '(o resumo não especifica o grupo)'."
+  ],
+  "pontos_fortes": [
+    "Todas as contagens declaradas que conferi se reproduzem: principal 279/157, string 7 = 61, string 13 = 287.",
+    "As 14 referências novas estão verificadas por PMID; conferi o resumo de 12 delas, sem divergência numérica.",
+    "Distinção explícita entre lacuna de existência e lacuna de leitura; hipóteses rotuladas como tais.",
+    "Nenhuma regressão nos números epidemiológicos nem nas correções menores da r1."
+  ],
+  "pendencias_orquestrador": [
+    "menezesjunior2026: o PubMed só traz o primeiro autor; é preciso completar a autoria antes do redator ABNT.",
+    "Vigitel (relatório oficial), Guia de Atividade Física, aasm.org e BVS estão inacessíveis na rede restrita."
+  ],
+  "escalonado": false,
+  "resumo": "Os 3 achados maiores da r1 foram resolvidos e conferidos contra o PubMed (contagens reproduzidas e resumos lidos). Uma correção menor foi aplicada. Etapa pronta para aprovação da pergunta PICOS pelo usuário."
+}
