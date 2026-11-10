@@ -1,0 +1,98 @@
+{
+  "etapa": "artigo-fidelidade",
+  "rodada": 1,
+  "revisor": "fps-lider-ciencia",
+  "modelo_revisor": "opus",
+  "executor": "fps-4-redator-abnt",
+  "arquivos_revisados": [
+    "trabalho-fps/trabalhos/2026-11-10-sono/artigo.json",
+    "trabalho-fps/trabalhos/2026-11-10-sono/03-evidencias.md",
+    "trabalho-fps/trabalhos/2026-11-10-sono/03-quadro-evidencias.json",
+    "trabalho-fps/trabalhos/2026-11-10-sono/02-analise-critica.md"
+  ],
+  "criterios": {
+    "fidelidade_das_citacoes": 7.5,
+    "precisao_numerica": 8.0,
+    "ausencia_de_extrapolacao": 7.0,
+    "coerencia_com_as_etapas": 8.5
+  },
+  "achados": [
+    {
+      "id": "A1",
+      "gravidade": "critica",
+      "local": "artigo.json > secoes[4] 'Restrição do sono sem dieta', bloco 0",
+      "problema": "'em 16 adultos, cinco dias de sono insuficiente elevaram o peso em 0,82 ± 0,47 kg, e a recuperação o devolveu à linha de base' contradiz a fonte: na recuperação o peso variou só −0,03 ± 0,50 kg, ou seja, o ganho não foi revertido.",
+      "evidencia": "Markwald 2013 (PMID 23479616), resumo: 'transitioning from an insufficient to adequate/recovery sleep schedule decreased energy intake ... and led to -0.03 ± 0.50 kg weight loss'. 03-evidencias.md, linha de Markwald, registra corretamente 'recuperação: ingestão menor e −0,03 ± 0,50 kg'.",
+      "correcao": "Trocar por: 'e, na recuperação, a ingestão caiu, mas o peso praticamente não mudou (−0,03 ± 0,50 kg)'.",
+      "responsavel": "fps-4-redator-abnt",
+      "licao": "Ao condensar o desfecho de uma fase de recuperação, copie o número da fonte; 'voltou ao basal' é afirmação que exige o dado de retorno, não só a direção."
+    },
+    {
+      "id": "A2",
+      "gravidade": "critica",
+      "local": "artigo.json > secoes[5] 'Síntese proteica e recuperação', bloco 1",
+      "problema": "O efeito DPM 0,99 (0,67 a 1,31; I² 89,1%) é atribuído ao 'cochilo de 30 a menos de 60 min'. Na fonte, 0,99 é o efeito do cochilo em geral, após uma noite normal; a duração de 30 a menos de 60 min é a condição em que o benefício foi maior, sem número próprio no resumo. O erro já estava em 03-evidencias.md, linha 148.",
+      "evidencia": "Mesas 2023 (PMID 36690376), resumo: 'When performed after a normal night of sleep, napping ... improved ... physical performance (SMD=0.99, 95% CI: 0.67 to 1.31; I=89.1%) ... Overall, the benefits were higher with a nap duration between 30 and <60 min'.",
+      "correcao": "Reescrever: 'Do lado da recuperação, o cochilo diurno, após uma noite normal, melhorou o desempenho físico (DPM 0,99; IC 95% 0,67 a 1,31; I² = 89,1%), a cognição e a fadiga, também após privação parcial, com benefício maior em cochilos de 30 a menos de 60 min; só homens (n = 291) [@mesas2023]'. Ajustar no mesmo sentido qualquer menção nos slides.",
+      "responsavel": "fps-4-redator-abnt",
+      "licao": "Em metanálise com subgrupos, o número pertence à análise em que foi estimado; a condição 'em que o efeito foi maior' não herda o número do conjunto."
+    },
+    {
+      "id": "A3",
+      "gravidade": "critica",
+      "local": "artigo.json > resumo e abstract (Resultados); secoes[10] Considerações finais, bloco 1",
+      "problema": "'Cafeína e álcool reduziram o sono (certeza moderada)' e 'cafeína, álcool e telas prejudicam o sono de modo mensurável' afirmam mais do que a evidência. Para o álcool, a certeza moderada vale só para o sono REM, e o efeito no tempo total é incerto (muito baixa). Para as telas, o dado é associação em coortes autorrelatadas (baixa). O próprio corpo do texto (§7.3 e Quadro 3) está correto.",
+      "evidencia": "Gardiner 2025 (PMID 39631226): REM reduzido a partir de ≤ 0,50 g/kg; 'large uncertainty observed in the effect on total sleep time, sleep efficiency, and wake after sleep onset'. He 2025 (PMID 41480345): 21 coortes, associação. 03-evidencias.md §6: álcool 'moderada (REM); muito baixa (tempo total, eficiência)'; telas 'baixa'.",
+      "correcao": "Resumo: 'A cafeína reduziu o tempo de sono e o álcool reduziu o sono REM (certeza moderada); o uso de telas associou-se a menos sono (certeza baixa)'. Abstract, no mesmo sentido. Considerações: 'a cafeína reduz o sono, o álcool altera o sono REM e o uso de telas à noite associa-se a menos sono'.",
+      "responsavel": "fps-4-redator-abnt",
+      "licao": "No resumo e nas considerações, cada exposição leva o desfecho e a certeza que lhe cabem; não agrupe exposições com certezas diferentes sob o mesmo verbo."
+    },
+    {
+      "id": "A4",
+      "gravidade": "maior",
+      "local": "artigo.json > secoes[6] 'Turnos e jet lag social', bloco 0",
+      "problema": "'correlacionou-se de modo fraco com adiposidade em 43 estudos transversais' é seletivo: o texto omite a correlação moderada com o percentual de gordura (r = 0,37) e a OR de 1,20 para sobrepeso ou obesidade. Além disso, o resumo fala em estudos observacionais, não especifica 'transversais'.",
+      "evidencia": "Arab 2024 (PMID 38072635), resumo: '43 studies ... percent of body fat (r: 0.37; 95%CI, 0.33, 0.41; I = 96.17%) ... risk of having overweight/obesity (odds ratio: 1.20 ...)'; 'using observational studies'.",
+      "correcao": "Reescrever: 'associou-se positivamente à adiposidade em 43 estudos observacionais (n = 231.648), com correlações pequenas para IMC (r = 0,12; 0,07 a 0,17), massa gorda (0,10) e cintura (0,15) e moderada para o percentual de gordura (r = 0,37; 0,33 a 0,41), todas com heterogeneidade alta na maior parte [@arab2024]'. Manter certeza baixa e a ressalva sobre causalidade.",
+      "responsavel": "fps-4-redator-abnt",
+      "licao": "Ao qualificar a força de uma associação ('fraca'), relate todos os desfechos principais da síntese; escolher só os menores muda a leitura."
+    },
+    {
+      "id": "A5",
+      "gravidade": "maior",
+      "local": "artigo.json > secoes[8] 'Melatonina e suplementos', bloco 0",
+      "problema": "Leitura seletiva da melatonina. Para o sono, o texto cita só a metanálise favorável em distúrbios primários (Ferracioli-Oda) e omite a metanálise de 24 ECR sem efeito em adultos com insônia crônica (Choi 2022), que está na etapa 02. Para o peso, cita só o sinal limítrofe de Delpino 2021 e omite a metanálise posterior de 63 ECR sem efeito em peso, IMC e % de gordura (Mohammadi 2026), também na etapa 02. As duas referências estão em referencias.json, mas não foram citadas.",
+      "evidencia": "02-analise-critica.md §1.6 e equívocos 8 e 12; Choi 2022 (PMID 36179487): 'In adults group, melatonin was not significantly effective'; Mohammadi 2026 (PMID 41515249): 'No significant effects of melatonin were observed on body weight, waist circumference, body fat percentage, body mass index'.",
+      "correcao": "Acrescentar uma frase para cada desfecho: (sono) 'em insônia crônica, a metanálise de 24 ECR não encontrou efeito significativo em adultos [@choi2022]'; (peso) 'uma metanálise posterior, de 63 ECR, não encontrou efeito em peso, IMC, cintura ou percentual de gordura [@mohammadi2026]'. Manter a certeza muito baixa.",
+      "responsavel": "fps-4-redator-abnt",
+      "licao": "Em tema com sínteses divergentes registradas nas etapas anteriores, o artigo apresenta as duas, nunca só a favorável."
+    }
+  ],
+  "correcoes_aplicadas": [
+    "artigo.json > resumo e abstract: 'dois ensaios pequenos indicaram' → 'sugeriram' ('indicated' → 'suggested'), conforme a convenção de verbos do próprio Método (certeza baixa = 'sugere').",
+    "artigo.json > §6.3: 'exercício intervalado de alta intensidade' → 'exercício de alta intensidade' (Frimpong 2021, PMID 34416428: 'high-intensity exercise', sem especificar intervalado).",
+    "artigo.json > §4.3: frase de Jin 2026 reescrita. 13 estudos e 638 participantes é o total da revisão; a ausência de efeito vale para a análise dos ensaios controlados, e o efeito pequeno aparece só contra a linha de base (PMID 40498475).",
+    "artigo.json > §9.3: 'As duas divergem quanto ao sentido do erro' → o resumo de Lee 2025 não define a convenção de sinal, e Agostinho 2026 descreve superestimação (PMIDs 39484805 e 42175611).",
+    "artigo.json > §5.4: as '2,0 ± 0,8 sessões a menos' foram atribuídas ao sono curto, como na fonte, e não à combinação de sono curto e ruim (Kline 2026, PMID 41889166).",
+    "artigo.json > §6.1: acrescentado que, na privação, a inclinação de −0,27% por hora fica significativa após a retirada de um desfecho atípico (Craven 2022, texto completo PMC9584849).",
+    "02-analise-critica.md (aprovada), a pedido do orquestrador: ressalva de subgrupo de Mostafa 2026 aplicada na Síntese 5, no §1.3 passo 4, na linha 'Peso' do §2, na linha da metanálise do §3 e no equívoco 2. O peso no conjunto não caiu de forma significativa (11 estudos, n = 493, P = 0,23; texto completo PMC13655966); os −0,83 kg e −5,55 kg são subgrupos por IMC basal.",
+    "artigo.docx regenerado com gerar_docx_abnt.py depois das correções menores; validar_trabalho.py rodado sem erros."
+  ],
+  "decisoes_sinalizadas_pelo_redator": [
+    "Zuraikat 2026: aceito 'baixa' no artigo. A certeza GRADE é por desfecho (peso com restrição, sem dieta: baixa no §6 de 03), e o campo 'certeza_grade: moderada' de 03-quadro-evidencias.json é por estudo e não deve aparecer no artigo. Fica para o orquestrador alinhar o quadro de 03.",
+    "Vigitel via Menezes-Júnior 2026: aceito. Os números conferem com o resumo (n = 27.048; 52,3%, 31,8% e 11,9%), e a limitação está declarada no texto.",
+    "'≥ 7 h' de Watson via Liu 2016: aceito, porque está declarado como citação secundária nas limitações."
+  ],
+  "citacoes_conferidas": "56 das 65 citações (86%) conferidas contra o resumo no PubMed nesta missão ou nas anteriores desta sessão, incluindo todas as das seções de evidência (4 a 9) que trazem números ou recomendações. Texto completo consultado para Tasali, Craven, Mostafa e Leproult. Sem divergência numérica além de A1 e A2.",
+  "pontos_fortes": [
+    "Os pontos já decididos em 03 (r2) foram respeitados: ingestão com extensão de certeza baixa; mais massa livre de gordura perdida só em Nedeltcheva; peso global não significativo em Mostafa, com −5,55 e −0,83 kg tratados como subgrupos; ganho de 0,5 a 1 kg; ingestão restrita a adultos saudáveis de laboratório.",
+    "Quadros 1 e 2 fiéis ao texto completo (Tasali, Covassin, Zuraikat, Mostafa); a convenção de verbos por certeza GRADE é declarada no Método e aplicada na maior parte do texto.",
+    "As considerações finais respondem à pergunta como 03-evidencias.md §7 ('não é possível afirmar que corrigir o sono emagrece, nem quanto, nem por quanto tempo')."
+  ],
+  "pendencias_orquestrador": [
+    "03-evidencias.md, linha 148 (Mesas 2023): o mesmo erro de A2 está na etapa 03. Corrigir lá e conferir os slides.",
+    "03-quadro-evidencias.json: o campo de certeza de zuraikat2026 diz 'moderada', enquanto o §6 diz 'baixa' para o desfecho."
+  ],
+  "escalonado": false,
+  "resumo": "O artigo é fiel na maior parte: 56 de 65 citações conferidas, quadros exatos e conclusão igual à de 03 §7. Há 3 achados críticos (Markwald 'voltou ao basal', que contradiz a fonte; número do cochilo atribuído ao subgrupo de 30 a menos de 60 min; álcool e telas com verbo e certeza mais fortes que a evidência no resumo e nas considerações) e 2 maiores (jet lag social reportado de forma seletiva; melatonina sem as metanálises nulas). Os 6 menores foram corrigidos pelo revisor, o docx foi regenerado e a ressalva de Mostafa foi aplicada em 02."
+}

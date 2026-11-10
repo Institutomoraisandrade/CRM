@@ -1,0 +1,95 @@
+{
+  "etapa": "artigo-forma",
+  "rodada": 1,
+  "revisor": "fps-lider-producao",
+  "modelo_revisor": "opus",
+  "executor": "fps-4-redator-abnt",
+  "arquivos_revisados": [
+    "trabalho-fps/trabalhos/2026-11-10-sono/artigo.json",
+    "trabalho-fps/trabalhos/2026-11-10-sono/artigo.docx",
+    "trabalho-fps/trabalhos/2026-11-10-sono/previa-artigo/folha-de-contato.png e pagina-02, 05, 06, 12, 13, 14, 18, 23, 25",
+    "trabalho-fps/trabalhos/2026-11-10-sono/validacao.md",
+    "trabalho-fps/trabalhos/2026-11-10-sono/00-briefing.md"
+  ],
+  "criterios": {
+    "estrutura_abnt": 7.5,
+    "redacao_cientifica": 8.0,
+    "coesao_do_argumento": 7.5,
+    "discussao_critica": 7.0,
+    "ausencia_de_redundancia": 5.5
+  },
+  "achados": [
+    {
+      "id": "A1",
+      "gravidade": "critica",
+      "local": "artigo.json > resumo (Resultados), abstract (Results) e Considerações finais §2",
+      "problema": "Resumo, abstract e conclusão afirmam mais do que o corpo sustenta. (a) 'Cafeína e álcool reduziram o sono (certeza moderada)': o corpo (seção 7.3 e Quadro 3) diz que o álcool reduz e atrasa o REM, com efeitos sobre tempo total, eficiência e vigília incertos (certeza muito baixa). (b) CF §2 'cafeína, álcool e telas prejudicam o sono de modo mensurável': para telas o corpo só tem associação em coortes autorrelatadas, certeza baixa ('associação, não efeito demonstrado', Quadro 3). (c) Resumo 'a recuperação de fim de semana não preveniu a piora metabólica' omite que o corpo (seção 9.1) relata resultado oposto em Killick et al. (2015) e conclui que 'os resultados divergem'.",
+      "evidencia": "Comparação frase a frase: resumo/abstract × seção 7.3 §2 (Gardiner et al., 2025), Quadro 3 linhas 'álcool' e 'telas', seção 9.1 (Depner et al., 2019 × Killick et al., 2015).",
+      "correcao": "Resumo: 'A cafeína reduziu o tempo e a eficiência do sono (certeza moderada); o álcool, mesmo em dose baixa, reduziu o sono REM (certeza moderada), com efeito incerto sobre o tempo total.' e 'a recuperação de fim de semana teve resultados divergentes e, no maior experimento, não preveniu a piora metabólica (certeza baixa)'. Espelhar no abstract. CF §2: 'cafeína e álcool alteram o sono de modo mensurável, e o uso noturno de telas associa-se a sono mais curto'. Conferir o limite de 250 palavras do resumo após a troca.",
+      "responsavel": "fps-4-redator-abnt",
+      "licao": "Resumo e conclusão herdam a certeza e o desfecho exatos do corpo: dois fatores com evidências diferentes não podem ser agrupados sob o mesmo verbo e a mesma certeza."
+    },
+    {
+      "id": "A2",
+      "gravidade": "maior",
+      "local": "artigo.json > Discussão §9–§10 (lista 'os dados não permitem afirmar') × Considerações finais",
+      "problema": "A lista de seis alíneas da Discussão repete as Considerações finais item a item: (a) 'dormir mais faz emagrecer, quanto, nem por quanto tempo' = CF §1 última frase (e conclusão do resumo); (b) massa muscular = CF §2 'hipertrofia não foi estudada'; (d) fim de semana = CF §2; (e) melatonina/suplementos = CF §2; (f) laboratório × adultos em dieta/mulheres = CF §3 'faltam ensaios longos, com mulheres...' e Discussão §7; (c) grelina/leptina = seção 4.1 e Discussão §0. É a mesma conclusão escrita duas vezes em sequência, na página 22–23.",
+      "evidencia": "previa-artigo/pagina-23.png: lista a)–f) seguida, na mesma página, de '11 CONSIDERAÇÕES FINAIS' com as mesmas afirmações.",
+      "correcao": "Apagar os blocos #9 ('Com essas ressalvas, os autores consideram...') e #10 (lista) da Discussão. As Considerações finais permanecem como único lugar que responde à pergunta.",
+      "responsavel": "fps-4-redator-abnt",
+      "licao": "Uma lista do que 'não se pode afirmar' no fim da Discussão duplica as Considerações finais: a resposta à pergunta é escrita uma vez só, na conclusão."
+    },
+    {
+      "id": "A3",
+      "gravidade": "maior",
+      "local": "artigo.json > Discussão §1, §2, §4, §6, §7 × seções 2.3, 2.4, 5.1, 5.3, 6.1, 6.2, 8",
+      "problema": "A Discussão reexpõe resultados e premissas já fixados no texto, em vez de remeter a eles: (1) §1 refaz a leitura de Mostafa (IMC dominado por DM2; redução expressiva só no subgrupo com obesidade, 3 estudos) já feita em 5.3 §1, no Quadro 1 e no Quadro 2 (4 ocorrências), e repete 'certeza baixa da ingestão' de 5.3 §0 e Quadro 2; (2) §2 repete a premissa 'MLG em duas semanas capta água e glicogênio (inferência dos autores)' já escrita em 5.1 §1; (3) §4 repete 'heterogeneidade impede aplicar a média' (6.1 §0) e 'queda aguda da síntese não equivale a perda de músculo' (6.2 §0); (4) §6 repete o encaminhamento de insônia/distúrbio respiratório já presente em 2.1, 8 §1, Quadro 3 e CF §3; (5) §7 (limitações da evidência) repete as convenções que 2.4 declarou 'não serão repetidas' (adultos jovens, saudáveis, homens; protocolos mais severos; desfechos substitutos) e a falta de cegamento de 2.3.",
+      "evidencia": "Leitura integral do artigo.json; ocorrências conferidas por busca textual dos trechos citados.",
+      "correcao": "(1) 5.3 §1: manter a leitura de Mostafa; Discussão §1 reduzir a uma frase interpretativa que remete à seção 5.3 ('a divergência entre o ensaio e a metanálise decorre de população e desfecho diferentes, seção 5.3; o que muda na conduta é...'), sem repetir DM2/subgrupo/certeza. (2) Apagar de 5.1 §1 a frase 'Um cuidado de leitura: a MLG inclui água e glicogênio... (inferência dos autores).' e manter o argumento só na Discussão §2. (3) Discussão §4: trocar as duas reexposições por remissão ('seções 6.1 e 6.2') e manter só a consequência para a prescrição. (4) Apagar de Discussão §6 a frase 'O limite do escopo profissional está no encaminhamento...'. (5) Discussão §7: abrir com 'Além das restrições de aplicabilidade fixadas na seção 2.4,' e listar só o que é novo (seguimento máximo de 6 semanas/poucos meses, ingestão inferida ou de uma refeição, heterogeneidade elevada).",
+      "responsavel": "fps-4-redator-abnt",
+      "licao": "Premissa declarada numa seção de convenções ou num parágrafo de resultados não volta na Discussão: ela remete ao número da seção e acrescenta só a consequência."
+    },
+    {
+      "id": "A4",
+      "gravidade": "maior",
+      "local": "artigo.json > 2.2 Busca e seleção §1 × Tabela 1; 5.3 §1 × Quadro 1 (Mostafa); 4.3 §0 × Discussão §3; 3 §1 × 6.2 §1 (Walsh)",
+      "problema": "Mesmo dado em dois lugares: (a) o parágrafo de 2.2 enumera todos os números da Tabela 1 (1.614, 1.156, 363, 95 = 77 + 18, 7, 6, 94) — a tabela repete o parágrafo; (b) 5.3 §1 repete números do Quadro 1 para Mostafa (27 estudos = 21 ECR + 5 pré-pós + 1 não randomizado; −5,55 kg em 3 estudos, n = 72; −0,83 kg); (c) a conclusão 'o horário da refeição principal predisse o resultado, a duração do sono não' está em 4.3 §0 e de novo na Discussão §3; (d) o consenso de atletas (Walsh et al., 2021: meta individualizada) aparece em 3 §1, 6.2 §1, Quadro 3 e Discussão §4 — e sua presença na seção 3 alonga a base do sono, que o briefing limita a ~1 página.",
+      "evidencia": "previa-artigo/pagina-05.png e pagina-06.png (parágrafo e Tabela 1 na sequência); artigo.json seções 5.3 e 5.5 (Quadro 1, linha Mostafa).",
+      "correcao": "(a) 2.2 §1: manter só o que a tabela não diz — motivos de exclusão, critério do corte por volume, o que os 6 registros adicionais cobriram e a composição dos 94 por desenho — e remeter os números à Tabela 1 ('A Tabela 1 resume o fluxo; ...'). (b) 5.3 §1: retirar os valores e contagens (remeter ao Quadro 1) e manter só a interpretação (peso global NS; os maiores efeitos são subgrupos por IMC basal; IMC dominado por DM2). (c) Apagar de 4.3 §0 a frase 'Isso separa ‘horário’ de ‘sono’: ...'; a interpretação fica na Discussão §3. (d) Apagar de 3 §1 'para atletas, o consenso de especialistas rejeita faixa única e pede metas individualizadas [@walsh2021]' (fica em 6.2 e no Quadro 3).",
+      "responsavel": "fps-4-redator-abnt",
+      "licao": "Quando há tabela ou quadro, o texto não reescreve os números dele: diz o que a tabela não mostra (motivos, interpretação) e remete a ela."
+    },
+    {
+      "id": "A5",
+      "gravidade": "maior",
+      "local": "artigo.docx > corpo do texto (páginas impressas 2 a 23)",
+      "problema": "O corpo ocupa ~21 páginas (pdf 3 a 24; ~7.700 palavras, incluindo os quadros), acima do padrão do briefing ('Arial 12, com capa, 10–16 páginas de corpo').",
+      "evidencia": "00-briefing.md, seção Padrões; previa-artigo/folha-de-contato.png (Introdução na pdf 3, Referências a partir da pdf 24/25); validacao.md: corpo ~7744 palavras.",
+      "correcao": "Aplicar A2–A4 (≈ 1,5 página) e condensar até ≤ 16 páginas de corpo, sem perder número nem ressalva: (i) Quadro 1, coluna Resultados: manter desfechos da pergunta (peso, gordura, MLG, ingestão, gasto) e retirar hormônios/quociente respiratório/GLP-1/tempo sedentário que não são discutidos no texto; (ii) 2.3–2.4 em um só parágrafo; (iii) seção 9.2 (melatonina e suplementos) e 7.3 a um parágrafo cada, mantendo só efeito, IC e certeza; (iv) Discussão §5 e §6 fundidos. Se o orquestrador obtiver do usuário a dispensa do limite (material de estudo pessoal), registrar a dispensa na resposta e este achado se encerra com A2–A4.",
+      "responsavel": "fps-4-redator-abnt",
+      "licao": "Antes de entregar, confira o número de páginas do corpo na prévia contra o limite do briefing; excesso se corta primeiro na redundância e nos desfechos secundários dos quadros."
+    }
+  ],
+  "correcoes_aplicadas": [
+    "Quadro 1: título 'Quadro de evidências dos estudos...' (gerava 'Quadro 1 – Quadro de...') → 'Evidências dos estudos centrais sobre sono, peso e composição corporal'; larguras 3,0/3,1/6,8/3,1 → 3,3/3,1/6,7/2,9 para evitar quebra de palavra na 1ª coluna ('cardiometabólic-o').",
+    "Quadro 1, nota: sigla GLP-1 definida.",
+    "5.2 §0: 'O conjunto indica ganho... com certeza baixa' → 'sugere' (convenção da seção 2.4: 'indica' só para certeza moderada).",
+    "6.3: 'O exercício regular melhora' → 'melhorou' (resultado da revisão, não afirmação geral; a própria seção gradua a certeza como baixa).",
+    "6.2: removida a sigla HIIE, definida e nunca reutilizada.",
+    "9.2: '(DM −1,27' → '(diferença de médias −1,27' — DM colidia com DM2 (diabetes tipo 2) no mesmo texto.",
+    "Discussão §6: retirada a afirmação de que falta orientação sobre sono no guia nacional de atividade física, que o próprio texto dizia não ter sido aberto (afirmação sem base); frase reescrita: 'faltam diretriz nacional de duração do sono e dados brasileiros nos estudos experimentais'.",
+    "Busca por termos do pipeline (líder, avaliador, executor, etapa, agente, redator): nenhuma ocorrência no texto."
+  ],
+  "pontos_fortes": [
+    "Estrutura NBR 6022 completa (capa, título bilíngue, resumo estruturado de 242 palavras, palavras-chave DeCS, abstract, seções, referências, apêndice); Introdução termina no objetivo.",
+    "Base do sono contida em ~1 página (seção 3), como pede o briefing; o espaço vai para os itens 2–7.",
+    "Discussão com confronto real (narrativa hormonal × dados, paradoxo da MLG, coortes contraditórias, aplicabilidade na atenção primária) e limitações separadas entre evidência e revisão.",
+    "Convenção explícita de verbos por certeza GRADE e certeza declarada ao lado de cada achado; Método descreve a busca real, com bases não consultadas e corte por volume declarados."
+  ],
+  "pendencias_orquestrador": [
+    "Nome do autor (marcador) e logo FPS: pendências conhecidas do usuário.",
+    "A5: decidir com o usuário se o limite de 10–16 páginas de corpo vale para este material de estudo pessoal."
+  ],
+  "escalonado": false,
+  "resumo": "Artigo bem estruturado e crítico, mas reprovado no portão por redundância (a lição do trabalho anterior se repetiu): a Discussão reexpõe resultados e premissas e termina com uma lista que duplica as Considerações finais; o Método reescreve a Tabela 1; 5.3 repete o Quadro 1. Um crítico: resumo e conclusão agrupam álcool e telas sob certeza e verbo que o corpo não sustenta. Corpo com ~21 páginas, acima das 10–16 do briefing. Sete menores corrigidos pelo revisor."
+}
