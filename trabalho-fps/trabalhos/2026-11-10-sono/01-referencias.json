@@ -69,7 +69,7 @@
     "desenho": "Revisão narrativa e consenso de especialistas",
     "nivel_evidencia": "Consenso de especialistas",
     "verificado": true,
-    "verificado_via": "PubMed PMID 33144349 (metadados e resumo conferidos nesta execução) — Registro do PubMed (publicação antecipada em 03/11/2020) não traz volume/páginas; fascículo 2021;55(7):356-368 confirmado em repositório institucional (LJMU) via busca na web — verificador deve reconferir."
+    "verificado_via": "PubMed PMID 33144349 (epub 03/11/2020, sem data impressa no PubMed); fascículo 2021;55(7):356-368 confirmado em repositórios institucionais (LJMU, Univ. Arizona) via busca na web (líder, r1)"
   },
   {
     "id": "riemann2023",
@@ -210,7 +210,7 @@
     "desenho": "Transversal",
     "nivel_evidencia": "Série temporal de inquérito (Vigitel)",
     "verificado": true,
-    "verificado_via": "PubMed PMID 40802335 (metadados e resumo conferidos nesta execução) — PubMed: publicação eletrônica 27/06/2024; ano do fascículo (vol. 30) = 2025 inferido do volume — verificador deve checar [ppdat]."
+    "verificado_via": "PubMed PMID 40802335; ano do fascículo 2025 confirmado por [ppdat] (líder, r1)"
   },
   {
     "id": "liu2016",
@@ -466,7 +466,7 @@
     "desenho": "Revisão sistemática com metanálise",
     "nivel_evidencia": "Metanálise de estudos experimentais",
     "verificado": true,
-    "verificado_via": "PubMed PMID 27804960 (metadados e resumo conferidos nesta execução) — PubMed: publicação eletrônica 02/11/2016; ano do fascículo (vol. 71, n. 5) = 2017 — verificador deve checar [ppdat]."
+    "verificado_via": "PubMed PMID 27804960; ano do fascículo 2017 confirmado por [ppdat] (líder, r1)"
   },
   {
     "id": "alkhatib2018",
@@ -610,7 +610,7 @@
     "desenho": "Revisão sistemática com metanálise",
     "nivel_evidencia": "Metanálise de estudos de intervenção",
     "verificado": true,
-    "verificado_via": "PubMed PMID 33001515 (metadados e resumo conferidos nesta execução) — PubMed: publicação eletrônica 01/10/2020; ano do fascículo (vol. 34, n. 2) = 2021 — verificador deve checar [ppdat]."
+    "verificado_via": "PubMed PMID 33001515; ano do fascículo 2021 confirmado por [ppdat] (líder, r1)"
   },
   {
     "id": "lin2020",
@@ -825,7 +825,7 @@
     "desenho": "Coorte",
     "nivel_evidencia": "Análise prospectiva de ECR PREDIMED-Plus (n = 1986)",
     "verificado": true,
-    "verificado_via": "PubMed PMID 31217539 (metadados e resumo conferidos nesta execução) — PubMed: publicação eletrônica 19/06/2019; ano do fascículo (vol. 44, n. 2) = 2020 — verificador deve checar [ppdat]."
+    "verificado_via": "PubMed PMID 31217539; ano do fascículo 2020 confirmado por [ppdat] (líder, r1)"
   },
   {
     "id": "craven2022",

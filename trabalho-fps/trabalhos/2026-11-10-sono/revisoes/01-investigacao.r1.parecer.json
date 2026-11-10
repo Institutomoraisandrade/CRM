@@ -1,0 +1,73 @@
+{
+  "etapa": "01-investigacao",
+  "rodada": 1,
+  "revisor": "fps-lider-pesquisa",
+  "modelo_revisor": "opus",
+  "executor": "fps-1-investigador",
+  "arquivos_revisados": [
+    "trabalho-fps/trabalhos/2026-11-10-sono/01-investigacao.md",
+    "trabalho-fps/trabalhos/2026-11-10-sono/01-picos.json",
+    "trabalho-fps/trabalhos/2026-11-10-sono/01-referencias.json",
+    "trabalho-fps/trabalhos/2026-11-10-sono/verificacao/01-referencias.relatorio.json"
+  ],
+  "criterios": {
+    "delimitacao": 7.5,
+    "epidemiologia_com_fontes": 8.5,
+    "pergunta_estruturada": 8.5,
+    "desfechos_relevantes": 8.5,
+    "estrategia_de_busca": 6.0
+  },
+  "achados": [
+    {
+      "id": "A1",
+      "gravidade": "maior",
+      "local": "01-investigacao.md > §6 (string principal e lista de controle) e §4 (sono e perda de peso); 01-picos.json > lista_controle",
+      "problema": "A string principal não recupera dois estudos experimentais pivotais de restrição do sono com desfecho de peso/ingestão, e um ECR-chave recuperado pela própria string ficou fora da síntese. A lista de controle só contém artigos que a string já recupera, então não testou a calibragem.",
+      "evidencia": "Rodei a string principal em 10/11/2026 (2004/01/01–2026/11/10, pdat): 151 resultados, e 97 com 2016–2026. As contagens conferem e os 8 PMIDs de controle estão entre os 151. Mas o PMID 23814334 (Spaeth 2013, Sleep 36(7):981-990; n = 225; restrição de 5 noites a 4 h: +0,97 kg contra +0,11 kg no controle) e o PMID 23479616 (Markwald 2013, PNAS 110(14):5695-700; +0,82 kg em 5 dias de sono insuficiente) NÃO estão nos 151. O Spaeth não tem MeSH nem 'weight loss/energy intake' no título/resumo (usa 'weight gain' e 'caloric intake') e não é rotulado como ECR; o Markwald não é rotulado como ECR nem traz 'crossover'. O PMID 35361348 (Covassin 2022, JACC 79(13):1254-1265; ECR cruzado de 14 dias de restrição a 4 h, com aumento de ingestão, ganho de peso e de gordura abdominal visceral) ESTÁ nos 151, mas não aparece na seção 4 nem nas Pendências.",
+      "correcao": "(1) Inclua na lista de controle o Spaeth 2013 (23814334), o Markwald 2013 (23479616) e o Covassin 2022 (35361348). (2) Amplie o bloco 2 com \"weight gain\"[tiab] OR \"caloric intake\"[tiab] OR \"food intake\"[tiab]. Para não passar de 20 operadores (limite da ferramenta), crie uma string secundária de estudos experimentais de laboratório sem filtro de desenho. Exemplo: (\"sleep restriction\"[tiab] OR \"insufficient sleep\"[tiab] OR \"Sleep Deprivation\"[Majr]) AND (\"weight gain\"[tiab] OR \"Weight Gain\"[MeSH Terms] OR \"caloric intake\"[tiab]) AND (inpatient[tiab] OR laboratory[tiab] OR randomized[tiab] OR experimental[tiab]). Rode as strings, registre as contagens com o filtro exato e confirme que os 3 estudos aparecem. (3) Acrescente à §4 Covassin 2022, Spaeth 2013 e Markwald 2013, com os números do resumo e a população (adultos saudáveis sem obesidade = evidência indireta), e retome a controvérsia 1 com eles.",
+      "responsavel": "fps-1-investigador",
+      "licao": "A lista de controle deve incluir estudos pivotais que fujam do vocabulário da string (sem MeSH, outro sinônimo do desfecho, sem rótulo de ECR); uma lista feita só de artigos já recuperados não testa nada. Leia também os recuperados mais citados antes de fechar a síntese."
+    },
+    {
+      "id": "A2",
+      "gravidade": "maior",
+      "local": "01-investigacao.md > §3 (subtemas 2, 6 e 8), §4 (Lacunas), §6 (strings e critérios de exclusão); 01-picos.json > criterios.exclusao",
+      "problema": "Subtemas pedidos no briefing ficaram sem estratégia de busca. Mesmo assim, o texto declara ausência de evidência. Faltam: mitos (recuperar o sono no fim de semana, melatonina, suplementos, wearables); horário das refeições, beliscar à noite e cronotipo (item 2 do briefing, subtema essencial); e rotina (cafeína, álcool, telas, turnos, jet lag social). A §4 diz 'não localizei evidência sólida sobre melatonina, suplementos e wearables', mas nenhuma das 6 strings cobre esses termos. Além disso, o critério de exclusão 'Intervenção farmacológica (hipnóticos, melatonina, canabinoides) como foco' faria o buscador descartar justamente os estudos que o item 7 do briefing pede.",
+      "evidencia": "00-briefing.md, itens 2, 5 e 7. Nenhuma das strings em 01-investigacao.md §6 (principal + secundárias 1–5) contém melatonin, supplement, wearable/consumer sleep tracker, catch-up/weekend sleep, meal timing/late eating/chronotype, caffeine, alcohol ou screen. 01-picos.json > criterios.exclusao[2] contradiz o briefing (que só exclui o manejo clínico de distúrbios).",
+      "correcao": "(1) Escreva e rode strings executáveis (até 20 operadores cada, com data e tipo de data) para: (a) melatonina e suplementos em adultos sem distúrbio do sono (sono, composição corporal, desempenho); (b) validade de wearables/rastreadores de consumo contra polissonografia; (c) sono de recuperação no fim de semana (catch-up/weekend recovery sleep) com desfechos metabólicos ou de peso; (d) horário das refeições, alimentação tardia e cronotipo × sono/peso; (e) cafeína, álcool e telas × sono em adultos. Registre as contagens e os artigos de controle. (2) Reescreva a exclusão como 'farmacoterapia de distúrbios do sono como foco'. Melatonina e suplementos entram no subtema 8 como avaliação do mito, não como tratamento. (3) Atualize a §4 (Lacunas) e a Pendência 7 com o resultado real das buscas. Só declare ausência depois de buscar.",
+      "responsavel": "fps-1-investigador",
+      "licao": "Cada subtema que o usuário pediu precisa de uma string própria executada; só declare 'sem evidência localizada' depois de rodar a busca, e confira se os critérios de exclusão não eliminam um subtema do briefing."
+    },
+    {
+      "id": "A3",
+      "gravidade": "maior",
+      "local": "01-investigacao.md > §1, §3 e §6 (diretrizes); 01-picos.json > estrategias",
+      "problema": "Não há estratégia de busca para diretrizes/consensos, e o mapa só traz documentos dos EUA/Europa (AASM/SRS, NSF, ESRS, AASM-insônia). Não há tentativa documentada de diretriz ou consenso nacional (sono/insônia, obesidade, atividade física), e ficaram de fora documentos internacionais centrais para o eixo sono × peso, já indexados no PubMed.",
+      "evidencia": "PMID 27647451: St-Onge 2016, Circulation 134(18):e367-e386, declaração científica da AHA 'Sleep Duration and Quality: Impact on Lifestyle Behaviors and Cardiometabolic Health', que relaciona sono curto a obesidade e pede recomendações de sono nas diretrizes. PMID 35766027: Lloyd-Jones 2022, Circulation 146(5):e18-e43, 'Life's Essential 8', que incluiu a saúde do sono como nova métrica de saúde cardiovascular. Nenhum dos dois está em 01-referencias.json, e nenhuma string do §6 filtra por guideline/consensus/scientific statement. O PROTOCOLO §6 põe as diretrizes (nacionais e internacionais) no topo da hierarquia.",
+      "correcao": "(1) Crie e rode uma string de diretrizes, por exemplo: (sleep[ti] OR \"sleep duration\"[ti]) AND (guideline[pt] OR \"Practice Guideline\"[pt] OR \"Consensus Statement\"[pt] OR consensus[ti] OR \"scientific statement\"[ti] OR recommendation*[ti]) AND (obesity OR weight OR health OR athlete*). Registre a contagem e confira se ela recupera Watson 2015, Hirshkowitz 2015, St-Onge 2016 e Lloyd-Jones 2022 (ou documente a busca dirigida). (2) Procure por WebSearch/PubMed um consenso ou diretriz brasileira (Associação Brasileira do Sono; ABESO; Ministério da Saúde/Guia de Atividade Física) e registre o resultado. Se não localizar ou se o site estiver inacessível, declare isso. (3) Inclua St-Onge 2016 e Lloyd-Jones 2022 em 01-referencias.json depois de verificá-los e use-os na §1/§3 só no que os resumos sustentam.",
+      "responsavel": "fps-1-investigador",
+      "licao": "Toda investigação de revisão tem uma string própria de diretrizes/consensos e registra a tentativa de achar a diretriz nacional, mesmo quando o resultado for negativo."
+    }
+  ],
+  "correcoes_aplicadas": [
+    "01-investigacao.md §4 Controvérsia 4: 'possível causalidade reversa' não consta nos resumos de malasevskaia2026 nem de patel2008. Troquei pelo que os resumos dizem: classe III 'sugestiva', OR 1,14 (0,98–1,33) com sono autorrelatado e limitações de desenho que impedem conclusão causal.",
+    "01-investigacao.md §4 kline2026: '4,5% a menos de peso perdido' tem denominador ambíguo. Agora cita o resumo entre aspas, informa a perda média de 6,9% e pede conferência no texto completo.",
+    "01-investigacao.md §4 mostafa2026: a ingestão de −147,5 kcal/dia é do conjunto das intervenções de sono, não da extensão. Deixei isso explícito e acrescentei que 1.121 dos 1.384 participantes vêm de 3 estudos com DM2 e que a extensão teve 5 estudos (n = 138).",
+    "01-investigacao.md §4 rodriguezmartin2025: acrescentei que não houve associação significativa para o sono curto (< 7 h), como diz o resumo; a frase tinha ficado incompleta.",
+    "01-investigacao.md §4 frimpong2021: 'vigoroso' virou 'de alta intensidade agudo', em adultos de 18–50 anos. baron2021: a revisão inclui pessoas a partir de 12 anos. alkhatib2018: ECR-piloto com adultos de peso normal.",
+    "01-investigacao.md §2: a cobertura 'capitais e DF' do Vigitel agora é atribuída a pastorello2025, e registrei que o resumo de menezesjunior2026 não define os pontos de corte de 'duração inadequada'.",
+    "01-investigacao.md §4 Controvérsia 1: 'estudos curtos e pequenos explicam parte da divergência' passou a ser rotulado como hipótese.",
+    "01-investigacao.md §5 e 01-picos.json P: incluí adultos saudáveis ou com risco cardiometabólico, fora de dieta, como evidência indireta também para a variação de peso (caso de zuraikat2026).",
+    "01-referencias.json: anos de fascículo de alkhatib2017, fenton2021, papandreou2020 e pastorello2025 confirmados por [ppdat] no PubMed. walsh2021 (2021;55(7):356-368) confirmado em repositórios institucionais. Atualizei verificado_via e a Pendência 3.",
+    "01-investigacao.md, Pendência 2: registrei que o PMC4442216 volta sem texto e que a busca na web achou o comunicado da AASM ('7 or more hours', 18–60 anos). Mantive a citação do número via liu2016."
+  ],
+  "pontos_fortes": [
+    "100% dos números epidemiológicos conferem com os resumos: menezesjunior2026 (n = 27.048; 52,3%; 31,8%; 11,9%), santahelena2024 (32,7%; IC 30,7–34,4; 40,0 × 25,2; 44,0 × 30,7), pastorello2025 (11,9→22,4%; 37,3→58,8%), liu2016 (n = 444.306; 65,2%; ≥ 7 h para 18–60 anos), morin2022 (10%, 20%, 40% em 5 anos), spiegelhalder2026 (10–16%), ncdrisc2024 (177/89%; 145/73%), bacaro2020 (OR 1,412; 1,177–1,694) e malasevskaia2026 (16 RS; OR 1,40; 1,27–1,55; I² 83,7%).",
+    "Os números de efeito conferem com o resumo em 15 fontes: nedeltcheva2010, wang2018, tasali2022, zuraikat2026, alkhatib2017, fenton2021, yu2019, mostafa2026, kline2026, papandreou2020, spiegel2004, brondel2010, lin2020, craven2022 e lamon2021. Também conferi frimpong2021, baron2021, alkhatib2018, killick2015, creasy2022 e rodriguezmartin2025.",
+    "A string principal está sintaticamente correta, tem 15 operadores, e as contagens declaradas (151 e 97) se reproduzem.",
+    "Os desfechos primários são adequados ao objetivo; os substitutos estão bem sinalizados; o texto declara que não há desfechos duros.",
+    "Bons hábitos de integridade: números não conferidos do Vigitel ficaram fora do texto; o investigador declarou o que não conseguiu acessar; as referências são todas verificadas por PMID."
+  ],
+  "escalonado": false,
+  "resumo": "Etapa sólida em epidemiologia: 100% dos números conferem. A pergunta PICOS é respondível e tem desfechos bem hierarquizados. Ficam 3 achados maiores, todos na estratégia de busca: (A1) a string principal perde Spaeth 2013 e Markwald 2013, e o Covassin 2022, recuperado pela própria string, ficou fora da síntese; (A2) os subtemas do briefing de mitos, horário das refeições/cronotipo e rotina não têm string, e o critério de exclusão elimina a melatonina pedida no item 7; (A3) não há string de diretrizes nem tentativa de diretriz nacional, e faltam St-Onge 2016 (AHA) e Life's Essential 8. Apliquei 10 correções menores. Pendência que não depende do investigador: a lista completa de autores de menezesjunior2026 (só o primeiro autor no PubMed; a busca na web não achou)."
+}
