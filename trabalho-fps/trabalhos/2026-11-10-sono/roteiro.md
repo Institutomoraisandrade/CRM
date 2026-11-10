@@ -44,7 +44,7 @@ A narrativa popular é que o sono curto desregula grelina e leptina. A metanáli
 
 **[4:39–5:14] Slide 10 — O horário do almoço predisse a perda de peso; duração do sono e cronotipo, não**
 
-Na coorte de 420 pessoas em tratamento de 20 semanas, quem almoçava depois das 15 horas perdeu menos peso, mesmo com ingestão, gasto, hormônios e duração do sono semelhantes. Nem duração do sono nem cronotipo se associaram de forma independente à perda. Isso separa horário de sono. As revisões sobre cronotipo vespertino e jet lag social são transversais, com heterogeneidade alta, e a certeza é baixa. No ECR de janela alimentar, a diferença foi de 0,26 quilo, com IC de menos 1,30 a 0,78, e o sono não foi medido. Hipótese nossa, não testada: sono curto e ingestão noturna se somam.
+Na coorte de 420 pessoas em tratamento de 20 semanas, quem almoçava depois das 15 horas perdeu menos peso, mesmo com ingestão, gasto, hormônios e duração do sono semelhantes. Nem duração do sono nem cronotipo se associaram de forma independente à perda. Isso separa horário de sono. As revisões sobre cronotipo vespertino e jet lag social reúnem estudos observacionais, com heterogeneidade alta, e a certeza é baixa. No jet lag social, a correlação com o IMC é pequena (r = 0,12; IC 95% 0,07 a 0,17), e com o percentual de gordura é moderada (r = 0,37; 0,33 a 0,41; I² 96%); para sobrepeso ou obesidade, a razão de chances foi de 1,20 (limite inferior 1,02; o limite superior tem erro de digitação no resumo). No ECR de janela alimentar, a diferença foi de 0,26 quilo, com IC de menos 1,30 a 0,78, e o sono não foi medido. Hipótese nossa, não testada: sono curto e ingestão noturna se somam.
 
 **[5:14–5:18] Slide 11 — Peso e composição corporal**
 
@@ -90,9 +90,9 @@ O sentido inverso: o treino ajuda o sono. A metanálise de Kredlow, com 66 estud
 
 Quarto bloco: o que encurta o sono e o que o sono curto cobra de volta.
 
-**[10:31–11:01] Slide 22 — Cafeína, álcool e telas encurtam o sono por caminhos diferentes**
+**[10:31–11:01] Slide 22 — A cafeína encurta o sono, o álcool reduz o REM e as telas se associam a menos sono**
 
-A cafeína reduziu o tempo total de sono em 45 minutos e a eficiência em 7%, e age bloqueando receptores de adenosina: mascara a sonolência sem eliminar a pressão de sono acumulada. O álcool encurta a latência, mas fragmenta a segunda metade da noite; o REM já cai com cerca de 2 doses. Cada hora de tela por dia se associou a 3 a 5 minutos a menos de sono e a atraso de 13 minutos no horário de dormir, mas em coortes com tela autorrelatada. O elo tela, menos sono e peso não foi testado nos estudos lidos. Os limites de horário da cafeína ficam para o bloco de prática.
+A cafeína reduziu o tempo total de sono em 45 minutos e a eficiência em 7%, e age bloqueando receptores de adenosina: mascara a sonolência sem eliminar a pressão de sono acumulada. O álcool reduz e atrasa o REM já com cerca de 2 doses; a latência só encurta com dose alta, cerca de 5 doses, e os efeitos sobre tempo total de sono, eficiência e vigília são incertos. Nas telas, é associação, não efeito: cada hora de tela por dia se associou a 3 a 5 minutos a menos de sono e a atraso de 13 minutos no horário de dormir, em coortes com tela autorrelatada. Só 4 dos 20 estudos de duração do sono eram de adultos, os demais de lactentes, crianças e adolescentes, e a diferença por idade não foi significativa (P = 0,48). A exposição é o tempo diário de tela, não o uso à noite; o horário noturno é plausibilidade mecanística, pela luz que atrasa o relógio. O elo tela, menos sono e peso não foi testado nos estudos lidos. Os limites de horário da cafeína ficam para o bloco de prática.
 
 **[11:01–11:36] Slide 23 — O sono curto cobra no humor, na glicose e, entre turnistas, no peso**
 
@@ -102,9 +102,9 @@ Na metanálise de 154 estudos experimentais, a perda de sono reduziu o afeto pos
 
 Último bloco: ação e mitos.
 
-**[11:40–12:25] Slide 25 — Há ações de baixo custo, mas só aconselhar higiene do sono rende pouco**
+**[11:40–12:25] Slide 25 — Há ações de baixo custo, e o ganho de sono depende de como se aconselha**
 
-Cinco ações, cada uma com a sua força. Fixar o horário de dormir teve efeito maior que o coaching na metanálise de Baron, mas com heterogeneidade extrema e adolescentes incluídos. O aconselhamento de higiene sozinho rendeu só 21 minutos em adultos de peso normal; por isso, dizer apenas durma mais tem pouco efeito. Os limites da cafeína, de 8,8 horas para o café e 13,2 para o pré-treino, vêm de modelo e dependem de dose e sensibilidade. O cochilo diurno após noite normal melhorou o desempenho físico e a fadiga, mas só foi estudado em homens (n = 291); os benefícios foram maiores com cochilo de 30 a menos de 60 minutos, sem estimativa numérica separada. Insônia persistente ou suspeita de apneia saem do escopo do educador físico e pedem encaminhamento; no Brasil, há diretriz de insônia, mas nenhuma de duração do sono, peso ou exercício. Em geral, a certeza não foi graduada no GRADE, exceto na cafeína.
+Cinco ações, cada uma com a sua força. Fixar o horário de dormir teve efeito maior que o coaching na metanálise de Baron, mas com heterogeneidade extrema e adolescentes incluídos. O aconselhamento de higiene do sono rendeu 21 minutos (IC 95% 6 a 36) no piloto de Al Khatib, com 42 adultos de peso normal, e 1,2 hora por noite no ECR de Tasali, com sessão individual e alvo de 8,5 horas na cama. A diferença vem da população, que dormia menos de 6,5 horas e tinha sobrepeso, e do método, mais estruturado e individualizado. Ou seja, o resultado depende de quem recebe e de como se aconselha, e não há razão para descartar o aconselhamento. Os limites da cafeína, de 8,8 horas para o café e 13,2 para o pré-treino, vêm de modelo e dependem de dose e sensibilidade. O cochilo diurno após noite normal melhorou o desempenho físico e a fadiga, mas só foi estudado em homens (n = 291); os benefícios foram maiores com cochilo de 30 a menos de 60 minutos, sem estimativa numérica separada. Insônia persistente ou suspeita de apneia saem do escopo do educador físico e pedem encaminhamento; no Brasil, há diretriz de insônia, mas nenhuma de duração do sono, peso ou exercício. Em geral, a certeza não foi graduada no GRADE, exceto na cafeína.
 
 **[12:25–13:10] Slide 26 — Cinco crenças comuns sobre sono têm base fraca ou limitada**
 
