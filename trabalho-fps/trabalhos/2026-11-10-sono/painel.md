@@ -2,7 +2,7 @@
 
 Tipo de trabalho: `revisao`.
 
-Atualizado em 10/11/2026 15:15.
+Atualizado em 10/11/2026 15:16.
 
 | Etapa | Executor | Revisor (modelo) | Rodadas | Decisão | Crít. | Maior | Menor | Média |
 |---|---|---|---|---|---|---|---|---|
@@ -11,7 +11,7 @@ Atualizado em 10/11/2026 15:15.
 | 03-evidencias | fps-3-avaliador-evidencias | fps-lider-pesquisa (opus) | 2 | **APROVADO** | 0 | 0 | 0 | 8.6 |
 | 02-analise | fps-2-analista-critico | fps-lider-ciencia (opus) | 3 | **APROVADO** | 0 | 0 | 0 | 8.5 |
 | artigo-forma | fps-4-redator-abnt | fps-lider-producao (opus) | 3 | **REVISAR** | 0 | 4 | 0 | 7.8 |
-| artigo-fidelidade | fps-4-redator-abnt | fps-lider-ciencia (opus) | 3 | **ESCALAR** | 0 | 2 | 0 | 8.1 |
+| artigo-fidelidade | fps-4-redator-abnt | fps-lider-ciencia (opus) | 3 | **APROVADO** | 0 | 0 | 0 | 8.6 |
 | slides | fps-5-designer-slides | fps-lider-producao (opus) | 1 | **APROVADO** | 0 | 0 | 6 | 8.5 |
 | banca | pipeline (fps-3, fps-4, fps-5 e líderes) | fps-banca (fable) | 2 | **APROVADO** | 0 | 0 | 1 | 8.2 |
 

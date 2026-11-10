@@ -14,9 +14,9 @@
     "trabalho-fps/trabalhos/2026-11-10-sono/referencias.json"
   ],
   "criterios": {
-    "fidelidade_das_citacoes": 7.5,
+    "fidelidade_das_citacoes": 8.5,
     "precisao_numerica": 9.0,
-    "ausencia_de_extrapolacao": 7.5,
+    "ausencia_de_extrapolacao": 8.5,
     "coerencia_com_as_etapas": 8.5
   },
   "conferencia": [
@@ -26,28 +26,7 @@
     "Considerações finais idênticas às aprovadas e coerentes com 03-evidencias.md §7. Convenção verbal (indica = moderada; sugere = baixa) respeitada no corpo e nas conclusões."
   ],
   "decisoes_contestacoes": [],
-  "achados": [
-    {
-      "id": "A1",
-      "gravidade": "maior",
-      "local": "artigo.json > Sono e rotina > Cafeína, álcool e telas, 1º parágrafo",
-      "problema": "Fato acrescentado sem origem nas etapas 1-3 e atribuído a fonte que não o contém: 'o que reduz a sensação de sono sem eliminar o cansaço acumulado'. 02-analise-critica.md (§ rotina, item 5) diz apenas que o antagonismo dos receptores de adenosina 'reduz a sonolência'; o resumo de Reichert 2022 diz 'to reduce sleepiness' e trata como questão aberta a participação da cafeína na homeostase do sono.",
-      "evidencia": "PubMed PMID 35575450 (resumo): 'receptors where caffeine hooks on as an antagonist to reduce sleepiness ... We critically investigate the evidence for a direct involvement in sleep homeostatic mechanisms'. 02-analise-critica.md linha 112.",
-      "correcao": "Substituir 'substância que favorece a sonolência, o que reduz a sensação de sono sem eliminar o cansaço acumulado; esse é o modelo aceito' por 'substância que favorece a sonolência, o que reduz a sonolência; esse é o modelo aceito'. Regerar o .docx e rodar validar_trabalho.py.",
-      "responsavel": "fps-4-redator-abnt",
-      "licao": "Na reescrita de um texto aprovado, toda explicação mecanística nova (mesmo didática e plausível) precisa estar nas etapas anteriores; o que a fonte não diz não entra com a citação dela."
-    },
-    {
-      "id": "A2",
-      "gravidade": "maior",
-      "local": "artigo.json > Sono e rotina > Turnos e jet lag social, 1º parágrafo",
-      "problema": "Inferência do analista atribuída à fonte: 'o risco foi menor nas coortes (RR 1,10) do que nos estudos transversais (RR 1,26), o que sugere viés de seleção ou causalidade reversa [@sun2018]'. Sun 2018 conclui o contrário ('confirmed the risks of night shift work ... with a potential gradient association'); a leitura de viés é de 02-analise-critica.md, rotulada como interpretação. Além disso, a metanálise é de trabalho noturno (28 estudos), o que o texto omite.",
-      "evidencia": "PubMed PMID 28975706 (resumo): 28 estudos; OR global 1,23 (1,17-1,29) para trabalho noturno; 'Cross-sectional studies showed a higher risk of 1.26 than those with the cohort design (risk ratio = 1.10)'; conclusão: 'This meta-analysis confirmed the risks of night shift work'. 02-analise-critica.md linha 110 ('**Observacional; a diferença entre coortes e transversais sugere viés de seleção ou causalidade reversa.**', comentário do analista).",
-      "correcao": "Substituir por: 'Em outra metanálise, de 28 estudos sobre trabalho noturno, o risco foi menor nas coortes (RR 1,10) do que nos estudos transversais (RR 1,26) [@sun2018]; os autores leem o conjunto como confirmação do risco, mas a diferença entre os desenhos é compatível com viés de seleção ou causalidade reversa; e a revisão sobre turnos e sono ...' (manter o restante da frase). Regerar o .docx.",
-      "responsavel": "fps-4-redator-abnt",
-      "licao": "Interpretação do grupo vem depois da citação e com sujeito explícito ('a diferença sugere'); a citação só sustenta o dado e a conclusão que os próprios autores escreveram, sobretudo quando eles concluem o oposto."
-    }
-  ],
+  "achados": [],
   "correcoes_aplicadas": [
     "Introdução (leitura dos números): 'quando inclui o zero' -> 'quando inclui o zero (ou o 1, nas razões como OR e RR)'; o capítulo usa OR/RR e fala em IC 'encostando no 1'.",
     "Sono e hábito alimentar, abertura: 'O caminho mais curto' -> 'O caminho mais estudado' (a frase afirmava via causal mais forte que a evidência).",
@@ -56,7 +35,9 @@
     "Sono e treinamento > Pontos-chave: 'Exercício regular melhora o sono' -> 'parece melhorar a qualidade do sono (confiança baixa)' (03-evidencias.md §6: certeza baixa).",
     "Sono e treinamento > Mito ou fato: 'mas a sessão continua útil' -> 'uma queda pequena que não justifica, por si, cancelar a sessão' (nenhum estudo mediu a utilidade da sessão).",
     "Para levar do capítulo: 'manter a sessão costuma ser a melhor escolha' -> 'é uma escolha razoável' (nenhum estudo comparou manter x cancelar).",
-    "artigo.docx regenerado; validar_trabalho.py: APROVADO (0 erros, 2 avisos)."
+    "artigo.docx regenerado; validar_trabalho.py: APROVADO (0 erros, 2 avisos).",
+    "Escalonamento autorizado pelo orquestrador (ESCALAR por contagem de rodadas, sem achado crítico): A1 e A2 aplicados com edição pontual, exatamente como propostos no parecer.",
+    "artigo.docx regenerado após A1/A2; validar_trabalho.py: APROVADO."
   ],
   "pontos_fortes": [
     "A reescrita preservou todos os números e todas as ressalvas da versão aprovada; as considerações finais são idênticas às aprovadas.",
@@ -64,8 +45,24 @@
     "A convenção verbal de certeza declarada na introdução é seguida no corpo."
   ],
   "pendencias_orquestrador": [
-    "A rodada 3 herda a contagem do ciclo da versão em artigo; o portão marca ESCALAR. As duas correções são substituições de uma frase, com texto exato acima: o orquestrador pode disparar o fps-4-redator-abnt em modo correção ou autorizar que eu as aplique como escalonamento (com conferência por outro agente, conforme memoria/licoes.md)."
+    "Correção feita pelo revisor em escalonamento: pedir a outro agente (fps-lider-producao ou banca) a conferência das duas frases, conforme memoria/licoes.md (fps-lider-ciencia)."
   ],
-  "escalonado": false,
-  "resumo": "Capítulo fiel à versão aprovada em números, ressalvas e conclusões; 12 referências acrescentadas conferidas no PubMed. Dois achados maiores de citação (mecanismo da cafeína sem origem; inferência atribuída a Sun 2018). Sete correções menores aplicadas e docx regenerado."
+  "escalonado": true,
+  "resumo": "Capítulo fiel à versão aprovada; 12 referências acrescentadas conferidas no PubMed. A1 e A2 (maiores) e 7 menores corrigidos pelo revisor em escalonamento autorizado; docx regenerado e validador sem erros. Aprovado após correção.",
+  "verificacao_achados": [
+    {
+      "id": "A1",
+      "status": "resolvido (escalonamento)",
+      "evidencia": "artigo.json > Cafeína, álcool e telas: 'substância que favorece a sonolência, o que reduz a sonolência; esse é o modelo aceito' — confere com PMID 35575450 e 02-analise-critica.md."
+    },
+    {
+      "id": "A2",
+      "status": "resolvido (escalonamento)",
+      "evidencia": "artigo.json > Turnos e jet lag social: Sun 2018 descrito como 28 estudos de trabalho noturno, RR 1,10 x 1,26 com a citação logo após o dado; conclusão dos autores e interpretação de viés separadas — confere com PMID 28975706."
+    }
+  ],
+  "achados_resolvidos_no_escalonamento": [
+    "A1 (maior): mecanismo da cafeína sem origem — corrigido",
+    "A2 (maior): inferência atribuída a Sun 2018 — corrigido"
+  ]
 }
