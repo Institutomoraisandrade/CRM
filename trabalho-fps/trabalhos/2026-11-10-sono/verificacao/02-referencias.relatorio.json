@@ -1,0 +1,425 @@
+{
+  "arquivo": "trabalho-fps/trabalhos/2026-11-10-sono/02-referencias.json",
+  "resumo": {
+    "ok": 30,
+    "corrigivel": 0,
+    "revisar": 13,
+    "sem_pmid": 0,
+    "sem_metadados": 0
+  },
+  "itens": [
+    {
+      "id": "hanlon2016",
+      "pmid": "26612385",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "hanlon2020",
+      "pmid": "31610409",
+      "status": "revisar",
+      "divergencias": [
+        "ano: ref = 2020, PubMed = '2019' (possível epub antecipado; conferir o ano do fascículo)"
+      ],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "ano_a_conferir": true
+    },
+    {
+      "id": "broussard2016",
+      "pmid": "26467988",
+      "status": "revisar",
+      "divergencias": [
+        "ano: ref = 2016, PubMed = '2015' (possível epub antecipado; conferir o ano do fascículo)"
+      ],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "ano_a_conferir": true
+    },
+    {
+      "id": "benedict2012",
+      "pmid": "22259064",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "stonge2012",
+      "pmid": "22357722",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "nedeltcheva2009",
+      "pmid": "19056602",
+      "status": "revisar",
+      "divergencias": [
+        "ano: ref = 2009, PubMed = '2008' (possível epub antecipado; conferir o ano do fascículo)"
+      ],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "ano_a_conferir": true
+    },
+    {
+      "id": "yang2019",
+      "pmid": "30893841",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "radcliffe2021",
+      "pmid": "33940082",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "mcneil2017",
+      "pmid": "27866988",
+      "status": "revisar",
+      "divergencias": [
+        "ano: ref = 2017, PubMed = '2016' (possível epub antecipado; conferir o ano do fascículo)"
+      ],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "ano_a_conferir": true
+    },
+    {
+      "id": "tajiri2018",
+      "pmid": "29129611",
+      "status": "revisar",
+      "divergencias": [
+        "ano: ref = 2018, PubMed = '2017' (possível epub antecipado; conferir o ano do fascículo)"
+      ],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "ano_a_conferir": true
+    },
+    {
+      "id": "tajiri2023",
+      "pmid": "37562755",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "soltanieh2021",
+      "pmid": "34620371",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "chaput2023",
+      "pmid": "36280789",
+      "status": "revisar",
+      "divergencias": [
+        "ano: ref = 2023, PubMed = '2022' (possível epub antecipado; conferir o ano do fascículo)"
+      ],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "ano_a_conferir": true
+    },
+    {
+      "id": "benedict2011",
+      "pmid": "21471283",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "buxton2012",
+      "pmid": "22496545",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "broussard2012",
+      "pmid": "23070488",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "spiegel1999",
+      "pmid": "10543671",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "leproult1997",
+      "pmid": "9415946",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "leproult2011",
+      "pmid": "21632481",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "reutrakul2014",
+      "pmid": "24628249",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "vancauter2000",
+      "pmid": "10938176",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "dattilo2011",
+      "pmid": "21550729",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "morton2018",
+      "pmid": "28698222",
+      "status": "revisar",
+      "divergencias": [
+        "ano: ref = 2018, PubMed = '2017' (possível epub antecipado; conferir o ano do fascículo)"
+      ],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "ano_a_conferir": true
+    },
+    {
+      "id": "parr2014",
+      "pmid": "24533082",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "lowe2020",
+      "pmid": "32986097",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "palmer2024",
+      "pmid": "38127505",
+      "status": "revisar",
+      "divergencias": [
+        "ano: ref = 2024, PubMed = '2023' (possível epub antecipado; conferir o ano do fascículo)"
+      ],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "ano_a_conferir": true
+    },
+    {
+      "id": "garaulet2013",
+      "pmid": "23357955",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "mah2011",
+      "pmid": "21731144",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "roenneberg2012",
+      "pmid": "22578422",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "krause2017",
+      "pmid": "28515433",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "chang2015",
+      "pmid": "25535358",
+      "status": "revisar",
+      "divergencias": [
+        "ano: ref = 2015, PubMed = '2014' (possível epub antecipado; conferir o ano do fascículo)"
+      ],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "ano_a_conferir": true
+    },
+    {
+      "id": "gooley2011",
+      "pmid": "21193540",
+      "status": "revisar",
+      "divergencias": [
+        "ano: ref = 2011, PubMed = '2010' (possível epub antecipado; conferir o ano do fascículo)"
+      ],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "ano_a_conferir": true
+    },
+    {
+      "id": "baron2017",
+      "pmid": "27855740",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "akerstedt2019",
+      "pmid": "29790200",
+      "status": "revisar",
+      "divergencias": [
+        "ano: ref = 2019, PubMed = '2018' (possível epub antecipado; conferir o ano do fascículo)"
+      ],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "ano_a_conferir": true
+    },
+    {
+      "id": "drake2013",
+      "pmid": "24235903",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "kecklund2016",
+      "pmid": "27803010",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "liu2018",
+      "pmid": "29850840",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "sun2018",
+      "pmid": "28975706",
+      "status": "revisar",
+      "divergencias": [
+        "ano: ref = 2018, PubMed = '2017' (possível epub antecipado; conferir o ano do fascículo)"
+      ],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "ano_a_conferir": true
+    },
+    {
+      "id": "ebrahim2013",
+      "pmid": "23347102",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "fullagar2015",
+      "pmid": "25315456",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "temesi2013",
+      "pmid": "23760468",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "milewski2014",
+      "pmid": "25028798",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "vonrosen2017",
+      "pmid": "27539373",
+      "status": "revisar",
+      "divergencias": [
+        "ano: ref = 2017, PubMed = '2016' (possível epub antecipado; conferir o ano do fascículo)"
+      ],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "ano_a_conferir": true
+    }
+  ]
+}

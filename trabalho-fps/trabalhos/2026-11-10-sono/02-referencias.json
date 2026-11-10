@@ -21,7 +21,7 @@
     "desenho": "Ensaio clínico randomizado (cruzado)",
     "nivel_evidencia": null,
     "verificado": true,
-    "verificado_via": "PubMed PMID 26612385 (get_article_metadata; ano 2016 por [pdat])"
+    "verificado_via": "PubMed PMID 26612385"
   },
   {
     "id": "hanlon2020",
@@ -90,7 +90,7 @@
     "desenho": "Ensaio clínico randomizado (cruzado)",
     "nivel_evidencia": null,
     "verificado": true,
-    "verificado_via": "PubMed PMID 22259064 (get_article_metadata, 10/11/2026)"
+    "verificado_via": "PubMed PMID 22259064"
   },
   {
     "id": "stonge2012",
@@ -114,7 +114,7 @@
     "desenho": "Ensaio clínico randomizado (cruzado)",
     "nivel_evidencia": null,
     "verificado": true,
-    "verificado_via": "PubMed PMID 22357722 (get_article_metadata, 10/11/2026)"
+    "verificado_via": "PubMed PMID 22357722"
   },
   {
     "id": "nedeltcheva2009",
@@ -161,7 +161,7 @@
     "desenho": "Ensaio clínico randomizado (cruzado)",
     "nivel_evidencia": null,
     "verificado": true,
-    "verificado_via": "PubMed PMID 30893841 (get_article_metadata; ano 2019 por [pdat])"
+    "verificado_via": "PubMed PMID 30893841"
   },
   {
     "id": "radcliffe2021",
@@ -185,7 +185,7 @@
     "desenho": "Ensaio clínico randomizado (cruzado)",
     "nivel_evidencia": null,
     "verificado": true,
-    "verificado_via": "PubMed PMID 33940082 (get_article_metadata; ano 2021 por [ppdat])"
+    "verificado_via": "PubMed PMID 33940082"
   },
   {
     "id": "mcneil2017",
@@ -257,7 +257,7 @@
     "desenho": "Ensaio clínico randomizado (cruzado)",
     "nivel_evidencia": null,
     "verificado": true,
-    "verificado_via": "PubMed PMID 37562755 (get_article_metadata; ano 2023 por [ppdat])"
+    "verificado_via": "PubMed PMID 37562755"
   },
   {
     "id": "soltanieh2021",
@@ -281,7 +281,7 @@
     "desenho": "Revisão sistemática",
     "nivel_evidencia": null,
     "verificado": true,
-    "verificado_via": "PubMed PMID 34620371 (get_article_metadata, 10/11/2026)"
+    "verificado_via": "PubMed PMID 34620371"
   },
   {
     "id": "chaput2023",
@@ -329,7 +329,7 @@
     "desenho": "Ensaio clínico randomizado (cruzado)",
     "nivel_evidencia": null,
     "verificado": true,
-    "verificado_via": "PubMed PMID 21471283 (get_article_metadata; ano 2011 por [ppdat])"
+    "verificado_via": "PubMed PMID 21471283"
   },
   {
     "id": "buxton2012",
@@ -353,7 +353,7 @@
     "desenho": "Ensaio clínico (laboratório, internação prolongada)",
     "nivel_evidencia": null,
     "verificado": true,
-    "verificado_via": "PubMed PMID 22496545 (get_article_metadata, 10/11/2026)"
+    "verificado_via": "PubMed PMID 22496545"
   },
   {
     "id": "broussard2012",
@@ -377,7 +377,7 @@
     "desenho": "Ensaio clínico randomizado (cruzado)",
     "nivel_evidencia": null,
     "verificado": true,
-    "verificado_via": "PubMed PMID 23070488 (get_article_metadata, 10/11/2026)"
+    "verificado_via": "PubMed PMID 23070488"
   },
   {
     "id": "spiegel1999",
@@ -400,7 +400,7 @@
     "desenho": "Ensaio clínico controlado (laboratório)",
     "nivel_evidencia": null,
     "verificado": true,
-    "verificado_via": "PubMed PMID 10543671 (get_article_metadata, 10/11/2026)"
+    "verificado_via": "PubMed PMID 10543671"
   },
   {
     "id": "leproult1997",
@@ -424,7 +424,7 @@
     "desenho": "Ensaio clínico controlado (laboratório)",
     "nivel_evidencia": null,
     "verificado": true,
-    "verificado_via": "PubMed PMID 9415946 (get_article_metadata, 10/11/2026)"
+    "verificado_via": "PubMed PMID 9415946"
   },
   {
     "id": "leproult2011",
@@ -446,7 +446,7 @@
     "desenho": "Estudo experimental (n = 10)",
     "nivel_evidencia": null,
     "verificado": true,
-    "verificado_via": "PubMed PMID 21632481 (metadados) e texto completo PMC4445839 (resultados)"
+    "verificado_via": "PubMed PMID 21632481"
   },
   {
     "id": "reutrakul2014",
@@ -468,7 +468,7 @@
     "desenho": "Revisão narrativa",
     "nivel_evidencia": null,
     "verificado": true,
-    "verificado_via": "PubMed PMID 24628249 (get_article_metadata, 10/11/2026)"
+    "verificado_via": "PubMed PMID 24628249"
   },
   {
     "id": "vancauter2000",
@@ -491,7 +491,7 @@
     "desenho": "Transversal (dados agrupados de estudos de laboratório)",
     "nivel_evidencia": null,
     "verificado": true,
-    "verificado_via": "PubMed PMID 10938176 (get_article_metadata, 10/11/2026)"
+    "verificado_via": "PubMed PMID 10938176"
   },
   {
     "id": "dattilo2011",
@@ -515,7 +515,7 @@
     "desenho": "Hipótese (artigo teórico)",
     "nivel_evidencia": null,
     "verificado": true,
-    "verificado_via": "PubMed PMID 21550729 (get_article_metadata, 10/11/2026)"
+    "verificado_via": "PubMed PMID 21550729"
   },
   {
     "id": "morton2018",
@@ -563,7 +563,7 @@
     "desenho": "Ensaio clínico randomizado (cruzado)",
     "nivel_evidencia": null,
     "verificado": true,
-    "verificado_via": "PubMed PMID 24533082 (get_article_metadata, 10/11/2026)"
+    "verificado_via": "PubMed PMID 24533082"
   },
   {
     "id": "lowe2020",
@@ -587,7 +587,7 @@
     "desenho": "Ensaio clínico randomizado",
     "nivel_evidencia": null,
     "verificado": true,
-    "verificado_via": "PubMed PMID 32986097 (get_article_metadata; ano 2020 por [ppdat])"
+    "verificado_via": "PubMed PMID 32986097"
   },
   {
     "id": "palmer2024",
@@ -635,7 +635,7 @@
     "desenho": "Coorte (tratamento multicêntrico de 20 semanas)",
     "nivel_evidencia": null,
     "verificado": true,
-    "verificado_via": "PubMed PMID 23357955 (get_article_metadata; ano 2013 por [ppdat])"
+    "verificado_via": "PubMed PMID 23357955"
   },
   {
     "id": "mah2011",
@@ -659,7 +659,7 @@
     "desenho": "Estudo de intervenção sem grupo controle (antes e depois)",
     "nivel_evidencia": null,
     "verificado": true,
-    "verificado_via": "PubMed PMID 21731144 (get_article_metadata; ano 2011 por [pdat])"
+    "verificado_via": "PubMed PMID 21731144"
   },
   {
     "id": "roenneberg2012",
@@ -683,7 +683,7 @@
     "desenho": "Transversal",
     "nivel_evidencia": null,
     "verificado": true,
-    "verificado_via": "PubMed PMID 22578422 (get_article_metadata; ano 2012 por [ppdat])"
+    "verificado_via": "PubMed PMID 22578422"
   },
   {
     "id": "krause2017",
@@ -707,7 +707,7 @@
     "desenho": "Revisão narrativa",
     "nivel_evidencia": null,
     "verificado": true,
-    "verificado_via": "PubMed PMID 28515433 (get_article_metadata; ano 2017 por [ppdat])"
+    "verificado_via": "PubMed PMID 28515433"
   },
   {
     "id": "chang2015",
@@ -779,7 +779,7 @@
     "desenho": "Série de casos",
     "nivel_evidencia": null,
     "verificado": true,
-    "verificado_via": "PubMed PMID 27855740 (get_article_metadata; ano 2017 por [pdat])"
+    "verificado_via": "PubMed PMID 27855740"
   },
   {
     "id": "akerstedt2019",
@@ -827,7 +827,7 @@
     "desenho": "Ensaio clínico randomizado",
     "nivel_evidencia": null,
     "verificado": true,
-    "verificado_via": "PubMed PMID 24235903 (get_article_metadata, 10/11/2026)"
+    "verificado_via": "PubMed PMID 24235903"
   },
   {
     "id": "kecklund2016",
@@ -849,7 +849,7 @@
     "desenho": "Revisão narrativa (baseada em metanálises)",
     "nivel_evidencia": null,
     "verificado": true,
-    "verificado_via": "PubMed PMID 27803010 (get_article_metadata, 10/11/2026)"
+    "verificado_via": "PubMed PMID 27803010"
   },
   {
     "id": "liu2018",
@@ -873,7 +873,7 @@
     "desenho": "Revisão sistemática com metanálise",
     "nivel_evidencia": null,
     "verificado": true,
-    "verificado_via": "PubMed PMID 29850840 (get_article_metadata; ano 2018 por [ppdat])"
+    "verificado_via": "PubMed PMID 29850840"
   },
   {
     "id": "sun2018",
@@ -921,7 +921,7 @@
     "desenho": "Revisão sistemática (qualitativa)",
     "nivel_evidencia": null,
     "verificado": true,
-    "verificado_via": "PubMed PMID 23347102 (get_article_metadata, 10/11/2026)"
+    "verificado_via": "PubMed PMID 23347102"
   },
   {
     "id": "fullagar2015",
@@ -945,7 +945,7 @@
     "desenho": "Revisão narrativa",
     "nivel_evidencia": null,
     "verificado": true,
-    "verificado_via": "PubMed PMID 25315456 (get_article_metadata, 10/11/2026)"
+    "verificado_via": "PubMed PMID 25315456"
   },
   {
     "id": "temesi2013",
@@ -969,7 +969,7 @@
     "desenho": "Estudo experimental (cruzado, n = 12)",
     "nivel_evidencia": null,
     "verificado": true,
-    "verificado_via": "PubMed PMID 23760468 (get_article_metadata, 10/11/2026)"
+    "verificado_via": "PubMed PMID 23760468"
   },
   {
     "id": "milewski2014",
@@ -993,7 +993,7 @@
     "desenho": "Transversal (inquérito e revisão retrospectiva de prontuários)",
     "nivel_evidencia": null,
     "verificado": true,
-    "verificado_via": "PubMed PMID 25028798 (get_article_metadata, 10/11/2026)"
+    "verificado_via": "PubMed PMID 25028798"
   },
   {
     "id": "vonrosen2017",

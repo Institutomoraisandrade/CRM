@@ -1,864 +1,1601 @@
 {
- "25979105": {
-  "titulo": "Recommended Amount of Sleep for a Healthy Adult: A Joint Consensus Statement of the American Academy of Sleep Medicine and Sleep Research Society.",
-  "ano": "2015",
-  "volume": "11",
-  "numero": "6",
-  "paginas": "591-2",
-  "doi": "10.5664/jcsm.4758",
-  "periodico": "Journal of clinical sleep medicine : JCSM : official publication of the American Academy of Sleep Medicine",
-  "autores": [
-   "Watson",
-   "Badr",
-   "Belenky",
-   "Bliwise",
-   "Buxton",
-   "Buysse",
-   "Dinges",
-   "Gangwisch",
-   "Grandner",
-   "Kushida",
-   "Malhotra",
-   "Martin",
-   "Patel",
-   "Quan",
-   "Tasali",
-   "Twery",
-   "Croft",
-   "Maher",
-   "Barrett",
-   "Thomas",
-   "Heald"
-  ]
- },
- "29073398": {
-  "titulo": "National Sleep Foundation's updated sleep duration recommendations: final report.",
-  "ano": "2015",
-  "volume": "1",
-  "numero": "4",
-  "paginas": "233-243",
-  "doi": "10.1016/j.sleh.2015.10.004",
-  "periodico": "Sleep health",
-  "autores": [
-   "Hirshkowitz",
-   "Whiton",
-   "Albert",
-   "Alessi",
-   "Bruni",
-   "DonCarlos",
-   "Hazen",
-   "Herman",
-   "Adams Hillard",
-   "Katz",
-   "Kheirandish-Gozal",
-   "Neubauer",
-   "O'Donnell",
-   "Ohayon",
-   "Peever",
-   "Rawding",
-   "Sachdeva",
-   "Setters",
-   "Vitiello",
-   "Ware"
-  ]
- },
- "33144349": {
-  "titulo": "Sleep and the athlete: narrative review and 2021 expert consensus recommendations.",
-  "ano": "2020",
-  "volume": "",
-  "numero": "",
-  "paginas": "",
-  "doi": "10.1136/bjsports-2020-102025",
-  "periodico": "British journal of sports medicine",
-  "autores": [
-   "Walsh",
-   "Halson",
-   "Sargent",
-   "Roach",
-   "Nédélec",
-   "Gupta",
-   "Leeder",
-   "Fullagar",
-   "Coutts",
-   "Edwards",
-   "Pullinger",
-   "Robertson",
-   "Burniston",
-   "Lastella",
-   "Le Meur",
-   "Hausswirth",
-   "Bender",
-   "Grandner",
-   "Samuels"
-  ]
- },
- "38016484": {
-  "titulo": "The European Insomnia Guideline: An update on the diagnosis and treatment of insomnia 2023.",
-  "ano": "2023",
-  "volume": "32",
-  "numero": "6",
-  "paginas": "e14035",
-  "doi": "10.1111/jsr.14035",
-  "periodico": "Journal of sleep research",
-  "autores": [
-   "Riemann",
-   "Espie",
-   "Altena",
-   "Arnardottir",
-   "Baglioni",
-   "Bassetti",
-   "Bastien",
-   "Berzina",
-   "Bjorvatn",
-   "Dikeos",
-   "Dolenc Groselj",
-   "Ellis",
-   "Garcia-Borreguero",
-   "Geoffroy",
-   "Gjerstad",
-   "Gonçalves",
-   "Hertenstein",
-   "Hoedlmoser",
-   "Hion",
-   "Holzinger",
-   "Janku",
-   "Jansson-Fröjmark",
-   "Järnefelt",
-   "Jernelöv",
-   "Jennum",
-   "Khachatryan",
-   "Krone",
-   "Kyle",
-   "Lancee",
-   "Leger",
-   "Lupusor",
-   "Marques",
-   "Nissen",
-   "Palagini",
-   "Paunio",
-   "Perogamvros",
-   "Pevernagie",
-   "Schabus",
-   "Shochat",
-   "Szentkiralyi",
-   "Van Someren",
-   "van Straten",
-   "Wichniak",
-   "Verbraecken",
-   "Spiegelhalder"
-  ]
- },
- "33164742": {
-  "titulo": "Behavioral and psychological treatments for chronic insomnia disorder in adults: an American Academy of Sleep Medicine clinical practice guideline.",
-  "ano": "2021",
-  "volume": "17",
-  "numero": "2",
-  "paginas": "255-262",
-  "doi": "10.5664/jcsm.8986",
-  "periodico": "Journal of clinical sleep medicine : JCSM : official publication of the American Academy of Sleep Medicine",
-  "autores": [
-   "Edinger",
-   "Arnedt",
-   "Bertisch",
-   "Carney",
-   "Harrington",
-   "Lichstein",
-   "Sateia",
-   "Troxel",
-   "Zhou",
-   "Kazmi",
-   "Heald",
-   "Martin"
-  ]
- },
- "26762182": {
-  "titulo": "The two-process model of sleep regulation: a reappraisal.",
-  "ano": "2016",
-  "volume": "25",
-  "numero": "2",
-  "paginas": "131-43",
-  "doi": "10.1111/jsr.12371",
-  "periodico": "Journal of sleep research",
-  "autores": [
-   "Borbély",
-   "Daan",
-   "Wirz-Justice",
-   "Deboer"
-  ]
- },
- "42247850": {
-  "titulo": "Reallocating wakeful movement behaviors and sleep health: A partial wakeful day substitution model analysis of 27,048 Brazilian adults.",
-  "ano": "2026",
-  "volume": "146",
-  "numero": "",
-  "paginas": "109051",
-  "doi": "10.1016/j.sleep.2026.109051",
-  "periodico": "Sleep medicine",
-  "autores": [
-   "Menezes-Júnior"
-  ]
- },
- "39583303": {
-  "titulo": "Sleep quality and associated factors in adults living in the southern Brazil: A population-based study.",
-  "ano": "2024",
-  "volume": "8",
-  "numero": "",
-  "paginas": "100133",
-  "doi": "10.1016/j.sleepx.2024.100133",
-  "periodico": "Sleep medicine: X",
-  "autores": [
-   "Santa Helena",
-   "Machado",
-   "Sakae",
-   "Sousa",
-   "Nunes",
-   "Völzke",
-   "Ewert",
-   "Markus"
-  ]
- },
- "40802335": {
-  "titulo": "Shifting trends in obesity growth rates in Brazilian adults between 2006 and 2021.",
-  "ano": "2024",
-  "volume": "30",
-  "numero": "7",
-  "paginas": "e19882023",
-  "doi": "10.1590/1413-81232025307.19882023",
-  "periodico": "Ciencia & saude coletiva",
-  "autores": [
-   "Pastorello",
-   "Costa",
-   "Claro",
-   "Louzada"
-  ]
- },
- "26890214": {
-  "titulo": "Prevalence of Healthy Sleep Duration among Adults--United States, 2014.",
-  "ano": "2016",
-  "volume": "65",
-  "numero": "6",
-  "paginas": "137-41",
-  "doi": "10.15585/mmwr.mm6506a1",
-  "periodico": "MMWR. Morbidity and mortality weekly report",
-  "autores": [
-   "Liu",
-   "Wheaton",
-   "Chapman",
-   "Cunningham",
-   "Lu",
-   "Croft"
-  ]
- },
- "35659072": {
-  "titulo": "Epidemiology of Insomnia: Prevalence, Course, Risk Factors, and Public Health Burden.",
-  "ano": "2022",
-  "volume": "17",
-  "numero": "2",
-  "paginas": "173-191",
-  "doi": "10.1016/j.jsmc.2022.03.003",
-  "periodico": "Sleep medicine clinics",
-  "autores": [
-   "Morin",
-   "Jarrin"
-  ]
- },
- "41957444": {
-  "titulo": "Insomnia disorder.",
-  "ano": "2026",
-  "volume": "12",
-  "numero": "1",
-  "paginas": "",
-  "doi": "10.1038/s41572-026-00693-y",
-  "periodico": "Nature reviews. Disease primers",
-  "autores": [
-   "Spiegelhalder",
-   "Baglioni",
-   "Morin",
-   "Nissen",
-   "Palagini",
-   "Perlis",
-   "Scott",
-   "Riemann"
-  ]
- },
- "38432237": {
-  "titulo": "Worldwide trends in underweight and obesity from 1990 to 2022: a pooled analysis of 3663 population-representative studies with 222 million children, adolescents, and adults.",
-  "ano": "2024",
-  "volume": "403",
-  "numero": "10431",
-  "paginas": "1027-1050",
-  "doi": "10.1016/S0140-6736(23)02750-2",
-  "periodico": "Lancet (London, England)",
-  "autores": []
- },
- "32527625": {
-  "titulo": "Sleep duration and obesity in adulthood: An updated systematic review and meta-analysis.",
-  "ano": "2020",
-  "volume": "14",
-  "numero": "4",
-  "paginas": "301-309",
-  "doi": "10.1016/j.orcp.2020.03.004",
-  "periodico": "Obesity research & clinical practice",
-  "autores": [
-   "Bacaro",
-   "Ballesio",
-   "Cerolini",
-   "Vacca",
-   "Poggiogalle",
-   "Donini",
-   "Lucidi",
-   "Lombardo"
-  ]
- },
- "42948184": {
-  "titulo": "The Association Between Sleep and Obesity in Adults: An Umbrella Review of Meta-Analyses.",
-  "ano": "2026",
-  "volume": "9",
-  "numero": "11",
-  "paginas": "e73449",
-  "doi": "10.1002/hsr2.73449",
-  "periodico": "Health science reports",
-  "autores": [
-   "Malasevskaia",
-   "Rebellow",
-   "Tarar",
-   "Soliman"
-  ]
- },
- "18239586": {
-  "titulo": "Short sleep duration and weight gain: a systematic review.",
-  "ano": "2008",
-  "volume": "16",
-  "numero": "3",
-  "paginas": "643-53",
-  "doi": "10.1038/oby.2007.118",
-  "periodico": "Obesity (Silver Spring, Md.)",
-  "autores": [
-   "Patel",
-   "Hu"
-  ]
- },
- "20921542": {
-  "titulo": "Insufficient sleep undermines dietary efforts to reduce adiposity.",
-  "ano": "2010",
-  "volume": "153",
-  "numero": "7",
-  "paginas": "435-41",
-  "doi": "10.7326/0003-4819-153-7-201010050-00006",
-  "periodico": "Annals of internal medicine",
-  "autores": [
-   "Nedeltcheva",
-   "Kilkus",
-   "Imperial",
-   "Schoeller",
-   "Penev"
-  ]
- },
- "29438540": {
-  "titulo": "Influence of sleep restriction on weight loss outcomes associated with caloric restriction.",
-  "ano": "2018",
-  "volume": "41",
-  "numero": "5",
-  "paginas": "",
-  "doi": "10.1093/sleep/zsy027",
-  "periodico": "Sleep",
-  "autores": [
-   "Wang",
-   "Sparks",
-   "Bowyer",
-   "Youngstedt"
-  ]
- },
- "35129580": {
-  "titulo": "Effect of Sleep Extension on Objectively Assessed Energy Intake Among Adults With Overweight in Real-life Settings: A Randomized Clinical Trial.",
-  "ano": "2022",
-  "volume": "182",
-  "numero": "4",
-  "paginas": "365-374",
-  "doi": "10.1001/jamainternmed.2021.8098",
-  "periodico": "JAMA internal medicine",
-  "autores": [
-   "Tasali",
-   "Wroblewski",
-   "Kahn",
-   "Kilkus",
-   "Schoeller"
-  ]
- },
- "27804960": {
-  "titulo": "The effects of partial sleep deprivation on energy balance: a systematic review and meta-analysis.",
-  "ano": "2016",
-  "volume": "71",
-  "numero": "5",
-  "paginas": "614-624",
-  "doi": "10.1038/ejcn.2016.201",
-  "periodico": "European journal of clinical nutrition",
-  "autores": [
-   "Al Khatib",
-   "Harding",
-   "Darzi",
-   "Pot"
-  ]
- },
- "29381788": {
-  "titulo": "Sleep extension is a feasible lifestyle intervention in free-living adults who are habitually short sleepers: a potential strategy for decreasing intake of free sugars? A randomized controlled pilot study.",
-  "ano": "2018",
-  "volume": "107",
-  "numero": "1",
-  "paginas": "43-53",
-  "doi": "10.1093/ajcn/nqx030",
-  "periodico": "The American journal of clinical nutrition",
-  "autores": [
-   "Al Khatib",
-   "Hall",
-   "Creedon",
-   "Ooi",
-   "Masri",
-   "McGowan",
-   "Harding",
-   "Darzi",
-   "Pot"
-  ]
- },
- "26098388": {
-  "titulo": "A systematic review and meta-analysis of randomized controlled trials of the impact of sleep duration on adiposity and components of energy balance.",
-  "ano": "2015",
-  "volume": "16",
-  "numero": "9",
-  "paginas": "771-82",
-  "doi": "10.1111/obr.12296",
-  "periodico": "Obesity reviews : an official journal of the International Association for the Study of Obesity",
-  "autores": [
-   "Capers",
-   "Fobian",
-   "Kaiser",
-   "Borah",
-   "Allison"
-  ]
- },
- "42407080": {
-  "titulo": "Prolonged Short Sleep and Its Effect on Body Weight and Composition : A Pooled Analysis of Randomized Trials.",
-  "ano": "2026",
-  "volume": "179",
-  "numero": "8",
-  "paginas": "1085-1093",
-  "doi": "10.7326/ANNALS-25-01660",
-  "periodico": "Annals of internal medicine",
-  "autores": [
-   "Zuraikat",
-   "Scaccia",
-   "Cochran",
-   "Cheng",
-   "Diaz",
-   "Creasy",
-   "Melanson",
-   "Shen",
-   "Aggarwal",
-   "Jelic",
-   "St-Onge"
-  ]
- },
- "42044907": {
-  "titulo": "The Effect of Behavioral Sleep Interventions on Measures of Obesity, Dietary Intake and Physical Activity in Adults With Poor Sleep Health: A Systematic Review, Meta-Analysis and Meta-Regression Analysis.",
-  "ano": "2026",
-  "volume": "27",
-  "numero": "11",
-  "paginas": "e70139",
-  "doi": "10.1111/obr.70139",
-  "periodico": "Obesity reviews : an official journal of the International Association for the Study of Obesity",
-  "autores": [
-   "Mostafa",
-   "Singh",
-   "Babwah",
-   "Hanif",
-   "Balanos",
-   "Nirantharakumar",
-   "Ellis",
-   "Tahrani"
-  ]
- },
- "30977011": {
-  "titulo": "Experimental sleep restriction effect on adult body weight: a meta-analysis.",
-  "ano": "2019",
-  "volume": "23",
-  "numero": "4",
-  "paginas": "1341-1350",
-  "doi": "10.1007/s11325-019-01828-0",
-  "periodico": "Sleep & breathing = Schlaf & Atmung",
-  "autores": [
-   "Yu",
-   "Lu",
-   "Jia",
-   "Liu",
-   "Cheng"
-  ]
- },
- "33001515": {
-  "titulo": "The influence of sleep health on dietary intake: a systematic review and meta-analysis of intervention studies.",
-  "ano": "2020",
-  "volume": "34",
-  "numero": "2",
-  "paginas": "273-285",
-  "doi": "10.1111/jhn.12813",
-  "periodico": "Journal of human nutrition and dietetics : the official journal of the British Dietetic Association",
-  "autores": [
-   "Fenton",
-   "Burrows",
-   "Skinner",
-   "Duncan"
-  ]
- },
- "32537891": {
-  "titulo": "Associations of short sleep duration with appetite-regulating hormones and adipokines: A systematic review and meta-analysis.",
-  "ano": "2020",
-  "volume": "21",
-  "numero": "11",
-  "paginas": "e13051",
-  "doi": "10.1111/obr.13051",
-  "periodico": "Obesity reviews : an official journal of the International Association for the Study of Obesity",
-  "autores": [
-   "Lin",
-   "Jiang",
-   "Wang",
-   "Meng",
-   "Zhu",
-   "Mei",
-   "Liu",
-   "Jiang"
-  ]
- },
- "15583226": {
-  "titulo": "Brief communication: Sleep curtailment in healthy young men is associated with decreased leptin levels, elevated ghrelin levels, and increased hunger and appetite.",
-  "ano": "2004",
-  "volume": "141",
-  "numero": "11",
-  "paginas": "846-50",
-  "doi": "10.7326/0003-4819-141-11-200412070-00008",
-  "periodico": "Annals of internal medicine",
-  "autores": [
-   "Spiegel",
-   "Tasali",
-   "Penev",
-   "Van Cauter"
-  ]
- },
- "23922121": {
-  "titulo": "The impact of sleep deprivation on food desire in the human brain.",
-  "ano": "2013",
-  "volume": "4",
-  "numero": "",
-  "paginas": "2259",
-  "doi": "10.1038/ncomms3259",
-  "periodico": "Nature communications",
-  "autores": [
-   "Greer",
-   "Goldstein",
-   "Walker"
-  ]
- },
- "20357041": {
-  "titulo": "Acute partial sleep deprivation increases food intake in healthy men.",
-  "ano": "2010",
-  "volume": "91",
-  "numero": "6",
-  "paginas": "1550-9",
-  "doi": "10.3945/ajcn.2009.28523",
-  "periodico": "The American journal of clinical nutrition",
-  "autores": [
-   "Brondel",
-   "Romer",
-   "Nougues",
-   "Touyarou",
-   "Davenne"
-  ]
- },
- "25683266": {
-  "titulo": "Metabolic and hormonal effects of 'catch-up' sleep in men with chronic, repetitive, lifestyle-driven sleep restriction.",
-  "ano": "2015",
-  "volume": "83",
-  "numero": "4",
-  "paginas": "498-507",
-  "doi": "10.1111/cen.12747",
-  "periodico": "Clinical endocrinology",
-  "autores": [
-   "Killick",
-   "Hoyos",
-   "Melehan",
-   "Dungan",
-   "Poh",
-   "Liu"
-  ]
- },
- "41889166": {
-  "titulo": "Sleep Duration and Quality as Predictors of Weight Loss and Adherence During a Behavioral Weight Loss Intervention.",
-  "ano": "2026",
-  "volume": "24",
-  "numero": "4",
-  "paginas": "463-476",
-  "doi": "10.1080/15402002.2026.2648510",
-  "periodico": "Behavioral sleep medicine",
-  "autores": [
-   "Kline",
-   "Conroy",
-   "Brooks",
-   "Kriska",
-   "Barinas-Mitchell"
-  ]
- },
- "35577898": {
-  "titulo": "Effect of sleep on weight loss and adherence to diet and physical activity recommendations during an 18-month behavioral weight loss intervention.",
-  "ano": "2022",
-  "volume": "46",
-  "numero": "8",
-  "paginas": "1510-1517",
-  "doi": "10.1038/s41366-022-01141-z",
-  "periodico": "International journal of obesity (2005)",
-  "autores": [
-   "Creasy",
-   "Ostendorf",
-   "Blankenship",
-   "Grau",
-   "Arbet",
-   "Bessesen",
-   "Melanson",
-   "Catenacci"
-  ]
- },
- "40976481": {
-  "titulo": "The Effect of Habitual Sleep Duration on Weight Loss during a Behavioral Weight Loss Intervention in a Mediterranean Population.",
-  "ano": "2025",
-  "volume": "155",
-  "numero": "11",
-  "paginas": "4060-4064",
-  "doi": "10.1016/j.tjnut.2025.09.010",
-  "periodico": "The Journal of nutrition",
-  "autores": [
-   "Rodríguez-Martín",
-   "Szczerbinski",
-   "Garaulet",
-   "Dashti"
-  ]
- },
- "31217539": {
-  "titulo": "High sleep variability predicts a blunted weight loss response and short sleep duration a reduced decrease in waist circumference in the PREDIMED-Plus Trial.",
-  "ano": "2019",
-  "volume": "44",
-  "numero": "2",
-  "paginas": "330-339",
-  "doi": "10.1038/s41366-019-0401-5",
-  "periodico": "International journal of obesity (2005)",
-  "autores": [
-   "Papandreou",
-   "Bulló",
-   "Díaz-López",
-   "Martínez-González",
-   "Corella",
-   "Castañer",
-   "Vioque",
-   "Romaguera",
-   "Martínez",
-   "Pérez-Farinós",
-   "López-Miranda",
-   "Estruch",
-   "Bueno-Cavanillas",
-   "Alonso-Gómez",
-   "Tur",
-   "Tinahones",
-   "Serra-Majem",
-   "Martin",
-   "Lapetra",
-   "Vazquez",
-   "Pintó",
-   "Vidal",
-   "Damiel",
-   "Delgado-Rodriguez",
-   "Ros",
-   "Abete",
-   "Barón-López",
-   "Garcia-Arellano",
-   "Sorli",
-   "Babio",
-   "Schröder",
-   "Toledo",
-   "Fitó",
-   "Salas-Salvadó"
-  ]
- },
- "35708888": {
-  "titulo": "Effects of Acute Sleep Loss on Physical Performance: A Systematic and Meta-Analytical Review.",
-  "ano": "2022",
-  "volume": "52",
-  "numero": "11",
-  "paginas": "2669-2690",
-  "doi": "10.1007/s40279-022-01706-y",
-  "periodico": "Sports medicine (Auckland, N.Z.)",
-  "autores": [
-   "Craven",
-   "McCartney",
-   "Desbrow",
-   "Sabapathy",
-   "Bellinger",
-   "Roberts",
-   "Irwin"
-  ]
- },
- "29422383": {
-  "titulo": "Inadequate sleep and muscle strength: Implications for resistance training.",
-  "ano": "2018",
-  "volume": "21",
-  "numero": "9",
-  "paginas": "959-968",
-  "doi": "10.1016/j.jsams.2018.01.012",
-  "periodico": "Journal of science and medicine in sport",
-  "autores": [
-   "Knowles",
-   "Drinkwater",
-   "Urwin",
-   "Lamon",
-   "Aisbett"
-  ]
- },
- "29352373": {
-  "titulo": "Sleep Interventions Designed to Improve Athletic Performance and Recovery: A Systematic Review of Current Approaches.",
-  "ano": "2018",
-  "volume": "48",
-  "numero": "3",
-  "paginas": "683-703",
-  "doi": "10.1007/s40279-017-0832-x",
-  "periodico": "Sports medicine (Auckland, N.Z.)",
-  "autores": [
-   "Bonnar",
-   "Bartel",
-   "Kakoschke",
-   "Lang"
-  ]
- },
- "36690376": {
-  "titulo": "Is daytime napping an effective strategy to improve sport-related cognitive and physical performance and reduce fatigue? A systematic review and meta-analysis of randomised controlled trials.",
-  "ano": "2023",
-  "volume": "57",
-  "numero": "7",
-  "paginas": "417-426",
-  "doi": "10.1136/bjsports-2022-106355",
-  "periodico": "British journal of sports medicine",
-  "autores": [
-   "Mesas",
-   "Núñez de Arenas-Arroyo",
-   "Martinez-Vizcaino",
-   "Garrido-Miguel",
-   "Fernández-Rodríguez",
-   "Bizzozero-Peroni",
-   "Torres-Costoso"
-  ]
- },
- "33400856": {
-  "titulo": "The effect of acute sleep deprivation on skeletal muscle protein synthesis and the hormonal environment.",
-  "ano": "2021",
-  "volume": "9",
-  "numero": "1",
-  "paginas": "e14660",
-  "doi": "10.14814/phy2.14660",
-  "periodico": "Physiological reports",
-  "autores": [
-   "Lamon",
-   "Morabito",
-   "Arentson-Lantz",
-   "Knowles",
-   "Vincent",
-   "Condo",
-   "Alexander",
-   "Garnham",
-   "Paddon-Jones",
-   "Aisbett"
-  ]
- },
- "32078168": {
-  "titulo": "The effect of sleep restriction, with or without high-intensity interval exercise, on myofibrillar protein synthesis in healthy young men.",
-  "ano": "2020",
-  "volume": "598",
-  "numero": "8",
-  "paginas": "1523-1536",
-  "doi": "10.1113/JP278828",
-  "periodico": "The Journal of physiology",
-  "autores": [
-   "Saner",
-   "Lee",
-   "Pitchford",
-   "Kuang",
-   "Roach",
-   "Garnham",
-   "Stokes",
-   "Phillips",
-   "Bishop",
-   "Bartlett"
-  ]
- },
- "25596964": {
-  "titulo": "The effects of physical activity on sleep: a meta-analytic review.",
-  "ano": "2015",
-  "volume": "38",
-  "numero": "3",
-  "paginas": "427-49",
-  "doi": "10.1007/s10865-015-9617-6",
-  "periodico": "Journal of behavioral medicine",
-  "autores": [
-   "Kredlow",
-   "Capozzoli",
-   "Hearon",
-   "Calkins",
-   "Otto"
-  ]
- },
- "34416428": {
-  "titulo": "The effects of evening high-intensity exercise on sleep in healthy adults: A systematic review and meta-analysis.",
-  "ano": "2021",
-  "volume": "60",
-  "numero": "",
-  "paginas": "101535",
-  "doi": "10.1016/j.smrv.2021.101535",
-  "periodico": "Sleep medicine reviews",
-  "autores": [
-   "Frimpong",
-   "Mograss",
-   "Zvionow",
-   "Dang-Vu"
-  ]
- },
- "38749363": {
-  "titulo": "The effect of physical exercise interventions on insomnia: A systematic review and meta-analysis.",
-  "ano": "2024",
-  "volume": "76",
-  "numero": "",
-  "paginas": "101948",
-  "doi": "10.1016/j.smrv.2024.101948",
-  "periodico": "Sleep medicine reviews",
-  "autores": [
-   "Riedel",
-   "Benz",
-   "Deibert",
-   "Barsch",
-   "Frase",
-   "Johann",
-   "Riemann",
-   "Feige"
-  ]
- },
- "34507028": {
-  "titulo": "Behavioral interventions to extend sleep duration: A systematic review and meta-analysis.",
-  "ano": "2021",
-  "volume": "60",
-  "numero": "",
-  "paginas": "101532",
-  "doi": "10.1016/j.smrv.2021.101532",
-  "periodico": "Sleep medicine reviews",
-  "autores": [
-   "Baron",
-   "Duffecy",
-   "Reutrakul",
-   "Levenson",
-   "McFarland",
-   "Lee",
-   "Qeadan"
-  ]
- }
+  "25979105": {
+    "titulo": "Recommended Amount of Sleep for a Healthy Adult: A Joint Consensus Statement of the American Academy of Sleep Medicine and Sleep Research Society.",
+    "ano": "2015",
+    "volume": "11",
+    "numero": "6",
+    "paginas": "591-2",
+    "doi": "10.5664/jcsm.4758",
+    "periodico": "Journal of clinical sleep medicine : JCSM : official publication of the American Academy of Sleep Medicine",
+    "autores": [
+      "Watson",
+      "Badr",
+      "Belenky",
+      "Bliwise",
+      "Buxton",
+      "Buysse",
+      "Dinges",
+      "Gangwisch",
+      "Grandner",
+      "Kushida",
+      "Malhotra",
+      "Martin",
+      "Patel",
+      "Quan",
+      "Tasali",
+      "Twery",
+      "Croft",
+      "Maher",
+      "Barrett",
+      "Thomas",
+      "Heald"
+    ]
+  },
+  "29073398": {
+    "titulo": "National Sleep Foundation's updated sleep duration recommendations: final report.",
+    "ano": "2015",
+    "volume": "1",
+    "numero": "4",
+    "paginas": "233-243",
+    "doi": "10.1016/j.sleh.2015.10.004",
+    "periodico": "Sleep health",
+    "autores": [
+      "Hirshkowitz",
+      "Whiton",
+      "Albert",
+      "Alessi",
+      "Bruni",
+      "DonCarlos",
+      "Hazen",
+      "Herman",
+      "Adams Hillard",
+      "Katz",
+      "Kheirandish-Gozal",
+      "Neubauer",
+      "O'Donnell",
+      "Ohayon",
+      "Peever",
+      "Rawding",
+      "Sachdeva",
+      "Setters",
+      "Vitiello",
+      "Ware"
+    ]
+  },
+  "33144349": {
+    "titulo": "Sleep and the athlete: narrative review and 2021 expert consensus recommendations.",
+    "ano": "2020",
+    "volume": "",
+    "numero": "",
+    "paginas": "",
+    "doi": "10.1136/bjsports-2020-102025",
+    "periodico": "British journal of sports medicine",
+    "autores": [
+      "Walsh",
+      "Halson",
+      "Sargent",
+      "Roach",
+      "Nédélec",
+      "Gupta",
+      "Leeder",
+      "Fullagar",
+      "Coutts",
+      "Edwards",
+      "Pullinger",
+      "Robertson",
+      "Burniston",
+      "Lastella",
+      "Le Meur",
+      "Hausswirth",
+      "Bender",
+      "Grandner",
+      "Samuels"
+    ]
+  },
+  "38016484": {
+    "titulo": "The European Insomnia Guideline: An update on the diagnosis and treatment of insomnia 2023.",
+    "ano": "2023",
+    "volume": "32",
+    "numero": "6",
+    "paginas": "e14035",
+    "doi": "10.1111/jsr.14035",
+    "periodico": "Journal of sleep research",
+    "autores": [
+      "Riemann",
+      "Espie",
+      "Altena",
+      "Arnardottir",
+      "Baglioni",
+      "Bassetti",
+      "Bastien",
+      "Berzina",
+      "Bjorvatn",
+      "Dikeos",
+      "Dolenc Groselj",
+      "Ellis",
+      "Garcia-Borreguero",
+      "Geoffroy",
+      "Gjerstad",
+      "Gonçalves",
+      "Hertenstein",
+      "Hoedlmoser",
+      "Hion",
+      "Holzinger",
+      "Janku",
+      "Jansson-Fröjmark",
+      "Järnefelt",
+      "Jernelöv",
+      "Jennum",
+      "Khachatryan",
+      "Krone",
+      "Kyle",
+      "Lancee",
+      "Leger",
+      "Lupusor",
+      "Marques",
+      "Nissen",
+      "Palagini",
+      "Paunio",
+      "Perogamvros",
+      "Pevernagie",
+      "Schabus",
+      "Shochat",
+      "Szentkiralyi",
+      "Van Someren",
+      "van Straten",
+      "Wichniak",
+      "Verbraecken",
+      "Spiegelhalder"
+    ]
+  },
+  "33164742": {
+    "titulo": "Behavioral and psychological treatments for chronic insomnia disorder in adults: an American Academy of Sleep Medicine clinical practice guideline.",
+    "ano": "2021",
+    "volume": "17",
+    "numero": "2",
+    "paginas": "255-262",
+    "doi": "10.5664/jcsm.8986",
+    "periodico": "Journal of clinical sleep medicine : JCSM : official publication of the American Academy of Sleep Medicine",
+    "autores": [
+      "Edinger",
+      "Arnedt",
+      "Bertisch",
+      "Carney",
+      "Harrington",
+      "Lichstein",
+      "Sateia",
+      "Troxel",
+      "Zhou",
+      "Kazmi",
+      "Heald",
+      "Martin"
+    ]
+  },
+  "26762182": {
+    "titulo": "The two-process model of sleep regulation: a reappraisal.",
+    "ano": "2016",
+    "volume": "25",
+    "numero": "2",
+    "paginas": "131-43",
+    "doi": "10.1111/jsr.12371",
+    "periodico": "Journal of sleep research",
+    "autores": [
+      "Borbély",
+      "Daan",
+      "Wirz-Justice",
+      "Deboer"
+    ]
+  },
+  "42247850": {
+    "titulo": "Reallocating wakeful movement behaviors and sleep health: A partial wakeful day substitution model analysis of 27,048 Brazilian adults.",
+    "ano": "2026",
+    "volume": "146",
+    "numero": "",
+    "paginas": "109051",
+    "doi": "10.1016/j.sleep.2026.109051",
+    "periodico": "Sleep medicine",
+    "autores": [
+      "Menezes-Júnior"
+    ]
+  },
+  "39583303": {
+    "titulo": "Sleep quality and associated factors in adults living in the southern Brazil: A population-based study.",
+    "ano": "2024",
+    "volume": "8",
+    "numero": "",
+    "paginas": "100133",
+    "doi": "10.1016/j.sleepx.2024.100133",
+    "periodico": "Sleep medicine: X",
+    "autores": [
+      "Santa Helena",
+      "Machado",
+      "Sakae",
+      "Sousa",
+      "Nunes",
+      "Völzke",
+      "Ewert",
+      "Markus"
+    ]
+  },
+  "40802335": {
+    "titulo": "Shifting trends in obesity growth rates in Brazilian adults between 2006 and 2021.",
+    "ano": "2024",
+    "volume": "30",
+    "numero": "7",
+    "paginas": "e19882023",
+    "doi": "10.1590/1413-81232025307.19882023",
+    "periodico": "Ciencia & saude coletiva",
+    "autores": [
+      "Pastorello",
+      "Costa",
+      "Claro",
+      "Louzada"
+    ]
+  },
+  "26890214": {
+    "titulo": "Prevalence of Healthy Sleep Duration among Adults--United States, 2014.",
+    "ano": "2016",
+    "volume": "65",
+    "numero": "6",
+    "paginas": "137-41",
+    "doi": "10.15585/mmwr.mm6506a1",
+    "periodico": "MMWR. Morbidity and mortality weekly report",
+    "autores": [
+      "Liu",
+      "Wheaton",
+      "Chapman",
+      "Cunningham",
+      "Lu",
+      "Croft"
+    ]
+  },
+  "35659072": {
+    "titulo": "Epidemiology of Insomnia: Prevalence, Course, Risk Factors, and Public Health Burden.",
+    "ano": "2022",
+    "volume": "17",
+    "numero": "2",
+    "paginas": "173-191",
+    "doi": "10.1016/j.jsmc.2022.03.003",
+    "periodico": "Sleep medicine clinics",
+    "autores": [
+      "Morin",
+      "Jarrin"
+    ]
+  },
+  "41957444": {
+    "titulo": "Insomnia disorder.",
+    "ano": "2026",
+    "volume": "12",
+    "numero": "1",
+    "paginas": "",
+    "doi": "10.1038/s41572-026-00693-y",
+    "periodico": "Nature reviews. Disease primers",
+    "autores": [
+      "Spiegelhalder",
+      "Baglioni",
+      "Morin",
+      "Nissen",
+      "Palagini",
+      "Perlis",
+      "Scott",
+      "Riemann"
+    ]
+  },
+  "38432237": {
+    "titulo": "Worldwide trends in underweight and obesity from 1990 to 2022: a pooled analysis of 3663 population-representative studies with 222 million children, adolescents, and adults.",
+    "ano": "2024",
+    "volume": "403",
+    "numero": "10431",
+    "paginas": "1027-1050",
+    "doi": "10.1016/S0140-6736(23)02750-2",
+    "periodico": "Lancet (London, England)",
+    "autores": []
+  },
+  "32527625": {
+    "titulo": "Sleep duration and obesity in adulthood: An updated systematic review and meta-analysis.",
+    "ano": "2020",
+    "volume": "14",
+    "numero": "4",
+    "paginas": "301-309",
+    "doi": "10.1016/j.orcp.2020.03.004",
+    "periodico": "Obesity research & clinical practice",
+    "autores": [
+      "Bacaro",
+      "Ballesio",
+      "Cerolini",
+      "Vacca",
+      "Poggiogalle",
+      "Donini",
+      "Lucidi",
+      "Lombardo"
+    ]
+  },
+  "42948184": {
+    "titulo": "The Association Between Sleep and Obesity in Adults: An Umbrella Review of Meta-Analyses.",
+    "ano": "2026",
+    "volume": "9",
+    "numero": "11",
+    "paginas": "e73449",
+    "doi": "10.1002/hsr2.73449",
+    "periodico": "Health science reports",
+    "autores": [
+      "Malasevskaia",
+      "Rebellow",
+      "Tarar",
+      "Soliman"
+    ]
+  },
+  "18239586": {
+    "titulo": "Short sleep duration and weight gain: a systematic review.",
+    "ano": "2008",
+    "volume": "16",
+    "numero": "3",
+    "paginas": "643-53",
+    "doi": "10.1038/oby.2007.118",
+    "periodico": "Obesity (Silver Spring, Md.)",
+    "autores": [
+      "Patel",
+      "Hu"
+    ]
+  },
+  "20921542": {
+    "titulo": "Insufficient sleep undermines dietary efforts to reduce adiposity.",
+    "ano": "2010",
+    "volume": "153",
+    "numero": "7",
+    "paginas": "435-41",
+    "doi": "10.7326/0003-4819-153-7-201010050-00006",
+    "periodico": "Annals of internal medicine",
+    "autores": [
+      "Nedeltcheva",
+      "Kilkus",
+      "Imperial",
+      "Schoeller",
+      "Penev"
+    ]
+  },
+  "29438540": {
+    "titulo": "Influence of sleep restriction on weight loss outcomes associated with caloric restriction.",
+    "ano": "2018",
+    "volume": "41",
+    "numero": "5",
+    "paginas": "",
+    "doi": "10.1093/sleep/zsy027",
+    "periodico": "Sleep",
+    "autores": [
+      "Wang",
+      "Sparks",
+      "Bowyer",
+      "Youngstedt"
+    ]
+  },
+  "35129580": {
+    "titulo": "Effect of Sleep Extension on Objectively Assessed Energy Intake Among Adults With Overweight in Real-life Settings: A Randomized Clinical Trial.",
+    "ano": "2022",
+    "volume": "182",
+    "numero": "4",
+    "paginas": "365-374",
+    "doi": "10.1001/jamainternmed.2021.8098",
+    "periodico": "JAMA internal medicine",
+    "autores": [
+      "Tasali",
+      "Wroblewski",
+      "Kahn",
+      "Kilkus",
+      "Schoeller"
+    ]
+  },
+  "27804960": {
+    "titulo": "The effects of partial sleep deprivation on energy balance: a systematic review and meta-analysis.",
+    "ano": "2016",
+    "volume": "71",
+    "numero": "5",
+    "paginas": "614-624",
+    "doi": "10.1038/ejcn.2016.201",
+    "periodico": "European journal of clinical nutrition",
+    "autores": [
+      "Al Khatib",
+      "Harding",
+      "Darzi",
+      "Pot"
+    ]
+  },
+  "29381788": {
+    "titulo": "Sleep extension is a feasible lifestyle intervention in free-living adults who are habitually short sleepers: a potential strategy for decreasing intake of free sugars? A randomized controlled pilot study.",
+    "ano": "2018",
+    "volume": "107",
+    "numero": "1",
+    "paginas": "43-53",
+    "doi": "10.1093/ajcn/nqx030",
+    "periodico": "The American journal of clinical nutrition",
+    "autores": [
+      "Al Khatib",
+      "Hall",
+      "Creedon",
+      "Ooi",
+      "Masri",
+      "McGowan",
+      "Harding",
+      "Darzi",
+      "Pot"
+    ]
+  },
+  "26098388": {
+    "titulo": "A systematic review and meta-analysis of randomized controlled trials of the impact of sleep duration on adiposity and components of energy balance.",
+    "ano": "2015",
+    "volume": "16",
+    "numero": "9",
+    "paginas": "771-82",
+    "doi": "10.1111/obr.12296",
+    "periodico": "Obesity reviews : an official journal of the International Association for the Study of Obesity",
+    "autores": [
+      "Capers",
+      "Fobian",
+      "Kaiser",
+      "Borah",
+      "Allison"
+    ]
+  },
+  "42407080": {
+    "titulo": "Prolonged Short Sleep and Its Effect on Body Weight and Composition : A Pooled Analysis of Randomized Trials.",
+    "ano": "2026",
+    "volume": "179",
+    "numero": "8",
+    "paginas": "1085-1093",
+    "doi": "10.7326/ANNALS-25-01660",
+    "periodico": "Annals of internal medicine",
+    "autores": [
+      "Zuraikat",
+      "Scaccia",
+      "Cochran",
+      "Cheng",
+      "Diaz",
+      "Creasy",
+      "Melanson",
+      "Shen",
+      "Aggarwal",
+      "Jelic",
+      "St-Onge"
+    ]
+  },
+  "42044907": {
+    "titulo": "The Effect of Behavioral Sleep Interventions on Measures of Obesity, Dietary Intake and Physical Activity in Adults With Poor Sleep Health: A Systematic Review, Meta-Analysis and Meta-Regression Analysis.",
+    "ano": "2026",
+    "volume": "27",
+    "numero": "11",
+    "paginas": "e70139",
+    "doi": "10.1111/obr.70139",
+    "periodico": "Obesity reviews : an official journal of the International Association for the Study of Obesity",
+    "autores": [
+      "Mostafa",
+      "Singh",
+      "Babwah",
+      "Hanif",
+      "Balanos",
+      "Nirantharakumar",
+      "Ellis",
+      "Tahrani"
+    ]
+  },
+  "30977011": {
+    "titulo": "Experimental sleep restriction effect on adult body weight: a meta-analysis.",
+    "ano": "2019",
+    "volume": "23",
+    "numero": "4",
+    "paginas": "1341-1350",
+    "doi": "10.1007/s11325-019-01828-0",
+    "periodico": "Sleep & breathing = Schlaf & Atmung",
+    "autores": [
+      "Yu",
+      "Lu",
+      "Jia",
+      "Liu",
+      "Cheng"
+    ]
+  },
+  "33001515": {
+    "titulo": "The influence of sleep health on dietary intake: a systematic review and meta-analysis of intervention studies.",
+    "ano": "2020",
+    "volume": "34",
+    "numero": "2",
+    "paginas": "273-285",
+    "doi": "10.1111/jhn.12813",
+    "periodico": "Journal of human nutrition and dietetics : the official journal of the British Dietetic Association",
+    "autores": [
+      "Fenton",
+      "Burrows",
+      "Skinner",
+      "Duncan"
+    ]
+  },
+  "32537891": {
+    "titulo": "Associations of short sleep duration with appetite-regulating hormones and adipokines: A systematic review and meta-analysis.",
+    "ano": "2020",
+    "volume": "21",
+    "numero": "11",
+    "paginas": "e13051",
+    "doi": "10.1111/obr.13051",
+    "periodico": "Obesity reviews : an official journal of the International Association for the Study of Obesity",
+    "autores": [
+      "Lin",
+      "Jiang",
+      "Wang",
+      "Meng",
+      "Zhu",
+      "Mei",
+      "Liu",
+      "Jiang"
+    ]
+  },
+  "15583226": {
+    "titulo": "Brief communication: Sleep curtailment in healthy young men is associated with decreased leptin levels, elevated ghrelin levels, and increased hunger and appetite.",
+    "ano": "2004",
+    "volume": "141",
+    "numero": "11",
+    "paginas": "846-50",
+    "doi": "10.7326/0003-4819-141-11-200412070-00008",
+    "periodico": "Annals of internal medicine",
+    "autores": [
+      "Spiegel",
+      "Tasali",
+      "Penev",
+      "Van Cauter"
+    ]
+  },
+  "23922121": {
+    "titulo": "The impact of sleep deprivation on food desire in the human brain.",
+    "ano": "2013",
+    "volume": "4",
+    "numero": "",
+    "paginas": "2259",
+    "doi": "10.1038/ncomms3259",
+    "periodico": "Nature communications",
+    "autores": [
+      "Greer",
+      "Goldstein",
+      "Walker"
+    ]
+  },
+  "20357041": {
+    "titulo": "Acute partial sleep deprivation increases food intake in healthy men.",
+    "ano": "2010",
+    "volume": "91",
+    "numero": "6",
+    "paginas": "1550-9",
+    "doi": "10.3945/ajcn.2009.28523",
+    "periodico": "The American journal of clinical nutrition",
+    "autores": [
+      "Brondel",
+      "Romer",
+      "Nougues",
+      "Touyarou",
+      "Davenne"
+    ]
+  },
+  "25683266": {
+    "titulo": "Metabolic and hormonal effects of 'catch-up' sleep in men with chronic, repetitive, lifestyle-driven sleep restriction.",
+    "ano": "2015",
+    "volume": "83",
+    "numero": "4",
+    "paginas": "498-507",
+    "doi": "10.1111/cen.12747",
+    "periodico": "Clinical endocrinology",
+    "autores": [
+      "Killick",
+      "Hoyos",
+      "Melehan",
+      "Dungan",
+      "Poh",
+      "Liu"
+    ]
+  },
+  "41889166": {
+    "titulo": "Sleep Duration and Quality as Predictors of Weight Loss and Adherence During a Behavioral Weight Loss Intervention.",
+    "ano": "2026",
+    "volume": "24",
+    "numero": "4",
+    "paginas": "463-476",
+    "doi": "10.1080/15402002.2026.2648510",
+    "periodico": "Behavioral sleep medicine",
+    "autores": [
+      "Kline",
+      "Conroy",
+      "Brooks",
+      "Kriska",
+      "Barinas-Mitchell"
+    ]
+  },
+  "35577898": {
+    "titulo": "Effect of sleep on weight loss and adherence to diet and physical activity recommendations during an 18-month behavioral weight loss intervention.",
+    "ano": "2022",
+    "volume": "46",
+    "numero": "8",
+    "paginas": "1510-1517",
+    "doi": "10.1038/s41366-022-01141-z",
+    "periodico": "International journal of obesity (2005)",
+    "autores": [
+      "Creasy",
+      "Ostendorf",
+      "Blankenship",
+      "Grau",
+      "Arbet",
+      "Bessesen",
+      "Melanson",
+      "Catenacci"
+    ]
+  },
+  "40976481": {
+    "titulo": "The Effect of Habitual Sleep Duration on Weight Loss during a Behavioral Weight Loss Intervention in a Mediterranean Population.",
+    "ano": "2025",
+    "volume": "155",
+    "numero": "11",
+    "paginas": "4060-4064",
+    "doi": "10.1016/j.tjnut.2025.09.010",
+    "periodico": "The Journal of nutrition",
+    "autores": [
+      "Rodríguez-Martín",
+      "Szczerbinski",
+      "Garaulet",
+      "Dashti"
+    ]
+  },
+  "31217539": {
+    "titulo": "High sleep variability predicts a blunted weight loss response and short sleep duration a reduced decrease in waist circumference in the PREDIMED-Plus Trial.",
+    "ano": "2019",
+    "volume": "44",
+    "numero": "2",
+    "paginas": "330-339",
+    "doi": "10.1038/s41366-019-0401-5",
+    "periodico": "International journal of obesity (2005)",
+    "autores": [
+      "Papandreou",
+      "Bulló",
+      "Díaz-López",
+      "Martínez-González",
+      "Corella",
+      "Castañer",
+      "Vioque",
+      "Romaguera",
+      "Martínez",
+      "Pérez-Farinós",
+      "López-Miranda",
+      "Estruch",
+      "Bueno-Cavanillas",
+      "Alonso-Gómez",
+      "Tur",
+      "Tinahones",
+      "Serra-Majem",
+      "Martin",
+      "Lapetra",
+      "Vazquez",
+      "Pintó",
+      "Vidal",
+      "Damiel",
+      "Delgado-Rodriguez",
+      "Ros",
+      "Abete",
+      "Barón-López",
+      "Garcia-Arellano",
+      "Sorli",
+      "Babio",
+      "Schröder",
+      "Toledo",
+      "Fitó",
+      "Salas-Salvadó"
+    ]
+  },
+  "35708888": {
+    "titulo": "Effects of Acute Sleep Loss on Physical Performance: A Systematic and Meta-Analytical Review.",
+    "ano": "2022",
+    "volume": "52",
+    "numero": "11",
+    "paginas": "2669-2690",
+    "doi": "10.1007/s40279-022-01706-y",
+    "periodico": "Sports medicine (Auckland, N.Z.)",
+    "autores": [
+      "Craven",
+      "McCartney",
+      "Desbrow",
+      "Sabapathy",
+      "Bellinger",
+      "Roberts",
+      "Irwin"
+    ]
+  },
+  "29422383": {
+    "titulo": "Inadequate sleep and muscle strength: Implications for resistance training.",
+    "ano": "2018",
+    "volume": "21",
+    "numero": "9",
+    "paginas": "959-968",
+    "doi": "10.1016/j.jsams.2018.01.012",
+    "periodico": "Journal of science and medicine in sport",
+    "autores": [
+      "Knowles",
+      "Drinkwater",
+      "Urwin",
+      "Lamon",
+      "Aisbett"
+    ]
+  },
+  "29352373": {
+    "titulo": "Sleep Interventions Designed to Improve Athletic Performance and Recovery: A Systematic Review of Current Approaches.",
+    "ano": "2018",
+    "volume": "48",
+    "numero": "3",
+    "paginas": "683-703",
+    "doi": "10.1007/s40279-017-0832-x",
+    "periodico": "Sports medicine (Auckland, N.Z.)",
+    "autores": [
+      "Bonnar",
+      "Bartel",
+      "Kakoschke",
+      "Lang"
+    ]
+  },
+  "36690376": {
+    "titulo": "Is daytime napping an effective strategy to improve sport-related cognitive and physical performance and reduce fatigue? A systematic review and meta-analysis of randomised controlled trials.",
+    "ano": "2023",
+    "volume": "57",
+    "numero": "7",
+    "paginas": "417-426",
+    "doi": "10.1136/bjsports-2022-106355",
+    "periodico": "British journal of sports medicine",
+    "autores": [
+      "Mesas",
+      "Núñez de Arenas-Arroyo",
+      "Martinez-Vizcaino",
+      "Garrido-Miguel",
+      "Fernández-Rodríguez",
+      "Bizzozero-Peroni",
+      "Torres-Costoso"
+    ]
+  },
+  "33400856": {
+    "titulo": "The effect of acute sleep deprivation on skeletal muscle protein synthesis and the hormonal environment.",
+    "ano": "2021",
+    "volume": "9",
+    "numero": "1",
+    "paginas": "e14660",
+    "doi": "10.14814/phy2.14660",
+    "periodico": "Physiological reports",
+    "autores": [
+      "Lamon",
+      "Morabito",
+      "Arentson-Lantz",
+      "Knowles",
+      "Vincent",
+      "Condo",
+      "Alexander",
+      "Garnham",
+      "Paddon-Jones",
+      "Aisbett"
+    ]
+  },
+  "32078168": {
+    "titulo": "The effect of sleep restriction, with or without high-intensity interval exercise, on myofibrillar protein synthesis in healthy young men.",
+    "ano": "2020",
+    "volume": "598",
+    "numero": "8",
+    "paginas": "1523-1536",
+    "doi": "10.1113/JP278828",
+    "periodico": "The Journal of physiology",
+    "autores": [
+      "Saner",
+      "Lee",
+      "Pitchford",
+      "Kuang",
+      "Roach",
+      "Garnham",
+      "Stokes",
+      "Phillips",
+      "Bishop",
+      "Bartlett"
+    ]
+  },
+  "25596964": {
+    "titulo": "The effects of physical activity on sleep: a meta-analytic review.",
+    "ano": "2015",
+    "volume": "38",
+    "numero": "3",
+    "paginas": "427-49",
+    "doi": "10.1007/s10865-015-9617-6",
+    "periodico": "Journal of behavioral medicine",
+    "autores": [
+      "Kredlow",
+      "Capozzoli",
+      "Hearon",
+      "Calkins",
+      "Otto"
+    ]
+  },
+  "34416428": {
+    "titulo": "The effects of evening high-intensity exercise on sleep in healthy adults: A systematic review and meta-analysis.",
+    "ano": "2021",
+    "volume": "60",
+    "numero": "",
+    "paginas": "101535",
+    "doi": "10.1016/j.smrv.2021.101535",
+    "periodico": "Sleep medicine reviews",
+    "autores": [
+      "Frimpong",
+      "Mograss",
+      "Zvionow",
+      "Dang-Vu"
+    ]
+  },
+  "38749363": {
+    "titulo": "The effect of physical exercise interventions on insomnia: A systematic review and meta-analysis.",
+    "ano": "2024",
+    "volume": "76",
+    "numero": "",
+    "paginas": "101948",
+    "doi": "10.1016/j.smrv.2024.101948",
+    "periodico": "Sleep medicine reviews",
+    "autores": [
+      "Riedel",
+      "Benz",
+      "Deibert",
+      "Barsch",
+      "Frase",
+      "Johann",
+      "Riemann",
+      "Feige"
+    ]
+  },
+  "34507028": {
+    "titulo": "Behavioral interventions to extend sleep duration: A systematic review and meta-analysis.",
+    "ano": "2021",
+    "volume": "60",
+    "numero": "",
+    "paginas": "101532",
+    "doi": "10.1016/j.smrv.2021.101532",
+    "periodico": "Sleep medicine reviews",
+    "autores": [
+      "Baron",
+      "Duffecy",
+      "Reutrakul",
+      "Levenson",
+      "McFarland",
+      "Lee",
+      "Qeadan"
+    ]
+  },
+  "26612385": {
+    "titulo": "Sleep Restriction Enhances the Daily Rhythm of Circulating Levels of Endocannabinoid 2-Arachidonoylglycerol.",
+    "ano": "2016",
+    "volume": "39",
+    "numero": "3",
+    "paginas": "653-64",
+    "doi": "10.5665/sleep.5546",
+    "periodico": "Sleep",
+    "autores": [
+      "Hanlon",
+      "Tasali",
+      "Leproult",
+      "Stuhr",
+      "Doncheck",
+      "de Wit",
+      "Hillard",
+      "Van Cauter"
+    ]
+  },
+  "31610409": {
+    "titulo": "Impact of circadian rhythmicity and sleep restriction on circulating endocannabinoid (eCB) N-arachidonoylethanolamine (anandamide).",
+    "ano": "2019",
+    "volume": "111",
+    "numero": "",
+    "paginas": "104471",
+    "doi": "10.1016/j.psyneuen.2019.104471",
+    "periodico": "Psychoneuroendocrinology",
+    "autores": [
+      "Hanlon"
+    ]
+  },
+  "26467988": {
+    "titulo": "Elevated ghrelin predicts food intake during experimental sleep restriction.",
+    "ano": "2015",
+    "volume": "24",
+    "numero": "1",
+    "paginas": "132-8",
+    "doi": "10.1002/oby.21321",
+    "periodico": "Obesity (Silver Spring, Md.)",
+    "autores": [
+      "Broussard",
+      "Kilkus",
+      "Delebecque",
+      "Abraham",
+      "Day",
+      "Whitmore",
+      "Tasali"
+    ]
+  },
+  "22259064": {
+    "titulo": "Acute sleep deprivation enhances the brain's response to hedonic food stimuli: an fMRI study.",
+    "ano": "2012",
+    "volume": "97",
+    "numero": "3",
+    "paginas": "E443-7",
+    "doi": "10.1210/jc.2011-2759",
+    "periodico": "The Journal of clinical endocrinology and metabolism",
+    "autores": [
+      "Benedict",
+      "Brooks",
+      "O'Daly",
+      "Almèn",
+      "Morell",
+      "Åberg",
+      "Gingnell",
+      "Schultes",
+      "Hallschmid",
+      "Broman",
+      "Larsson",
+      "Schiöth"
+    ]
+  },
+  "22357722": {
+    "titulo": "Sleep restriction leads to increased activation of brain regions sensitive to food stimuli.",
+    "ano": "2012",
+    "volume": "95",
+    "numero": "4",
+    "paginas": "818-24",
+    "doi": "10.3945/ajcn.111.027383",
+    "periodico": "The American journal of clinical nutrition",
+    "autores": [
+      "St-Onge",
+      "McReynolds",
+      "Trivedi",
+      "Roberts",
+      "Sy",
+      "Hirsch"
+    ]
+  },
+  "19056602": {
+    "titulo": "Sleep curtailment is accompanied by increased intake of calories from snacks.",
+    "ano": "2008",
+    "volume": "89",
+    "numero": "1",
+    "paginas": "126-33",
+    "doi": "10.3945/ajcn.2008.26574",
+    "periodico": "The American journal of clinical nutrition",
+    "autores": [
+      "Nedeltcheva",
+      "Kilkus",
+      "Imperial",
+      "Kasza",
+      "Schoeller",
+      "Penev"
+    ]
+  },
+  "30893841": {
+    "titulo": "Increased Hunger, Food Cravings, Food Reward, and Portion Size Selection after Sleep Curtailment in Women Without Obesity.",
+    "ano": "2019",
+    "volume": "11",
+    "numero": "3",
+    "paginas": "",
+    "doi": "10.3390/nu11030663",
+    "periodico": "Nutrients",
+    "autores": [
+      "Yang",
+      "Schnepp",
+      "Tucker"
+    ]
+  },
+  "33940082": {
+    "titulo": "Severe sleep restriction suppresses appetite independent of effects on appetite regulating hormones in healthy young men without obesity.",
+    "ano": "2021",
+    "volume": "237",
+    "numero": "",
+    "paginas": "113438",
+    "doi": "10.1016/j.physbeh.2021.113438",
+    "periodico": "Physiology & behavior",
+    "autores": [
+      "Radcliffe",
+      "Whitney",
+      "Fagnant",
+      "Wilson",
+      "Finlayson",
+      "Smith",
+      "Karl"
+    ]
+  },
+  "27866988": {
+    "titulo": "The effects of partial sleep restriction and altered sleep timing on appetite and food reward.",
+    "ano": "2016",
+    "volume": "109",
+    "numero": "",
+    "paginas": "48-56",
+    "doi": "10.1016/j.appet.2016.11.020",
+    "periodico": "Appetite",
+    "autores": [
+      "McNeil",
+      "Forest",
+      "Hintze",
+      "Brunet",
+      "Finlayson",
+      "Blundell",
+      "Doucet"
+    ]
+  },
+  "29129611": {
+    "titulo": "Effect of sleep curtailment on dietary behavior and physical activity: A randomized crossover trial.",
+    "ano": "2017",
+    "volume": "184",
+    "numero": "",
+    "paginas": "60-67",
+    "doi": "10.1016/j.physbeh.2017.11.008",
+    "periodico": "Physiology & behavior",
+    "autores": [
+      "Tajiri",
+      "Yoshimura",
+      "Hatamoto",
+      "Tanaka",
+      "Shimoda"
+    ]
+  },
+  "37562755": {
+    "titulo": "Effects of sleep restriction on food intake and appetite under free-living conditions: A randomized crossover trial.",
+    "ano": "2023",
+    "volume": "189",
+    "numero": "",
+    "paginas": "106998",
+    "doi": "10.1016/j.appet.2023.106998",
+    "periodico": "Appetite",
+    "autores": [
+      "Tajiri",
+      "Yoshimura",
+      "Tobina",
+      "Yamashita",
+      "Kume",
+      "Hatamoto",
+      "Shimoda"
+    ]
+  },
+  "34620371": {
+    "titulo": "Effect of sleep duration on dietary intake, desire to eat, measures of food intake and metabolic hormones: A systematic review of clinical trials.",
+    "ano": "2021",
+    "volume": "45",
+    "numero": "",
+    "paginas": "55-65",
+    "doi": "10.1016/j.clnesp.2021.07.029",
+    "periodico": "Clinical nutrition ESPEN",
+    "autores": [
+      "Soltanieh",
+      "Solgi",
+      "Ansari",
+      "Santos",
+      "Abbasi"
+    ]
+  },
+  "36280789": {
+    "titulo": "The role of insufficient sleep and circadian misalignment in obesity.",
+    "ano": "2022",
+    "volume": "19",
+    "numero": "2",
+    "paginas": "82-97",
+    "doi": "10.1038/s41574-022-00747-7",
+    "periodico": "Nature reviews. Endocrinology",
+    "autores": [
+      "Chaput",
+      "McHill",
+      "Cox",
+      "Broussard",
+      "Dutil",
+      "da Costa",
+      "Sampasa-Kanyinga",
+      "Wright"
+    ]
+  },
+  "21471283": {
+    "titulo": "Acute sleep deprivation reduces energy expenditure in healthy men.",
+    "ano": "2011",
+    "volume": "93",
+    "numero": "6",
+    "paginas": "1229-36",
+    "doi": "10.3945/ajcn.110.006460",
+    "periodico": "The American journal of clinical nutrition",
+    "autores": [
+      "Benedict",
+      "Hallschmid",
+      "Lassen",
+      "Mahnke",
+      "Schultes",
+      "Schiöth",
+      "Born",
+      "Lange"
+    ]
+  },
+  "22496545": {
+    "titulo": "Adverse metabolic consequences in humans of prolonged sleep restriction combined with circadian disruption.",
+    "ano": "2012",
+    "volume": "4",
+    "numero": "129",
+    "paginas": "129ra43",
+    "doi": "10.1126/scitranslmed.3003200",
+    "periodico": "Science translational medicine",
+    "autores": [
+      "Buxton",
+      "Cain",
+      "O'Connor",
+      "Porter",
+      "Duffy",
+      "Wang",
+      "Czeisler",
+      "Shea"
+    ]
+  },
+  "23070488": {
+    "titulo": "Impaired insulin signaling in human adipocytes after experimental sleep restriction: a randomized, crossover study.",
+    "ano": "2012",
+    "volume": "157",
+    "numero": "8",
+    "paginas": "549-57",
+    "doi": "10.7326/0003-4819-157-8-201210160-00005",
+    "periodico": "Annals of internal medicine",
+    "autores": [
+      "Broussard",
+      "Ehrmann",
+      "Van Cauter",
+      "Tasali",
+      "Brady"
+    ]
+  },
+  "10543671": {
+    "titulo": "Impact of sleep debt on metabolic and endocrine function.",
+    "ano": "1999",
+    "volume": "354",
+    "numero": "9188",
+    "paginas": "1435-9",
+    "doi": "10.1016/S0140-6736(99)01376-8",
+    "periodico": "Lancet (London, England)",
+    "autores": [
+      "Spiegel",
+      "Leproult",
+      "Van Cauter"
+    ]
+  },
+  "9415946": {
+    "titulo": "Sleep loss results in an elevation of cortisol levels the next evening.",
+    "ano": "1997",
+    "volume": "20",
+    "numero": "10",
+    "paginas": "865-70",
+    "doi": "",
+    "periodico": "Sleep",
+    "autores": [
+      "Leproult",
+      "Copinschi",
+      "Buxton",
+      "Van Cauter"
+    ]
+  },
+  "21632481": {
+    "titulo": "Effect of 1 week of sleep restriction on testosterone levels in young healthy men.",
+    "ano": "2011",
+    "volume": "305",
+    "numero": "21",
+    "paginas": "2173-4",
+    "doi": "10.1001/jama.2011.710",
+    "periodico": "JAMA",
+    "autores": [
+      "Leproult",
+      "Van Cauter"
+    ]
+  },
+  "24628249": {
+    "titulo": "Interactions between sleep, circadian function, and glucose metabolism: implications for risk and severity of diabetes.",
+    "ano": "2014",
+    "volume": "1311",
+    "numero": "",
+    "paginas": "151-73",
+    "doi": "10.1111/nyas.12355",
+    "periodico": "Annals of the New York Academy of Sciences",
+    "autores": [
+      "Reutrakul",
+      "Van Cauter"
+    ]
+  },
+  "10938176": {
+    "titulo": "Age-related changes in slow wave sleep and REM sleep and relationship with growth hormone and cortisol levels in healthy men.",
+    "ano": "2000",
+    "volume": "284",
+    "numero": "7",
+    "paginas": "861-8",
+    "doi": "10.1001/jama.284.7.861",
+    "periodico": "JAMA",
+    "autores": [
+      "Van Cauter",
+      "Leproult",
+      "Plat"
+    ]
+  },
+  "21550729": {
+    "titulo": "Sleep and muscle recovery: endocrinological and molecular basis for a new and promising hypothesis.",
+    "ano": "2011",
+    "volume": "77",
+    "numero": "2",
+    "paginas": "220-2",
+    "doi": "10.1016/j.mehy.2011.04.017",
+    "periodico": "Medical hypotheses",
+    "autores": [
+      "Dattilo",
+      "Antunes",
+      "Medeiros",
+      "Mônico Neto",
+      "Souza",
+      "Tufik",
+      "de Mello"
+    ]
+  },
+  "28698222": {
+    "titulo": "A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength in healthy adults.",
+    "ano": "2017",
+    "volume": "52",
+    "numero": "6",
+    "paginas": "376-384",
+    "doi": "10.1136/bjsports-2017-097608",
+    "periodico": "British journal of sports medicine",
+    "autores": [
+      "Morton",
+      "Murphy",
+      "McKellar",
+      "Schoenfeld",
+      "Henselmans",
+      "Helms",
+      "Aragon",
+      "Devries",
+      "Banfield",
+      "Krieger",
+      "Phillips"
+    ]
+  },
+  "24533082": {
+    "titulo": "Alcohol ingestion impairs maximal post-exercise rates of myofibrillar protein synthesis following a single bout of concurrent training.",
+    "ano": "2014",
+    "volume": "9",
+    "numero": "2",
+    "paginas": "e88384",
+    "doi": "10.1371/journal.pone.0088384",
+    "periodico": "PloS one",
+    "autores": [
+      "Parr",
+      "Camera",
+      "Areta",
+      "Burke",
+      "Phillips",
+      "Hawley",
+      "Coffey"
+    ]
+  },
+  "32986097": {
+    "titulo": "Effects of Time-Restricted Eating on Weight Loss and Other Metabolic Parameters in Women and Men With Overweight and Obesity: The TREAT Randomized Clinical Trial.",
+    "ano": "2020",
+    "volume": "180",
+    "numero": "11",
+    "paginas": "1491-1499",
+    "doi": "10.1001/jamainternmed.2020.4153",
+    "periodico": "JAMA internal medicine",
+    "autores": [
+      "Lowe",
+      "Wu",
+      "Rohdin-Bibby",
+      "Moore",
+      "Kelly",
+      "Liu",
+      "Philip",
+      "Vittinghoff",
+      "Heymsfield",
+      "Olgin",
+      "Shepherd",
+      "Weiss"
+    ]
+  },
+  "38127505": {
+    "titulo": "Sleep loss and emotion: A systematic review and meta-analysis of over 50 years of experimental research.",
+    "ano": "2023",
+    "volume": "150",
+    "numero": "4",
+    "paginas": "440-463",
+    "doi": "10.1037/bul0000410",
+    "periodico": "Psychological bulletin",
+    "autores": [
+      "Palmer",
+      "Bower",
+      "Cho",
+      "Clementi",
+      "Lau",
+      "Oosterhoff",
+      "Alfano"
+    ]
+  },
+  "23357955": {
+    "titulo": "Timing of food intake predicts weight loss effectiveness.",
+    "ano": "2013",
+    "volume": "37",
+    "numero": "4",
+    "paginas": "604-11",
+    "doi": "10.1038/ijo.2012.229",
+    "periodico": "International journal of obesity (2005)",
+    "autores": [
+      "Garaulet",
+      "Gómez-Abellán",
+      "Alburquerque-Béjar",
+      "Lee",
+      "Ordovás",
+      "Scheer"
+    ]
+  },
+  "21731144": {
+    "titulo": "The effects of sleep extension on the athletic performance of collegiate basketball players.",
+    "ano": "2011",
+    "volume": "34",
+    "numero": "7",
+    "paginas": "943-50",
+    "doi": "10.5665/SLEEP.1132",
+    "periodico": "Sleep",
+    "autores": [
+      "Mah",
+      "Mah",
+      "Kezirian",
+      "Dement"
+    ]
+  },
+  "22578422": {
+    "titulo": "Social jetlag and obesity.",
+    "ano": "2012",
+    "volume": "22",
+    "numero": "10",
+    "paginas": "939-43",
+    "doi": "10.1016/j.cub.2012.03.038",
+    "periodico": "Current biology : CB",
+    "autores": [
+      "Roenneberg",
+      "Allebrandt",
+      "Merrow",
+      "Vetter"
+    ]
+  },
+  "28515433": {
+    "titulo": "The sleep-deprived human brain.",
+    "ano": "2017",
+    "volume": "18",
+    "numero": "7",
+    "paginas": "404-418",
+    "doi": "10.1038/nrn.2017.55",
+    "periodico": "Nature reviews. Neuroscience",
+    "autores": [
+      "Krause",
+      "Simon",
+      "Mander",
+      "Greer",
+      "Saletin",
+      "Goldstein-Piekarski",
+      "Walker"
+    ]
+  },
+  "25535358": {
+    "titulo": "Evening use of light-emitting eReaders negatively affects sleep, circadian timing, and next-morning alertness.",
+    "ano": "2014",
+    "volume": "112",
+    "numero": "4",
+    "paginas": "1232-7",
+    "doi": "10.1073/pnas.1418490112",
+    "periodico": "Proceedings of the National Academy of Sciences of the United States of America",
+    "autores": [
+      "Chang",
+      "Aeschbach",
+      "Duffy",
+      "Czeisler"
+    ]
+  },
+  "21193540": {
+    "titulo": "Exposure to room light before bedtime suppresses melatonin onset and shortens melatonin duration in humans.",
+    "ano": "2010",
+    "volume": "96",
+    "numero": "3",
+    "paginas": "E463-72",
+    "doi": "10.1210/jc.2010-2098",
+    "periodico": "The Journal of clinical endocrinology and metabolism",
+    "autores": [
+      "Gooley",
+      "Chamberlain",
+      "Smith",
+      "Khalsa",
+      "Rajaratnam",
+      "Van Reen",
+      "Zeitzer",
+      "Czeisler",
+      "Lockley"
+    ]
+  },
+  "27855740": {
+    "titulo": "Orthosomnia: Are Some Patients Taking the Quantified Self Too Far?",
+    "ano": "2017",
+    "volume": "13",
+    "numero": "2",
+    "paginas": "351-354",
+    "doi": "10.5664/jcsm.6472",
+    "periodico": "Journal of clinical sleep medicine : JCSM : official publication of the American Academy of Sleep Medicine",
+    "autores": [
+      "Baron",
+      "Abbott",
+      "Jao",
+      "Manalo",
+      "Mullen"
+    ]
+  },
+  "29790200": {
+    "titulo": "Sleep duration and mortality - Does weekend sleep matter?",
+    "ano": "2018",
+    "volume": "28",
+    "numero": "1",
+    "paginas": "e12712",
+    "doi": "10.1111/jsr.12712",
+    "periodico": "Journal of sleep research",
+    "autores": [
+      "Åkerstedt",
+      "Ghilotti",
+      "Grotta",
+      "Zhao",
+      "Adami",
+      "Trolle-Lagerros",
+      "Bellocco"
+    ]
+  },
+  "24235903": {
+    "titulo": "Caffeine effects on sleep taken 0, 3, or 6 hours before going to bed.",
+    "ano": "2013",
+    "volume": "9",
+    "numero": "11",
+    "paginas": "1195-200",
+    "doi": "10.5664/jcsm.3170",
+    "periodico": "Journal of clinical sleep medicine : JCSM : official publication of the American Academy of Sleep Medicine",
+    "autores": [
+      "Drake",
+      "Roehrs",
+      "Shambroom",
+      "Roth"
+    ]
+  },
+  "27803010": {
+    "titulo": "Health consequences of shift work and insufficient sleep.",
+    "ano": "2016",
+    "volume": "355",
+    "numero": "",
+    "paginas": "i5210",
+    "doi": "10.1136/bmj.i5210",
+    "periodico": "BMJ (Clinical research ed.)",
+    "autores": [
+      "Kecklund",
+      "Axelsson"
+    ]
+  },
+  "29850840": {
+    "titulo": "Is shift work associated with a higher risk of overweight or obesity? A systematic review of observational studies with meta-analysis.",
+    "ano": "2018",
+    "volume": "47",
+    "numero": "6",
+    "paginas": "1956-1971",
+    "doi": "10.1093/ije/dyy079",
+    "periodico": "International journal of epidemiology",
+    "autores": [
+      "Liu",
+      "Shi",
+      "Duan",
+      "Liu",
+      "Li",
+      "Wang",
+      "Li",
+      "Yang",
+      "Gan",
+      "Wang",
+      "Cao",
+      "Lu"
+    ]
+  },
+  "28975706": {
+    "titulo": "Meta-analysis on shift work and risks of specific obesity types.",
+    "ano": "2017",
+    "volume": "19",
+    "numero": "1",
+    "paginas": "28-40",
+    "doi": "10.1111/obr.12621",
+    "periodico": "Obesity reviews : an official journal of the International Association for the Study of Obesity",
+    "autores": [
+      "Sun",
+      "Feng",
+      "Wang",
+      "Li",
+      "Li",
+      "Li",
+      "Tse",
+      "Vlaanderen",
+      "Vermeulen",
+      "Tse"
+    ]
+  },
+  "23347102": {
+    "titulo": "Alcohol and sleep I: effects on normal sleep.",
+    "ano": "2013",
+    "volume": "37",
+    "numero": "4",
+    "paginas": "539-49",
+    "doi": "10.1111/acer.12006",
+    "periodico": "Alcoholism, clinical and experimental research",
+    "autores": [
+      "Ebrahim",
+      "Shapiro",
+      "Williams",
+      "Fenwick"
+    ]
+  },
+  "25315456": {
+    "titulo": "Sleep and athletic performance: the effects of sleep loss on exercise performance, and physiological and cognitive responses to exercise.",
+    "ano": "2015",
+    "volume": "45",
+    "numero": "2",
+    "paginas": "161-86",
+    "doi": "10.1007/s40279-014-0260-0",
+    "periodico": "Sports medicine (Auckland, N.Z.)",
+    "autores": [
+      "Fullagar",
+      "Skorski",
+      "Duffield",
+      "Hammes",
+      "Coutts",
+      "Meyer"
+    ]
+  },
+  "23760468": {
+    "titulo": "Does central fatigue explain reduced cycling after complete sleep deprivation?",
+    "ano": "2013",
+    "volume": "45",
+    "numero": "12",
+    "paginas": "2243-53",
+    "doi": "10.1249/MSS.0b013e31829ce379",
+    "periodico": "Medicine and science in sports and exercise",
+    "autores": [
+      "Temesi",
+      "Arnal",
+      "Davranche",
+      "Bonnefoy",
+      "Levy",
+      "Verges",
+      "Millet"
+    ]
+  },
+  "25028798": {
+    "titulo": "Chronic lack of sleep is associated with increased sports injuries in adolescent athletes.",
+    "ano": "2014",
+    "volume": "34",
+    "numero": "2",
+    "paginas": "129-33",
+    "doi": "10.1097/BPO.0000000000000151",
+    "periodico": "Journal of pediatric orthopedics",
+    "autores": [
+      "Milewski",
+      "Skaggs",
+      "Bishop",
+      "Pace",
+      "Ibrahim",
+      "Wren",
+      "Barzdukas"
+    ]
+  },
+  "27539373": {
+    "titulo": "Too little sleep and an unhealthy diet could increase the risk of sustaining a new injury in adolescent elite athletes.",
+    "ano": "2016",
+    "volume": "27",
+    "numero": "11",
+    "paginas": "1364-1371",
+    "doi": "10.1111/sms.12735",
+    "periodico": "Scandinavian journal of medicine & science in sports",
+    "autores": [
+      "von Rosen",
+      "Frohm",
+      "Kottorp",
+      "Fridén",
+      "Heijne"
+    ]
+  }
 }
