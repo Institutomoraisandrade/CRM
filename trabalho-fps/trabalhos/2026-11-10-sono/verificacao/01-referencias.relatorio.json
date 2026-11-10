@@ -1,0 +1,427 @@
+{
+  "arquivo": "trabalho-fps/trabalhos/2026-11-10-sono/01-referencias.json",
+  "resumo": {
+    "ok": 40,
+    "corrigivel": 0,
+    "revisar": 5,
+    "sem_pmid": 0,
+    "sem_metadados": 0
+  },
+  "itens": [
+    {
+      "id": "watson2015",
+      "pmid": "25979105",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "hirshkowitz2015",
+      "pmid": "29073398",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "walsh2021",
+      "pmid": "33144349",
+      "status": "revisar",
+      "divergencias": [
+        "ano: ref = 2021, PubMed = '2020' (possível epub antecipado; conferir o ano do fascículo)"
+      ],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "ano_a_conferir": true
+    },
+    {
+      "id": "riemann2023",
+      "pmid": "38016484",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "edinger2021",
+      "pmid": "33164742",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "borbely2016",
+      "pmid": "26762182",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "menezesjunior2026",
+      "pmid": "42247850",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "santahelena2024",
+      "pmid": "39583303",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "pastorello2025",
+      "pmid": "40802335",
+      "status": "revisar",
+      "divergencias": [
+        "ano: ref = 2025, PubMed = '2024' (possível epub antecipado; conferir o ano do fascículo)"
+      ],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "ano_a_conferir": true
+    },
+    {
+      "id": "liu2016",
+      "pmid": "26890214",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "morin2022",
+      "pmid": "35659072",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "spiegelhalder2026",
+      "pmid": "41957444",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "ncdrisc2024",
+      "pmid": "38432237",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "bacaro2020",
+      "pmid": "32527625",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "malasevskaia2026",
+      "pmid": "42948184",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "patel2008",
+      "pmid": "18239586",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "nedeltcheva2010",
+      "pmid": "20921542",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "wang2018",
+      "pmid": "29438540",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "tasali2022",
+      "pmid": "35129580",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "alkhatib2017",
+      "pmid": "27804960",
+      "status": "revisar",
+      "divergencias": [
+        "ano: ref = 2017, PubMed = '2016' (possível epub antecipado; conferir o ano do fascículo)"
+      ],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "ano_a_conferir": true
+    },
+    {
+      "id": "alkhatib2018",
+      "pmid": "29381788",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "capers2015",
+      "pmid": "26098388",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "zuraikat2026",
+      "pmid": "42407080",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "mostafa2026",
+      "pmid": "42044907",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "yu2019",
+      "pmid": "30977011",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "fenton2021",
+      "pmid": "33001515",
+      "status": "revisar",
+      "divergencias": [
+        "ano: ref = 2021, PubMed = '2020' (possível epub antecipado; conferir o ano do fascículo)"
+      ],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "ano_a_conferir": true
+    },
+    {
+      "id": "lin2020",
+      "pmid": "32537891",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "spiegel2004",
+      "pmid": "15583226",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 0.93,
+      "aplicado": false
+    },
+    {
+      "id": "greer2013",
+      "pmid": "23922121",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "brondel2010",
+      "pmid": "20357041",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "killick2015",
+      "pmid": "25683266",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "kline2026",
+      "pmid": "41889166",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "creasy2022",
+      "pmid": "35577898",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "rodriguezmartin2025",
+      "pmid": "40976481",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "papandreou2020",
+      "pmid": "31217539",
+      "status": "revisar",
+      "divergencias": [
+        "ano: ref = 2020, PubMed = '2019' (possível epub antecipado; conferir o ano do fascículo)"
+      ],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "ano_a_conferir": true
+    },
+    {
+      "id": "craven2022",
+      "pmid": "35708888",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "knowles2018",
+      "pmid": "29422383",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "bonnar2018",
+      "pmid": "29352373",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "mesas2023",
+      "pmid": "36690376",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "lamon2021",
+      "pmid": "33400856",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "saner2020",
+      "pmid": "32078168",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "kredlow2015",
+      "pmid": "25596964",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "frimpong2021",
+      "pmid": "34416428",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "riedel2024",
+      "pmid": "38749363",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    },
+    {
+      "id": "baron2021",
+      "pmid": "34507028",
+      "status": "ok",
+      "divergencias": [],
+      "correcoes": {},
+      "similaridade_titulo": 1.0,
+      "aplicado": false
+    }
+  ]
+}
