@@ -31,6 +31,10 @@ e treinamento. **Finalidade: só estudo pessoal** (não haverá apresentação p
 
 Fora do escopo: farmacoterapia e manejo clínico de distúrbios (apneia etc.) — só como sinais de encaminhamento.
 
+**Peso de cada parte (orientação do usuário, 10/11/2026):** o trabalho é sobre o **impacto do sono** nos itens 2 a 7,
+não sobre o sono em si. O item 1 é só contexto: no máximo ~1 página no documento e 1 slide; nada de capítulo de
+fisiologia do sono. O espaço vai para os itens 2–7, com números, mecanismos aplicados e orientação prática.
+
 ## Padrões
 Arial 12, com capa, 10–16 páginas de corpo, NBR 10520:2023, Recife, apresentação de 15 min.
 
