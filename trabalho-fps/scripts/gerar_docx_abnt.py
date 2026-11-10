@@ -533,6 +533,8 @@ class GeradorArtigo:
         tab = self.doc.add_table(rows=1, cols=1)
         tab.alignment = WD_TABLE_ALIGNMENT.CENTER
         _bordas_tabela(tab, "quadro")
+        trpr = tab.rows[0]._tr.get_or_add_trPr()
+        trpr.append(OxmlElement("w:cantSplit"))  # caixa não quebra entre páginas
         cel = tab.rows[0].cells[0]
         tcpr = cel._tc.get_or_add_tcPr()
         shd = OxmlElement("w:shd")

@@ -110,7 +110,7 @@
               "titulo": "Na prática",
               "itens": [
                 "Para quem atravessa semanas de sono curto, planejar os lanches e evitar manter alimento livre à disposição à noite é uma estratégia razoável, mas é inferência dos achados de laboratório, e não uma intervenção testada.",
-                "Ao avaliar a adesão de um aluno em dieta, vale perguntar o horário da refeição principal, além das horas de sono; o almoço tardio associou-se a menor perda de peso, e associação não é prova de efeito.",
+                "Ao avaliar a adesão de um aluno em dieta, vale perguntar o horário da refeição principal e a qualidade do sono, sem tratar a duração como causa; o almoço tardio associou-se a menor perda de peso, e associação não é prova de efeito.",
                 "Explicar o apetite de quem dorme pouco por ‘desregulação da leptina’ passa uma certeza que os dados não têm."
               ],
               "cor": "E8F3E8"
@@ -136,86 +136,36 @@
           "titulo": "Dormir pouco sem dieta",
           "blocos": [
             "Fora da dieta e com alimento livre, a restrição do sono aumentou o peso em experimentos internados. Em 225 adultos (198 com restrição), cinco noites de 4 h elevaram o peso em 0,97 ± 1,4 kg contra 0,11 ± 1,9 kg no controle de 10 h (P = 0,007), mais em homens do que em mulheres [@spaeth2013]. Em 16 adultos, cinco dias de sono insuficiente elevaram o peso em 0,82 ± 0,47 kg, e, na recuperação, a ingestão caiu, mas o peso praticamente não mudou (−0,03 ± 0,50 kg): o peso ganho não foi revertido nesse período [@markwald2013]. Os ensaios de 14 dias [@covassin2022] e de 6 semanas [@zuraikat2026] encontraram ganhos de ordem semelhante (Quadro 1). O conjunto sugere ganho de cerca de 0,5 a 1 kg entre 5 dias e 6 semanas, com confiança baixa: a metanálise de seis experimentos (275 participantes) não encontrou diferença de peso (DPM 0,44; IC 95% −0,13 a 1,02) [@yu2019], e os estudos positivos são curtos e de população saudável.",
-            "Mais ingestão, portanto, não significa automaticamente mais peso. O contraste entre o ganho nos experimentos internados e a metanálise nula é compatível com um total diário que, em vida livre, pode não mudar em poucos dias. A hipótese de que a diferença decorra de duração curta e de alimento livre versus dieta é plausível e não foi testada.",
-            "A gordura corporal total não diferiu entre as condições nos dois ensaios com medida direta. Em 12 participantes, houve aumento da gordura abdominal e visceral, achado exploratório de confiança muito baixa [@covassin2022]; a ressonância magnética de @zuraikat2026, com 95 participantes, não detectou efeito sobre a proporção de tecido adiposo. Esse mesmo ensaio registrou mais tempo sedentário sem aumento da atividade moderada a vigorosa, o que é compatível com menor movimento espontâneo, mas a ingestão não foi medida."
+            "Mais ingestão, portanto, não significa automaticamente mais peso: o contraste entre os experimentos internados e a metanálise nula é compatível com um total diário que, em vida livre, pode não mudar em poucos dias, hipótese plausível e não testada.",
+            "A gordura corporal total não diferiu entre as condições nos dois ensaios com medida direta. Em 12 participantes, houve aumento da gordura abdominal e visceral, achado exploratório de confiança muito baixa [@covassin2022]; a ressonância magnética de @zuraikat2026, com 95 participantes, não detectou efeito sobre a proporção de tecido adiposo. Esse ensaio registrou também mais tempo sedentário, compatível com menor movimento espontâneo, mas não mediu a ingestão."
           ]
         },
         {
           "titulo": "Dormir mais: o que acontece quando o sono é estendido",
           "blocos": [
             "O ensaio de @tasali2022 é a ponte mais próxima da vida real: adultos de 21 a 40 anos com sobrepeso que dormiam menos de 6,5 h receberam aconselhamento individual de higiene do sono por duas semanas, com alvo de 8,5 h na cama. O grupo intervenção reduziu a ingestão, o peso e, em menor grau, a massa gorda, e a queda de peso foi sobretudo de MLG (Quadro 1). Quatro ressalvas pesam na leitura. O grupo controle ganhou peso, o que contribui para a diferença entre grupos. A ingestão foi calculada pelo gasto total (medido por água duplamente marcada, com precisão de cerca de 5%) mais a variação dos estoques de energia, de modo que ingestão e peso não são medidas independentes. Não houve diferença significativa de gasto. E o seguimento foi de duas semanas. Por isso, a confiança na redução da ingestão é baixa: o resultado vem de um único ensaio curto, sem dieta, e o intervalo de confiança da metanálise que o acompanha chega perto de zero.",
-            "A metanálise de @mostafa2026 não confirma o sinal para o peso: o peso corporal não diminuiu de forma significativa com nenhuma intervenção, e as reduções expressivas aparecem em subgrupos por IMC basal, não no efeito global (Quadro 1). A redução do IMC com TCC-I e higiene do sono é dominada por ensaios em pessoas com diabetes tipo 2, e a extensão isolada não reduziu o IMC. A ingestão diminuiu, e os autores consideraram a confiança moderada para IMC e ingestão e baixa para o peso; a avaliação deste capítulo é mais conservadora e trata ambos como de confiança baixa, pelo número pequeno de estudos e pela curta duração, sem dieta. O ensaio e a metanálise divergem por população e desfecho, e não por contradição. A leitura prudente é de sinal plausível, não demonstrado: estender o sono de quem dorme pouco é seguro e vale por si, mas não se deve prometer perda de peso por essa via.",
-            "Há ainda um aparente paradoxo na MLG. Com dieta, a restrição do sono aumentou a perda de MLG em um ensaio; sem dieta, a extensão também reduziu a MLG, e ainda mais do que a gordura. Se a MLG fosse um bom indicador de músculo, os dois achados seriam incompatíveis. A explicação mais simples, que é inferência dos autores, é que, em janelas de duas semanas, a MLG capta água e glicogênio, de modo que não se pode ler massa muscular nessas diferenças. Isso reduz o peso do argumento ‘dormir pouco faz perder músculo na dieta’ até que haja ensaios longos, com medida de força e controle da hidratação."
+            "A metanálise de @mostafa2026 não confirma o sinal para o peso: o peso corporal não diminuiu de forma significativa com nenhuma intervenção, e as reduções expressivas aparecem em subgrupos por IMC basal, não no efeito global (Quadro 1). A redução do IMC com terapia cognitivo-comportamental para insônia (TCC-I) e higiene do sono é dominada por ensaios em pessoas com diabetes tipo 2, e a extensão isolada não reduziu o IMC. A ingestão diminuiu, e os autores consideraram a confiança moderada para IMC e ingestão e baixa para o peso; a avaliação deste capítulo é mais conservadora e trata ambos como de confiança baixa, pelo número pequeno de estudos e pela curta duração, sem dieta. A divergência é de população e desfecho, e não contradição. A leitura prudente é de sinal plausível, não demonstrado: estender o sono de quem dorme pouco é seguro e vale por si, mas não se deve prometer perda de peso por essa via.",
+            "Há ainda um aparente paradoxo na MLG. Com dieta, a restrição do sono aumentou a perda de MLG em um ensaio; sem dieta, a extensão também reduziu a MLG, e ainda mais do que a gordura. Se a MLG fosse um bom indicador de músculo, os dois achados seriam incompatíveis. A explicação mais simples, que é inferência dos autores, é que, em janelas de duas semanas, a MLG capta água e glicogênio, de modo que não se pode ler massa muscular nessas diferenças. Isso enfraquece o argumento ‘dormir pouco faz perder músculo na dieta’ até que haja ensaios longos, com medida de força."
           ]
         },
         {
           "titulo": "O que os programas de emagrecimento mostram",
           "blocos": [
             "Em programas de emagrecimento, o sono foi estudado como preditor do resultado, em coortes de confiança muito baixa. Entre 296 adultos em programa comportamental de 12 meses (perda média do grupo de 6,9%), o sono curto (menos de 6 h) na linha de base associou-se a perda 4,5 ± 1,3% menor, o sono ruim a perda 2,2 ± 1,2% menor, e ambos juntos a perda pelo menos 5,0% menor; o sono curto associou-se ainda a 2,0 ± 0,8 sessões a menos [@kline2026]. Em 156 adultos acompanhados por 18 meses, menor eficiência, mais despertares e maior latência do sono associaram-se a perda atenuada, mesmo com ajuste estatístico [@creasy2022].",
-            "O maior estudo, porém, contradiz o padrão esperado: em 3.628 adultos por 25 semanas, o sono longo (mais de 8 h), e não o curto, associou-se a menor perda (7,42% contra 7,90%; P = 0,015), menor chance de perder pelo menos 5% (OR 0,79; IC 95% 0,66 a 0,96) e maior abandono (OR 1,21; 1,03 a 1,43); o sono curto não teve associação [@rodriguezmartin2025]. Uma revisão de 30 estudos (13 ensaios) em programas de emagrecimento concluiu que a restrição do sono reduziu a perda de gordura, que a associação entre duração e perda é inconsistente nos estudos observacionais e que eficiência e satisfação com o sono podem ajudar [@duan2026]. Os estudos usam sono autorrelatado e não excluem causalidade reversa nem confusão: o sono pode ser marcador de depressão, de rotina de trabalho ou de apneia, e a própria medida pesa, já que a associação com obesidade é muito mais forte com polissonografia do que com autorrelato. O que isso muda na conduta é perguntar sobre horários e qualidade do sono ao avaliar a adesão, sem tratar a duração como causa."
+            "O maior estudo, porém, contradiz o padrão esperado: em 3.628 adultos por 25 semanas, o sono longo (mais de 8 h), e não o curto, associou-se a menor perda (7,42% contra 7,90%; P = 0,015), menor chance de perder pelo menos 5% (OR 0,79; IC 95% 0,66 a 0,96) e maior abandono (OR 1,21; 1,03 a 1,43); o sono curto não teve associação [@rodriguezmartin2025]. Uma revisão de 30 estudos (13 ensaios) em programas de emagrecimento concluiu que a restrição do sono reduziu a perda de gordura, que a associação entre duração e perda é inconsistente nos estudos observacionais e que eficiência e satisfação com o sono podem ajudar [@duan2026]. Os estudos usam sono autorrelatado e não excluem causalidade reversa nem confusão (depressão, rotina de trabalho, apneia); a própria medida pesa, pois a associação com obesidade é muito mais forte com polissonografia do que com autorrelato."
           ]
         },
         {
           "titulo": "Resumo e aplicação",
           "blocos": [
             {
-              "tipo": "quadro",
-              "titulo": "Estudos centrais sobre sono, peso e composição corporal",
-              "colunas": [
-                "Estudo e participantes",
-                "O que foi feito",
-                "O que se encontrou"
-              ],
-              "larguras_cm": [
-                3.7,
-                3.5,
-                8.8
-              ],
-              "linhas": [
-                [
-                  "@nedeltcheva2010. Ensaio cruzado; 10 adultos com sobrepeso (3 mulheres), 35 a 49 anos",
-                  "Dieta a 90% da taxa metabólica de repouso por 14 dias, com 5,5 h contra 8,5 h na cama",
-                  "Peso perdido semelhante (≈ 3 kg). Gordura perdida 0,6 contra 1,4 kg (P = 0,043; −55%); massa livre de gordura perdida 2,4 contra 1,5 kg (P = 0,002; +60%). Mais fome com 5,5 h (0,7 contra −0,1 cm; P = 0,043). Sinais de menor oxidação de gordura (quociente respiratório e grelina acilada mais altos; gasto de repouso e epinefrina mais baixos); gasto total sem diferença detectável. Sem IC no resumo"
-                ],
-                [
-                  "@wang2018. Ensaio paralelo; 36 adultos com sobrepeso ou obesidade (15 só com dieta; 21 com dieta e restrição do sono)",
-                  "Dieta a 95% da taxa metabólica de repouso por 8 semanas, com ou sem restrição de cerca de 1 h na cama em 5 noites por semana",
-                  "Sono −57 ± 36 min nos dias de restrição e +59 ± 38 min nos dias livres (−169 ± 75 min por semana). Perda semelhante de peso, massa magra e massa gorda; proporção do peso perdido como gordura maior na dieta isolada (P = 0,016). Quociente respiratório de repouso reduzido só na dieta (P = 0,033); leptina de jejum reduzida só com restrição (P = 0,029). Valores absolutos e ICs não acessados (só o resumo)"
-                ],
-                [
-                  "@covassin2022. Ensaio cruzado internado; 12 adultos (9 homens), sem obesidade, 19 a 39 anos",
-                  "14 dias com 4 h contra 9 h de oportunidade de sono, com alimento livre",
-                  "Ingestão +308,1 kcal/dia (IC 59,2 a 556,8; P = 0,015); proteína +10,9 g (0,0 a 21,7); gordura +13,5 g (0,3 a 26,8). Gasto sem mudança. Peso +0,5 kg (0,1 a 0,8; P = 0,008). Gordura corporal total e massa livre de gordura sem diferença (DXA; P = 0,710). Área de gordura abdominal +15,2 cm² (3,6 a 26,8): subcutânea +7,4 (0,1 a 14,6) e visceral +7,8 (0,3 a 15,3), em análise exploratória."
-                ],
-                [
-                  "@zuraikat2026. Análise agrupada de 2 ensaios cruzados (não pré-especificada); 95 participantes (72 mulheres), com risco cardiometabólico e sono habitual ≥ 7 h",
-                  "6 semanas com −78,4 min/noite (−83,5 a −73,3) contra sono adequado",
-                  "Peso +0,45 kg (0,33 a 0,57). Cintura +0,52 cm (0,25 a 0,79). Volume corporal +0,56 L (0,19 a 0,93). Proporção de tecido adiposo e muscular (ressonância) sem efeito. Leptina +2,03 ng/mL (0,38 a 3,68). Tempo sedentário +17,2 min/dia (11,7 a 22,7); atividade moderada a vigorosa sem diferença. Gasto total (34 participantes) sem diferença. Ingestão não medida"
-                ],
-                [
-                  "@tasali2022. Ensaio paralelo; 80 adultos de 21 a 40 anos com sobrepeso (IMC 25 a 29,9) e sono habitual < 6,5 h",
-                  "Aconselhamento individual de higiene do sono, com alvo de 8,5 h na cama, por 2 semanas, contra sono habitual",
-                  "Sono +1,2 h/noite (1,0 a 1,4). Diferença entre grupos: ingestão −270 kcal/dia (−393 a −147; P < 0,001); gasto total −53,9 (−134,9 a 27,1; não significativo); balanço energético −211 kcal/dia (−335 a −87); peso −0,87 kg (−1,39 a −0,35; P = 0,001); massa livre de gordura −0,62 kg (−1,02 a −0,23); massa gorda −0,25 kg (−0,39 a −0,10). No controle, o peso subiu 0,39 kg (0,02 a 0,76). Correlação entre sono e ingestão r = −0,41 (≈ −162 kcal/dia por hora a mais de sono)"
-                ],
-                [
-                  "@mostafa2026. Metanálise; 27 estudos (25 na análise), em adultos sem apneia e com sono ruim",
-                  "Terapia cognitivo-comportamental para insônia (TCC-I) ou higiene do sono (8 estudos, 1.384 participantes) ou extensão do sono (5 estudos, 138), contra controle",
-                  "IMC global −0,26 kg/m² (−0,70 a 0,18; não significativo). TCC-I ou higiene −0,64 (0,28 a 1,01), dominado por 3 ensaios em diabetes tipo 2 (1.121 participantes); extensão −0,15 (−0,40 a 0,11). Peso corporal sem redução significativa (todas as intervenções P = 0,23). Subgrupos por IMC basal: −0,83 kg (0,32 a 1,35; 6 estudos, 337 participantes) no sobrepeso e −5,55 kg (4,13 a 6,97; 3 estudos, 72) na obesidade. Ingestão −147,5 kcal/dia (5,74 a 289,41; 5 estudos, 223). Percentual de gordura e massa livre de gordura sem mudança (2 estudos cada). Seguimento de 2 semanas a 12 meses"
-                ]
-              ],
-              "fonte": "Elaborado pelos autores com base em @nedeltcheva2010, @wang2018, @covassin2022, @zuraikat2026, @tasali2022 e @mostafa2026.",
-              "nota": [
-                "IMC: índice de massa corporal; DXA: absorciometria por raios X de dupla energia; Valores entre parênteses: IC 95%, salvo indicação."
-              ]
-            },
-            {
               "tipo": "caixa",
               "titulo": "Pontos-chave",
               "itens": [
-                "Nenhum desfecho central alcança confiança alta; só a direção do aumento da ingestão com sono curto chega a moderada.",
-                "Em dieta, dois ensaios pequenos sugerem menos gordura na parcela do peso perdido, sem mudar o total; a perda maior de MLG aparece só no ensaio de 10 participantes.",
+                "Nenhum desfecho central tem confiança alta; só a maior ingestão chega a moderada.",
+                "Em dieta, dois ensaios pequenos sugerem menos gordura no peso perdido, sem mudar o total; a perda maior de MLG aparece só no ensaio de 10 participantes.",
                 "Sem dieta, dormir pouco sugere ganho pequeno de peso em semanas, mas a metanálise não encontrou diferença significativa.",
-                "Estender o sono reduziu ingestão e peso em um ensaio de duas semanas, sem redução significativa do peso na metanálise; nas coortes de emagrecimento, o sono prediz o resultado de forma inconsistente."
+                "Estender o sono reduziu ingestão e peso em um ensaio de duas semanas, mas não o peso na metanálise; nas coortes, o sono prediz o resultado de forma inconsistente."
               ],
               "cor": "EAF1FB"
             },
@@ -234,6 +184,59 @@
                 "Não interpretar uma queda de MLG de duas semanas como perda de músculo."
               ],
               "cor": "E8F3E8"
+            },
+            {
+              "tipo": "quebra_pagina"
+            },
+            {
+              "tipo": "quadro",
+              "titulo": "Estudos centrais sobre sono, peso e composição corporal",
+              "colunas": [
+                "Estudo e participantes",
+                "O que foi feito",
+                "O que se encontrou"
+              ],
+              "larguras_cm": [
+                3.9,
+                3.0,
+                9.1
+              ],
+              "linhas": [
+                [
+                  "@nedeltcheva2010. Ensaio cruzado; 10 adultos com sobrepeso (3 mulheres), 35 a 49 anos",
+                  "Dieta a 90% da taxa metabólica de repouso por 14 dias, com 5,5 h contra 8,5 h na cama",
+                  "Peso perdido semelhante (≈ 3 kg). Gordura perdida 0,6 contra 1,4 kg (P = 0,043; −55%); massa livre de gordura perdida 2,4 contra 1,5 kg (P = 0,002; +60%). Sinais de menor oxidação de gordura; gasto total sem diferença detectável. Sem IC no resumo"
+                ],
+                [
+                  "@wang2018. Ensaio paralelo; 36 adultos com sobrepeso ou obesidade (15 só dieta; 21 dieta e restrição do sono)",
+                  "Dieta a 95% da taxa metabólica de repouso por 8 semanas, com ou sem restrição de cerca de 1 h na cama em 5 noites por semana",
+                  "Sono −57 ± 36 min nos dias de restrição e +59 ± 38 min nos dias livres. Perda semelhante de peso, massa magra e massa gorda; proporção do peso perdido como gordura maior na dieta isolada (P = 0,016). Quociente respiratório de repouso reduzido só na dieta (P = 0,033); leptina de jejum reduzida só com restrição (P = 0,029). Valores absolutos e ICs não acessados (só o resumo)"
+                ],
+                [
+                  "@covassin2022. Ensaio cruzado internado; 12 adultos (9 homens), sem obesidade, 19 a 39 anos",
+                  "14 dias com 4 h contra 9 h de oportunidade de sono, com alimento livre",
+                  "Ingestão +308,1 kcal/dia (IC 59,2 a 556,8; P = 0,015). Gasto sem mudança. Peso +0,5 kg (0,1 a 0,8; P = 0,008). Gordura corporal total e massa livre de gordura sem diferença (DXA; P = 0,710). Área de gordura abdominal +15,2 cm² (3,6 a 26,8): subcutânea +7,4 (0,1 a 14,6) e visceral +7,8 (0,3 a 15,3), em análise exploratória."
+                ],
+                [
+                  "@zuraikat2026. Análise agrupada de 2 ensaios cruzados (não pré-especificada); 95 participantes (72 mulheres), risco cardiometabólico, sono habitual ≥ 7 h",
+                  "6 semanas com −78,4 min/noite (−83,5 a −73,3) contra sono adequado",
+                  "Peso +0,45 kg (0,33 a 0,57). Cintura +0,52 cm (0,25 a 0,79). Proporção de tecido adiposo e muscular (ressonância) sem efeito. Leptina +2,03 ng/mL (0,38 a 3,68). Tempo sedentário +17,2 min/dia (11,7 a 22,7); atividade moderada a vigorosa sem diferença. Gasto total (34 participantes) sem diferença. Ingestão não medida"
+                ],
+                [
+                  "@tasali2022. Ensaio paralelo; 80 adultos de 21 a 40 anos com sobrepeso (IMC 25 a 29,9) e sono habitual < 6,5 h",
+                  "Aconselhamento individual de higiene do sono, com alvo de 8,5 h na cama, por 2 semanas, contra sono habitual",
+                  "Sono +1,2 h/noite (1,0 a 1,4). Diferença entre grupos: ingestão −270 kcal/dia (−393 a −147; P < 0,001); gasto total −53,9 (−134,9 a 27,1; não significativo); peso −0,87 kg (−1,39 a −0,35; P = 0,001); massa livre de gordura −0,62 kg (−1,02 a −0,23); massa gorda −0,25 kg (−0,39 a −0,10). No controle, o peso subiu 0,39 kg (0,02 a 0,76). Correlação entre sono e ingestão r = −0,41 (≈ −162 kcal/dia por hora a mais de sono)"
+                ],
+                [
+                  "@mostafa2026. Metanálise; 27 estudos (25 na análise), em adultos sem apneia e com sono ruim",
+                  "TCC-I ou higiene do sono (8 estudos, 1.384 participantes) ou extensão do sono (5 estudos, 138), contra controle",
+                  "IMC global −0,26 kg/m² (−0,70 a 0,18; não significativo). TCC-I ou higiene −0,64 (0,28 a 1,01), dominado por 3 ensaios em diabetes tipo 2 (1.121 participantes); extensão −0,15 (−0,40 a 0,11). Peso corporal sem redução significativa (todas as intervenções P = 0,23). Subgrupos por IMC basal: −0,83 kg (0,32 a 1,35; 6 estudos, 337 participantes) no sobrepeso e −5,55 kg (4,13 a 6,97; 3 estudos, 72) na obesidade. Ingestão −147,5 kcal/dia (5,74 a 289,41; 5 estudos, 223). Seguimento de 2 semanas a 12 meses"
+                ]
+              ],
+              "fonte": "Elaborado pelos autores com base em @nedeltcheva2010, @wang2018, @covassin2022, @zuraikat2026, @tasali2022 e @mostafa2026.",
+              "nota": [
+                "IMC: índice de massa corporal; DXA: absorciometria por raios X de dupla energia. Entre parênteses: IC 95%."
+              ]
             }
           ]
         }
@@ -330,6 +333,7 @@
         {
           "titulo": "Resumo e aplicação",
           "blocos": [
+            "Em síntese, o sono entra na rotina por várias portas, e quase todos os achados desta seção são observacionais ou de confiança baixa.",
             {
               "tipo": "caixa",
               "titulo": "Pontos-chave",
