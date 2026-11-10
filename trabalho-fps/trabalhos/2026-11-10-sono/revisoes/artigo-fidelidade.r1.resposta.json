@@ -1,0 +1,27 @@
+[
+  {
+    "id": "A1",
+    "status": "corrigido",
+    "detalhe": "Trocado por 'na recuperação, a ingestão caiu, mas o peso praticamente não mudou (−0,03 ± 0,50 kg)' (§5.2). Nenhuma outra menção de 'voltou ao basal' para Markwald no artigo."
+  },
+  {
+    "id": "A2",
+    "status": "corrigido",
+    "detalhe": "§6.2 reescrito: DPM 0,99 (IC 95% 0,67 a 1,31; I² = 89,1%) atribuído ao cochilo diurno após noite normal, também após privação parcial, com benefício maior em 30 a < 60 min, só homens (n = 291). A linha 148 de 03-evidencias.md já estava corrigida quando conferi. Slides não verificados por mim: ficam com o orquestrador."
+  },
+  {
+    "id": "A3",
+    "status": "corrigido",
+    "detalhe": "Resumo e abstract: cafeína reduziu o sono (moderada); álcool reduziu o REM (moderada), efeito incerto no tempo total; telas associadas a menos sono em coortes (baixa). Considerações finais: 'a cafeína reduz o sono, o álcool altera o sono REM e o uso de telas à noite associa-se a menos sono'. Resumo com 250 palavras pelo validador (limite 250)."
+  },
+  {
+    "id": "A4",
+    "status": "corrigido",
+    "detalhe": "§7.2: 'associou-se positivamente à adiposidade em 43 estudos observacionais', com IMC, massa gorda e cintura (correlações pequenas), percentual de gordura r = 0,37 (0,33 a 0,41; I² = 96%) e OR 1,20 para sobrepeso/obesidade. O IC da OR não foi reproduzido porque o resumo traz erro tipográfico no limite superior (nota no texto); 'transversal' trocado por 'observacional'."
+  },
+  {
+    "id": "A5",
+    "status": "corrigido",
+    "detalhe": "§9.2: acrescentadas Choi 2022 (24 ECR, sem efeito significativo em adultos com insônia crônica) e Mohammadi 2026 (63 ECR, sem efeito em peso, IMC, cintura e percentual de gordura), ambas já em referencias.json. Certeza muito baixa mantida."
+  }
+]

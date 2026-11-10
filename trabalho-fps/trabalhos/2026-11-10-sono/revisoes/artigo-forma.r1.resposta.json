@@ -1,0 +1,27 @@
+[
+  {
+    "id": "A1",
+    "status": "corrigido",
+    "detalhe": "Resumo e abstract: álcool só para REM (moderada), tempo total incerto; telas como associação em coortes (baixa); recuperação de fim de semana com resultados divergentes e, no maior experimento, sem prevenir a piora metabólica (baixa). Considerações finais ajustadas como sugerido. Resumo com 250 palavras."
+  },
+  {
+    "id": "A2",
+    "status": "corrigido",
+    "detalhe": "Apagados da Discussão o bloco 'Com essas ressalvas, os autores consideram...' e a lista de seis alíneas. As Considerações finais são o único lugar que responde à pergunta."
+  },
+  {
+    "id": "A3",
+    "status": "corrigido",
+    "detalhe": "(1) Discussão §1 reduzida a uma frase interpretativa que remete à seção 5.3; (2) frase 'a MLG inclui água e glicogênio' removida de 5.1, mantida na Discussão; (3) Discussão sobre treino remete às seções 6.1 e 6.2 e fica só com a consequência para a prescrição; (4) frase do escopo profissional removida; (5) limitações da evidência abrem com remissão à seção 2.4 e listam só seguimento, ingestão inferida e heterogeneidade."
+  },
+  {
+    "id": "A4",
+    "status": "corrigido",
+    "detalhe": "(a) 2.2 não repete mais os números da Tabela 1 (nem 77/18), só motivos, corte por volume, adicionais e composição dos 94; (b) 5.3 sem valores e contagens de Mostafa, remetendo ao Quadro 1; (c) frase 'Isso separa horário de sono' removida de 4.3; (d) consenso de atletas removido da seção 3 (fica em 6.2 e no Quadro 3)."
+  },
+  {
+    "id": "A5",
+    "status": "contestado",
+    "detalhe": "Dispensado pelo orquestrador: material de estudo pessoal, sem corte por tamanho. Só a redundância foi cortada (A2 a A4); corpo ≈ 7.500 palavras, 31 páginas de prévia com referências e apêndice. Mantido o escopo dos quadros."
+  }
+]
