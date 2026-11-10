@@ -68,7 +68,7 @@ O ECR de Tasali incluiu 80 adultos com sobrepeso que dormiam menos de 6,5 horas 
 
 **[7:58–8:33] Slide 16 — Em coortes de emagrecimento, dormir mal acompanhou menor perda, com certeza muito baixa**
 
-São coortes dentro de programas de emagrecimento, evidência complementar. Em cinco de seis coortes avaliadas, sono curto ou ineficiente acompanhou menor perda e menor adesão; a coorte de 3.628 pessoas não achou associação com o sono curto e achou menor perda no sono longo. Duas coortes de manutenção e de mulheres não entraram no slide por ambiguidade nos resumos. O sono é autorrelatado na maioria, e depressão, apneia e estresse podem confundir; causalidade reversa não está excluída. A revisão de Duan, com 30 estudos, mostra metade dos observacionais com resultado positivo. A certeza é muito baixa. Sinal de adesão: sono curto e menos sessões.
+São coortes dentro de programas de emagrecimento, evidência complementar. Em cinco de seis coortes avaliadas (duas delas com resumo ambíguo, fora do slide), sono curto ou ineficiente acompanhou menor perda e menor adesão; a coorte de 3.628 pessoas não achou associação com o sono curto e achou menor perda no sono longo. Duas coortes de manutenção e de mulheres não entraram no slide por ambiguidade nos resumos. O sono é autorrelatado na maioria, e depressão, apneia e estresse podem confundir; causalidade reversa não está excluída. A revisão de Duan, com 30 estudos, mostra metade dos observacionais com resultado positivo. A certeza é muito baixa. Sinal de adesão: sono curto e menos sessões.
 
 **[8:33–8:37] Slide 17 — Treinamento**
 
@@ -84,7 +84,7 @@ No estudo de Temesi, 12 homens ativos pedalaram até a falha após uma noite sem
 
 **[9:57–10:27] Slide 20 — O exercício melhora o sono, e treinar à noite pouco o atrapalha em bons dormidores**
 
-O sentido inverso: o treino ajuda o sono. A metanálise de Kredlow, com 66 estudos, mostra efeito moderado do exercício regular na qualidade do sono. Na insônia, o efeito foi de 0,37 no sono objetivo, com IC de 0,17 a 0,57, e 0,90 no subjetivo, com heterogeneidade alta. O medo de treinar à noite tem pouco respaldo em bons dormidores: o exercício intervalado terminando de 0,5 a 4 horas antes de dormir reduziu só o REM. A corrida moderada à noite também não atrapalhou, e melhor quando terminou 4 horas antes. Quem já dorme mal não foi avaliado; os mecanismos do exercício sobre o sono não foram revisados.
+O sentido inverso: o treino ajuda o sono. A metanálise de Kredlow, com 66 estudos, mostra efeito moderado do exercício regular na qualidade do sono. Na insônia, o efeito foi de 0,37 no sono objetivo, com IC de 0,17 a 0,57, e 0,90 no subjetivo, com heterogeneidade alta. O medo de treinar à noite tem pouco respaldo em bons dormidores: o exercício intervalado terminando de 0,5 a 4 horas antes de dormir reduziu só o REM. A corrida moderada à noite também não atrapalhou, e melhor quando terminou 4 horas antes. No treino intenso à noite, quem já dorme mal não foi avaliado; no estudo da corrida moderada, o resumo descreve resposta diferente entre bons e maus dormidores, sem números. Os mecanismos do exercício sobre o sono não foram revisados.
 
 **[10:27–10:31] Slide 21 — Rotina**
 
@@ -96,7 +96,7 @@ A cafeína reduziu o tempo total de sono em 45 minutos e a eficiência em 7%, e 
 
 **[11:01–11:36] Slide 23 — O sono curto cobra no humor, na glicose e, entre turnistas, no peso**
 
-Na metanálise de 154 estudos experimentais, a perda de sono reduziu o afeto positivo e aumentou os sintomas de ansiedade; afeto negativo e depressão tiveram resultados mistos. Na glicose, seis noites de 4 horas pioraram a tolerância, e três semanas de 5,6 horas, combinadas com desalinhamento circadiano, elevaram a glicose pós-prandial, normalizada com recuperação. Nos turnos, o sobrepeso teve RR de 1,25, com IC de 1,08 a 1,44, e a obesidade, 1,17, de 1,12 a 1,22. A diferença entre coortes e transversais sugere seleção ou causalidade reversa. Em adultos em emagrecimento, não localizamos fonte que demonstre a cadeia de decisão até a adesão.
+Na metanálise de 154 estudos experimentais, a perda de sono reduziu o afeto positivo e aumentou os sintomas de ansiedade; afeto negativo e depressão tiveram resultados mistos. Na glicose, seis noites de 4 horas pioraram a tolerância, e três semanas de 5,6 horas, combinadas com desalinhamento circadiano, elevaram a glicose pós-prandial, normalizada em 9 dias de recuperação; o estudo não separa o efeito do sono curto do efeito do desalinhamento. Nos turnos, o sobrepeso teve RR de 1,25, com IC de 1,08 a 1,44, e a obesidade, 1,17, de 1,12 a 1,22. A diferença entre coortes e transversais sugere seleção ou causalidade reversa. Em adultos em emagrecimento, não localizamos fonte que demonstre a cadeia de decisão até a adesão.
 
 **[11:36–11:40] Slide 24 — Na prática e nos mitos**
 
@@ -108,7 +108,7 @@ Cinco ações, cada uma com a sua força. Fixar o horário de dormir teve efeito
 
 **[12:25–13:10] Slide 26 — Cinco crenças comuns sobre sono têm base fraca ou limitada**
 
-Fim de semana: em 36 adultos internados, dormir mais no fim de semana reduziu a ingestão após o jantar, mas a piora voltou com a nova restrição; já Killick viu melhora aguda da sensibilidade à insulina com três noites de 10 horas. A NSF é mais favorável à recuperação. Sono curto e obesidade: associação robusta, mas sugestiva; os experimentos de ingestão sustentam a causa. Melatonina: efeito de poucos minutos, sem efeito significativo em adultos com insônia crônica numa metanálise; para peso, uma síntese achou redução no limite da significância, e outra, com 63 ECR, nada. Suplementos: só autorrelato, nenhum com desfecho de peso ou treino. Relógios: superestimam o sono e não servem para diagnóstico; use para tendência de horários.
+Fim de semana: em 36 adultos internados, dormir mais no fim de semana reduziu a ingestão após o jantar, mas a piora voltou com a nova restrição; já Killick viu melhora aguda da sensibilidade à insulina com três noites de 10 horas. A NSF é mais favorável à recuperação. Sono curto e obesidade: associação robusta, mas classificada como sugestiva; a randomização mendeliana apoia um papel causal, e os experimentos de ingestão dão plausibilidade, mas o ganho de peso medido em experimentos tem certeza baixa. Melatonina: efeito de poucos minutos, sem efeito significativo em adultos com insônia crônica numa metanálise; para peso, uma síntese achou redução no limite da significância, e outra, com 63 ECR, nada. Suplementos: só autorrelato, nenhum com desfecho de peso ou treino. Relógios: superestimam o sono e não servem para diagnóstico; use para tendência de horários.
 
 **[13:10–13:45] Slide 27 — Dormir pouco aumenta a ingestão; que dormir mais emagreça a longo prazo não foi provado**
 

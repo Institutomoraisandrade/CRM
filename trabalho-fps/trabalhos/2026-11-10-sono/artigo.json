@@ -159,7 +159,7 @@
           "titulo": "Fome, saciedade e recompensa",
           "blocos": [
             "A explicação mais difundida é hormonal. Em 12 homens saudáveis, duas noites de restrição reduziram a leptina em 18%, elevaram a grelina em 28% e aumentaram a fome em 24% [@spiegel2004]. A replicação é fraca: a metanálise encontrou grelina mais alta no sono curto (DPM 0,14; IC 95% 0,03 a 0,25), mas leptina mais alta, e não mais baixa, nos experimentos (DPM 0,19; 0,03 a 0,35) [@lin2020]. A dose também importa: com restrição severa (2 h por três noites, 18 homens), a fome caiu 23% e o almoço diminuiu 332 kcal (IC 95% −479 a −185) [@radcliffe2021]. Como são desfechos substitutos de certeza baixa, grelina e leptina não sustentam, sozinhas, a explicação do apetite no sono curto.",
-            "O que se repete é a resposta de recompensa. Seis noites de 4 h aumentaram, em 26 adultos, a ativação cerebral diante de imagens de comida, em particular em regiões de recompensa [@stonge2012]. É evidência mecanística, de curto prazo; não há, entre os estudos recuperados, um que ligue a perda de sono à decisão alimentar medida em ambiente real, o que é uma lacuna."
+            "O que se repete é a resposta de recompensa. Fases de seis dias com 4 h na cama por noite aumentaram, em 26 adultos, a ativação cerebral diante de imagens de comida, em particular em regiões de recompensa [@stonge2012]. É evidência mecanística, de curto prazo; não há, entre os estudos recuperados, um que ligue a perda de sono à decisão alimentar medida em ambiente real, o que é uma lacuna."
           ]
         },
         {
@@ -367,7 +367,7 @@
         {
           "titulo": "Síntese proteica e recuperação",
           "blocos": [
-            "Uma noite de privação total reduziu em 18% a síntese proteica miofibrilar pós-prandial (de 0,072 ± 0,015 para 0,059 ± 0,014 %/h; P = 0,040), com cortisol 21% maior e testosterona 24% menor em 13 jovens [@lamon2021]. Cinco noites de 4 h reduziram a síntese miofibrilar de 1,53 ± 0,09 para 1,24 ± 0,21 %/dia em 24 homens, e três sessões de exercício intervalado de alta intensidade a mantiveram em 1,61 ± 0,14 %/dia [@saner2020]. São desfechos substitutos de certeza muito baixa, em dias. Nenhum ECR de hipertrofia ou de composição corporal com restrição crônica do sono foi encontrado entre os estudos recuperados: a queda aguda da síntese não equivale à perda de músculo em semanas.",
+            "Uma noite de privação total reduziu em 18% a síntese proteica miofibrilar pós-prandial (de 0,072 ± 0,015 para 0,059 ± 0,014 %/h; P = 0,040), com cortisol 21% maior e testosterona 24% menor em 13 jovens [@lamon2021]. Em 24 homens distribuídos em três grupos paralelos, a síntese miofibrilar foi menor no grupo com cinco noites de 4 h (1,24 ± 0,21 %/dia) que no grupo de sono normal (1,53 ± 0,09 %/dia), e ficou em 1,61 ± 0,14 %/dia no grupo que somou à restrição três sessões de exercício intervalado de alta intensidade [@saner2020]. São desfechos substitutos de certeza muito baixa, em dias. Nenhum ECR de hipertrofia ou de composição corporal com restrição crônica do sono foi encontrado entre os estudos recuperados: a queda aguda da síntese não equivale à perda de músculo em semanas.",
             "Do lado da recuperação, o cochilo diurno, após uma noite normal, melhorou o desempenho físico (DPM 0,99; IC 95% 0,67 a 1,31; I² = 89,1%), a cognição e a fadiga, também após privação parcial, com benefício maior em cochilos de 30 a menos de 60 min, mas só em homens (n = 291) [@mesas2023]. Para atletas, o consenso de especialistas observa que dormir menos de 7 h é comum e propõe educação e triagem individual, não uma regra única [@walsh2021]."
           ]
         },
@@ -385,7 +385,7 @@
         {
           "titulo": "Glicose, humor e adesão",
           "blocos": [
-            "Na glicose, a evidência de que melhorar o sono melhore o metabolismo é fraca: a metanálise de extensão do sono (13 estudos de 11 ensaios) encontrou +51 min de sono (IC 95% 39 a 63) e queda da pressão arterial sistólica de 24 h em pré-hipertensos (−7,8 mmHg; −10,6 a −4,9), mas nenhum efeito sobre glicemia de jejum ou resistência à insulina [@zhu2022]. Os efeitos adversos da restrição sobre a sensibilidade à insulina aparecem sobretudo nos experimentos de recuperação (seção 9.1).",
+            "Na glicose, a evidência de que melhorar o sono melhore o metabolismo é fraca: a metanálise de extensão do sono (13 estudos de 11 ensaios) encontrou +51 min de sono (IC 95% 39 a 63) e queda da pressão arterial sistólica de 24 h em pessoas com pré-hipertensão ou hipertensão em estágio 1 (−7,8 mmHg; −10,6 a −4,9; análise de subgrupo), mas nenhum efeito sobre glicemia de jejum ou resistência à insulina [@zhu2022]. Os efeitos adversos da restrição sobre a sensibilidade à insulina aparecem sobretudo nos experimentos de recuperação (seção 9.1).",
             "No humor, uma metanálise de 154 experimentos (N = 5.717; inclui crianças e adolescentes) mostrou que a perda de sono reduziu o afeto positivo, aumentou sintomas de ansiedade e embotou a resposta a estímulos emocionais, com resultados mistos para afeto negativo e depressão [@palmer2024]. A cadeia ‘sono curto, pior decisão, pior adesão’ é plausível, mas não foi demonstrada em adultos em programa de emagrecimento; os dados de adesão são as coortes da seção 5.4, observacionais."
           ]
         },
@@ -442,7 +442,7 @@
               "A revisão inclui adolescentes"
             ],
             [
-              "Café até pelo menos 8,8 h e suplemento pré-treino até pelo menos 13,2 h antes de deitar",
+              "Último café pelo menos 8,8 h antes de deitar; suplemento pré-treino, pelo menos 13,2 h antes",
               "Metanálise de 24 estudos; certeza moderada [@gardiner2023]",
               "Intervalos derivados de modelo para 107 mg/250 mL e 217,5 mg; individualizar pela sensibilidade"
             ],
@@ -499,7 +499,7 @@
           "titulo": "Melatonina e suplementos",
           "blocos": [
             "Para o sono, a melatonina reduziu a latência em 7,06 min (IC 95% 4,37 a 9,75) e aumentou o tempo total em 8,25 min (1,74 a 14,75) em 19 estudos (n = 1.683) de distúrbios primários do sono [@ferracioli2013], mas a metanálise de 24 ECR em insônia crônica não encontrou efeito significativo em adultos [@choi2022], e a diretriz europeia não recomenda a de liberação rápida na insônia [@riemann2023]. Para o peso, a metanálise de 23 ECR estimou DPM de −0,48 (−0,94 a −0,02; I² = 92%), sem efeito sobre IMC e cintura [@delpino2021]: sinal no limite da significância e com heterogeneidade extrema; uma metanálise posterior, de 63 ECR, não encontrou efeito em peso, IMC, cintura ou percentual de gordura [@mohammadi2026]. Para o desempenho, uma revisão de 10 estudos concluiu pela ausência de efeito consistente [@faria2024], enquanto uma metanálise de 19 ECR (n = 266) estimou efeito pequeno na potência (DPM 0,29; 0,05 a 0,53) e moderado na resistência (0,58; 0,29 a 0,87) [@guo2026]; as amostras são mínimas, a segunda inclui participantes de até 18 anos, e a certeza é muito baixa.",
-            "Os suplementos têm evidência de revisão geral, não de desfecho de peso ou treino. Em 31 ECR, aminoácidos (diferença de médias −1,27; IC 95% −2,35 a −0,20), melatonina (−1,21; −2,17 a −0,24; I² = 79%) e vitamina D (−1,63; −3,15 a −0,10; I² = 85%) melhoraram índices subjetivos de qualidade do sono, enquanto magnésio, zinco, resveratrol e nitrato não tinham dados suficientes para agrupar [@chan2021]. A certeza é muito baixa (autorrelato, heterogeneidade alta, populações mistas), e nenhum desses produtos tem desfecho de peso ou treino."
+            "Os suplementos têm evidência de revisão geral, não de desfecho de peso ou treino. Em 31 ECR, aminoácidos (diferença de médias −1,27; IC 95% −2,35 a −0,20), melatonina (−1,21; −2,17 a −0,24; I² = 79%) e vitamina D (−1,63; −3,15 a −0,10; I² = 85%) melhoraram índices subjetivos de qualidade do sono, enquanto magnésio, zinco, resveratrol e nitrato não tinham dados suficientes para agrupar [@chan2021]. Para o magnésio, uma revisão sistemática posterior, de 12 ECR, encontrou achados inconsistentes e concluiu que a evidência não sustenta o uso rotineiro na insônia, com certeza baixa a muito baixa [@lopresti2026]. A certeza é muito baixa (autorrelato, heterogeneidade alta, populações mistas), e nenhum desses produtos tem desfecho de peso ou treino."
           ]
         },
         {

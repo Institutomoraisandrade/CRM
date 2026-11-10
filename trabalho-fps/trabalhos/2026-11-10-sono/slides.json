@@ -140,7 +140,7 @@
    "direita": {
     "titulo": "Cérebro: recompensa e freio",
     "itens": [
-     "Comida ativa mais áreas de recompensa (n = 26, 6 noites de 4 h)",
+     "Comida ativa mais áreas de recompensa (n = 26; 6 dias com 4 h/noite)",
      "Uma noite em claro ativa mais o cingulado, sem relação com as calorias",
      "Fica mais difícil inibir lanches palatáveis; o 2-AG é só hipótese"
     ]
@@ -159,7 +159,7 @@
     "Ingestão, gasto, hormônios e sono eram semelhantes entre os grupos",
     "**Cronotipo vespertino:** pior dieta em ~95% de 43 estudos; maior peso em ~47%",
     "**Jet lag social:** IMC r = 0,12 (0,07–0,17), transversal",
-    "Janela 12h–20h não superou comer livre em 12 semanas; sono não medido"
+    "Janela 12h–20h não superou 3 refeições diárias em 12 semanas; sono não medido"
    ],
    "destaque": {"valor": "15h", "rotulo": "almoço depois desse horário: menos peso perdido em 20 semanas (n = 420; P = 0,002)"},
    "fonte": "[@garaulet2013; @teixeira2022; @arab2024; @lowe2020]",
@@ -257,7 +257,7 @@
     ["Rodríguez-Martín 2025", "3.628 · 25 semanas", "Sono > 8 h perdeu menos; sono curto sem associação"]
    ],
    "fonte": "[@kline2026; @creasy2022; @papandreou2020; @rodriguezmartin2025; @duan2026]",
-   "notas": "São coortes dentro de programas de emagrecimento, evidência complementar. Em cinco de seis coortes avaliadas, sono curto ou ineficiente acompanhou menor perda e menor adesão; a coorte de 3.628 pessoas não achou associação com o sono curto e achou menor perda no sono longo. Duas coortes de manutenção e de mulheres não entraram no slide por ambiguidade nos resumos. O sono é autorrelatado na maioria, e depressão, apneia e estresse podem confundir; causalidade reversa não está excluída. A revisão de Duan, com 30 estudos, mostra metade dos observacionais com resultado positivo. A certeza é muito baixa. Sinal de adesão: sono curto e menos sessões.",
+   "notas": "São coortes dentro de programas de emagrecimento, evidência complementar. Em cinco de seis coortes avaliadas (duas delas com resumo ambíguo, fora do slide), sono curto ou ineficiente acompanhou menor perda e menor adesão; a coorte de 3.628 pessoas não achou associação com o sono curto e achou menor perda no sono longo. Duas coortes de manutenção e de mulheres não entraram no slide por ambiguidade nos resumos. O sono é autorrelatado na maioria, e depressão, apneia e estresse podem confundir; causalidade reversa não está excluída. A revisão de Duan, com 30 estudos, mostra metade dos observacionais com resultado positivo. A certeza é muito baixa. Sinal de adesão: sono curto e menos sessões.",
    "kicker": "Peso e composição",
    "banner": "imagens/balanca.jpg",
    "banner_foco": [0.5, 0.5]
@@ -323,7 +323,7 @@
     ]
    },
    "fonte": "[@kredlow2015; @riedel2024; @frimpong2021; @saidi2020]",
-   "notas": "O sentido inverso: o treino ajuda o sono. A metanálise de Kredlow, com 66 estudos, mostra efeito moderado do exercício regular na qualidade do sono. Na insônia, o efeito foi de 0,37 no sono objetivo, com IC de 0,17 a 0,57, e 0,90 no subjetivo, com heterogeneidade alta. O medo de treinar à noite tem pouco respaldo em bons dormidores: o exercício intervalado terminando de 0,5 a 4 horas antes de dormir reduziu só o REM. A corrida moderada à noite também não atrapalhou, e melhor quando terminou 4 horas antes. Quem já dorme mal não foi avaliado; os mecanismos do exercício sobre o sono não foram revisados.",
+   "notas": "O sentido inverso: o treino ajuda o sono. A metanálise de Kredlow, com 66 estudos, mostra efeito moderado do exercício regular na qualidade do sono. Na insônia, o efeito foi de 0,37 no sono objetivo, com IC de 0,17 a 0,57, e 0,90 no subjetivo, com heterogeneidade alta. O medo de treinar à noite tem pouco respaldo em bons dormidores: o exercício intervalado terminando de 0,5 a 4 horas antes de dormir reduziu só o REM. A corrida moderada à noite também não atrapalhou, e melhor quando terminou 4 horas antes. No treino intenso à noite, quem já dorme mal não foi avaliado; no estudo da corrida moderada, o resumo descreve resposta diferente entre bons e maus dormidores, sem números. Os mecanismos do exercício sobre o sono não foram revisados.",
    "kicker": "Treinamento",
    "banner": "imagens/treino.jpg",
    "banner_foco": [0.5, 0.5]
@@ -364,7 +364,7 @@
      "Ansiedade sobe (DPM 0,57–0,63) e afeto positivo cai",
      "Metanálise de 154 estudos; inclui crianças e adolescentes",
      "Tolerância à glicose piora após 6 noites de 4 h (11 homens)",
-     "5,6 h por 3 semanas elevou a glicose; normalizou em 9 dias"
+     "5,6 h com desalinhamento circadiano, 3 semanas: glicose pós-refeição subiu; depois normalizou"
     ]
    },
    "direita": {
@@ -377,7 +377,7 @@
     ]
    },
    "fonte": "[@palmer2024; @spiegel1999; @buxton2012; @liu2018; @sun2018; @kecklund2016]",
-   "notas": "Na metanálise de 154 estudos experimentais, a perda de sono reduziu o afeto positivo e aumentou os sintomas de ansiedade; afeto negativo e depressão tiveram resultados mistos. Na glicose, seis noites de 4 horas pioraram a tolerância, e três semanas de 5,6 horas, combinadas com desalinhamento circadiano, elevaram a glicose pós-prandial, normalizada com recuperação. Nos turnos, o sobrepeso teve RR de 1,25, com IC de 1,08 a 1,44, e a obesidade, 1,17, de 1,12 a 1,22. A diferença entre coortes e transversais sugere seleção ou causalidade reversa. Em adultos em emagrecimento, não localizamos fonte que demonstre a cadeia de decisão até a adesão.",
+   "notas": "Na metanálise de 154 estudos experimentais, a perda de sono reduziu o afeto positivo e aumentou os sintomas de ansiedade; afeto negativo e depressão tiveram resultados mistos. Na glicose, seis noites de 4 horas pioraram a tolerância, e três semanas de 5,6 horas, combinadas com desalinhamento circadiano, elevaram a glicose pós-prandial, normalizada em 9 dias de recuperação; o estudo não separa o efeito do sono curto do efeito do desalinhamento. Nos turnos, o sobrepeso teve RR de 1,25, com IC de 1,08 a 1,44, e a obesidade, 1,17, de 1,12 a 1,22. A diferença entre coortes e transversais sugere seleção ou causalidade reversa. Em adultos em emagrecimento, não localizamos fonte que demonstre a cadeia de decisão até a adesão.",
    "kicker": "Rotina",
    "banner": "imagens/cafe.jpg",
    "banner_foco": [0.5, 0.5]
@@ -421,7 +421,7 @@
     ["O relógio mede meu sono profundo", "Sensibilidade ≥ 0,93, especificidade 0,18–0,54; estágios inconsistentes", "Moderada"]
    ],
    "fonte": "[@depner2019; @malasevskaia2026; @yang2024; @ferracioli2013; @delpino2021; @mohammadi2026; @chan2021; @mei2025; @lopresti2026; @chinoy2021]",
-   "notas": "Fim de semana: em 36 adultos internados, dormir mais no fim de semana reduziu a ingestão após o jantar, mas a piora voltou com a nova restrição; já Killick viu melhora aguda da sensibilidade à insulina com três noites de 10 horas. A NSF é mais favorável à recuperação. Sono curto e obesidade: associação robusta, mas sugestiva; os experimentos de ingestão sustentam a causa. Melatonina: efeito de poucos minutos, sem efeito significativo em adultos com insônia crônica numa metanálise; para peso, uma síntese achou redução no limite da significância, e outra, com 63 ECR, nada. Suplementos: só autorrelato, nenhum com desfecho de peso ou treino. Relógios: superestimam o sono e não servem para diagnóstico; use para tendência de horários.",
+   "notas": "Fim de semana: em 36 adultos internados, dormir mais no fim de semana reduziu a ingestão após o jantar, mas a piora voltou com a nova restrição; já Killick viu melhora aguda da sensibilidade à insulina com três noites de 10 horas. A NSF é mais favorável à recuperação. Sono curto e obesidade: associação robusta, mas classificada como sugestiva; a randomização mendeliana apoia um papel causal, e os experimentos de ingestão dão plausibilidade, mas o ganho de peso medido em experimentos tem certeza baixa. Melatonina: efeito de poucos minutos, sem efeito significativo em adultos com insônia crônica numa metanálise; para peso, uma síntese achou redução no limite da significância, e outra, com 63 ECR, nada. Suplementos: só autorrelato, nenhum com desfecho de peso ou treino. Relógios: superestimam o sono e não servem para diagnóstico; use para tendência de horários.",
    "kicker": "Mitos",
    "banner": "imagens/despertador.jpg",
    "banner_foco": [0.5, 0.5]

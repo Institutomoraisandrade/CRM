@@ -1,0 +1,192 @@
+{
+ "etapa": "banca",
+ "rodada": 1,
+ "revisor": "fps-banca",
+ "modelo_revisor": "fable",
+ "executor": "pipeline (fps-1 a fps-5 e líderes)",
+ "arquivos_revisados": [
+  "trabalho-fps/trabalhos/2026-11-10-sono/PROTOCOLO.md (../../)",
+  "trabalho-fps/trabalhos/2026-11-10-sono/00-briefing.md",
+  "trabalho-fps/trabalhos/2026-11-10-sono/painel.md",
+  "trabalho-fps/trabalhos/2026-11-10-sono/validacao.md",
+  "trabalho-fps/trabalhos/2026-11-10-sono/revisoes/*.json (22 pareceres e respostas)",
+  "trabalho-fps/trabalhos/2026-11-10-sono/01-picos.json",
+  "trabalho-fps/trabalhos/2026-11-10-sono/02-analise-critica.md",
+  "trabalho-fps/trabalhos/2026-11-10-sono/03-evidencias.md",
+  "trabalho-fps/trabalhos/2026-11-10-sono/03-quadro-evidencias.json",
+  "trabalho-fps/trabalhos/2026-11-10-sono/artigo.json",
+  "trabalho-fps/trabalhos/2026-11-10-sono/artigo.docx (previa-artigo/)",
+  "trabalho-fps/trabalhos/2026-11-10-sono/slides.json",
+  "trabalho-fps/trabalhos/2026-11-10-sono/apresentacao.pptx (previa-apresentacao/)",
+  "trabalho-fps/trabalhos/2026-11-10-sono/referencias.json"
+ ],
+ "criterios": {
+  "rigor_cientifico": 8.0,
+  "qualidade_da_evidencia": 8.0,
+  "redacao_e_abnt": 8.5,
+  "apresentacao": 7.0,
+  "coerencia_global": 7.5,
+  "rigor_das_revisoes": 7.5
+ },
+ "justificativas": {
+  "rigor_cientifico": "Conclusão proporcional à evidência, desfechos substitutos separados, certeza por desfecho. Perde pontos pela metanálise de telas aplicada a adultos sem a ressalva de população (A2) e pelo título do slide 22 (A1).",
+  "qualidade_da_evidencia": "Hierarquia respeitada, GRADE por desfecho com rebaixamentos escritos, textos completos lidos para os ensaios centrais. Limites declarados: sem BVS e Cochrane, 363 registros cortados por volume sem leitura, AMSTAR 2 provisório por resumo, Wang 2018 só pelo resumo.",
+  "redacao_e_abnt": "Estrutura completa, quadros legíveis, verbos alinhados à certeza, resumo com 247 palavras, 0 erros no validador. Pendências conhecidas (autor, logo) não pontuadas.",
+  "apresentacao": "Títulos-afirmação, certeza junto do dado e notas completas. Três slides divergem do artigo: título do 22 (crítico), jet lag social seletivo no 10 e título do 25 em conflito com o slide 15 e o Quadro 3.",
+  "coerencia_global": "PICOS, Método, evidências, Discussão e Considerações finais contam a mesma história com os mesmos números. As divergências estão nos slides 10, 22 e 25 e no magnésio (corrigido pela banca).",
+  "rigor_das_revisoes": "Os líderes acharam erros reais com texto completo (Tasali, Mostafa, Craven, Markwald, Mesas) e nenhuma contestação foi aceita sem base. Mas os slides passaram em uma rodada com a afirmação que os dois líderes classificaram como crítica no artigo, e uma correção 'maior' do artigo não foi propagada aos slides nem ao 03."
+ },
+ "achados": [
+  {
+   "id": "A1",
+   "gravidade": "critica",
+   "local": "slides.json > slide 22 (título e notas)",
+   "problema": "O título 'Cafeína, álcool e telas encurtam o sono por caminhos diferentes' afirma mais do que a fonte para dois dos três hábitos. Para o álcool, o efeito sobre o tempo total de sono é incerto (só o REM tem efeito demonstrado); para as telas, há associação em coortes, não efeito. É a mesma afirmação que os dois líderes classificaram como crítica no resumo e nas considerações finais do artigo (artigo-forma r1 A1; artigo-fidelidade r1 A3) e que foi corrigida lá, mas ficou no slide. As notas dizem ainda 'o álcool encurta a latência, mas fragmenta a segunda metade da noite', o que contradiz a fonte citada no slide.",
+   "evidencia": "Gardiner 2025 (PMID 39631226, resumo): 'large uncertainty observed in the effect on total sleep time, sleep efficiency, and wake after sleep onset'; redução de latência 'only observed following the consumption of a high dose (≥ 0.85 g/kg)'. He 2025 (PMID 41480345): 21 coortes, associação. artigo.json §7.3 e Quadro 3 estão corretos. A frase das notas vem de Ebrahim 2013 (02-analise-critica.md §1.4 passo 7), que o slide não cita. slides.r1.parecer.json (11:02) aprovou o slide; artigo-forma.r1 (11:07) do mesmo líder classificou a frase equivalente como crítica.",
+   "correcao": "Título: 'A cafeína encurta o sono, o álcool reduz o REM e as telas se associam a menos sono'. Notas: trocar a frase do álcool por 'O álcool reduz e atrasa o REM já com cerca de 2 doses; a latência só encurta com dose alta (cerca de 5 doses), e os efeitos sobre tempo total, eficiência e vigília são incertos'. Regenerar pptx, roteiro e prévia. O líder dispara o fps-5-designer-slides em modo correção.",
+   "responsavel": "fps-lider-producao",
+   "licao": "Quando um achado crítico ou maior é registrado em um produto, procure a mesma afirmação nos outros produtos já aprovados (títulos de slides, notas, resumo) antes de fechar a etapa; aprovação anterior não isenta o slide."
+  },
+  {
+   "id": "A2",
+   "gravidade": "maior",
+   "local": "03-evidencias.md > §4.4 e §6 (linha 'Telas e sono'); artigo.json > §7.3, Quadro 3 (linha 'telas'), Considerações finais §2, resumo e abstract; slides.json > slide 22 (linha 'Telas')",
+   "problema": "A metanálise de telas é apresentada como dado de adultos, mas 16 dos 20 estudos de duração do sono são de lactentes, crianças e adolescentes; só 4 são de adultos. O Método do artigo exclui crianças e adolescentes, e a mesma ressalva foi feita para Palmer 2024 e Baron 2021, mas não aqui. Além disso, a exposição medida é tempo diário de tela, e o artigo recomenda e conclui sobre 'telas à noite', que a metanálise não mediu. O quadro da etapa 03 registrava 'todas as idades'; o texto da 03, o artigo e os slides perderam a informação, e a certeza 'baixa' não foi rebaixada por evidência indireta.",
+   "evidencia": "He 2025, texto completo PMC12754674 (Resultados): 20 estudos de duração do sono, 'infants (n=2), toddlers (n=3), preschoolers (n=3), child (n=3), adolescents (n=6), and adults (n=4)'; exposição 'each additional hour of daily screen time'; subgrupo > 18 × < 18 anos sem diferença (P = 0,48). 03-quadro-evidencias.json > he2025 > populacao: 'Todas as idades'. artigo.json §2.1: 'Ficaram fora ... crianças, adolescentes'; Apêndice A: camada 'Cafeína, álcool e telas em adultos'.",
+   "correcao": "(1) 03-evidencias.md §4.4 e §6: acrescentar a composição etária (4 de 20 estudos em adultos), que a exposição é tempo diário de tela e que o subgrupo por idade não diferiu (P = 0,48); decidir e justificar a certeza para adultos (rebaixar por evidência indireta ou explicar por que não). (2) artigo.json §7.3: acrescentar 'a maioria das coortes é de crianças e adolescentes (4 de 20 em adultos)'; Quadro 3: 'Reduzir o tempo diário de tela' na orientação e, na base, que o horário noturno é plausibilidade mecanística, citando Chang 2015 e Gooley 2011 (já em referencias.json), não o que a metanálise mediu; Considerações finais: retirar 'à noite' ou qualificar; resumo e abstract: 'em coortes, a maioria com crianças e adolescentes', sem passar de 250 palavras; §2.1: declarar a exceção ao critério de população. (3) slides.json slide 22, linha Telas e notas: mesma ressalva.",
+   "responsavel": "fps-lider-pesquisa",
+   "licao": "Ao aprovar uma metanálise como evidência, compare a população incluída (faixas etárias, número de estudos por faixa) com o critério de elegibilidade do trabalho; se o texto perder uma ressalva que o quadro estruturado registra, devolva."
+  },
+  {
+   "id": "A3",
+   "gravidade": "maior",
+   "local": "slides.json > slide 10 (tópico 'Jet lag social' e notas); 03-evidencias.md > §4.2 (Arab 2024) e §6 (linha 'Cronotipo vespertino e jet lag social')",
+   "problema": "O slide 10 mantém o relato seletivo de Arab 2024 que o líder de ciência classificou como 'maior' no artigo e mandou corrigir (artigo-fidelidade r1 A4): mostra só a correlação pequena com o IMC (r = 0,12), omite a correlação moderada com o percentual de gordura (r = 0,37) e chama os estudos de 'transversais', quando o resumo diz 'observacionais'. A correção foi feita no artigo e não foi propagada aos slides nem ao texto da etapa 03, embora o parecer r2 liste slides.json entre os arquivos revisados.",
+   "evidencia": "Arab 2024 (PMID 38072635, resumo): 'using observational studies'; IMC r = 0,12 (0,07 a 0,17); 'percent of body fat (r: 0.37; 95%CI, 0.33, 0.41; I² = 96.17%)'. artigo.json §7.2 traz os dois valores. slides.json slide 10: 'Jet lag social: IMC r = 0,12 (0,07–0,17), transversal'; notas: 'são transversais'. 03-evidencias.md linha de Arab: 'Baixa; transversal', sem o r = 0,37 (o quadro JSON tem o valor).",
+   "correcao": "Slide 10: 'Jet lag social: IMC r = 0,12; % de gordura r = 0,37; observacional' (até 14 palavras); notas: 'observacionais' no lugar de 'transversais' e a faixa de correlações. 03-evidencias.md §4.2 e §6: acrescentar o r = 0,37 (0,33 a 0,41; I² 96%) e trocar 'transversal' por 'observacional'. Regenerar pptx, roteiro e prévia.",
+   "responsavel": "fps-lider-ciencia",
+   "licao": "Ao mandar corrigir um achado no artigo, busque o mesmo dado (id da referência) em slides.json e nos arquivos das etapas anteriores e confirme a propagação de todos os achados da rodada, não só de um."
+  },
+  {
+   "id": "A4",
+   "gravidade": "maior",
+   "local": "slides.json > slide 25 (título, linha 'Só higiene do sono' e notas) × slide 15 × artigo.json > seção 8 e Quadro 3",
+   "problema": "O título 'só aconselhar higiene do sono rende pouco' generaliza o piloto de Al Khatib 2018 (+21 min) e contradiz o slide 15 e o artigo: no ECR de Tasali 2022, a intervenção foi justamente aconselhamento individual de higiene do sono e rendeu +1,2 h por noite. O artigo faz o contraponto ('obteve ganho maior de sono com aconselhamento individual') e recomenda essa ação no Quadro 3; o slide de prática omite Tasali e passa a mensagem oposta.",
+   "evidencia": "Al Khatib 2018 (PMID 29381788, resumo): 'behavioral consultation session targeting sleep hygiene'; sono +0:21 h (0:06 a 0:36), adultos de peso normal. artigo.json seção 8 §0 e Quadro 1 (Tasali: 'Aconselhamento individual de higiene do sono, com alvo de 8,5 h na cama'; sono +1,2 h; 1,0 a 1,4). slides.json slide 15: 'sono +1,2 h por noite'.",
+   "correcao": "Título: 'Há ações de baixo custo, e o ganho de sono depende de como se aconselha'. Linha: 'Aconselhamento de higiene do sono — +21 min em piloto com peso normal (n = 42); +1,2 h com sessão individual e alvo de 8,5 h na cama (n = 80)', fonte com Tasali 2022. Notas: explicar a diferença de população (sono < 6,5 h, sobrepeso) e de método, sem dizer que o aconselhamento 'tem pouco efeito'.",
+   "responsavel": "fps-5-designer-slides",
+   "licao": "Antes de fechar um título que resume uma intervenção, confira os outros slides e o quadro de recomendações sobre a mesma intervenção: o título não pode ser desmentido por um ensaio maior já mostrado."
+  },
+  {
+   "id": "M1",
+   "gravidade": "menor",
+   "local": "artigo.json > §6.2 (Saner 2020)",
+   "problema": "'reduziram a síntese miofibrilar de 1,53 para 1,24 %/dia em 24 homens' sugere medida antes e depois nos mesmos 24 homens; são três grupos paralelos.",
+   "evidencia": "Saner 2020 (PMID 32078168, resumo): 'three parallel groups'; 'MyoPS was lower in the SR group (1.24 ± 0.21) compared to both the NS (1.53 ± 0.09) and SR+EX groups (1.61 ± 0.14)'.",
+   "correcao": "Frase reescrita como comparação entre grupos. Corrigido pela banca.",
+   "responsavel": "fps-4-redator-abnt",
+   "licao": "Ao condensar um ensaio de grupos paralelos, não use 'de X para Y': a preposição descreve mudança no mesmo grupo."
+  },
+  {
+   "id": "M2",
+   "gravidade": "menor",
+   "local": "artigo.json > §4.1; slides.json > slide 9 (St-Onge 2012)",
+   "problema": "'Seis noites de 4 h' não está na fonte; o resumo diz fases de 6 dias com ressonância no 6º dia.",
+   "evidencia": "St-Onge 2012 (PMID 22357722, resumo): 'Each phase lasted 6 d, and functional magnetic resonance imaging was performed in the fasted state on day 6'. 02-analise-critica.md §1.1 dizia 'seis dias'.",
+   "correcao": "Artigo: 'Fases de seis dias com 4 h na cama por noite'; slide 9: '6 dias com 4 h/noite'. Corrigido pela banca.",
+   "responsavel": "fps-4-redator-abnt"
+  },
+  {
+   "id": "M3",
+   "gravidade": "menor",
+   "local": "artigo.json > §7.1 (Zhu 2022)",
+   "problema": "'em pré-hipertensos' encurta a população do subgrupo.",
+   "evidencia": "Zhu 2022 (PMID 34279625, resumo): 'sub-group analysis ... among those with pre-hypertension or Stage 1 hypertension'.",
+   "correcao": "'em pessoas com pré-hipertensão ou hipertensão em estágio 1 (...; análise de subgrupo)'. Corrigido pela banca.",
+   "responsavel": "fps-4-redator-abnt"
+  },
+  {
+   "id": "M4",
+   "gravidade": "menor",
+   "local": "artigo.json > §9.2 (suplementos) × slides.json > slide 26",
+   "problema": "O slide 26 afirma 'magnésio sem suporte' com base em Lopresti 2026, que o artigo não citava; o artigo dizia apenas que o magnésio não tinha dados para agrupar.",
+   "evidencia": "Lopresti 2026 (PMID 42661485, resumo): 12 ECR; 'Current evidence does not support oral magnesium as a routine treatment for insomnia'; 'certainty of evidence was low to very low'.",
+   "correcao": "Acrescentada uma frase em §9.2 com a citação de Lopresti 2026 (já em referencias.json). Corrigido pela banca.",
+   "responsavel": "fps-4-redator-abnt"
+  },
+  {
+   "id": "M5",
+   "gravidade": "menor",
+   "local": "slides.json > slides 10, 16, 20, 23 e 26 (texto e notas); artigo.json > Quadro 3 (linha da cafeína)",
+   "problema": "Imprecisões pontuais: slide 10 dizia que a janela alimentar 'não superou comer livre' (o comparador eram 3 refeições estruturadas); slide 23 atribuía a alta da glicose só às 5,6 h de sono (o protocolo somava desalinhamento circadiano); notas do slide 26 diziam que os experimentos de ingestão 'sustentam a causa' da obesidade; notas do slide 16 contavam '5 de 6 coortes' sem dizer que duas têm resumo ambíguo; notas do slide 20 diziam que maus dormidores 'não foram avaliados', e o resumo de Saidi 2020 os compara; Quadro 3 com redação truncada na linha da cafeína.",
+   "evidencia": "Lowe 2020 (PMID 32986097): controle 'instructed to eat 3 structured meals per day'. Buxton 2012 (PMID 22496545): 'sleep restriction (5.6 hours) combined with circadian disruption'. Saidi 2020 (PMID 32372217): 'differences ... between habitually poor and good sleepers'. 03-evidencias.md §5.7 (Papandreou, Bogh, Thomson com ambiguidade declarada) e §6 (peso com restrição: certeza baixa).",
+   "correcao": "Textos ajustados, pptx, roteiro e prévias regenerados. Corrigido pela banca.",
+   "responsavel": "fps-5-designer-slides"
+  }
+ ],
+ "correcoes_aplicadas": [
+  "artigo.json §6.2: Saner 2020 reescrito como comparação entre três grupos paralelos (1,24 × 1,53 × 1,61 %/dia).",
+  "artigo.json §4.1 e slides.json slide 9: 'seis noites de 4 h' → 'fases de seis dias com 4 h na cama por noite' / '6 dias com 4 h/noite' (St-Onge 2012).",
+  "artigo.json §7.1: subgrupo de Zhu 2022 descrito como 'pré-hipertensão ou hipertensão em estágio 1 (análise de subgrupo)'.",
+  "artigo.json §9.2: frase sobre magnésio com Lopresti 2026 (12 ECR; não sustenta uso rotineiro na insônia; certeza baixa a muito baixa), para igualar o artigo ao slide 26. A lista de referências do artigo passou a 68 itens.",
+  "artigo.json Quadro 3: 'Último café pelo menos 8,8 h antes de deitar; suplemento pré-treino, pelo menos 13,2 h antes'.",
+  "slides.json slide 10: 'não superou 3 refeições diárias' (comparador de Lowe 2020).",
+  "slides.json slide 23 (tópico e notas): glicose elevada com 5,6 h de sono somadas a desalinhamento circadiano; o estudo não separa os dois efeitos.",
+  "slides.json notas dos slides 16, 20 e 26: ressalva das duas coortes ambíguas; resposta de maus dormidores em Saidi 2020; causalidade da obesidade com plausibilidade, não 'sustentada'.",
+  "artigo.docx, apresentacao.pptx, roteiro.md, previa-artigo/ (31 páginas) e previa-apresentacao/ (37 páginas) regenerados; validar_trabalho.py: 0 erros; gerador de slides sem avisos além do logo.",
+  "Cópias anteriores às edições da banca: /tmp/claude-0/-home-user-CRM/b00ec11f-477c-5ab5-bc69-1c55bbb55ea5/scratchpad/artigo.antes-banca.json e slides.antes-banca.json."
+ ],
+ "auditoria_independente": {
+  "nota": "Amostra escolhida pela banca, fora das listas conferidas pelos líderes, lida no PubMed em 10/11/2026 (resumo; texto completo PMC para He 2025).",
+  "artigo_numericas": [
+   "Liu 2018 (PMID 29850840): 26 estudos, 311.334 participantes, sobrepeso RR 1,25 (1,08–1,44), obesidade RR 1,17 (1,12–1,22) — confere.",
+   "Zhu 2022 (PMID 34279625): 13 estudos de 11 ensaios, +51 min (39–63), PAS −7,8 mmHg (−10,6 a −4,9), glicose e resistência à insulina NS — confere; população do subgrupo encurtada (M3).",
+   "Chan 2021 (PMID 33441476): 31 ECR; aminoácidos −1,27 (−2,35 a −0,20), melatonina −1,21 (−2,17 a −0,24; I² 79%), vitamina D −1,63 (−3,15 a −0,10; I² 85%) — confere.",
+   "Knowles 2022 (PMID 36136596): 10 mulheres, 9 noites de 5 h, carga de volume < 1%, velocidade até 15% menor nos membros inferiores, cortisol +42%, esforço +11% — confere.",
+   "Al Khatib 2018 (PMID 29381788): n = 42, tempo na cama +55 min, sono +21 min (6–36), açúcar livre −9,6 g (−16,0 a −3,1) — confere.",
+   "Pastorello 2025 (PMID 40802335): obesidade 11,9% → 22,4% e sobrepeso 37,3% → 58,8%, 2006–2021 — confere.",
+   "Malasevskaia 2026 (PMID 42948184): 16 metanálises, OR 1,40 (1,27–1,55; I² 83,7%), polissonografia 2,70 (1,80–4,05) × autorrelato 1,14 (0,98–1,33), classe III — confere.",
+   "Menezes-Júnior 2026 (PMID 42247850): n = 27.048; 52,3%, 31,8%, 11,9% — confere.",
+   "Kredlow 2015 (PMID 25596964): 66 estudos, busca até maio de 2013, efeito moderado na qualidade do sono — confere.",
+   "Saner 2020 (PMID 32078168): números conferem; redação corrigida (M1). St-Onge 2012 (PMID 22357722): n = 26; duração corrigida (M2).",
+   "He 2025 (PMID 41480345; PMC12754674): β −0,05 (−0,08 a −0,03), OR 1,25 (1,08–1,40), 13,2 min — conferem; população majoritariamente pediátrica não declarada (A2).",
+   "Radcliffe 2021 (PMID 33940082): 18 homens, 3 noites de 2 h, fome −23%, almoço −332 kcal (−479 a −185) — confere."
+  ],
+  "slides": [
+   "Slide 26, Yang 2024 (PMID 39137553): 'a causal role was only demonstrated in obesity, hypertension, and CHD by MR' — confere.",
+   "Slide 20, Riedel 2024 (PMID 38749363): DPM 0,37 (0,17–0,57) objetivo e 0,90 (0,61–1,19) subjetivo — confere.",
+   "Slide 23, Sun 2018 (PMID 28975706): transversais 1,26 × coortes 1,10 — confere. Buxton 2012 (PMID 22496545): confere com ressalva (M5).",
+   "Slide 10, Lowe 2020 (PMID 32986097): diferença −0,26 kg (−1,30 a 0,78) — confere; comparador corrigido (M5). Arab 2024 (PMID 38072635): relato seletivo (A3).",
+   "Slide 9, Soltanieh 2021 (PMID 34620371): 50 ECR, leptina, grelina e cortisol não influenciados — confere. Benedict 2012 (PMID 22259064): cingulado anterior, independente das calorias, 12 homens — confere. Tajiri 2023 (PMID 37562755): 2-AG sem associação com ingestão — confere.",
+   "Slide 8, Spaeth 2013 (PMID 23814334): n = 31 com dados de ingestão; 552,9 ± 265,8 kcal; 33,0% × 28,2% — confere.",
+   "Slide 22, Gardiner 2025 (PMID 39631226): linha da tabela confere; título e notas não (A1).",
+   "Slide 26, Lopresti 2026 (PMID 42661485) e Mei 2025 (PMID 41470897): conferem."
+  ],
+  "diretrizes": [
+   "Edinger 2021 (PMID 33164742): TCC-I multicomponente, recomendação forte; 'We suggest that clinicians not use sleep hygiene as a single-component therapy' (condicional) — confere com artigo §8 e Quadro 3.",
+   "Khosla 2018 (PMID 29734997): tecnologias de consumo 'cannot be utilized for the diagnosis and/or treatment of sleep disorders' — confere com §9.3.",
+   "Sletten 2023 (PMID 37684151): regularidade importante para saúde e desempenho; recuperação no fim de semana 'may be beneficial' — confere.",
+   "Walsh 2021 (PMID 33144349): abordagem individualizada, sem regra única de 7 a 9 h — confere.",
+   "Gardiner 2023 (PMID 36870101): café (107 mg/250 mL) ≥ 8,8 h e pré-treino (217,5 mg) ≥ 13,2 h antes de deitar — confere com o Quadro 3. Morton 2018 (PMID 28698222): 1,62 g/kg/dia — confere.",
+   "Watson 2015 (PMID 25979105): o resumo não traz o valor de 7 h, como o artigo declara; segue por citação secundária."
+  ]
+ },
+ "revisao_dos_revisores": {
+  "fps-lider-pesquisa": "Aplicou o critério: reexecutou strings, conferiu mais de 30% dos efeitos e rebaixou a certeza da ingestão com extensão. Deixou passar a perda da ressalva de população de He 2025 entre o quadro e o texto da 03 (A2) e o relato parcial de Arab 2024 no texto da 03.",
+  "fps-lider-ciencia": "Revisão mais forte do pipeline: achou com texto completo os erros de Tasali, Mostafa, Markwald e Mesas, e nenhum crítico ficou sem correção real no artigo. Falhou na propagação: os achados A3 e A4 da fidelidade foram corrigidos só no artigo, embora slides.json conste como revisado na r2 (A1 e A3 desta banca).",
+  "fps-lider-producao": "Aprovou os slides em uma rodada, só com achados menores, conferindo números contra as etapas e não contra a força da afirmação. O título do slide 22 repete a frase que ele próprio classificou como crítica no artigo cinco minutos depois (A1), e o título do slide 25 é desmentido pelo slide 15 (A4), o que a lição já registrada sobre títulos em sequência deveria ter evitado.",
+  "contestacoes": "Uma contestação no pipeline (artigo-forma r1 A5, limite de páginas): aceita por decisão de escopo do orquestrador (estudo pessoal), sem conflito com evidência. Aceitação adequada."
+ },
+ "pontos_fortes": [
+  "A conclusão tem a força da evidência: o trabalho diz que não é possível afirmar que corrigir o sono emagrece e sustenta isso com o ECR positivo e a metanálise nula lado a lado.",
+  "Rastreabilidade: 34 fontes conferidas pela banca no PubMed (afirmações numéricas do artigo, números dos slides e recomendações), sem nenhum número divergente da fonte; os problemas encontrados são de população, de força da afirmação e de redação.",
+  "Desfechos substitutos separados dos clínicos (grelina, leptina, síntese proteica, massa livre de gordura) e discussão do paradoxo da massa livre de gordura, que é o ponto mais difícil do tema."
+ ],
+ "pendencias_conhecidas": [
+  "Autor é marcador (a preencher).",
+  "Logo oficial da FPS ausente.",
+  "29 slides para 15 min: aceito, material de estudo sem apresentação."
+ ],
+ "escalonado": false,
+ "resumo": "Trabalho sólido e bem calibrado, ainda não pronto: 1 achado crítico e 3 maiores, todos de redação curta e concentrados nos slides 10, 22 e 25 e na metanálise de telas. O título do slide 22 afirma que álcool e telas encurtam o sono, o que os líderes já tinham classificado como crítico no artigo; a metanálise de telas é majoritariamente pediátrica e mede tempo diário, não uso noturno; o slide 10 mantém o relato seletivo de jet lag social já corrigido no artigo; o título do slide 25 contradiz o slide 15 e o Quadro 3. Na amostra independente (34 fontes), nenhum número divergiu. Cinco achados menores foram corrigidos pela banca e os arquivos regenerados. Portão: REVISAR; a rodada 2 só precisa conferir A1 a A4."
+}
