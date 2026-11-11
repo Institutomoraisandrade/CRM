@@ -1,0 +1,1632 @@
+{
+ "config": {
+  "fonte": "Arial",
+  "estilo_citacao": "2023",
+  "autores_referencia": "et_al",
+  "capa": true,
+  "abstract": true,
+  "cidade": "Recife",
+  "formato": "artigo"
+ },
+ "instituicao": "Faculdade Pernambucana de Saúde",
+ "curso": "Curso de Graduação em Educação Física",
+ "titulo": "Mesociclos preparatório e competitivo para basquetebolistas amadores adultos",
+ "subtitulo": "proposta de periodização com FITT-VP",
+ "titulo_en": "Preparatory and competitive mesocycles for adult amateur basketball players: a FITT-VP periodization proposal",
+ "autores": [
+  {
+   "nome": "Nome do autor",
+   "nota": "Graduando(a) em Educação Física pela Faculdade Pernambucana de Saúde (FPS). E-mail: a confirmar."
+  }
+ ],
+ "resumo": "**Objetivo:** propor dois mesociclos de quatro semanas (preparatório e competitivo) de preparação física para basquetebolistas amadores adultos, com prescrição FITT-VP por capacidade. **Método:** revisão narrativa com consulta ao PubMed/MEDLINE, de que resultaram 25 documentos verificados (demandas do jogo, metanálises de pliometria, força, sprints repetidos, HIIT e jogos reduzidos, estudos de microciclo, testes e monitoramento), e prescrição derivada dessas fontes. **Resultados:** o jogo exige sprints curtos, saltos, mudanças de direção e esforço intermitente. As metanálises indicam melhora de salto e de capacidade intermitente com pliometria, força e sprints repetidos, com certeza baixa a moderada; os estudos do período competitivo são observacionais, e não há estudo com amadores adultos. A proposta traz o FITT-VP por capacidade e semana, microciclos com um e com dois jogos, testes nas semanas 0, 4 e 8, monitoramento por percepção subjetiva de esforço e bem-estar e ajuste de carga por semáforo, com regras para sono, estresse e calor. **Conclusão:** as doses são decisões práticas apoiadas em evidência indireta, e os limiares numéricos são convenções que exigem reavaliação local.",
+ "palavras_chave": [
+  "basquetebol",
+  "exercício físico",
+  "treinamento de resistência",
+  "desempenho atlético"
+ ],
+ "abstract": "**Objective:** to propose two four-week mesocycles (preparatory and competitive) of physical preparation for adult amateur basketball players, with FITT-VP prescription by capacity. **Method:** narrative review with a PubMed/MEDLINE search, yielding 25 verified documents (game demands, meta-analyses of plyometrics, strength, repeated sprints, HIIT and small-sided games, microcycle studies, testing and monitoring), and a prescription derived from them. **Results:** the game requires short sprints, jumps, changes of direction and intermittent effort. Meta-analyses indicate improved jumping and intermittent capacity with plyometrics, strength and repeated sprints, with low to moderate certainty; competitive-period studies are observational, and there is no study in adult amateurs. The proposal gives FITT-VP by capacity and week, microcycles with one and two games, tests at weeks 0, 4 and 8, monitoring by rating of perceived exertion and well-being, and a traffic-light load adjustment, with rules for sleep, stress and heat. **Conclusion:** doses are practical decisions supported by indirect evidence, and numerical thresholds are conventions that require local reassessment.",
+ "keywords": [
+  "basketball",
+  "exercise",
+  "resistance training",
+  "athletic performance"
+ ],
+ "secoes": [
+  {
+   "titulo": "Introdução",
+   "blocos": [
+    "O basquete é um esporte coletivo intermitente, jogado em 40 minutos de tempo útil, em que sprints curtos, saltos, desacelerações e mudanças de direção se alternam com deslocamentos de menor intensidade [@stojanovic2018; @petway2020]. A preparação física do atleta amador adulto enfrenta, nesse contexto, um problema de ordem prática: ele treina de três a quatro vezes por semana, em geral sem preparador físico dedicado, e o tempo disputa espaço com a parte técnico-tática. É preciso decidir o que treinar, em que dose, em que dia e como saber se a carga está adequada.",
+    "A organização do treino em ciclos ajuda a responder a essa pergunta. Na pré-temporada, o objetivo é construir força, base de potência, capacidade de repetir sprints e de mudar de direção; na temporada, com um ou dois jogos por semana, o objetivo é manter essas capacidades e chegar ao jogo recuperado. A prescrição de cada capacidade pode ser descrita pelas variáveis do princípio FITT-VP (frequência, intensidade, tempo, tipo, volume e progressão). A literatura de basquete traz efeitos de intervenções isoladas, mas quase nada sobre como combinar as capacidades em um mesociclo ou sobre o período competitivo, e quase nada sobre o atleta amador adulto.",
+    "O objetivo deste trabalho é propor, com base em evidência indireta e em decisões práticas declaradas, dois mesociclos de quatro semanas (preparatório e competitivo) para basquetebolistas amadores adultos, descrevendo o FITT-VP por capacidade e por semana, o microciclo em relação ao jogo, os testes, o monitoramento, o ajuste por semáforo e as regras para sono, estresse e ambiente, e apontando os limites dessa sustentação."
+   ]
+  },
+  {
+   "titulo": "Demandas do basquete",
+   "blocos": [
+    "Uma revisão com 25 estudos descreve o jogo como um esforço de intensidade alta e contínua: 5 a 6 km percorridos, em média acima do limiar de lactato e de 85% da frequência cardíaca máxima (FCmáx), com queda das atividades vigorosas no quarto período [@stojanovic2018]. Os armadores (*guards*) passam mais tempo em sprint e deslocamento de alta intensidade que alas e pivôs; jogadores de nível mais alto realizam mais trabalho intermitente; e homens e mulheres do mesmo nível têm demandas parecidas [@stojanovic2018]. Outra revisão, com 35 estudos, indica que atletas de elite cobrem menos distância e em velocidade média menor, mas dispõem de maior largura de banda para ações de alta velocidade, e que as demandas de aceleração e desaceleração ainda não estão esclarecidas [@petway2020].",
+    "Dessas descrições decorre a escolha das capacidades: força e potência de membros inferiores (saltos e arrancadas), sprints curtos repetidos com frenagem, mudança de direção (*change of direction*, COD) e resistência intermitente. Os dados de demanda vêm de atletas de elite, de sub-elite e de jovens; não foi encontrada descrição das demandas do basquete amador adulto. A tradução para esse público é, portanto, uma inferência, e a PSE (percepção subjetiva de esforço) do jogo amador é desconhecida."
+   ]
+  },
+  {
+   "titulo": "Método",
+   "blocos": [
+    "Trata-se de revisão narrativa, conduzida em novembro de 2026 em modo de entrega rápida, com consulta ao PubMed/MEDLINE. A pergunta orientadora foi: em basquetebolistas adultos, amadores, que treinam de três a quatro vezes por semana (população), como organizar força, potência, sprints repetidos e condicionamento intermitente e mudança de direção (intervenção) em um mesociclo preparatório e em um competitivo (contexto), com desfechos de salto, sprint, COD, capacidade intermitente e tolerância à carga? Foram reunidos 25 documentos, todos com identificador do PubMed conferido: 16 novos, verificados nesta execução, e 9 reutilizados de um trabalho anterior sobre handebol, dos quais 5 tiveram o resumo relido agora (@thurlow2024, @thurlow2023, @craven2022, @silbernagel2007 e @racinais2015) e 4 vêm do trabalho anterior sem releitura (@foster2001, @glaister2008, @saw2016 e @vandyk2019).",
+    "Apenas os resumos foram lidos; os números apresentados vêm deles. Não foram consultadas a Cochrane Library, a BVS/LILACS nem páginas de sociedades científicas, e não se aplicaram formalmente instrumentos como AMSTAR 2, RoB 2 ou GRADE; a certeza indicada no Quadro 1 é um julgamento qualitativo a partir dos resumos, e o quadro de evidências estruturado não foi gerado. Quatro estratégias de busca por ensaios de força e potência em período competitivo de basquete e por revisões de manutenção de força na temporada não retornaram resultado. A prescrição foi construída sobre as fontes, e cada número sem fonte é declarado como decisão prática ou convenção dos autores."
+   ]
+  },
+  {
+   "titulo": "Evidências",
+   "subsecoes": [
+    {
+     "titulo": "Força, potência e pliometria",
+     "blocos": [
+      "Toda a evidência reunida é indireta: nenhum estudo avaliou basquetebolistas amadores adultos, e as fontes vêm de jovens, universitários, elite, mulheres ou outros esportes coletivos (Quadro 1). Dentro desse limite, o padrão é consistente na direção. A pliometria isolada melhora o salto de basquetebolistas, mas transfere pouco para o sprint de 20 m [@liu2026], e o treino complexo, que combina força e pliometria, supera controles ativos em salto vertical e em velocidade de COD [@kambitta2025]. A força unilateral levou vantagem apenas nos testes unipodais e no V-cut, sem diferença nos desfechos bilaterais e no sprint [@zhang2026uni]; por isso, a escolha entre exercício uni e bilateral é de especificidade, não de superioridade geral.",
+      {
+       "tipo": "quadro",
+       "titulo": "Síntese da evidência por capacidade em basquetebolistas e esportes coletivos",
+       "colunas": [
+        "Fonte",
+        "Desenho e população",
+        "Achado principal",
+        "Certeza (qualitativa)"
+       ],
+       "linhas": [
+        [
+         "@liu2026",
+         "Metanálise, 17 estudos, 444 basquetebolistas (ensaios randomizados e quase-experimentais); pliometria",
+         "Salto com contramovimento (CMJ) g = 0,77 (IC 95% 0,42–1,11); salto agachado (SJ) g = 0,86 (0,52–1,20); sprint de 20 m g = −0,39 (−0,72 a −0,05), transferência pequena; a duração do programa não mudou o efeito no CMJ",
+         "Moderada-baixa (I² = 67,6% no CMJ)"
+        ],
+        [
+         "@cao2024plio",
+         "Revisão (10 estudos) e metanálise (8), 246 jogadoras de 14,5–22,5 anos; pliometria",
+         "Programas de 4–8 semanas, 2–3 sessões/semana, 20–90 min, 29–190 saltos por sessão; CMJ ES = 0,37 (pequeno), resultados mistos",
+         "Baixa (risco de viés preocupante na maioria)"
+        ],
+        [
+         "@zhou2024",
+         "Metanálise, 24 estudos, 738 basquetebolistas de 5 a 17,99 anos",
+         "Melhora de salto, sprint linear, COD e equilíbrio, sem efeito na força de membros inferiores; alta frequência (> 2×/sem) com baixo volume (≤ 150 saltos/sem) e um só tipo de salto melhorou só o salto; baixa frequência (1–2×/sem) com alto volume (> 150 saltos/sem) e saltos variados melhorou salto, sprint, COD e equilíbrio",
+         "Baixa-moderada; população de crianças e adolescentes"
+        ],
+        [
+         "@kambitta2025",
+         "Metanálise, 7 ensaios; treino complexo (força + pliometria)",
+         "Contra controles ativos: velocidade de COD SMD −1,04 (−1,61 a −0,47); salto vertical SMD 1,01 (0,46–1,56)",
+         "Baixa-moderada"
+        ],
+        [
+         "@zhang2026uni",
+         "Metanálise, 9 ensaios, 163 homens; força unilateral × bilateral",
+         "Unilateral superior no CMJ unipodal (DMP 0,64 cm; 0,27–1,00) e no V-cut (−0,12 s; −0,23 a −0,01); sem diferença no CMJ bilateral, no índice de força reativa e no sprint de 5/20 m; 505 inconclusivo (I² = 95%)",
+         "Baixa-moderada"
+        ],
+        [
+         "@zhang2023vbrt",
+         "Ensaio, 18 jogadoras universitárias; agachamento",
+         "6 semanas, 2 sessões/semana, periodização linear de 65% a 95% de 1RM; melhoras diferentes por desfecho conforme a velocidade",
+         "Baixa (n = 18)"
+        ],
+        [
+         "@kang2022",
+         "Metanálise, 7 estudos, jogadores treinados de esportes coletivos; treino combinado × isolado",
+         "Força máxima de membros inferiores: diferença média 4,20 kg (0,71–7,68) a favor do combinado; potência sem diferença",
+         "Baixa (7 estudos)"
+        ],
+        [
+         "@cao2025hiit",
+         "Revisão (15 estudos, 369 jogadores) e metanálise (7); HIIT",
+         "Yo-Yo IR1 ES 2,32; VO2 0,90; T-test 0,91; CMJ 0,76; sprint de 20 m 0,59; efeitos inconsistentes em outros testes; sugerem HIIT na pré-temporada ou fora de temporada",
+         "Baixa-moderada"
+        ],
+        [
+         "@zhang2025ssg",
+         "Metanálise, 10 estudos, 253 basquetebolistas; jogos reduzidos",
+         "Sem diferença em aeróbio e COD frente ao treino sem jogo; melhor em desempenho explosivo de membros inferiores (SMD 0,51; 0,20–0,82)",
+         "Baixa-moderada"
+        ],
+        [
+         "@thurlow2024",
+         "Metanálise, 40 estudos, 541 atletas e 213 controles de 14 a 35 anos; sprints repetidos",
+         "Decremento de RSA g −0,61; RSA médio g −0,34; Yo-Yo IR1 g 0,61; sprint de 10 m g −0,35 e de 20 m g −0,48; CMJ g 0,26; COD g −0,32. Referência: 3 séries × 6 × 30 m, 2×/semana, 6 semanas. Aumentar frequência, semanas, volume, repetições, séries ou distância não trouxe benefício adicional (efeitos não substanciais ou compatíveis com piora em ao menos um desfecho)",
+         "Moderada para o treino funcionar; baixa para manipular a dose"
+        ],
+        [
+         "@thurlow2023",
+         "Metanálise, 176 estudos, ≥ 16 anos; resposta aguda a sprints repetidos",
+         "PSE da sessão 6,5 ± 0,5; decremento de sprint (Sdec%) 5,0 ± 0,3%; +10 s de pausa: Sdec% −1,4 ± 0,4% e lactato −1,1 mmol/L; +10 m por repetição: Sdec% +1,7% e lactato +2,7; para mitigar a fadiga, 15–25 m e pausa passiva ≥ 30 s",
+         "Moderada (descritiva)"
+        ]
+       ],
+       "fonte": "Elaborado pelos autores com base nas fontes citadas na primeira coluna.",
+       "larguras_cm": [
+        2.3,
+        3.9,
+        7.3,
+        2.5
+       ],
+       "nota": "RSA: capacidade de sprints repetidos (*repeated-sprint ability*). SMD: diferença média padronizada; ES: tamanho de efeito; g: g de Hedges; DMP: diferença média ponderada. Intervalos entre parênteses são IC 95% quando indicados no resumo."
+      },
+      "A pergunta de dose tem resposta mais fraca. A faixa de saltos por sessão e de duração do programa vem de jogadoras jovens, com risco de viés preocupante na maioria dos estudos [@cao2024plio], e o único ensaio sobre a carga relativa de agachamento tem 18 participantes [@zhang2023vbrt]. Em basquetebolistas de 5 a 17 anos, a combinação de frequência, volume e variedade de saltos alterou quais desfechos melhoraram [@zhou2024], mas a população impede usar o corte como meta para adultos. Quanto à interferência, a metanálise de jogadores treinados de esportes coletivos não encontrou prejuízo da força máxima nem da potência com o treino combinado, e concluiu que regimes bem planejados não interferem [@kang2022]; a certeza é baixa, com apenas sete estudos."
+     ]
+    },
+    {
+     "titulo": "Sprints repetidos, HIIT e jogos reduzidos",
+     "blocos": [
+      "O treino de sprints repetidos (*repeated-sprint training*, RST) é a evidência de melhor certeza do conjunto, e aqui há uma tensão que a prescrição precisa respeitar: a metanálise indica que o RST funciona (certeza moderada) mas não sustenta que mudar frequência, volume ou distância altere o efeito (certeza baixa) [@thurlow2024]. A resposta aguda, por sua vez, é previsível o bastante para orientar o ajuste fino da sessão, já que a pausa e a distância mudam o Sdec% e o lactato de modo mensurável [@thurlow2023]. O dado de dose do resumo tem ainda uma inconsistência: ele cita 1.200 m semanais para 3 séries de 6 × 30 m duas vezes por semana, enquanto a conta direta dá 1.080 m (3 × 6 × 30 × 2). O número de 1.200 m não é usado como meta; 1.080 m serve só como ordem de grandeza.",
+      "No basquete, o HIIT melhorou o Yo-Yo IR1, o consumo de oxigênio, o T-test e o CMJ, mas com resultados inconsistentes nos demais testes e poucos estudos, e os autores sugerem seu uso na pré-temporada ou fora de temporada [@cao2025hiit]. Os jogos reduzidos igualaram o treino sem jogo nos desfechos aeróbios e de COD e foram superiores no desempenho explosivo de membros inferiores [@zhang2025ssg]. Os dois resultados sustentam, de modo indireto, combinar sprints repetidos e jogos reduzidos no preparatório e deixar o jogo como principal estímulo de condicionamento no competitivo."
+     ]
+    },
+    {
+     "titulo": "Periodização, microciclo e carga",
+     "blocos": [
+      "As evidências sobre o período competitivo são todas observacionais. Em universitários masculinos (n = 18; 804 sessões em 2 meses), a maior carga externa e a maior PSE ocorreram de 5 a 6 dias antes dos jogos oficiais, e na semana 2 do mesociclo, a quatro semanas da competição, a carga e a PSE subiram e a recuperação (TQR) caiu [@zhang2026micro]. Em profissionais (8 jogadores; 200 sessões), a PSE da sessão correlacionou-se com a carga baseada na frequência cardíaca (r = 0,69–0,85), e os treinadores reduziram espontaneamente a carga nas semanas competitivas, com um ou dois jogos [@manzi2010]. Em profissionais espanhóis, o bem-estar ficou estável em semanas sem jogo, com um jogo e com dois ou mais, enquanto a PSE da sessão variou com a proximidade do jogo [@molina2025]. Em universitários acompanhados por um ano (n = 10, sem grupo controle), o CMJ subiu após a fase preparatória e se manteve até o fim da temporada, o sprint de 20 m não mudou e a carga mensal caiu da fora de temporada para a pré-temporada e a pré-competição [@chiang2025].",
+      "Essas fontes descrevem o que equipes fazem e como os atletas respondem, não o que produz melhor resultado. Não foi encontrado ensaio randomizado de força ou potência em período competitivo de basquete, nem revisão sobre manutenção de força na temporada; o volume do mesociclo competitivo é, portanto, decisão prática."
+     ]
+    },
+    {
+     "titulo": "Testes, monitoramento e segurança",
+     "blocos": [
+      "Em 40 basquetebolistas (20 profissionais e 20 semiprofissionais), o Yo-Yo IR1, o CMJ, o SJ, o salto em profundidade, o sprint de 20 m e testes de sprints repetidos planejado e reativo diferenciaram os níveis; o teste reativo foi confiável (coeficiente de correlação intraclasse > 0,80 na maioria das variáveis) e os profissionais foram melhores em todos os testes físicos [@brini2021]. Entre oito fórmulas, o Sdec% foi o método mais válido e confiável em 12 × 30 m [@glaister2008]. A PSE da sessão é válida para exercício intermitente de alta intensidade [@foster2001], e as medidas subjetivas refletiram a resposta ao treino com mais sensibilidade que as objetivas [@saw2016]. Os dois últimos resumos não foram relidos nesta execução.",
+      "Quanto à segurança, a inclusão do exercício nórdico em programas de prevenção reduziu as lesões de isquiotibiais (RR 0,49; IC 95% 0,32–0,74; 15 estudos, 8.459 atletas) [@vandyk2019]. O modelo de monitoramento da dor, no qual continuar correndo e saltando com a dor monitorada não piorou o desfecho, foi testado em tendinopatia de Aquiles (ensaio, n = 38), e o resumo não traz limiares numéricos [@silbernagel2007]. Dormir 6 h ou menos em 24 h reduziu o desempenho em média −7,56% (IC 95% −11,9 a −3,13; 69 publicações; 89% homens), cerca de −0,4% por hora acordado antes do exercício, com efeito mais claro nas tarefas da tarde e da noite [@craven2022]. Em ambiente quente, o consenso é aclimatizar com exposições repetidas ao longo de 1 a 2 semanas e começar euidratado [@racinais2015]. Não foi encontrada fonte para prevenção de entorse de tornozelo no basquete, para limiar de CMJ que indique fadiga ou para dose de manutenção de força."
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "Proposta de mesociclos preparatório e competitivo",
+   "subsecoes": [
+    {
+     "titulo": "Premissas e convenções",
+     "blocos": [
+      "A proposta destina-se a basquetebolistas amadores adultos de 18 a 40 anos, saudáveis, com triagem de saúde prévia (boa prática, sem fonte), em ginásio com quadra e sala de musculação. O preparatório prevê quatro treinos por semana, e o competitivo, três treinos mais um jogo ou dois treinos mais dois jogos. Diagnóstico, tratamento e liberação após lesão pertencem à equipe de saúde; ao profissional de Educação Física cabem prescrever, executar, monitorar e testar.",
+      "Cada mesociclo tem quatro semanas, três de carga e uma de descarga com testes (decisão prática): o preparatório compreende as semanas P1 a P4, e o competitivo, C1 a C4, com jogo no sábado (um jogo por semana) ou na quarta e no sábado (dois jogos). As convenções numéricas dos autores, sem fonte, são: (1) a conversão de repetições em reserva (*repetitions in reserve*, RIR) em %1RM aproximado, com repetições feitas mais RIR iguais às repetições máximas, pela relação de Epley (%1RM ≈ 30 ÷ [30 + repetições máximas]); (2) aumento semanal do volume de sprint e COD e dos contatos de salto ≤ 35% e da carga total de treino ≤ 20%; (3) descarga de −40% a −70% do volume, com a intensidade levemente reduzida (RIR 4–5); e (4) tempos estimados por sprint em amadores, que devem ser recalculados com os tempos da semana 0: 10 m = 2,2 s; 20 m = 3,5 s; 5-10-5 = 5,0 s; deslocamento defensivo de 12 m = 4,0 s; 28 m com giro de 180° = 6,5 s. A carga de treino em unidades arbitrárias (UA) é a PSE da sessão (escala CR-10) multiplicada pela duração em minutos [@foster2001]; a dor é medida pela escala numérica de 0 a 10 (NPRS).",
+      "A conta de dose apoia-se em poucas faixas de resumos (Seção 4): 3 × 6 × 30 m, duas vezes por semana, por 6 semanas, para sprints repetidos [@thurlow2024]; 29 a 190 saltos por sessão, 2–3 sessões por semana, por 4–8 semanas, para pliometria [@cao2024plio]; e 65% a 95% de 1RM, duas vezes por semana, por 6 semanas, para força [@zhang2023vbrt]. Todo o restante (séries por grupo muscular, contatos, metros) é decisão prática, declarada em cada quadro. Por causa da interferência discutida na Seção 4.1, a força e o sprint/COD ficam em dias separados e, na sessão de força, a pliometria vem antes das séries pesadas; a ordem é decisão prática, sem fonte."
+     ]
+    },
+    {
+     "titulo": "Quadro comparativo dos mesociclos",
+     "blocos": [
+      "O Quadro 2 resume o que muda do preparatório para o competitivo. A lógica é inverter a relação entre volume e intensidade: o volume cai e a intensidade da força sobe, porque o jogo passa a ser o principal estímulo de condicionamento. Pela soma da Tabela 5, a razão entre a carga competitiva e a preparatória, ambas sem contar o jogo, é de 54% na semana de pico (1.226 ÷ 2.275 UA). Essa redução é decisão prática: os treinadores profissionais reduziram a carga nas semanas competitivas [@manzi2010], mas não há dose-alvo na fonte.",
+      {
+       "tipo": "quadro",
+       "titulo": "Comparação entre os mesociclos preparatório e competitivo",
+       "colunas": [
+        "Item",
+        "Preparatório (P1–P4)",
+        "Competitivo (C1–C4)"
+       ],
+       "linhas": [
+        [
+         "Objetivo",
+         "Construir força, base de potência, sprints repetidos e COD",
+         "Manter força e potência, afiar velocidade/COD, **chegar fresco ao jogo**"
+        ],
+        [
+         "Treinos/semana",
+         "4 (2 quadra + 2 força/potência)",
+         "3 treinos + 1 jogo (ou 2 treinos + 2 jogos)"
+        ],
+        [
+         "Posição do jogo",
+         "Sem jogo oficial",
+         "Jogo no sábado = MD; com 2 jogos: quarta e sábado"
+        ],
+        [
+         "Força: F · I · V",
+         "2×/sem (ter e qui) · RIR 3 → 1–2, ~73% → 82% de 1RM · **36 → 41 → 45 séries/sem**, descarga 17",
+         "1×/sem (seg; 2 jogos: curta) · RIR 2–3, ~80% → 85% de 1RM · **17 → 20 → 20 séries/sem**; 2 jogos: 10"
+        ],
+        [
+         "Potência/pliometria: contatos/sem",
+         "**120 → 146 → 168**, descarga 50",
+         "**60 → 68 → 84**, teste 8; 2 jogos: 22"
+        ],
+        [
+         "Sprints repetidos/condicionamento",
+         "RSA 1×/sem (300 → 360 → 360 m) + jogos reduzidos 1×/sem (16 → 20 → 24 min de trabalho)",
+         "RSA 1×/sem em MD-3 (240 → 300 → 360 m); sem HIIT extra (o jogo é o estímulo); 2 jogos: sem RSA"
+        ],
+        [
+         "m de sprint linear/sem",
+         "360 → 450 → 480; descarga 200",
+         "280 → 340 → 400; teste 230"
+        ],
+        [
+         "m de COD/sem",
+         "384 → 512 → 560; descarga 160",
+         "384 (C1–C3); teste 160"
+        ],
+        [
+         "Carga de treino (UA/sem), sem contar jogo",
+         "1.779 → 2.065 → 2.275; descarga 1.299",
+         "963 → 1.119 → 1.226; teste 870; 2 jogos: 256"
+        ],
+        [
+         "Descarga e testes",
+         "S4: teste 1 (qui) e teste 2 (sáb)",
+         "S8: teste 1 (seg) e teste 2 (qua, só se o jogo for ≥ 72 h depois)"
+        ],
+        [
+         "Fonte da lógica",
+         "HIIT recomendado na pré-temporada ou fora de temporada [@cao2025hiit]; CMJ subiu após a fase preparatória e se manteve na temporada [@chiang2025]",
+         "Carga alta longe do jogo e *tapering* com 1 ou 2 jogos [@zhang2026micro; @manzi2010; @molina2025]"
+        ]
+       ],
+       "fonte": "Elaborado pelos autores com base em @cao2025hiit, @chiang2025, @zhang2026micro, @manzi2010 e @molina2025.",
+       "larguras_cm": [
+        2.7,
+        6.3,
+        7.0
+       ],
+       "nota": "MD: dia do jogo (*match day*); MD-3: três dias antes. UA: unidades arbitrárias (PSE × minutos); a carga competitiva não inclui o jogo."
+      }
+     ]
+    },
+    {
+     "titulo": "Força",
+     "blocos": [
+      "A força sustenta o salto, o sprint e a COD em basquetebolistas [@kambitta2025; @zhang2026uni]. Frequência de duas vezes por semana e faixa de 65% a 95% de 1RM vêm de ensaio com jogadoras universitárias [@zhang2023vbrt]. O exercício unilateral (búlgaro, *step-up*) entra pela vantagem nos testes unipodais e no V-cut [@zhang2026uni], e o nórdico, pela redução de lesões de isquiotibiais (Seção 4.4) [@vandyk2019]; a dose do nórdico não consta no resumo e é decisão prática. O Quadro 3 traz o FITT-VP; os Quadros 4 e 5 trazem as séries e repetições por exercício e semana, e a Tabela 1 traz a conta de séries por grupo muscular, sem fonte e portanto decisão prática. Em P4, a ausência da sessão F2 (dia de teste) explica a queda de −62% das séries.",
+      {
+       "tipo": "quadro",
+       "titulo": "Força: prescrição FITT-VP nos dois mesociclos",
+       "colunas": [
+        "FITT-VP",
+        "Preparatório",
+        "Competitivo"
+       ],
+       "linhas": [
+        [
+         "F",
+         "2×/sem: F1 (terça) e F2 (quinta), 72 h entre elas e ≥ 24 h depois do sprint de segunda",
+         "1×/sem (T1, segunda, MD+2); com 2 jogos, 1 sessão curta em MD-2 do jogo de quarta"
+        ],
+        [
+         "I",
+         "Agachamento e supino: ~73% (P1), ~78% (P2), ~82% (P3), ~75% (P4) de 1RM; demais por RIR 3 → 2–3 → 2 → 4",
+         "Agachamento ~80% (C1), ~82% (C2), ~85% (C3); supino ~78%, ~80%, ~82%; demais RIR 2–3; 2 jogos: RIR ≥ 3"
+        ],
+        [
+         "T",
+         "F1 62–80 min e F2 63–74 min (com salto)",
+         "T1 58–70 min (com salto); 2 jogos: 32 min"
+        ],
+        [
+         "Tipo",
+         "Agachamento, terra romeno, búlgaro, supino, remada, nórdico, step-up, hip thrust, desenvolvimento, puxada, panturrilha, core antirrotação/anti-extensão",
+         "Mesmos exercícios do F1, sem F2"
+        ],
+        [
+         "V",
+         "36 → 41 → 45 séries/sem; descarga 17",
+         "17 → 20 → 20 séries/sem; 2 jogos 10"
+        ],
+        [
+         "P",
+         "Dupla progressão: se todas as séries saírem nas repetições-alvo com RIR real ≥ alvo, +2,5–5% de carga na sessão seguinte; se RIR real < alvo − 1 em 2 séries, −5%. A cada semana a prescrição já sobe (tabela abaixo).",
+         "Intensidade sobe e volume cai: manutenção da carga alta com menos séries (decisão prática; sem fonte de manutenção encontrada)"
+        ]
+       ],
+       "fonte": "Elaborado pelos autores com base em @zhang2023vbrt, @zhang2026uni, @kambitta2025 e @vandyk2019.",
+       "larguras_cm": [
+        1.6,
+        7.2,
+        7.2
+       ],
+       "nota": "RIR: repetições em reserva. Progressão do preparatório por dupla progressão; os percentuais derivam da convenção de Epley."
+      },
+      {
+       "tipo": "quadro",
+       "titulo": "Força no preparatório: séries × repetições por exercício e semana",
+       "colunas": [
+        "Exercício",
+        "P1",
+        "P2",
+        "P3",
+        "P4 (desc.)"
+       ],
+       "linhas": [
+        [
+         "**F1 (ter)**",
+         "",
+         "",
+         "",
+         ""
+        ],
+        [
+         "Agachamento (costas, frontal ou barra hexagonal)",
+         "3 × 8 (~73%, RIR 3)",
+         "4 × 6 (~78%, RIR 2–3)",
+         "4 × 5 (~82%, RIR 1–2)",
+         "3 × 5 (~75%, RIR 4–5)"
+        ],
+        [
+         "Levantamento terra romeno",
+         "3 × 8 (RIR 3)",
+         "3 × 8 (RIR 2–3)",
+         "3 × 6 (RIR 2)",
+         "2 × 6 (RIR 4)"
+        ],
+        [
+         "Agachamento búlgaro (por perna)",
+         "3 × 8 (RIR 3)",
+         "3 × 8 (RIR 2–3)",
+         "3 × 8 (RIR 2)",
+         "2 × 8 (RIR 4)"
+        ],
+        [
+         "Supino (barra ou halteres)",
+         "3 × 8 (~73%, RIR 3)",
+         "4 × 6 (~78%, RIR 2–3)",
+         "4 × 5 (~82%, RIR 1–2)",
+         "3 × 5 (~75%, RIR 4–5)"
+        ],
+        [
+         "Remada curvada",
+         "3 × 8 (RIR 3)",
+         "4 × 8 (RIR 2–3)",
+         "4 × 6 (RIR 2)",
+         "3 × 6 (RIR 4)"
+        ],
+        [
+         "Nórdico (isquiotibiais)",
+         "2 × 4",
+         "3 × 5",
+         "3 × 6",
+         "2 × 4"
+        ],
+        [
+         "Prancha com carga / Pallof",
+         "2 × 30 s",
+         "3 × 30 s",
+         "3 × 40 s",
+         "2 × 30 s"
+        ],
+        [
+         "**F2 (qui)**",
+         "",
+         "",
+         "",
+         ""
+        ],
+        [
+         "Step-up alto com halteres (por perna)",
+         "3 × 8 (RIR 3)",
+         "3 × 8 (RIR 2–3)",
+         "4 × 6 (RIR 2)",
+         "não faz (teste 1)"
+        ],
+        [
+         "Hip thrust",
+         "3 × 8 (RIR 3)",
+         "3 × 8 (RIR 2–3)",
+         "4 × 6 (RIR 2)",
+         "não faz"
+        ],
+        [
+         "Desenvolvimento com halteres",
+         "3 × 8 (RIR 3)",
+         "3 × 8 (RIR 2–3)",
+         "3 × 6 (RIR 2)",
+         "não faz"
+        ],
+        [
+         "Puxada alta / barra fixa",
+         "3 × 8 (RIR 3)",
+         "3 × 8 (RIR 2–3)",
+         "3 × 6 (RIR 2)",
+         "não faz"
+        ],
+        [
+         "Elevação de panturrilha (joelho estendido e flexionado)",
+         "3 × 12",
+         "3 × 12",
+         "4 × 10",
+         "não faz"
+        ],
+        [
+         "Dead bug / anti-extensão",
+         "2 × 10",
+         "2 × 10",
+         "3 × 10",
+         "não faz"
+        ]
+       ],
+       "fonte": "Elaborado pelos autores; doses por decisão prática.",
+       "larguras_cm": [
+        5.0,
+        2.8,
+        2.8,
+        2.8,
+        2.6
+       ],
+       "nota": "F1 é a sessão de terça e F2, a de quinta. RIR: repetições em reserva; entre parênteses, %1RM aproximado."
+      },
+      {
+       "tipo": "quadro",
+       "titulo": "Força no competitivo: sessão T1 (segunda) por exercício e semana",
+       "colunas": [
+        "Exercício (T1, segunda)",
+        "C1",
+        "C2",
+        "C3",
+        "C4 (teste)"
+       ],
+       "linhas": [
+        [
+         "Agachamento (costas, frontal ou barra hexagonal)",
+         "3 × 5 (~80%, RIR 2–3)",
+         "3 × 4 (~82%, RIR 2–3)",
+         "3 × 3 (~85%, RIR 2–3)",
+         "teste de 5RM"
+        ],
+        [
+         "Levantamento terra romeno",
+         "2 × 6 (RIR 3)",
+         "2 × 6 (RIR 2–3)",
+         "2 × 5 (RIR 2–3)",
+         "não faz"
+        ],
+        [
+         "Agachamento búlgaro (por perna)",
+         "2 × 6 (RIR 3)",
+         "3 × 6 (RIR 2–3)",
+         "3 × 5 (RIR 2–3)",
+         "não faz"
+        ],
+        [
+         "Supino",
+         "2 × 6 (~78%, RIR 2–3)",
+         "3 × 5 (~80%, RIR 2–3)",
+         "3 × 4 (~82%, RIR 2–3)",
+         "teste de 5RM"
+        ],
+        [
+         "Remada curvada",
+         "2 × 8 (RIR 3)",
+         "3 × 6 (RIR 2–3)",
+         "3 × 6 (RIR 2–3)",
+         "não faz"
+        ],
+        [
+         "Nórdico",
+         "2 × 4",
+         "2 × 5",
+         "2 × 5",
+         "não faz"
+        ],
+        [
+         "Elevação de panturrilha",
+         "2 × 10",
+         "2 × 10",
+         "2 × 8",
+         "não faz"
+        ],
+        [
+         "Prancha com carga / Pallof",
+         "2 × 30 s",
+         "2 × 30 s",
+         "2 × 30 s",
+         "não faz"
+        ]
+       ],
+       "fonte": "Elaborado pelos autores; doses por decisão prática.",
+       "larguras_cm": [
+        5.0,
+        2.8,
+        2.8,
+        2.8,
+        2.6
+       ]
+      },
+      {
+       "tipo": "tabela",
+       "titulo": "Séries por grupo muscular e semana",
+       "colunas": [
+        "Grupo",
+        "P1",
+        "P2",
+        "P3",
+        "P4 (desc.)",
+        "C1",
+        "C2",
+        "C3",
+        "C4 (teste)",
+        "2 jogos"
+       ],
+       "linhas": [
+        [
+         "Quadríceps/glúteos (dominante de joelho)",
+         "9",
+         "10",
+         "11",
+         "5",
+         "5",
+         "6",
+         "6",
+         "0",
+         "2"
+        ],
+        [
+         "Isquiotibiais/glúteos (dominante de quadril)",
+         "8",
+         "9",
+         "10",
+         "4",
+         "4",
+         "4",
+         "4",
+         "0",
+         "2"
+        ],
+        [
+         "Empurrar (peitoral, ombro, tríceps)",
+         "6",
+         "7",
+         "7",
+         "3",
+         "2",
+         "3",
+         "3",
+         "0",
+         "2"
+        ],
+        [
+         "Puxar (dorsais, bíceps)",
+         "6",
+         "7",
+         "7",
+         "3",
+         "2",
+         "3",
+         "3",
+         "0",
+         "2"
+        ],
+        [
+         "Panturrilha",
+         "3",
+         "3",
+         "4",
+         "0",
+         "2",
+         "2",
+         "2",
+         "0",
+         "2"
+        ],
+        [
+         "Core",
+         "4",
+         "5",
+         "6",
+         "2",
+         "2",
+         "2",
+         "2",
+         "0",
+         "0"
+        ],
+        [
+         "**Total de séries/semana**",
+         "**36**",
+         "**41**",
+         "**45**",
+         "**17**",
+         "**17**",
+         "**20**",
+         "**20**",
+         "**0**",
+         "**10**"
+        ]
+       ],
+       "fonte": "Elaborada pelos autores; doses por decisão prática.",
+       "nota": "Séries por perna contam como 1 série. Exemplo de P3: joelho = agachamento 4 + búlgaro 3 + step-up 4 = 11; quadril = terra romeno 3 + hip thrust 4 + nórdico 3 = 10; total = 45. A razão C3 ÷ P3 é 20 ÷ 45 = 44% das séries."
+      }
+     ]
+    },
+    {
+     "titulo": "Potência e pliometria",
+     "blocos": [
+      "A pliometria isolada aumenta o salto com transferência pequena ao sprint [@liu2026], e o treino complexo melhora salto e COD [@kambitta2025]. Os valores de 48 a 86 contatos nas sessões principais ficam dentro da faixa de 29 a 190 saltos por sessão encontrada em jogadoras jovens [@cao2024plio]. Contam como contato as aterrissagens com impulso, por perna nos exercícios unilaterais; os saltos do jogo e do treino tático não entram na conta. O corte de 150 saltos por semana, descrito em crianças e adolescentes [@zhou2024], não é usado como meta; o preparatório tem 120 a 168 contatos por semana, em duas sessões e com saltos variados, perto do corte, mas em adultos. O Quadro 6 traz o FITT-VP e a Tabela 2, o total semanal.",
+      {
+       "tipo": "quadro",
+       "titulo": "Potência e pliometria: prescrição FITT-VP nos dois mesociclos",
+       "colunas": [
+        "FITT-VP",
+        "Preparatório",
+        "Competitivo"
+       ],
+       "linhas": [
+        [
+         "F",
+         "2×/sem, dentro de F1 (vertical) e F2 (horizontal/lateral/unilateral)",
+         "1×/sem em T1 + 1 microdose em T3 (MD-2); 2 jogos: CMJ em 2 dias"
+        ],
+        [
+         "I",
+         "Esforço máximo (altura ou distância máxima), aterrissagem silenciosa e controlada; interrompe a série se a altura do CMJ cair > 10% em relação à melhor repetição (decisão prática)",
+         "Idem; salto em profundidade só a partir de C2, queda de 30 cm"
+        ],
+        [
+         "T",
+         "14–22 min por sessão (1,5 min por série)",
+         "T1: 14–20 min; T3: 4 min"
+        ],
+        [
+         "Tipo",
+         "CMJ, saltitos de tornozelo (pogo), salto na caixa com aterrissagem suave, salto em profundidade, salto horizontal, salto lateral (skater), *hop-and-stick* unipodal",
+         "CMJ, salto na caixa, salto em profundidade, *hop-and-stick*, skater"
+        ],
+        [
+         "V",
+         "120 → 146 → 168 contatos/sem; P4 50",
+         "60 → 68 → 84; C4 8; 2 jogos 22"
+        ],
+        [
+         "P",
+         "+≤ 35% de contatos por semana (convenção do grupo; real: +22% e +15%); salto em profundidade só depois da semana 1",
+         "Volume cai (84 ÷ 168 = 50% do pico preparatório) e a qualidade sobe"
+        ]
+       ],
+       "fonte": "Elaborado pelos autores com base em @liu2026, @kambitta2025, @cao2024plio e @zhou2024.",
+       "larguras_cm": [
+        1.6,
+        7.2,
+        7.2
+       ],
+       "nota": "CMJ: salto com contramovimento. Salto em profundidade: queda de 30 cm. Os limites de contatos por semana (convenção de ≤ 35%) e o corte de queda do CMJ de 10% são decisões práticas."
+      },
+      {
+       "tipo": "tabela",
+       "titulo": "Contatos de salto por semana e sessão",
+       "colunas": [
+        "Semana",
+        "Sessão com salto (contatos)",
+        "Contatos/semana",
+        "Variação"
+       ],
+       "linhas": [
+        [
+         "P1",
+         "F1 ter 60; F2 qui 60",
+         "**120**",
+         "–"
+        ],
+        [
+         "P2",
+         "F1 ter 77; F2 qui 69",
+         "**146**",
+         "+22%"
+        ],
+        [
+         "P3",
+         "F1 ter 86; F2 qui 82",
+         "**168**",
+         "+15%"
+        ],
+        [
+         "P4",
+         "F1 ter 50; F2 qui 0",
+         "**50**",
+         "−70%"
+        ],
+        [
+         "C1",
+         "T1 seg 48; T3 qui 12",
+         "**60**",
+         "+20%"
+        ],
+        [
+         "C2",
+         "T1 seg 56; T3 qui 12",
+         "**68**",
+         "+13%"
+        ],
+        [
+         "C3",
+         "T1 seg 72; T3 qui 12",
+         "**84**",
+         "+24%"
+        ],
+        [
+         "C4",
+         "T1 seg 0; T3 qui 8",
+         "**8**",
+         "−90%"
+        ],
+        [
+         "2 jogos",
+         "Seg 10; Qui 12",
+         "**22**",
+         "–"
+        ]
+       ],
+       "fonte": "Elaborada pelos autores; contatos = séries × repetições, × 2 nos exercícios unilaterais.",
+       "nota": "Exemplo de P1, sessão F1: CMJ 3×5 = 15; saltitos de tornozelo (*pogo*) 3×10 = 30; salto na caixa 3×5 = 15; total 60. Exemplo de P3, sessão F1: CMJ 5×5 = 25; salto em profundidade 4×4 = 16; salto na caixa 3×5 = 15; *pogo* 3×10 = 30; total 86."
+      }
+     ]
+    },
+    {
+     "titulo": "Sprints repetidos e condicionamento intermitente",
+     "blocos": [
+      "O RST melhora RSA, Yo-Yo IR1, sprints e COD, mas a metanálise não sustenta mexer na dose [@thurlow2024]; por isso a dose é conservadora e a progressão ocorre por critérios. A resposta aguda (PSE 6,5 ± 0,5; Sdec% 5,0 ± 0,3%) e o efeito de 10 s a mais de pausa orientam o ajuste [@thurlow2023]. A fonte sugere 15 a 25 m e pausa passiva de 30 s ou mais para mitigar a fadiga; a prescrição usa 20 m e pausa de 25 a 30 s. No preparatório, o condicionamento combina RSA (uma vez por semana) e jogos reduzidos de 4 contra 4 ou 5 contra 5 em meia quadra, em blocos de 4 min com 2 min de pausa (uma vez por semana), por causa dos resultados de HIIT e jogos reduzidos [@cao2025hiit; @zhang2025ssg]. A referência de 85% da FCmáx, quando houver monitor, é a média observada no jogo [@stojanovic2018], não uma meta validada para o treino. No competitivo, o jogo é o estímulo e o RSA apenas mantém.",
+      "A duração de cada bloco de RSA é calculada por D = séries × [repetições × t + (repetições − 1) × r] + (séries − 1) × b, em que t é o tempo do sprint (3,5 s em 20 m), r é a pausa entre sprints e b, a pausa entre séries. Por exemplo, em P3 (3 × 6 × 20 m, r = 25 s, b = 180 s): uma série dura 6 × 3,5 + 5 × 25 = 146 s; três séries, 438 s; mais 2 × 180 = 360 s de pausa entre séries, totalizando 798 s (13 min 18 s). A referência de 3 × 6 × 30 m [@thurlow2024] corresponde a 540 m por sessão e a cerca de 88 s de sprint líquido (18 × 4,9 s, tempo estimado para amadores); as sessões propostas têm 200 a 360 m e 35 a 63 s de sprint líquido, ou seja, ficam abaixo da dose de referência. A compensação, por decisão prática declarada, é uma exposição extra de aceleração na sessão F2 e os jogos reduzidos. Os jogos reduzidos duram 22, 28 e 34 min em P1 a P3 (blocos × 4 min + [blocos − 1] × 2 min).",
+      {
+       "tipo": "quadro",
+       "titulo": "Sprints repetidos e condicionamento intermitente: prescrição FITT-VP",
+       "colunas": [
+        "FITT-VP",
+        "Preparatório",
+        "Competitivo"
+       ],
+       "linhas": [
+        [
+         "F",
+         "RSA 1×/sem (Q1, seg) + jogos reduzidos 1×/sem (Q2, sáb) + aceleração 1×/sem (F2)",
+         "RSA 1×/sem em T2 (MD-3); 2 jogos: nenhum RSA"
+        ],
+        [
+         "I",
+         "RSA: máximo esforço; Sdec% alvo ≤ 10%; PSE da sessão ≤ 7. Jogos reduzidos: PSE 6–7 (referência ≥ 85% da FCmáx quando houver monitor: é a média observada em jogo [@stojanovic2018], não uma meta validada para treino)",
+         "RSA: máximo esforço, Sdec% ≤ 10%; PSE da sessão ≤ 7"
+        ],
+        [
+         "T",
+         "RSA: 12 min 52 s → 14 min 33 s → 13 min 18 s; jogos reduzidos 22 → 28 → 34 min",
+         "RSA: 8 min 42 s → 12 min 52 s → 14 min 33 s"
+        ],
+        [
+         "Tipo",
+         "RSA linear de 20 m, partida em pé, pausa passiva; jogos reduzidos de 4 contra 4 ou 5 contra 5 em meia quadra, blocos de 4 min, 2 min de pausa",
+         "RSA linear de 20 m, pausa passiva"
+        ],
+        [
+         "V",
+         "RSA 3×5×20 m (300 m) → 3×6×20 m (360 m) → 3×6×20 m com r = 25 s (360 m); jogos reduzidos 4 → 5 → 6 blocos de 4 min",
+         "2×6×20 m (240 m) → 3×5×20 m (300 m) → 3×6×20 m (360 m)"
+        ],
+        [
+         "P",
+         "Passa de semana se Sdec% ≤ 10% em todas as séries e PSE ≤ 7; P3 sobe só a densidade (r 30 → 25 s)",
+         "Passa de semana pelos mesmos critérios; só em MD-3 (≥ 72 h do jogo)"
+        ]
+       ],
+       "fonte": "Elaborado pelos autores com base em @thurlow2024, @thurlow2023, @cao2025hiit, @zhang2025ssg e @stojanovic2018.",
+       "larguras_cm": [
+        1.6,
+        7.2,
+        7.2
+       ],
+       "nota": "RSA: sprints repetidos. Sdec%: decremento de sprint."
+      },
+      {
+       "tipo": "tabela",
+       "titulo": "Duração calculada do bloco de RSA por semana",
+       "colunas": [
+        "Semana",
+        "Prescrição",
+        "r (s)",
+        "b (s)",
+        "Duração (fórmula)",
+        "Sprint líquido",
+        "Frenagens*"
+       ],
+       "linhas": [
+        [
+         "P1",
+         "3 × 5 × 20 m",
+         "30",
+         "180",
+         "12 min 52 s",
+         "52 s",
+         "15"
+        ],
+        [
+         "P2",
+         "3 × 6 × 20 m",
+         "30",
+         "180",
+         "14 min 33 s",
+         "63 s",
+         "18"
+        ],
+        [
+         "P3",
+         "3 × 6 × 20 m",
+         "25",
+         "180",
+         "13 min 18 s",
+         "63 s",
+         "18"
+        ],
+        [
+         "P4",
+         "2 × 5 × 20 m",
+         "30",
+         "180",
+         "7 min 35 s",
+         "35 s",
+         "10"
+        ],
+        [
+         "C1",
+         "2 × 6 × 20 m",
+         "30",
+         "180",
+         "8 min 42 s",
+         "42 s",
+         "12"
+        ],
+        [
+         "C2",
+         "3 × 5 × 20 m",
+         "30",
+         "180",
+         "12 min 52 s",
+         "52 s",
+         "15"
+        ],
+        [
+         "C3",
+         "3 × 6 × 20 m",
+         "30",
+         "180",
+         "14 min 33 s",
+         "63 s",
+         "18"
+        ],
+        [
+         "C4",
+         "2 × 5 × 20 m",
+         "30",
+         "180",
+         "7 min 35 s",
+         "35 s",
+         "10"
+        ]
+       ],
+       "fonte": "Elaborada pelos autores com a fórmula do texto e os tempos estimados da Seção 5.1.",
+       "nota": "r: pausa entre sprints; b: pausa entre séries. *Frenagens a alta velocidade = séries × repetições (uma parada ao final de cada sprint)."
+      }
+     ]
+    },
+    {
+     "titulo": "Agilidade e mudança de direção",
+     "blocos": [
+      "O treino complexo melhorou a velocidade de COD [@kambitta2025] e a força unilateral foi superior no V-cut [@zhang2026uni]; como a transferência da pliometria isolada para o sprint linear é pequena [@liu2026], a COD precisa de prática específica. Aqui, agilidade é COD planejado (5-10-5, deslocamento defensivo e corte) e, a partir de P3, reativo (resposta a estímulo visual do colega), distinção conceitual feita por @kambitta2025. A dose é decisão prática. O Quadro 8 traz o FITT-VP e a Tabela 4, os metros de sprint linear e de COD por semana. Para comparação com a referência de 3 × 6 × 30 m, duas vezes por semana (1.080 m pela conta) [@thurlow2024], o pico preparatório soma 480 m de sprint linear e 560 m de COD, em exposições e distâncias diferentes; é só ordem de grandeza, não equivalência.",
+      {
+       "tipo": "quadro",
+       "titulo": "Agilidade e mudança de direção: prescrição FITT-VP nos dois mesociclos",
+       "colunas": [
+        "FITT-VP",
+        "Preparatório",
+        "Competitivo"
+       ],
+       "linhas": [
+        [
+         "F",
+         "2×/sem: COD 5-10-5 em Q1 (antes do RSA) e deslocamento defensivo/corte em Q2 (antes dos jogos reduzidos)",
+         "1×/sem em T2 (MD-3); 2 jogos: 3 × 2 × 20 m no aquecimento de quinta (opcional)"
+        ],
+        [
+         "I",
+         "Máximo esforço com frenagem em 2–3 passos; qualidade acima de volume; pausa de 40 s entre repetições",
+         "Idem, volume menor"
+        ],
+        [
+         "T",
+         "COD-1: 11 min 00 s → 15 min 20 s; COD-2: 10 min 48 s → 18 min 00 s",
+         "COD-1 11 min 00 s; COD-2 10 min 48 s"
+        ],
+        [
+         "Tipo",
+         "5-10-5 m planejado (P1–P2), reativo (P3); deslocamento defensivo e corte (V-cut) de 12 m",
+         "Planejado em C1; reativo em C2–C3"
+        ],
+        [
+         "V",
+         "m de COD/sem: 384 → 512 → 560; P4 160",
+         "384 em C1–C3; C4 160"
+        ],
+        [
+         "P",
+         "+≤ 35% de metros por semana (real: +33%, +9%); depois sobe a especificidade (reativo), não os metros",
+         "Metros constantes; sobe a especificidade"
+        ]
+       ],
+       "fonte": "Elaborado pelos autores com base em @kambitta2025, @zhang2026uni e @liu2026.",
+       "larguras_cm": [
+        1.6,
+        7.2,
+        7.2
+       ],
+       "nota": "Conta de COD-1 em P2: 4 × 4 × 20 m = 320 m; duração = 4 × [4 × 5,0 + 3 × 40] + 3 × 120 = 920 s (15 min 20 s). COD-2 em P3: 4 × 5 × 12 m = 240 m; 4 × [5 × 4,0 + 4 × 40] + 3 × 120 = 1.080 s (18 min 00 s)."
+      },
+      {
+       "tipo": "tabela",
+       "titulo": "Metros de sprint linear e de mudança de direção por semana",
+       "colunas": [
+        "Semana",
+        "RSA (séries × reps × m)",
+        "m RSA",
+        "Aceleração (reps × m)",
+        "m acel.",
+        "**m de sprint linear**",
+        "COD planejado/reativo 5-10-5 (séries × reps × 20 m)",
+        "Deslocamento defensivo/corte (séries × reps × 12 m)",
+        "**m de COD**",
+        "Total sprint + COD"
+       ],
+       "linhas": [
+        [
+         "P1",
+         "3 × 5 × 20 m",
+         "300",
+         "6 × 10 m",
+         "60",
+         "**360**",
+         "3 × 4 × 20 m (planejado)",
+         "3 × 4 × 12 m",
+         "**384**",
+         "744"
+        ],
+        [
+         "P2",
+         "3 × 6 × 20 m",
+         "360",
+         "6 × 15 m",
+         "90",
+         "**450**",
+         "4 × 4 × 20 m (planejado)",
+         "4 × 4 × 12 m",
+         "**512**",
+         "962"
+        ],
+        [
+         "P3",
+         "3 × 6 × 20 m",
+         "360",
+         "6 × 20 m",
+         "120",
+         "**480**",
+         "4 × 4 × 20 m (reativo)",
+         "4 × 5 × 12 m",
+         "**560**",
+         "1.040"
+        ],
+        [
+         "P4",
+         "2 × 5 × 20 m",
+         "200",
+         "–",
+         "0",
+         "**200**",
+         "2 × 4 × 20 m (planejado)",
+         "–",
+         "**160**",
+         "360"
+        ],
+        [
+         "C1",
+         "2 × 6 × 20 m",
+         "240",
+         "4 × 10 m",
+         "40",
+         "**280**",
+         "3 × 4 × 20 m (planejado)",
+         "3 × 4 × 12 m",
+         "**384**",
+         "664"
+        ],
+        [
+         "C2",
+         "3 × 5 × 20 m",
+         "300",
+         "4 × 10 m",
+         "40",
+         "**340**",
+         "3 × 4 × 20 m (reativo)",
+         "3 × 4 × 12 m",
+         "**384**",
+         "724"
+        ],
+        [
+         "C3",
+         "3 × 6 × 20 m",
+         "360",
+         "4 × 10 m",
+         "40",
+         "**400**",
+         "3 × 4 × 20 m (reativo)",
+         "3 × 4 × 12 m",
+         "**384**",
+         "784"
+        ],
+        [
+         "C4",
+         "2 × 5 × 20 m",
+         "200",
+         "3 × 10 m",
+         "30",
+         "**230**",
+         "2 × 4 × 20 m (planejado)",
+         "–",
+         "**160**",
+         "390"
+        ]
+       ],
+       "fonte": "Elaborada pelos autores; doses por decisão prática.",
+       "nota": "Aceleração: partida em pé, pausa de 60 s; no preparatório, na sessão F2; no competitivo, na T3. Duração de P3: 6 × 3,5 s + 5 × 60 s = 321 s (≈ 5,3 min)."
+      }
+     ]
+    },
+    {
+     "titulo": "Microciclos em relação ao jogo",
+     "blocos": [
+      "No preparatório, não há jogo oficial e as sessões respeitam apenas os intervalos entre estímulos: sprint e COD com as pernas descansadas, pliometria antes da força e pelo menos 24 h entre sprint e força, 72 h entre F1 e F2 e 48 h entre F2 e a sessão de sábado (Quadro 9). No competitivo com um jogo, força e salto ficam no início da semana, a 5 dias do jogo, em consonância com o padrão observado em universitários, em que carga externa e PSE foram maiores 5 a 6 dias antes do jogo [@zhang2026micro]; velocidade e COD ficam a pelo menos 72 h do jogo, e a quinta-feira recebe apenas um estímulo curto de potência (Quadro 10). Com dois jogos por semana, o programa é só de manutenção (Quadro 11): em profissionais, a PSE variou com a proximidade do jogo e o bem-estar ficou estável entre semanas com um e com dois ou mais jogos [@molina2025], mas esse resultado é observacional e não prova que o plano funcione em amadores. Se a PSE do jogo foi ≥ 8, a força da segunda-feira seguinte é feita com metade das séries.",
+      {
+       "tipo": "quadro",
+       "titulo": "Microciclo do mesociclo preparatório (sem jogo oficial)",
+       "colunas": [
+        "Dia",
+        "Sessão",
+        "Conteúdo (ordem)",
+        "Por quê"
+       ],
+       "linhas": [
+        [
+         "Seg",
+         "Q1 quadra",
+         "Aquecimento 15 min → COD 5-10-5 → RSA 20 m → técnico-tático 35 min",
+         "Sprint e COD com as pernas descansadas (domingo livre) (decisão prática)"
+        ],
+        [
+         "Ter",
+         "F1 força + salto",
+         "Aquecimento 10 min → pliometria vertical → agachamento, terra romeno, búlgaro, supino, remada, nórdico, core",
+         "Pliometria antes da força, sem fadiga; ≥ 24 h depois do sprint"
+        ],
+        [
+         "Qua",
+         "Livre",
+         "Caminhada/mobilidade 20 min opcional",
+         "Recuperação"
+        ],
+        [
+         "Qui",
+         "F2 força + salto",
+         "Aquecimento 10 min → aceleração 10–20 m → pliometria horizontal/unilateral → step-up, hip thrust, desenvolvimento, puxada, panturrilha, core",
+         "≥ 72 h depois de F1"
+        ],
+        [
+         "Sex",
+         "Livre",
+         "–",
+         "–"
+        ],
+        [
+         "Sáb",
+         "Q2 quadra",
+         "Aquecimento 15 min → deslocamento defensivo/corte → jogos reduzidos → técnico 25 min",
+         "Condicionamento específico; ≥ 48 h depois de F2"
+        ],
+        [
+         "Dom",
+         "Livre",
+         "–",
+         "–"
+        ]
+       ],
+       "fonte": "Elaborado pelos autores; decisão prática, com base nos intervalos entre estímulos.",
+       "larguras_cm": [
+        1.4,
+        2.4,
+        6.4,
+        5.8
+       ]
+      },
+      {
+       "tipo": "quadro",
+       "titulo": "Microciclo competitivo com um jogo por semana (sábado)",
+       "colunas": [
+        "Dia",
+        "MD",
+        "Sessão",
+        "Conteúdo",
+        "Por quê"
+       ],
+       "linhas": [
+        [
+         "Dom",
+         "MD+1",
+         "Livre",
+         "Mobilidade/caminhada",
+         "–"
+        ],
+        [
+         "Seg",
+         "MD+2",
+         "T1 força + salto",
+         "Pliometria → força A (seção 5.1)",
+         "Força e salto no início da semana, **5 dias antes do jogo**; no padrão observado em universitários, carga externa e PSE foram maiores 5–6 dias antes do jogo [@zhang2026micro]"
+        ],
+        [
+         "Ter",
+         "MD+3",
+         "Livre",
+         "–",
+         "Recuperação"
+        ],
+        [
+         "Qua",
+         "MD-3",
+         "T2 quadra",
+         "COD → RSA 20 m → deslocamento defensivo → técnico-tático",
+         "Velocidade/COD ≥ 72 h do jogo (decisão prática)"
+        ],
+        [
+         "Qui",
+         "MD-2",
+         "T3 ativação (≈ 33 min)",
+         "CMJ 3 × 4 + aceleração 4 × 10 m + tático leve",
+         "Estímulo curto de potência sem fadiga (decisão prática)"
+        ],
+        [
+         "Sex",
+         "MD-1",
+         "Livre",
+         "–",
+         "Descanso"
+        ],
+        [
+         "Sáb",
+         "MD",
+         "Jogo",
+         "–",
+         "PSE do jogo entra na carga semanal"
+        ]
+       ],
+       "fonte": "Elaborado pelos autores com base em @zhang2026micro.",
+       "larguras_cm": [
+        1.3,
+        1.3,
+        2.5,
+        5.2,
+        5.7
+       ]
+      },
+      {
+       "tipo": "quadro",
+       "titulo": "Microciclo competitivo com dois jogos por semana (quarta e sábado)",
+       "colunas": [
+        "Dia",
+        "MD",
+        "Sessão",
+        "Conteúdo",
+        "Por quê"
+       ],
+       "linhas": [
+        [
+         "Seg",
+         "MD-2 (jogo de quarta)",
+         "Força de manutenção (≈ 32 min)",
+         "CMJ 2 × 5 → agachamento 2 × 5, terra romeno 2 × 6, supino 2 × 6, remada 2 × 8, panturrilha 2 × 10, **todas com RIR ≥ 3**; sem nórdico, sem salto em profundidade",
+         "Mantém o estímulo de força com o menor custo de dor muscular (decisão prática)"
+        ],
+        [
+         "Ter",
+         "MD-1",
+         "Livre",
+         "–",
+         "–"
+        ],
+        [
+         "Qua",
+         "MD",
+         "Jogo 1",
+         "–",
+         "–"
+        ],
+        [
+         "Qui",
+         "MD+1 / MD-2 (jogo de sábado)",
+         "Ativação (≈ 32 min)",
+         "CMJ 3 × 4 + aceleração 3 × 10 m + tático leve",
+         "Sem RSA e sem COD volumoso: os dois jogos já dão o estímulo"
+        ],
+        [
+         "Sex",
+         "MD-1",
+         "Livre",
+         "–",
+         "–"
+        ],
+        [
+         "Sáb",
+         "MD",
+         "Jogo 2",
+         "–",
+         "–"
+        ]
+       ],
+       "fonte": "Elaborado pelos autores com base em @molina2025.",
+       "larguras_cm": [
+        1.3,
+        2.5,
+        2.5,
+        5.2,
+        4.5
+       ],
+       "nota": "Carga das duas sessões: 32 min × 5 = 160 UA e 32 min × 3 = 96 UA, total de 256 UA, sem contar os jogos."
+      }
+     ]
+    },
+    {
+     "titulo": "Carga de treino por semana",
+     "blocos": [
+      "A duração de cada sessão é a soma de seus blocos (aquecimento, blocos prescritos com pausas e parte técnico-tática fixa), com 2 min por série de força e 1,5 min por série de salto, já incluindo a pausa; a PSE prevista é decisão prática, e a validade da PSE da sessão como medida de carga e sua relação com a carga pela frequência cardíaca em profissionais de basquete (r = 0,69–0,85) apoiam o uso [@foster2001; @manzi2010]. A Tabela 5 mostra que o aumento semanal ficou em +16% e +10% nos dois mesociclos (limite de 20%), com descarga de −43% no preparatório e semana de teste de −29% no competitivo. Os valores do competitivo não incluem o jogo, porque a PSE do jogo em amadores é desconhecida; também não se adotou limite semanal de UA, por falta de fonte.",
+      {
+       "tipo": "tabela",
+       "titulo": "Sessões, duração, PSE prevista e carga de treino por semana",
+       "colunas": [
+        "Semana",
+        "Sessões (duração em min × PSE prevista = UA)",
+        "Carga de treino (UA)",
+        "Variação"
+       ],
+       "linhas": [
+        [
+         "P1",
+         "Q1 (seg) 74×7=518; F1 (ter) 62×6=372; F2 (qui) 63×6=378; Q2 (sáb) 73×7=511",
+         "**1.779**",
+         "–"
+        ],
+        [
+         "P2",
+         "Q1 (seg) 80×7=560; F1 (ter) 78×7=546; F2 (qui) 63×6=378; Q2 (sáb) 83×7=581",
+         "**2.065**",
+         "+16%"
+        ],
+        [
+         "P3",
+         "Q1 (seg) 79×7=553; F1 (ter) 80×7=560; F2 (qui) 74×7=518; Q2 (sáb) 92×7=644",
+         "**2.275**",
+         "+10%"
+        ],
+        [
+         "P4",
+         "Q1 (seg) 59×5=295; F1 (ter) 56×4=224; Teste 1 (qui) 60×5=300; Teste 2 (sáb) 60×8=480",
+         "**1.299**",
+         "−43%"
+        ],
+        [
+         "C1",
+         "T1 (seg) 58×6=348; T2 (qua) 86×6=516; T3 (qui) 33×3=99",
+         "**963**",
+         "–"
+        ],
+        [
+         "C2",
+         "T1 (seg) 65×6=390; T2 (qua) 90×7=630; T3 (qui) 33×3=99",
+         "**1.119**",
+         "+16%"
+        ],
+        [
+         "C3",
+         "T1 (seg) 70×7=490; T2 (qua) 91×7=637; T3 (qui) 33×3=99",
+         "**1.226**",
+         "+10%"
+        ],
+        [
+         "C4",
+         "Teste 1 (seg) 60×5=300; Teste 2 (qua) 60×8=480; T3 (qui) 30×3=90",
+         "**870**",
+         "−29%"
+        ]
+       ],
+       "fonte": "Elaborada pelos autores; durações e PSE previstas por decisão prática.",
+       "larguras_cm": [
+        1.6,
+        9.4,
+        2.8,
+        2.2
+       ],
+       "nota": "Os tempos e as PSE são estimativas e devem ser recalculados com a semana 0. T1, T2 e T3: sessões do competitivo; F1, F2, Q1 e Q2: sessões do preparatório."
+      }
+     ]
+    },
+    {
+     "titulo": "Testes",
+     "blocos": [
+      "Os testes ocorrem na semana 0 (linha de base, em dois dias separados por pelo menos 48 h), em S4 (quinta e sábado) e em S8 (segunda e quarta, esta somente se o jogo for pelo menos 72 h depois). Usam-se o mesmo piso, hora e calçado, aquecimento padronizado e duas sessões de familiarização antes da semana 0 (decisão prática). A escolha segue o estudo em que Yo-Yo IR1, CMJ, sprint de 20 m e teste de sprints repetidos diferenciaram profissionais de semiprofissionais, com confiabilidade do teste reativo [@brini2021]; o Yo-Yo IR1 é sensível a RST e HIIT [@thurlow2024; @cao2025hiit]. O protocolo exato do RSA com giro (6 × 28 m) é decisão prática. O Sdec% calcula-se por [Σ tempos ÷ (n × melhor tempo) − 1] × 100 [@glaister2008]; com os tempos 6,40; 6,50; 6,55; 6,65; 6,70 e 6,80 s, a soma é 39,60 s e o Sdec%, 3,13%. A referência de RST em esportes coletivos é 5,0 ± 0,3% [@thurlow2023]. Como o Sdec% depende do melhor sprint, devem-se ler juntos o melhor tempo, o tempo médio e o Sdec%, tratando variações pequenas como ruído até haver o coeficiente de variação local.",
+      "Os tamanhos de efeito das metanálises indicam a direção esperada, não uma meta individual: no CMJ, de g = 0,26 (RST) a 0,77 (pliometria isolada) [@thurlow2024; @liu2026]; na COD, de −0,32 (RST) a −1,04 (treino complexo contra controle ativo) [@thurlow2024; @kambitta2025]; no Yo-Yo IR1, g = 0,61 (RST) [@thurlow2024]. Como o sprint de 20 m não mudou após um ano de periodização [@chiang2025], não se deve prometer melhora de sprint no competitivo.",
+      {
+       "tipo": "quadro",
+       "titulo": "Bateria de testes (semana 0, S4 e S8)",
+       "colunas": [
+        "Dia",
+        "Teste",
+        "Como",
+        "Saída"
+       ],
+       "linhas": [
+        [
+         "1",
+         "CMJ",
+         "3 tentativas com mãos na cintura, melhor altura (cm)",
+         "Altura (cm)"
+        ],
+        [
+         "1",
+         "Sprint de 10 e 20 m",
+         "Partida em pé, 3 tentativas, fotocélulas se houver",
+         "Melhor tempo (s)"
+        ],
+        [
+         "1",
+         "COD",
+         "T-test ou 505 (um só, sempre o mesmo), 3 tentativas",
+         "Melhor tempo (s)"
+        ],
+        [
+         "1",
+         "5RM de agachamento e supino",
+         "Rampa de cargas; 1RM estimado = carga × (1 + repetições ÷ 30) (convenção; exemplo: 5RM de 100 kg → 100 × (1 + 5 ÷ 30) = 116,7 kg; 73% = 85 kg)",
+         "Carga (kg) e 1RM estimado"
+        ],
+        [
+         "2",
+         "RSA com giro: 6 × (14 m + 14 m, giro de 180°), pausa passiva de 20 s",
+         "Cronometrar cada repetição; pausa de 20 s como no protocolo de referência [@thurlow2023]",
+         "Melhor tempo, tempo médio, Sdec%"
+        ],
+        [
+         "2",
+         "Yo-Yo IR1",
+         "Após ≥ 10 min do RSA",
+         "Distância total (m)"
+        ]
+       ],
+       "fonte": "Elaborado pelos autores com base em @brini2021, @thurlow2023 e @glaister2008.",
+       "larguras_cm": [
+        1.2,
+        3.6,
+        6.8,
+        4.4
+       ],
+       "nota": "1RM estimado = carga × (1 + repetições ÷ 30); exemplo: 5RM de 100 kg → 100 × (1 + 5 ÷ 30) = 116,7 kg, e 73% = 85 kg (convenção)."
+      }
+     ]
+    },
+    {
+     "titulo": "Monitoramento e semáforo",
+     "blocos": [
+      "Antes da sessão, o atleta registra o bem-estar em quatro itens (sono, fadiga, dor muscular e estresse), cada um de 1 (muito ruim) a 5 (muito bom), com soma de 4 a 20, e a dor em coxa, virilha, joelho e tornozelo (NPRS de 0 a 10); as medidas subjetivas refletem o treino com mais sensibilidade que as objetivas [@saw2016], mas o formato do questionário é convenção dos autores. Cerca de 30 min depois, registra a PSE da sessão e, na manhã seguinte, a dor [@foster2001]. Durante o RSA, registra-se o tempo de cada sprint (fotocélulas ou aplicativo) e o Sdec% por série; com cronômetro manual, os limiares de Sdec% não são interpretáveis e valem só dor e PSE. O CMJ semanal (três saltos, antes da sessão de segunda) funciona apenas como alarme, e o jogo entra com minutos em quadra e PSE.",
+      "O semáforo (Quadro 13) traduz esses registros em condutas. O modelo de monitoramento da dor foi descrito e testado em tendinopatia de Aquiles [@silbernagel2007], e a PSE típica do RST e o efeito de 10 s a mais de pausa vêm de resumo [@thurlow2023]; os limiares de dor, Sdec%, PSE, CMJ e bem-estar, porém, são convenção dos autores; o método da PSE vem de @foster2001, que não fornece limiar, e a PSE média do RST de 6,5 vem de @thurlow2023. O Quadro 13 inclui os gatilhos de sono, calor e jogo anterior (Seção 5.11) e os sinais de encaminhamento imediato.",
+      {
+       "tipo": "quadro",
+       "titulo": "Ajuste da carga por sintomas e desempenho (semáforo)",
+       "colunas": [
+        "Cor",
+        "Sinal",
+        "Conduta na sessão",
+        "Conduta na próxima sessão",
+        "Fonte"
+       ],
+       "linhas": [
+        [
+         "Verde",
+         "Dor ≤ 3/10 (NPRS) durante o exercício, sem pontada; Sdec% da série ≤ 10%; PSE da sessão ≤ 7; manhã seguinte ≤ 2/10 e resolvida em 24 h; bem-estar ≥ 15",
+         "Segue o plano",
+         "Aplica a regra de progressão da semana",
+         "[@silbernagel2007; @thurlow2023]; limiares = convenção do grupo (método da PSE: [@foster2001])"
+        ],
+        [
+         "Amarelo",
+         "Dor 4–5/10 (NPRS) durante o exercício, em músculo ou articulação, sem pontada súbita",
+         "Termina a série; troca salto em profundidade/COD reativo por versão planejada; corta 1 série do resto",
+         "Repete a sessão anterior, sem progredir",
+         "modelo de monitoramento da dor [@silbernagel2007]; limiar = convenção do grupo"
+        ],
+        [
+         "Vermelho",
+         "Dor ≥ 6/10 (NPRS) durante o exercício, ou pontada súbita/estalido em posterior da coxa, virilha, panturrilha ou tornozelo",
+         "Para o exercício; sem salto, sprint ou COD no dia",
+         "Sem salto/sprint/COD até avaliação; volta pela semana 1 do mesociclo",
+         "convenção do grupo"
+        ],
+        [
+         "Amarelo",
+         "Dor ou rigidez de 3–4/10 (NPRS) na manhã seguinte, ou que persiste por mais de 48 h",
+         "Retira salto em profundidade e COD reativo; corta 1 série",
+         "Repete a carga anterior; reconfere em 24 h",
+         "convenção do grupo"
+        ],
+        [
+         "Vermelho",
+         "Dor ou rigidez ≥ 5/10 (NPRS) na manhã seguinte, ou por mais de 72 h, ou piora entre sessões, ou inchaço",
+         "Suspende salto, sprint e COD; encaminha",
+         "Só retoma após avaliação; semana 1",
+         "convenção do grupo"
+        ],
+        [
+         "Amarelo",
+         "Sdec% da série > 10% e ≤ 12%",
+         "Próxima série com +10 s de pausa (reduz Sdec% em ~1,4%); 2ª série seguida > 10% encerra o bloco",
+         "Repete a carga anterior; não reduz a pausa",
+         "[@thurlow2023]"
+        ],
+        [
+         "Vermelho",
+         "Sdec% da série > 12%, ou 1º sprint de uma série ≥ 5% mais lento que o melhor 1º sprint do dia",
+         "Encerra o bloco de RSA",
+         "−1 série e a pausa da semana anterior",
+         "convenção do grupo"
+        ],
+        [
+         "Amarelo",
+         "PSE da sessão = 8 (CR-10) ou ≥ 2 pontos acima do previsto",
+         "Corta 1 série do bloco principal",
+         "Repete a carga anterior",
+         "convenção do grupo (método da PSE: [@foster2001]; PSE média do RST 6,5: [@thurlow2023])"
+        ],
+        [
+         "Vermelho",
+         "PSE da sessão de 9–10, ou PSE ≥ 8 em 2 sessões seguidas",
+         "Encerra o bloco",
+         "−1 série e +10 s de pausa; reavalia a carga total",
+         "convenção do grupo (método da PSE: [@foster2001]; PSE média do RST 6,5: [@thurlow2023])"
+        ],
+        [
+         "Amarelo",
+         "Bem-estar pré-sessão de 12–14 (soma de 4 itens de 1–5) ou queda ≥ 3 pontos em relação à média das 2 semanas anteriores",
+         "Versão reduzida: −1 série por exercício e pausa +10 s",
+         "Reavalia no início do dia",
+         "[@saw2016] (medida subjetiva) e convenção do grupo"
+        ],
+        [
+         "Vermelho",
+         "Bem-estar pré-sessão ≤ 11 (soma de 4 itens de 1–5)",
+         "Só mobilidade e técnica de arremesso; sem salto, sprint e COD",
+         "Volta com bem-estar ≥ 12",
+         "convenção do grupo"
+        ],
+        [
+         "Amarelo",
+         "CMJ 5–9% abaixo da média individual das 3 últimas medidas",
+         "Retira salto em profundidade e RSA; mantém força com RIR ≥ 3",
+         "Repete a carga anterior",
+         "convenção do grupo"
+        ],
+        [
+         "Vermelho",
+         "CMJ ≥ 10% abaixo da média individual das 3 últimas medidas",
+         "Sem salto, sprint e COD; só força leve",
+         "Reavalia o CMJ em 48 h",
+         "convenção do grupo"
+        ],
+        [
+         "Amarelo",
+         "Sono ≤ 6 h na noite anterior",
+         "Reduz 1 série por bloco; sem RIR < 3",
+         "Reavalia o sono; se ≤ 6 h por 2 noites, trate como bem-estar amarelo",
+         "[@craven2022]"
+        ],
+        [
+         "Amarelo",
+         "Calor intenso no ginásio (tontura, náusea, cefaleia) ou impossibilidade de manter a hidratação",
+         "Pausas extras, hidratação, −1 série; interrompe se sintomas pioram",
+         "Aclimatização de 1–2 semanas; começar euidratado",
+         "[@racinais2015]"
+        ],
+        [
+         "Amarelo",
+         "PSE do jogo anterior ≥ 8 (CR-10) ou jogo com prorrogação",
+         "Força de segunda com metade das séries; sem salto em profundidade",
+         "Segue o plano na quarta",
+         "[@molina2025] (a PSE varia com a proximidade do jogo) e convenção do grupo"
+        ],
+        [
+         "Vermelho",
+         "Torção de tornozelo com dor ≥ 4/10, inchaço, ou dor ao apoiar ou aterrissar",
+         "Para; gelo/proteção só como primeiros cuidados (conduta da equipe de saúde); encaminha no mesmo dia",
+         "Sem salto, sprint e COD até liberação",
+         "convenção do grupo (sem fonte lida)"
+        ],
+        [
+         "Vermelho",
+         "Inchaço articular visível, falseio (articulação cede), travamento/bloqueio ou incapacidade de apoiar o peso",
+         "Para, protege, encaminha no mesmo dia",
+         "Sem salto, sprint e COD até liberação; semana 1",
+         "convenção do grupo"
+        ],
+        [
+         "Vermelho",
+         "Dor ou pressão no peito, síncope ou pré-síncope, palpitação, falta de ar desproporcional",
+         "Para; chamar emergência (192) se não melhorar em minutos",
+         "Só volta com avaliação médica",
+         "consenso, sem fonte citada"
+        ]
+       ],
+       "fonte": "Elaborado pelos autores com base em @silbernagel2007, @thurlow2023, @foster2001, @saw2016, @craven2022, @racinais2015 e @molina2025.",
+       "larguras_cm": [
+        1.4,
+        5.2,
+        4.4,
+        3.0,
+        2.0
+       ],
+       "nota": "Os limiares numéricos são convenção dos autores, não validados para treino de basquete; as fontes indicadas sustentam o modelo, não o limiar. Os gatilhos de PSE valem para as sessões de treino, não para os testes máximos (Yo-Yo IR1, RSA, 5RM)."
+      }
+     ]
+    },
+    {
+     "titulo": "Sono, estresse e ambiente",
+     "blocos": [
+      "Estas variáveis entram apenas como regras de ajuste. Noite com sono ≤ 6 h leva ao amarelo, em coerência com a queda de desempenho descrita na Seção 4.4 [@craven2022]; jogo e testes à noite exigem sono ≥ 7 h na véspera (meta dos autores, sem fonte). O item estresse e a queda do bem-estar entram no semáforo [@saw2016]. Como a PSE sobe e a recuperação cai na semana 2 do mesociclo [@zhang2026micro], P2 e C2 são semanas de atenção ao bem-estar. No calor, aplicam-se aclimatização de 1 a 2 semanas, início euidratado e redução de uma série quando houver tontura, náusea ou cefaleia [@racinais2015]; o resumo não traz limite numérico de temperatura. Piso, calçado, horário e alimentação não têm fonte lida; mantém-se o mesmo piso nos testes (decisão prática)."
+     ]
+    },
+    {
+     "titulo": "Segurança, prevenção e encaminhamento",
+     "blocos": [
+      "Evitam-se salto em profundidade na semana 1 e com dor ou fadiga; COD reativo antes de P3; sprint ou salto sem aquecimento progressivo; RSA e salto em profundidade nas 48 h antes do jogo; nórdico em dia de jogo ou nas 48 h antes (dor muscular tardia); e força com RIR < 3 em MD-1 ou MD-2 no competitivo; com dois jogos, em MD-2 só a sessão de manutenção com RIR ≥ 3, todas decisões práticas. O nórdico é feito uma vez por semana, com 2, 3, 3 e 2 séries de P1 a P4 e 2 séries no competitivo, e a técnica de aterrissagem é treinada em todo bloco de salto [@vandyk2019]. Encaminha-se ao médico em caso de dor ou pressão no peito, síncope, palpitação, falta de ar desproporcional ou triagem inicial positiva; à fisioterapia ou medicina esportiva, em qualquer vermelho de dor, falseio, bloqueio, inchaço, torção de tornozelo com dor ≥ 4/10 ou dois vermelhos em quatro semanas. Eletroterapia, crioterapia e liberação após lesão são da equipe de saúde."
+     ]
+    },
+    {
+     "titulo": "Critérios de entrada e saída dos mesociclos",
+     "blocos": [
+      "O Quadro 14 reúne os critérios. Se o critério de saída do preparatório falhar, repete-se P3 no máximo uma vez antes de entrar no competitivo. A regressão amarela (repete a carga da sessão anterior, corta uma série do bloco que provocou o sinal e troca salto em profundidade e COD reativo por versão planejada) e a vermelha (interrompe o bloco, sem pliometria, sprint ou COD até avaliação quando o sinal é de dor, e volta pela semana 1 do mesociclo) seguem os sinais do Quadro 13.",
+      {
+       "tipo": "quadro",
+       "titulo": "Critérios de entrada e saída dos mesociclos",
+       "colunas": [
+        "Mesociclo",
+        "Entra quando",
+        "Sai quando"
+       ],
+       "linhas": [
+        [
+         "Preparatório (P1–P4)",
+         "Triagem de saúde respondida; sem lesão de membro inferior nas últimas 4 semanas; sem dor ≥ 3/10 em coxa, virilha, joelho ou tornozelo nos testes; semana 0 cumprida (CMJ, 10/20 m, COD, 5RM, RSA, Yo-Yo IR1) e 2 familiarizações",
+         "Em S4: (1) sem vermelho em P1–P3; (2) PSE da sessão ≤ 7 em todas as sessões planejadas de P1–P3 (testes excluídos); (3) Sdec% do RSA ≤ 10% em ≥ 90% das séries; (4) CMJ e 5RM no reteste ≥ semana 0; (5) bem-estar ≥ 12 em ≥ 80% dos dias"
+        ],
+        [
+         "Competitivo (C1–C4)",
+         "Saída do preparatório cumprida; calendário de jogos definido (1 ou 2 por semana)",
+         "Em S8: sem vermelho; CMJ ≥ −5% em relação ao reteste de S4; 5RM de agachamento e supino ≥ −5% de S4; Sdec% do RSA ≤ 10%; PSE do jogo registrada em ≥ 3 jogos. O ciclo 3+1 se mantém enquanto durar a temporada (decisão prática)"
+        ]
+       ],
+       "fonte": "Elaborado pelos autores; critérios por convenção.",
+       "larguras_cm": [
+        2.8,
+        6.2,
+        7.0
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "titulo": "Discussão",
+   "blocos": [
+    "**Evidência indireta.** O principal limite desta proposta é que ela extrapola. As metanálises de pliometria, força, HIIT e jogos reduzidos reúnem basquetebolistas jovens, universitários, de elite ou jogadoras [@liu2026; @cao2024plio; @zhou2024; @zhang2023vbrt; @cao2025hiit], e as de sprints repetidos e de interferência reúnem esportes coletivos [@thurlow2024; @kang2022]; os estudos de microciclo são de universitários e profissionais [@zhang2026micro; @manzi2010; @molina2025; @chiang2025]. A população-alvo não aparece em nenhuma fonte. A direção dos efeitos (mais salto, mais capacidade intermitente, COD mais rápida) é razoavelmente consistente; a certeza é baixa a moderada e a heterogeneidade é alta em vários desfechos, como no CMJ (I² = 67,6%) [@liu2026] e no 505 (I² = 95%) [@zhang2026uni].",
+    "**As doses são decisão prática.** Os resumos dão faixas, não prescrições: a metanálise de sprints repetidos não sustenta que mais volume ou frequência produza mais efeito [@thurlow2024], e as faixas de pliometria e de carga relativa vêm de jovens e de pequenas amostras [@cao2024plio; @zhang2023vbrt]. Séries por grupo, contatos por sessão, metros de COD, a ordem pliometria antes da força e o volume de manutenção no competitivo são escolhas dos autores. Isso tem uma consequência para quem for defender ou aplicar o plano: o argumento a favor de cada número é de coerência (progressão controlada, carga total ≤ 20% por semana, inclusão das capacidades que o jogo exige), não de eficácia comprovada. As sessões de sprint ficaram abaixo da dose de referência em metros (Seção 5.5), o que é coerente com a baixa certeza de que mais dose produza mais efeito, mas permanece uma escolha.",
+    "**Competitivo: o que os dados sustentam.** A lógica de concentrar a carga mais alta longe do jogo e reduzi-la com um ou dois jogos se apoia em estudos observacionais [@zhang2026micro; @manzi2010; @molina2025], que descrevem o que equipes fazem, não o que dá melhor resultado. O dado de [@chiang2025] sugere que o ganho de CMJ da fase preparatória pode ser mantido na temporada, mas sem grupo controle e com apenas 10 atletas, e sem melhora de sprint; por isso o plano não promete melhora de velocidade no competitivo. A redução para 54% da carga de pico é decisão prática. A semana com dois jogos, em que se mantém apenas o essencial, é a de menor sustentação: a única fonte sobre o tema mostra bem-estar estável, mas em profissionais [@molina2025].",
+    "**Monitoramento e escopo.** O semáforo combina um modelo de monitoramento da dor testado em outra condição [@silbernagel2007], um indicador de carga validado [@foster2001], o efeito agudo da pausa sobre o Sdec% [@thurlow2023] e medidas subjetivas [@saw2016]; os limiares são convenção e não foram validados para o basquete. Exigem cronometragem eletrônica (com cronômetro manual, só valem dor e PSE) e devem ser recalibrados com a variabilidade local. Também não há fonte para prevenção de entorse de tornozelo, lesão frequente no esporte, e a sessão de potência e COD pode representar risco de aterrissagem e frenagem para atleta sem triagem; por isso a triagem e o encaminhamento são parte do plano, e o diagnóstico e a liberação permanecem com a equipe de saúde.",
+    "**Aplicabilidade.** O plano exige quadra, sala de musculação, caixa, halteres e barra, e pode ser executado por um profissional de Educação Física em ginásio de clube ou de equipamento público com esses recursos. A PSE e o bem-estar não exigem equipamento; já fotocélulas e plataforma de salto melhoram os testes, mas o CMJ e o Sdec% podem ser medidos por aplicativos e cronometragem cuidadosa, com a ressalva da incerteza. As limitações desta revisão são a leitura apenas de resumos, a busca restrita ao PubMed, o limite de 16 referências novas, que deixou de fora revisões de lesões no basquete e de periodização de força de longo prazo, e a ausência de avaliação formal de risco de viés. As estimativas de tempo por sprint e as PSE previstas, que afetam as UA, devem ser validadas com o grupo."
+   ]
+  },
+  {
+   "titulo": "Considerações finais",
+   "blocos": [
+    "A pergunta era como organizar, para basquetebolistas amadores adultos que treinam de três a quatro vezes por semana, a preparação física em um mesociclo preparatório e em um competitivo. A resposta proposta são dois mesociclos de quatro semanas, três de carga e uma de descarga com testes. No preparatório, a força é feita duas vezes por semana, a pliometria soma de 120 a 168 contatos semanais, os sprints repetidos e os jogos reduzidos ocorrem uma vez por semana cada e a mudança de direção é treinada duas vezes por semana. No competitivo, a força cai para uma sessão semanal de manutenção, os contatos de salto e os metros de sprint diminuem, o jogo passa a ser o principal estímulo de condicionamento e a semana com dois jogos mantém só o essencial. A carga é ajustada por testes nas semanas 0, 4 e 8, por PSE, bem-estar, Sdec% e CMJ e por um semáforo de dor, e sono, estresse e calor modulam a sessão.",
+    "O objetivo foi atingido na medida em que há uma proposta completa, calculada e com critérios de decisão. A sustentação, porém, é indireta: não há estudo com basquetebolistas amadores adultos, as doses são decisões práticas ancoradas em faixas de populações diferentes e os limiares do semáforo são convenções. A proposta deve ser tratada como ponto de partida, a ser ajustado pelos tempos medidos, pela PSE e pela resposta do atleta, e testada em estudo com essa população."
+   ]
+  }
+ ],
+ "referencias_arquivo": "referencias.json"
+}
