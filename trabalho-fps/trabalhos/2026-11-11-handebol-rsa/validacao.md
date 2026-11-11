@@ -1,6 +1,6 @@
 # Validação — 2026-11-11-handebol-rsa
 
-Gerado em 11/11/2026 11:49.
+Gerado em 11/11/2026 11:51.
 
 **Resultado:** ✅ APROVADO (0 erro(s), 9 aviso(s))
 

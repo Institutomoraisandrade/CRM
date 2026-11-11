@@ -4,9 +4,9 @@
   "População: handebolistas amadores adultos (18–40 anos), saudáveis, que treinam 2–3×/semana sem preparador físico dedicado; escopo de Educação Física (prescrição, execução e monitoramento de exercício; testes de campo). Lesão, dor persistente e sinais clínicos são encaminhados à equipe de saúde.",
   "Definição de \"trabalho efetivo\" de 20–25 min: tempo do 1º sprint ao último, incluindo as recuperações entre sprints e entre séries; aquecimento e volta à calma ficam de fora. O tempo líquido de sprint é pequeno (cerca de 1–3 min por sessão, calculado abaixo); o restante é recuperação, como em qualquer protocolo de RST. Esta é uma decisão do grupo, declarada.",
   "Duração: 10 semanas (0 de teste inicial, 1–9 de treino com reteste na 5, 10 de teste final) com 2 sessões de RST por semana (Dia A em MD-4 e Dia B em MD-2); a 3ª sessão do time é técnico-tática. +1 sessão semanal, +1 semana e +200 m semanais não trouxeram efeito substancial na metanálise [@thurlow2024]; 6 semanas de 2×/semana já foram eficazes, e as 10 semanas permitem progressão por critérios e testes.",
-  "Evidência de dose: não existe ECR de RST isolado em handebolistas amadores adultos. O programa deriva de metanálises em atletas de esportes coletivos, maioria jovens e de futebol [@taylor2015; @thurlow2024; @thurlow2023; @liu2024] e de revisões narrativas [@bishop2011; @buchheit2013hiit2]; portanto a evidência é INDIRETA e muitos números são decisões práticas coerentes com ela, assim marcadas.",
+  "Evidência de dose: não existe ECR de RST isolado em handebolistas amadores adultos. O programa deriva de metanálises em atletas de esportes coletivos, maioria jovens e de futebol [@taylor2015; @thurlow2024; @thurlow2023] e de revisões narrativas [@bishop2011; @buchheit2013hiit2]; portanto a evidência é INDIRETA e muitos números são decisões práticas coerentes com ela, assim marcadas.",
   "Escopo do RST: o programa trata de capacidade de repetir sprints; a revisão de Bishop et al. recomenda também treino de sprint único/força-potência e intervalado de 80–90% do VO2máx para melhorar a recuperação entre sprints [@bishop2011]. Esses componentes ficam fora do pedido (sprints repetidos, único conteúdo) e devem ser feitos por outro bloco, se o time quiser.",
-  "Tempos por sprint estimados para amadores, para calcular a duração: 15 m = 2,8 s; 20 m = 3,5 s; 25 m = 4,2 s; 30 m = 4,9 s; COD 2 × 15 m = 6,5 s; 20 m com bola = 4,2 s (decisão prática; elite masculina fez 30 m em 4,09 s [@michalsik2015]). Recalcular com os tempos reais da semana 0.",
+  "Tempos por sprint estimados para amadores, para calcular a duração: 15 m = 2,8 s; 20 m = 3,5 s; 25 m = 4,2 s; 30 m = 4,9 s; COD 2 × 15 m = 6,5 s; 20 m com bola = 4,2 s (decisão prática). Recalcular com os tempos reais da semana 0.",
   "Números sem fonte própria são marcados como \"decisão prática\" ou \"convenção do prescritor\": limiares de dor, de PSE e de Sdec%, pausas entre séries (b), posição na semana, tetos de frenagem, critérios de passagem. Não são dados da literatura.",
   "Escalas: dor NPRS 0–10; PSE da sessão CR-10 de Foster (0–10), carga = PSE × minutos do bloco [@foster2001]; Sdec% = [Σ tempos ÷ (n × melhor tempo) − 1] × 100, o mais válido e confiável dos 8 métodos comparados [@glaister2008].",
   "Interação com outros treinos: o RST soma carga neuromuscular ao microciclo e deve ser pensado junto dos demais treinos e do jogo [@buchheit2013hiit2]; jogos reduzidos e treino técnico-tático também contam na PSE semanal."
@@ -151,7 +151,7 @@
     {
      "nome": "Sprint de 20 m com bola (drible contínuo)",
      "dose": "4 → 5 séries × 6, r = 30 → 25 → 20 s",
-     "foco": "Contra-ataque (pontas fazem mais sprints [@povoas2014]); habilidade sob fadiga"
+     "foco": "Contra-ataque; habilidade sob fadiga"
     }
    ],
    "evitar": [
@@ -177,7 +177,6 @@
    "fontes": [
     "@thurlow2023",
     "@povoas2012",
-    "@povoas2014",
     "@karcher2014",
     "@buchheit2013hiit2",
     "@bishop2011"
@@ -235,9 +234,7 @@
    "fontes": [
     "@thurlow2024",
     "@glaister2008",
-    "@krustrup2003",
-    "@michalsik2014",
-    "@michalsik2015"
+    "@krustrup2003"
    ]
   }
  ],
@@ -282,14 +279,14 @@
    "sinal": "Sdec% da série > 10% e ≤ 12%",
    "conduta": "Na sessão: a série seguinte ganha +10 s de pausa entre sprints; se a 2ª série seguida também passar de 10%, encerra o bloco. Na próxima sessão: repete a carga anterior e não reduz a pausa.",
    "fonte": "@thurlow2023",
-   "nota_evidencia": "+10 s de pausa reduziu o Sdec% em 1,4% (± 0,4) em metanálise de RST [@thurlow2023]; o limite de 10% é convenção (valor de referência do RST: 5,0%; no teste de elite masculino de 7 × 30 m, índice de fadiga de −8,1% por outra fórmula [@michalsik2015])."
+   "nota_evidencia": "+10 s de pausa reduziu o Sdec% em 1,4% (± 0,4) em metanálise de RST [@thurlow2023]; o limite de 10% é convenção (valor de referência do RST: 5,0%)."
   },
   {
    "cor": "vermelho",
    "sinal": "Sdec% da série > 12%, ou 1º sprint de uma série ≥ 5% mais lento que o melhor 1º sprint do dia",
    "conduta": "Na sessão: encerra o bloco do dia (mesmo que < 20 min) e registra o motivo. Na próxima sessão: −1 série e a pausa entre sprints da semana anterior; se repetir, investiga sono, carga de jogo e dor antes de nova progressão.",
-   "fonte": "@girard2011; @povoas2014fadiga",
-   "nota_evidencia": "Fadiga neuromuscular e energética limita o sprint [@girard2011]; no jogo, o sprint cai 3,9 ± 4,9% após períodos intensos [@povoas2014fadiga]. Limite de 12% e de 5% no 1º sprint = convenção do prescritor."
+   "fonte": "@povoas2014fadiga",
+   "nota_evidencia": "No jogo, o sprint cai 3,9 ± 4,9% após períodos intensos [@povoas2014fadiga]. Limite de 12% e de 5% no 1º sprint = convenção do prescritor."
   },
   {
    "cor": "amarelo",
@@ -309,8 +306,8 @@
    "cor": "vermelho",
    "sinal": "Inchaço articular visível, falseio (articulação cede), travamento/bloqueio ou incapacidade de apoiar o peso",
    "conduta": "Na sessão: para, protege a articulação e encaminha ao médico/fisioterapeuta no mesmo dia. Na próxima sessão: não faz RST até liberação; retorno pela Fase 1.",
-   "fonte": "@vila2022",
-   "nota_evidencia": "Joelho e tornozelo estão entre as lesões mais frequentes no handebol [@vila2022]; conduta = boa prática."
+   "fonte": "",
+   "nota_evidencia": "Conduta = boa prática."
   },
   {
    "cor": "vermelho",
@@ -334,18 +331,15 @@
   ],
   "fontes": [
    "@thurlow2024",
-   "@michalsik2014",
    "@krustrup2003",
    "@glaister2008"
   ]
  },
  "prevencao": {
   "programa": "Exercício nórdico de isquiotibiais e programa de prevenção de lesões de membro inferior (tornozelo, joelho) em sessões separadas do bloco de RST (por exemplo, no aquecimento ou em dia sem RST); o RST é maior risco de estiramento de isquiotibiais por envolver velocidade máxima repetida.",
-  "dose": "Não prescrita neste trabalho (fora do escopo de sprints repetidos): usar a dose do protocolo original do programa escolhido; a dose não consta nos resumos lidos [@vandyk2019; @naderi2024]. Pendência para o líder.",
+  "dose": "Não prescrita neste trabalho (fora do escopo de sprints repetidos): usar a dose do protocolo original do programa escolhido; a dose não consta nos resumos lidos [@vandyk2019]. Pendência para o líder.",
   "fontes": [
-   "@vandyk2019",
-   "@naderi2024",
-   "@vila2022"
+   "@vandyk2019"
   ]
  },
  "encaminhamento": [
@@ -357,27 +351,17 @@
   "thurlow2024",
   "thurlow2023",
   "taylor2015",
-  "liu2024",
   "bishop2011",
-  "girard2011",
-  "buchheit2013hiit1",
   "buchheit2013hiit2",
   "buchheit2009",
-  "buchheit2008",
-  "hammami2021",
   "krustrup2003",
   "glaister2008",
   "foster2001",
   "povoas2012",
-  "povoas2014",
   "povoas2014fadiga",
   "michalsik2013",
-  "michalsik2014",
-  "michalsik2015",
   "karcher2014",
   "vandyk2019",
-  "naderi2024",
-  "vila2022",
   "silbernagel2007"
  ]
 }

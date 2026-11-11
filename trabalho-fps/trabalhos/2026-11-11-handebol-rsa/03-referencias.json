@@ -46,30 +46,6 @@
   "verificado_via": "PubMed PMID 22222325 (get_article_metadata, 11/11/2026)"
  },
  {
-  "id": "povoas2014",
-  "tipo": "artigo",
-  "autores": [
-   "Póvoas, Susana C. A.",
-   "Ascensão, António A. M. R.",
-   "Magalhães, José",
-   "Seabra, André F."
-  ],
-  "et_al": true,
-  "titulo": "Physiological demands of elite team handball with special reference to playing position",
-  "subtitulo": null,
-  "periodico": "Journal of Strength and Conditioning Research",
-  "ano": 2014,
-  "volume": "28",
-  "numero": "2",
-  "paginas": "430-442",
-  "doi": "10.1519/JSC.0b013e3182a953b1",
-  "pmid": "24473468",
-  "desenho": "Transversal",
-  "nivel_evidencia": null,
-  "verificado": true,
-  "verificado_via": "PubMed PMID 24473468 (get_article_metadata, 11/11/2026)"
- },
- {
   "id": "povoas2014fadiga",
   "tipo": "artigo",
   "autores": [
@@ -117,74 +93,6 @@
   "verificado_via": "PubMed PMID 23258606 (get_article_metadata, 11/11/2026); ano do fascículo (vol. 34(7)) conferido com filtro [pdat]=2013; epub 20/12/2012"
  },
  {
-  "id": "michalsik2014",
-  "tipo": "artigo",
-  "autores": [
-   "Michalsik, Lars B.",
-   "Madsen, Klavs",
-   "Aagaard, Per"
-  ],
-  "et_al": false,
-  "titulo": "Match performance and physiological capacity of female elite team handball players",
-  "subtitulo": null,
-  "periodico": "International Journal of Sports Medicine",
-  "ano": 2014,
-  "volume": "35",
-  "numero": "7",
-  "paginas": "595-607",
-  "doi": "10.1055/s-0033-1358713",
-  "pmid": "24264766",
-  "desenho": "Transversal",
-  "nivel_evidencia": null,
-  "verificado": true,
-  "verificado_via": "PubMed PMID 24264766 (get_article_metadata, 11/11/2026); ano do fascículo conferido com filtro [pdat]=2014; epub 21/11/2013"
- },
- {
-  "id": "michalsik2015",
-  "tipo": "artigo",
-  "autores": [
-   "Michalsik, Lars B.",
-   "Madsen, Klavs",
-   "Aagaard, Per"
-  ],
-  "et_al": false,
-  "titulo": "Physiological capacity and physical testing in male elite team handball",
-  "subtitulo": null,
-  "periodico": "The Journal of Sports Medicine and Physical Fitness",
-  "ano": 2015,
-  "volume": "55",
-  "numero": "5",
-  "paginas": "415-429",
-  "pmid": "24402441",
-  "desenho": "Transversal",
-  "nivel_evidencia": null,
-  "verificado": true,
-  "verificado_via": "PubMed PMID 24402441 (get_article_metadata, 11/11/2026); ano do fascículo (vol. 55(5)) conferido com filtro [pdat]=2015; epub 09/01/2014; sem DOI no PubMed"
- },
- {
-  "id": "girard2011",
-  "tipo": "artigo",
-  "autores": [
-   "Girard, Olivier",
-   "Mendez-Villanueva, Alberto",
-   "Bishop, David"
-  ],
-  "et_al": false,
-  "titulo": "Repeated-sprint ability - part I",
-  "subtitulo": "factors contributing to fatigue",
-  "periodico": "Sports Medicine",
-  "ano": 2011,
-  "volume": "41",
-  "numero": "8",
-  "paginas": "673-694",
-  "doi": "10.2165/11590550-000000000-00000",
-  "pmid": "21780851",
-  "desenho": "Revisão narrativa",
-  "nivel_evidencia": null,
-  "verificado": true,
-  "verificado_via": "PubMed PMID 21780851 (get_article_metadata, 11/11/2026)"
- },
- {
   "id": "bishop2011",
   "tipo": "artigo",
   "autores": [
@@ -206,28 +114,6 @@
   "nivel_evidencia": null,
   "verificado": true,
   "verificado_via": "PubMed PMID 21846163 (get_article_metadata, 11/11/2026)"
- },
- {
-  "id": "buchheit2013hiit1",
-  "tipo": "artigo",
-  "autores": [
-   "Buchheit, Martin",
-   "Laursen, Paul B."
-  ],
-  "et_al": false,
-  "titulo": "High-intensity interval training, solutions to the programming puzzle",
-  "subtitulo": "part I: cardiopulmonary emphasis",
-  "periodico": "Sports Medicine",
-  "ano": 2013,
-  "volume": "43",
-  "numero": "5",
-  "paginas": "313-338",
-  "doi": "10.1007/s40279-013-0029-x",
-  "pmid": "23539308",
-  "desenho": "Revisão narrativa",
-  "nivel_evidencia": null,
-  "verificado": true,
-  "verificado_via": "PubMed PMID 23539308 (get_article_metadata, 11/11/2026)"
  },
  {
   "id": "buchheit2013hiit2",
@@ -348,27 +234,6 @@
   "verificado_via": "PubMed PMID 19199207 (get_article_metadata, 11/11/2026)"
  },
  {
-  "id": "buchheit2008",
-  "tipo": "artigo",
-  "autores": [
-   "Buchheit, Martin"
-  ],
-  "et_al": false,
-  "titulo": "The 30-15 intermittent fitness test",
-  "subtitulo": "accuracy for individualizing interval training of young intermittent sport players",
-  "periodico": "Journal of Strength and Conditioning Research",
-  "ano": 2008,
-  "volume": "22",
-  "numero": "2",
-  "paginas": "365-374",
-  "doi": "10.1519/JSC.0b013e3181635b2e",
-  "pmid": "18550949",
-  "desenho": "Transversal",
-  "nivel_evidencia": null,
-  "verificado": true,
-  "verificado_via": "PubMed PMID 18550949 (get_article_metadata, 11/11/2026)"
- },
- {
   "id": "krustrup2003",
   "tipo": "artigo",
   "autores": [
@@ -440,54 +305,6 @@
   "verificado_via": "PubMed PMID 11708692 (get_article_metadata, 11/11/2026); sem DOI no PubMed"
  },
  {
-  "id": "hammami2021",
-  "tipo": "artigo",
-  "autores": [
-   "Hammami, M.",
-   "Gaamouri, N.",
-   "Ramirez-Campillo, R.",
-   "Shephard, R. J."
-  ],
-  "et_al": true,
-  "titulo": "Effects of high-intensity interval training and plyometric exercise on the physical fitness of junior male handball players",
-  "subtitulo": null,
-  "periodico": "European Review for Medical and Pharmacological Sciences",
-  "ano": 2021,
-  "volume": "25",
-  "numero": "23",
-  "paginas": "7380-7389",
-  "doi": "10.26355/eurrev_202112_27434",
-  "pmid": "34919239",
-  "desenho": "Ensaio clínico randomizado",
-  "nivel_evidencia": null,
-  "verificado": true,
-  "verificado_via": "PubMed PMID 34919239 (get_article_metadata, 11/11/2026); prenomes dos autores completados a partir de iniciais do PubMed: conferir no artigo"
- },
- {
-  "id": "liu2024",
-  "tipo": "artigo",
-  "autores": [
-   "Liu, Hengxian",
-   "Li, Rui",
-   "Zheng, Wen",
-   "Ramirez-Campillo, Rodrigo"
-  ],
-  "et_al": true,
-  "titulo": "The effect of combined strength, plyometric, and sprint training on repeated sprint ability in team-sport athletes",
-  "subtitulo": "a systematic review and meta-analysis",
-  "periodico": "Journal of Sports Science and Medicine",
-  "ano": 2024,
-  "volume": "23",
-  "numero": "4",
-  "paginas": "718-743",
-  "doi": "10.52082/jssm.2024.718",
-  "pmid": "39649565",
-  "desenho": "Revisão sistemática com metanálise",
-  "nivel_evidencia": null,
-  "verificado": true,
-  "verificado_via": "PubMed PMID 39649565 (get_article_metadata, 11/11/2026)"
- },
- {
   "id": "vandyk2019",
   "tipo": "artigo",
   "autores": [
@@ -509,53 +326,5 @@
   "nivel_evidencia": null,
   "verificado": true,
   "verificado_via": "PubMed PMID 30808663 (get_article_metadata, 11/11/2026)"
- },
- {
-  "id": "naderi2024",
-  "tipo": "artigo",
-  "autores": [
-   "Naderi, Aynollah",
-   "Shaabani, Fatemeh",
-   "Keikha, Mojtaba",
-   "Degens, Hans"
-  ],
-  "et_al": false,
-  "titulo": "Is an exercise-based injury-prevention program effective in team handball players?",
-  "subtitulo": "a systematic review and meta-analysis",
-  "periodico": "Journal of Athletic Training",
-  "ano": 2024,
-  "volume": "59",
-  "numero": "8",
-  "paginas": "845-856",
-  "doi": "10.4085/1062-6050-0680.22",
-  "pmid": "37681675",
-  "desenho": "Revisão sistemática com metanálise",
-  "nivel_evidencia": null,
-  "verificado": true,
-  "verificado_via": "PubMed PMID 37681675 (get_article_metadata, 11/11/2026)"
- },
- {
-  "id": "vila2022",
-  "tipo": "artigo",
-  "autores": [
-   "Vila, Helena",
-   "Barreiro, Andrea",
-   "Ayán, Carlos",
-   "Antúnez, Antonio"
-  ],
-  "et_al": true,
-  "titulo": "The most common handball injuries",
-  "subtitulo": "a systematic review",
-  "periodico": "International Journal of Environmental Research and Public Health",
-  "ano": 2022,
-  "volume": "19",
-  "numero": "17",
-  "paginas": "10688",
-  "doi": "10.3390/ijerph191710688",
-  "pmid": "36078403",
-  "desenho": "Revisão sistemática",
-  "nivel_evidencia": null,
-  "verificado": true,
-  "verificado_via": "PubMed PMID 36078403 (get_article_metadata, 11/11/2026)"
  }
 ]
