@@ -22,5 +22,77 @@
   "nivel_evidencia": null,
   "verificado": true,
   "verificado_via": "PubMed PMID 17307888 (get_article_metadata, 11/11/2026)"
+ },
+ {
+  "id": "racinais2015",
+  "tipo": "artigo",
+  "autores": [
+   "Racinais, S.",
+   "Alonso, J. M.",
+   "Coutts, A. J.",
+   "Flouris, A. D."
+  ],
+  "et_al": true,
+  "titulo": "Consensus recommendations on training and competing in the heat",
+  "subtitulo": null,
+  "periodico": "British Journal of Sports Medicine",
+  "ano": 2015,
+  "volume": "49",
+  "numero": "18",
+  "paginas": "1164-1173",
+  "doi": "10.1136/bjsports-2015-094915",
+  "pmid": "26069301",
+  "desenho": "Diretriz de relato (consenso)",
+  "nivel_evidencia": null,
+  "verificado": true,
+  "verificado_via": "PubMed PMID 26069301 (get_article_metadata, 11/11/2026); mesmo consenso publicado também em Sports Med 45(7):925-938 e Scand J Med Sci Sports 25(S1):6-19; cita-se a versão do BJSM"
+ },
+ {
+  "id": "impellizzeri2007",
+  "tipo": "artigo",
+  "autores": [
+   "Impellizzeri, F. M.",
+   "Rampinini, E.",
+   "Castagna, C.",
+   "Martino, F."
+  ],
+  "et_al": true,
+  "titulo": "Effect of plyometric training on sand versus grass on muscle soreness and jumping and sprinting ability in soccer players",
+  "subtitulo": null,
+  "periodico": "British Journal of Sports Medicine",
+  "ano": 2007,
+  "volume": "42",
+  "numero": "1",
+  "paginas": "42-46",
+  "doi": "10.1136/bjsm.2007.038497",
+  "pmid": "17526621",
+  "desenho": "Ensaio clínico randomizado",
+  "nivel_evidencia": null,
+  "verificado": true,
+  "verificado_via": "PubMed PMID 17526621 (get_article_metadata, 11/11/2026); ano do fascículo (vol. 42) a conferir com [ppdat]; epub 25/05/2007"
+ },
+ {
+  "id": "povoas2014",
+  "tipo": "artigo",
+  "autores": [
+   "Póvoas, Susana C. A.",
+   "Ascensão, António A. M. R.",
+   "Magalhães, José",
+   "Seabra, André F."
+  ],
+  "et_al": true,
+  "titulo": "Physiological demands of elite team handball with special reference to playing position",
+  "subtitulo": null,
+  "periodico": "Journal of Strength and Conditioning Research",
+  "ano": 2014,
+  "volume": "28",
+  "numero": "2",
+  "paginas": "430-442",
+  "doi": "10.1519/JSC.0b013e3182a953b1",
+  "pmid": "24473468",
+  "desenho": "Transversal",
+  "nivel_evidencia": null,
+  "verificado": true,
+  "verificado_via": "PubMed PMID 24473468 (get_article_metadata, 11/11/2026)"
  }
 ]

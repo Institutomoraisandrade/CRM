@@ -54,7 +54,7 @@ Séries = 627,2 s; pausas = 3 × 240 = 720 s. **D = 1.347 s = 22 min 27 s.**
 | 7 | B | com bola 20 m | 5 × 6 × 20 m | 25 | 150 | 22 min 31 s | 126 s | 600 m | 30 |
 | 8 | A | COD 180° (opcional, r = 15 s) | 5 × 6 × (2 × 15 m) | 15 | 210 | 23 min 30 s | 195 s | 900 m | 60 |
 | 8 | B | com bola 20 m | 5 × 6 × 20 m | 20 | 180 | 22 min 26 s | 126 s | 600 m | 30 |
-| 9 | A | linear 30 m | 4 × 6 × 30 m | 20 | 270 | 22 min 07 s | 118 s | 720 m | 24 |
+| 9 | A | linear 30 m | 4 × 6 × 30 m | 25 | 240 | 22 min 18 s | 127 s | 720 m | 24 |
 | 9 | B | com bola 20 m | 5 × 6 × 20 m | 20 | 180 | 22 min 26 s | 126 s | 600 m | 30 |
 | 10 | – | **Testes finais** | RSA, RSA-COD, Yo-Yo IR1 | – | – | – | – | – | – |
 
@@ -193,9 +193,9 @@ Regras: ≥ 48 h entre A e B; nunca A e B em dias seguidos; sem COD de 180° nas
 |---|---|
 | F | S9: 2 sessões (A e B). S10: sem RST; 2 sessões de teste (RSA + RSA-COD; Yo-Yo IR1). Manutenção: 1 sessão semanal tipo B (decisão prática; não encontrei estudo de manutenção de RST em temporada). |
 | I | Sprint máximo; PSE 6–7; Sdec% ≤ 10%. O Dia A fica menor que S7–S8 (linear, sem COD 180°) para chegar descansado aos testes. |
-| T | 22 min 07 s (S9-A), 22 min 26 s (S9-B); manutenção ≈ 22 min. Testes fora da janela de 20–25 min. |
+| T | 22 min 18 s (S9-A), 22 min 26 s (S9-B); manutenção 22 min 01 s. Testes fora da janela de 20–25 min. |
 | Tipo | A: linear 30 m. B: 20 m com bola. Testes padronizados. |
-| V | S9-A 4 × 6 × 30 m (r = 20 s, b = 4 min 30 s; 720 m). S9-B 5 × 6 × 20 m com bola (r = 20, b = 3 min; 600 m). Manutenção: 4 × 6 × 20 m com bola, r = 25 s, b = 3 min 30 s. |
+| V | S9-A 4 × 6 × 30 m (r = 25 s, b = 4 min; 720 m). S9-B 5 × 6 × 20 m com bola (r = 20, b = 3 min; 600 m). Manutenção: 4 × 6 × 20 m com bola, r = 25 s, b = 4 min (22 min 01 s). |
 | P | Sem progressão de carga. Novo ciclo só se Sdec% final ≤ inicial e melhor/médio tempo iguais ou melhores; senão, investigar (carga de jogo, lesão, sono) antes de repetir. **Regressão** = os mesmos gatilhos amarelos/vermelhos da tabela (texto da Fase 1, coluna P). |
 
 **Exercícios.** Linear 30 m (A), 20 m com bola (B e manutenção), bateria final [@glaister2008; @krustrup2003].

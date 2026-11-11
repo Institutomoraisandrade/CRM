@@ -64,12 +64,12 @@
    "metricas": [
     {
      "valor": "−0,61",
-     "rotulo": "decremento nos sprints (g)",
+     "rotulo": "decremento (g)",
      "detalhe": "IC 90% −0,85 a −0,37"
     },
     {
      "valor": "−0,34",
-     "rotulo": "tempo médio dos sprints (g)",
+     "rotulo": "tempo médio (g)",
      "detalhe": "IC 90% −0,49 a −0,18"
     },
     {
@@ -196,22 +196,22 @@
    "titulo": "Quatro fases em 10 semanas, liberadas por critérios e não pelo calendário",
    "fases": [
     {
-     "nome": "Introdução · sem. 1–2",
+     "nome": "Introdução · 1–2",
      "objetivo": "Técnica, frenagem e tolerância",
      "saida": "4 sessões verdes, PSE ≤ 7, Sdec% ≤ 10%"
     },
     {
-     "nome": "Desenvolvimento · sem. 3–5",
+     "nome": "Desenvolvimento · 3–5",
      "objetivo": "Distância de 30 m, pausa de 25 s, 1ª série COD, reteste",
      "saida": "PSE ≤ 8; Sdec% ≤ 10% em ≥ 90% das séries"
     },
     {
-     "nome": "Específica · sem. 6–8",
+     "nome": "Específica · 6–8",
      "objetivo": "COD 180°, vai-e-vem, bola; pausa de 25 a 15 s",
      "saida": "PSE ≤ 8, sem vermelho, dor da coxa ≤ 2/10"
     },
     {
-     "nome": "Consolidação · sem. 9–10",
+     "nome": "Consolidação · 9–10",
      "objetivo": "Consolidar e reavaliar com a bateria final",
      "saida": "Bateria final e decisão registrada"
     }
@@ -492,10 +492,10 @@
     "Limiares de dor, Sdec% e PSE são convenção do prescritor",
     "Sem estudo sobre a posição do RST na semana"
    ],
-   "imagem": "imagens/recepcao-bola.jpg",
+   "imagem": "imagens/acao-jogo.jpg",
    "foco": [
-    0.5,
-    0.4
+    0.55,
+    0.5
    ],
    "fonte": "[@thurlow2024; @povoas2012]",
    "kicker": "Limitações",
@@ -514,7 +514,7 @@
    "itens": [
     "Demanda: o jogo pede repetir paradas, giros e reacelerações",
     "Dose: 2 sessões por semana, progredindo por distância, pausa e especificidade",
-    "Controle: Dia A em MD-4, B em MD-2 e semáforo de Sdec%, dor e PSE",
+    "Controle: A em MD-4, B em MD-2 e semáforo de carga",
     "Prova: testes nas semanas 0, 5 e 10 decidem manter, repetir ou investigar"
    ],
    "kicker": "Síntese",

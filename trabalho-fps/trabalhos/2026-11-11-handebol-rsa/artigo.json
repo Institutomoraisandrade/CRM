@@ -74,13 +74,13 @@
       [
        "@taylor2015",
        "Metanálise; atletas treinados; sprints ≤ 10 s, pausa ≤ 60 s, 2 a 12 semanas",
-       "RSA −0,62 (±0,25), possivelmente moderado; sprint de 20 m −0,49 (±0,46); salto com contramovimento 0,63 (±0,44) nos estudos controlados",
+       "RSA −0,62 (±0,25), possivelmente moderado; sprint de 20 m −0,49 (±0,46) em estudos não controlados e −0,65 (±0,61) em controlados; salto com contramovimento 0,63 (±0,44) nos controlados",
        "Moderada a baixa (poucos estudos)"
       ],
       [
        "@thurlow2024",
        "Metanálise; 40 estudos, 541 atletas e 213 controles",
-       "Decremento de RSA g −0,61 (IC 90% −0,85 a −0,37); RSA médio g −0,34 (−0,49 a −0,18); Yo-Yo IR1 g 0,61 (0,43 a 0,79); consumo de oxigênio g 0,56. Referência: 3 × 6 × 30 m, 2 vezes por semana, 6 semanas",
+       "Decremento de RSA g −0,61 (IC 90% −0,85 a −0,37); RSA médio g −0,34 (−0,49 a −0,18); Yo-Yo IR1 g 0,61 (0,43 a 0,79); consumo de oxigênio g 0,56. Referência: 3 séries; 1.200 m por semana; 6 semanas. Mais dose: efeito não substancial ou compatível com prejuízo em ≥ 1 desfecho",
        "Moderada para o RST funcionar; baixa para manipular a dose"
       ],
       [
@@ -112,7 +112,7 @@
      "nota": "Valores negativos de RSA indicam melhora (tempos menores). Os valores dos resumos foram transcritos sem reanálise."
     },
     "A metanálise de maior alcance reuniu 40 estudos e mostrou que o RST melhora o decremento de sprint, o tempo médio de RSA, o desempenho no Yo-Yo IR1 e o consumo de oxigênio [@thurlow2024]. A metanálise anterior, restrita a atletas treinados, encontrou melhora de RSA e de sprint de 20 m, com a ressalva de que poucos estudos a sustentavam [@taylor2015]. As duas convergem quanto ao benefício; a certeza de que o RST funciona é moderada.",
-    "A certeza é menor quando a pergunta passa a ser como dosar. Na metanálise de 2024, acrescentar uma sessão ou uma semana, 200 m por semana, duas repetições, uma série ou 10 m por repetição não produziu efeito substancial [@thurlow2024]. Essa informação foi decisiva para o desenho: o volume sobe pouco ao longo das fases e a progressão vem de distância, pausa e especificidade, sempre como decisão prática, não como dose comprovada.",
+    "A certeza é menor quando a pergunta passa a ser como dosar. Na metanálise de 2024, acrescentar uma sessão ou uma semana, 200 m por semana, duas repetições, uma série ou 10 m por repetição teve efeito não substancial ou compatível com prejuízo em pelo menos um desfecho [@thurlow2024]. Essa informação orientou o desenho: o volume sobe pouco ao longo das fases e a progressão vem de distância, pausa e especificidade, sempre como decisão prática, não como dose comprovada. O programa, contudo, excede a referência da metanálise (3 séries; 1.200 m por semana; 6 semanas) por decisão prática, para fechar os 20 a 25 minutos; esse excesso não é respaldado pela metanálise.",
     "A resposta aguda ajuda a escolher essas alavancas. Cada 10 m a mais de distância elevou o lactato em 2,7 mmol/L e o Sdec% em 1,7%; cada 10 s a mais de pausa reduziu o lactato em 1,1 mmol/L e o Sdec% em 1,4%. O vai-e-vem acrescentou de 1,4 a 1,6 s por repetição, com PSE semelhante, e as estratégias para atenuar a fadiga foram distâncias de 15 a 25 m e pausas de pelo menos 30 s [@thurlow2023]. A distância e a pausa funcionam, assim, como controles da dificuldade do bloco, tanto para progredir quanto para regredir.",
     "Quanto ao handebol, o único ensaio localizado comparou treino intervalado a 95% da velocidade final do teste intermitente com jogos reduzidos em adolescentes de elite e não encontrou diferença entre os grupos [@buchheit2009]. Ele sugere que diferentes formas de treino intermitente melhoram o RSA nessa população, mas não testa o RST. Duas revisões lembram, ainda, que nenhum treino isolado melhora todas as capacidades e que sprints máximos geram carga neuromuscular que deve ser considerada ao longo da semana [@bishop2011; @buchheit2013hiit2]. Como o pedido limita o bloco a sprints repetidos, o programa é incompleto por desenho; essa limitação é assumida."
    ]
@@ -376,9 +376,9 @@
          "A",
          "Linear 30 m",
          "4 × 6 × 30 m",
-         "20",
-         "270",
-         "22 min 07 s",
+         "25",
+         "240",
+         "22 min 18 s",
          "118",
          "24"
         ],
@@ -400,18 +400,18 @@
         "r: pausa entre sprints; b: pausa entre séries."
        ],
        "larguras_cm": [
-        1.0,
-        0.9,
-        2.6,
-        3.6,
+        1.2,
+        1.1,
+        2.5,
+        3.4,
         1.0,
         1.1,
         2.1,
         1.6,
-        1.7
+        1.8
        ]
       },
-      "O sprint líquido varia de 67 a 195 s por sessão, de 5 a 14% do bloco. A referência de 3 × 6 × 30 m (540 m) tem de 80 a 110 s de sprint, na mesma ordem de grandeza [@thurlow2024]. Todas as sessões ficam entre 21 min 26 s e 23 min 35 s, o que deixa pelo menos 1 min 26 s de folga sobre o limite de 20 min e cobre o erro das estimativas de t. A regra de fechamento do relógio é: se a sessão fechar abaixo de 20 min, somam-se 15 s à pausa entre séries; se passar de 25 min, retiram-se 15 s."
+      "O sprint líquido varia de 67 a 195 s por sessão, de 5 a 14% do bloco. A referência de 3 × 6 × 30 m tem cerca de 90 a 100 s de sprint (cálculo nosso: 18 sprints × 4,9 a 5,6 s; o tempo médio por sprint na literatura é de 5,57 s [@thurlow2023]), na mesma ordem de grandeza. Todas as sessões ficam entre 21 min 26 s e 23 min 35 s, o que deixa pelo menos 1 min 26 s de folga sobre o limite de 20 min e cobre o erro das estimativas de t. A regra de fechamento do relógio é: se a sessão fechar abaixo de 20 min, somam-se 15 s à pausa entre séries; se passar de 25 min, retiram-se 15 s."
      ]
     },
     {
@@ -609,7 +609,7 @@
         ],
         [
          "T",
-         "S9-A 22 min 07 s; S9-B 22 min 26 s; manutenção cerca de 22 min. Os testes ficam fora da janela de 20 a 25 min."
+         "S9-A 22 min 18 s; S9-B 22 min 26 s; manutenção 22 min 01 s. Os testes ficam fora da janela de 20 a 25 min."
         ],
         [
          "Tipo",
@@ -617,7 +617,7 @@
         ],
         [
          "V",
-         "S9-A 4 × 6 × 30 m (r = 20 s; b = 4 min 30 s; 720 m). S9-B 5 × 6 × 20 m com bola (r = 20 s; b = 3 min; 600 m). Manutenção: 4 × 6 × 20 m com bola, r = 25 s, b = 3 min 30 s."
+         "S9-A 4 × 6 × 30 m (r = 25 s; b = 4 min; 720 m). S9-B 5 × 6 × 20 m com bola (r = 20 s; b = 3 min; 600 m). Manutenção: 4 × 6 × 20 m com bola, r = 25 s, b = 4 min."
         ],
         [
          "P",
@@ -636,6 +636,22 @@
        "larguras_cm": [
         2.6,
         13.4
+       ]
+      }
+     ]
+    },
+    {
+     "titulo": "Exercícios em situações de jogo",
+     "blocos": [
+      "Os exercícios foram desenhados para a quadra oficial de handebol, de 40 × 20 m, com as linhas de 6 m (área do goleiro) e de 9 m (tiro livre) como referências de marcação. As equivalências são aproximadas e servem para montar o circuito sem trena; a distância exata deve ser medida e registrada antes da semana 0.",
+      {
+       "tipo": "lista",
+       "estilo": "alineas",
+       "itens": [
+        "**Sprint linear (15, 20, 25 e 30 m): contra-ataque.** O sprint de 15 m equivale, de forma aproximada, ao trajeto da linha de 6 m da própria defesa até o meio da quadra; o de 20 m, à meia quadra (da linha de fundo ao meio); o de 30 m, aproximadamente à corrida da linha de 9 m da própria defesa até a linha de fundo adversária (cerca de 31 m), como na saída de contra-ataque após o roubo da bola. A zona de frenagem de 8 m prevista após a chegada cabe nos 40 m da quadra no sprint de 30 m. O trajeto é feito ida e volta, sem curva.",
+        "**COD de 2 × 15 m com giro de 180°: recuo defensivo e reposição.** A sequência de sprint, frenagem, giro e reaceleração reproduz a transição do ataque para a defesa, em que o jogador corta o ataque, freia, gira e recua para a própria linha de 6 m. Corresponde às paradas e mudanças de direção que dominam as ações intensas do jogo [@povoas2012; @karcher2014].",
+        "**Sprint de 20 m com bola: contra-ataque conduzido.** Drible contínuo da meia quadra até a área adversária, com parada na linha de 9 m e sem arremesso, para poupar o ombro. O estímulo se aproxima do contra-ataque de primeira e de segunda onda.",
+        "**Deslocamento lateral e posição em quadra.** O deslocamento lateral defensivo e o trabalho por posição não fazem parte da prescrição aprovada e, portanto, não receberam dose. Como decisão prática, o treinador pode distribuir os trajetos conforme o papel de cada jogador no contra-ataque e no recuo (por exemplo, quem corre pelos corredores laterais e quem recua pelo eixo central), mantendo as distâncias do Quadro 3 ao Quadro 6. Nenhuma fonte lida permite prescrever dose diferente por posição."
        ]
       }
      ]
@@ -697,7 +713,7 @@
     {
      "titulo": "Testes, Sdec% e controle de carga",
      "blocos": [
-      "A bateria é aplicada nas semanas 0, 5 e 10, no mesmo piso, horário e calçado, fora do bloco de 20 a 25 min (Quadro 8). O Sdec% deve ser lido com o melhor tempo e o tempo médio, porque depende do melhor sprint: quem fica mais rápido pode ter Sdec% maior. Sua confiabilidade pode ser baixa em testes curtos [@glaister2008]; sem coeficiente de variação local, variações pequenas devem ser tratadas como ruído.",
+      "A bateria é aplicada nas semanas 0, 5 e 10, no mesmo piso, horário e calçado, fora do bloco de 20 a 25 min (Quadro 8). O Sdec% deve ser lido com o melhor tempo e o tempo médio, porque depende do melhor sprint: quem fica mais rápido pode ter Sdec% maior. No estudo de comparação das fórmulas, as medidas de fadiga tiveram confiabilidade teste-reteste ruim ou inconsistente entre fórmulas (coeficiente de variação de 0,8 a 145,7%), e o Sdec% foi a mais confiável [@glaister2008]; sem coeficiente de variação local, variações pequenas devem ser tratadas como ruído.",
       "**Cálculo do Sdec%.** Suponha seis tempos de 5,40; 5,52; 5,60; 5,71; 5,80 e 5,88 s. A soma é 33,91 s, e o melhor tempo multiplicado por 6 é 5,40 × 6 = 32,40 s. O Sdec% é (33,91 ÷ 32,40 − 1) × 100 = 4,66%, valor próximo do 5,0 ± 0,3% típico de RST em esportes coletivos [@thurlow2023].",
       "O efeito esperado é a média das metanálises: melhora pequena a moderada, sem meta individual (Quadro 1). No ensaio de handebol juvenil, 10 semanas de treino intermitente melhoraram o RSA em 3,5 a 3,9%, mas esse estudo não é de RST puro [@buchheit2009].",
       {
@@ -748,7 +764,7 @@
     {
      "titulo": "Ajuste por sintomas e desempenho",
      "blocos": [
-      "O Quadro 9 organiza o ajuste da carga em três cores. Apenas dois números têm apoio em resumo lido: o efeito de +10 s de pausa sobre o Sdec% (redução de 1,4 ± 0,4%) e a PSE típica do RST (6,5 ± 0,5) [@thurlow2023]. O modelo de monitoramento da dor foi testado em tendinopatia de Aquiles (ensaio com 38 participantes), no qual continuar correndo e saltando sob o modelo não piorou o desfecho [@silbernagel2007]; esse resumo não traz limiares numéricos. Por isso, os limiares de dor (3/10, 4 a 5/10 e ≥ 6/10), de Sdec% (10% e 12%), de queda de 5% no primeiro sprint e de PSE (8 a 10) são convenção dos autores, não validados para RST.",
+      "O Quadro 9 organiza o ajuste da carga em três cores. Apenas dois números têm apoio em resumo lido: o efeito de +10 s de pausa sobre o Sdec% (redução de 1,4 ± 0,4%) e a PSE típica do RST (6,5 ± 0,5) [@thurlow2023]. O modelo de monitoramento da dor foi testado em tendinopatia de Aquiles (ensaio com 38 participantes), no qual continuar correndo e saltando sob o modelo não piorou o desfecho [@silbernagel2007]; esse resumo não traz limiares numéricos. Por isso, os limiares de dor (3/10, 4 a 5/10 e ≥ 6/10), de Sdec% (10% e 12%), de queda de 5% no primeiro sprint e de PSE (8 a 10) são convenção do prescritor, não validados para RST.",
       {
        "tipo": "quadro",
        "titulo": "Ajuste da carga por sintomas e desempenho (semáforo)",
@@ -832,14 +848,14 @@
          "Só volta com avaliação médica"
         ]
        ],
-       "fonte": "Elaborado pelos autores com base em @silbernagel2007, @thurlow2023, @foster2001, @povoas2014fadiga, @vandyk2019 e @buchheit2013hiit2.",
+       "fonte": "Elaborado pelos autores com base em @silbernagel2007, @thurlow2023 e @foster2001 (modelo de dor, efeito da pausa e PSE).",
        "larguras_cm": [
         1.9,
         6.1,
         4.3,
         3.7
        ],
-       "nota": "Os limiares numéricos são convenção dos autores; os dois últimos sinais vermelhos são boa prática, sem fonte citada."
+       "nota": "Todos os limiares numéricos são convenção do prescritor; os dois últimos sinais vermelhos são boa prática, sem fonte citada."
       }
      ]
     },
@@ -849,6 +865,19 @@
       "**Isquiotibiais.** O sprint máximo repetido é a situação típica de lesão muscular posterior da coxa. Programas de prevenção com exercício nórdico reduziram essas lesões (RR 0,49; IC 95% 0,32 a 0,74; 15 estudos, 8.459 atletas) [@vandyk2019]. O exercício nórdico não faz parte do bloco e deve ser feito em outro momento, mas a dose do protocolo original não consta nos resumos lidos e fica como pendência. Dentro do bloco, as medidas são a semana 1 com 90% nas séries 1 e 2, a entrada gradual na velocidade alta, a parada após pontada e o intervalo de pelo menos 48 h entre sessões.",
       "**Desaceleração.** Cada sprint termina em parada, e o COD tem duas frenagens por repetição. O teto de 60 frenagens por sessão, o COD de 180° apenas no Dia A e a introdução com 1 série na S4 são decisões práticas, pois não foi encontrado estudo sobre dose de desaceleração. A frenagem repetida explica a dor tardia, daí as regras de manhã seguinte do Quadro 9. Convém ainda usar piso de quadra seco e calçado de handebol com aderência."
      ]
+    },
+    {
+     "titulo": "Períodos e ambiente",
+     "blocos": [
+      "**Períodos.** As Fases 1 a 3 (semanas 1 a 8) correspondem a um período preparatório, em que se pode treinar duas vezes por semana com progressão; a Fase 4 e a manutenção de uma sessão semanal do tipo B correspondem ao período competitivo, quando o jogo ocupa o fim de semana e o microciclo do Quadro 7 passa a valer integralmente. Essa correspondência e a manutenção de uma sessão por semana são decisão prática; não foi encontrado estudo sobre manutenção de RST na temporada.",
+      "**Ambiente.** O calor aumenta o custo percebido do bloco; por isso, o semáforo prevê cortar 1 série, aumentar a pausa entre séries em 30 s e hidratar quando houver calor intenso, tontura ou náusea (Quadro 9). A recomendação é treinar no horário habitual de treino do time e repetir o mesmo horário nos testes, preferindo as horas mais amenas no verão (decisão prática). O piso deve ser de quadra, limpo e seco, e o calçado, de handebol com aderência. O espaço de 40 m exige combinar o uso da quadra com o treino técnico-tático: o bloco ocupa a quadra inteira por cerca de 22 minutos, de modo que as duplas ou trios que sprintam em sequência devem ser organizados para que a pausa r seja cumprida sem interrupção."
+     ]
+    },
+    {
+     "titulo": "Variáveis individuais e comportamentais",
+     "blocos": [
+      "O desempenho no bloco depende também de fatores que o treino não controla. Nenhum dos documentos lidos testou o efeito de sono, estresse, alimentação ou estilo de vida sobre a resposta ao RST; portanto, esses fatores entram apenas como monitoramento e como regra de ajuste, não como prescrição. O registro é simples e feito antes de cada sessão: bem-estar de 0 a 10, horas de sono na noite anterior, estresse percebido e refeição prévia (sim ou não), além de dor pela NPRS. A regra de ajuste reaproveita o semáforo do Quadro 9: bem-estar ≤ 4/10, sono < 6 h ou calor intenso classificam a sessão como amarela (cortar 1 série, +30 s entre séries e hidratar), e o registro repetido de sono curto ou de estresse alto em várias sessões seguidas deve levar a repetir a carga anterior e reavaliar a carga total, inclusive jogo e treino técnico-tático. Esses critérios são convenção do prescritor. Hábitos como alimentação e rotina de sono dos atletas amadores, que conciliam o esporte com trabalho ou estudo, são tratados por orientação geral e, quando houver queixa persistente, por encaminhamento à equipe de saúde."
+     ]
     }
    ]
   },
@@ -856,10 +885,10 @@
    "titulo": "Discussão",
    "blocos": [
     "**Evidência indireta.** O principal limite desta proposta é que ela extrapola. As metanálises de RST reúnem esportes coletivos, em geral com atletas jovens ou treinados [@taylor2015; @thurlow2024]; o único ensaio em handebol é de adolescentes de elite e compara formas de treino intermitente que não são RST [@buchheit2009]; e os dados de demanda vêm de atletas de elite [@povoas2012; @michalsik2013]. A população-alvo, adultos amadores, não aparece em nenhuma das fontes. A recomendação de que o RST é um meio razoável de treinar a RSA é sustentada com certeza moderada; a de que a proposta específica produzirá determinado ganho nessa população não é.",
-    "**Números que são decisão prática.** A distinção entre o que a evidência sustenta e o que o prescritor decidiu precisa ficar visível. Têm apoio nas fontes a referência de 3 × 6 × 30 m, duas vezes por semana, durante 6 semanas [@thurlow2024], a PSE e o Sdec% típicos do RST [@thurlow2023], o efeito de distância e de pausa sobre a demanda aguda [@thurlow2023] e as fórmulas de monitoramento [@glaister2008; @foster2001]. São decisão prática: a duração de 10 semanas; os valores de 4 a 5 séries e de 6 a 7 repetições para completar o bloco; a progressão de distância e de pausa; o teto de 60 frenagens; o posicionamento dos dias A e B; a manutenção de uma sessão semanal; e todos os limiares do semáforo. Como as metanálises não sustentam ganho por mais volume [@thurlow2024], optou-se por volume modesto, e a ausência de efeito da manipulação de dose é, ela própria, um argumento para não complicar a progressão.",
+    "**Números que são decisão prática.** A distinção entre o que a evidência sustenta e o que o prescritor decidiu precisa ficar visível. Têm apoio nas fontes a referência da metanálise de 3 séries, 1.200 m por semana e 6 semanas [@thurlow2024], a PSE e o Sdec% típicos do RST [@thurlow2023], o efeito de distância e de pausa sobre a demanda aguda [@thurlow2023] e as fórmulas de monitoramento [@glaister2008; @foster2001]. São decisão prática: a duração de 10 semanas; os valores de 4 a 5 séries e de 6 a 7 repetições para completar o bloco, que excedem a referência de 3 séries, 1.200 m por semana e 6 semanas; a progressão de distância e de pausa; o teto de 60 frenagens; o posicionamento dos dias A e B; a manutenção de uma sessão semanal; e todos os limiares do semáforo. Como as metanálises não sustentam ganho por mais volume [@thurlow2024], optou-se por volume modesto, e a ausência de efeito da manipulação de dose é, ela própria, um argumento para não complicar a progressão.",
     "Há, ainda, uma tensão entre as fontes. A metanálise de 2015 sustenta benefício do RST sobre o RSA, mas com poucos estudos [@taylor2015]; a de 2024 tem base maior e confirma o benefício, porém não encontra efeito claro de mais sessões, séries ou distância [@thurlow2024]. Ambas são compatíveis com a proposta, mas a segunda recomenda humildade: ela não autoriza afirmar que a progressão escolhida é melhor do que outra.",
-    "**Cronometragem eletrônica.** Os critérios de progressão dependem de Sdec% por série e de comparação do primeiro sprint com o melhor do dia. Diferenças de poucos por cento só são interpretáveis com fotocélulas ou aplicativo validado; com cronômetro manual, o erro de medida é comparável ao próprio sinal, e os limiares de Sdec% não devem ser aplicados. Nesse caso, restam a dor, a PSE e a regra do relógio. Como a confiabilidade do Sdec% pode ser baixa em testes curtos [@glaister2008], mesmo com cronometragem eletrônica convém olhar o melhor tempo e o tempo médio em conjunto. Os clubes amadores que não dispõem desse recurso precisam decidir como medir antes de adotar o Quadro 9 integralmente.",
-    "**Interpretação de 20 a 25 minutos.** Esta proposta lê o limite como o intervalo do primeiro ao último sprint, incluindo as recuperações entre sprints e entre séries. A leitura alternativa, de 20 a 25 minutos apenas correndo, é fisiologicamente inviável: representaria de 10 a 20 vezes o sprint líquido da referência de 3 × 6 × 30 m [@thurlow2024] e não é praticada em nenhum dos estudos revistos. A interpretação adotada tem a vantagem de manter o volume na ordem de grandeza da literatura, mas deve ser confirmada com o professor ou o responsável pelo pedido, porque determina todo o resto da dose.",
+    "**Cronometragem eletrônica.** Os critérios de progressão dependem de Sdec% por série e de comparação do primeiro sprint com o melhor do dia. Diferenças de poucos por cento só são interpretáveis com fotocélulas ou aplicativo validado; com cronômetro manual, o erro de medida é comparável ao próprio sinal, e os limiares de Sdec% não devem ser aplicados. Nesse caso, restam a dor, a PSE e a regra do relógio. Como as medidas de fadiga tiveram confiabilidade ruim ou inconsistente entre fórmulas, ainda que o Sdec% tenha sido a mais confiável [@glaister2008], mesmo com cronometragem eletrônica convém olhar o melhor tempo e o tempo médio em conjunto. Os clubes amadores que não dispõem desse recurso precisam decidir como medir antes de adotar o Quadro 9 integralmente.",
+    "**Interpretação de 20 a 25 minutos.** Esta proposta lê o limite como o intervalo do primeiro ao último sprint, incluindo as recuperações entre sprints e entre séries. A leitura alternativa, de 20 a 25 minutos apenas correndo, é fisiologicamente inviável: representaria cerca de 12 a 17 vezes o sprint líquido estimado da referência de 3 × 6 × 30 m (cálculo nosso, Seção 5.2). A interpretação adotada tem a vantagem de manter o volume na ordem de grandeza da literatura, mas deve ser confirmada com o professor ou o responsável pelo pedido, porque determina todo o resto da dose.",
     "**Aplicabilidade e escopo.** A proposta cabe no cotidiano de um time amador porque dispensa equipamento caro (cones, cronômetro e bolas) e porque a PSE da sessão é de fácil coleta [@foster2001]. Seus limites são claros: o programa é incompleto por desenho, pois não inclui sprint único, força, treino intervalado mais longo nem prevenção, e o RST é apenas uma parte do que a literatura recomenda [@bishop2011]. A soma de cargas com jogo e treino técnico-tático deve ser controlada pela PSE semanal, e não se adotou limite semanal de unidades arbitrárias, por falta de fonte. Não foram encontradas evidências sobre o posicionamento do RST na semana, a manutenção na temporada e a dose de desaceleração; esses elementos ficam como hipóteses a testar com o monitoramento do próprio grupo.",
     "**Limites desta revisão.** Foram lidos apenas resumos, a busca teve limite de 15 documentos, uma única base foi consultada e não houve avaliação formal do risco de viés. Ficaram de fora revisões de lesões no handebol e a metanálise de treino combinado em RSA. O estudo de handebol de Buchheit localizado é de 2009, e não o de 2010 mencionado no pedido inicial."
    ]
