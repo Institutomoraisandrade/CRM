@@ -960,7 +960,7 @@
     {
      "titulo": "Períodos preparatório e competitivo",
      "blocos": [
-      "O período preparatório (pré-temporada, sem jogo oficial semanal) usa as Fases 1 a 4, com 2 a 3 sessões por semana e maior volume. A terceira sessão é opcional (Dia C, repetição do Dia B da semana), só em semana sem jogo, com pelo menos 48 h entre sessões e apenas se as duas anteriores estiverem em verde; na S7, o volume vai de 1.500 m (A + B) a 2.100 m (A + B + C). O período competitivo (1 ou 2 jogos por semana) tem 1 a 2 sessões e manutenção, sem progressão de carga (Quadro 12).",
+      "O período preparatório (pré-temporada, sem jogo oficial semanal) usa as Fases 1 a 4, com 2 a 3 sessões por semana e maior volume. A terceira sessão é opcional (Dia C, repetição do Dia B da semana), por decisão prática: na metanálise, +1 sessão por semana não deu ganho substancial ou foi compatível com prejuízo em pelo menos um desfecho, e a referência é de 1.200 m por semana [@thurlow2024]. Ela só ocorre em semana sem jogo, com pelo menos 48 h entre sessões e apenas se as duas anteriores estiverem em verde; na S7, o volume vai de 1.500 m (A + B) a 2.100 m (A + B + C). O período competitivo (1 ou 2 jogos por semana) tem 1 a 2 sessões e manutenção, sem progressão de carga (Quadro 12).",
       {
        "tipo": "quadro",
        "titulo": "Períodos preparatório e competitivo: prescrição FITT-VP",
@@ -1035,7 +1035,7 @@
         [
          "Piso",
          "Em futebol, a pliometria na areia gerou menos dor muscular que na grama (p < 0,001), com melhora de sprint de 10 e 20 m semelhante; a grama melhorou mais o salto com contramovimento [@impellizzeri2008]. Sem fonte sobre tração em quadras de handebol",
-         "Madeira ou sintético de quadra (referência): doses como calculadas. Cimento: reduzir giros de 180° (curva aberta, raio ≥ 2 m) e frenagens para ≤ 48 por sessão (convenção). Areia ou grama: menos dor tardia [@impellizzeri2008], mas sprint mais lento; recalcular os tempos (esperar +10 a +20%, estimativa) e julgar por PSE e Sdec%; grama molhada: sem COD de 180°. Testar sempre no mesmo piso"
+         "Madeira ou sintético de quadra (referência): doses como calculadas. Cimento: reduzir giros de 180° (curva aberta, raio ≥ 2 m) e frenagens para ≤ 48 por sessão (convenção). Areia: menos dor muscular que a grama após pliometria [@impellizzeri2008], sem comparação com a quadra (extrapolação para sprint); grama: sem dado de dor contra a quadra. Em ambas, o sprint tende a ser mais lento: recalcular os tempos (esperar +10 a +20%, estimativa) e julgar por PSE e Sdec%; grama molhada: sem COD de 180°. Testar sempre no mesmo piso"
         ],
         [
          "Espaço",
@@ -1044,7 +1044,7 @@
         ],
         [
          "Horário",
-         "Na metanálise de privação de sono, tarefas de exercício à noite foram consistentemente prejudicadas e as da manhã pouco afetadas [@craven2022]. Sem fonte de RST por horário",
+         "Sob perda de sono, tarefas de exercício à noite foram consistentemente prejudicadas e as da manhã pouco afetadas [@craven2022]. Sem fonte de RST por horário",
          "Treino noturno: atenção ao sono e ao dia de trabalho (Quadro 14); no calor, preferir o horário mais fresco [@racinais2015]. Padronizar o horário dos testes (semanas 0, 5 e 10)"
         ],
         [
@@ -1138,7 +1138,7 @@
         [
          "15–19, ou qualquer item = 1",
          "Amarelo",
-         "Versão reduzida: −1 série, r +10 s, b = 4 min 30 s. Linear 30 m: 3 × [6 × 4,9 + 5 × 40] + 2 × 270 = 20 min 28 s; 20 m com bola: 3 × [6 × 4,2 + 5 × 40] + 2 × 270 = 20 min 16 s; COD 2 × 15 m: 3 × [6 × 6,5 + 5 × 40] + 2 × 270 = 20 min 57 s. Sem COD de 180° em MD-2"
+         "Versão reduzida: −1 série, r = 40 s (fixo, em qualquer fase), b = 4 min 30 s. Linear 30 m: 3 × [6 × 4,9 + 5 × 40] + 2 × 270 = 20 min 28 s; 20 m com bola: 3 × [6 × 4,2 + 5 × 40] + 2 × 270 = 20 min 16 s; COD 2 × 15 m: 3 × [6 × 6,5 + 5 × 40] + 2 × 270 = 20 min 57 s. Sem COD de 180° em MD-2"
         ],
         [
          "< 15, ou 2 sessões seguidas amarelas",
@@ -1146,7 +1146,7 @@
          "Sem RST no dia; reavaliar no dia seguinte; 2 vermelhos em 7 dias: avisar o responsável e investigar sono, estresse, carga de jogo e saúde"
         ]
        ],
-       "fonte": "Elaborado pelos autores; inspirado nos índices tipo Hooper [@hooper1995], com escala e cortes por convenção do prescritor.",
+       "fonte": "Elaborado pelos autores; inspirado no monitoramento de humor, fadiga e estresse recomendado por Hooper e Mackinnon [@hooper1995], com escala e cortes por convenção do prescritor.",
        "larguras_cm": [
         3.6,
         1.8,

@@ -1,10 +1,10 @@
 # Roteiro da apresentação — Sprints repetidos no handebol amador: periodização de 10 semanas
 
-**Tempo planejado:** 13:40 de 15:00
+**Tempo planejado:** 21:10 de 23:00
 
 | Integrante | Tempo de fala |
 |---|---|
-| Nome do autor | 13:40 |
+| Nome do autor | 21:10 |
 
 ## 🎤 Nome do autor
 
@@ -64,14 +64,50 @@ Testamos nas semanas zero, cinco e dez, no mesmo piso, hora e calçado, fora do 
 
 O semáforo traduz dor, queda de rendimento e esforço percebido em regras de carga. No verde, com dor até 3 em 10, Sdec% até 10% e esforço percebido até 7, segue o plano. No amarelo, termina a série, troca o giro de 180 graus por sprint linear e corta uma série; Sdec% entre 10 e 12% pede mais 10 segundos de pausa. No vermelho, para na hora, encerra o bloco ou encaminha. Atenção: todos os limiares do semáforo, de dor, Sdec% e esforço percebido, são convenção do prescritor, sem estudo que os valide para o RST. Só o efeito dos 10 segundos de pausa sobre o Sdec% vem de metanálise.
 
-**[12:25–13:05] Slide 15 — A dose é uma proposta prática: a evidência é indireta e os limiares são convenção**
+**[12:25–12:30] Slide 15 — Do plano ao ginásio**
 
-Para terminar, as limitações. Não há ensaio de RST isolado em handebolistas amadores adultos; extrapolamos de esportes coletivos, de jovens e de elite. As demandas de jogo vêm de elite. As metanálises não mostraram benefício de manipular a dose, então a dose proposta é uma decisão prática coerente com elas. Os limiares de dor, Sdec% e esforço percebido são convenção do prescritor. Também não encontrei estudos sobre a posição do RST na semana nem sobre dose de frenagem. Li apenas os resumos de 15 referências.
+Agora levo o plano para o ginásio: períodos da temporada, quadra, ambiente e a rotina do atleta.
 
-**[13:05–13:35] Slide 16 — Sprints repetidos, bem posicionados na semana, cabem em 22 min por sessão**
+**[12:30–13:30] Slide 16 — Na pré-temporada o RST progride; na temporada ele só mantém**
+
+São duas versões do mesmo programa. No período preparatório, a pré-temporada sem jogo oficial semanal, usamos as fases já vistas: duas sessões, Dia A a quatro dias do jogo e Dia B a dois, com esforço percebido de 6 a 8 e duração de 21 minutos e 26 segundos a 23 minutos e 35 segundos. Uma terceira sessão, repetindo o Dia B, é opcional e só em semana sem jogo, com 48 horas entre sessões e as duas anteriores em verde; nesse caso o volume pode ir a 2.100 metros. No período competitivo, a lógica é manutenção, sem progressão: o Dia A dura 22 minutos e 18 segundos, e o Dia B, 22 minutos e 1 segundo, com pausa de 25 segundos e 4 minutos entre séries. O giro de 180 graus só entra em 1 série e se não houver jogo em 72 horas. Reteste a cada 6 a 8 semanas. Não há estudo de manutenção na temporada; é decisão prática.
+
+**[13:30–14:30] Slide 17 — Com 2 jogos na semana, o RST se reduz a um Dia B ou a nenhum**
+
+Na temporada, o calendário de jogos manda. Com um jogo por semana, mantemos A em MD-4 e B em MD-2, ou só o B; não há RST na véspera, nem um e dois dias depois de um jogo com esforço percebido de 8 ou mais. Com dois jogos, por exemplo quarta e sábado, a regra é única: uma sessão B na quinta, 4 séries de 6 sprints de 20 metros com bola, pausa de 30 segundos e 3 minutos e meio entre séries, 22 minutos e 11 segundos, só se o esforço percebido do primeiro jogo foi até 7 e a dor da manhã seguinte até 2 em 10. Se não, nenhum RST na semana, e nunca o Dia A. Depois de viagem, ônibus ou voo, o dia da viagem e o seguinte não têm RST; a primeira sessão é o B, com questionário de bem-estar antes. É convenção do prescritor: não achei estudo de RST depois de viagem.
+
+**[14:30–15:20] Slide 18 — Na quadra de 40 × 20 m, o RST reproduz contra-ataque, recuo e giro**
+
+Aqui está a tradução das distâncias para a quadra de 40 por 20 metros. Quinze metros vão da linha de 6 metros própria até perto da linha central: retomada de bola e arrancada. Vinte metros são do fundo até a central, ou a largura da quadra: contra-ataque conduzindo a bola. Vinte e cinco metros vão da linha de 6 metros própria até a de 9 metros adversária, como no recuo defensivo. Trinta metros, do fundo até a linha de 9 adversária, são o contra-ataque da ponta. O vai-e-vem de 2 por 15 metros entre a linha de 6 e a central é o recuo, o giro e a retomada. O deslocamento lateral da defesa, em 6:0 ou 5:1, aparece na figura mas não é sprint: fica fora do RST, no técnico-tático. Os blocos com bola usam drible contínuo, sem arremesso.
+
+**[15:20–16:15] Slide 19 — A dose é a mesma para todos, mas cada posição prioriza um sprint**
+
+A dose e a duração são as mesmas para todos; muda o que priorizamos. Os pontas fazem mais sprints, então o Dia A foca linear de 25 a 30 metros e o Dia B, 20 metros com bola; opcionalmente uma série gol a gol no lugar de uma de 30 metros. Armadores, centrais e laterais, têm mais ações exigentes do que os pontas, com paradas, mudanças de direção e confrontos um contra um: priorizam o vai-e-vem de 2 por 15 metros no Dia A e os 20 metros com bola. Pivôs também têm muitas ações exigentes, com arrancadas curtas e contato: 15 a 20 metros no Dia B, giro de 180 graus só no Dia A e contato fora do cronômetro. Na elite, backcourt e pivôs fazem 123 e 127 ações exigentes por jogo, contra 55 dos pontas. O goleiro tem demanda diferente: fica fora do RST ou faz a versão de 4 séries de 6 sprints de 10 metros, 21 minutos e 23 segundos.
+
+**[16:15–17:10] Slide 20 — No calor, o bloco mantém as séries e ganha pausas maiores**
+
+O calor e a umidade do ginásio são a variável ambiental com mais respaldo, um consenso de especialistas: aclimatização em uma a duas semanas, chegar hidratado, estratégias de resfriamento e mais recuperação no calor. O resumo não traz limiar de WBGT nem litros; use o da organização local e registre. Na prática, mantemos as séries, somamos 30 segundos entre séries e de 5 a 10 segundos entre sprints; sabemos que 10 segundos de pausa reduzem o Sdec% em cerca de 1,4%. Hidrate antes e nas pausas. Se o bloco passar de 25 minutos, tire uma série. Nos primeiros dias quentes, use a versão reduzida. Pare com tontura, náusea, cefaleia, cãibra, confusão, calafrio ou queda brusca de rendimento, com Sdec% acima de 12%.
+
+**[17:10–18:05] Slide 21 — Piso, espaço e horário pedem ajuste de distância, frenagens e tempos**
+
+Piso, espaço e horário. Em quadra de madeira ou sintético, as doses valem como calculadas. No cimento, há mais impacto e tração: giros em curva aberta e no máximo 48 frenagens. Em areia ou grama, em futebol, a pliometria gerou menos dor muscular, com melhora de sprint semelhante, mas os tempos ficam 10 a 20% mais lentos, estimativa, então julgue por esforço percebido e Sdec%; na grama molhada, sem giro de 180 graus. Teste sempre no mesmo piso. Na meia quadra, use 20 metros e a diagonal de cerca de 28 metros no lugar de 30. Em corredor de até 15 metros, troque por 2 vezes 15 com curva aberta e conte as frenagens, teto de 60. Quanto ao horário, treino à noite foi mais prejudicado pela privação de sono; padronize o horário dos testes. Espaço e horário de RST não têm fonte: são decisões práticas.
+
+**[18:05–19:00] Slide 22 — Sono, estresse, alimentação e rotina decidem se a sessão é plena ou reduzida**
+
+Agora, o atleta. Sono, estresse, alimentação e rotina decidem se a sessão é plena ou reduzida. Na metanálise de privação de sono, dormir 6 horas ou menos reduziu o desempenho em média 7,56%, IC 95% de menos 11,9 a menos 3,13, em todas as categorias de exercício. Por isso, dormir menos de 6 horas ou qualidade até 2 em 5 leva à versão reduzida; duas noites seguidas, não progride e avisa o responsável. Estresse com nota até 2: versão reduzida, e em dia de prova ou entrega, Dia B no lugar do A. Chegar em jejum longo, desidratado ou tonto: versão reduzida e hidratação; plano de carboidrato é do nutricionista. Jornada acima de 10 horas, deslocamento acima de 2 horas, álcool nas últimas 24 horas ou treino de pernas em até 48 horas também reduzem a sessão; tabagismo e álcool problemático vão ao médico. Os limiares são convenção do prescritor.
+
+**[19:00–19:55] Slide 23 — Cinco itens de bem-estar definem se a sessão é plena, reduzida ou cancelada**
+
+Para medir isso sem equipamento, usamos um questionário de bem-estar de cinco itens, de 1 a 5, antes da sessão: sono, fadiga, dor muscular, estresse e humor. Medidas subjetivas de bem-estar refletiram a carga de treino com mais sensibilidade do que as objetivas, segundo uma revisão sistemática, e o monitoramento por humor, fadiga e estresse é recomendado desde Hooper e Mackinnon. A escala, os cortes e a regra são convenção do prescritor, inspirados nesses índices, não validados para handebol amador. Soma de 20 ou mais, sem nenhum item 1, é verde: sessão do plano. De 15 a 19, ou qualquer item 1, é amarelo: versão reduzida, uma série a menos, 10 segundos a mais entre sprints e 4 minutos e meio entre séries, de 20 minutos e 16 segundos a 20 minutos e 57 segundos. Abaixo de 15, ou duas sessões amarelas seguidas, é vermelho: sem RST no dia. Registramos semanalmente a média do questionário, a PSE, a adesão e os gatilhos; adesão abaixo de 80% na fase repete a semana. A tendência vale mais que o valor isolado. Encerro com a síntese.
+
+**[19:55–20:35] Slide 24 — A dose é uma proposta prática: a evidência é indireta e os limiares são convenção**
+
+Para terminar, as limitações. Não há ensaio de RST isolado em handebolistas amadores adultos; extrapolamos de esportes coletivos, de jovens e de elite. As demandas de jogo vêm de elite. As metanálises não mostraram benefício de manipular a dose, então a dose proposta é uma decisão prática coerente com elas. Os limiares de dor, Sdec% e esforço percebido são convenção do prescritor. Também não encontrei estudos sobre a posição do RST na semana, nem sobre dose de frenagem, piso, espaço e horário; calor tem consenso, e sono, uma metanálise de privação aguda. Li apenas os resumos de 15 referências.
+
+**[20:35–21:05] Slide 25 — Sprints repetidos, bem posicionados na semana, cabem em 22 min por sessão**
 
 Em resumo. O jogo exige repetir paradas, giros e reacelerações. A dose é de duas sessões semanais, com progressão por distância, pausa e especificidade. O controle vem do posicionamento em relação ao jogo e do semáforo. E os testes nas semanas zero, cinco e dez dizem se mantemos, repetimos ou investigamos.
 
-**[13:35–13:40] Slide 17 — Obrigado!**
+**[21:05–21:10] Slide 26 — Obrigado!**
 
 Obrigado! Fico à disposição para as perguntas.
