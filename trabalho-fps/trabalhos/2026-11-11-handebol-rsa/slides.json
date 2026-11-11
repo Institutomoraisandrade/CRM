@@ -493,7 +493,7 @@
    "layout": "tabela",
    "apresentador": "Nome do autor",
    "tempo_seg": 60,
-   "notas": "São duas versões do mesmo programa. No período preparatório, a pré-temporada sem jogo oficial semanal, usamos as fases já vistas: duas sessões, Dia A a quatro dias do jogo e Dia B a dois, com esforço percebido de 6 a 8 e duração de 21 minutos e 26 segundos a 23 minutos e 35 segundos. Uma terceira sessão, repetindo o Dia B, é opcional e só em semana sem jogo, com 48 horas entre sessões e as duas anteriores em verde; nesse caso o volume pode ir a 2.100 metros. No período competitivo, a lógica é manutenção, sem progressão: o Dia A dura 22 minutos e 18 segundos, e o Dia B, 22 minutos e 1 segundo, com pausa de 25 segundos e 4 minutos entre séries. O giro de 180 graus só entra em 1 série e se não houver jogo em 72 horas. Reteste a cada 6 a 8 semanas. Não há estudo de manutenção na temporada; é decisão prática.",
+   "notas": "São duas versões do mesmo programa. No período preparatório, a pré-temporada sem jogo oficial semanal, usamos as fases já vistas: duas sessões, Dia A a quatro dias do jogo e Dia B a dois, com esforço percebido de 6 a 8 e duração de 21 minutos e 26 segundos a 23 minutos e 35 segundos. Uma terceira sessão, repetindo o Dia B, é opcional e decisão prática, porque nas metanálises uma sessão a mais não deu ganho substancial; só em semana sem jogo, com 48 horas entre sessões e as duas anteriores em verde; nesse caso o volume pode ir a 2.100 metros. No período competitivo, a lógica é manutenção, sem progressão: o Dia A dura 22 minutos e 18 segundos, e o Dia B, 22 minutos e 1 segundo, com pausa de 25 segundos e 4 minutos entre séries. O giro de 180 graus só entra em 1 série e se não houver jogo em 72 horas. Reteste a cada 6 a 8 semanas. Não há estudo de manutenção na temporada; é decisão prática.",
    "titulo": "Na pré-temporada o RST progride; na temporada ele só mantém",
    "colunas": [
     "Item",
@@ -508,7 +508,7 @@
    "linhas": [
     [
      "**F**",
-     "2 sessões (A em MD-4, B em MD-2); 3ª opcional em semana sem jogo",
+     "2 sessões (A em MD-4, B em MD-2); 3ª opcional (decisão prática), só em semana sem jogo",
      "1 jogo: A e B, ou só B; 2 jogos: 1 sessão B ou nenhuma"
     ],
     [
@@ -677,7 +677,7 @@
    "layout": "tabela",
    "apresentador": "Nome do autor",
    "tempo_seg": 55,
-   "notas": "Piso, espaço e horário. Em quadra de madeira ou sintético, as doses valem como calculadas. No cimento, há mais impacto e tração: giros em curva aberta e no máximo 48 frenagens. Em areia ou grama, em futebol, a pliometria gerou menos dor muscular, com melhora de sprint semelhante, mas os tempos ficam 10 a 20% mais lentos, estimativa, então julgue por esforço percebido e Sdec%; na grama molhada, sem giro de 180 graus. Teste sempre no mesmo piso. Na meia quadra, use 20 metros e a diagonal de cerca de 28 metros no lugar de 30. Em corredor de até 15 metros, troque por 2 vezes 15 com curva aberta e conte as frenagens, teto de 60. Quanto ao horário, treino à noite foi mais prejudicado pela privação de sono; padronize o horário dos testes. Espaço e horário de RST não têm fonte: são decisões práticas.",
+   "notas": "Piso, espaço e horário. Em quadra de madeira ou sintético, as doses valem como calculadas. No cimento, há mais impacto e tração: giros em curva aberta e no máximo 48 frenagens. Em futebol, a pliometria na areia gerou menos dor muscular que na grama, com melhora de sprint semelhante; não há comparação com a quadra. Os tempos em areia ou grama ficam 10 a 20% mais lentos, estimativa, então julgue por esforço percebido e Sdec%; na grama molhada, sem giro de 180 graus. Teste sempre no mesmo piso. Na meia quadra, use 20 metros e a diagonal de cerca de 28 metros no lugar de 30. Em corredor de até 15 metros, troque por 2 vezes 15 com curva aberta e conte as frenagens, teto de 60. Quanto ao horário, o prejuízo noturno só apareceu sob perda de sono; padronize o horário dos testes. Espaço e horário de RST não têm fonte: são decisões práticas.",
    "titulo": "Piso, espaço e horário pedem ajuste de distância, frenagens e tempos",
    "colunas": [
     "Variável",
@@ -698,7 +698,7 @@
     [
      "**Piso**",
      "Areia ou grama",
-     "Menos dor tardia, tempos +10–20% (estimativa); julgar por PSE e Sdec%"
+     "Areia dá menos dor que grama após pliometria; tempos +10–20% (estimativa); julgar por PSE e Sdec%"
     ],
     [
      "**Espaço**",
@@ -713,7 +713,7 @@
     [
      "**Horário**",
      "Noite",
-     "Atenção a sono e jornada; padronizar o horário dos testes"
+     "Prejuízo noturno só com perda de sono; padronizar o horário dos testes"
     ]
    ],
    "fonte": "[@impellizzeri2008; @craven2022]; espaço e horário: decisão prática",
@@ -774,7 +774,7 @@
    "layout": "semaforo",
    "apresentador": "Nome do autor",
    "tempo_seg": 55,
-   "notas": "Para medir isso sem equipamento, usamos um questionário de bem-estar de cinco itens, de 1 a 5, antes da sessão: sono, fadiga, dor muscular, estresse e humor. Medidas subjetivas de bem-estar refletiram a carga de treino com mais sensibilidade do que as objetivas, segundo uma revisão sistemática, e o monitoramento por humor, fadiga e estresse é recomendado desde Hooper e Mackinnon. A escala, os cortes e a regra são convenção do prescritor, inspirados nesses índices, não validados para handebol amador. Soma de 20 ou mais, sem nenhum item 1, é verde: sessão do plano. De 15 a 19, ou qualquer item 1, é amarelo: versão reduzida, uma série a menos, 10 segundos a mais entre sprints e 4 minutos e meio entre séries, de 20 minutos e 16 segundos a 20 minutos e 57 segundos. Abaixo de 15, ou duas sessões amarelas seguidas, é vermelho: sem RST no dia. Registramos semanalmente a média do questionário, a PSE, a adesão e os gatilhos; adesão abaixo de 80% na fase repete a semana. A tendência vale mais que o valor isolado. Encerro com a síntese.",
+   "notas": "Para medir isso sem equipamento, usamos um questionário de bem-estar de cinco itens, de 1 a 5, antes da sessão: sono, fadiga, dor muscular, estresse e humor. Medidas subjetivas de bem-estar refletiram a carga de treino com mais sensibilidade do que as objetivas, segundo uma revisão sistemática, e o monitoramento por humor, fadiga e estresse é recomendado desde Hooper e Mackinnon. A escala, os cortes e a regra são convenção do prescritor, inspirados em Hooper e Mackinnon, não validados para handebol amador. Soma de 20 ou mais, sem nenhum item 1, é verde: sessão do plano. De 15 a 19, ou qualquer item 1, é amarelo: versão reduzida, uma série a menos, pausa fixa de 40 segundos entre sprints e 4 minutos e meio entre séries, de 20 minutos e 16 segundos a 20 minutos e 57 segundos. Abaixo de 15, ou duas sessões amarelas seguidas, é vermelho: sem RST no dia. Registramos semanalmente a média do questionário, a PSE, a adesão e os gatilhos; adesão abaixo de 80% na fase repete a semana. A tendência vale mais que o valor isolado. Encerro com a síntese.",
    "titulo": "Cinco itens de bem-estar definem se a sessão é plena, reduzida ou cancelada",
    "niveis": [
     {
@@ -785,7 +785,7 @@
     {
      "cor": "amarelo",
      "sinal": "Soma 15–19, ou qualquer item = 1",
-     "conduta": "Versão reduzida: −1 série, pausa +10 s e 4 min 30 s entre séries (20 min 16 s a 20 min 57 s)"
+     "conduta": "Versão reduzida: −1 série, pausa de 40 s e 4 min 30 s entre séries (20 min 16 s a 20 min 57 s)"
     },
     {
      "cor": "vermelho",
@@ -836,7 +836,7 @@
    "itens": [
     "Demanda: o jogo pede repetir paradas, giros e reacelerações",
     "Dose: 2 sessões por semana, progredindo por distância, pausa e especificidade",
-    "Controle: A em MD-4, B em MD-2; ambiente e bem-estar ajustam a sessão",
+    "Controle: o jogo define A e B; ambiente e bem-estar ajustam",
     "Prova: testes nas semanas 0, 5 e 10 decidem manter, repetir ou investigar"
    ],
    "kicker": "Síntese",
