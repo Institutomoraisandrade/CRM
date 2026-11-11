@@ -1,0 +1,646 @@
+{
+ "cenario": "mesociclos_preparatorio_e_competitivo_basquete_amador",
+ "premissas": [
+  "Basquetebolista amador adulto (18–40 anos), saudável, 3–4 treinos/semana (preparatório 4; competitivo 3 treinos + 1–2 jogos). Escopo de Educação Física; diagnóstico e tratamento são da equipe de saúde.",
+  "Evidência indireta: sem estudo com basquetebolista amador adulto; fontes de jovens, universitários, elite, mulheres e outros esportes coletivos.",
+  "Dose = decisão prática do grupo quando não houver fonte; faixas ancoradas em resumos: 29–190 saltos por sessão [@cao2024plio], 65–95% de 1RM, 2×/semana [@zhang2023vbrt], 3×6×30 m 2×/semana [@thurlow2024].",
+  "Convenções do grupo: %1RM ≈ 30 ÷ (30 + repetições máximas); aumento semanal ≤ 35% em contatos/sprint/COD e ≤ 20% na carga total; descarga −40% a −60%; tempos por sprint estimados (recalcular na semana 0).",
+  "PSE da sessão = CR-10 de Foster; carga = PSE × minutos [@foster2001]. RIR = repetições em reserva. Dor = NPRS 0–10.",
+  "Resumos lidos, nenhum texto completo; conta dos 1.200 m semanais do resumo de [@thurlow2024] não fecha com 3×6×30×2 = 1.080 m."
+ ],
+ "fases": [
+  {
+   "nome": "Mesociclo preparatório (pré-temporada), 4 semanas: 3 de carga + 1 de descarga com testes (P1–P4)",
+   "objetivo": "Construir força, base de potência/pliometria, sprints repetidos e COD, com 4 treinos por semana.",
+   "criterios_entrada": [
+    "Triagem de saúde respondida.",
+    "Sem lesão de membro inferior nas últimas 4 semanas e sem dor ≥ 3/10 (NPRS) em coxa, virilha, joelho ou tornozelo nos testes.",
+    "Semana 0 cumprida: CMJ, sprint 10/20 m, COD, 5RM de agachamento e supino, RSA 6 × (14 + 14 m) e Yo-Yo IR1, após 2 familiarizações."
+   ],
+   "fitt_vp": {
+    "F": "Força 2×/sem (ter e qui); sprint/RSA 1×/sem (seg); jogos reduzidos 1×/sem (sáb); aceleração 1×/sem (qui); COD 2×/sem (seg e sáb); pliometria 2×/sem (ter e qui). Total de 4 treinos.",
+    "I": "Força: ~73% → ~78% → ~82% de 1RM (RIR 3 → 2–3 → 1–2) e ~75% na descarga; pliometria e sprint em esforço máximo; RSA com Sdec% ≤ 10%; jogos reduzidos PSE 6–7 (CR-10); PSE da sessão prevista 6–7.",
+    "T": "Sessões de 61.5–92.0 min; RSA 12 min 52 s → 13 min 18 s; jogos reduzidos 22 → 34 min; carga 1.779 → 2.065 → 2.275 UA, descarga 1.299.",
+    "Tipo": "Agachamento, terra romeno, búlgaro, supino, remada, nórdico, step-up, hip thrust, desenvolvimento, puxada, panturrilha, core; CMJ, pogo, salto na caixa/profundidade/horizontal/lateral, hop-and-stick; aceleração 10–20 m; RSA 20 m; COD 5-10-5 e defensivo; jogos reduzidos.",
+    "V": "Força 36 → 41 → 45 séries/sem (descarga 17); contatos 120 → 146 → 168 (descarga 50); sprint linear 360 → 450 → 480 m (descarga 200); COD 384 → 512 → 560 m (descarga 160).",
+    "P": "Dupla progressão na força (+2,5–5% se RIR real ≥ alvo); contatos e metros ≤ +35% por semana; carga total ≤ +20% por semana; P3 sobe densidade (r 30 → 25 s). Regressão amarela (repete a carga da sessão anterior, corta 1 série do bloco que provocou o sinal e troca salto em profundidade/COD reativo por versão planejada): dor 4–5/10 (NPRS) durante o exercício, em músculo ou articulação, sem pontada súbita; dor ou rigidez de 3–4/10 (NPRS) na manhã seguinte, ou que persiste por mais de 48 h; PSE da sessão = 8 (CR-10) ou ≥ 2 pontos acima do previsto; Sdec% da série > 10% e ≤ 12%; bem-estar pré-sessão de 12–14 (soma de 4 itens de 1–5) ou queda ≥ 3 pontos em relação à média das 2 semanas anteriores; CMJ 5–9% abaixo da média individual das 3 últimas medidas. Regressão vermelha (interrompe o bloco, sem pliometria/sprint/COD até avaliação quando o sinal é de dor, volta pela semana 1 do mesociclo): dor ≥ 6/10 (NPRS) durante o exercício, ou pontada súbita/estalido em posterior da coxa, virilha, panturrilha ou tornozelo; dor ou rigidez ≥ 5/10 (NPRS) na manhã seguinte, ou por mais de 72 h, ou piora entre sessões, ou inchaço; PSE da sessão de 9–10, ou PSE ≥ 8 em 2 sessões seguidas; Sdec% da série > 12%, ou 1º sprint de uma série ≥ 5% mais lento que o melhor 1º sprint do dia; bem-estar pré-sessão ≤ 11 (soma de 4 itens de 1–5); CMJ ≥ 10% abaixo da média individual das 3 últimas medidas; torção de tornozelo com dor ≥ 4/10, inchaço, ou dor ao apoiar ou aterrissar; inchaço articular visível, falseio (articulação cede), travamento/bloqueio ou incapacidade de apoiar o peso."
+   },
+   "por_capacidade": {
+    "forca": {
+     "fontes": "@zhang2023vbrt; @zhang2026uni; @vandyk2019; @kang2022",
+     "series_por_grupo": {
+      "Quadríceps/glúteos (dominante de joelho)": [
+       9,
+       10,
+       11,
+       5
+      ],
+      "Isquiotibiais/glúteos (dominante de quadril)": [
+       8,
+       9,
+       10,
+       4
+      ],
+      "Empurrar (peitoral, ombro, tríceps)": [
+       6,
+       7,
+       7,
+       3
+      ],
+      "Puxar (dorsais, bíceps)": [
+       6,
+       7,
+       7,
+       3
+      ],
+      "Panturrilha": [
+       3,
+       3,
+       4,
+       0
+      ],
+      "Core": [
+       4,
+       5,
+       6,
+       2
+      ]
+     }
+    },
+    "potencia_pliometria": {
+     "fontes": "@liu2026; @cao2024plio; @kambitta2025",
+     "contatos_por_semana": [
+      120,
+      146,
+      168,
+      50
+     ],
+     "contatos_por_sessao": {
+      "P1": {
+       "F1": 60,
+       "F2": 60
+      },
+      "P2": {
+       "F1": 77,
+       "F2": 69
+      },
+      "P3": {
+       "F1": 86,
+       "F2": 82
+      },
+      "P4": {
+       "F1": 50,
+       "F2": 0
+      }
+     }
+    },
+    "rsa_condicionamento": {
+     "fontes": "@thurlow2024; @thurlow2023; @cao2025hiit; @zhang2025ssg",
+     "rsa": {
+      "P1": "3x5x20 m, r=30 s, b=180 s, 300 m, 12 min 52 s",
+      "P2": "3x6x20 m, r=30 s, b=180 s, 360 m, 14 min 33 s",
+      "P3": "3x6x20 m, r=25 s, b=180 s, 360 m, 13 min 18 s",
+      "P4": "2x5x20 m, r=30 s, b=180 s, 200 m, 7 min 35 s"
+     },
+     "jogos_reduzidos_min": {
+      "P1": 22,
+      "P2": 28,
+      "P3": 34,
+      "P4": 0
+     }
+    },
+    "cod_agilidade": {
+     "fontes": "@kambitta2025; @zhang2026uni; @liu2026",
+     "metros_cod_por_semana": {
+      "P1": 384,
+      "P2": 512,
+      "P3": 560,
+      "P4": 160
+     }
+    },
+    "carga_ua": {
+     "P1": 1779,
+     "P2": 2065,
+     "P3": 2275,
+     "P4": 1299
+    }
+   },
+   "exercicios": [
+    {
+     "nome": "Agachamento (costas, frontal ou barra hexagonal)",
+     "dose": "P1 3×8 (~73%, RIR 3); P2 4×6 (~78%, RIR 2–3); P3 4×5 (~82%, RIR 1–2); P4 3×5 (~75%, RIR 4–5)",
+     "foco": "Quadríceps e glúteos; base de força"
+    },
+    {
+     "nome": "Levantamento terra romeno",
+     "dose": "3×8 → 3×8 → 3×6 → 2×6 (RIR 3 → 2–3 → 2 → 4)",
+     "foco": "Isquiotibiais e glúteos"
+    },
+    {
+     "nome": "Agachamento búlgaro / step-up alto",
+     "dose": "Búlgaro 3×8 por perna em P1–P3 (2×8 em P4); step-up 3×8, 3×8, 4×6 (F2)",
+     "foco": "Força unilateral, COD [@zhang2026uni]"
+    },
+    {
+     "nome": "Nórdico",
+     "dose": "2×4 → 3×5 → 3×6 → 2×4, 1×/sem (dose = decisão prática)",
+     "foco": "Prevenção de lesão de isquiotibiais [@vandyk2019]"
+    },
+    {
+     "nome": "Pliometria vertical (F1) e horizontal/lateral/unilateral (F2)",
+     "dose": "120 → 146 → 168 contatos/sem; P4 50",
+     "foco": "Potência e aterrissagem [@liu2026; @cao2024plio]"
+    },
+    {
+     "nome": "RSA 20 m",
+     "dose": "P1 3×5, P2 3×6, P3 3×6 (r 25 s), P4 2×5; b = 180 s",
+     "foco": "Sprints repetidos [@thurlow2024]"
+    },
+    {
+     "nome": "Aceleração 10–20 m",
+     "dose": "6×10 m, 6×15 m, 6×20 m; pausa 60 s",
+     "foco": "Aceleração"
+    },
+    {
+     "nome": "COD 5-10-5 e deslocamento defensivo/corte",
+     "dose": "COD-1 3×4 → 4×4 → 4×4 (reativo em P3); COD-2 3×4 → 4×4 → 4×5 × 12 m",
+     "foco": "Frenagem e mudança de direção [@kambitta2025]"
+    },
+    {
+     "nome": "Jogos reduzidos",
+     "dose": "4 → 5 → 6 blocos de 4 min, pausa de 2 min",
+     "foco": "Condicionamento intermitente específico [@zhang2025ssg]"
+    }
+   ],
+   "evitar": [
+    "Salto em profundidade na semana 1 ou com dor/fadiga.",
+    "COD reativo antes de P3.",
+    "Sprint ou salto sem aquecimento progressivo.",
+    "Pliometria depois das séries pesadas de força.",
+    "Sprint, salto e COD com gatilho vermelho."
+   ],
+   "monitoramento": [
+    "Bem-estar (4 itens de 1–5) e dor NPRS antes; PSE da sessão aos ~30 min e dor na manhã seguinte [@foster2001; @saw2016].",
+    "Tempo de cada sprint e Sdec% [@glaister2008].",
+    "CMJ semanal como alarme."
+   ],
+   "criterios_saida": [
+    "Sem vermelho em P1–P3.",
+    "PSE da sessão ≤ 7 (CR-10) em todas as sessões planejadas de P1–P3, testes excluídos.",
+    "Sdec% do RSA ≤ 10% em ≥ 90% das séries.",
+    "CMJ e 5RM do reteste (S4) ≥ semana 0.",
+    "Bem-estar ≥ 12 em ≥ 80% dos dias."
+   ],
+   "fontes": [
+    "@stojanovic2018",
+    "@petway2020",
+    "@zhang2023vbrt",
+    "@kang2022",
+    "@liu2026",
+    "@cao2024plio",
+    "@kambitta2025",
+    "@zhang2026uni",
+    "@thurlow2024",
+    "@thurlow2023",
+    "@cao2025hiit",
+    "@zhang2025ssg",
+    "@foster2001",
+    "@vandyk2019",
+    "@zhou2024"
+   ]
+  },
+  {
+   "nome": "Mesociclo competitivo (temporada, 1–2 jogos por semana), 4 semanas: 3 de carga + 1 de descarga/teste (C1–C4)",
+   "objetivo": "Manter força e potência, afiar velocidade e COD, e chegar descansado ao jogo.",
+   "criterios_entrada": [
+    "Critérios de saída do preparatório cumpridos.",
+    "Calendário de jogos definido (1 jogo no sábado, ou quarta e sábado).",
+    "Sem vermelho ativo."
+   ],
+   "fitt_vp": {
+    "F": "1 jogo/sem: 3 treinos (seg força + salto; qua RSA/COD/tático; qui ativação) + jogo no sábado. 2 jogos/sem: 2 sessões curtas (seg força de manutenção; qui ativação), sem RSA.",
+    "I": "Força ~80% → ~82% → ~85% de 1RM (RIR 2–3) em agachamento; com 2 jogos RIR ≥ 3; salto e sprint em esforço máximo; RSA com Sdec% ≤ 10%; PSE da sessão prevista 3–7.",
+    "T": "T1 58–70 min; T2 86–91 min; T3 33 min; carga 963 → 1.119 → 1.226 UA (sem jogo); 2 jogos 256 UA.",
+    "Tipo": "Agachamento, terra romeno, búlgaro, supino, remada, nórdico, panturrilha, core; CMJ, salto na caixa/profundidade, hop-and-stick, skater; aceleração 10 m; RSA 20 m; COD 5-10-5 e defensivo.",
+    "V": "Força 17 → 20 → 20 séries/sem (2 jogos 10); contatos 60 → 68 → 84 (C4 8; 2 jogos 22); sprint linear 280 → 340 → 400 m; COD 384 m em C1–C3.",
+    "P": "A intensidade sobe e o volume cai; carga total ≤ +20% por semana; RSA só em MD-3 (≥ 72 h do jogo). Regressão amarela (repete a carga da sessão anterior, corta 1 série do bloco que provocou o sinal e troca salto em profundidade/COD reativo por versão planejada): dor 4–5/10 (NPRS) durante o exercício, em músculo ou articulação, sem pontada súbita; dor ou rigidez de 3–4/10 (NPRS) na manhã seguinte, ou que persiste por mais de 48 h; PSE da sessão = 8 (CR-10) ou ≥ 2 pontos acima do previsto; Sdec% da série > 10% e ≤ 12%; bem-estar pré-sessão de 12–14 (soma de 4 itens de 1–5) ou queda ≥ 3 pontos em relação à média das 2 semanas anteriores; CMJ 5–9% abaixo da média individual das 3 últimas medidas. Regressão vermelha (interrompe o bloco, sem pliometria/sprint/COD até avaliação quando o sinal é de dor, volta pela semana 1 do mesociclo): dor ≥ 6/10 (NPRS) durante o exercício, ou pontada súbita/estalido em posterior da coxa, virilha, panturrilha ou tornozelo; dor ou rigidez ≥ 5/10 (NPRS) na manhã seguinte, ou por mais de 72 h, ou piora entre sessões, ou inchaço; PSE da sessão de 9–10, ou PSE ≥ 8 em 2 sessões seguidas; Sdec% da série > 12%, ou 1º sprint de uma série ≥ 5% mais lento que o melhor 1º sprint do dia; bem-estar pré-sessão ≤ 11 (soma de 4 itens de 1–5); CMJ ≥ 10% abaixo da média individual das 3 últimas medidas; torção de tornozelo com dor ≥ 4/10, inchaço, ou dor ao apoiar ou aterrissar; inchaço articular visível, falseio (articulação cede), travamento/bloqueio ou incapacidade de apoiar o peso."
+   },
+   "por_capacidade": {
+    "forca": {
+     "fontes": "@zhang2026micro; @manzi2010; @chiang2025",
+     "series_por_grupo": {
+      "Quadríceps/glúteos (dominante de joelho)": [
+       5,
+       6,
+       6,
+       0
+      ],
+      "Isquiotibiais/glúteos (dominante de quadril)": [
+       4,
+       4,
+       4,
+       0
+      ],
+      "Empurrar (peitoral, ombro, tríceps)": [
+       2,
+       3,
+       3,
+       0
+      ],
+      "Puxar (dorsais, bíceps)": [
+       2,
+       3,
+       3,
+       0
+      ],
+      "Panturrilha": [
+       2,
+       2,
+       2,
+       0
+      ],
+      "Core": [
+       2,
+       2,
+       2,
+       0
+      ]
+     },
+     "duas_jogos": {
+      "quad": 2,
+      "isq": 2,
+      "empurrar": 2,
+      "puxar": 2,
+      "pant": 2,
+      "core": 0
+     }
+    },
+    "potencia_pliometria": {
+     "fontes": "@liu2026; @kambitta2025",
+     "contatos_por_semana": [
+      60,
+      68,
+      84,
+      8
+     ],
+     "dois_jogos": 22
+    },
+    "rsa_condicionamento": {
+     "fontes": "@thurlow2024; @thurlow2023",
+     "rsa": {
+      "C1": "2x6x20 m, r=30 s, b=180 s, 240 m, 8 min 42 s",
+      "C2": "3x5x20 m, r=30 s, b=180 s, 300 m, 12 min 52 s",
+      "C3": "3x6x20 m, r=30 s, b=180 s, 360 m, 14 min 33 s",
+      "C4": "2x5x20 m, r=30 s, b=180 s, 200 m, 7 min 35 s"
+     }
+    },
+    "cod_agilidade": {
+     "fontes": "@kambitta2025",
+     "metros_cod_por_semana": {
+      "C1": 384,
+      "C2": 384,
+      "C3": 384,
+      "C4": 160
+     }
+    },
+    "carga_ua": {
+     "C1": 963,
+     "C2": 1119,
+     "C3": 1226,
+     "C4": 870
+    }
+   },
+   "exercicios": [
+    {
+     "nome": "Agachamento (costas, frontal ou barra hexagonal)",
+     "dose": "C1 3×5 (~80%); C2 3×4 (~82%); C3 3×3 (~85%), RIR 2–3; C4 teste de 5RM; 2 jogos 2×5 com RIR ≥ 3",
+     "foco": "Manter força máxima"
+    },
+    {
+     "nome": "Terra romeno, búlgaro, supino, remada, panturrilha, core",
+     "dose": "2–3 séries por exercício, RIR 2–3 (ver tabela do .md)",
+     "foco": "Manutenção"
+    },
+    {
+     "nome": "Nórdico",
+     "dose": "2×4 → 2×5 → 2×5, 1×/sem; não faz com 2 jogos",
+     "foco": "Prevenção [@vandyk2019]"
+    },
+    {
+     "nome": "Pliometria (T1) e CMJ (T3)",
+     "dose": "60 → 68 → 84 contatos/sem",
+     "foco": "Potência sem fadiga"
+    },
+    {
+     "nome": "RSA 20 m (T2, MD-3)",
+     "dose": "C1 2×6, C2 3×5, C3 3×6; r = 30 s; b = 180 s",
+     "foco": "Manter RSA [@thurlow2024]"
+    },
+    {
+     "nome": "Aceleração 10 m (T3, MD-2)",
+     "dose": "4×10 m (C4: 3×10 m); 2 jogos: 3×10 m; pausa 60 s",
+     "foco": "Velocidade sem fadiga"
+    },
+    {
+     "nome": "COD 5-10-5 e defensivo (T2)",
+     "dose": "3×4×20 m (planejado em C1, reativo em C2–C3) + 3×4×12 m",
+     "foco": "Afinar COD"
+    }
+   ],
+   "evitar": [
+    "Força pesada ou nórdico em MD-1/MD-2 (exceto força de manutenção com RIR ≥ 3 em semana de 2 jogos).",
+    "RSA e salto em profundidade nas 48 h antes do jogo.",
+    "Testes de 5RM e Yo-Yo IR1 com jogo em menos de 72 h.",
+    "Sprint, salto e COD com gatilho vermelho."
+   ],
+   "monitoramento": [
+    "Bem-estar, dor e PSE como no preparatório.",
+    "PSE do jogo e minutos em quadra [@molina2025].",
+    "CMJ semanal como alarme; Sdec% do RSA."
+   ],
+   "criterios_saida": [
+    "Sem vermelho.",
+    "CMJ ≥ −5% em relação ao reteste de S4.",
+    "5RM de agachamento e supino ≥ −5% de S4.",
+    "Sdec% do RSA ≤ 10%.",
+    "PSE do jogo registrada em ≥ 3 jogos."
+   ],
+   "fontes": [
+    "@zhang2026micro",
+    "@manzi2010",
+    "@molina2025",
+    "@chiang2025",
+    "@kang2022",
+    "@thurlow2024",
+    "@thurlow2023",
+    "@foster2001"
+   ]
+  }
+ ],
+ "quadro_comparativo": {
+  "preparatorio": {
+   "objetivo": "Construir força, base de potência, RSA e COD",
+   "treinos_semana": 4,
+   "forca_series_semana": [
+    36,
+    41,
+    45,
+    17
+   ],
+   "contatos_semana": [
+    120,
+    146,
+    168,
+    50
+   ],
+   "m_sprint_linear": [
+    360,
+    450,
+    480,
+    200
+   ],
+   "m_cod": [
+    384,
+    512,
+    560,
+    160
+   ],
+   "carga_ua": [
+    1779,
+    2065,
+    2275,
+    1299
+   ]
+  },
+  "competitivo": {
+   "objetivo": "Manter força e potência, afiar velocidade/COD, chegar descansado",
+   "treinos_semana": "3 + 1 jogo (ou 2 + 2 jogos)",
+   "forca_series_semana": [
+    17,
+    20,
+    20,
+    "teste"
+   ],
+   "forca_2_jogos": 10,
+   "contatos_semana": [
+    60,
+    68,
+    84,
+    8
+   ],
+   "contatos_2_jogos": 22,
+   "m_sprint_linear": [
+    280,
+    340,
+    400,
+    230
+   ],
+   "m_cod": [
+    384,
+    384,
+    384,
+    160
+   ],
+   "carga_ua_sem_jogo": [
+    963,
+    1119,
+    1226,
+    870
+   ],
+   "carga_2_jogos_ua": 256
+  }
+ },
+ "microciclos": {
+  "preparatorio": "Seg Q1 (COD + RSA + tático); Ter F1 (pliometria + força A); Qua livre; Qui F2 (aceleração + pliometria + força B); Sex livre; Sáb Q2 (COD defensivo + jogos reduzidos); Dom livre.",
+  "competitivo_1_jogo": "Dom MD+1 livre; Seg MD+2 T1 força + salto; Ter livre; Qua MD-3 T2 COD + RSA + tático; Qui MD-2 T3 ativação (CMJ 3×4 + aceleração 4×10 m); Sex MD-1 livre; Sáb MD jogo.",
+  "competitivo_2_jogos": "Seg (MD-2 do jogo de quarta) força de manutenção com RIR ≥ 3; Ter livre; Qua jogo; Qui ativação (CMJ 3×4 + aceleração 3×10 m); Sex livre; Sáb jogo; sem RSA."
+ },
+ "testes": {
+  "momentos": "Semana 0, S4 (qui e sáb), S8 (seg e qua, teste 2 só se o jogo for ≥ 72 h depois)",
+  "bateria": [
+   "CMJ (3 tentativas)",
+   "Sprint 10 e 20 m",
+   "COD (T-test ou 505)",
+   "5RM de agachamento e supino (1RM estimado = carga × (1 + reps/30), convenção)",
+   "RSA 6 × (14+14 m, giro de 180°), pausa passiva de 20 s: melhor tempo, médio e Sdec% [@glaister2008]",
+   "Yo-Yo IR1 (distância)"
+  ],
+  "fontes": [
+   "@brini2021",
+   "@thurlow2024",
+   "@thurlow2023",
+   "@glaister2008"
+  ]
+ },
+ "ajuste_por_sintomas": [
+  {
+   "cor": "verde",
+   "sinal": "Dor ≤ 3/10 (NPRS) durante o exercício, sem pontada; Sdec% da série ≤ 10%; PSE da sessão ≤ 7; manhã seguinte ≤ 2/10 e resolvida em 24 h; bem-estar ≥ 15",
+   "conduta": "Na sessão: segue o plano. Na próxima: aplica a regra de progressão da semana.",
+   "fonte": "@silbernagel2007; @thurlow2023; @foster2001"
+  },
+  {
+   "cor": "amarelo",
+   "sinal": "Dor 4–5/10 (NPRS) durante o exercício, em músculo ou articulação, sem pontada súbita",
+   "conduta": "Na sessão: termina a série, troca salto em profundidade/COD reativo por versão planejada e corta 1 série do resto. Na próxima: repete a sessão anterior, sem progredir.",
+   "fonte": "modelo de monitoramento da dor @silbernagel2007; limiar = convenção do grupo"
+  },
+  {
+   "cor": "vermelho",
+   "sinal": "Dor ≥ 6/10 (NPRS) durante o exercício, ou pontada súbita/estalido em posterior da coxa, virilha, panturrilha ou tornozelo",
+   "conduta": "Na sessão: para o exercício; sem salto, sprint ou COD no dia. Na próxima: sem salto/sprint/COD até avaliação; volta pela semana 1.",
+   "fonte": "convenção do grupo"
+  },
+  {
+   "cor": "amarelo",
+   "sinal": "Dor ou rigidez de 3–4/10 (NPRS) na manhã seguinte, ou que persiste por mais de 48 h",
+   "conduta": "Na sessão: retira salto em profundidade e COD reativo; corta 1 série. Na próxima: repete a carga anterior; reconfere em 24 h.",
+   "fonte": "convenção do grupo"
+  },
+  {
+   "cor": "vermelho",
+   "sinal": "Dor ou rigidez ≥ 5/10 (NPRS) na manhã seguinte, ou por mais de 72 h, ou piora entre sessões, ou inchaço",
+   "conduta": "Na sessão: suspende salto, sprint e COD; encaminha. Na próxima: só retoma após avaliação; semana 1.",
+   "fonte": "convenção do grupo"
+  },
+  {
+   "cor": "amarelo",
+   "sinal": "Sdec% da série > 10% e ≤ 12%",
+   "conduta": "Na sessão: próxima série com +10 s de pausa; 2ª série seguida > 10% encerra o bloco. Na próxima: repete a carga anterior; não reduz a pausa.",
+   "fonte": "@thurlow2023"
+  },
+  {
+   "cor": "vermelho",
+   "sinal": "Sdec% da série > 12%, ou 1º sprint de uma série ≥ 5% mais lento que o melhor 1º sprint do dia",
+   "conduta": "Na sessão: encerra o bloco de RSA. Na próxima: −1 série e a pausa da semana anterior.",
+   "fonte": "convenção do grupo"
+  },
+  {
+   "cor": "amarelo",
+   "sinal": "PSE da sessão = 8 (CR-10) ou ≥ 2 pontos acima do previsto",
+   "conduta": "Na sessão: corta 1 série do bloco principal. Na próxima: repete a carga anterior.",
+   "fonte": "@foster2001; @thurlow2023"
+  },
+  {
+   "cor": "vermelho",
+   "sinal": "PSE da sessão de 9–10, ou PSE ≥ 8 em 2 sessões seguidas",
+   "conduta": "Na sessão: encerra o bloco. Na próxima: −1 série e +10 s de pausa; reavalia a carga total.",
+   "fonte": "@foster2001"
+  },
+  {
+   "cor": "amarelo",
+   "sinal": "Bem-estar pré-sessão de 12–14 (soma de 4 itens de 1–5) ou queda ≥ 3 pontos em relação à média das 2 semanas anteriores",
+   "conduta": "Na sessão: versão reduzida (−1 série por exercício, pausa +10 s). Na próxima: reavalia no início do dia.",
+   "fonte": "@saw2016; convenção do grupo"
+  },
+  {
+   "cor": "vermelho",
+   "sinal": "Bem-estar pré-sessão ≤ 11 (soma de 4 itens de 1–5)",
+   "conduta": "Na sessão: só mobilidade e técnica; sem salto, sprint e COD. Na próxima: volta com bem-estar ≥ 12.",
+   "fonte": "convenção do grupo"
+  },
+  {
+   "cor": "amarelo",
+   "sinal": "CMJ 5–9% abaixo da média individual das 3 últimas medidas",
+   "conduta": "Na sessão: retira salto em profundidade e RSA; mantém força com RIR ≥ 3. Na próxima: repete a carga anterior.",
+   "fonte": "convenção do grupo"
+  },
+  {
+   "cor": "vermelho",
+   "sinal": "CMJ ≥ 10% abaixo da média individual das 3 últimas medidas",
+   "conduta": "Na sessão: sem salto, sprint e COD; só força leve. Na próxima: reavalia o CMJ em 48 h.",
+   "fonte": "convenção do grupo"
+  },
+  {
+   "cor": "amarelo",
+   "sinal": "Sono ≤ 6 h na noite anterior",
+   "conduta": "Na sessão: −1 série por bloco; sem RIR < 3. Na próxima: reavalia o sono; ≤ 6 h por 2 noites vira bem-estar amarelo.",
+   "fonte": "@craven2022"
+  },
+  {
+   "cor": "amarelo",
+   "sinal": "Calor intenso no ginásio (tontura, náusea, cefaleia) ou impossibilidade de manter a hidratação",
+   "conduta": "Na sessão: pausas extras, hidratação, −1 série. Na próxima: aclimatização de 1–2 semanas; começar euidratado.",
+   "fonte": "@racinais2015"
+  },
+  {
+   "cor": "amarelo",
+   "sinal": "PSE do jogo anterior ≥ 8 (CR-10) ou jogo com prorrogação",
+   "conduta": "Na sessão: força de segunda com metade das séries; sem salto em profundidade. Na próxima: segue o plano na quarta.",
+   "fonte": "@molina2025; convenção do grupo"
+  },
+  {
+   "cor": "vermelho",
+   "sinal": "Torção de tornozelo com dor ≥ 4/10, inchaço, ou dor ao apoiar ou aterrissar",
+   "conduta": "Na sessão: para e encaminha no mesmo dia. Na próxima: sem salto, sprint e COD até liberação.",
+   "fonte": "convenção do grupo (sem fonte lida)"
+  },
+  {
+   "cor": "vermelho",
+   "sinal": "Inchaço articular visível, falseio (articulação cede), travamento/bloqueio ou incapacidade de apoiar o peso",
+   "conduta": "Na sessão: para, protege, encaminha no mesmo dia. Na próxima: sem salto, sprint e COD até liberação; semana 1.",
+   "fonte": "convenção do grupo"
+  },
+  {
+   "cor": "vermelho",
+   "sinal": "Dor ou pressão no peito, síncope ou pré-síncope, palpitação, falta de ar desproporcional",
+   "conduta": "Na sessão: para; chamar emergência (192) se não melhorar em minutos. Na próxima: só volta com avaliação médica.",
+   "fonte": "consenso, sem fonte citada"
+  }
+ ],
+ "retorno_ao_esporte": {
+  "criterios": [
+   "Não se aplica retorno pós-lesão (atleta saudável).",
+   "Passagem preparatório → competitivo: critérios de saída do preparatório cumpridos.",
+   "Após qualquer vermelho de dor/falseio/inchaço/torção: liberação da equipe de saúde antes de salto, sprint e COD; volta pela semana 1 do mesociclo."
+  ],
+  "fontes": [
+   "@silbernagel2007"
+  ]
+ },
+ "prevencao": {
+  "programa": "Nórdico para isquiotibiais 1×/semana nos dois mesociclos; técnica de aterrissagem em todo bloco de salto; sem fonte lida para prevenção de entorse de tornozelo.",
+  "dose": "Preparatório 2×4 → 3×5 → 3×6 → 2×4; competitivo 2×4 → 2×5 → 2×5; sem nórdico em semana de 2 jogos. Dose do estudo original não consta no resumo; a nossa é decisão prática.",
+  "fontes": [
+   "@vandyk2019"
+  ]
+ },
+ "sono_estresse_ambiente": {
+  "sono": "≤ 6 h em 24 h: −7,56% de desempenho em média; regra amarela [@craven2022]",
+  "estresse": "Item do bem-estar; semana 2 pede atenção [@saw2016; @zhang2026micro]",
+  "calor": "Aclimatização de 1–2 semanas; começar euidratado [@racinais2015]",
+  "outros": "Piso, calçado, horário e alimentação: sem fonte lida."
+ },
+ "encaminhamento": [
+  "Médico: dor ou pressão no peito, síncope, palpitação, falta de ar desproporcional; triagem inicial positiva.",
+  "Fisioterapia/medicina esportiva: qualquer vermelho de dor, falseio, bloqueio, inchaço, torção de tornozelo com dor ≥ 4/10; 2 vermelhos em 4 semanas.",
+  "Escopo da Educação Física: prescrição, execução, monitoramento e testes de campo; eletroterapia, crioterapia e liberação após lesão são da equipe de saúde."
+ ],
+ "referencias_usadas": [
+  "stojanovic2018",
+  "petway2020",
+  "liu2026",
+  "cao2024plio",
+  "zhou2024",
+  "kambitta2025",
+  "cao2025hiit",
+  "zhang2025ssg",
+  "zhang2023vbrt",
+  "zhang2026uni",
+  "kang2022",
+  "manzi2010",
+  "zhang2026micro",
+  "molina2025",
+  "chiang2025",
+  "brini2021",
+  "foster2001",
+  "thurlow2024",
+  "thurlow2023",
+  "glaister2008",
+  "craven2022",
+  "saw2016",
+  "racinais2015",
+  "vandyk2019",
+  "silbernagel2007"
+ ]
+}
