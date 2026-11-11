@@ -22,7 +22,7 @@ Gerado em 11/11/2026 11:57.
 
 ## Indicadores
 - resumo: 191 palavras
-- corpo do texto: ~6555 palavras
+- corpo do texto: ~6745 palavras
 - 15 referência(s); 2 (13%) dos últimos 5 anos; mais antiga: 2001
 - desenhos: Revisão sistemática com metanálise: 4; Revisão narrativa: 3; Transversal: 3; Estudo de validação: 3; Ensaio clínico controlado (randomização não explícita no resumo): 1; Ensaio clínico randomizado: 1
 - 18 slide(s) definidos
