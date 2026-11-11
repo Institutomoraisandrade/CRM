@@ -41,3 +41,11 @@
 
 ## Pendências para o líder
 - `03-quadro-evidencias.json` não gerado (modo rápido).
+
+## 6. Adendo: ambiente, períodos e monitoramento (pedido posterior)
+- Calor: consenso recomenda aclimatização de 1–2 semanas, começar euidratado, minimizar desidratação e dar mais recuperação no calor; sem limiar numérico no resumo [@racinais2015].
+- Piso: em futebol, pliometria na areia causou menos dor muscular que na grama (p < 0,001), com melhora de sprint de 10 e 20 m similar [@impellizzeri2008]. Nenhuma fonte sobre tração/atrito em quadra de handebol.
+- Sono: perda de sono (≤ 6 h) reduziu o desempenho em média −7,56% (IC 95% −11,9 a −3,13; 69 estudos), ~0,4% por hora acordado antes do exercício; tarefas à noite foram afetadas [@craven2022].
+- Monitoramento: medidas subjetivas refletiram a carga de treino com mais sensibilidade que as objetivas [@saw2016]; recomendação clássica de monitorar overtraining por humor, fadiga e estresse [@hooper1995] (resumo indisponível).
+- Posição: pontas gastam mais tempo em sprint; armadores e pivôs fazem mais ações exigentes (123 e 127 contra 55) [@povoas2014].
+- Sem fonte encontrada: altitude, horário para RST, tração, alimentação, álcool/tabaco, RST pós-viagem, 2 jogos/semana.

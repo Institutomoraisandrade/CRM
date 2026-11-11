@@ -110,7 +110,7 @@ Regras: ≥ 48 h entre A e B; nunca A e B em dias seguidos; sem COD de 180° nas
 | Vermelho | PSE da sessão de 9–10, ou PSE ≥ 8 em 2 sessões seguidas | Encerra o bloco | −1 série e +10 s de pausa entre sprints; reavalia a carga total | [@foster2001] |
 | Vermelho | Inchaço articular visível, falseio (articulação cede), travamento/bloqueio ou incapacidade de apoiar o peso | Para, protege, encaminha no mesmo dia | Sem RST até liberação; Fase 1 | boa prática (convenção do prescritor) |
 | Vermelho | Dor ou pressão no peito, síncope ou pré-síncope, palpitação, falta de ar desproporcional | Para; acionar emergência (192) se não melhorar em minutos | Só volta com avaliação médica | consenso, sem fonte citada |
-| Amarelo | Bem-estar pré-sessão ≤ 4/10, sono < 6 h ou calor intenso (tontura, náusea) | Corta 1 série, +30 s entre séries, hidrata | Reavalia no início do dia | convenção do prescritor |
+| Amarelo | Bem-estar pré-sessão ≤ 4/10, sono < 6 h ou calor intenso (tontura, náusea) | Versão reduzida (−1 série, r +10 s, b = 4 min 30 s; seção E), hidrata | Reavalia no início do dia | convenção do prescritor |
 
 **De onde vêm os limiares.** Só dois números têm apoio de resumo: o efeito de +10 s de pausa sobre o Sdec% (−1,4% ± 0,4) [@thurlow2023] e a PSE típica do RST (6,5 ± 0,5) [@thurlow2023]. O modelo de monitoramento da dor foi testado em tendinopatia de Aquiles (RCT, n = 38; continuar correndo e saltando com o modelo não piorou o desfecho) [@silbernagel2007]; o resumo lido não traz limiares numéricos. **Os limiares 3/10, 4–5/10, ≥ 6/10, 10% e 12% de Sdec%, 5% no 1º sprint e PSE 8–10 são convenção do prescritor**, não validados para RST.
 
@@ -212,6 +212,92 @@ Regras: ≥ 48 h entre A e B; nunca A e B em dias seguidos; sem COD de 180° nas
 - **Volume de desaceleração.** Cada sprint termina em parada e o COD tem duas frenagens por repetição. Teto de 60 frenagens por sessão (S7-A e S8-A chegam a 60), COD 180° só no Dia A, nunca em MD-2, 1 sessão por semana, introdução com 1 série em S4 (decisão prática; não encontrei estudo de dose de desaceleração). A frenagem repetida explica a dor tardia, daí as regras de manhã seguinte.
 - **Superfície e calçado.** Piso de quadra, sem umidade; calçado de handebol com aderência; sem piso escorregadio (decisão prática).
 - **Ombro.** O sprint com bola evita arremesso para não somar carga de ombro.
+
+## Períodos e ambiente
+
+> Pedido novo: duas versões da periodização, ambiente de treino, variáveis individuais e comportamentais, tudo traduzido para a **quadra de handebol (40 × 20 m; área de 6 m e linha de 9 m; linha central)**. Mantêm-se 20–25 min só de sprints repetidos e as doses já calculadas. A evidência para esta seção é **escassa**: só o consenso de calor [@racinais2015], um ensaio de superfície em futebol [@impellizzeri2008], uma metanálise de privação de sono [@craven2022] e duas fontes de monitoramento subjetivo [@saw2016; @hooper1995]. O resto é decisão prática ou convenção do prescritor, assim marcado.
+
+### A. Tradução das distâncias para a quadra de handebol
+
+| Distância no treino | Tempo estimado | Situação de jogo (quadra 40 × 20 m) | Observação |
+|---|---|---|---|
+| 15 m | 2,8 s | Da linha de 6 m própria até perto da linha central (≈ 14 m): retomada de bola e arrancada de transição | aproximação (decisão prática) |
+| 20 m | 3,5 s (4,2 s com bola) | Linha de fundo até a linha central, ou a largura da quadra; contra-ataque conduzindo a bola | – |
+| 25 m | 4,2 s | Da linha de 6 m própria até a linha de 9 m adversária (40 − 6 − 9 = 25 m); recuo defensivo do ataque até a própria área de 6 m | – |
+| 30 m | 4,9 s | Da linha de fundo até a linha de 9 m adversária (≈ 31 m): contra-ataque de ponta a ponta da defesa ao ataque | – |
+| COD 2 × 15 m (giro de 180°) | 6,5 s | Ir e voltar entre a linha de 6 m e a central: recuo, giro e retomada, como na transição ataque-defesa | – |
+| Gol a gol (40 m) | – | Contra-ataque pleno; **não entra** nas doses calculadas (manter 20–25 min); opcional como variação do Dia A para pontas, trocando 1 série de 30 m | decisão prática |
+| Deslocamento lateral de defesa 6:0 / 5:1 (3–6 m) | – | **Não é sprint**; fica fora do RST (técnico-tático) | escopo do pedido |
+
+Os blocos com bola usam condução com drible contínuo, sem arremesso. Contato, escudo e duelos 1 × 1 ficam no treino técnico-tático, não no cronômetro do RST (decisão prática).
+
+### B. Adaptação por posição (mesmas doses e durações)
+
+| Posição | Demanda no jogo | O que priorizar no RST (sem mudar a dose) |
+|---|---|---|
+| Pontas | Fazem mais sprints do que as demais posições; backcourt e pivôs fazem mais ações exigentes (123 e 127 por jogo contra 55 nos pontas) [@povoas2014] | Dia A: linear 25–30 m (contra-ataque); Dia B: 20 m com bola (condução). Opcional: 1 série de gol a gol no lugar de 1 de 30 m |
+| Armadores (centrais e laterais) | Mais ações exigentes que pontas [@povoas2014]; paradas, mudanças de direção e 1 × 1 são as ações intensas mais frequentes [@povoas2012] | Dia A: COD 2 × 15 m (finta e corte); Dia B: 20 m com bola, 15 m linear em arrancada curta |
+| Pivôs | Também com alto número de ações exigentes [@povoas2014]; arrancadas curtas e contatos | Dia B: 15–20 m e arrancadas curtas; COD 180° só no Dia A; contato fora do RST |
+| Goleiro | Demanda diferente (saídas e deslocamentos de 3–6 m) | **Fora do RST** do time, ou versão adaptada no Dia B: 4 × 6 × 10 m (t = 2,2 s), r = 30 s, b = 3 min 30 s = **21 min 23 s** (decisão prática) |
+
+### C. Dois períodos: preparatório e competitivo
+
+**Períodos.** *Preparatório* (pré-temporada, sem jogo oficial semanal): usa as Fases 1–4 das 10 semanas, 2 a 3 sessões por semana, maior volume. A **3ª sessão** é opcional (Dia C = repetição do Dia B da semana) e só em semana sem jogo, com ≥ 48 h entre sessões e apenas se as duas anteriores estiverem em verde: na S7 o volume vai de 1.500 m (A + B) a 2.100 m (A + B + C). *Competitivo* (temporada com 1 ou 2 jogos/semana): 1 a 2 sessões por semana, manutenção, sem progressão de carga.
+
+| Item | **Preparatório** (pré-temporada) | **Competitivo** (temporada) |
+|---|---|---|
+| F | 2 sessões/semana (A em MD-4, B em MD-2); 3ª sessão opcional (C) só em semana sem jogo; ≥ 48 h entre sessões | 1 jogo/semana: 2 sessões (A em MD-4, B em MD-2) ou só B; 2 jogos/semana: 1 sessão (B) ou nenhuma |
+| I | Esforço máximo; PSE 6–8; Sdec% ≤ 10% por série | Esforço máximo; PSE 6–7; mesmos gatilhos da tabela de ajuste |
+| T | 21 min 26 s a 23 min 35 s, conforme a semana do plano | 22 min 01 s (B) e 22 min 18 s (A) |
+| Tipo | Linear → COD 180° → com bola (plano das 10 semanas) | A: linear 30 m; B: 20 m com bola; COD de 180° apenas se não houver jogo em ≤ 72 h e só 1 série (decisão prática) |
+| V | Plano das semanas 1–9: 600 a 1.500 m/semana com 2 sessões (até 2.100 m com 3) | A: 4 × 6 × 30 m (720 m), r = 25 s, b = 4 min. B: 4 × 6 × 20 m com bola (480 m), r = 25 s, b = 4 min. Semana normal 1.200 m; semana de 2 jogos 480 m |
+| P | Por critérios de saída; repete a semana se falhar | Sem progressão; reteste (RSA, RSA-COD) a cada 6–8 semanas; reduz se a PSE do jogo ≥ 8 ou houver gatilho |
+
+Cálculo das sessões competitivas: B = 4 × [6 × 4,2 + 5 × 25] + 3 × 240 = 4 × 150,2 + 720 = 1.320,8 s = **22 min 01 s**; A = 4 × [6 × 4,9 + 5 × 25] + 3 × 240 = 4 × 154,4 + 720 = 1.337,6 s = **22 min 18 s**.
+
+**Semana com 1 jogo.** Igual ao microciclo da seção anterior: A em MD-4, B em MD-2, sem RST em MD-1 nem em MD+1/MD+2 após jogo com PSE ≥ 8 (decisão prática, sem fonte sobre posição semanal; princípio geral: considerar a carga neuromuscular do microciclo [@buchheit2013hiit2]).
+
+**Semana com 2 jogos (ex.: quarta e sábado).** Regra única (decisão prática): faz-se **1 sessão B no MD-2 do 2º jogo** (quinta), 4 × 6 × 20 m com bola, r = 30 s, b = 3 min 30 s = **22 min 11 s**, só se a PSE do 1º jogo foi ≤ 7 e a dor/rigidez da manhã seguinte ≤ 2/10; caso contrário, **nenhuma sessão de RST** na semana. Nunca A nesta semana.
+
+**Pós-viagem (jogo fora, ônibus ou voo).** Dia da viagem e dia seguinte sem RST; a 1ª sessão depois é o **B** (linear/bola, sem COD de 180°) com r = 30 s, b = 3 min 30 s (22 min 11 s) e questionário de bem-estar antes (seção E). Convenção do prescritor; não encontrei estudo de RST após viagem.
+
+### D. Variáveis ambientais e do local de treino
+
+| Variável | O que a fonte diz | O que muda na prescrição |
+|---|---|---|
+| **Calor e umidade do ginásio** | Consenso: aclimatização com exposições repetidas em 1–2 semanas; começar euidratado e minimizar a desidratação; estratégias de resfriamento; programar para reduzir o risco, sobretudo nos primeiros dias quentes; períodos de recuperação mais longos no calor [@racinais2015]. O resumo **não traz limiar numérico de WBGT nem litros**. | Sinais para parar: tontura, náusea, cefaleia, cãibras, confusão, calafrio ou queda brusca de rendimento (Sdec% > 12%). Hidratar **antes** e nas pausas entre séries (b ≥ 2 min 30 s permite). No calor ou ginásio abafado: **mantém as séries e soma +30 s ao b e +5 a +10 s ao r** (um aumento de 10 s de pausa reduz o Sdec% em ~1,4% [@thurlow2023]); se o bloco passar de 25 min, tira 1 série. Primeiros dias de calor: usar a versão reduzida (seção E). Limiar de WBGT: pendência (usar o da organização local e registrar). |
+| **Piso** | Em futebol, a pliometria na areia gerou menos dor muscular que na grama (p < 0,001), com melhora de sprint de 10 e 20 m similar entre superfícies; a grama melhorou mais o CMJ [@impellizzeri2008]. **Não encontrei fonte** sobre tração/atrito em quadras de handebol. | **Madeira/sintético de quadra (referência):** doses como calculadas. **Cimento:** maior impacto e tração; reduzir giros de 180° (usar curva aberta, raio ≥ 2 m) e frenagens para ≤ 48 por sessão (convenção). **Areia/grama:** menos impacto e menos dor tardia [@impellizzeri2008], mas sprint mais lento: **recalcular os tempos (esperar +10 a +20%, estimativa)** e julgar pela PSE/Sdec%; boa opção de pré-temporada para o volume de frenagem; grama molhada é escorregadia: sem COD de 180° e usar calçado adequado. Testar sempre **no mesmo piso**. |
+| **Espaço** | Sem fonte (geometria da quadra). | **Quadra inteira (40 × 20 m):** todas as distâncias, inclusive gol a gol opcional. **Meia quadra (20 × 20 m):** linear 20 m e, no lugar do 30 m, a **diagonal (≈ 28 m)**. **Corredor/ginásio pequeno (≤ 15 m):** trocar linear 30 m por 2 × 15 m com curva aberta a ~90% e contar as frenagens (teto de 60); com bola, 15 m. Giros: deixar 3 m livres atrás da linha de frenagem; sem parede no fim. |
+| **Horário (manhã × noite)** | Na metanálise de privação de sono, tarefas de exercício à noite foram consistentemente prejudicadas e as da manhã pouco afetadas [@craven2022]. **Não encontrei fonte** específica de RST por horário. | Treino noturno (comum no amador): atenção ao sono e ao dia de trabalho (seção E); no calor, preferir o horário mais fresco [@racinais2015]. **Padronizar o horário dos testes** (semanas 0, 5 e 10). |
+| **Altitude** | Não pesquisei; **sem fonte neste trabalho**. | Fora do escopo. Se houver treino em altitude, reavaliar com o líder. |
+
+### E. Variáveis individuais e comportamentais que modulam a sessão
+
+**Por que medir de forma subjetiva.** Em revisão sistemática, as medidas subjetivas de bem-estar refletiram a carga de treino aguda e crônica com mais sensibilidade e consistência que as objetivas, e geralmente não se correlacionaram com elas [@saw2016]; o monitoramento de overtraining por humor, fadiga e estresse é recomendado desde Hooper e Mackinnon (resumo indisponível no PubMed; citado só como recomendação) [@hooper1995]. É a ferramenta certa para amadores, sem equipamento.
+
+| Variável | Por que importa | Pergunta/registro antes da sessão | Conduta (convenção do prescritor, salvo indicação) |
+|---|---|---|---|
+| **Sono** (duração/qualidade na noite anterior) | Perda de sono (≤ 6 h) reduziu o desempenho de exercício em média −7,56% (IC 95% −11,9 a −3,13; 69 estudos), efeito em todas as categorias, incluindo intervalado de alta intensidade e potência/resistência de velocidade; ~0,4% de queda por hora acordado antes do exercício na privação e na restrição tardia; tarefas à noite foram afetadas [@craven2022] | Horas dormidas e qualidade 1–5 | < 6 h ou qualidade ≤ 2: versão reduzida; 2 noites seguidas: não progride e avisa o responsável. A meta de horas de sono é encaminhamento (médico/psicólogo do esporte se insônia persistente) |
+| **Estresse** (trabalho/estudo, estresse percebido) | Componente do questionário de bem-estar [@hooper1995; @saw2016] | Item "estresse" 1–5 | ≤ 2: versão reduzida; dia de prova/entrega grande: sessão B no lugar de A |
+| **Alimentação e hidratação** | Chegar euidratado e evitar desidratação é recomendação de consenso no calor [@racinais2015]. Sem prescrição dietética | Comeu algo? Bebeu água hoje? Treino noturno em jejum longo? | Orientar a não chegar em jejum prolongado nem desidratado; **qualquer plano de carboidrato/energia vai ao nutricionista**. Se chegou em jejum/tonto: versão reduzida e hidratação |
+| **Estilo de vida** (jornada, deslocamento, álcool, tabagismo, outras atividades) | Sem fonte específica para RST | Horas de trabalho, tempo de deslocamento, álcool nas últimas 24 h, outra atividade de pernas nas últimas 48 h | Jornada > 10 h ou deslocamento > 2 h: versão reduzida; álcool nas últimas 24 h: versão reduzida e hidratação; treino de pernas intenso ≤ 48 h: não fazer o Dia A (fazer B). Tabagismo e uso problemático de álcool: encaminhar ao médico |
+| **Prontidão** | Percepção de estar pronto para sprintar | "Prontidão" 1–5 | ≤ 2 ou dor 4–5/10: tabela de ajuste (semáforo) |
+| **PSE da sessão** | Já descrita [@foster2001] | CR-10 aos 30 min | Tabela de ajuste |
+| **Adesão/frequência** | Sem sessões, sem adaptação (as metanálises usam 2×/semana) [@thurlow2024] | % de sessões feitas na fase | < 80% na fase: repete a semana e não progride; faltas por doença/lesão: ver tabela |
+
+**Questionário de bem-estar (5 itens, 1–5, 5 = melhor): sono, fadiga, dor muscular, estresse, humor.** Inspirado nos índices tipo Hooper/McLean (que usam 1–7); a escala, os cortes e a regra abaixo são **convenção do prescritor**, não validados para handebol amador.
+
+| Soma (5–25) | Cor | Conduta |
+|---|---|---|
+| ≥ 20, sem item = 1 | Verde | Sessão do plano |
+| 15–19, ou qualquer item = 1 | Amarelo | **Versão reduzida**: −1 série, r +10 s, b = 4 min 30 s. Mesma janela de tempo: 3 × [6 × 4,9 + 5 × 40] + 2 × 270 = **20 min 28 s** (linear 30 m); 3 × [6 × 4,2 + 5 × 40] + 2 × 270 = **20 min 16 s** (20 m com bola); 3 × [6 × 6,5 + 5 × 40] + 2 × 270 = **20 min 57 s** (COD 2 × 15 m). Sem COD de 180° em MD-2 |
+| < 15, ou 2 sessões seguidas amarelas | Vermelho | **Sem RST no dia**; reavaliar no dia seguinte; 2 vermelhos em 7 dias: avisar o responsável e investigar sono, estresse, carga de jogo, saúde |
+
+O gatilho "Bem-estar pré-sessão ≤ 4/10, sono < 6 h ou calor intenso" da tabela de ajuste equivale a **amarelo** aqui.
+
+**Acompanhamento.** Registrar semanalmente: soma do questionário (média), PSE-sessão, % de adesão e número de gatilhos amarelos/vermelhos; a tendência de queda do bem-estar por 2 semanas é motivo para repetir a semana em vez de progredir. A leitura da tendência vale mais que o valor isolado [@saw2016].
+
+**Limites desta seção.** Sono tem metanálise, mas de privação aguda, não de handebol nem de RST [@craven2022]; calor tem consenso, mas sem número aqui [@racinais2015]; piso tem um ensaio em futebol [@impellizzeri2008]; todo o resto (espaço, horário de RST, estresse, alimentação, estilo de vida, regra do questionário) é decisão prática ou convenção.
 
 ## Justificativa das escolhas principais (para a banca)
 

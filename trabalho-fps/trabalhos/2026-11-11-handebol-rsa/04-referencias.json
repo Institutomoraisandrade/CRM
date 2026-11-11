@@ -48,7 +48,7 @@
   "verificado_via": "PubMed PMID 26069301 (get_article_metadata, 11/11/2026); mesmo consenso publicado também em Sports Med 45(7):925-938 e Scand J Med Sci Sports 25(S1):6-19; cita-se a versão do BJSM"
  },
  {
-  "id": "impellizzeri2007",
+  "id": "impellizzeri2008",
   "tipo": "artigo",
   "autores": [
    "Impellizzeri, F. M.",
@@ -60,7 +60,7 @@
   "titulo": "Effect of plyometric training on sand versus grass on muscle soreness and jumping and sprinting ability in soccer players",
   "subtitulo": null,
   "periodico": "British Journal of Sports Medicine",
-  "ano": 2007,
+  "ano": 2008,
   "volume": "42",
   "numero": "1",
   "paginas": "42-46",
@@ -69,7 +69,7 @@
   "desenho": "Ensaio clínico randomizado",
   "nivel_evidencia": null,
   "verificado": true,
-  "verificado_via": "PubMed PMID 17526621 (get_article_metadata, 11/11/2026); ano do fascículo (vol. 42) a conferir com [ppdat]; epub 25/05/2007"
+  "verificado_via": "PubMed PMID 17526621 (get_article_metadata, 11/11/2026); ano do fascículo (vol. 42) conferido com filtro [pdat]=2008; epub 25/05/2007"
  },
  {
   "id": "povoas2014",
@@ -94,5 +94,74 @@
   "nivel_evidencia": null,
   "verificado": true,
   "verificado_via": "PubMed PMID 24473468 (get_article_metadata, 11/11/2026)"
+ },
+ {
+  "id": "saw2016",
+  "tipo": "artigo",
+  "autores": [
+   "Saw, Anna E.",
+   "Main, Luana C.",
+   "Gastin, Paul B."
+  ],
+  "et_al": false,
+  "titulo": "Monitoring the athlete training response",
+  "subtitulo": "subjective self-reported measures trump commonly used objective measures: a systematic review",
+  "periodico": "British Journal of Sports Medicine",
+  "ano": 2016,
+  "volume": "50",
+  "numero": "5",
+  "paginas": "281-291",
+  "doi": "10.1136/bjsports-2015-094758",
+  "pmid": "26423706",
+  "desenho": "Revisão sistemática",
+  "nivel_evidencia": null,
+  "verificado": true,
+  "verificado_via": "PubMed PMID 26423706 (get_article_metadata, 11/11/2026); ano do fascículo (vol. 50(5), 2016); epub 09/09/2015"
+ },
+ {
+  "id": "hooper1995",
+  "tipo": "artigo",
+  "autores": [
+   "Hooper, S. L.",
+   "Mackinnon, L. T."
+  ],
+  "et_al": false,
+  "titulo": "Monitoring overtraining in athletes",
+  "subtitulo": "recommendations",
+  "periodico": "Sports Medicine",
+  "ano": 1995,
+  "volume": "20",
+  "numero": "5",
+  "paginas": "321-327",
+  "doi": "10.2165/00007256-199520050-00003",
+  "pmid": "8571005",
+  "desenho": "Revisão narrativa",
+  "nivel_evidencia": null,
+  "verificado": true,
+  "verificado_via": "PubMed PMID 8571005 (get_article_metadata, 11/11/2026); resumo indisponível no PubMed, usada só como recomendação de monitoramento"
+ },
+ {
+  "id": "craven2022",
+  "tipo": "artigo",
+  "autores": [
+   "Craven, Jonathan",
+   "McCartney, Danielle",
+   "Desbrow, Ben",
+   "Sabapathy, Surendran"
+  ],
+  "et_al": true,
+  "titulo": "Effects of acute sleep loss on physical performance",
+  "subtitulo": "a systematic and meta-analytical review",
+  "periodico": "Sports Medicine",
+  "ano": 2022,
+  "volume": "52",
+  "numero": "11",
+  "paginas": "2669-2690",
+  "doi": "10.1007/s40279-022-01706-y",
+  "pmid": "35708888",
+  "desenho": "Revisão sistemática com metanálise",
+  "nivel_evidencia": "Metanálise de estudos experimentais",
+  "verificado": true,
+  "verificado_via": "PubMed PMID 35708888 (get_article_metadata, 11/11/2026; entrada copiada de 2026-11-10-sono/referencias.json e reconferida)"
  }
 ]

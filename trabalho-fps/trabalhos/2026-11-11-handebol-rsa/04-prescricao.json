@@ -32,12 +32,14 @@
     {
      "nome": "Sprint linear 20 → 25 m (Dia A)",
      "dose": "4 × 6, r = 30 s, b = 3 min 30 s; 480 → 600 m",
-     "foco": "Velocidade de aceleração/velocidade alta com frenagem controlada; distância curta limita lactato [@thurlow2023]"
+     "foco": "Velocidade de aceleração/velocidade alta com frenagem controlada; distância curta limita lactato [@thurlow2023]",
+     "situacao_de_jogo": "Testes padronizados na quadra"
     },
     {
      "nome": "Sprint linear 15 m (Dia B)",
      "dose": "4 × 6, r = 30 s, b = 3 min 30 s; 360 m",
-     "foco": "Aceleração com menor exposição à velocidade máxima a 48 h do jogo (decisão prática)"
+     "foco": "Aceleração com menor exposição à velocidade máxima a 48 h do jogo (decisão prática)",
+     "situacao_de_jogo": "Linha de 6 m própria até a central (≈ 14 m): transição; armadores e pivôs (arrancada curta)"
     }
    ],
    "evitar": [
@@ -86,17 +88,20 @@
     {
      "nome": "Sprint linear 30 m (Dia A)",
      "dose": "4 × 6 (S3) e 3 × 6 (S4), r = 30 → 25 s",
-     "foco": "Exposição a velocidade alta (também protege os isquiotibiais) e maior demanda metabólica com +10 m [@thurlow2023]"
+     "foco": "Exposição a velocidade alta (também protege os isquiotibiais) e maior demanda metabólica com +10 m [@thurlow2023]",
+     "situacao_de_jogo": "Linha de fundo até a linha de 9 m adversária (≈ 31 m): contra-ataque; pontas"
     },
     {
      "nome": "COD 2 × 15 m com giro de 180° (1 série em S4-A)",
      "dose": "1 × 6, r = 25 s, a ~90%",
-     "foco": "Frenagem e reaceleração do handebol, onde as ações mais frequentes são paradas e mudanças de direção [@povoas2012]"
+     "foco": "Frenagem e reaceleração do handebol, onde as ações mais frequentes são paradas e mudanças de direção [@povoas2012]",
+     "situacao_de_jogo": "Ir e voltar entre a linha de 6 m e a central: recuo, giro e retomada; armadores"
     },
     {
      "nome": "Sprint linear 20 m (Dia B)",
      "dose": "4 × 6 → 4 × 7 → 5 × 6, r = 30 → 25 s",
-     "foco": "Repetições sem giro a 48 h do jogo"
+     "foco": "Repetições sem giro a 48 h do jogo",
+     "situacao_de_jogo": "Fundo até a linha central ou largura da quadra; contra-ataque conduzindo a bola"
     }
    ],
    "evitar": [
@@ -146,12 +151,14 @@
     {
      "nome": "Vai-e-vem repetido (COD 2 × 15 m, giro de 180°)",
      "dose": "4 → 5 séries × 6, r = 25 → 20 → 15 s",
-     "foco": "Parar, girar e reacelerar, como nos confrontos de 1 × 1 e mudanças de direção do jogo [@povoas2012; @karcher2014]"
+     "foco": "Parar, girar e reacelerar, como nos confrontos de 1 × 1 e mudanças de direção do jogo [@povoas2012; @karcher2014]",
+     "situacao_de_jogo": "Ir e voltar entre a linha de 6 m e a central: recuo, giro e retomada; armadores"
     },
     {
      "nome": "Sprint de 20 m com bola (drible contínuo)",
      "dose": "4 → 5 séries × 6, r = 30 → 25 → 20 s",
-     "foco": "Contra-ataque; habilidade sob fadiga"
+     "foco": "Contra-ataque; habilidade sob fadiga",
+     "situacao_de_jogo": "Fundo até a linha central ou largura da quadra; contra-ataque conduzindo a bola"
     }
    ],
    "evitar": [
@@ -192,26 +199,29 @@
    "fitt_vp": {
     "F": "S9: 2 sessões (A e B). S10: sem treino de RST; 2 sessões de teste (dia A = RSA linear + RSA-COD; dia B = Yo-Yo IR1). Manutenção depois da semana 10: 1 sessão semanal tipo B (decisão prática; não encontrei estudo de manutenção de RST em temporada).",
     "I": "Sprint máximo; PSE da sessão prevista 6–7 e Sdec% por série ≤ 10%. Carga do Dia A deliberadamente menor que a de S7–S8 (linear 30 m, sem COD de 180°) para chegar descansado aos testes.",
-    "T": "Blocos de 22 min 07 s (S9-A) e 22 min 26 s (S9-B). Testes S10: RSA e RSA-COD ≈ 6 min de sprints + recuperações, Yo-Yo IR1 ≈ 6–15 min (fora da janela de 20–25 min de treino).",
+    "T": "Blocos de 22 min 18 s (S9-A) e 22 min 26 s (S9-B). Testes S10: RSA e RSA-COD ≈ 6 min de sprints + recuperações, Yo-Yo IR1 ≈ 6–15 min (fora da janela de 20–25 min de treino).",
     "Tipo": "S9-A: linear 30 m. S9-B: sprint de 20 m com bola. Testes padronizados da semana 0 (mesmo piso, hora, calçado).",
-    "V": "S9-A: 4 × 6 × 30 m (720 m), r = 20 s, b = 4 min 30 s. S9-B: 5 × 6 × 20 m com bola (600 m), r = 20 s, b = 3 min. Volume semanal 1.320 m (S9). Manutenção: 4 × 6 × 20 m com bola, r = 25 s, b = 3 min 30 s (≈ 22 min).",
+    "V": "S9-A: 4 × 6 × 30 m (720 m), r = 25 s, b = 4 min. S9-B: 5 × 6 × 20 m com bola (600 m), r = 20 s, b = 3 min. Volume semanal 1.320 m (S9). Manutenção: 4 × 6 × 20 m com bola, r = 25 s, b = 4 min (22 min 01 s).",
     "P": "Sem progressão de carga. A decisão de ciclo seguinte (novo bloco de 8–10 semanas) é por critério: Sdec% do RSA final menor ou igual ao inicial e melhor/médio tempo iguais ou melhores; se piorou, procurar a causa (carga de jogo, lesão, sono) antes de repetir o bloco."
    },
    "exercicios": [
     {
      "nome": "Sprint linear 30 m (S9-A)",
      "dose": "4 × 6, r = 20 s, b = 4 min 30 s",
-     "foco": "Manter exposição a velocidade alta (isquiotibiais) sem COD"
+     "foco": "Manter exposição a velocidade alta (isquiotibiais) sem COD",
+     "situacao_de_jogo": "Linha de fundo até a linha de 9 m adversária (≈ 31 m): contra-ataque; pontas"
     },
     {
      "nome": "Sprint de 20 m com bola (S9-B e manutenção)",
      "dose": "5 × 6, r = 20 s, b = 3 min",
-     "foco": "Transferência para o jogo"
+     "foco": "Transferência para o jogo",
+     "situacao_de_jogo": "Fundo até a linha central ou largura da quadra; contra-ataque conduzindo a bola"
     },
     {
      "nome": "Bateria final",
      "dose": "RSA 6 × 30 m, RSA-COD 6 × (2 × 15 m), Yo-Yo IR1",
-     "foco": "Resultado do programa [@glaister2008; @krustrup2003]"
+     "foco": "Resultado do programa [@glaister2008; @krustrup2003]",
+     "situacao_de_jogo": "Testes padronizados na quadra"
     }
    ],
    "evitar": [
@@ -319,7 +329,7 @@
   {
    "cor": "amarelo",
    "sinal": "Bem-estar pré-sessão ≤ 4/10, sono < 6 h na noite anterior ou calor intenso (tontura, náusea)",
-   "conduta": "Na sessão: reduz 1 série, aumenta a pausa entre séries em 30 s e oferece hidratação. Na próxima sessão: reavalia no início do dia.",
+   "conduta": "Na sessão: versão reduzida (−1 série, r +10 s, b = 4 min 30 s; 20 min 16 s a 20 min 57 s) e oferece hidratação. Na próxima sessão: reavalia no início do dia.",
    "fonte": "",
    "nota_evidencia": "Convenção do prescritor; sem fonte específica citada neste trabalho."
   }
@@ -362,6 +372,90 @@
   "michalsik2013",
   "karcher2014",
   "vandyk2019",
-  "silbernagel2007"
- ]
+  "silbernagel2007",
+  "racinais2015",
+  "impellizzeri2008",
+  "povoas2014",
+  "craven2022",
+  "saw2016",
+  "hooper1995"
+ ],
+ "periodos_e_ambiente": {
+  "nota": "Seção detalhada em 04-prescricao.md (\"Períodos e ambiente\"). Resumo estruturado abaixo.",
+  "quadra_handebol": "40 × 20 m; área de 6 m; linha de 9 m; linha central. 15 m ≈ 6 m até central; 20 m = fundo até central; 25 m = 6 m própria até 9 m adversária; 30 m ≈ fundo até 9 m adversária; COD 2 × 15 m = ir e voltar 6 m–central; deslocamento lateral de defesa 6:0/5:1 fora do RST.",
+  "posicoes": {
+   "pontas": "linear 25–30 m e 20 m com bola; opcional 1 série gol a gol",
+   "armadores": "COD 2 × 15 m (Dia A) e 20 m com bola",
+   "pivos": "15–20 m e arrancadas curtas; COD 180° só no Dia A; sem contato no RST",
+   "goleiro": "fora do RST ou 4 × 6 × 10 m, r = 30 s, b = 3 min 30 s = 21 min 23 s"
+  },
+  "periodos": {
+   "preparatorio": {
+    "F": "2 sessões/sem (A em MD-4, B em MD-2); 3ª sessão (C = B) opcional só em semana sem jogo, ≥ 48 h entre sessões",
+    "I": "máximo; PSE 6–8; Sdec% ≤ 10%",
+    "T": "21 min 26 s a 23 min 35 s",
+    "Tipo": "linear → COD 180° → com bola",
+    "V": "600–1.500 m/sem com 2 sessões; até 2.100 m com 3",
+    "P": "por critérios de saída"
+   },
+   "competitivo": {
+    "F": "1 jogo/sem: A (MD-4) e B (MD-2) ou só B; 2 jogos/sem: 1 sessão B no MD-2 do 2º jogo (se PSE do 1º jogo ≤ 7 e dor ≤ 2/10) ou nenhuma",
+    "I": "máximo; PSE 6–7",
+    "T": "A 22 min 18 s; B 22 min 01 s (2 jogos: 22 min 11 s)",
+    "Tipo": "A linear 30 m; B 20 m com bola; COD 180° só sem jogo em ≤ 72 h e 1 série",
+    "V": "A 4 × 6 × 30 m r = 25 s b = 4 min (720 m); B 4 × 6 × 20 m com bola r = 25 s b = 4 min (480 m)",
+    "P": "sem progressão; reteste a cada 6–8 sem"
+   },
+   "pos_viagem": "1º dia e dia seguinte sem RST; 1ª sessão = B (22 min 11 s) com questionário de bem-estar",
+   "fontes": [
+    "@buchheit2013hiit2",
+    "@thurlow2023",
+    "@thurlow2024"
+   ]
+  },
+  "ambiente": {
+   "calor_umidade": {
+    "fonte": "@racinais2015",
+    "muda": "mantém séries; +30 s no b e +5–10 s no r (+10 s de pausa reduz Sdec% em ~1,4% [@thurlow2023]); hidratar antes e nas pausas; sinais de parada; WBGT sem limiar na fonte (pendência)"
+   },
+   "piso": {
+    "fonte": "@impellizzeri2008",
+    "muda": "madeira/sintético = referência; cimento: giros em curva aberta e ≤ 48 frenagens; areia/grama: menos dor tardia, tempos +10–20% (estimativa), julgar por PSE/Sdec%; testar no mesmo piso"
+   },
+   "espaco": {
+    "fonte": "geometria da quadra (sem referência)",
+    "muda": "quadra inteira: tudo; meia quadra: 20 m e diagonal ≈ 28 m no lugar de 30 m; corredor ≤ 15 m: 2 × 15 m com curva aberta, contar frenagens (teto 60)"
+   },
+   "horario": {
+    "fonte": "@craven2022; @racinais2015",
+    "muda": "noite: atenção a sono e jornada; calor: horário mais fresco; padronizar horário dos testes"
+   },
+   "altitude": {
+    "fonte": "",
+    "muda": "sem fonte neste trabalho; fora do escopo"
+   }
+  },
+  "variaveis_individuais": {
+   "sono": {
+    "fonte": "@craven2022",
+    "muda": "< 6 h ou qualidade ≤ 2: versão reduzida; sono ≤ 6 h reduziu desempenho em média −7,56% (IC 95% −11,9 a −3,13)"
+   },
+   "estresse": {
+    "fonte": "@saw2016; @hooper1995",
+    "muda": "item ≤ 2: versão reduzida; dia de prova/entrega: B no lugar de A"
+   },
+   "alimentacao_hidratacao": {
+    "fonte": "@racinais2015",
+    "muda": "não chegar em jejum prolongado nem desidratado; plano de carboidrato/energia = nutricionista"
+   },
+   "estilo_de_vida": {
+    "fonte": "",
+    "muda": "jornada > 10 h, deslocamento > 2 h ou álcool em 24 h: versão reduzida; treino de pernas ≤ 48 h: sem Dia A; tabagismo/álcool problemático: médico (convenção do prescritor)"
+   },
+   "medidas_comportamentais": {
+    "fonte": "@saw2016; @hooper1995; @foster2001",
+    "muda": "questionário 5 itens 1–5 (sono, fadiga, dor muscular, estresse, humor): ≥ 20 verde; 15–19 ou item = 1 amarelo (versão reduzida: −1 série, r +10 s, b = 4 min 30 s = 20 min 16 s a 20 min 57 s); < 15 ou 2 amarelos seguidos vermelho (sem RST no dia). Cortes = convenção do prescritor. Adesão < 80% na fase: repete a semana"
+   }
+  }
+ }
 }

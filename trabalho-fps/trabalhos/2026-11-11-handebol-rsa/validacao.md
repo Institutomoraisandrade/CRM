@@ -1,8 +1,8 @@
 # Validação — 2026-11-11-handebol-rsa
 
-Gerado em 11/11/2026 11:57.
+Gerado em 11/11/2026 11:59.
 
-**Resultado:** ✅ APROVADO (0 erro(s), 11 aviso(s))
+**Resultado:** ✅ APROVADO (0 erro(s), 12 aviso(s))
 
 ## Erros (corrigir antes de entregar)
 - nenhum
@@ -10,6 +10,7 @@ Gerado em 11/11/2026 11:57.
 ## Avisos (revisar)
 - etapa ausente: 01-investigacao.md
 - etapa ausente: 02-analise-critica.md
+- 6 referência(s) não citada(s) no artigo (serão omitidas da lista): racinais2015, impellizzeri2008, povoas2014, saw2016, hooper1995, craven2022
 - etapa '01-investigacao' sem parecer de revisão
 - etapa '03a-busca' sem parecer de revisão
 - etapa '03-evidencias' sem parecer de revisão
