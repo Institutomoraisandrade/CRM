@@ -97,7 +97,7 @@
     {
      "desenho": "Metanálise",
      "estudo": "Thurlow 2024",
-     "achado": "RST funciona; manipular a dose tem pouco suporte",
+     "achado": "RST funciona; mais volume, sessões ou semanas: efeito não substancial ou compatível com prejuízo",
      "certeza": "moderada"
     },
     {
@@ -144,7 +144,7 @@
     "itens": [
      "**+10 m** por sprint: lactato +2,7 mmol/L, Sdec% +1,7%",
      "Sprints acima de 30 m",
-     "Pausas de 20 s ou menos"
+     "Pausas curtas, de 20 s ou menos"
     ]
    },
    "direita": {
@@ -152,7 +152,7 @@
     "itens": [
      "**+10 s** de pausa: lactato −1,1 mmol/L, Sdec% −1,4%",
      "Sprints de 15 a 25 m",
-     "Pausas de 30 s ou mais"
+     "Pausas longas, de 30 s ou mais"
     ]
    },
    "fonte": "[@thurlow2023]",
@@ -167,13 +167,13 @@
    "layout": "topicos",
    "apresentador": "Nome do autor",
    "tempo_seg": 55,
-   "notas": "A prescrição segue uma lógica simples. A sessão tem de 20 a 25 minutos, do primeiro sprint ao último, incluindo as recuperações. Isso é uma decisão do grupo: o tempo líquido correndo é de apenas 67 a 195 segundos, entre 5 e 14% do bloco, e a referência das metanálises, três séries de seis sprints de 30 metros, tem de 80 a 110 segundos. Se fossem 20 minutos só de corrida, seria dez a vinte vezes o volume de referência, inviável. São duas sessões por semana; a terceira do time fica para a técnica-tática. Como mais volume não rendeu mais efeito, o volume sobe pouco e a progressão vem de distância, pausa e especificidade.",
+   "notas": "A prescrição segue uma lógica simples. A sessão tem de 20 a 25 minutos, do primeiro sprint ao último, incluindo as recuperações. Isso é uma decisão do grupo: o tempo líquido correndo é de apenas 67 a 195 segundos, entre 5 e 14% do bloco, e a referência das metanálises, três séries de seis sprints de 30 metros, tem de 80 a 110 segundos. Se fossem 20 minutos só de corrida, seria dez a vinte vezes o volume de referência, inviável. São duas sessões por semana; a terceira do time fica para a técnica-tática. Como mais volume, sessões ou semanas tiveram efeito não substancial ou compatível com prejuízo, o volume sobe pouco e a progressão vem de distância, pausa e especificidade.",
    "titulo": "Cada sessão fecha em 21 a 24 min, mas só 1 a 3 min são de sprint",
    "itens": [
     "**Bloco:** do 1º ao último sprint, com as recuperações",
     "**Referência:** 3 × 6 × 30 m, 2 vezes por semana, 6 semanas",
     "**Frequência:** 2 sessões; a 3ª do time é técnico-tática",
-    "**Volume** sobe pouco: mais volume não deu efeito substancial",
+    "**Volume** sobe pouco: mais volume não ajudou, e pode prejudicar",
     "**Progressão** por distância, pausa e especificidade"
    ],
    "destaque": {
@@ -265,7 +265,7 @@
    "itens": {
     "F": "Sem. 3 e 4: 2 sessões; na sem. 5, o Dia A é o reteste",
     "I": "Sprint máximo (a série COD a ~90%); PSE 6–7; Sdec% ≤ 10%",
-    "T": "**21 min 54 s a 22 min 27 s** por sessão",
+    "T": "De **21 min 54 s a 22 min 27 s** em cada sessão",
     "Tipo": "A: linear 30 m e 1 série de COD 2 × 15 m (sem. 4); B: linear 20 m",
     "V": "A: 4 × 6 × 30 m; depois 3 × 6 × 30 m + 1 × 6 COD; B: 4 × 6 a 5 × 6 × 20 m",
     "P": "Uma variável por vez: sem. 3 sobe a distância; sem. 4 reduz a pausa de 30 para 25 s"
@@ -297,7 +297,7 @@
    "itens": {
     "F": "2 sessões por semana; COD de 180° só no Dia A (MD-4), nunca em MD-2",
     "I": "Sprint máximo; PSE 6–8; Sdec% por série ≤ 10%",
-    "T": "**21 min 26 s a 23 min 35 s** por sessão",
+    "T": "Entre **21 min 26 s e 23 min 35 s**, por sessão",
     "Tipo": "A: vai-e-vem COD 2 × 15 m com giro de 180°; B: sprint de 20 m com bola, sem arremesso",
     "V": "A: 4 × 6 → 5 × 6 (pausa 25 → 20 → 15 s); B: 4 × 6 → 5 × 6 (pausa 30 → 20 s); ≤ 60 frenagens",
     "P": "A pausa só cai se Sdec% ≤ 10% em ≥ 80% das séries, PSE ≤ 8 e sem vermelho"
@@ -324,14 +324,14 @@
    "layout": "fitt",
    "apresentador": "Nome do autor",
    "tempo_seg": 55,
-   "notas": "Fase 4, semanas 9 e 10. Aqui não aumentamos a carga: o Dia A volta ao linear de 30 metros, sem giro de 180 graus, para chegar descansado aos testes, e o Dia B segue com bola. Duas sessões na semana 9, com 22 minutos e 7 segundos e 22 minutos e 26 segundos. Na semana 10 não há RST, só a bateria final. Depois, a manutenção é uma sessão semanal tipo B, de cerca de 22 minutos; é decisão prática, sem estudo de manutenção em temporada. Um novo ciclo só começa se o Sdec% final for igual ou melhor que o inicial e os tempos também; senão, investigamos carga de jogo, lesão e sono.",
+   "notas": "Fase 4, semanas 9 e 10. Aqui não aumentamos a carga: o Dia A volta ao linear de 30 metros, sem giro de 180 graus, para chegar descansado aos testes, e o Dia B segue com bola. Duas sessões na semana 9: o Dia A, com pausa de 25 segundos e 4 minutos entre séries, dura 22 minutos e 18 segundos; o Dia B, 22 minutos e 26 segundos. Na semana 10 não há RST, só a bateria final. Depois, a manutenção é uma sessão semanal tipo B, de 4 séries de 6 sprints de 20 metros com bola e 4 minutos entre séries, 22 minutos e 1 segundo; é decisão prática, sem estudo de manutenção em temporada. Um novo ciclo só começa se o Sdec% final for igual ou melhor que o inicial e os tempos também; senão, investigamos carga de jogo, lesão e sono.",
    "titulo": "Fase 4: consolidar sem aumentar a carga e decidir com a bateria final",
    "itens": {
     "F": "Sem. 9: 2 sessões (A e B); sem. 10: só testes; manutenção: 1 sessão por semana",
-    "I": "Sprint máximo; PSE 6–7; Sdec% ≤ 10%",
-    "T": "**22 min 7 s e 22 min 26 s** por sessão; manutenção ≈ 22 min",
+    "I": "Esforço máximo; PSE 6–7; mantém Sdec% ≤ 10%",
+    "T": "**22 min 18 s e 22 min 26 s** por sessão; manutenção: 22 min 1 s",
     "Tipo": "A: linear 30 m; B: sprint de 20 m com bola; testes padronizados",
-    "V": "A: 4 × 6 × 30 m (pausa 20 s); B: 5 × 6 × 20 m com bola; manutenção: 4 × 6 × 20 m",
+    "V": "A: 4 × 6 × 30 m (pausa 25 s; entre séries 4 min); B: 5 × 6 × 20 m com bola; manutenção: 4 × 6 × 20 m, entre séries 4 min",
     "P": "Sem progressão de carga; novo ciclo só se o Sdec% final ≤ inicial"
    },
    "exercicios": [
@@ -437,7 +437,7 @@
    "layout": "semaforo",
    "apresentador": "Nome do autor",
    "tempo_seg": 55,
-   "notas": "O semáforo traduz dor, queda de rendimento e esforço percebido em regras de carga. No verde, com dor até 3 em 10, Sdec% até 10% e esforço percebido até 7, segue o plano. No amarelo, termina a série, troca o giro de 180 graus por sprint linear e corta uma série; Sdec% entre 10 e 12% pede mais 10 segundos de pausa. No vermelho, para na hora, encerra o bloco ou encaminha. Atenção: só dois números têm apoio de resumo, o efeito dos 10 segundos de pausa e o esforço típico de 6,5. Os demais limiares são convenção do prescritor, e o modelo de dor foi testado em tendinopatia do tendão de Aquiles, não em sprint.",
+   "notas": "O semáforo traduz dor, queda de rendimento e esforço percebido em regras de carga. No verde, com dor até 3 em 10, Sdec% até 10% e esforço percebido até 7, segue o plano. No amarelo, termina a série, troca o giro de 180 graus por sprint linear e corta uma série; Sdec% entre 10 e 12% pede mais 10 segundos de pausa. No vermelho, para na hora, encerra o bloco ou encaminha. Atenção: todos os limiares do semáforo, de dor, Sdec% e esforço percebido, são convenção do prescritor, sem estudo que os valide para o RST. Só o efeito dos 10 segundos de pausa sobre o Sdec% vem de metanálise.",
    "titulo": "O semáforo ajusta a carga por dor, queda de rendimento e esforço percebido",
    "niveis": [
     {
@@ -471,7 +471,7 @@
      "conduta": "Para e encaminha no mesmo dia; dor no peito: 192"
     }
    ],
-   "fonte": "[@thurlow2023; @foster2001; @silbernagel2007]",
+   "fonte": "Limiares: convenção do prescritor",
    "kicker": "Monitoramento",
    "banner": "imagens/trave.jpg",
    "banner_foco": [
@@ -483,12 +483,12 @@
    "layout": "topicos",
    "apresentador": "Nome do autor",
    "tempo_seg": 40,
-   "notas": "Para terminar, as limitações. Não há ensaio de RST isolado em handebolistas amadores adultos; extrapolamos de esportes coletivos, de jovens e de elite. As demandas de jogo vêm de elite. As metanálises não dão suporte conclusivo para manipular a dose, então a dose proposta é uma decisão prática coerente com elas. Os limiares de dor, Sdec% e esforço percebido são convenção. Também não encontrei estudos sobre a posição do RST na semana nem sobre dose de frenagem. Li apenas os resumos de 15 referências.",
+   "notas": "Para terminar, as limitações. Não há ensaio de RST isolado em handebolistas amadores adultos; extrapolamos de esportes coletivos, de jovens e de elite. As demandas de jogo vêm de elite. As metanálises não mostraram benefício de manipular a dose, então a dose proposta é uma decisão prática coerente com elas. Os limiares de dor, Sdec% e esforço percebido são convenção do prescritor. Também não encontrei estudos sobre a posição do RST na semana nem sobre dose de frenagem. Li apenas os resumos de 15 referências.",
    "titulo": "A dose é uma proposta prática: a evidência é indireta e os limiares são convenção",
    "itens": [
     "Sem ensaio de RST isolado em handebolistas amadores adultos",
     "Demandas de jogo vêm de elite, não de amadores",
-    "Metanálises não sustentam manipular a dose com segurança",
+    "Metanálises não mostram benefício em aumentar a dose",
     "Limiares de dor, Sdec% e PSE são convenção do prescritor",
     "Sem estudo sobre a posição do RST na semana"
    ],
@@ -514,7 +514,7 @@
    "itens": [
     "Demanda: o jogo pede repetir paradas, giros e reacelerações",
     "Dose: 2 sessões por semana, progredindo por distância, pausa e especificidade",
-    "Controle: Dia A em MD-4, Dia B em MD-2 e semáforo de Sdec%, dor e PSE",
+    "Controle: Dia A em MD-4, B em MD-2 e semáforo de Sdec%, dor e PSE",
     "Prova: testes nas semanas 0, 5 e 10 decidem manter, repetir ou investigar"
    ],
    "kicker": "Síntese",

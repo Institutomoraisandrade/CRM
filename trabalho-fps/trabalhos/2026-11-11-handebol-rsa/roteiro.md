@@ -30,7 +30,7 @@ Da metanálise de resposta aguda tiramos as duas alavancas de carga do programa:
 
 **[3:45–4:40] Slide 6 — Cada sessão fecha em 21 a 24 min, mas só 1 a 3 min são de sprint**
 
-A prescrição segue uma lógica simples. A sessão tem de 20 a 25 minutos, do primeiro sprint ao último, incluindo as recuperações. Isso é uma decisão do grupo: o tempo líquido correndo é de apenas 67 a 195 segundos, entre 5 e 14% do bloco, e a referência das metanálises, três séries de seis sprints de 30 metros, tem de 80 a 110 segundos. Se fossem 20 minutos só de corrida, seria dez a vinte vezes o volume de referência, inviável. São duas sessões por semana; a terceira do time fica para a técnica-tática. Como mais volume não rendeu mais efeito, o volume sobe pouco e a progressão vem de distância, pausa e especificidade.
+A prescrição segue uma lógica simples. A sessão tem de 20 a 25 minutos, do primeiro sprint ao último, incluindo as recuperações. Isso é uma decisão do grupo: o tempo líquido correndo é de apenas 67 a 195 segundos, entre 5 e 14% do bloco, e a referência das metanálises, três séries de seis sprints de 30 metros, tem de 80 a 110 segundos. Se fossem 20 minutos só de corrida, seria dez a vinte vezes o volume de referência, inviável. São duas sessões por semana; a terceira do time fica para a técnica-tática. Como mais volume, sessões ou semanas tiveram efeito não substancial ou compatível com prejuízo, o volume sobe pouco e a progressão vem de distância, pausa e especificidade.
 
 **[4:40–5:25] Slide 7 — Quatro fases em 10 semanas, liberadas por critérios e não pelo calendário**
 
@@ -50,7 +50,7 @@ Fase 3, semanas 6 a 8: aproximamos do jogo. O Dia A vira vai-e-vem com giro de 1
 
 **[8:35–9:30] Slide 11 — Fase 4: consolidar sem aumentar a carga e decidir com a bateria final**
 
-Fase 4, semanas 9 e 10. Aqui não aumentamos a carga: o Dia A volta ao linear de 30 metros, sem giro de 180 graus, para chegar descansado aos testes, e o Dia B segue com bola. Duas sessões na semana 9, com 22 minutos e 7 segundos e 22 minutos e 26 segundos. Na semana 10 não há RST, só a bateria final. Depois, a manutenção é uma sessão semanal tipo B, de cerca de 22 minutos; é decisão prática, sem estudo de manutenção em temporada. Um novo ciclo só começa se o Sdec% final for igual ou melhor que o inicial e os tempos também; senão, investigamos carga de jogo, lesão e sono.
+Fase 4, semanas 9 e 10. Aqui não aumentamos a carga: o Dia A volta ao linear de 30 metros, sem giro de 180 graus, para chegar descansado aos testes, e o Dia B segue com bola. Duas sessões na semana 9: o Dia A, com pausa de 25 segundos e 4 minutos entre séries, dura 22 minutos e 18 segundos; o Dia B, 22 minutos e 26 segundos. Na semana 10 não há RST, só a bateria final. Depois, a manutenção é uma sessão semanal tipo B, de 4 séries de 6 sprints de 20 metros com bola e 4 minutos entre séries, 22 minutos e 1 segundo; é decisão prática, sem estudo de manutenção em temporada. Um novo ciclo só começa se o Sdec% final for igual ou melhor que o inicial e os tempos também; senão, investigamos carga de jogo, lesão e sono.
 
 **[9:30–10:25] Slide 12 — O Dia A fica a 4 dias do jogo e o Dia B a 2, com carga menor**
 
@@ -62,11 +62,11 @@ Testamos nas semanas zero, cinco e dez, no mesmo piso, hora e calçado, fora do 
 
 **[11:30–12:25] Slide 14 — O semáforo ajusta a carga por dor, queda de rendimento e esforço percebido**
 
-O semáforo traduz dor, queda de rendimento e esforço percebido em regras de carga. No verde, com dor até 3 em 10, Sdec% até 10% e esforço percebido até 7, segue o plano. No amarelo, termina a série, troca o giro de 180 graus por sprint linear e corta uma série; Sdec% entre 10 e 12% pede mais 10 segundos de pausa. No vermelho, para na hora, encerra o bloco ou encaminha. Atenção: só dois números têm apoio de resumo, o efeito dos 10 segundos de pausa e o esforço típico de 6,5. Os demais limiares são convenção do prescritor, e o modelo de dor foi testado em tendinopatia do tendão de Aquiles, não em sprint.
+O semáforo traduz dor, queda de rendimento e esforço percebido em regras de carga. No verde, com dor até 3 em 10, Sdec% até 10% e esforço percebido até 7, segue o plano. No amarelo, termina a série, troca o giro de 180 graus por sprint linear e corta uma série; Sdec% entre 10 e 12% pede mais 10 segundos de pausa. No vermelho, para na hora, encerra o bloco ou encaminha. Atenção: todos os limiares do semáforo, de dor, Sdec% e esforço percebido, são convenção do prescritor, sem estudo que os valide para o RST. Só o efeito dos 10 segundos de pausa sobre o Sdec% vem de metanálise.
 
 **[12:25–13:05] Slide 15 — A dose é uma proposta prática: a evidência é indireta e os limiares são convenção**
 
-Para terminar, as limitações. Não há ensaio de RST isolado em handebolistas amadores adultos; extrapolamos de esportes coletivos, de jovens e de elite. As demandas de jogo vêm de elite. As metanálises não dão suporte conclusivo para manipular a dose, então a dose proposta é uma decisão prática coerente com elas. Os limiares de dor, Sdec% e esforço percebido são convenção. Também não encontrei estudos sobre a posição do RST na semana nem sobre dose de frenagem. Li apenas os resumos de 15 referências.
+Para terminar, as limitações. Não há ensaio de RST isolado em handebolistas amadores adultos; extrapolamos de esportes coletivos, de jovens e de elite. As demandas de jogo vêm de elite. As metanálises não mostraram benefício de manipular a dose, então a dose proposta é uma decisão prática coerente com elas. Os limiares de dor, Sdec% e esforço percebido são convenção do prescritor. Também não encontrei estudos sobre a posição do RST na semana nem sobre dose de frenagem. Li apenas os resumos de 15 referências.
 
 **[13:05–13:35] Slide 16 — Sprints repetidos, bem posicionados na semana, cabem em 22 min por sessão**
 
