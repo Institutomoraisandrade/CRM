@@ -1,8 +1,8 @@
 # Validação — 2026-11-11-handebol-rsa
 
-Gerado em 11/11/2026 11:59.
+Gerado em 11/11/2026 12:00.
 
-**Resultado:** ✅ APROVADO (0 erro(s), 12 aviso(s))
+**Resultado:** ✅ APROVADO (0 erro(s), 11 aviso(s))
 
 ## Erros (corrigir antes de entregar)
 - nenhum
@@ -10,7 +10,6 @@ Gerado em 11/11/2026 11:59.
 ## Avisos (revisar)
 - etapa ausente: 01-investigacao.md
 - etapa ausente: 02-analise-critica.md
-- 6 referência(s) não citada(s) no artigo (serão omitidas da lista): racinais2015, impellizzeri2008, povoas2014, saw2016, hooper1995, craven2022
 - etapa '01-investigacao' sem parecer de revisão
 - etapa '03a-busca' sem parecer de revisão
 - etapa '03-evidencias' sem parecer de revisão
@@ -22,10 +21,10 @@ Gerado em 11/11/2026 11:59.
 - etapa 'banca' sem parecer de revisão
 
 ## Indicadores
-- resumo: 191 palavras
-- corpo do texto: ~6745 palavras
-- 15 referência(s); 2 (13%) dos últimos 5 anos; mais antiga: 2001
-- desenhos: Revisão sistemática com metanálise: 4; Revisão narrativa: 3; Transversal: 3; Estudo de validação: 3; Ensaio clínico controlado (randomização não explícita no resumo): 1; Ensaio clínico randomizado: 1
+- resumo: 194 palavras
+- corpo do texto: ~8060 palavras
+- 21 referência(s); 3 (14%) dos últimos 5 anos; mais antiga: 1995
+- desenhos: Revisão sistemática com metanálise: 5; Revisão narrativa: 4; Transversal: 4; Estudo de validação: 3; Ensaio clínico randomizado: 2; Ensaio clínico controlado (randomização não explícita no resumo): 1; Diretriz de relato (consenso): 1; Revisão sistemática: 1
 - 18 slide(s) definidos
 - tempo planejado: 13:40
 - tipo de trabalho: caso_clinico
