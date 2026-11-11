@@ -1,0 +1,26 @@
+[
+ {
+  "id": "silbernagel2007",
+  "tipo": "artigo",
+  "autores": [
+   "Silbernagel, Karin Grävare",
+   "Thomeé, Roland",
+   "Eriksson, Bengt I.",
+   "Karlsson, Jon"
+  ],
+  "et_al": false,
+  "titulo": "Continued sports activity, using a pain-monitoring model, during rehabilitation in patients with Achilles tendinopathy",
+  "subtitulo": "a randomized controlled study",
+  "periodico": "The American Journal of Sports Medicine",
+  "ano": 2007,
+  "volume": "35",
+  "numero": "6",
+  "paginas": "897-906",
+  "doi": "10.1177/0363546506298279",
+  "pmid": "17307888",
+  "desenho": "Ensaio clínico randomizado",
+  "nivel_evidencia": null,
+  "verificado": true,
+  "verificado_via": "PubMed PMID 17307888 (get_article_metadata, 11/11/2026)"
+ }
+]
