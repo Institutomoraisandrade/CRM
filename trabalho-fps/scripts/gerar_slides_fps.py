@@ -789,9 +789,15 @@ class Construtor:
         sl = self.novo()
         self.titulo(sl, s["titulo"])
         alt = BASE_CONTEUDO - TOPO_CONTEUDO - (0.5 if s.get("legenda") else 0)
-        self._imagem_em(sl, s["imagem"], MX, TOPO_CONTEUDO, W - 2 * MX, alt)
+        itens = s.get("itens")
+        larg_img = 7.5 if itens else W - 2 * MX
+        self._imagem_em(sl, s["imagem"], MX, TOPO_CONTEUDO, larg_img, alt)
+        if itens:
+            self._checar_topicos(itens)
+            self.topicos_em(sl, MX + larg_img + 0.35, TOPO_CONTEUDO + 0.1, W - 2 * MX - larg_img - 0.35,
+                            BASE_CONTEUDO - TOPO_CONTEUDO, itens, 16)
         if s.get("legenda"):
-            self.texto(sl, MX, BASE_CONTEUDO - 0.4, W - 2 * MX, 0.4, s["legenda"], tamanho=14,
+            self.texto(sl, MX, BASE_CONTEUDO - 0.4, larg_img, 0.4, s["legenda"], tamanho=11 if itens else 14,
                        cor=self.m.c["texto_suave"], alinhar="centro")
         self.rodape(sl, s.get("fonte"))
         self.notas(sl, s)
@@ -811,7 +817,7 @@ class Construtor:
         por_slide, atual, tamanho = [], [], 0
         for r in lista:
             txt = abnt.referencia_texto(r)
-            if atual and (tamanho + len(txt) > 1900 or len(atual) >= 8):
+            if atual and (tamanho + len(txt) > s.get("max_caracteres", 1900) or len(atual) >= s.get("max_por_slide", 8)):
                 por_slide.append(atual)
                 atual, tamanho = [], 0
             atual.append(r)
@@ -832,11 +838,11 @@ class Construtor:
             tf.margin_left = tf.margin_right = tf.margin_top = tf.margin_bottom = Emu(0)
             for i, r in enumerate(grupo):
                 p = tf.paragraphs[0] if i == 0 else tf.add_paragraph()
-                p.space_after = Pt(9)
+                p.space_after = Pt(s.get("espaco_ref", 9))
                 for txt, est in abnt.referencia_segmentos(r):
                     run = p.add_run()
                     run.text = txt
-                    run.font.size = Pt(12.5)
+                    run.font.size = Pt(s.get("tamanho_ref", 12.5))
                     run.font.name = self.m.fonte_corpo
                     run.font.bold = est == "b"
                     run.font.italic = est == "i"

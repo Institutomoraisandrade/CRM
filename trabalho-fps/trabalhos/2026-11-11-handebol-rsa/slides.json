@@ -8,13 +8,13 @@
  "data": "2026",
  "estilo_citacao": "2023",
  "referencias_arquivo": "referencias.json",
- "tempo_minutos": 23,
+ "tempo_minutos": 15,
  "slides": [
   {
    "layout": "capa",
    "apresentador": "Nome do autor",
-   "tempo_seg": 20,
-   "notas": "Boa tarde. Vou apresentar uma proposta de periodização de dez semanas para atletas amadores de handebol, com um foco único: o treino de sprints repetidos. Fica de fora tudo o que é aquecimento, força e técnica. Vou mostrar o que o jogo exige, o que a evidência diz, a prescrição fase a fase e como monitorar a carga.",
+   "tempo_seg": 15,
+   "notas": "Boa tarde. Vou apresentar uma proposta de periodização de dez semanas para atletas amadores de handebol, com foco único no treino de sprints repetidos. Ficam de fora aquecimento, força e técnica. Passo pelo que o jogo exige, o que a evidência diz, a prescrição por fases e como ajustar a carga ao atleta e ao ambiente.",
    "titulo": "Sprints repetidos no handebol amador: periodização de 10 semanas",
    "subtitulo": "Proposta de prescrição de treinamento · Educação Física",
    "imagem": "imagens/salto-arremesso.jpg",
@@ -24,109 +24,25 @@
    ]
   },
   {
-   "layout": "numeros",
+   "layout": "topicos",
    "apresentador": "Nome do autor",
-   "tempo_seg": 55,
-   "notas": "Começo pelo jogo. Em handebol de elite masculina, cerca de oitenta por cento do tempo é parado ou andando, e só 0,4% é sprint. O que domina as ações intensas são paradas, mudanças de direção e confrontos um contra um. Na Dinamarca, os atletas fizeram em média 53 corridas de alta intensidade e mais de 1.400 trocas de atividade por jogo. Também há fadiga: depois de um período intenso do segundo tempo o sprint cai 3,9%, e depois do jogo o salto cai 7,4%. A leitura é treinar a repetição de ações máximas curtas, com frenagem e mudança de direção. Atenção: esses dados são de elite; não achei o perfil do amador adulto.",
+   "tempo_seg": 60,
+   "notas": "Em handebol de elite masculina, cerca de 80% do tempo é parado ou andando e só 0,4% é sprint. As ações intensas mais frequentes são paradas, mudanças de direção e confrontos um contra um. Na Dinamarca, a média foi de 53 corridas de alta intensidade e mais de 1.400 trocas de atividade por jogo. Também há fadiga: depois de um período intenso do segundo tempo, o sprint cai 3,9%; depois do jogo, o salto cai 7,4%. A leitura é treinar a repetição de ações máximas curtas, com frenagem e mudança de direção. Atenção: esses dados são de elite; não encontrei o perfil do amador adulto.",
    "titulo": "No jogo, o sprint é raro; parar, girar e reacelerar dominam",
-   "metricas": [
-    {
-     "valor": "0,4%",
-     "rotulo": "do tempo em sprint",
-     "detalhe": "Elite masculina; ~80% parado ou andando"
-    },
-    {
-     "valor": "53",
-     "rotulo": "corridas de alta intensidade",
-     "detalhe": "Por jogo, elite dinamarquesa"
-    },
-    {
-     "valor": "1.482",
-     "rotulo": "trocas de atividade",
-     "detalhe": "Por jogo (± 313)"
-    }
+   "itens": [
+    "**0,4%** do tempo em sprint; ~80% parado ou andando",
+    "**53** corridas de alta intensidade por jogo",
+    "**1.482** trocas de atividade por jogo (± 313)",
+    "Fadiga: sprint −3,9% no 2º tempo; salto −7,4% após o jogo",
+    "Lacuna: só há dados de elite"
    ],
-   "texto": "Após o 2º tempo intenso, o sprint cai **3,9%** e, após o jogo, o salto cai **7,4%**",
-   "fonte": "[@povoas2012; @michalsik2013; @povoas2014fadiga]",
-   "kicker": "O problema",
-   "banner": "imagens/acao-jogo.jpg",
-   "banner_foco": [
-    0.5,
-    0.4
-   ]
-  },
-  {
-   "layout": "numeros",
-   "apresentador": "Nome do autor",
-   "tempo_seg": 50,
-   "notas": "Aqui está o efeito do treino de sprints repetidos, o RST. A metanálise de Thurlow e colegas, de 2024, reuniu 40 estudos com 541 atletas e 213 controles. O decremento de desempenho nos sprints melhorou com g de menos 0,61, o tempo médio dos sprints com menos 0,34, e o Yo-Yo IR1 melhorou com g de 0,61. Negativo é bom nos tempos. Note que os intervalos são de 90%, como no original. É um efeito pequeno a moderado, em esportes coletivos, não em handebol amador.",
-   "titulo": "O RST melhora a repetição de sprints, com efeito pequeno a moderado",
-   "metricas": [
-    {
-     "valor": "−0,61",
-     "rotulo": "decremento (g)",
-     "detalhe": "IC 90% −0,85 a −0,37"
-    },
-    {
-     "valor": "−0,34",
-     "rotulo": "tempo médio (g)",
-     "detalhe": "IC 90% −0,49 a −0,18"
-    },
-    {
-     "valor": "0,61",
-     "rotulo": "Yo-Yo IR1 (g)",
-     "detalhe": "IC 90% 0,43 a 0,79"
-    }
-   ],
-   "texto": "Metanálise com 541 atletas e 213 controles; esportes coletivos, não handebol amador",
-   "fonte": "[@thurlow2024]",
-   "kicker": "Evidência",
-   "banner": "imagens/trave.jpg",
-   "banner_foco": [
+   "imagem": "imagens/acao-jogo.jpg",
+   "foco": [
     0.5,
     0.5
-   ]
-  },
-  {
-   "layout": "evidencias",
-   "apresentador": "Nome do autor",
-   "tempo_seg": 50,
-   "notas": "Este quadro mostra de onde vem a evidência. Thurlow 2024 sustenta que o RST funciona, com certeza moderada, mas a certeza é baixa para manipular a dose. Taylor, em 2015, achou melhora possivelmente moderada, com poucos estudos. A metanálise de resposta aguda de Thurlow 2023, com 176 estudos, dá a carga típica de uma sessão: esforço percebido de 6,5 e Sdec% de 5%. No único ensaio em handebol, jovens de elite melhoraram 3,5 a 3,9% no teste de sprints repetidos com treino intervalado ou jogo reduzido, sem diferença entre grupos, e isso não é RST. Bishop lembra que nenhum treino único melhora tudo; nosso programa é incompleto por desenho.",
-   "titulo": "A evidência de RST vem de esportes coletivos, não de handebol amador",
-   "estudos": [
-    {
-     "desenho": "Metanálise",
-     "estudo": "Thurlow 2024",
-     "achado": "RST funciona; mais volume, sessões ou semanas: efeito não substancial ou compatível com prejuízo",
-     "certeza": "moderada"
-    },
-    {
-     "desenho": "Metanálise",
-     "estudo": "Taylor 2015",
-     "achado": "Teste de sprints repetidos −0,62 (± 0,25), possivelmente moderado",
-     "certeza": "baixa"
-    },
-    {
-     "desenho": "Metanálise",
-     "estudo": "Thurlow 2023",
-     "achado": "Sessão típica: PSE 6,5 ± 0,5 e Sdec% 5,0 ± 0,3%",
-     "certeza": "moderada"
-    },
-    {
-     "desenho": "Ensaio",
-     "estudo": "Buchheit 2009",
-     "achado": "Handebol juvenil: HIT igual a jogos reduzidos, melhora de 3,5–3,9%; não é RST",
-     "certeza": "indireta"
-    },
-    {
-     "desenho": "Revisão",
-     "estudo": "Bishop 2011",
-     "achado": "Nenhum treino único melhora tudo; sprint único e intervalado completam",
-     "certeza": "opinião"
-    }
    ],
-   "fonte": "[@thurlow2024; @taylor2015; @thurlow2023; @buchheit2009; @bishop2011]",
-   "kicker": "Evidência",
+   "fonte": "[@povoas2012; @michalsik2013; @povoas2014fadiga]",
+   "kicker": "O problema",
    "banner": "imagens/trave.jpg",
    "banner_foco": [
     0.5,
@@ -136,26 +52,28 @@
   {
    "layout": "dois_colunas",
    "apresentador": "Nome do autor",
-   "tempo_seg": 50,
-   "notas": "Da metanálise de resposta aguda tiramos as duas alavancas de carga do programa: a distância do sprint e a pausa. Cada dez metros a mais elevam o lactato em 2,7 milimol por litro e o Sdec% em 1,7 ponto. Cada dez segundos a mais de pausa baixam o lactato em 1,1 e o Sdec% em 1,4. O vai-e-vem tem mais tempo por repetição, de 1,4 a 1,6 segundo, mas esforço percebido parecido. Usamos isso para progredir, encurtando a pausa e alongando a distância, e para regredir, no semáforo. Sprints de 15 a 25 metros e pausa de pelo menos 30 segundos mitigam a fadiga.",
-   "titulo": "Distância e pausa são as alavancas de carga do sprint repetido",
+   "tempo_seg": 65,
+   "notas": "Da evidência, duas mensagens. À esquerda, a metanálise de 2024, com 541 atletas e 213 controles em esportes coletivos: o RST melhora o decremento nos sprints, com g de menos 0,61, o tempo médio, com menos 0,34, e o Yo-Yo IR1, com 0,61. Nos tempos, negativo é bom, e os intervalos são de 90%. O efeito é pequeno a moderado e não vem de handebol amador. À direita, a metanálise de resposta aguda dá as alavancas de carga: cada 10 metros a mais elevam o lactato em 2,7 milimol por litro e o Sdec% em 1,7 ponto; cada 10 segundos de pausa a mais baixam o lactato em 1,1 e o Sdec% em 1,4. Usamos isso para progredir e para regredir.",
+   "titulo": "O RST melhora a repetição de sprints; distância e pausa regulam a carga",
    "esquerda": {
-    "titulo": "Aumentam a demanda",
+    "titulo": "Efeito do RST (g, IC 90%)",
     "itens": [
-     "**+10 m** por sprint: lactato +2,7 mmol/L, Sdec% +1,7%",
-     "Sprints acima de 30 m",
-     "Pausas curtas, de 20 s ou menos"
+     "Decremento nos sprints: **−0,61** (−0,85 a −0,37)",
+     "Tempo médio: **−0,34** (−0,49 a −0,18)",
+     "Yo-Yo IR1: **0,61** (0,43 a 0,79)",
+     "541 atletas e 213 controles em esportes coletivos"
     ]
    },
    "direita": {
-    "titulo": "Reduzem a demanda",
+    "titulo": "Alavancas de carga",
     "itens": [
-     "**+10 s** de pausa: lactato −1,1 mmol/L, Sdec% −1,4%",
-     "Sprints de 15 a 25 m",
-     "Pausas longas, de 30 s ou mais"
+     "**+10 m:** lactato +2,7 mmol/L, Sdec% +1,7%",
+     "**+10 s de pausa:** lactato −1,1 mmol/L, Sdec% −1,4%",
+     "Aumentam: sprints > 30 m; pausas ≤ 20 s",
+     "Reduzem: sprints de 15–25 m; pausas ≥ 30 s"
     ]
    },
-   "fonte": "[@thurlow2023]",
+   "fonte": "[@thurlow2024; @thurlow2023]",
    "kicker": "Evidência",
    "banner": "imagens/trave.jpg",
    "banner_foco": [
@@ -166,15 +84,15 @@
   {
    "layout": "topicos",
    "apresentador": "Nome do autor",
-   "tempo_seg": 55,
-   "notas": "A prescrição segue uma lógica simples. A sessão tem de 20 a 25 minutos, do primeiro sprint ao último, incluindo as recuperações. Isso é uma decisão do grupo: o tempo líquido correndo é de apenas 67 a 195 segundos, entre 5 e 14% do bloco, e a referência das metanálises, três séries de seis sprints de 30 metros, tem de 80 a 110 segundos. Se fossem 20 minutos só de corrida, seria dez a vinte vezes o volume de referência, inviável. São duas sessões por semana; a terceira do time fica para a técnica-tática. Como mais volume, sessões ou semanas tiveram efeito não substancial ou compatível com prejuízo, o volume sobe pouco e a progressão vem de distância, pausa e especificidade.",
+   "tempo_seg": 60,
+   "notas": "A sessão tem de 20 a 25 minutos, do primeiro sprint ao último, incluindo as recuperações; é uma decisão do grupo. A conta: quatro séries de seis sprints de 20 metros a 3,5 segundos, pausa de 30 segundos e 210 segundos entre séries. Uma série dura 171 segundos, as quatro, 684, mais 630 de pausas entre séries: 1.314 segundos, ou 21 minutos e 54 segundos. O sprint líquido é de só 67 a 195 segundos, entre 5 e 14% do bloco; a referência das metanálises tem de 80 a 110. Se fossem 20 minutos só de corrida, seria dez a vinte vezes o volume de referência, inviável. Duas sessões por semana; a terceira do time é técnico-tática. Como mais volume, sessões ou semanas tiveram efeito não substancial ou compatível com prejuízo, o volume sobe pouco.",
    "titulo": "Cada sessão fecha em 21 a 24 min, mas só 1 a 3 min são de sprint",
    "itens": [
     "**Bloco:** do 1º ao último sprint, com as recuperações",
+    "**Conta:** 4 × [6 × 3,5 + 5 × 30] + 3 × 210 = 21 min 54 s",
     "**Referência:** 3 × 6 × 30 m, 2 vezes por semana, 6 semanas",
     "**Frequência:** 2 sessões; a 3ª do time é técnico-tática",
-    "**Volume** sobe pouco: mais volume não ajudou, e pode prejudicar",
-    "**Progressão** por distância, pausa e especificidade"
+    "**Progressão** por distância, pausa e especificidade, não volume"
    ],
    "destaque": {
     "valor": "5–14%",
@@ -189,162 +107,56 @@
    ]
   },
   {
-   "layout": "fases",
+   "layout": "tabela",
    "apresentador": "Nome do autor",
-   "tempo_seg": 45,
-   "notas": "São quatro fases em dez semanas, precedidas por uma semana zero de testes. As semanas são referência: quem não cumpre o critério de saída repete a semana, no máximo duas vezes. Na Fase 1 aprendemos a sprintar e frear. Na Fase 2 chegamos aos 30 metros, à pausa de 25 segundos e à primeira série com mudança de direção, e fazemos o reteste. Na Fase 3 entram o giro de 180 graus, o vai-e-vem e a bola. A Fase 4 consolida e reavalia. Veremos uma a uma, sempre com a duração da sessão.",
-   "titulo": "Quatro fases em 10 semanas, liberadas por critérios e não pelo calendário",
-   "fases": [
-    {
-     "nome": "Introdução · 1–2",
-     "objetivo": "Técnica, frenagem e tolerância",
-     "saida": "4 sessões verdes, PSE ≤ 7, Sdec% ≤ 10%"
-    },
-    {
-     "nome": "Desenvolvimento · 3–5",
-     "objetivo": "Distância de 30 m, pausa de 25 s, 1ª série COD, reteste",
-     "saida": "PSE ≤ 8; Sdec% ≤ 10% em ≥ 90% das séries"
-    },
-    {
-     "nome": "Específica · 6–8",
-     "objetivo": "COD 180°, vai-e-vem, bola; pausa de 25 a 15 s",
-     "saida": "PSE ≤ 8, sem vermelho, dor da coxa ≤ 2/10"
-    },
-    {
-     "nome": "Consolidação · 9–10",
-     "objetivo": "Consolidar e reavaliar com a bateria final",
-     "saida": "Bateria final e decisão registrada"
-    }
+   "tempo_seg": 90,
+   "notas": "Quatro fases em dez semanas, precedidas por uma semana zero de testes; sempre esforço máximo, com esforço percebido de 5 a 8. Na Fase 1, o Dia A tem 4 séries de 6 sprints de 20 metros e depois 25; o Dia B, de 15 metros; pausa de 30 segundos e 3 minutos e meio entre séries. Na Fase 2, o Dia A chega a 30 metros; na semana 4, a pausa cai de 30 para 25 segundos e entra 1 série de mudança de direção; a semana 5 traz o reteste. Na Fase 3, o Dia A vira vai-e-vem com giro de 180 graus, com teto de 60 frenagens, e o Dia B usa 20 metros com bola, drible contínuo e sem arremesso; a pausa cai até 15 segundos, só com Sdec% até 10% em pelo menos 80% das séries. Na Fase 4 não aumentamos a carga: Dia A linear de 30 metros com pausa de 25 segundos, Dia B com bola, e na semana 10 a bateria final. A duração fica sempre entre 21 minutos e 26 segundos e 23 minutos e 35 segundos. Quem não cumpre o critério repete a semana, no máximo duas vezes.",
+   "titulo": "Quatro fases em 10 semanas avançam por critérios, não pelo calendário",
+   "colunas": [
+    "Fase",
+    "Séries × reps × distância",
+    "Pausas (entre sprints / séries)",
+    "Duração",
+    "Sai quando"
    ],
-   "fonte": "[@thurlow2024]",
-   "kicker": "Prescrição",
-   "banner": "imagens/ginasio.jpg",
-   "banner_foco": [
-    0.5,
-    0.5
-   ]
-  },
-  {
-   "layout": "fitt",
-   "apresentador": "Nome do autor",
-   "tempo_seg": 60,
-   "notas": "Fase 1, semanas 1 e 2. Frequência: duas sessões, Dia A a quatro dias do jogo e Dia B a dois, com pelo menos 48 horas entre elas. Intensidade: esforço máximo, mas na semana 1 as duas primeiras séries a cerca de 90%, por cuidado com os isquiotibiais; esforço percebido de 5 a 7. Tempo: de 21 minutos e 37 segundos a 22 minutos e 10 segundos. Tipo: sprint linear de ida e volta, sem curva, com zona de frenagem de 8 metros. Volume: quatro séries de seis sprints, pausa de 30 segundos e 3 minutos e meio entre séries. Progressão: só a distância do Dia A sobe, com a semana em verde. Regressão pelos gatilhos do semáforo.",
-   "titulo": "Fase 1: aprender a sprintar e frear com 22 min de bloco e carga baixa",
-   "itens": {
-    "F": "2 sessões por semana: Dia A (MD-4) e Dia B (MD-2), com ≥ 48 h entre elas",
-    "I": "Esforço máximo (séries 1–2 da sem. 1 a ~90%); PSE 5–7; Sdec% ≤ 10%",
-    "T": "**21 min 37 s a 22 min 10 s** por sessão, do 1º ao último sprint",
-    "Tipo": "Sprint linear de ida e volta, sem curva; zona de frenagem de 8 m",
-    "V": "A: 4 × 6 × 20 m, depois 25 m; B: 4 × 6 × 15 m; pausa 30 s; entre séries 3 min 30 s",
-    "P": "Só a distância do Dia A sobe (+5 m), com a semana em verde"
-   },
-   "exercicios": [
-    "Sprint linear de 20 → 25 m (Dia A)",
-    "Sprint linear de 15 m (Dia B)",
-    "Frenagem na zona de 8 m"
+   "larguras": [
+    15,
+    32,
+    20,
+    15,
+    18
    ],
-   "saida": [
-    "4 de 4 sessões em 20–25 min, sem vermelho",
-    "PSE ≤ 7 e Sdec% ≤ 10% em todas as séries",
-    "Dor da manhã seguinte ≤ 2/10, resolvida em 24 h"
+   "linhas": [
+    [
+     "**1** Introdução (sem. 1–2)",
+     "A: 4 × 6 × 20 m, depois 25 m; B: 4 × 6 × 15 m",
+     "30 s / 3 min 30 s",
+     "21 min 37 s a 22 min 10 s",
+     "4 sessões verdes; PSE ≤ 7; Sdec% ≤ 10%"
+    ],
+    [
+     "**2** Desenvolvimento (3–5)",
+     "A: 4 × 6 × 30 m, depois 3 × 6 × 30 m + 1 × 6 COD; B: 20 m; reteste na sem. 5",
+     "30 → 25 s / 2 min 30 s a 4 min",
+     "21 min 54 s a 22 min 27 s",
+     "PSE ≤ 8; Sdec% ≤ 10% em ≥ 90% das séries"
+    ],
+    [
+     "**3** Específica (6–8)",
+     "A: COD 2 × 15 m, 4 × 6 → 5 × 6; B: 20 m com bola; ≤ 60 frenagens",
+     "A: 25 → 15 s; B: 30 → 20 s / 3 a 3 min 30 s",
+     "21 min 26 s a 23 min 35 s",
+     "PSE ≤ 8; sem vermelho; dor da coxa ≤ 2/10"
+    ],
+    [
+     "**4** Consolidação (9–10)",
+     "A: 4 × 6 × 30 m; B: 5 × 6 × 20 m com bola; sem. 10: testes",
+     "A: 25 s / 4 min; B: 20 s / 3 min",
+     "22 min 18 s e 22 min 26 s",
+     "Bateria final sem vermelho; decisão registrada"
+    ]
    ],
-   "fonte": "[@thurlow2024; @thurlow2023]",
-   "kicker": "Prescrição",
-   "banner": "imagens/ginasio.jpg",
-   "banner_foco": [
-    0.5,
-    0.5
-   ]
-  },
-  {
-   "layout": "fitt",
-   "apresentador": "Nome do autor",
-   "tempo_seg": 65,
-   "notas": "Fase 2, semanas 3 a 5. O Dia A chega aos 30 metros, o que traz exposição a velocidade alta e maior demanda, como vimos. Na semana 4, baixamos a pausa de 30 para 25 segundos e adicionamos uma única série de mudança de direção de 2 vezes 15 metros, porque paradas e giros são as ações intensas mais frequentes no jogo. A regra é mudar uma variável por vez, só com a semana anterior em verde. Na semana 5 o Dia A é o reteste do RSA, com carga menor. A duração fica entre 21 minutos e 54 segundos e 22 minutos e 27 segundos. Para sair, o Sdec% do reteste não pode ser pior que o da semana zero.",
-   "titulo": "Fase 2: a distância chega a 30 m e a primeira série com giro entra na semana 4",
-   "itens": {
-    "F": "Sem. 3 e 4: 2 sessões; na sem. 5, o Dia A é o reteste",
-    "I": "Sprint máximo (a série COD a ~90%); PSE 6–7; Sdec% ≤ 10%",
-    "T": "De **21 min 54 s a 22 min 27 s** em cada sessão",
-    "Tipo": "A: linear 30 m e 1 série de COD 2 × 15 m (sem. 4); B: linear 20 m",
-    "V": "A: 4 × 6 × 30 m; depois 3 × 6 × 30 m + 1 × 6 COD; B: 4 × 6 a 5 × 6 × 20 m",
-    "P": "Uma variável por vez: sem. 3 sobe a distância; sem. 4 reduz a pausa de 30 para 25 s"
-   },
-   "exercicios": [
-    "Sprint linear de 30 m (Dia A)",
-    "1 série de COD 2 × 15 m",
-    "Reteste do RSA na semana 5"
-   ],
-   "saida": [
-    "4 de 5 sessões em 20–25 min, sem vermelho",
-    "Sdec% ≤ 10% em ≥ 90% das séries; nenhuma > 12%",
-    "Reteste sem piora do Sdec% e tempo médio ≤ 2% mais lento"
-   ],
-   "fonte": "[@thurlow2023; @povoas2012; @thurlow2024]",
-   "kicker": "Prescrição",
-   "banner": "imagens/ginasio.jpg",
-   "banner_foco": [
-    0.5,
-    0.5
-   ]
-  },
-  {
-   "layout": "fitt",
-   "apresentador": "Nome do autor",
-   "tempo_seg": 65,
-   "notas": "Fase 3, semanas 6 a 8: aproximamos do jogo. O Dia A vira vai-e-vem com giro de 180 graus, o que gera 48 a 60 frenagens por sessão, e o Dia B usa sprints de 20 metros com bola, com drible contínuo e sem arremesso, para poupar o ombro. O vai-e-vem aumenta o tempo por repetição em 1,4 a 1,6 segundo com esforço percebido parecido, então julgamos o esforço, não a velocidade. A pausa cai de 25 para 20 e 15 segundos, só se na semana anterior o Sdec% ficou até 10% em pelo menos 80% das séries. O giro de 180 graus só acontece no Dia A, nunca a 48 horas do jogo. A sessão dura de 21 minutos e 26 segundos a 23 minutos e 35 segundos.",
-   "titulo": "Fase 3: giro de 180° e bola aproximam o RST do jogo, com teto de 60 frenagens",
-   "itens": {
-    "F": "2 sessões por semana; COD de 180° só no Dia A (MD-4), nunca em MD-2",
-    "I": "Sprint máximo; PSE 6–8; Sdec% por série ≤ 10%",
-    "T": "Entre **21 min 26 s e 23 min 35 s**, por sessão",
-    "Tipo": "A: vai-e-vem COD 2 × 15 m com giro de 180°; B: sprint de 20 m com bola, sem arremesso",
-    "V": "A: 4 × 6 → 5 × 6 (pausa 25 → 20 → 15 s); B: 4 × 6 → 5 × 6 (pausa 30 → 20 s); ≤ 60 frenagens",
-    "P": "A pausa só cai se Sdec% ≤ 10% em ≥ 80% das séries, PSE ≤ 8 e sem vermelho"
-   },
-   "exercicios": [
-    "Vai-e-vem repetido 2 × 15 m",
-    "Sprint de 20 m com bola (contra-ataque)",
-    "Pausa de 15 s na sem. 8: opcional"
-   ],
-   "saida": [
-    "5 de 6 sessões em 20–25 min, sem vermelho",
-    "PSE ≤ 8; Sdec% ≤ 10% em ≥ 80% das séries do COD",
-    "Dor posterior da coxa ≤ 2/10 aos 24 h de cada Dia A"
-   ],
-   "fonte": "[@thurlow2023; @povoas2012; @karcher2014]",
-   "kicker": "Prescrição",
-   "banner": "imagens/ginasio.jpg",
-   "banner_foco": [
-    0.5,
-    0.5
-   ]
-  },
-  {
-   "layout": "fitt",
-   "apresentador": "Nome do autor",
-   "tempo_seg": 55,
-   "notas": "Fase 4, semanas 9 e 10. Aqui não aumentamos a carga: o Dia A volta ao linear de 30 metros, sem giro de 180 graus, para chegar descansado aos testes, e o Dia B segue com bola. Duas sessões na semana 9: o Dia A, com pausa de 25 segundos e 4 minutos entre séries, dura 22 minutos e 18 segundos; o Dia B, 22 minutos e 26 segundos. Na semana 10 não há RST, só a bateria final. Depois, a manutenção é uma sessão semanal tipo B, de 4 séries de 6 sprints de 20 metros com bola e 4 minutos entre séries, 22 minutos e 1 segundo; é decisão prática, sem estudo de manutenção em temporada. Um novo ciclo só começa se o Sdec% final for igual ou melhor que o inicial e os tempos também; senão, investigamos carga de jogo, lesão e sono.",
-   "titulo": "Fase 4: consolidar sem aumentar a carga e decidir com a bateria final",
-   "itens": {
-    "F": "Sem. 9: 2 sessões (A e B); sem. 10: só testes; manutenção: 1 sessão por semana",
-    "I": "Esforço máximo; PSE 6–7; mantém Sdec% ≤ 10%",
-    "T": "**22 min 18 s e 22 min 26 s** por sessão; manutenção: 22 min 1 s",
-    "Tipo": "A: linear 30 m; B: sprint de 20 m com bola; testes padronizados",
-    "V": "A: 4 × 6 × 30 m (pausa 25 s; entre séries 4 min); B: 5 × 6 × 20 m com bola; manutenção: 4 × 6 × 20 m, entre séries 4 min",
-    "P": "Sem progressão de carga; novo ciclo só se o Sdec% final ≤ inicial"
-   },
-   "exercicios": [
-    "Sprint linear de 30 m (Dia A)",
-    "Sprint de 20 m com bola (Dia B)",
-    "Bateria final: RSA, RSA-COD e Yo-Yo IR1"
-   ],
-   "saida": [
-    "Bateria final sem vermelho",
-    "Relatório comparando as semanas 0, 5 e 10",
-    "Decisão: manter, repetir o bloco ou investigar"
-   ],
-   "fonte": "[@glaister2008; @krustrup2003; @thurlow2023]",
+   "fonte": "[@thurlow2023; @thurlow2024]; doses: decisão prática",
    "kicker": "Prescrição",
    "banner": "imagens/ginasio.jpg",
    "banner_foco": [
@@ -355,8 +167,64 @@
   {
    "layout": "tabela",
    "apresentador": "Nome do autor",
+   "tempo_seg": 70,
+   "notas": "São duas versões do mesmo programa. No preparatório, a pré-temporada sem jogo oficial semanal, usamos as fases vistas: duas sessões, Dia A a quatro dias do jogo e Dia B a dois, com 21 minutos e 26 segundos a 23 minutos e 35 segundos. Uma terceira sessão, repetindo o Dia B, é opcional e decisão prática, porque nas metanálises uma sessão a mais não deu ganho substancial; só em semana sem jogo. No competitivo, a lógica é manutenção, sem progressão: Dia A de 22 minutos e 18 segundos e Dia B de 22 minutos e 1 segundo, com pausa de 25 segundos e 4 minutos entre séries; reteste a cada 6 a 8 semanas. Na semana de dois jogos, por exemplo quarta e sábado, uma única sessão B na quinta, de 22 minutos e 11 segundos, só se a PSE do primeiro jogo foi até 7 e a dor da manhã seguinte até 2 em 10; senão, nenhuma, e nunca o Dia A. Depois de viagem, dois dias sem RST e a primeira sessão é o B, com questionário de bem-estar. Tudo isso é convenção do prescritor.",
+   "titulo": "Na pré-temporada o RST progride; na temporada ele só mantém",
+   "colunas": [
+    "Item",
+    "Preparatório (pré-temporada)",
+    "Competitivo (temporada)"
+   ],
+   "larguras": [
+    13,
+    43,
+    44
+   ],
+   "linhas": [
+    [
+     "**F**",
+     "2 sessões (A em MD-4, B em MD-2); 3ª opcional (decisão prática), só sem jogo",
+     "1 jogo: A e B, ou só B"
+    ],
+    [
+     "**I**",
+     "Máximo; PSE 6–8; Sdec% ≤ 10%",
+     "Máximo; PSE 6–7; mesmos gatilhos"
+    ],
+    [
+     "**T**",
+     "21 min 26 s a 23 min 35 s",
+     "A: 22 min 18 s; B: 22 min 1 s"
+    ],
+    [
+     "**Tipo**",
+     "Linear, depois COD 180°, depois com bola",
+     "A: linear 30 m; B: 20 m com bola; COD 180° só 1 série"
+    ],
+    [
+     "**V · P**",
+     "600 a 1.500 m/sem; progride por critérios",
+     "A: 720 m; B: 480 m; sem progressão; reteste a cada 6–8 sem"
+    ],
+    [
+     "**2 jogos e pós-viagem**",
+     "—",
+     "2 jogos: só 1 B no MD-2 do 2º (22 min 11 s) se PSE ≤ 7 e dor ≤ 2/10; pós-viagem: 2 dias sem RST, 1ª sessão = B"
+    ]
+   ],
+   "fonte": "[@buchheit2013hiit2; @thurlow2024]; períodos e regras: convenção do prescritor",
+   "kicker": "Aplicação",
+   "banner": "imagens/ginasio.jpg",
+   "banner_foco": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "layout": "tabela",
+   "apresentador": "Nome do autor",
    "tempo_seg": 55,
-   "notas": "O microciclo assume jogo no sábado. O Dia A, de maior carga, fica na terça, a quatro dias do jogo e pelo menos 72 horas depois dele; o Dia B, de menor carga, na quinta, a dois dias do jogo, sem giro de 180 graus. O sprint máximo gera carga neuromuscular que soma ao microciclo, por isso não colocamos RST em dias seguidos nem na véspera. Se o time só treina duas vezes por semana, A e B ocupam essas duas sessões, depois do aquecimento. Se o jogo teve esforço percebido de 8 ou mais, o Dia A espera 72 horas ou perde uma série. Não achei estudo sobre a posição do RST na semana; é decisão prática.",
+   "notas": "O microciclo assume jogo no sábado. O Dia A, de maior carga, fica na terça, a quatro dias do jogo e pelo menos 72 horas depois dele; o Dia B, de menor carga, na quinta, a dois dias, sem giro de 180 graus. O sprint máximo gera carga neuromuscular que soma ao microciclo, por isso não há RST em dias seguidos nem na véspera. Se o time treina só duas vezes por semana, A e B ocupam essas duas sessões, após o aquecimento. Se o jogo teve PSE de 8 ou mais, o Dia A espera 72 horas ou perde uma série. Não achei estudo sobre a posição do RST na semana; é decisão prática.",
    "titulo": "O Dia A fica a 4 dias do jogo e o Dia B a 2, com carga menor",
    "colunas": [
     "Dia (jogo no sábado)",
@@ -401,18 +269,40 @@
     ]
    ],
    "fonte": "[@buchheit2013hiit2; @thurlow2024]",
-   "kicker": "Monitoramento",
-   "banner": "imagens/trave.jpg",
+   "kicker": "Aplicação",
+   "banner": "imagens/ginasio.jpg",
    "banner_foco": [
     0.5,
     0.5
    ]
   },
   {
+   "layout": "imagem",
+   "apresentador": "Nome do autor",
+   "tempo_seg": 75,
+   "notas": "Na quadra de 40 por 20 metros: 15 metros vão da linha de 6 até perto da central, retomada e arrancada; 20 metros, do fundo à central, contra-ataque com bola; 25 metros, da linha de 6 própria à de 9 adversária, como no recuo defensivo; 30 metros, do fundo à linha de 9 adversária, contra-ataque da ponta. O vai-e-vem de 2 por 15 metros é recuo, giro e retomada. O deslocamento lateral da defesa aparece na figura, mas não é sprint e fica fora do RST. A dose é a mesma para todos; muda a prioridade. Pontas fazem mais sprints: linear de 25 a 30 metros e 20 com bola, com opção de uma série gol a gol. Armadores têm mais ações exigentes, paradas, giros e um contra um: vai-e-vem 2 por 15 e 20 com bola. Pivôs: 15 a 20 metros, giro de 180 graus só no Dia A, contato fora do cronômetro. Na elite, armadores e pivôs fazem 123 e 127 ações exigentes por jogo, contra 55 dos pontas. O goleiro fica fora, ou faz 4 séries de 6 sprints de 10 metros, 21 minutos e 23 segundos.",
+   "titulo": "Na quadra de 40 × 20 m, cada posição prioriza um sprint do jogo",
+   "imagem": "imagens/quadra-exercicios.png",
+   "legenda": "15 m ≈ área de 6 m à central · 20 m = fundo à central · 25 m = 6 m à linha de 9 m · 30 m ≈ fundo à linha de 9 m",
+   "itens": [
+    "**Pontas:** linear 25–30 m e 20 m com bola; opcional gol a gol",
+    "**Armadores:** COD 2 × 15 m no Dia A; 20 m com bola",
+    "**Pivôs:** 15–20 m; COD 180° só no Dia A; contato fora do RST",
+    "**Goleiro:** fora do RST, ou 4 × 6 × 10 m (21 min 23 s)"
+   ],
+   "fonte": "[@povoas2014; @povoas2012]; adaptação à quadra: decisão prática",
+   "kicker": "Aplicação",
+   "banner": "imagens/acao-jogo.jpg",
+   "banner_foco": [
+    0.5,
+    0.4
+   ]
+  },
+  {
    "layout": "topicos",
    "apresentador": "Nome do autor",
-   "tempo_seg": 65,
-   "notas": "Testamos nas semanas zero, cinco e dez, no mesmo piso, hora e calçado, fora do bloco de 20 a 25 minutos. O RSA linear é de 6 vezes 30 metros com 20 segundos de recuperação passiva; o RSA com mudança de direção, 6 vezes 2 por 15 metros com giro de 180 graus; e o Yo-Yo IR1, cuja variação teste-reteste é de 4,9%. O Sdec% foi o método mais válido e confiável entre oito fórmulas. No exemplo, os seis tempos somam 33,91 segundos; o melhor, 5,40, vezes seis dá 32,40. A conta resulta em 4,66%, próximo da referência de RST. O Sdec% depende do melhor sprint, então leia melhor tempo, tempo médio e Sdec% juntos; sem fotocélula ou app, os limiares de Sdec% não valem.",
+   "tempo_seg": 60,
+   "notas": "Testamos nas semanas zero, cinco e dez, no mesmo piso, hora e calçado, fora do bloco. O RSA linear é de 6 vezes 30 metros com 20 segundos de recuperação passiva; o RSA com mudança de direção, 6 vezes 2 por 15 metros com giro de 180 graus; e o Yo-Yo IR1, com variação teste-reteste de 4,9%. O Sdec% foi o método mais válido e confiável entre oito fórmulas. No exemplo, os seis tempos somam 33,91 segundos; o melhor, 5,40, vezes seis dá 32,40; o resultado é 4,66%, próximo da referência de RST. O Sdec% depende do melhor sprint, então leia melhor tempo, tempo médio e Sdec% juntos; sem fotocélula ou app, os limiares de Sdec% não valem.",
    "titulo": "Três testes nas semanas 0, 5 e 10 mostram se o RST funcionou",
    "itens": [
     "**RSA linear:** 6 × 30 m, recuperação passiva de 20 s",
@@ -436,42 +326,37 @@
   {
    "layout": "semaforo",
    "apresentador": "Nome do autor",
-   "tempo_seg": 55,
-   "notas": "O semáforo traduz dor, queda de rendimento e esforço percebido em regras de carga. No verde, com dor até 3 em 10, Sdec% até 10% e esforço percebido até 7, segue o plano. No amarelo, termina a série, troca o giro de 180 graus por sprint linear e corta uma série; Sdec% entre 10 e 12% pede mais 10 segundos de pausa. No vermelho, para na hora, encerra o bloco ou encaminha. Atenção: todos os limiares do semáforo, de dor, Sdec% e esforço percebido, são convenção do prescritor, sem estudo que os valide para o RST. Só o efeito dos 10 segundos de pausa sobre o Sdec% vem de metanálise.",
-   "titulo": "O semáforo ajusta a carga por dor, queda de rendimento e esforço percebido",
+   "tempo_seg": 75,
+   "notas": "O semáforo traduz sintomas, rendimento e bem-estar do dia em regras de carga. Verde: dor até 3 em 10, Sdec% até 10%, esforço percebido até 7 e bem-estar de pelo menos 20 em 25: segue o plano. Amarelo por sintoma ou esforço: dor de 4 a 5, Sdec% de 10 a 12% ou PSE 8; corta uma série, troca o giro de 180 graus por sprint linear, e acrescenta 10 segundos de pausa se o Sdec% subiu. Amarelo por bem-estar: o questionário tem cinco itens, de 1 a 5, sono, fadiga, dor muscular, estresse e humor; soma de 15 a 19 ou qualquer item 1 leva à versão reduzida: uma série a menos, pausa fixa de 40 segundos entre sprints e 4 minutos e meio entre séries, de 20 minutos e 16 segundos a 20 minutos e 57 segundos. Vermelho: dor de 6 ou mais, pontada, Sdec% acima de 12%, PSE 9 ou 10, inchaço, falseio ou dor no peito: para, encerra o bloco e encaminha; dor no peito, 192. Bem-estar abaixo de 15, ou duas sessões amarelas seguidas, cancela o RST do dia. Todos os limiares e cortes são convenção do prescritor, inspirados em Hooper e Mackinnon, não validados para handebol amador.",
+   "titulo": "O semáforo ajusta a carga por sintomas, rendimento e bem-estar do dia",
    "niveis": [
     {
      "cor": "verde",
-     "sinal": "Dor ≤ 3/10, Sdec% da série ≤ 10% e PSE ≤ 7",
-     "conduta": "Segue o plano e aplica a regra de progressão da fase"
+     "sinal": "Dor ≤ 3/10, Sdec% ≤ 10%, PSE ≤ 7 e bem-estar ≥ 20 de 25",
+     "conduta": "Segue o plano e aplica a progressão da fase"
     },
     {
      "cor": "amarelo",
-     "sinal": "Dor 4–5/10 no sprint, ou 3–4/10 na manhã seguinte",
-     "conduta": "Termina a série; COD 180° vira linear 15–20 m; corta 1 série"
+     "sinal": "Dor 4–5/10, Sdec% de 10 a 12% ou PSE = 8",
+     "conduta": "Corta 1 série; COD 180° vira linear; Sdec% alto: +10 s de pausa"
     },
     {
      "cor": "amarelo",
-     "sinal": "Sdec% da série entre 10 e 12%, ou PSE = 8",
-     "conduta": "+10 s de pausa na série seguinte; PSE 8: corta 1 série"
+     "sinal": "Bem-estar (sono, fadiga, dor, estresse, humor; 1–5): soma 15–19 ou item = 1",
+     "conduta": "Versão reduzida: −1 série, pausa de 40 s e 4 min 30 s entre séries (20 min 16 s a 20 min 57 s)"
     },
     {
      "cor": "vermelho",
-     "sinal": "Dor ≥ 6/10, ou pontada súbita ou estalido na coxa, virilha ou panturrilha",
-     "conduta": "Para na hora; sem RST até avaliação; volta pela Fase 1"
+     "sinal": "Dor ≥ 6/10, pontada, Sdec% > 12%, PSE 9–10, inchaço, falseio ou dor no peito",
+     "conduta": "Para e encerra o bloco; sem RST até avaliação; dor no peito: 192"
     },
     {
      "cor": "vermelho",
-     "sinal": "Sdec% > 12%, 1º sprint ≥ 5% mais lento ou PSE 9–10",
-     "conduta": "Encerra o bloco; próxima sessão com −1 série"
-    },
-    {
-     "cor": "vermelho",
-     "sinal": "Inchaço, falseio, travamento ou dor no peito",
-     "conduta": "Para e encaminha no mesmo dia; dor no peito: 192"
+     "sinal": "Bem-estar < 15, ou 2 sessões amarelas seguidas",
+     "conduta": "Sem RST no dia; 2 vermelhos em 7 dias: avisar o responsável"
     }
    ],
-   "fonte": "Limiares: convenção do prescritor",
+   "fonte": "[@hooper1995; @saw2016]; limiares e cortes: convenção do prescritor",
    "kicker": "Monitoramento",
    "banner": "imagens/trave.jpg",
    "banner_foco": [
@@ -480,205 +365,11 @@
    ]
   },
   {
-   "layout": "secao",
-   "apresentador": "Nome do autor",
-   "tempo_seg": 5,
-   "notas": "Agora levo o plano para o ginásio: períodos da temporada, quadra, ambiente e a rotina do atleta.",
-   "titulo": "Do plano ao ginásio",
-   "subtitulo": "Períodos, quadra, ambiente e variáveis individuais",
-   "imagem": "imagens/ginasio.jpg",
-   "kicker": "Aplicação"
-  },
-  {
    "layout": "tabela",
    "apresentador": "Nome do autor",
-   "tempo_seg": 60,
-   "notas": "São duas versões do mesmo programa. No período preparatório, a pré-temporada sem jogo oficial semanal, usamos as fases já vistas: duas sessões, Dia A a quatro dias do jogo e Dia B a dois, com esforço percebido de 6 a 8 e duração de 21 minutos e 26 segundos a 23 minutos e 35 segundos. Uma terceira sessão, repetindo o Dia B, é opcional e decisão prática, porque nas metanálises uma sessão a mais não deu ganho substancial; só em semana sem jogo, com 48 horas entre sessões e as duas anteriores em verde; nesse caso o volume pode ir a 2.100 metros. No período competitivo, a lógica é manutenção, sem progressão: o Dia A dura 22 minutos e 18 segundos, e o Dia B, 22 minutos e 1 segundo, com pausa de 25 segundos e 4 minutos entre séries. O giro de 180 graus só entra em 1 série e se não houver jogo em 72 horas. Reteste a cada 6 a 8 semanas. Não há estudo de manutenção na temporada; é decisão prática.",
-   "titulo": "Na pré-temporada o RST progride; na temporada ele só mantém",
-   "colunas": [
-    "Item",
-    "Preparatório (pré-temporada)",
-    "Competitivo (temporada)"
-   ],
-   "larguras": [
-    12,
-    44,
-    44
-   ],
-   "linhas": [
-    [
-     "**F**",
-     "2 sessões (A em MD-4, B em MD-2); 3ª opcional (decisão prática), só em semana sem jogo",
-     "1 jogo: A e B, ou só B; 2 jogos: 1 sessão B ou nenhuma"
-    ],
-    [
-     "**I**",
-     "Máximo; PSE 6–8; Sdec% ≤ 10%",
-     "Máximo; PSE 6–7; mesmos gatilhos do semáforo"
-    ],
-    [
-     "**T**",
-     "21 min 26 s a 23 min 35 s",
-     "A: 22 min 18 s; B: 22 min 1 s"
-    ],
-    [
-     "**Tipo**",
-     "Linear, depois COD 180°, depois com bola",
-     "A: linear 30 m; B: 20 m com bola; COD 180° só 1 série"
-    ],
-    [
-     "**V**",
-     "600 a 1.500 m por semana (até 2.100 m com 3 sessões)",
-     "A: 4 × 6 × 30 m (720 m); B: 4 × 6 × 20 m com bola (480 m)"
-    ],
-    [
-     "**P**",
-     "Por critérios de saída",
-     "Sem progressão; reteste a cada 6–8 semanas"
-    ]
-   ],
-   "fonte": "[@buchheit2013hiit2; @thurlow2023; @thurlow2024]; períodos: decisão prática",
-   "kicker": "Aplicação",
-   "banner": "imagens/ginasio.jpg",
-   "banner_foco": [
-    0.5,
-    0.5
-   ]
-  },
-  {
-   "layout": "tabela",
-   "apresentador": "Nome do autor",
-   "tempo_seg": 60,
-   "notas": "Na temporada, o calendário de jogos manda. Com um jogo por semana, mantemos A em MD-4 e B em MD-2, ou só o B; não há RST na véspera, nem um e dois dias depois de um jogo com esforço percebido de 8 ou mais. Com dois jogos, por exemplo quarta e sábado, a regra é única: uma sessão B na quinta, 4 séries de 6 sprints de 20 metros com bola, pausa de 30 segundos e 3 minutos e meio entre séries, 22 minutos e 11 segundos, só se o esforço percebido do primeiro jogo foi até 7 e a dor da manhã seguinte até 2 em 10. Se não, nenhum RST na semana, e nunca o Dia A. Depois de viagem, ônibus ou voo, o dia da viagem e o seguinte não têm RST; a primeira sessão é o B, com questionário de bem-estar antes. É convenção do prescritor: não achei estudo de RST depois de viagem.",
-   "titulo": "Com 2 jogos na semana, o RST se reduz a um Dia B ou a nenhum",
-   "colunas": [
-    "Cenário",
-    "Sessões",
-    "Regra"
-   ],
-   "larguras": [
-    22,
-    38,
-    40
-   ],
-   "linhas": [
-    [
-     "**1 jogo por semana**",
-     "A em MD-4 e B em MD-2, ou só B",
-     "Sem RST em MD-1, nem em MD+1 e MD+2 se a PSE do jogo foi ≥ 8"
-    ],
-    [
-     "**2 jogos** (ex.: quarta e sábado)",
-     "1 sessão B no MD-2 do 2º jogo (22 min 11 s), ou nenhuma",
-     "B só se PSE do 1º jogo ≤ 7 e dor da manhã seguinte ≤ 2/10; nunca A"
-    ],
-    [
-     "**Pós-viagem** (jogo fora)",
-     "Dia da viagem e seguinte sem RST; 1ª sessão = B (22 min 11 s)",
-     "Questionário de bem-estar antes; sem COD de 180°"
-    ]
-   ],
-   "fonte": "[@buchheit2013hiit2]; regras: convenção do prescritor",
-   "kicker": "Aplicação",
-   "banner": "imagens/ginasio.jpg",
-   "banner_foco": [
-    0.5,
-    0.5
-   ]
-  },
-  {
-   "layout": "imagem",
-   "apresentador": "Nome do autor",
-   "tempo_seg": 50,
-   "notas": "Aqui está a tradução das distâncias para a quadra de 40 por 20 metros. Quinze metros vão da linha de 6 metros própria até perto da linha central: retomada de bola e arrancada. Vinte metros são do fundo até a central, ou a largura da quadra: contra-ataque conduzindo a bola. Vinte e cinco metros vão da linha de 6 metros própria até a de 9 metros adversária, como no recuo defensivo. Trinta metros, do fundo até a linha de 9 adversária, são o contra-ataque da ponta. O vai-e-vem de 2 por 15 metros entre a linha de 6 e a central é o recuo, o giro e a retomada. O deslocamento lateral da defesa, em 6:0 ou 5:1, aparece na figura mas não é sprint: fica fora do RST, no técnico-tático. Os blocos com bola usam drible contínuo, sem arremesso.",
-   "titulo": "Na quadra de 40 × 20 m, o RST reproduz contra-ataque, recuo e giro",
-   "imagem": "imagens/quadra-exercicios.png",
-   "legenda": "15 m ≈ da área de 6 m à central · 20 m = fundo à central · 25 m = 6 m à linha de 9 m adversária · 30 m ≈ fundo à linha de 9 m",
-   "fonte": "Geometria da quadra; correspondência com o jogo: decisão prática",
-   "kicker": "Aplicação",
-   "banner": "imagens/ginasio.jpg",
-   "banner_foco": [
-    0.5,
-    0.5
-   ]
-  },
-  {
-   "layout": "tabela",
-   "apresentador": "Nome do autor",
-   "tempo_seg": 55,
-   "notas": "A dose e a duração são as mesmas para todos; muda o que priorizamos. Os pontas fazem mais sprints, então o Dia A foca linear de 25 a 30 metros e o Dia B, 20 metros com bola; opcionalmente uma série gol a gol no lugar de uma de 30 metros. Armadores, centrais e laterais, têm mais ações exigentes do que os pontas, com paradas, mudanças de direção e confrontos um contra um: priorizam o vai-e-vem de 2 por 15 metros no Dia A e os 20 metros com bola. Pivôs também têm muitas ações exigentes, com arrancadas curtas e contato: 15 a 20 metros no Dia B, giro de 180 graus só no Dia A e contato fora do cronômetro. Na elite, backcourt e pivôs fazem 123 e 127 ações exigentes por jogo, contra 55 dos pontas. O goleiro tem demanda diferente: fica fora do RST ou faz a versão de 4 séries de 6 sprints de 10 metros, 21 minutos e 23 segundos.",
-   "titulo": "A dose é a mesma para todos, mas cada posição prioriza um sprint",
-   "colunas": [
-    "Posição",
-    "Demanda no jogo",
-    "Prioridade no RST (mesma dose)"
-   ],
-   "larguras": [
-    16,
-    34,
-    50
-   ],
-   "linhas": [
-    [
-     "**Pontas**",
-     "Mais sprints que as demais posições",
-     "Dia A: linear 25–30 m; Dia B: 20 m com bola; opcional 1 série gol a gol"
-    ],
-    [
-     "**Armadores**",
-     "Mais ações exigentes: paradas, giros e 1 × 1",
-     "Dia A: COD 2 × 15 m; Dia B: 20 m com bola e arrancada de 15 m"
-    ],
-    [
-     "**Pivôs**",
-     "Muitas ações exigentes: arrancadas curtas e contato",
-     "Dia B: 15–20 m; COD 180° só no Dia A; contato fora do RST"
-    ],
-    [
-     "**Goleiro**",
-     "Saídas e deslocamentos de 3–6 m",
-     "Fora do RST, ou 4 × 6 × 10 m, pausa 30 s, entre séries 3 min 30 s (21 min 23 s)"
-    ]
-   ],
-   "fonte": "[@povoas2014; @povoas2012]; adaptação: decisão prática",
-   "kicker": "Aplicação",
-   "banner": "imagens/acao-jogo.jpg",
-   "banner_foco": [
-    0.5,
-    0.4
-   ]
-  },
-  {
-   "layout": "topicos",
-   "apresentador": "Nome do autor",
-   "tempo_seg": 55,
-   "notas": "O calor e a umidade do ginásio são a variável ambiental com mais respaldo, um consenso de especialistas: aclimatização em uma a duas semanas, chegar hidratado, estratégias de resfriamento e mais recuperação no calor. O resumo não traz limiar de WBGT nem litros; use o da organização local e registre. Na prática, mantemos as séries, somamos 30 segundos entre séries e de 5 a 10 segundos entre sprints; sabemos que 10 segundos de pausa reduzem o Sdec% em cerca de 1,4%. Hidrate antes e nas pausas. Se o bloco passar de 25 minutos, tire uma série. Nos primeiros dias quentes, use a versão reduzida. Pare com tontura, náusea, cefaleia, cãibra, confusão, calafrio ou queda brusca de rendimento, com Sdec% acima de 12%.",
-   "titulo": "No calor, o bloco mantém as séries e ganha pausas maiores",
-   "itens": [
-    "**Hidratar** antes e nas pausas entre séries",
-    "Pausa entre sprints **+5 a +10 s**",
-    "Bloco acima de 25 min: tira 1 série",
-    "Primeiros dias de calor: versão reduzida",
-    "**Parar:** tontura, náusea, cãibra, confusão ou Sdec% > 12%"
-   ],
-   "destaque": {
-    "valor": "+30 s",
-    "rotulo": "entre séries no calor ou no ginásio abafado"
-   },
-   "fonte": "[@racinais2015; @thurlow2023]; ajustes: convenção do prescritor",
-   "kicker": "Ambiente",
-   "banner": "imagens/ginasio.jpg",
-   "banner_foco": [
-    0.5,
-    0.5
-   ]
-  },
-  {
-   "layout": "tabela",
-   "apresentador": "Nome do autor",
-   "tempo_seg": 55,
-   "notas": "Piso, espaço e horário. Em quadra de madeira ou sintético, as doses valem como calculadas. No cimento, há mais impacto e tração: giros em curva aberta e no máximo 48 frenagens. Em futebol, a pliometria na areia gerou menos dor muscular que na grama, com melhora de sprint semelhante; não há comparação com a quadra. Os tempos em areia ou grama ficam 10 a 20% mais lentos, estimativa, então julgue por esforço percebido e Sdec%; na grama molhada, sem giro de 180 graus. Teste sempre no mesmo piso. Na meia quadra, use 20 metros e a diagonal de cerca de 28 metros no lugar de 30. Em corredor de até 15 metros, troque por 2 vezes 15 com curva aberta e conte as frenagens, teto de 60. Quanto ao horário, o prejuízo noturno só apareceu sob perda de sono; padronize o horário dos testes. Espaço e horário de RST não têm fonte: são decisões práticas.",
-   "titulo": "Piso, espaço e horário pedem ajuste de distância, frenagens e tempos",
+   "tempo_seg": 65,
+   "notas": "O calor e a umidade têm um consenso de especialistas: aclimatização, chegar hidratado e mais recuperação. O resumo não traz limiar de WBGT; use o da organização local. Na prática, mantemos as séries, somamos 30 segundos entre séries e de 5 a 10 segundos entre sprints, hidratamos antes e nas pausas e paramos com tontura, náusea ou Sdec% acima de 12%. No piso de cimento, giros em curva aberta e no máximo 48 frenagens. Em futebol, a pliometria na areia gerou menos dor que na grama; não há comparação com a quadra; os tempos ficam 10 a 20% mais lentos, estimativa, então julgue por esforço percebido e Sdec%. Na meia quadra, 20 metros e a diagonal de cerca de 28 no lugar de 30; em corredor de até 15 metros, 2 por 15 com curva aberta, teto de 60 frenagens. À noite, o prejuízo só apareceu sob perda de sono; padronize o horário dos testes. Espaço e horário de RST não têm fonte.",
+   "titulo": "Calor, piso, espaço e horário pedem ajuste de pausas, frenagens e tempos",
    "colunas": [
     "Variável",
     "Cenário",
@@ -691,6 +382,11 @@
    ],
    "linhas": [
     [
+     "**Calor**",
+     "Ginásio quente ou abafado",
+     "Mantém as séries; +30 s entre séries e +5–10 s entre sprints; hidratar"
+    ],
+    [
      "**Piso**",
      "Cimento",
      "Giros em curva aberta e ≤ 48 frenagens por sessão"
@@ -698,17 +394,12 @@
     [
      "**Piso**",
      "Areia ou grama",
-     "Areia dá menos dor que grama após pliometria; tempos +10–20% (estimativa); julgar por PSE e Sdec%"
+     "Areia dá menos dor que grama após pliometria; tempos +10–20% (estimativa)"
     ],
     [
      "**Espaço**",
-     "Meia quadra",
-     "20 m e diagonal de ≈ 28 m no lugar de 30 m"
-    ],
-    [
-     "**Espaço**",
-     "Corredor ≤ 15 m",
-     "2 × 15 m com curva aberta; contar frenagens (teto 60)"
+     "Meia quadra ou corredor ≤ 15 m",
+     "20 m e diagonal ≈ 28 m; ou 2 × 15 m com curva aberta (teto 60 frenagens)"
     ],
     [
      "**Horário**",
@@ -716,7 +407,7 @@
      "Prejuízo noturno só com perda de sono; padronizar o horário dos testes"
     ]
    ],
-   "fonte": "[@impellizzeri2008; @craven2022]; espaço e horário: decisão prática",
+   "fonte": "[@racinais2015; @thurlow2023; @impellizzeri2008; @craven2022]; ajustes: convenção do prescritor",
    "kicker": "Ambiente",
    "banner": "imagens/ginasio.jpg",
    "banner_foco": [
@@ -727,8 +418,8 @@
   {
    "layout": "tabela",
    "apresentador": "Nome do autor",
-   "tempo_seg": 55,
-   "notas": "Agora, o atleta. Sono, estresse, alimentação e rotina decidem se a sessão é plena ou reduzida. Na metanálise de privação de sono, dormir 6 horas ou menos reduziu o desempenho em média 7,56%, IC 95% de menos 11,9 a menos 3,13, em todas as categorias de exercício. Por isso, dormir menos de 6 horas ou qualidade até 2 em 5 leva à versão reduzida; duas noites seguidas, não progride e avisa o responsável. Estresse com nota até 2: versão reduzida, e em dia de prova ou entrega, Dia B no lugar do A. Chegar em jejum longo, desidratado ou tonto: versão reduzida e hidratação; plano de carboidrato é do nutricionista. Jornada acima de 10 horas, deslocamento acima de 2 horas, álcool nas últimas 24 horas ou treino de pernas em até 48 horas também reduzem a sessão; tabagismo e álcool problemático vão ao médico. Os limiares são convenção do prescritor.",
+   "tempo_seg": 60,
+   "notas": "Agora, o atleta. Na metanálise de privação de sono, dormir 6 horas ou menos reduziu o desempenho em média 7,56%, com IC 95% de menos 11,9 a menos 3,13. Por isso, menos de 6 horas ou qualidade até 2 em 5 leva à versão reduzida; duas noites seguidas, não progride e avisa o responsável. Estresse até 2: versão reduzida, e em dia de prova ou entrega, o Dia B no lugar do A. Chegar em jejum longo, desidratado ou tonto: versão reduzida e hidratação; plano de carboidrato é do nutricionista. Jornada acima de 10 horas, deslocamento acima de 2 horas, álcool nas últimas 24 horas ou treino de pernas em até 48 horas também reduzem a sessão; tabagismo e álcool problemático vão ao médico. Os limiares são convenção do prescritor.",
    "titulo": "Sono, estresse, alimentação e rotina decidem se a sessão é plena ou reduzida",
    "colunas": [
     "Variável",
@@ -771,53 +462,22 @@
    ]
   },
   {
-   "layout": "semaforo",
-   "apresentador": "Nome do autor",
-   "tempo_seg": 55,
-   "notas": "Para medir isso sem equipamento, usamos um questionário de bem-estar de cinco itens, de 1 a 5, antes da sessão: sono, fadiga, dor muscular, estresse e humor. Medidas subjetivas de bem-estar refletiram a carga de treino com mais sensibilidade do que as objetivas, segundo uma revisão sistemática, e o monitoramento por humor, fadiga e estresse é recomendado desde Hooper e Mackinnon. A escala, os cortes e a regra são convenção do prescritor, inspirados em Hooper e Mackinnon, não validados para handebol amador. Soma de 20 ou mais, sem nenhum item 1, é verde: sessão do plano. De 15 a 19, ou qualquer item 1, é amarelo: versão reduzida, uma série a menos, pausa fixa de 40 segundos entre sprints e 4 minutos e meio entre séries, de 20 minutos e 16 segundos a 20 minutos e 57 segundos. Abaixo de 15, ou duas sessões amarelas seguidas, é vermelho: sem RST no dia. Registramos semanalmente a média do questionário, a PSE, a adesão e os gatilhos; adesão abaixo de 80% na fase repete a semana. A tendência vale mais que o valor isolado. Encerro com a síntese.",
-   "titulo": "Cinco itens de bem-estar definem se a sessão é plena, reduzida ou cancelada",
-   "niveis": [
-    {
-     "cor": "verde",
-     "sinal": "Soma ≥ 20 de 25 (sono, fadiga, dor, estresse, humor), sem item = 1",
-     "conduta": "Sessão do plano"
-    },
-    {
-     "cor": "amarelo",
-     "sinal": "Soma 15–19, ou qualquer item = 1",
-     "conduta": "Versão reduzida: −1 série, pausa de 40 s e 4 min 30 s entre séries (20 min 16 s a 20 min 57 s)"
-    },
-    {
-     "cor": "vermelho",
-     "sinal": "Soma < 15, ou 2 sessões amarelas seguidas",
-     "conduta": "Sem RST no dia; 2 vermelhos em 7 dias: avisar o responsável e investigar"
-    }
-   ],
-   "fonte": "[@hooper1995; @saw2016]; cortes: convenção do prescritor",
-   "kicker": "Variáveis individuais",
-   "banner": "imagens/acao-jogo.jpg",
-   "banner_foco": [
-    0.5,
-    0.4
-   ]
-  },
-  {
    "layout": "topicos",
    "apresentador": "Nome do autor",
-   "tempo_seg": 40,
-   "notas": "Para terminar, as limitações. Não há ensaio de RST isolado em handebolistas amadores adultos; extrapolamos de esportes coletivos, de jovens e de elite. As demandas de jogo vêm de elite. As metanálises não mostraram benefício de manipular a dose, então a dose proposta é uma decisão prática coerente com elas. Os limiares de dor, Sdec% e esforço percebido são convenção do prescritor. Também não encontrei estudos sobre a posição do RST na semana, nem sobre dose de frenagem, piso, espaço e horário; calor tem consenso, e sono, uma metanálise de privação aguda. Li apenas os resumos de 15 referências.",
+   "tempo_seg": 35,
+   "notas": "As limitações. Não há ensaio de RST isolado em handebolistas amadores adultos; extrapolamos de esportes coletivos, de jovens e de elite. As demandas de jogo vêm de elite. As metanálises não mostraram benefício de aumentar a dose, então a dose é decisão prática coerente com elas. Os limiares de dor, Sdec%, esforço percebido e bem-estar são convenção do prescritor. Não encontrei estudos sobre a posição do RST na semana, dose de frenagem, piso, espaço e horário; calor tem consenso e sono, uma metanálise de privação aguda. Li apenas os resumos.",
    "titulo": "A dose é uma proposta prática: a evidência é indireta e os limiares são convenção",
    "itens": [
     "Sem ensaio de RST isolado em handebolistas amadores adultos",
     "Demandas de jogo vêm de elite, não de amadores",
     "Metanálises não mostram benefício em aumentar a dose",
-    "Limiares de dor, Sdec% e PSE são convenção do prescritor",
-    "Semana, ambiente e rotina: evidência escassa ou nula para o RST"
+    "Limiares de dor, Sdec%, PSE e bem-estar são convenção",
+    "Semana, ambiente e rotina: evidência escassa ou nula"
    ],
-   "imagem": "imagens/acao-jogo.jpg",
+   "imagem": "imagens/gol-comemoracao.jpg",
    "foco": [
-    0.55,
-    0.5
+    0.5,
+    0.55
    ],
    "fonte": "[@thurlow2024; @povoas2012]",
    "kicker": "Limitações",
@@ -831,7 +491,7 @@
    "layout": "conclusao",
    "apresentador": "Nome do autor",
    "tempo_seg": 30,
-   "notas": "Em resumo. O jogo exige repetir paradas, giros e reacelerações. A dose é de duas sessões semanais, com progressão por distância, pausa e especificidade. O controle vem do posicionamento em relação ao jogo e do semáforo. E os testes nas semanas zero, cinco e dez dizem se mantemos, repetimos ou investigamos.",
+   "notas": "Em resumo. O jogo pede repetir paradas, giros e reacelerações. A dose é de duas sessões semanais, com progressão por distância, pausa e especificidade, e blocos de cerca de 22 minutos. O jogo define o Dia A e o Dia B, e o semáforo, o ambiente e o bem-estar ajustam cada sessão. E os testes nas semanas zero, cinco e dez dizem se mantemos, repetimos ou investigamos. Obrigado; fico à disposição para as perguntas.",
    "titulo": "Sprints repetidos, bem posicionados na semana, cabem em 22 min por sessão",
    "itens": [
     "Demanda: o jogo pede repetir paradas, giros e reacelerações",
@@ -847,17 +507,12 @@
    ]
   },
   {
-   "layout": "encerramento",
-   "apresentador": "Nome do autor",
-   "tempo_seg": 5,
-   "titulo": "Obrigado!",
-   "texto": "Perguntas e discussão",
-   "notas": "Obrigado! Fico à disposição para as perguntas.",
-   "imagem": "imagens/gol-comemoracao.jpg"
-  },
-  {
    "layout": "referencias",
-   "titulo": "Referências"
+   "titulo": "Referências",
+   "tamanho_ref": 10,
+   "espaco_ref": 4,
+   "max_por_slide": 30,
+   "max_caracteres": 9000
   }
  ]
 }
